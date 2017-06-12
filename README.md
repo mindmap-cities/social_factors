@@ -1,5 +1,5 @@
 # Social factors data harmonization work repository
-Welcome to the social factors domain data harmonization work repository! Documenation of DataSchema variables as well as versionning and storage of data harmonization scripts will be saved in this space. 
+Welcome to the *social factors domain* data harmonization work repository! Documenation of DataSchema variables as well as versionning and storage of data harmonization scripts will be saved in this space. 
 
 This page includes information to get you started.
 
