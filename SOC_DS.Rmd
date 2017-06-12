@@ -3,13 +3,13 @@ title: "Social factors DataSchema"
 output: html_document
 ---
 # Table of Contents
-1. [Social/community support subdomain](#social/community-support-subdomain)
+1. [Social and community support subdomain](#social-and-community-support-subdomain)
 2. [Social participation subdomain](#social-participation-subdomain)
 3. [Social inclusion subdomain](#social-inclusion-subdomain)
 4. [Major life events subdomain](#major-life-events-subdomain)
 5. [Home ownership subdomain](#home-ownership-subdomain)
 
-# Social/community support subdomain
+# Social and community support subdomain
 
 ### **Variable label**:   
 **Variable name**:   
