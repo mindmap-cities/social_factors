@@ -2,12 +2,34 @@
 title: "Social factors DataSchema"
 output: html_document
 ---
-# Table of Contents
-1. [Social and community support subdomain](#social-and-community-support-subdomain)
-2. [Social participation subdomain](#social-participation-subdomain)
-3. [Social inclusion subdomain](#social-inclusion-subdomain)
-4. [Major life events subdomain](#major-life-events-subdomain)
+
+# Table of Contents  
+1. [Social network subdomain](#social-inclusion-subdomain)  
+2. [Social and community support subdomain](#social-and-community-support-subdomain)  
+3. [Social participation subdomain](#social-participation-subdomain)  
+4. [Major life events subdomain](#major-life-events-subdomain)  
 5. [Home ownership subdomain](#home-ownership-subdomain)
+
+# Social network subdomain
+
+### **Variable label**:  
+**Variable name**:  
+**Variable description**:  
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+ 
+**Code** | **Category Label**      
+------------- | -------------      
+0 |      
+1 |  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+```
 
 # Social and community support subdomain
 
