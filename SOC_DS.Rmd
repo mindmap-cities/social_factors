@@ -33,7 +33,7 @@ output: html_document
 ```
 
 ### **Variable label**:   Social network small  
-**Variable name**:   soc_sn_smll_0  
+**Variable name**:   soc_sn_small_0  
 **Variable description**:  Social network comprised of family members, relatives and friends.  
 **Value type**:  integer  
 **Variable unit**:  N/A  
@@ -53,7 +53,7 @@ output: html_document
 ```
 
 ### **Variable label**:   Social network small  
-**Variable name**:   soc_sn_smll_1  
+**Variable name**:   soc_sn_small_1  
 **Variable description**:  Social network comprised of family members, relatives and friends.  
 **Value type**:  integer  
 **Variable unit**:  N/A  
@@ -71,6 +71,106 @@ output: html_document
 #This is where the R-script will be written
 
 ```
+
+### **Variable label**:   Social network friends   
+**Variable name**:   soc_sn_friends_0  
+**Variable description**:  Social network comprised of friends (living in?).  
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  N/A  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+
+### **Variable label**:   Social network friends   
+**Variable name**:   soc_sn_friends_1  
+**Variable description**:  Social network comprised of friends (living in?).  
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  N/A  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```  
+
+### **Variable label**:   Social network relatives   
+**Variable name**:   soc_sn_relatives_0  
+**Variable description**:  Social network comprised of relatives (living in?).  
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  N/A  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+
+### **Variable label**:   Social network neighbours   
+**Variable name**:   soc_sn_neighbours_0  
+**Variable description**:  Social network comprised of neighbours. 
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  N/A  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+
+### **Variable label**:   Social network neighbours   
+**Variable name**:   soc_sn_neighbours_1  
+**Variable description**:  Social network comprised of neighbours. 
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  N/A  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
 
 # Social and community support subdomain
 
