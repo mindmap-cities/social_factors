@@ -248,11 +248,11 @@ output: html_document
 
 # Major life events subdomain
 
-### **Variable label**:  Residential stability 
-**Variable name**:  
-**Variable description**:  
-**Value type**:  
-**Variable unit**:  
+### **Variable label**:  Residential stability   
+**Variable name**:  soc_resstab_0  
+**Variable description**:  Number of years living at current home/address  
+**Value type**:  integer  
+**Variable unit**:  years  
 **Category coding**:  
 
 **Code** | **Category Label**  
