@@ -182,9 +182,66 @@ output: html_document
 ``` 
 # Social and community support subdomain
 
-### **Variable label**:   
-**Variable name**:   
-**Variable description**:  
+### **Variable label**: Received social support    
+**Variable name**:   soc_ss_received_0  
+**Variable description**:  respondant received support from   
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Perceived social support    
+**Variable name**:   soc_ss_perceived_0    
+**Variable description**:  respondant feels they have received support from   
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Emotional support      
+**Variable name**:   soc_ss_emotional_0    
+**Variable description**:  respondant received emotional support:     
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Instrumental support      
+**Variable name**:   soc_ss_instrumental_0        
+**Variable description**:  respondant feels they have received instrumental support:   
 **Value type**:  
 **Variable unit**:  
 **Category coding**:  
