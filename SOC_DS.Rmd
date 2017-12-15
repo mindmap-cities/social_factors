@@ -171,7 +171,28 @@ output: html_document
 #This is where the R-script will be written
 
 ``` 
+### **Variable label**:   Contact frequency with friends    
+**Variable name**:   soc_snfreq_friends_0  
+**Variable description**:  Contact frequency with close friends   
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  N/A  
 
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily
+2 | Weekly 
+3 | Biweekly
+4 | Monthly 
+5 | Never or less than an year   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
 # Social and community support subdomain
 
 ### **Variable label**:   
@@ -218,11 +239,11 @@ output: html_document
 
 # Social inclusion subdomain
 
-### **Variable label**:  Social isolation  
-**Variable name**:  soc_si_0
-**Variable description**:  Respondent has no social contact with anyone (family, relatives, neighbours, friends, colleagues) and no membership in any association  
-**Value type**:  integer
-**Variable unit**:  N/A
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_si_0  
+**Variable description**:  Respondent has no social contact with anyone (family, relatives, neighbours, friends, colleagues) and no membership in any association    
+**Value type**:  integer  
+**Variable unit**:  N/A  
 **Category coding**:  
 
 **Code** | **Category Label**  
