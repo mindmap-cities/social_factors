@@ -249,8 +249,27 @@ output: html_document
 # Major life events subdomain
 
 ### **Variable label**:  Residential stability   
-**Variable name**:  soc_resstab_0  
+**Variable name**:  soc_resstab_home_0  
 **Variable description**:  Number of years living at current home/address  
+**Value type**:  integer  
+**Variable unit**:  years  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential stability   
+**Variable name**:  soc_resstab_comm_0  
+**Variable description**:  Number of years living in current neighbourhood  
 **Value type**:  integer  
 **Variable unit**:  years  
 **Category coding**:  
