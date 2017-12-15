@@ -132,10 +132,10 @@ output: html_document
 
 ``` 
 
-### **Variable label**:   Social network neighbours   
-**Variable name**:   soc_sn_nbhs_0  
-**Variable description**:  Social network comprised of neighbours  
-**Value type**:  integer  
+### **Variable label**:   Social network neighbours     
+**Variable name**:   soc_sn_nbhs_0    
+**Variable description**:  Social network size comprised of neighbours that respondent knows well and is in regular contact with  
+**Value type**:  integer    
 **Variable unit**:  N/A  
 **Category coding**:  N/A  
 
@@ -155,10 +155,32 @@ output: html_document
 #This is where the R-script will be written
 
 ``` 
+### **Variable label**:   Contact frequency with neighbours     
+**Variable name**:   soc_snfreq_nbhs_0    
+**Variable description**:  Contact frequency of respondent with neighbours which they know well and are in regular contact with     
+**Value type**:  integer    
+**Variable unit**:  N/A  
+**Category coding**:  N/A  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily
+2 | Weekly 
+3 | Biweekly
+4 | Monthly 
+5 | Never or less than an year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
 
 ### **Variable label**:   Contact frequency with friends    
 **Variable name**:   soc_snfreq_friends_0  
-**Variable description**:  Contact frequency with close friends   
+**Variable description**:  Contact frequency of respondent with close friends   
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  N/A  
