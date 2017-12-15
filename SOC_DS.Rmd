@@ -74,10 +74,10 @@ output: html_document
 
 ### **Variable label**:   Social network friends   
 **Variable name**:   soc_sn_friends_0  
-**Variable description**:  Social network comprised of friends (living in?)    
+**Variable description**:  Social network size comprised of close friends that respondent can confide in   
 **Value type**:  integer  
 **Variable unit**:  N/A  
-**Category coding**:  N/A  
+**Category coding**:  N/A    
 
 **Code** | **Category Label**  
 ------------- | -------------  
@@ -91,26 +91,6 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-
-### **Variable label**:   Social network friends   
-**Variable name**:   soc_sn_friends_1  
-**Variable description**:  Social network comprised of friends (living in?)    
-**Value type**:  integer  
-**Variable unit**:  N/A  
-**Category coding**:  N/A  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```  
 
 ### **Variable label**:   Social network relatives   
 **Variable name**:   soc_sn_relatives_0  
