@@ -14,7 +14,7 @@ output: html_document
 
 ### **Variable label**:   Social network comprehensive 
 **Variable name**:   soc_sn_comp_0  
-**Variable description**:  Number of social contacts of participant including household members (adults and children), relatives, neighbours, colleagues, members of associations and friends.    
+**Variable description**:  Number of social contacts of participant including household members (adults and children), relatives, neighbours, colleagues, members of associations and friends      
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  N/A  
@@ -34,7 +34,7 @@ output: html_document
 
 ### **Variable label**:   Social network small  
 **Variable name**:   soc_sn_small_0  
-**Variable description**:  Social network comprised of family members, relatives and friends.  
+**Variable description**:  Social network comprised of family members, relatives and friends    
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  N/A  
@@ -54,7 +54,7 @@ output: html_document
 
 ### **Variable label**:   Social network small  
 **Variable name**:   soc_sn_small_1  
-**Variable description**:  Social network comprised of family members, relatives and friends.  
+**Variable description**:  Social network comprised of family members, relatives and friends    
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  N/A  
@@ -74,7 +74,7 @@ output: html_document
 
 ### **Variable label**:   Social network friends   
 **Variable name**:   soc_sn_friends_0  
-**Variable description**:  Social network comprised of friends (living in?).  
+**Variable description**:  Social network comprised of friends (living in?)    
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  N/A  
@@ -94,7 +94,7 @@ output: html_document
 
 ### **Variable label**:   Social network friends   
 **Variable name**:   soc_sn_friends_1  
-**Variable description**:  Social network comprised of friends (living in?).  
+**Variable description**:  Social network comprised of friends (living in?)    
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  N/A  
@@ -114,7 +114,7 @@ output: html_document
 
 ### **Variable label**:   Social network relatives   
 **Variable name**:   soc_sn_relatives_0  
-**Variable description**:  Social network comprised of relatives (living in?).  
+**Variable description**:  Social network comprised of relatives (living in?)   
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  N/A  
@@ -134,7 +134,7 @@ output: html_document
 
 ### **Variable label**:   Social network neighbours   
 **Variable name**:   soc_sn_neighbours_0  
-**Variable description**:  Social network comprised of neighbours. 
+**Variable description**:  Social network comprised of neighbours  
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  N/A  
@@ -154,7 +154,7 @@ output: html_document
 
 ### **Variable label**:   Social network neighbours   
 **Variable name**:   soc_sn_neighbours_1  
-**Variable description**:  Social network comprised of neighbours. 
+**Variable description**:  Social network comprised of neighbours   
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  N/A  
@@ -218,17 +218,17 @@ output: html_document
 
 # Social inclusion subdomain
 
-### **Variable label**:  
-**Variable name**:  
-**Variable description**:  
-**Value type**:  
-**Variable unit**:  
+### **Variable label**:  Social isolation  
+**Variable name**:  soc_si_0
+**Variable description**:  Respondent has no social contact with anyone (family, relatives, neighbours, friends, colleagues) and no membership in any association  
+**Value type**:  integer
+**Variable unit**:  N/A
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   
-1 |   
+0 |   yes
+1 |   no
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -240,7 +240,7 @@ output: html_document
 
 # Major life events subdomain
 
-### **Variable label**:  
+### **Variable label**:  Residential stability 
 **Variable name**:  
 **Variable description**:  
 **Value type**:  
