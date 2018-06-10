@@ -31,12 +31,11 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-
-### **Variable label**:   Social network comprehensive 
-**Variable name**:   soc_sn_comp_0  
-**Variable description**:  Number of social contacts of participant including household members (adults and children), relatives, neighbours, colleagues, members of associations and friends      
+### **Variable label**:   Children network size   
+**Variable name**:   soc_sn_children_1    
+**Variable description**:  Number of living biological, adopted or step children that respondent has.        
 **Value type**:  integer  
-**Variable unit**:    
+**Variable unit**:      
 **Category coding**:   
 
 **Code** | **Category Label**  
@@ -51,13 +50,249 @@ output: html_document
 #This is where the R-script will be written
 
 ```
+### **Variable label**:   Children network size   
+**Variable name**:   soc_sn_children_2    
+**Variable description**:  Number of living biological, adopted or step children that respondent has.        
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
 
-### **Variable label**:   Social network small  
-**Variable name**:   soc_sn_small_0  
-**Variable description**:  Social network comprised of family members, relatives and friends    
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Children network size   
+**Variable name**:   soc_sn_children_3    
+**Variable description**:  Number of living biological, adopted or step children that respondent has.        
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Children network size   
+**Variable name**:   soc_sn_children_4    
+**Variable description**:  Number of living biological, adopted or step children that respondent has.        
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Children network size   
+**Variable name**:   soc_sn_children_5    
+**Variable description**:  Number of living biological, adopted or step children that respondent has.        
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Children network size   
+**Variable name**:   soc_sn_children_6    
+**Variable description**:  Number of living biological, adopted or step children that respondent has.        
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Rank of children network size     
+**Variable name**:   soc_sn_children_rank_0      
+**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has/ had (children may be alive or dead). It is measured by ranking the size of the network comprised of any type of children (any type, includes biological). Low rank indicates no children. High rank indicates 1 or more children.           
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Low rank of network size comprised of children (childless) 
+1 |  Medium rank of network size comprised of children  (1 or 2 children)
+2 |  Large rank of network size comprised of children  (more than 2 children) 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+
+### **Variable label**:   Rank of children network size     
+**Variable name**:   soc_sn_children_rank_1      
+**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has/ had (children may be alive or dead). It is measured by ranking the size of the network comprised of any type of children (any type, includes biological). Low rank indicates no children. High rank indicates 1 or more children.           
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Low rank of network size comprised of children (childless) 
+1 |  Medium rank of network size comprised of children  (1 or 2 children)
+2 |  Large rank of network size comprised of children  (more than 2 children)  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Rank of children network size     
+**Variable name**:   soc_sn_children_rank_2      
+**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has/ had (children may be alive or dead). It is measured by ranking the size of the network comprised of any type of children (any type, includes biological). Low rank indicates no children. High rank indicates 1 or more children.           
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Low rank of network size comprised of children (childless) 
+1 |  Medium rank of network size comprised of children  (1 or 2 children)
+2 |  Large rank of network size comprised of children  (more than 2 children)  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Rank of children network size     
+**Variable name**:   soc_sn_children_rank_3      
+**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has/ had (children may be alive or dead). It is measured by ranking the size of the network comprised of any type of children (any type, includes biological). Low rank indicates no children. High rank indicates 1 or more children.           
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Low rank of network size comprised of children (childless) 
+1 |  Medium rank of network size comprised of children  (1 or 2 children)
+2 |  Large rank of network size comprised of children  (more than 2 children)  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Rank of children network size     
+**Variable name**:   soc_sn_children_rank_4      
+**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has/ had (children may be alive or dead). It is measured by ranking the size of the network comprised of any type of children (any type, includes biological). Low rank indicates no children. High rank indicates 1 or more children.           
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Low rank of network size comprised of children (childless) 
+1 |  Medium rank of network size comprised of children  (1 or 2 children)
+2 |  Large rank of network size comprised of children  (more than 2 children)  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Rank of children network size     
+**Variable name**:   soc_sn_children_rank_5      
+**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has/ had (children may be alive or dead). It is measured by ranking the size of the network comprised of any type of children (any type, includes biological). Low rank indicates no children. High rank indicates 1 or more children.           
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Low rank of network size comprised of children (childless) 
+1 |  Medium rank of network size comprised of children  (1 or 2 children)
+2 |  Large rank of network size comprised of children  (more than 2 children)  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Rank of children network size     
+**Variable name**:   soc_sn_children_rank_6      
+**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has/ had (children may be alive or dead). It is measured by ranking the size of the network comprised of any type of children (any type, includes biological). Low rank indicates no children. High rank indicates 1 or more children.           
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Low rank of network size comprised of children (childless) 
+1 |  Medium rank of network size comprised of children  (1 or 2 children)
+2 |  Large rank of network size comprised of children  (more than 2 children)  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+
+### **Variable label**:   Friends social network 
+**Variable name**:   soc_sn_friends_0  
+**Variable description**:  Number of close friends in the respondent’s social network that respondent feels they can talk to/reach out to.   
 **Value type**:  integer  
 **Variable unit**:   
-**Category coding**:   
+**Category coding**:      
 
 **Code** | **Category Label**  
 ------------- | -------------  
@@ -71,13 +306,12 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-
-### **Variable label**:   Social network small  
-**Variable name**:   soc_sn_small_1  
-**Variable description**:  Social network comprised of family members, relatives and friends    
+### **Variable label**:   Friends social network 
+**Variable name**:   soc_sn_friends_1  
+**Variable description**:  Number of close friends in the respondent’s social network that respondent feels they can talk to/reach out to.   
 **Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
+**Variable unit**:   
+**Category coding**:      
 
 **Code** | **Category Label**  
 ------------- | -------------  
@@ -91,10 +325,85 @@ output: html_document
 #This is where the R-script will be written
 
 ```
+### **Variable label**:   Friends social network 
+**Variable name**:   soc_sn_friends_2  
+**Variable description**:  Number of close friends in the respondent’s social network that respondent feels they can talk to/reach out to.   
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:      
 
-### **Variable label**:   Social network friends   
-**Variable name**:   soc_sn_friends_0  
-**Variable description**:  Social network size comprised of close friends that respondent can confide in   
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Friends social network 
+**Variable name**:   soc_sn_friends_3  
+**Variable description**:  Number of close friends in the respondent’s social network that respondent feels they can talk to/reach out to.   
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:      
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Friends social network 
+**Variable name**:   soc_sn_friends_4  
+**Variable description**:  Number of close friends in the respondent’s social network that respondent feels they can talk to/reach out to.   
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:      
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Friends social network 
+**Variable name**:   soc_sn_friends_5  
+**Variable description**:  Number of close friends in the respondent’s social network that respondent feels they can talk to/reach out to.   
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:      
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Friends social network 
+**Variable name**:   soc_sn_friends_6  
+**Variable description**:  Number of close friends in the respondent’s social network that respondent feels they can talk to/reach out to.   
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:      
@@ -112,17 +421,152 @@ output: html_document
 
 ```
 
-### **Variable label**:   Social network relatives   
-**Variable name**:   soc_sn_relatives_0  
-**Variable description**:  Social network comprised of relatives (living in?)   
+### **Variable label**:   Frequency of contact with friends      
+**Variable name**:   soc_sn_friends_inpersonfreq__0   
+**Variable description**:   In person contact frequency with close friends (distinguished from soc_sn_freq_friends_0 which is a variable measuring contact frequency but not necessarily in person contact).  
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:    
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   
-1 |   
+0 |  Daily  
+1 |  Weekly 
+2 |  Biweekly  
+3 |  Monthly 
+4 |  Never or less than an year
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Frequency of contact with friends      
+**Variable name**:   soc_sn_friends_inpersonfreq__1   
+**Variable description**:   In person contact frequency with close friends (distinguished from soc_sn_freq_friends_0 which is a variable measuring contact frequency but not necessarily in person contact).  
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Daily  
+1 |  Weekly 
+2 |  Biweekly  
+3 |  Monthly 
+4 |  Never or less than an year
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Frequency of contact with friends      
+**Variable name**:   soc_sn_friends_inpersonfreq__2   
+**Variable description**:   In person contact frequency with close friends (distinguished from soc_sn_freq_friends_0 which is a variable measuring contact frequency but not necessarily in person contact).  
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Daily  
+1 |  Weekly 
+2 |  Biweekly  
+3 |  Monthly 
+4 |  Never or less than an year
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Frequency of contact with friends      
+**Variable name**:   soc_sn_friends_inpersonfreq__3   
+**Variable description**:   In person contact frequency with close friends (distinguished from soc_sn_freq_friends_0 which is a variable measuring contact frequency but not necessarily in person contact).  
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Daily  
+1 |  Weekly 
+2 |  Biweekly  
+3 |  Monthly 
+4 |  Never or less than an year
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Frequency of contact with friends      
+**Variable name**:   soc_sn_friends_inpersonfreq__4   
+**Variable description**:   In person contact frequency with close friends (distinguished from soc_sn_freq_friends_0 which is a variable measuring contact frequency but not necessarily in person contact).  
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Daily  
+1 |  Weekly 
+2 |  Biweekly  
+3 |  Monthly 
+4 |  Never or less than an year
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Frequency of contact with friends      
+**Variable name**:   soc_sn_friends_inpersonfreq__5   
+**Variable description**:   In person contact frequency with close friends (distinguished from soc_sn_freq_friends_0 which is a variable measuring contact frequency but not necessarily in person contact).  
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Daily  
+1 |  Weekly 
+2 |  Biweekly  
+3 |  Monthly 
+4 |  Never or less than an year
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Frequency of contact with friends      
+**Variable name**:   soc_sn_friends_inpersonfreq__6   
+**Variable description**:   In person contact frequency with close friends (distinguished from soc_sn_freq_friends_0 which is a variable measuring contact frequency but not necessarily in person contact).  
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Daily  
+1 |  Weekly 
+2 |  Biweekly  
+3 |  Monthly 
+4 |  Never or less than an year
 
 **Harmonization status**:  
 **Harmonization comment**:   
