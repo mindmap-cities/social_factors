@@ -646,17 +646,278 @@ output: html_document
 ``` 
 # Social and community support subdomain
 
-### **Variable label**: Received social support    
-**Variable name**:   soc_ss_received_0  
-**Variable description**:  respondant received support from   
+### **Variable label**: Received emotional support    
+**Variable name**:   soc_ss_rec_emo_0 
+**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from.  
 **Value type**:  
 **Variable unit**:  
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   
-1 |   
+0 |   Never
+1 |   Sometimes
+2 |   Often
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support    
+**Variable name**:   soc_ss_rec_emo_1 
+**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from.  
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Never
+1 |   Sometimes
+2 |   Often
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support    
+**Variable name**:   soc_ss_rec_emo_2 
+**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from.  
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Never
+1 |   Sometimes
+2 |   Often
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support    
+**Variable name**:   soc_ss_rec_emo_3 
+**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from.  
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Never
+1 |   Sometimes
+2 |   Often
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support    
+**Variable name**:   soc_ss_rec_emo_4 
+**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from.  
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Never
+1 |   Sometimes
+2 |   Often
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support    
+**Variable name**:   soc_ss_rec_emo_5 
+**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from.  
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Never
+1 |   Sometimes
+2 |   Often
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support    
+**Variable name**:   soc_ss_rec_emo_6 
+**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from.  
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Never
+1 |   Sometimes
+2 |   Often
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Ranked received emotional support average     
+**Variable name**:   soc_ss_rec_emo_rank_0
+**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from. 
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Never
+1 |   Sometimes
+2 |   Often
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Ranked received emotional support average     
+**Variable name**:   soc_ss_rec_emo_rank_1
+**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from. 
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Never
+1 |   Sometimes
+2 |   Often
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Ranked received emotional support average     
+**Variable name**:   soc_ss_rec_emo_rank_2
+**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from. 
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Never
+1 |   Sometimes
+2 |   Often
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Ranked received emotional support average     
+**Variable name**:   soc_ss_rec_emo_rank_3
+**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from. 
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Never
+1 |   Sometimes
+2 |   Often
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Ranked received emotional support average     
+**Variable name**:   soc_ss_rec_emo_rank_4
+**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from. 
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Never
+1 |   Sometimes
+2 |   Often
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Ranked received emotional support average     
+**Variable name**:   soc_ss_rec_emo_rank_5
+**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from. 
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Never
+1 |   Sometimes
+2 |   Often
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Ranked received emotional support average     
+**Variable name**:   soc_ss_rec_emo_rank_6
+**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from. 
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Never
+1 |   Sometimes
+2 |   Often
 
 **Harmonization status**:  
 **Harmonization comment**:   
