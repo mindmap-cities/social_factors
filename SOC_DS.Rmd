@@ -12,12 +12,32 @@ output: html_document
 
 # Social network subdomain
 
+### **Variable label**:   Children network size   
+**Variable name**:   soc_sn_children_0    
+**Variable description**:  Number of living biological, adopted or step children that respondent has.        
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+
 ### **Variable label**:   Social network comprehensive 
 **Variable name**:   soc_sn_comp_0  
 **Variable description**:  Number of social contacts of participant including household members (adults and children), relatives, neighbours, colleagues, members of associations and friends      
 **Value type**:  integer  
-**Variable unit**:  N/A  
-**Category coding**:  N/A  
+**Variable unit**:    
+**Category coding**:   
 
 **Code** | **Category Label**  
 ------------- | -------------  
@@ -36,8 +56,8 @@ output: html_document
 **Variable name**:   soc_sn_small_0  
 **Variable description**:  Social network comprised of family members, relatives and friends    
 **Value type**:  integer  
-**Variable unit**:  N/A  
-**Category coding**:  N/A  
+**Variable unit**:   
+**Category coding**:   
 
 **Code** | **Category Label**  
 ------------- | -------------  
@@ -56,8 +76,8 @@ output: html_document
 **Variable name**:   soc_sn_small_1  
 **Variable description**:  Social network comprised of family members, relatives and friends    
 **Value type**:  integer  
-**Variable unit**:  N/A  
-**Category coding**:  N/A  
+**Variable unit**:    
+**Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
@@ -76,8 +96,8 @@ output: html_document
 **Variable name**:   soc_sn_friends_0  
 **Variable description**:  Social network size comprised of close friends that respondent can confide in   
 **Value type**:  integer  
-**Variable unit**:  N/A  
-**Category coding**:  N/A    
+**Variable unit**:   
+**Category coding**:      
 
 **Code** | **Category Label**  
 ------------- | -------------  
@@ -96,8 +116,8 @@ output: html_document
 **Variable name**:   soc_sn_relatives_0  
 **Variable description**:  Social network comprised of relatives (living in?)   
 **Value type**:  integer  
-**Variable unit**:  N/A  
-**Category coding**:  N/A  
+**Variable unit**:   
+**Category coding**:    
 
 **Code** | **Category Label**  
 ------------- | -------------  
@@ -116,8 +136,8 @@ output: html_document
 **Variable name**:   soc_sn_nbhs_0    
 **Variable description**:  Social network size comprised of neighbours that respondent knows well and is in regular contact with  
 **Value type**:  integer    
-**Variable unit**:  N/A  
-**Category coding**:  N/A  
+**Variable unit**:    
+**Category coding**:   
 
 **Code** | **Category Label**  
 ------------- | -------------  
@@ -139,8 +159,8 @@ output: html_document
 **Variable name**:   soc_snfreq_nbhs_0    
 **Variable description**:  Contact frequency of respondent with neighbours which they know well and are in regular contact with     
 **Value type**:  integer    
-**Variable unit**:  N/A  
-**Category coding**:  N/A  
+**Variable unit**:    
+**Category coding**:   
 
 **Code** | **Category Label**  
 ------------- | -------------  
@@ -162,8 +182,8 @@ output: html_document
 **Variable name**:   soc_snfreq_friends_0  
 **Variable description**:  Contact frequency of respondent with close friends   
 **Value type**:  integer  
-**Variable unit**:  N/A  
-**Category coding**:  N/A  
+**Variable unit**:     
+**Category coding**:    
 
 **Code** | **Category Label**  
 ------------- | -------------  
@@ -287,7 +307,7 @@ output: html_document
 **Variable name**:  soc_si_0  
 **Variable description**:  Respondent has no social contact with anyone (family, relatives, neighbours, friends, colleagues) and no membership in any association    
 **Value type**:  integer  
-**Variable unit**:  N/A  
+**Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
@@ -309,7 +329,7 @@ output: html_document
 **Variable name**:  soc_resstab_home_0  
 **Variable description**:  Number of years living at current home/address  
 **Value type**:  integer  
-**Variable unit**:  years  
+**Variable unit**:   
 **Category coding**:  
 
 **Code** | **Category Label**  
@@ -328,7 +348,7 @@ output: html_document
 **Variable name**:  soc_resstab_comm_0  
 **Variable description**:  Number of years living in current neighbourhood  
 **Value type**:  integer  
-**Variable unit**:  years  
+**Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
@@ -350,7 +370,7 @@ output: html_document
 **Variable name**:  soc_home_0    
 **Variable description**:  Respondent owns the home that they live in   
 **Value type**:  integer  
-**Variable unit**:  N/A  
+**Variable unit**:  
 **Category coding**:  
 
 **Code** | **Category Label**  
