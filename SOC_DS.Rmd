@@ -147,7 +147,7 @@ output: html_document
 ```
 ### **Variable label**:   Rank of children network size     
 **Variable name**:   soc_sn_children_rank_0      
-**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has/ had (children may be alive or dead). It is measured by ranking the size of the network comprised of any type of children (any type, includes biological). Low rank indicates no children. High rank indicates 1 or more children.           
+**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has/ had (children may be alive or dead). It is measured by ranking the size of the network comprised of any type of children (any type, includes biological). Low rank indicates no children. Note: a low rank in one study is not necessarily equivalent to a low rank in another study since not all studies inquire about the same type of children (e.g. inquire only about number of living biological children).              
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
@@ -168,7 +168,7 @@ output: html_document
 
 ### **Variable label**:   Rank of children network size     
 **Variable name**:   soc_sn_children_rank_1      
-**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has/ had (children may be alive or dead). It is measured by ranking the size of the network comprised of any type of children (any type, includes biological). Low rank indicates no children. High rank indicates 1 or more children.           
+**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has/ had (children may be alive or dead). It is measured by ranking the size of the network comprised of any type of children (any type, includes biological). Low rank indicates no children. Note: a low rank in one study is not necessarily equivalent to a low rank in another study since not all studies inquire about the same type of children (e.g. inquire only about number of living biological children).             
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
@@ -188,7 +188,7 @@ output: html_document
 ```
 ### **Variable label**:   Rank of children network size     
 **Variable name**:   soc_sn_children_rank_2      
-**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has/ had (children may be alive or dead). It is measured by ranking the size of the network comprised of any type of children (any type, includes biological). Low rank indicates no children. High rank indicates 1 or more children.           
+**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has/ had (children may be alive or dead). It is measured by ranking the size of the network comprised of any type of children (any type, includes biological). Low rank indicates no children. Note: a low rank in one study is not necessarily equivalent to a low rank in another study since not all studies inquire about the same type of children (e.g. inquire only about number of living biological children).             
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
@@ -208,7 +208,7 @@ output: html_document
 ```
 ### **Variable label**:   Rank of children network size     
 **Variable name**:   soc_sn_children_rank_3      
-**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has/ had (children may be alive or dead). It is measured by ranking the size of the network comprised of any type of children (any type, includes biological). Low rank indicates no children. High rank indicates 1 or more children.           
+**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has/ had (children may be alive or dead). It is measured by ranking the size of the network comprised of any type of children (any type, includes biological). Low rank indicates no children. Note: a low rank in one study is not necessarily equivalent to a low rank in another study since not all studies inquire about the same type of children (e.g. inquire only about number of living biological children).             
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
@@ -228,7 +228,7 @@ output: html_document
 ```
 ### **Variable label**:   Rank of children network size     
 **Variable name**:   soc_sn_children_rank_4      
-**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has/ had (children may be alive or dead). It is measured by ranking the size of the network comprised of any type of children (any type, includes biological). Low rank indicates no children. High rank indicates 1 or more children.           
+**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has/ had (children may be alive or dead). It is measured by ranking the size of the network comprised of any type of children (any type, includes biological). Low rank indicates no children. Note: a low rank in one study is not necessarily equivalent to a low rank in another study since not all studies inquire about the same type of children (e.g. inquire only about number of living biological children).             
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
@@ -248,7 +248,7 @@ output: html_document
 ```
 ### **Variable label**:   Rank of children network size     
 **Variable name**:   soc_sn_children_rank_5      
-**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has/ had (children may be alive or dead). It is measured by ranking the size of the network comprised of any type of children (any type, includes biological). Low rank indicates no children. High rank indicates 1 or more children.           
+**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has/ had (children may be alive or dead). It is measured by ranking the size of the network comprised of any type of children (any type, includes biological). Low rank indicates no children. Note: a low rank in one study is not necessarily equivalent to a low rank in another study since not all studies inquire about the same type of children (e.g. inquire only about number of living biological children).             
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
@@ -268,7 +268,7 @@ output: html_document
 ```
 ### **Variable label**:   Rank of children network size     
 **Variable name**:   soc_sn_children_rank_6      
-**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has/ had (children may be alive or dead). It is measured by ranking the size of the network comprised of any type of children (any type, includes biological). Low rank indicates no children. High rank indicates 1 or more children.           
+**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has/ had (children may be alive or dead). It is measured by ranking the size of the network comprised of any type of children (any type, includes biological). Low rank indicates no children. Note: a low rank in one study is not necessarily equivalent to a low rank in another study since not all studies inquire about the same type of children (e.g. inquire only about number of living biological children).           
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
