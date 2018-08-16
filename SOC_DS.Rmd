@@ -4,11 +4,11 @@ output: html_document
 ---
 
 # Table of Contents  
-1. [Social network subdomain](#social-inclusion-subdomain)  
-2. [Social and community support subdomain](#social-and-community-support-subdomain)  
+1. [Social network subdomain](#social-network-subdomain)  
+2. [Social support subdomain](#social-support-subdomain)  
 3. [Social participation subdomain](#social-participation-subdomain)  
 4. [Major life events subdomain](#major-life-events-subdomain)  
-5. [Home ownership subdomain](#home-ownership-subdomain)
+5. [Residential characteristics subdomain](#residential-characteristics-subdomain)
 
 # Social network subdomain
 
@@ -644,7 +644,27 @@ output: html_document
 #This is where the R-script will be written
 
 ``` 
-# Social and community support subdomain
+
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_si_0  
+**Variable description**:  Respondent has no social contact with anyone (family, relatives, neighbours, friends, colleagues) and no membership in any association    
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   yes
+1 |   no
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+# Social support subdomain
 
 ### **Variable label**: Received emotional support    
 **Variable name**:   soc_ss_rec_emo_0 
@@ -1006,27 +1026,6 @@ output: html_document
 
 ```
 
-# Social inclusion subdomain
-
-### **Variable label**:  Social isolation    
-**Variable name**:  soc_si_0  
-**Variable description**:  Respondent has no social contact with anyone (family, relatives, neighbours, friends, colleagues) and no membership in any association    
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   yes
-1 |   no
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
 
 # Major life events subdomain
 
@@ -1069,7 +1068,7 @@ output: html_document
 
 ```
 
-# Home ownership subdomain
+# Residential characteristics subdomain
 
 ### **Variable label**:  Home ownership  
 **Variable name**:  soc_home_0    
