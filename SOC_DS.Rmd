@@ -1295,7 +1295,386 @@ output: html_document
 #This is where the R-script will be written
 
 ```
+### **Variable label**:  Life event: relationship problems          
+**Variable name**:  soc_le_relation_prob_0                        
+**Variable description**:  Respondent experienced relationship problems in the past few years.         
+**Value type**:  integer      
+**Variable unit**: **: N/A        
+**Category coding**:  
 
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No relationship problems
+1 |  Relationship problems
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: relationship problems          
+**Variable name**:  soc_le_relation_prob_1                        
+**Variable description**:  Respondent experienced relationship problems in the past few years.         
+**Value type**:  integer      
+**Variable unit**: **: N/A        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No relationship problems
+1 |  Relationship problems
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: relationship problems          
+**Variable name**:  soc_le_relation_prob_2                        
+**Variable description**:  Respondent experienced relationship problems in the past few years.         
+**Value type**:  integer      
+**Variable unit**: **: N/A        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No relationship problems
+1 |  Relationship problems
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: relationship problems          
+**Variable name**:  soc_le_relation_prob_3                        
+**Variable description**:  Respondent experienced relationship problems in the past few years.         
+**Value type**:  integer      
+**Variable unit**: **: N/A        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No relationship problems
+1 |  Relationship problems
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: relationship problems          
+**Variable name**:  soc_le_relation_prob_4                        
+**Variable description**:  Respondent experienced relationship problems in the past few years.         
+**Value type**:  integer      
+**Variable unit**: **: N/A        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No relationship problems
+1 |  Relationship problems
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: relationship problems          
+**Variable name**:  soc_le_relation_prob_5                        
+**Variable description**:  Respondent experienced relationship problems in the past few years.         
+**Value type**:  integer      
+**Variable unit**: **: N/A        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No relationship problems
+1 |  Relationship problems
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: relationship problems          
+**Variable name**:  soc_le_relation_prob_6                        
+**Variable description**:  Respondent experienced relationship problems in the past few years.         
+**Value type**:  integer      
+**Variable unit**: **: N/A        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No relationship problems
+1 |  Relationship problems
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: illness of family member          
+**Variable name**:  soc_le_ill_fam_0                                  
+**Variable description**:  Respondent indicated that the illness of family member (partner or other member) occurred in the past few years.        
+**Value type**:  integer      
+**Variable unit**: **: N/A        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No illness of family member 
+1 |  Illness of family member 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: illness of family member          
+**Variable name**:  soc_le_ill_fam_1                                  
+**Variable description**:  Respondent indicated that the illness of family member (partner or other member) occurred in the past few years.        
+**Value type**:  integer      
+**Variable unit**: **: N/A        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No illness of family member 
+1 |  Illness of family member 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: illness of family member          
+**Variable name**:  soc_le_ill_fam_2                                  
+**Variable description**:  Respondent indicated that the illness of family member (partner or other member) occurred in the past few years.        
+**Value type**:  integer      
+**Variable unit**: **: N/A        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No illness of family member 
+1 |  Illness of family member 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: illness of family member          
+**Variable name**:  soc_le_ill_fam_3                                  
+**Variable description**:  Respondent indicated that the illness of family member (partner or other member) occurred in the past few years.        
+**Value type**:  integer      
+**Variable unit**: **: N/A        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No illness of family member 
+1 |  Illness of family member 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: illness of family member          
+**Variable name**:  soc_le_ill_fam_4                                  
+**Variable description**:  Respondent indicated that the illness of family member (partner or other member) occurred in the past few years.        
+**Value type**:  integer      
+**Variable unit**: **: N/A        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No illness of family member 
+1 |  Illness of family member 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: illness of family member          
+**Variable name**:  soc_le_ill_fam_5                                  
+**Variable description**:  Respondent indicated that the illness of family member (partner or other member) occurred in the past few years.        
+**Value type**:  integer      
+**Variable unit**: **: N/A        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No illness of family member 
+1 |  Illness of family member 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: illness of family member          
+**Variable name**:  soc_le_ill_fam_6                                  
+**Variable description**:  Respondent indicated that the illness of family member (partner or other member) occurred in the past few years.        
+**Value type**:  integer      
+**Variable unit**: **: N/A        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No illness of family member 
+1 |  Illness of family member 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: death of partner            
+**Variable name**:  soc_le_death_part_0                                                        
+**Variable description**:  Respondent’s partner/ spouse died in the past few years.           
+**Value type**:  integer      
+**Variable unit**: **: N/A        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Partner did not die 
+1 |  Partner died 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: death of partner            
+**Variable name**:  soc_le_death_part_1                                                        
+**Variable description**:  Respondent’s partner/ spouse died in the past few years.           
+**Value type**:  integer      
+**Variable unit**: **: N/A        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Partner did not die 
+1 |  Partner died 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: death of partner            
+**Variable name**:  soc_le_death_part_2                                                        
+**Variable description**:  Respondent’s partner/ spouse died in the past few years.           
+**Value type**:  integer      
+**Variable unit**: **: N/A        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Partner did not die 
+1 |  Partner died 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: death of family member or friend           
+**Variable name**:  soc_le_death_close_0                                                        
+**Variable description**:  Respondent’s child or relative or friend died  in the past few years        
+**Value type**:  integer      
+**Variable unit**: **: N/A        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No death of child/relative /friend
+1 |  Death of child/relative /friend
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+## **Variable label**:  Life event: death of family member or friend           
+**Variable name**:  soc_le_death_close_1                                                        
+**Variable description**:  Respondent’s child or relative or friend died  in the past few years        
+**Value type**:  integer      
+**Variable unit**: **: N/A        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No death of child/relative /friend
+1 |  Death of child/relative /friend
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+## **Variable label**:  Life event: death of family member or friend           
+**Variable name**:  soc_le_death_close_2                                                        
+**Variable description**:  Respondent’s child or relative or friend died  in the past few years        
+**Value type**:  integer      
+**Variable unit**: **: N/A        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No death of child/relative /friend
+1 |  Death of child/relative /friend
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
 # Residential characteristics subdomain
 
 ### **Variable label**:  Residential stability   
