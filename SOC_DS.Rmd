@@ -1620,7 +1620,7 @@ output: html_document
 ```
 ### **Variable label**:  Life event: death of family member or friend           
 **Variable name**:  soc_le_death_close_0                                                        
-**Variable description**:  Respondent’s child or relative or friend died  in the past few years        
+**Variable description**:  Respondent’s child or relative or friend died  in the past few years.        
 **Value type**:  integer      
 **Variable unit**: **: N/A        
 **Category coding**:  
@@ -1639,7 +1639,7 @@ output: html_document
 ```
 ## **Variable label**:  Life event: death of family member or friend           
 **Variable name**:  soc_le_death_close_1                                                        
-**Variable description**:  Respondent’s child or relative or friend died  in the past few years        
+**Variable description**:  Respondent’s child or relative or friend died  in the past few years.        
 **Value type**:  integer      
 **Variable unit**: **: N/A        
 **Category coding**:  
@@ -1658,7 +1658,7 @@ output: html_document
 ```
 ## **Variable label**:  Life event: death of family member or friend           
 **Variable name**:  soc_le_death_close_2                                                        
-**Variable description**:  Respondent’s child or relative or friend died  in the past few years        
+**Variable description**:  Respondent’s child or relative or friend died  in the past few years.        
 **Value type**:  integer      
 **Variable unit**: **: N/A        
 **Category coding**:  
