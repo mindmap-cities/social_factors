@@ -1029,6 +1029,275 @@ output: html_document
 
 # Major life events subdomain
 
+### **Variable label**:  Life event: victim     
+**Variable name**:  soc_le_vic_0         
+**Variable description**:  Respondent was the victim of a crime (i.e. theft, assault) in the past few years.    
+**Value type**:  integer    
+**Variable unit**: **: N/A      
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not a victim
+1 |  Victim
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: victim     
+**Variable name**:  soc_le_vic_1           
+**Variable description**:  Respondent was the victim of a crime (i.e. theft, assault) in the past few years.    
+**Value type**:  integer    
+**Variable unit**: **: N/A      
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not a victim
+1 |  Victim
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: victim     
+**Variable name**:  soc_le_vic_2           
+**Variable description**:  Respondent was the victim of a crime (i.e. theft, assault) in the past few years.    
+**Value type**:  integer    
+**Variable unit**: **: N/A      
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not a victim
+1 |  Victim
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: victim     
+**Variable name**:  soc_le_vic_3           
+**Variable description**:  Respondent was the victim of a crime (i.e. theft, assault) in the past few years.    
+**Value type**:  integer    
+**Variable unit**: **: N/A      
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not a victim
+1 |  Victim
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: victim     
+**Variable name**:  soc_le_vic_4           
+**Variable description**:  Respondent was the victim of a crime (i.e. theft, assault) in the past few years.    
+**Value type**:  integer    
+**Variable unit**: **: N/A      
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not a victim
+1 |  Victim
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: victim     
+**Variable name**:  soc_le_vic_5           
+**Variable description**:  Respondent was the victim of a crime (i.e. theft, assault) in the past few years.    
+**Value type**:  integer    
+**Variable unit**: **: N/A      
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not a victim
+1 |  Victim
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: victim     
+**Variable name**:  soc_le_vic_6           
+**Variable description**:  Respondent was the victim of a crime (i.e. theft, assault) in the past few years.    
+**Value type**:  integer    
+**Variable unit**: **: N/A      
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not a victim
+1 |  Victim
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: financial problems      
+**Variable name**:  soc_le_finance_prob_0             
+**Variable description**:  Respondent experienced financial problems in the past few years.        
+**Value type**:  integer      
+**Variable unit**: **: N/A        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No financial problems
+1 |  Financial problems 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: financial problems      
+**Variable name**:  soc_le_finance_prob_1             
+**Variable description**:  Respondent experienced financial problems in the past few years.        
+**Value type**:  integer      
+**Variable unit**: **: N/A        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No financial problems
+1 |  Financial problems 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: financial problems      
+**Variable name**:  soc_le_finance_prob_2             
+**Variable description**:  Respondent experienced financial problems in the past few years.        
+**Value type**:  integer      
+**Variable unit**: **: N/A        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No financial problems
+1 |  Financial problems 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: financial problems      
+**Variable name**:  soc_le_finance_prob_3               
+**Variable description**:  Respondent experienced financial problems in the past few years.        
+**Value type**:  integer      
+**Variable unit**: **: N/A        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No financial problems
+1 |  Financial problems 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: financial problems      
+**Variable name**:  soc_le_finance_prob_4             
+**Variable description**:  Respondent experienced financial problems in the past few years.        
+**Value type**:  integer      
+**Variable unit**: **: N/A        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No financial problems
+1 |  Financial problems 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: financial problems      
+**Variable name**:  soc_le_finance_prob_5               
+**Variable description**:  Respondent experienced financial problems in the past few years.        
+**Value type**:  integer      
+**Variable unit**: **: N/A        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No financial problems
+1 |  Financial problems 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: financial problems      
+**Variable name**:  soc_le_finance_prob_6               
+**Variable description**:  Respondent experienced financial problems in the past few years.        
+**Value type**:  integer      
+**Variable unit**: **: N/A        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No financial problems
+1 |  Financial problems 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+
+# Residential characteristics subdomain
+
 ### **Variable label**:  Residential stability   
 **Variable name**:  soc_resstab_home_0  
 **Variable description**:  Number of years living at current home/address  
@@ -1067,8 +1336,6 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-
-# Residential characteristics subdomain
 
 ### **Variable label**:  Home ownership  
 **Variable name**:  soc_home_0    
