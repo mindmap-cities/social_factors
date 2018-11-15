@@ -2554,6 +2554,314 @@ output: html_document
 #This is where the R-script will be written
 
 ```
+## **Variable label**:  Religious membership    
+**Variable name**:  soc_sp_mem_religious_0        
+**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Not a member of a religious organization 
+1 |   Member of a religious organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+## **Variable label**:  Religious membership    
+**Variable name**:  soc_sp_mem_religious_1        
+**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Not a member of a religious organization 
+1 |   Member of a religious organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+## **Variable label**:  Religious membership    
+**Variable name**:  soc_sp_mem_religious_2        
+**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Not a member of a religious organization 
+1 |   Member of a religious organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+## **Variable label**:  Religious membership    
+**Variable name**:  soc_sp_mem_religious_3        
+**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Not a member of a religious organization 
+1 |   Member of a religious organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+## **Variable label**:  Religious membership    
+**Variable name**:  soc_sp_mem_religious_4        
+**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Not a member of a religious organization 
+1 |   Member of a religious organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+## **Variable label**:  Religious membership    
+**Variable name**:  soc_sp_mem_religious_5        
+**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Not a member of a religious organization 
+1 |   Member of a religious organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+## **Variable label**:  Religious membership    
+**Variable name**:  soc_sp_mem_religious_6        
+**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Not a member of a religious organization 
+1 |   Member of a religious organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+## **Variable label**:  Religious participation 
+**Variable name**:  soc_sp_religious_0        
+**Variable description**:  Indicator of participation in a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   No participation in a religious organization   
+1 |   Participation in a religious organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+## **Variable label**:  Religious participation 
+**Variable name**:  soc_sp_religious_1        
+**Variable description**:  Indicator of participation in a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   No participation in a religious organization   
+1 |   Participation in a religious organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+## **Variable label**:  Religious participation 
+**Variable name**:  soc_sp_religious_2        
+**Variable description**:  Indicator of participation in a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   No participation in a religious organization   
+1 |   Participation in a religious organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+## **Variable label**:  Religious participation 
+**Variable name**:  soc_sp_religious_3        
+**Variable description**:  Indicator of participation in a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   No participation in a religious organization   
+1 |   Participation in a religious organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+## **Variable label**:  Religious participation 
+**Variable name**:  soc_sp_religious_4        
+**Variable description**:  Indicator of participation in a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   No participation in a religious organization   
+1 |   Participation in a religious organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+## **Variable label**:  Religious participation 
+**Variable name**:  soc_sp_religious_5        
+**Variable description**:  Indicator of participation in a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   No participation in a religious organization   
+1 |   Participation in a religious organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+## **Variable label**:  Religious participation 
+**Variable name**:  soc_sp_religious_6        
+**Variable description**:  Indicator of participation in a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   No participation in a religious organization   
+1 |   Participation in a religious organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+## **Variable label**:  Religious participation 
+**Variable name**:  soc_sp_religious_7        
+**Variable description**:  Indicator of participation in a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   No participation in a religious organization   
+1 |   Participation in a religious organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+# **Variable label**:  Frequency of religious participation 
+**Variable name**:  soc_sp_freq_religious_0        
+**Variable description**:  Indicator of the frequency of participation in a religious organization.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Weekly participation in religious organization 
+2 | Less than monthly  participation in religious organization
+3 | Monthly participation in religious organization
+4 | Never participates in religious organization
+5 | No answer/don’t know regarding participation in religious organization
+
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
 
 # Major life events subdomain
 
