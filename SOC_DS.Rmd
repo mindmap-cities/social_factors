@@ -431,11 +431,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Daily  
-1 |  Weekly 
-2 |  Biweekly  
-3 |  Monthly 
-4 |  Never or less than a year
+1 |  Daily in-person contact with friends  
+2 |  Weekly in-person contact with friends  
+3 |  Biweekly in-person contact with friends   
+4 |  Monthly in-person contact with friends   
+5 |  Never or less than a year in-person contact with friends  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -453,11 +453,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Daily  
-1 |  Weekly 
-2 |  Biweekly  
-3 |  Monthly 
-4 |  Never or less than a year  
+1 |  Daily in-person contact with friends  
+2 |  Weekly in-person contact with friends  
+3 |  Biweekly in-person contact with friends   
+4 |  Monthly in-person contact with friends   
+5 |  Never or less than a year in-person contact with friends     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -475,11 +475,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Daily  
-1 |  Weekly 
-2 |  Biweekly  
-3 |  Monthly 
-4 |  Never or less than a year  
+1 |  Daily in-person contact with friends  
+2 |  Weekly in-person contact with friends  
+3 |  Biweekly in-person contact with friends   
+4 |  Monthly in-person contact with friends   
+5 |  Never or less than a year in-person contact with friends  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -497,11 +497,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Daily  
-1 |  Weekly 
-2 |  Biweekly  
-3 |  Monthly 
-4 |  Never or less than a year  
+1 |  Daily in-person contact with friends  
+2 |  Weekly in-person contact with friends  
+3 |  Biweekly in-person contact with friends   
+4 |  Monthly in-person contact with friends   
+5 |  Never or less than a year in-person contact with friends       
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -519,55 +519,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Daily  
-1 |  Weekly 
-2 |  Biweekly  
-3 |  Monthly 
-4 |  Never or less than a year  
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-``` 
-### **Variable label**:   In-person contact frequency with friends        
-**Variable name**:   soc_sn_freq_friends_inperson_5       
-**Variable description**:   Indicator of in-person contact frequency with close friends. This is a different variable than soc_sn_freq_friends, which is an indicator for contact frequency but not necessarily in-person contact.    
-**Value type**:  integer  
-**Variable unit**:   
-**Category coding**:    
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Daily  
-1 |  Weekly 
-2 |  Biweekly  
-3 |  Monthly 
-4 |  Never or less than a year  
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-``` 
-### **Variable label**:   In-person contact frequency with friends         
-**Variable name**:   soc_sn_freq_friends_inperson_6       
-**Variable description**:   Indicator of in-person contact frequency with close friends. This is a different variable than soc_sn_freq_friends, which is an indicator for contact frequency but not necessarily in-person contact.    
-**Value type**:  integer  
-**Variable unit**:   
-**Category coding**:    
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Daily  
-1 |  Weekly 
-2 |  Biweekly  
-3 |  Monthly 
-4 |  Never or less than a year  
+1 |  Daily in-person contact with friends  
+2 |  Weekly in-person contact with friends  
+3 |  Biweekly in-person contact with friends   
+4 |  Monthly in-person contact with friends   
+5 |  Never or less than a year in-person contact with friends    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -585,11 +541,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Daily  
-1 |  Weekly 
-2 |  Biweekly  
-3 |  Monthly 
-4 |  Never or less than a year  
+1 |  Daily contact with friends 
+2 |  Weekly contact with friends
+3 |  Biweekly contact with friends
+4 |  Monthly contact with friends
+5 |  Never or less than a year contact with friends
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -607,11 +563,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Daily  
-1 |  Weekly 
-2 |  Biweekly  
-3 |  Monthly 
-4 |  Never or less than a year  
+1 |  Daily contact with friends 
+2 |  Weekly contact with friends
+3 |  Biweekly contact with friends
+4 |  Monthly contact with friends
+5 |  Never or less than a year contact with friends 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -629,11 +585,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Daily  
-1 |  Weekly 
-2 |  Biweekly  
-3 |  Monthly 
-4 |  Never or less than a year  
+1 |  Daily contact with friends 
+2 |  Weekly contact with friends
+3 |  Biweekly contact with friends
+4 |  Monthly contact with friends
+5 |  Never or less than a year contact with friends 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -651,11 +607,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Daily  
-1 |  Weekly 
-2 |  Biweekly  
-3 |  Monthly 
-4 |  Never or less than a year  
+1 |  Daily contact with friends 
+2 |  Weekly contact with friends
+3 |  Biweekly contact with friends
+4 |  Monthly contact with friends
+5 |  Never or less than a year contact with friends
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -673,11 +629,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Daily  
-1 |  Weekly 
-2 |  Biweekly  
-3 |  Monthly 
-4 |  Never or less than a year  
+1 |  Daily contact with friends 
+2 |  Weekly contact with friends
+3 |  Biweekly contact with friends
+4 |  Monthly contact with friends
+5 |  Never or less than a year contact with friends  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -695,11 +651,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Daily  
-1 |  Weekly 
-2 |  Biweekly  
-3 |  Monthly 
-4 |  Never or less than a year  
+1 |  Daily contact with friends 
+2 |  Weekly contact with friends
+3 |  Biweekly contact with friends
+4 |  Monthly contact with friends
+5 |  Never or less than a year contact with friends  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -717,11 +673,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Daily  
-1 |  Weekly 
-2 |  Biweekly  
-3 |  Monthly 
-4 |  Never or less than a year  
+1 |  Daily contact with friends 
+2 |  Weekly contact with friends
+3 |  Biweekly contact with friends
+4 |  Monthly contact with friends
+5 |  Never or less than a year contact with friends 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -739,12 +695,12 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | None 
-2 | 1 or 2 
-3 | 3 to 5 
-4 | 6 to 10 
-5 | 11 to 20 
-6 | More than 20   
+1 | No neighbours 
+2 | 1 or 2 neighbours 
+3 | 3 to 5 neighbours 
+4 | 6 to 10 neighbours 
+5 | 11 to 20 neighbours 
+6 | More than 20 neighbours   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -762,12 +718,12 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | None 
-2 | 1 or 2 
-3 | 3 to 5 
-4 | 6 to 10 
-5 | 11 to 20 
-6 | More than 20   
+1 | No neighbours 
+2 | 1 or 2 neighbours 
+3 | 3 to 5 neighbours 
+4 | 6 to 10 neighbours 
+5 | 11 to 20 neighbours 
+6 | More than 20 neighbours    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -785,12 +741,12 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | None 
-2 | 1 or 2 
-3 | 3 to 5 
-4 | 6 to 10 
-5 | 11 to 20 
-6 | More than 20   
+1 | No neighbours 
+2 | 1 or 2 neighbours 
+3 | 3 to 5 neighbours 
+4 | 6 to 10 neighbours 
+5 | 11 to 20 neighbours 
+6 | More than 20 neighbours    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -808,12 +764,12 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | None 
-2 | 1 or 2 
-3 | 3 to 5 
-4 | 6 to 10 
-5 | 11 to 20 
-6 | More than 20   
+1 | No neighbours 
+2 | 1 or 2 neighbours 
+3 | 3 to 5 neighbours 
+4 | 6 to 10 neighbours 
+5 | 11 to 20 neighbours 
+6 | More than 20 neighbours    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -831,12 +787,12 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | None 
-2 | 1 or 2 
-3 | 3 to 5 
-4 | 6 to 10 
-5 | 11 to 20 
-6 | More than 20   
+1 | No neighbours 
+2 | 1 or 2 neighbours 
+3 | 3 to 5 neighbours 
+4 | 6 to 10 neighbours 
+5 | 11 to 20 neighbours 
+6 | More than 20 neighbours    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -854,12 +810,12 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | None 
-2 | 1 or 2 
-3 | 3 to 5 
-4 | 6 to 10 
-5 | 11 to 20 
-6 | More than 20   
+1 | No neighbours 
+2 | 1 or 2 neighbours 
+3 | 3 to 5 neighbours 
+4 | 6 to 10 neighbours 
+5 | 11 to 20 neighbours 
+6 | More than 20 neighbours    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -877,12 +833,12 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | None 
-2 | 1 or 2 
-3 | 3 to 5 
-4 | 6 to 10 
-5 | 11 to 20 
-6 | More than 20   
+1 | No neighbours 
+2 | 1 or 2 neighbours 
+3 | 3 to 5 neighbours 
+4 | 6 to 10 neighbours 
+5 | 11 to 20 neighbours 
+6 | More than 20 neighbours 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -901,11 +857,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily
-2 | Weekly 
-3 | Biweekly
-4 | Monthly 
-5 | Never or less than a year   
+1 | Daily contact with neighbours
+2 | Weekly contact with neighbours
+3 | Biweekly contact with neighbours
+4 | Monthly contact with neighbours
+5 | Never or less than a year contact with neighbours  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -923,11 +879,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily
-2 | Weekly 
-3 | Biweekly
-4 | Monthly 
-5 | Never or less than a year   
+1 | Daily contact with neighbours
+2 | Weekly contact with neighbours
+3 | Biweekly contact with neighbours
+4 | Monthly contact with neighbours
+5 | Never or less than a year contact with neighbours  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -945,11 +901,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily
-2 | Weekly 
-3 | Biweekly
-4 | Monthly 
-5 | Never or less than a year   
+1 | Daily contact with neighbours
+2 | Weekly contact with neighbours
+3 | Biweekly contact with neighbours
+4 | Monthly contact with neighbours
+5 | Never or less than a year contact with neighbours   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -967,11 +923,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily
-2 | Weekly 
-3 | Biweekly
-4 | Monthly 
-5 | Never or less than a year   
+1 | Daily contact with neighbours
+2 | Weekly contact with neighbours
+3 | Biweekly contact with neighbours
+4 | Monthly contact with neighbours
+5 | Never or less than a year contact with neighbours    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -989,11 +945,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily
-2 | Weekly 
-3 | Biweekly
-4 | Monthly 
-5 | Never or less than a year   
+1 | Daily contact with neighbours
+2 | Weekly contact with neighbours
+3 | Biweekly contact with neighbours
+4 | Monthly contact with neighbours
+5 | Never or less than a year contact with neighbours    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1011,11 +967,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily
-2 | Weekly 
-3 | Biweekly
-4 | Monthly 
-5 | Never or less than a year   
+1 | Daily contact with neighbours
+2 | Weekly contact with neighbours
+3 | Biweekly contact with neighbours
+4 | Monthly contact with neighbours
+5 | Never or less than a year contact with neighbours    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1033,11 +989,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily
-2 | Weekly 
-3 | Biweekly
-4 | Monthly 
-5 | Never or less than a year   
+1 | Daily contact with neighbours
+2 | Weekly contact with neighbours
+3 | Biweekly contact with neighbours
+4 | Monthly contact with neighbours
+5 | Never or less than a year contact with neighbours   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1179,7 +1135,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Contact frequency with and relatives and children     
+### **Variable label**:   Contact frequency with family   
 **Variable name**:   soc_sn_freq_fam_0    
 **Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
 **Value type**:  integer  
@@ -1188,10 +1144,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly 
-2 | Biweekly
-3 | Monthly 
-4 | Never or less than a year  
+1 | Daily or weekly contact with close family
+2 | Biweekly contact with close family
+3 | Monthly contact with close family
+4 | Never or less than a year contact with close family   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1200,8 +1156,8 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Contact frequency with and relatives and children     
-**Variable name**:   soc_sn_freq_fam_0    
+### **Variable label**:   Contact frequency with family     
+**Variable name**:   soc_sn_freq_fam_1    
 **Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
 **Value type**:  integer  
 **Variable unit**:      
@@ -1209,10 +1165,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly 
-2 | Biweekly
-3 | Monthly 
-4 | Never or less than a year  
+1 | Daily or weekly contact with close family
+2 | Biweekly contact with close family
+3 | Monthly contact with close family
+4 | Never or less than a year contact with close family    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1221,8 +1177,8 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Contact frequency with and relatives and children     
-**Variable name**:   soc_sn_freq_fam_0    
+### **Variable label**:   Contact frequency with family    
+**Variable name**:   soc_sn_freq_fam_2    
 **Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
 **Value type**:  integer  
 **Variable unit**:      
@@ -1230,10 +1186,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly 
-2 | Biweekly
-3 | Monthly 
-4 | Never or less than a year  
+1 | Daily or weekly contact with close family
+2 | Biweekly contact with close family
+3 | Monthly contact with close family
+4 | Never or less than a year contact with close family       
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1242,70 +1198,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Contact frequency with and relatives and children     
-**Variable name**:   soc_sn_freq_fam_0      
-**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
-**Value type**:  integer  
-**Variable unit**:      
-**Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-1 | Daily or weekly 
-2 | Biweekly
-3 | Monthly 
-4 | Never or less than a year  
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Contact frequency with and relatives and children     
-**Variable name**:   soc_sn_freq_fam_1      
-**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
-**Value type**:  integer  
-**Variable unit**:      
-**Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-1 | Daily or weekly 
-2 | Biweekly
-3 | Monthly 
-4 | Never or less than a year  
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Contact frequency with and relatives and children     
-**Variable name**:   soc_sn_freq_fam_2      
-**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
-**Value type**:  integer  
-**Variable unit**:      
-**Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-1 | Daily or weekly 
-2 | Biweekly
-3 | Monthly 
-4 | Never or less than a year  
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Contact frequency with and relatives and children     
+### **Variable label**:   Contact frequency with family    
 **Variable name**:   soc_sn_freq_fam_3      
 **Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
 **Value type**:  integer  
@@ -1314,10 +1207,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly 
-2 | Biweekly
-3 | Monthly 
-4 | Never or less than a year  
+1 | Daily or weekly contact with close family
+2 | Biweekly contact with close family
+3 | Monthly contact with close family
+4 | Never or less than a year contact with close family     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1326,8 +1219,8 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Contact frequency with and relatives and children     
-**Variable name**:   soc_sn_freq_fam_4        
+### **Variable label**:   Contact frequency with family   
+**Variable name**:   soc_sn_freq_fam_4      
 **Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
 **Value type**:  integer  
 **Variable unit**:      
@@ -1335,10 +1228,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly 
-2 | Biweekly
-3 | Monthly 
-4 | Never or less than a year  
+1 | Daily or weekly contact with close family
+2 | Biweekly contact with close family
+3 | Monthly contact with close family
+4 | Never or less than a year contact with close family      
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1347,8 +1240,8 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Contact frequency with and relatives and children     
-**Variable name**:   soc_sn_freq_fam_5        
+### **Variable label**:   Contact frequency with family    
+**Variable name**:   soc_sn_freq_fam_5      
 **Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
 **Value type**:  integer  
 **Variable unit**:      
@@ -1356,10 +1249,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly 
-2 | Biweekly
-3 | Monthly 
-4 | Never or less than a year  
+1 | Daily or weekly contact with close family
+2 | Biweekly contact with close family
+3 | Monthly contact with close family
+4 | Never or less than a year contact with close family      
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1368,8 +1261,8 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Contact frequency with and relatives and children     
-**Variable name**:   soc_sn_freq_fam_6        
+### **Variable label**:   Contact frequency with family    
+**Variable name**:   soc_sn_freq_fam_6      
 **Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
 **Value type**:  integer  
 **Variable unit**:      
@@ -1377,10 +1270,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly 
-2 | Biweekly
-3 | Monthly 
-4 | Never or less than a year  
+1 | Daily or weekly contact with close family
+2 | Biweekly contact with close family
+3 | Monthly contact with close family
+4 | Never or less than a year contact with close family    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1389,8 +1282,9 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Contact frequency with and relatives and children (broad)    
-**Variable name**:   soc_sn_freq_fam_broad_0        
+
+### **Variable label**:   Contact frequency with relatives   
+**Variable name**:   soc_sn_freq_relatives_0        
 **Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
 **Value type**:  integer  
 **Variable unit**:      
@@ -1398,10 +1292,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly 
-2 | Biweekly
-3 | Monthly 
-4 | Never or less than a year  
+1 | Daily or weekly contact with relatives 
+2 | Biweekly contact with relatives 
+3 | Monthly contact with relatives 
+4 | Never or less than a year contact with relatives  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1410,8 +1304,8 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Contact frequency with and relatives and children (broad)    
-**Variable name**:   soc_sn_freq_fam_broad_1          
+### **Variable label**:   Contact frequency with relatives      
+**Variable name**:   soc_sn_freq_relatives_1          
 **Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
 **Value type**:  integer  
 **Variable unit**:      
@@ -1419,10 +1313,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly 
-2 | Biweekly
-3 | Monthly 
-4 | Never or less than a year  
+1 | Daily or weekly contact with relatives 
+2 | Biweekly contact with relatives 
+3 | Monthly contact with relatives 
+4 | Never or less than a year contact with relatives  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1431,8 +1325,8 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Contact frequency with and relatives and children (broad)    
-**Variable name**:   soc_sn_freq_fam_broad_2          
+### **Variable label**:   Contact frequency with relatives     
+**Variable name**:   soc_sn_freq_relatives_2          
 **Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
 **Value type**:  integer  
 **Variable unit**:      
@@ -1440,10 +1334,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly 
-2 | Biweekly
-3 | Monthly 
-4 | Never or less than a year  
+1 | Daily or weekly contact with relatives 
+2 | Biweekly contact with relatives 
+3 | Monthly contact with relatives 
+4 | Never or less than a year contact with relatives  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1452,8 +1346,8 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Contact frequency with and relatives and children (broad)    
-**Variable name**:   soc_sn_freq_fam_broad_3          
+### **Variable label**:   Contact frequency with relatives    
+**Variable name**:   soc_sn_freq_relatives_3          
 **Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
 **Value type**:  integer  
 **Variable unit**:      
@@ -1461,10 +1355,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly 
-2 | Biweekly
-3 | Monthly 
-4 | Never or less than a year  
+1 | Daily or weekly contact with relatives 
+2 | Biweekly contact with relatives 
+3 | Monthly contact with relatives 
+4 | Never or less than a year contact with relatives    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1473,8 +1367,8 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Contact frequency with and relatives and children (broad)    
-**Variable name**:   soc_sn_freq_fam_broad_4          
+### **Variable label**:   Contact frequency with relatives    
+**Variable name**:   soc_sn_freq_relatives_4          
 **Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
 **Value type**:  integer  
 **Variable unit**:      
@@ -1482,10 +1376,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly 
-2 | Biweekly
-3 | Monthly 
-4 | Never or less than a year  
+1 | Daily or weekly contact with relatives 
+2 | Biweekly contact with relatives 
+3 | Monthly contact with relatives 
+4 | Never or less than a year contact with relatives  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1494,8 +1388,8 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Contact frequency with and relatives and children (broad)    
-**Variable name**:   soc_sn_freq_fam_broad_5          
+### **Variable label**:   Contact frequency with relatives     
+**Variable name**:   soc_sn_freq_relatives_5          
 **Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
 **Value type**:  integer  
 **Variable unit**:      
@@ -1503,10 +1397,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly 
-2 | Biweekly
-3 | Monthly 
-4 | Never or less than a year  
+1 | Daily or weekly contact with relatives 
+2 | Biweekly contact with relatives 
+3 | Monthly contact with relatives 
+4 | Never or less than a year contact with relatives  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1515,8 +1409,8 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Contact frequency with and relatives and children (broad)    
-**Variable name**:   soc_sn_freq_fam_broad_6          
+### **Variable label**:   Contact frequency with relatives    
+**Variable name**:   soc_sn_freq_relatives_6          
 **Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
 **Value type**:  integer  
 **Variable unit**:      
@@ -1524,10 +1418,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly 
-2 | Biweekly
-3 | Monthly 
-4 | Never or less than a year  
+1 | Daily or weekly contact with relatives 
+2 | Biweekly contact with relatives 
+3 | Monthly contact with relatives 
+4 | Never or less than a year contact with relatives  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1679,11 +1573,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily 
-2 | Weekly 
-3 | Biweekly
-4 | Monthly 
-5 | Never or less than a year    
+1 | Daily contact with non-kin
+2 | Weekly contact with non-kin
+3 | Biweekly contact with non-kin
+4 | Monthly contact with non-kin
+5 | Never or less than a year contact with non-kin   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1701,11 +1595,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily 
-2 | Weekly 
-3 | Biweekly
-4 | Monthly 
-5 | Never or less than a year  
+1 | Daily contact with non-kin
+2 | Weekly contact with non-kin
+3 | Biweekly contact with non-kin
+4 | Monthly contact with non-kin
+5 | Never or less than a year contact with non-kin  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1723,11 +1617,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily 
-2 | Weekly 
-3 | Biweekly
-4 | Monthly 
-5 | Never or less than a year   
+1 | Daily contact with non-kin
+2 | Weekly contact with non-kin
+3 | Biweekly contact with non-kin
+4 | Monthly contact with non-kin
+5 | Never or less than a year contact with non-kin    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1745,11 +1639,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily 
-2 | Weekly 
-3 | Biweekly
-4 | Monthly 
-5 | Never or less than a year   
+1 | Daily contact with non-kin
+2 | Weekly contact with non-kin
+3 | Biweekly contact with non-kin
+4 | Monthly contact with non-kin
+5 | Never or less than a year contact with non-kin  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1767,11 +1661,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily 
-2 | Weekly 
-3 | Biweekly
-4 | Monthly 
-5 | Never or less than a year  
+1 | Daily contact with non-kin
+2 | Weekly contact with non-kin
+3 | Biweekly contact with non-kin
+4 | Monthly contact with non-kin
+5 | Never or less than a year contact with non-kin  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1789,10 +1683,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly 
-2 | Biweekly
-3 | Monthly 
-4 | Never or less than a year  
+1 | Daily contact with non-kin
+2 | Weekly contact with non-kin
+3 | Biweekly contact with non-kin
+4 | Monthly contact with non-kin
+5 | Never or less than a year contact with non-kin  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1810,11 +1705,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily 
-2 | Weekly 
-3 | Biweekly
-4 | Monthly 
-5 | Never or less than a year  
+1 | Daily contact with non-kin
+2 | Weekly contact with non-kin
+3 | Biweekly contact with non-kin
+4 | Monthly contact with non-kin
+5 | Never or less than a year contact with non-kin  
 
 **Harmonization status**:  
 **Harmonization comment**:   
