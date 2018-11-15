@@ -1046,17 +1046,775 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Social isolation    
-**Variable name**:  soc_si_0  
-**Variable description**:  Respondent has no social contact with anyone (family, relatives, neighbours, friends, colleagues) and no membership in any association    
+### **Variable label**:   Network size of relatives      
+**Variable name**:   soc_sn_num_relatives_0    
+**Variable description**:  Indicator of the number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
 **Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
+**Variable unit**:      
+**Category coding**:   
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   yes
-1 |   no
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of relatives      
+**Variable name**:   soc_sn_num_relatives_1    
+**Variable description**:  Indicator of the number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of relatives      
+**Variable name**:   soc_sn_num_relatives_2    
+**Variable description**:  Indicator of the number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of relatives      
+**Variable name**:   soc_sn_num_relatives_3    
+**Variable description**:  Indicator of the number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of relatives      
+**Variable name**:   soc_sn_num_relatives_4    
+**Variable description**:  Indicator of the number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of relatives      
+**Variable name**:   soc_sn_num_relatives_5    
+**Variable description**:  Indicator of the number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of relatives      
+**Variable name**:   soc_sn_num_relatives_6    
+**Variable description**:  Indicator of the number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with and relatives and children     
+**Variable name**:   soc_sn_freq_fam_0    
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily or weekly 
+2 | Biweekly
+3 | Monthly 
+4 | Never or less than a year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with and relatives and children     
+**Variable name**:   soc_sn_freq_fam_0    
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily or weekly 
+2 | Biweekly
+3 | Monthly 
+4 | Never or less than a year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with and relatives and children     
+**Variable name**:   soc_sn_freq_fam_0    
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily or weekly 
+2 | Biweekly
+3 | Monthly 
+4 | Never or less than a year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with and relatives and children     
+**Variable name**:   soc_sn_freq_fam_0      
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily or weekly 
+2 | Biweekly
+3 | Monthly 
+4 | Never or less than a year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with and relatives and children     
+**Variable name**:   soc_sn_freq_fam_1      
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily or weekly 
+2 | Biweekly
+3 | Monthly 
+4 | Never or less than a year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with and relatives and children     
+**Variable name**:   soc_sn_freq_fam_2      
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily or weekly 
+2 | Biweekly
+3 | Monthly 
+4 | Never or less than a year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with and relatives and children     
+**Variable name**:   soc_sn_freq_fam_3      
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily or weekly 
+2 | Biweekly
+3 | Monthly 
+4 | Never or less than a year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with and relatives and children     
+**Variable name**:   soc_sn_freq_fam_4        
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily or weekly 
+2 | Biweekly
+3 | Monthly 
+4 | Never or less than a year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with and relatives and children     
+**Variable name**:   soc_sn_freq_fam_5        
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily or weekly 
+2 | Biweekly
+3 | Monthly 
+4 | Never or less than a year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with and relatives and children     
+**Variable name**:   soc_sn_freq_fam_6        
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily or weekly 
+2 | Biweekly
+3 | Monthly 
+4 | Never or less than a year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with and relatives and children (broad)    
+**Variable name**:   soc_sn_freq_fam_broad_0        
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily or weekly 
+2 | Biweekly
+3 | Monthly 
+4 | Never or less than a year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with and relatives and children (broad)    
+**Variable name**:   soc_sn_freq_fam_broad_1          
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily or weekly 
+2 | Biweekly
+3 | Monthly 
+4 | Never or less than a year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with and relatives and children (broad)    
+**Variable name**:   soc_sn_freq_fam_broad_2          
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily or weekly 
+2 | Biweekly
+3 | Monthly 
+4 | Never or less than a year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with and relatives and children (broad)    
+**Variable name**:   soc_sn_freq_fam_broad_3          
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily or weekly 
+2 | Biweekly
+3 | Monthly 
+4 | Never or less than a year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with and relatives and children (broad)    
+**Variable name**:   soc_sn_freq_fam_broad_4          
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily or weekly 
+2 | Biweekly
+3 | Monthly 
+4 | Never or less than a year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with and relatives and children (broad)    
+**Variable name**:   soc_sn_freq_fam_broad_5          
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily or weekly 
+2 | Biweekly
+3 | Monthly 
+4 | Never or less than a year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with and relatives and children (broad)    
+**Variable name**:   soc_sn_freq_fam_broad_6          
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily or weekly 
+2 | Biweekly
+3 | Monthly 
+4 | Never or less than a year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of non-kin      
+**Variable name**:   soc_sn_num_nonkin_0    
+**Variable description**:  Indicator of the number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of non-kin      
+**Variable name**:   soc_sn_num_nonkin_1      
+**Variable description**:  Indicator of the number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of non-kin      
+**Variable name**:   soc_sn_num_nonkin_2      
+**Variable description**:  Indicator of the number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of non-kin      
+**Variable name**:   soc_sn_num_nonkin_3      
+**Variable description**:  Indicator of the number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of non-kin      
+**Variable name**:   soc_sn_num_nonkin_4      
+**Variable description**:  Indicator of the number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of non-kin      
+**Variable name**:   soc_sn_num_nonkin_5      
+**Variable description**:  Indicator of the number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of non-kin      
+**Variable name**:   soc_sn_num_nonkin_6      
+**Variable description**:  Indicator of the number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+
+### **Variable label**:   Contact frequency with non-kin  
+**Variable name**:   soc_sn_freq_nonkin_0          
+**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily 
+2 | Weekly 
+3 | Biweekly
+4 | Monthly 
+5 | Never or less than a year    
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with non-kin  
+**Variable name**:   soc_sn_freq_nonkin_1            
+**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily 
+2 | Weekly 
+3 | Biweekly
+4 | Monthly 
+5 | Never or less than a year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with non-kin  
+**Variable name**:   soc_sn_freq_nonkin_2            
+**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily 
+2 | Weekly 
+3 | Biweekly
+4 | Monthly 
+5 | Never or less than a year   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with non-kin  
+**Variable name**:   soc_sn_freq_nonkin_3            
+**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily 
+2 | Weekly 
+3 | Biweekly
+4 | Monthly 
+5 | Never or less than a year   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with non-kin  
+**Variable name**:   soc_sn_freq_nonkin_4            
+**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily 
+2 | Weekly 
+3 | Biweekly
+4 | Monthly 
+5 | Never or less than a year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with non-kin  
+**Variable name**:   soc_sn_freq_nonkin_5          
+**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily or weekly 
+2 | Biweekly
+3 | Monthly 
+4 | Never or less than a year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with non-kin  
+**Variable name**:   soc_sn_freq_nonkin_6          
+**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily 
+2 | Weekly 
+3 | Biweekly
+4 | Monthly 
+5 | Never or less than a year  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1087,266 +1845,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**: Received emotional support    
-**Variable name**:   soc_ss_rec_emo_1 
-**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from.  
-**Value type**:  
-**Variable unit**:  
-**Category coding**:  
 
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   Never
-1 |   Sometimes
-2 |   Often
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support    
-**Variable name**:   soc_ss_rec_emo_2 
-**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from.  
-**Value type**:  
-**Variable unit**:  
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   Never
-1 |   Sometimes
-2 |   Often
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support    
-**Variable name**:   soc_ss_rec_emo_3 
-**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from.  
-**Value type**:  
-**Variable unit**:  
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   Never
-1 |   Sometimes
-2 |   Often
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support    
-**Variable name**:   soc_ss_rec_emo_4 
-**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from.  
-**Value type**:  
-**Variable unit**:  
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   Never
-1 |   Sometimes
-2 |   Often
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support    
-**Variable name**:   soc_ss_rec_emo_5 
-**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from.  
-**Value type**:  
-**Variable unit**:  
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   Never
-1 |   Sometimes
-2 |   Often
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support    
-**Variable name**:   soc_ss_rec_emo_6 
-**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from.  
-**Value type**:  
-**Variable unit**:  
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   Never
-1 |   Sometimes
-2 |   Often
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Ranked received emotional support average     
-**Variable name**:   soc_ss_rec_emo_rank_0
-**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from. 
-**Value type**:  
-**Variable unit**:  
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   Never
-1 |   Sometimes
-2 |   Often
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Ranked received emotional support average     
-**Variable name**:   soc_ss_rec_emo_rank_1
-**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from. 
-**Value type**:  
-**Variable unit**:  
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   Never
-1 |   Sometimes
-2 |   Often
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Ranked received emotional support average     
-**Variable name**:   soc_ss_rec_emo_rank_2
-**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from. 
-**Value type**:  
-**Variable unit**:  
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   Never
-1 |   Sometimes
-2 |   Often
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Ranked received emotional support average     
-**Variable name**:   soc_ss_rec_emo_rank_3
-**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from. 
-**Value type**:  
-**Variable unit**:  
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   Never
-1 |   Sometimes
-2 |   Often
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Ranked received emotional support average     
-**Variable name**:   soc_ss_rec_emo_rank_4
-**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from. 
-**Value type**:  
-**Variable unit**:  
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   Never
-1 |   Sometimes
-2 |   Often
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Ranked received emotional support average     
-**Variable name**:   soc_ss_rec_emo_rank_5
-**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from. 
-**Value type**:  
-**Variable unit**:  
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   Never
-1 |   Sometimes
-2 |   Often
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Ranked received emotional support average     
-**Variable name**:   soc_ss_rec_emo_rank_6
-**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from. 
-**Value type**:  
-**Variable unit**:  
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   Never
-1 |   Sometimes
-2 |   Often
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
 ### **Variable label**: Perceived social support    
 **Variable name**:   soc_ss_perceived_0    
 **Variable description**:  respondant feels they have received support from   
@@ -1407,17 +1906,17 @@ output: html_document
 
 # Social participation subdomain
 
-### **Variable label**:  
-**Variable name**:  
-**Variable description**:  
-**Value type**:  
-**Variable unit**:  
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_0  
+**Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   
-1 |   
+0 |   Not socially isolated, has social network and/ or social participation 
+1 |   Socially isolated, no social network and no social participation 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1426,7 +1925,139 @@ output: html_document
 #This is where the R-script will be written
 
 ```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_1  
+**Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
 
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Not socially isolated, has social network and/ or social participation 
+1 |   Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+## **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_2  
+**Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Not socially isolated, has social network and/ or social participation 
+1 |   Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+## **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_3  
+**Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Not socially isolated, has social network and/ or social participation 
+1 |   Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+## **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_4  
+**Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Not socially isolated, has social network and/ or social participation 
+1 |   Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+## **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_5  
+**Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Not socially isolated, has social network and/ or social participation 
+1 |   Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+## **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_6  
+**Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Not socially isolated, has social network and/ or social participation 
+1 |   Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+## **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_7  
+**Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Not socially isolated, has social network and/ or social participation 
+1 |   Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
 
 # Major life events subdomain
 
