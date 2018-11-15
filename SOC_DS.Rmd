@@ -145,9 +145,9 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Network size of children rank       
+### **Variable label**:   Ranked network size of children         
 **Variable name**:   soc_sn_children_rank_0      
-**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has. It is measured by ranking the size of the network comprised of any type of child (biological, step, adoptive, foster, in-law son/daughter).  Low rank indicates no children.  Note: cohorts inquire about different types of children due to the particular questionnaire used, therefore a childless respondent in one of the studies would not be necessarily considered childless in another study.                 
+**Variable description**:  Indicator of whether the participant has a low, medium or high network size compromised of children. It is measured by ranking the size of the network which is comprised of any type of child (biological, step, adoptive, foster, in-law son/daughter).  Low rank indicates no children.  Note: cohorts inquire about different types of children due to the particular questionnaire used, therefore a childless respondent in one study would not necessarily be considered childless in another study.  
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
@@ -166,9 +166,9 @@ output: html_document
 
 ```
 
-### **Variable label**:   Network size of children rank         
+### **Variable label**:   Ranked network size of children           
 **Variable name**:   soc_sn_children_rank_1      
-**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has. It is measured by ranking the size of the network comprised of any type of child (biological, step, adoptive, foster, in-law son/daughter).  Low rank indicates no children.  Note: cohorts inquire about different types of children due to the particular questionnaire used, therefore a childless respondent in one of the studies would not be necessarily considered childless in another study.               
+**Variable description**:  Indicator of whether the participant has a low, medium or high network size compromised of children. It is measured by ranking the size of the network which is comprised of any type of child (biological, step, adoptive, foster, in-law son/daughter).  Low rank indicates no children.  Note: cohorts inquire about different types of children due to the particular questionnaire used, therefore a childless respondent in one study would not necessarily be considered childless in another study.  
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
@@ -186,9 +186,9 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Network size of children rank        
+### **Variable label**:   Ranked network size of children           
 **Variable name**:   soc_sn_children_rank_2      
-**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has. It is measured by ranking the size of the network comprised of any type of child (biological, step, adoptive, foster, in-law son/daughter).  Low rank indicates no children.  Note: cohorts inquire about different types of children due to the particular questionnaire used, therefore a childless respondent in one of the studies would not be necessarily considered childless in another study.   
+**Variable description**:  Indicator of whether the participant has a low, medium or high network size compromised of children. It is measured by ranking the size of the network which is comprised of any type of child (biological, step, adoptive, foster, in-law son/daughter).  Low rank indicates no children.  Note: cohorts inquire about different types of children due to the particular questionnaire used, therefore a childless respondent in one study would not necessarily be considered childless in another study.    
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
@@ -206,9 +206,9 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Network size of children rank        
+### **Variable label**:   Ranked network size of children          
 **Variable name**:   soc_sn_children_rank_3      
-**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has. It is measured by ranking the size of the network comprised of any type of child (biological, step, adoptive, foster, in-law son/daughter).  Low rank indicates no children.  Note: cohorts inquire about different types of children due to the particular questionnaire used, therefore a childless respondent in one of the studies would not be necessarily considered childless in another study.          
+**Variable description**:  Indicator of whether the participant has a low, medium or high network size compromised of children. It is measured by ranking the size of the network which is comprised of any type of child (biological, step, adoptive, foster, in-law son/daughter).  Low rank indicates no children.  Note: cohorts inquire about different types of children due to the particular questionnaire used, therefore a childless respondent in one study would not necessarily be considered childless in another study.  
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
@@ -226,9 +226,9 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Network size of children rank        
+### **Variable label**:   Ranked network size of children          
 **Variable name**:   soc_sn_children_rank_4      
-**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has. It is measured by ranking the size of the network comprised of any type of child (biological, step, adoptive, foster, in-law son/daughter).  Low rank indicates no children.  Note: cohorts inquire about different types of children due to the particular questionnaire used, therefore a childless respondent in one of the studies would not be necessarily considered childless in another study.        
+**Variable description**:  Indicator of whether the participant has a low, medium or high network size compromised of children. It is measured by ranking the size of the network which is comprised of any type of child (biological, step, adoptive, foster, in-law son/daughter).  Low rank indicates no children.  Note: cohorts inquire about different types of children due to the particular questionnaire used, therefore a childless respondent in one study would not necessarily be considered childless in another study.  
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
@@ -246,9 +246,9 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Network size of children rank       
+### **Variable label**:   Ranked network size of children          
 **Variable name**:   soc_sn_children_rank_5      
-**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has. It is measured by ranking the size of the network comprised of any type of child (biological, step, adoptive, foster, in-law son/daughter).  Low rank indicates no children.  Note: cohorts inquire about different types of children due to the particular questionnaire used, therefore a childless respondent in one of the studies would not be necessarily considered childless in another study.        
+**Variable description**:  Indicator of whether the participant has a low, medium or high network size compromised of children. It is measured by ranking the size of the network which is comprised of any type of child (biological, step, adoptive, foster, in-law son/daughter).  Low rank indicates no children.  Note: cohorts inquire about different types of children due to the particular questionnaire used, therefore a childless respondent in one study would not necessarily be considered childless in another study.  
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
@@ -266,9 +266,9 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Network size of children rank         
+### **Variable label**:   Ranked network size of children         
 **Variable name**:   soc_sn_children_rank_6      
-**Variable description**:  Indicator of whether the participant has low, medium or high network size compromised of children that respondent has. It is measured by ranking the size of the network comprised of any type of child (biological, step, adoptive, foster, in-law son/daughter).  Low rank indicates no children.  Note: cohorts inquire about different types of children due to the particular questionnaire used, therefore a childless respondent in one of the studies would not be necessarily considered childless in another study.     
+**Variable description**:  Indicator of whether the participant has a low, medium or high network size compromised of children. It is measured by ranking the size of the network which is comprised of any type of child (biological, step, adoptive, foster, in-law son/daughter).  Low rank indicates no children.  Note: cohorts inquire about different types of children due to the particular questionnaire used, therefore a childless respondent in one study would not necessarily be considered childless in another study.  
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
