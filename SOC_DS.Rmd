@@ -3813,6 +3813,405 @@ output: html_document
 #This is where the R-script will be written
 
 ```
+### **Variable label**:  Non participation due to safety       
+**Variable name**:  soc_sp_nosafety_0                  
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to safety concerns.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Safety concerns did not affect participation  
+1 |  Did not participate due to safety concerns   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Non participation due to safety       
+**Variable name**:  soc_sp_nosafety_1                  
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to safety concerns.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Safety concerns did not affect participation  
+1 |  Did not participate due to safety concerns   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Non participation due to safety       
+**Variable name**:  soc_sp_nosafety_2                  
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to safety concerns.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Safety concerns did not affect participation  
+1 |  Did not participate due to safety concerns   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Non participation due to safety       
+**Variable name**:  soc_sp_nosafety_3                   
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to safety concerns.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Safety concerns did not affect participation  
+1 |  Did not participate due to safety concerns   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Non participation due to safety       
+**Variable name**:  soc_sp_nosafety_4                    
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to safety concerns.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Safety concerns did not affect participation  
+1 |  Did not participate due to safety concerns   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Non participation due to safety       
+**Variable name**:  soc_sp_nosafety_5                  
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to safety concerns.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Safety concerns did not affect participation  
+1 |  Did not participate due to safety concerns   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Non participation due to safety       
+**Variable name**:  soc_sp_nosafety_6                  
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to safety concerns.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Safety concerns did not affect participation  
+1 |  Did not participate due to safety concerns   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Non participation due to lack of transportation      
+**Variable name**:  soc_sp_notrans_0                  
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to transport issues.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lack of transportation did not affect participation
+1 |  Did not participate due to lack of transportation   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Non participation due to lack of transportation      
+**Variable name**:  soc_sp_notrans_1                  
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to transport issues.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lack of transportation did not affect participation
+1 |  Did not participate due to lack of transportation   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Non participation due to lack of transportation      
+**Variable name**:  soc_sp_notrans_2                  
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to transport issues.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lack of transportation did not affect participation
+1 |  Did not participate due to lack of transportation   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Non participation due to lack of transportation      
+**Variable name**:  soc_sp_notrans_3                  
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to transport issues.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lack of transportation did not affect participation
+1 |  Did not participate due to lack of transportation   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Non participation due to lack of transportation      
+**Variable name**:  soc_sp_notrans_4                  
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to transport issues.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lack of transportation did not affect participation
+1 |  Did not participate due to lack of transportation   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Non participation due to lack of transportation      
+**Variable name**:  soc_sp_notrans_5                  
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to transport issues.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lack of transportation did not affect participation
+1 |  Did not participate due to lack of transportation   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Non participation due to lack of transportation      
+**Variable name**:  soc_sp_notrans_6                  
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to transport issues.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lack of transportation did not affect participation
+1 |  Did not participate due to lack of transportation   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Hobby      
+**Variable name**:  soc_sp_hobby_0                       
+**Variable description**:  Indicator of whether the participant has a hobby.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No hobby
+1 |  Has hobby  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Hobby      
+**Variable name**:  soc_sp_hobby_1                       
+**Variable description**:  Indicator of whether the participant has a hobby.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No hobby
+1 |  Has hobby  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Hobby      
+**Variable name**:  soc_sp_hobby_2                       
+**Variable description**:  Indicator of whether the participant has a hobby.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No hobby
+1 |  Has hobby  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Hobby      
+**Variable name**:  soc_sp_hobby_3                       
+**Variable description**:  Indicator of whether the participant has a hobby.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No hobby
+1 |  Has hobby  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Hobby      
+**Variable name**:  soc_sp_hobby_4                       
+**Variable description**:  Indicator of whether the participant has a hobby.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No hobby
+1 |  Has hobby  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Hobby      
+**Variable name**:  soc_sp_hobby_5                       
+**Variable description**:  Indicator of whether the participant has a hobby.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No hobby
+1 |  Has hobby  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Hobby      
+**Variable name**:  soc_sp_hobby_6                       
+**Variable description**:  Indicator of whether the participant has a hobby.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No hobby
+1 |  Has hobby  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
 # Major life events subdomain
 
 ### **Variable label**:  Life event: victim     
