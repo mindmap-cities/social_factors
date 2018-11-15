@@ -422,7 +422,7 @@ output: html_document
 
 ```
 
-### **Variable label**:   Frequency of contact with friends       
+### **Variable label**:   In-person contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_inperson_0       
 **Variable description**:   Indicator of in-person contact frequency with close friends. This is a different variable than soc_sn_freq_friends, which is an indicator for contact frequency but not necessarily in-person contact.    
 **Value type**:  integer  
@@ -444,7 +444,7 @@ output: html_document
 #This is where the R-script will be written
 
 ``` 
-### **Variable label**:   Frequency of contact with friends       
+### **Variable label**:   In-person contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_inperson_1       
 **Variable description**:   Indicator of in-person contact frequency with close friends. This is a different variable than soc_sn_freq_friends, which is an indicator for contact frequency but not necessarily in-person contact.    
 **Value type**:  integer  
@@ -466,7 +466,7 @@ output: html_document
 #This is where the R-script will be written
 
 ``` 
-### **Variable label**:   Frequency of contact with friends       
+### **Variable label**:   In-person contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_inperson_2       
 **Variable description**:   Indicator of in-person contact frequency with close friends. This is a different variable than soc_sn_freq_friends, which is an indicator for contact frequency but not necessarily in-person contact.    
 **Value type**:  integer  
@@ -488,7 +488,7 @@ output: html_document
 #This is where the R-script will be written
 
 ``` 
-### **Variable label**:   Frequency of contact with friends       
+### **Variable label**:   In-person contact frequency with friends       
 **Variable name**:   soc_sn_freq_friends_inperson_3       
 **Variable description**:   Indicator of in-person contact frequency with close friends. This is a different variable than soc_sn_freq_friends, which is an indicator for contact frequency but not necessarily in-person contact.    
 **Value type**:  integer  
@@ -510,7 +510,7 @@ output: html_document
 #This is where the R-script will be written
 
 ``` 
-### **Variable label**:   Frequency of contact with friends       
+### **Variable label**:   In-person contact frequency with friends       
 **Variable name**:   soc_sn_freq_friends_inperson_4       
 **Variable description**:   Indicator of in-person contact frequency with close friends. This is a different variable than soc_sn_freq_friends, which is an indicator for contact frequency but not necessarily in-person contact.    
 **Value type**:  integer  
@@ -532,7 +532,7 @@ output: html_document
 #This is where the R-script will be written
 
 ``` 
-### **Variable label**:   Frequency of contact with friends       
+### **Variable label**:   In-person contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_inperson_5       
 **Variable description**:   Indicator of in-person contact frequency with close friends. This is a different variable than soc_sn_freq_friends, which is an indicator for contact frequency but not necessarily in-person contact.    
 **Value type**:  integer  
@@ -554,7 +554,7 @@ output: html_document
 #This is where the R-script will be written
 
 ``` 
-### **Variable label**:   Frequency of contact with friends       
+### **Variable label**:   In-person contact frequency with friends         
 **Variable name**:   soc_sn_freq_friends_inperson_6       
 **Variable description**:   Indicator of in-person contact frequency with close friends. This is a different variable than soc_sn_freq_friends, which is an indicator for contact frequency but not necessarily in-person contact.    
 **Value type**:  integer  
@@ -576,7 +576,160 @@ output: html_document
 #This is where the R-script will be written
 
 ``` 
+### **Variable label**:   Contact frequency with friends        
+**Variable name**:   soc_sn_freq_friends_0       
+**Variable description**:   Indicator of contact frequency with close friends.         
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:    
 
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Daily  
+1 |  Weekly 
+2 |  Biweekly  
+3 |  Monthly 
+4 |  Never or less than a year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Contact frequency with friends        
+**Variable name**:   soc_sn_freq_friends_1       
+**Variable description**:   Indicator of contact frequency with close friends.         
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Daily  
+1 |  Weekly 
+2 |  Biweekly  
+3 |  Monthly 
+4 |  Never or less than a year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Contact frequency with friends        
+**Variable name**:   soc_sn_freq_friends_2       
+**Variable description**:   Indicator of contact frequency with close friends.         
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Daily  
+1 |  Weekly 
+2 |  Biweekly  
+3 |  Monthly 
+4 |  Never or less than a year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Contact frequency with friends        
+**Variable name**:   soc_sn_freq_friends_3       
+**Variable description**:   Indicator of contact frequency with close friends.         
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Daily  
+1 |  Weekly 
+2 |  Biweekly  
+3 |  Monthly 
+4 |  Never or less than a year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Contact frequency with friends        
+**Variable name**:   soc_sn_freq_friends_4       
+**Variable description**:   Indicator of contact frequency with close friends.         
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Daily  
+1 |  Weekly 
+2 |  Biweekly  
+3 |  Monthly 
+4 |  Never or less than a year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Contact frequency with friends        
+**Variable name**:   soc_sn_freq_friends_5       
+**Variable description**:   Indicator of contact frequency with close friends.         
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Daily  
+1 |  Weekly 
+2 |  Biweekly  
+3 |  Monthly 
+4 |  Never or less than a year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Contact frequency with friends        
+**Variable name**:   soc_sn_freq_friends_6       
+**Variable description**:   Indicator of contact frequency with close friends.         
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Daily  
+1 |  Weekly 
+2 |  Biweekly  
+3 |  Monthly 
+4 |  Never or less than a year  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
 ### **Variable label**:   Neighbours network size       
 **Variable name**:   soc_sn_num_nbhs_0    
 **Variable description**:  Social network size comprised of neighbours that respondent knows well and is in regular contact with  
