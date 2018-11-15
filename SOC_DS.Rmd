@@ -695,12 +695,12 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | No neighbours 
-2 | 1 or 2 neighbours 
-3 | 3 to 5 neighbours 
-4 | 6 to 10 neighbours 
-5 | 11 to 20 neighbours 
-6 | More than 20 neighbours   
+1 |  No neighbours 
+2 |  1 or 2 neighbours 
+3 |  3 to 5 neighbours 
+4 |  6 to 10 neighbours 
+5 |  11 to 20 neighbours 
+6 |  More than 20 neighbours   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -718,12 +718,12 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | No neighbours 
-2 | 1 or 2 neighbours 
-3 | 3 to 5 neighbours 
-4 | 6 to 10 neighbours 
-5 | 11 to 20 neighbours 
-6 | More than 20 neighbours    
+1 |  No neighbours 
+2 |  1 or 2 neighbours 
+3 |  3 to 5 neighbours 
+4 |  6 to 10 neighbours 
+5 |  11 to 20 neighbours 
+6 |  More than 20 neighbours    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -741,12 +741,12 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | No neighbours 
-2 | 1 or 2 neighbours 
-3 | 3 to 5 neighbours 
-4 | 6 to 10 neighbours 
-5 | 11 to 20 neighbours 
-6 | More than 20 neighbours    
+1 |  No neighbours 
+2 |  1 or 2 neighbours 
+3 |  3 to 5 neighbours 
+4 |  6 to 10 neighbours 
+5 |  11 to 20 neighbours 
+6 |  More than 20 neighbours    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -764,12 +764,12 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | No neighbours 
-2 | 1 or 2 neighbours 
-3 | 3 to 5 neighbours 
-4 | 6 to 10 neighbours 
-5 | 11 to 20 neighbours 
-6 | More than 20 neighbours    
+1 |  No neighbours 
+2 |  1 or 2 neighbours 
+3 |  3 to 5 neighbours 
+4 |  6 to 10 neighbours 
+5 |  11 to 20 neighbours 
+6 |  More than 20 neighbours    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -787,12 +787,12 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | No neighbours 
-2 | 1 or 2 neighbours 
-3 | 3 to 5 neighbours 
-4 | 6 to 10 neighbours 
-5 | 11 to 20 neighbours 
-6 | More than 20 neighbours    
+1 |  No neighbours 
+2 |  1 or 2 neighbours 
+3 |  3 to 5 neighbours 
+4 |  6 to 10 neighbours 
+5 |  11 to 20 neighbours 
+6 |  More than 20 neighbours    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -810,12 +810,12 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | No neighbours 
-2 | 1 or 2 neighbours 
-3 | 3 to 5 neighbours 
-4 | 6 to 10 neighbours 
-5 | 11 to 20 neighbours 
-6 | More than 20 neighbours    
+1 |  No neighbours 
+2 |  1 or 2 neighbours 
+3 |  3 to 5 neighbours 
+4 |  6 to 10 neighbours 
+5 |  11 to 20 neighbours 
+6 |  More than 20 neighbours    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -833,12 +833,12 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | No neighbours 
-2 | 1 or 2 neighbours 
-3 | 3 to 5 neighbours 
-4 | 6 to 10 neighbours 
-5 | 11 to 20 neighbours 
-6 | More than 20 neighbours 
+1 |  No neighbours 
+2 |  1 or 2 neighbours 
+3 |  3 to 5 neighbours 
+4 |  6 to 10 neighbours 
+5 |  11 to 20 neighbours 
+6 |  More than 20 neighbours 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -857,11 +857,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily contact with neighbours
-2 | Weekly contact with neighbours
-3 | Biweekly contact with neighbours
-4 | Monthly contact with neighbours
-5 | Never or less than a year contact with neighbours  
+1 |  Daily contact with neighbours
+2 |  Weekly contact with neighbours
+3 |  Biweekly contact with neighbours
+4 |  Monthly contact with neighbours
+5 |  Never or less than a year contact with neighbours  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -879,11 +879,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily contact with neighbours
-2 | Weekly contact with neighbours
-3 | Biweekly contact with neighbours
-4 | Monthly contact with neighbours
-5 | Never or less than a year contact with neighbours  
+1 |  Daily contact with neighbours
+2 |  Weekly contact with neighbours
+3 |  Biweekly contact with neighbours
+4 |  Monthly contact with neighbours
+5 |  Never or less than a year contact with neighbours  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -901,11 +901,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily contact with neighbours
-2 | Weekly contact with neighbours
-3 | Biweekly contact with neighbours
-4 | Monthly contact with neighbours
-5 | Never or less than a year contact with neighbours   
+1 |  Daily contact with neighbours
+2 |  Weekly contact with neighbours
+3 |  Biweekly contact with neighbours
+4 |  Monthly contact with neighbours
+5 |  Never or less than a year contact with neighbours   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -923,11 +923,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily contact with neighbours
-2 | Weekly contact with neighbours
-3 | Biweekly contact with neighbours
-4 | Monthly contact with neighbours
-5 | Never or less than a year contact with neighbours    
+1 |  Daily contact with neighbours
+2 |  Weekly contact with neighbours
+3 |  Biweekly contact with neighbours
+4 |  Monthly contact with neighbours
+5 |  Never or less than a year contact with neighbours    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -945,11 +945,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily contact with neighbours
-2 | Weekly contact with neighbours
-3 | Biweekly contact with neighbours
-4 | Monthly contact with neighbours
-5 | Never or less than a year contact with neighbours    
+1 |  Daily contact with neighbours
+2 |  Weekly contact with neighbours
+3 |  Biweekly contact with neighbours
+4 |  Monthly contact with neighbours
+5 |  Never or less than a year contact with neighbours    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -967,11 +967,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily contact with neighbours
-2 | Weekly contact with neighbours
-3 | Biweekly contact with neighbours
-4 | Monthly contact with neighbours
-5 | Never or less than a year contact with neighbours    
+1 |  Daily contact with neighbours
+2 |  Weekly contact with neighbours
+3 |  Biweekly contact with neighbours
+4 |  Monthly contact with neighbours
+5 |  Never or less than a year contact with neighbours    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -989,11 +989,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily contact with neighbours
-2 | Weekly contact with neighbours
-3 | Biweekly contact with neighbours
-4 | Monthly contact with neighbours
-5 | Never or less than a year contact with neighbours   
+1 |  Daily contact with neighbours
+2 |  Weekly contact with neighbours
+3 |  Biweekly contact with neighbours
+4 |  Monthly contact with neighbours
+5 |  Never or less than a year contact with neighbours   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1144,10 +1144,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly contact with close family
-2 | Biweekly contact with close family
-3 | Monthly contact with close family
-4 | Never or less than a year contact with close family   
+1 |  Daily or weekly contact with close family
+2 |  Biweekly contact with close family
+3 |  Monthly contact with close family
+4 |  Never or less than a year contact with close family   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1165,10 +1165,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly contact with close family
-2 | Biweekly contact with close family
-3 | Monthly contact with close family
-4 | Never or less than a year contact with close family    
+1 |  Daily or weekly contact with close family
+2 |  Biweekly contact with close family
+3 |  Monthly contact with close family
+4 |  Never or less than a year contact with close family    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1186,10 +1186,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly contact with close family
-2 | Biweekly contact with close family
-3 | Monthly contact with close family
-4 | Never or less than a year contact with close family       
+1 |  Daily or weekly contact with close family
+2 |  Biweekly contact with close family
+3 |  Monthly contact with close family
+4 |  Never or less than a year contact with close family       
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1207,10 +1207,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly contact with close family
-2 | Biweekly contact with close family
-3 | Monthly contact with close family
-4 | Never or less than a year contact with close family     
+1 |  Daily or weekly contact with close family
+2 |  Biweekly contact with close family
+3 |  Monthly contact with close family
+4 |  Never or less than a year contact with close family     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1228,10 +1228,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly contact with close family
-2 | Biweekly contact with close family
-3 | Monthly contact with close family
-4 | Never or less than a year contact with close family      
+1 |  Daily or weekly contact with close family
+2 |  Biweekly contact with close family
+3 |  Monthly contact with close family
+4 |  Never or less than a year contact with close family      
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1249,10 +1249,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly contact with close family
-2 | Biweekly contact with close family
-3 | Monthly contact with close family
-4 | Never or less than a year contact with close family      
+1 |  Daily or weekly contact with close family
+2 |  Biweekly contact with close family
+3 |  Monthly contact with close family
+4 |  Never or less than a year contact with close family      
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1270,10 +1270,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly contact with close family
-2 | Biweekly contact with close family
-3 | Monthly contact with close family
-4 | Never or less than a year contact with close family    
+1 |  Daily or weekly contact with close family
+2 |  Biweekly contact with close family
+3 |  Monthly contact with close family
+4 |  Never or less than a year contact with close family    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1292,10 +1292,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly contact with relatives 
-2 | Biweekly contact with relatives 
-3 | Monthly contact with relatives 
-4 | Never or less than a year contact with relatives  
+1 |  Daily or weekly contact with relatives 
+2 |  Biweekly contact with relatives 
+3 |  Monthly contact with relatives 
+4 |  Never or less than a year contact with relatives  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1313,10 +1313,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly contact with relatives 
-2 | Biweekly contact with relatives 
-3 | Monthly contact with relatives 
-4 | Never or less than a year contact with relatives  
+1 |  Daily or weekly contact with relatives 
+2 |  Biweekly contact with relatives 
+3 |  Monthly contact with relatives 
+4 |  Never or less than a year contact with relatives  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1334,10 +1334,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly contact with relatives 
-2 | Biweekly contact with relatives 
-3 | Monthly contact with relatives 
-4 | Never or less than a year contact with relatives  
+1 |  Daily or weekly contact with relatives 
+2 |  Biweekly contact with relatives 
+3 |  Monthly contact with relatives 
+4 |  Never or less than a year contact with relatives  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1355,10 +1355,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly contact with relatives 
-2 | Biweekly contact with relatives 
-3 | Monthly contact with relatives 
-4 | Never or less than a year contact with relatives    
+1 |  Daily or weekly contact with relatives 
+2 |  Biweekly contact with relatives 
+3 |  Monthly contact with relatives 
+4 |  Never or less than a year contact with relatives    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1376,10 +1376,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly contact with relatives 
-2 | Biweekly contact with relatives 
-3 | Monthly contact with relatives 
-4 | Never or less than a year contact with relatives  
+1 |  Daily or weekly contact with relatives 
+2 |  Biweekly contact with relatives 
+3 |  Monthly contact with relatives 
+4 |  Never or less than a year contact with relatives  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1397,10 +1397,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly contact with relatives 
-2 | Biweekly contact with relatives 
-3 | Monthly contact with relatives 
-4 | Never or less than a year contact with relatives  
+1 |  Daily or weekly contact with relatives 
+2 |  Biweekly contact with relatives 
+3 |  Monthly contact with relatives 
+4 |  Never or less than a year contact with relatives  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1418,10 +1418,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily or weekly contact with relatives 
-2 | Biweekly contact with relatives 
-3 | Monthly contact with relatives 
-4 | Never or less than a year contact with relatives  
+1 |  Daily or weekly contact with relatives 
+2 |  Biweekly contact with relatives 
+3 |  Monthly contact with relatives 
+4 |  Never or less than a year contact with relatives  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1573,11 +1573,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily contact with non-kin
-2 | Weekly contact with non-kin
-3 | Biweekly contact with non-kin
-4 | Monthly contact with non-kin
-5 | Never or less than a year contact with non-kin   
+1 |  Daily contact with non-kin
+2 |  Weekly contact with non-kin
+3 |  Biweekly contact with non-kin
+4 |  Monthly contact with non-kin
+5 |  Never or less than a year contact with non-kin   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1595,11 +1595,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily contact with non-kin
-2 | Weekly contact with non-kin
-3 | Biweekly contact with non-kin
-4 | Monthly contact with non-kin
-5 | Never or less than a year contact with non-kin  
+1 |  Daily contact with non-kin
+2 |  Weekly contact with non-kin
+3 |  Biweekly contact with non-kin
+4 |  Monthly contact with non-kin
+5 |  Never or less than a year contact with non-kin  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1617,11 +1617,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily contact with non-kin
-2 | Weekly contact with non-kin
-3 | Biweekly contact with non-kin
-4 | Monthly contact with non-kin
-5 | Never or less than a year contact with non-kin    
+1 |  Daily contact with non-kin
+2 |  Weekly contact with non-kin
+3 |  Biweekly contact with non-kin
+4 |  Monthly contact with non-kin
+5 |  Never or less than a year contact with non-kin    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1639,11 +1639,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily contact with non-kin
-2 | Weekly contact with non-kin
-3 | Biweekly contact with non-kin
-4 | Monthly contact with non-kin
-5 | Never or less than a year contact with non-kin  
+1 |  Daily contact with non-kin
+2 |  Weekly contact with non-kin
+3 |  Biweekly contact with non-kin
+4 |  Monthly contact with non-kin
+5 |  Never or less than a year contact with non-kin  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1661,11 +1661,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily contact with non-kin
-2 | Weekly contact with non-kin
-3 | Biweekly contact with non-kin
-4 | Monthly contact with non-kin
-5 | Never or less than a year contact with non-kin  
+1 |  Daily contact with non-kin
+2 |  Weekly contact with non-kin
+3 |  Biweekly contact with non-kin
+4 |  Monthly contact with non-kin
+5 |  Never or less than a year contact with non-kin  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1683,11 +1683,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily contact with non-kin
-2 | Weekly contact with non-kin
-3 | Biweekly contact with non-kin
-4 | Monthly contact with non-kin
-5 | Never or less than a year contact with non-kin  
+1 |  Daily contact with non-kin
+2 |  Weekly contact with non-kin
+3 |  Biweekly contact with non-kin
+4 |  Monthly contact with non-kin
+5 |  Never or less than a year contact with non-kin  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1705,11 +1705,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Daily contact with non-kin
-2 | Weekly contact with non-kin
-3 | Biweekly contact with non-kin
-4 | Monthly contact with non-kin
-5 | Never or less than a year contact with non-kin  
+1 |  Daily contact with non-kin
+2 |  Weekly contact with non-kin
+3 |  Biweekly contact with non-kin
+4 |  Monthly contact with non-kin
+5 |  Never or less than a year contact with non-kin  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1729,9 +1729,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Never received emotional support
-1 |   Sometimes received emotional support
-2 |   Often received emotional support
+0 |  Never received emotional support
+1 |  Sometimes received emotional support
+2 |  Often received emotional support
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1749,9 +1749,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Never received emotional support
-1 |   Sometimes received emotional support
-2 |   Often received emotional support
+0 |  Never received emotional support
+1 |  Sometimes received emotional support
+2 |  Often received emotional support
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1769,9 +1769,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Never received emotional support
-1 |   Sometimes received emotional support
-2 |   Often received emotional support
+0 |  Never received emotional support
+1 |  Sometimes received emotional support
+2 |  Often received emotional support
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1789,9 +1789,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Never received emotional support
-1 |   Sometimes received emotional support
-2 |   Often received emotional support
+0 |  Never received emotional support
+1 |  Sometimes received emotional support
+2 |  Often received emotional support
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1809,9 +1809,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Never received emotional support
-1 |   Sometimes received emotional support
-2 |   Often received emotional support
+0 |  Never received emotional support
+1 |  Sometimes received emotional support
+2 |  Often received emotional support
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1829,9 +1829,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Never received emotional support
-1 |   Sometimes received emotional support
-2 |   Often received emotional support
+0 |  Never received emotional support
+1 |  Sometimes received emotional support
+2 |  Often received emotional support
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1849,9 +1849,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Never received emotional support
-1 |   Sometimes received emotional support
-2 |   Often received emotional support
+0 |  Never received emotional support
+1 |  Sometimes received emotional support
+2 |  Often received emotional support
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2002,9 +2002,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Never received instrumental support
-1 |   Sometimes received instrumental support
-2 |   Often received instrumental support
+0 |  Never received instrumental support
+1 |  Sometimes received instrumental support
+2 |  Often received instrumental support
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2022,9 +2022,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Never received instrumental support
-1 |   Sometimes received instrumental support
-2 |   Often received instrumental support
+0 |  Never received instrumental support
+1 |  Sometimes received instrumental support
+2 |  Often received instrumental support
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2042,9 +2042,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Never received instrumental support
-1 |   Sometimes received instrumental support
-2 |   Often received instrumental support
+0 |  Never received instrumental support
+1 |  Sometimes received instrumental support
+2 |  Often received instrumental support
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2062,9 +2062,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Never received instrumental support
-1 |   Sometimes received instrumental support
-2 |   Often received instrumental support
+0 |  Never received instrumental support
+1 |  Sometimes received instrumental support
+2 |  Often received instrumental support
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2102,9 +2102,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Never received instrumental support
-1 |   Sometimes received instrumental support
-2 |   Often received instrumental support
+0 |  Never received instrumental support
+1 |  Sometimes received instrumental support
+2 |  Often received instrumental support
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2122,9 +2122,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Never received instrumental support
-1 |   Sometimes received instrumental support
-2 |   Often received instrumental support
+0 |  Never received instrumental support
+1 |  Sometimes received instrumental support
+2 |  Often received instrumental support
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2411,8 +2411,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Not socially isolated, has social network and/ or social participation 
-1 |   Socially isolated, no social network and no social participation 
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2430,8 +2430,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Not socially isolated, has social network and/ or social participation 
-1 |   Socially isolated, no social network and no social participation 
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2440,7 +2440,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-## **Variable label**:  Social isolation    
+### **Variable label**:  Social isolation    
 **Variable name**:  soc_sp_isolation_2  
 **Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
 **Value type**:  integer  
@@ -2449,8 +2449,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Not socially isolated, has social network and/ or social participation 
-1 |   Socially isolated, no social network and no social participation 
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2459,7 +2459,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-## **Variable label**:  Social isolation    
+### **Variable label**:  Social isolation    
 **Variable name**:  soc_sp_isolation_3  
 **Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
 **Value type**:  integer  
@@ -2468,8 +2468,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Not socially isolated, has social network and/ or social participation 
-1 |   Socially isolated, no social network and no social participation 
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2478,7 +2478,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-## **Variable label**:  Social isolation    
+### **Variable label**:  Social isolation    
 **Variable name**:  soc_sp_isolation_4  
 **Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
 **Value type**:  integer  
@@ -2487,8 +2487,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Not socially isolated, has social network and/ or social participation 
-1 |   Socially isolated, no social network and no social participation 
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2497,7 +2497,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-## **Variable label**:  Social isolation    
+### **Variable label**:  Social isolation    
 **Variable name**:  soc_sp_isolation_5  
 **Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
 **Value type**:  integer  
@@ -2506,8 +2506,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Not socially isolated, has social network and/ or social participation 
-1 |   Socially isolated, no social network and no social participation 
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2516,7 +2516,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-## **Variable label**:  Social isolation    
+### **Variable label**:  Social isolation    
 **Variable name**:  soc_sp_isolation_6  
 **Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
 **Value type**:  integer  
@@ -2525,8 +2525,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Not socially isolated, has social network and/ or social participation 
-1 |   Socially isolated, no social network and no social participation 
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2535,7 +2535,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-## **Variable label**:  Social isolation    
+### **Variable label**:  Social isolation    
 **Variable name**:  soc_sp_isolation_7  
 **Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
 **Value type**:  integer  
@@ -2544,8 +2544,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Not socially isolated, has social network and/ or social participation 
-1 |   Socially isolated, no social network and no social participation 
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2554,7 +2554,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-## **Variable label**:  Religious membership    
+### **Variable label**:  Religious membership    
 **Variable name**:  soc_sp_mem_religious_0        
 **Variable description**:  Indicator of whether the participant is a member of a religious organization.      
 **Value type**:  integer  
@@ -2563,8 +2563,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Not a member of a religious organization 
-1 |   Member of a religious organization 
+0 |  Not a member of a religious organization 
+1 |  Member of a religious organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2573,7 +2573,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-## **Variable label**:  Religious membership    
+### **Variable label**:  Religious membership    
 **Variable name**:  soc_sp_mem_religious_1        
 **Variable description**:  Indicator of whether the participant is a member of a religious organization.      
 **Value type**:  integer  
@@ -2582,8 +2582,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Not a member of a religious organization 
-1 |   Member of a religious organization 
+0 |  Not a member of a religious organization 
+1 |  Member of a religious organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2592,7 +2592,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-## **Variable label**:  Religious membership    
+### **Variable label**:  Religious membership    
 **Variable name**:  soc_sp_mem_religious_2        
 **Variable description**:  Indicator of whether the participant is a member of a religious organization.      
 **Value type**:  integer  
@@ -2601,8 +2601,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Not a member of a religious organization 
-1 |   Member of a religious organization 
+0 |  Not a member of a religious organization 
+1 |  Member of a religious organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2611,7 +2611,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-## **Variable label**:  Religious membership    
+### **Variable label**:  Religious membership    
 **Variable name**:  soc_sp_mem_religious_3        
 **Variable description**:  Indicator of whether the participant is a member of a religious organization.      
 **Value type**:  integer  
@@ -2620,8 +2620,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Not a member of a religious organization 
-1 |   Member of a religious organization 
+0 |  Not a member of a religious organization 
+1 |  Member of a religious organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2630,7 +2630,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-## **Variable label**:  Religious membership    
+### **Variable label**:  Religious membership    
 **Variable name**:  soc_sp_mem_religious_4        
 **Variable description**:  Indicator of whether the participant is a member of a religious organization.      
 **Value type**:  integer  
@@ -2639,8 +2639,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Not a member of a religious organization 
-1 |   Member of a religious organization 
+0 |  Not a member of a religious organization 
+1 |  Member of a religious organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2649,7 +2649,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-## **Variable label**:  Religious membership    
+### **Variable label**:  Religious membership    
 **Variable name**:  soc_sp_mem_religious_5        
 **Variable description**:  Indicator of whether the participant is a member of a religious organization.      
 **Value type**:  integer  
@@ -2658,8 +2658,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Not a member of a religious organization 
-1 |   Member of a religious organization 
+0 |  Not a member of a religious organization 
+1 |  Member of a religious organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2668,7 +2668,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-## **Variable label**:  Religious membership    
+### **Variable label**:  Religious membership    
 **Variable name**:  soc_sp_mem_religious_6        
 **Variable description**:  Indicator of whether the participant is a member of a religious organization.      
 **Value type**:  integer  
@@ -2677,8 +2677,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Not a member of a religious organization 
-1 |   Member of a religious organization 
+0 |  Not a member of a religious organization 
+1 |  Member of a religious organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2687,7 +2687,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-## **Variable label**:  Religious participation 
+### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_0        
 **Variable description**:  Indicator of participation in a religious organization.      
 **Value type**:  integer  
@@ -2696,8 +2696,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   No participation in a religious organization   
-1 |   Participation in a religious organization 
+0 |  No participation in a religious organization   
+1 |  Participation in a religious organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2706,7 +2706,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-## **Variable label**:  Religious participation 
+### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_1        
 **Variable description**:  Indicator of participation in a religious organization.      
 **Value type**:  integer  
@@ -2715,8 +2715,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   No participation in a religious organization   
-1 |   Participation in a religious organization 
+0 |  No participation in a religious organization   
+1 |  Participation in a religious organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2725,7 +2725,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-## **Variable label**:  Religious participation 
+### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_2        
 **Variable description**:  Indicator of participation in a religious organization.      
 **Value type**:  integer  
@@ -2734,8 +2734,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   No participation in a religious organization   
-1 |   Participation in a religious organization 
+0 |  No participation in a religious organization   
+1 |  Participation in a religious organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2744,7 +2744,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-## **Variable label**:  Religious participation 
+### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_3        
 **Variable description**:  Indicator of participation in a religious organization.      
 **Value type**:  integer  
@@ -2753,8 +2753,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   No participation in a religious organization   
-1 |   Participation in a religious organization 
+0 |  No participation in a religious organization   
+1 |  Participation in a religious organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2763,7 +2763,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-## **Variable label**:  Religious participation 
+### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_4        
 **Variable description**:  Indicator of participation in a religious organization.      
 **Value type**:  integer  
@@ -2772,8 +2772,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   No participation in a religious organization   
-1 |   Participation in a religious organization 
+0 |  No participation in a religious organization   
+1 |  Participation in a religious organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2782,7 +2782,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-## **Variable label**:  Religious participation 
+### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_5        
 **Variable description**:  Indicator of participation in a religious organization.      
 **Value type**:  integer  
@@ -2791,8 +2791,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   No participation in a religious organization   
-1 |   Participation in a religious organization 
+0 |  No participation in a religious organization   
+1 |  Participation in a religious organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2801,7 +2801,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-## **Variable label**:  Religious participation 
+### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_6        
 **Variable description**:  Indicator of participation in a religious organization.      
 **Value type**:  integer  
@@ -2810,8 +2810,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   No participation in a religious organization   
-1 |   Participation in a religious organization 
+0 |  No participation in a religious organization   
+1 |  Participation in a religious organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2820,7 +2820,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-## **Variable label**:  Religious participation 
+### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_7        
 **Variable description**:  Indicator of participation in a religious organization.      
 **Value type**:  integer  
@@ -2829,8 +2829,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   No participation in a religious organization   
-1 |   Participation in a religious organization 
+0 |  No participation in a religious organization   
+1 |  Participation in a religious organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2839,7 +2839,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-# **Variable label**:  Frequency of religious participation 
+### **Variable label**:  Frequency of religious participation 
 **Variable name**:  soc_sp_freq_religious_0        
 **Variable description**:  Indicator of the frequency of participation in a religious organization.         
 **Value type**:  integer  
@@ -2848,12 +2848,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Weekly participation in religious organization 
-2 | Less than monthly  participation in religious organization
-3 | Monthly participation in religious organization
-4 | Never participates in religious organization
-5 | No answer/don’t know regarding participation in religious organization
-
+1 |  Weekly participation in religious organization 
+2 |  Less than monthly  participation in religious organization
+3 |  Monthly participation in religious organization
+4 |  Never participates in religious organization
+5 |  No answer/don’t know regarding participation in religious organization
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2862,7 +2861,160 @@ output: html_document
 #This is where the R-script will be written
 
 ```
+### **Variable label**:  Frequency of religious participation 
+**Variable name**:  soc_sp_freq_religious_1        
+**Variable description**:  Indicator of the frequency of participation in a religious organization.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
 
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Weekly participation in religious organization 
+2 |  Less than monthly  participation in religious organization
+3 |  Monthly participation in religious organization
+4 |  Never participates in religious organization
+5 |  No answer/don’t know regarding participation in religious organization
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Frequency of religious participation 
+**Variable name**:  soc_sp_freq_religious_2        
+**Variable description**:  Indicator of the frequency of participation in a religious organization.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Weekly participation in religious organization 
+2 |  Less than monthly  participation in religious organization
+3 |  Monthly participation in religious organization
+4 |  Never participates in religious organization
+5 |  No answer/don’t know regarding participation in religious organization
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Frequency of religious participation 
+**Variable name**:  soc_sp_freq_religious_3        
+**Variable description**:  Indicator of the frequency of participation in a religious organization.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Weekly participation in religious organization 
+2 |  Less than monthly  participation in religious organization
+3 |  Monthly participation in religious organization
+4 |  Never participates in religious organization
+5 |  No answer/don’t know regarding participation in religious organization
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Frequency of religious participation 
+**Variable name**:  soc_sp_freq_religious_4        
+**Variable description**:  Indicator of the frequency of participation in a religious organization.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Weekly participation in religious organization 
+2 |  Less than monthly  participation in religious organization
+3 |  Monthly participation in religious organization
+4 |  Never participates in religious organization
+5 |  No answer/don’t know regarding participation in religious organization
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Frequency of religious participation 
+**Variable name**:  soc_sp_freq_religious_5        
+**Variable description**:  Indicator of the frequency of participation in a religious organization.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Weekly participation in religious organization 
+2 |  Less than monthly  participation in religious organization
+3 |  Monthly participation in religious organization
+4 |  Never participates in religious organization
+5 |  No answer/don’t know regarding participation in religious organization
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Frequency of religious participation 
+**Variable name**:  soc_sp_freq_religious_6        
+**Variable description**:  Indicator of the frequency of participation in a religious organization.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Weekly participation in religious organization 
+2 |  Less than monthly  participation in religious organization
+3 |  Monthly participation in religious organization
+4 |  Never participates in religious organization
+5 |  No answer/don’t know regarding participation in religious organization
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Frequency of religious participation 
+**Variable name**:  soc_sp_freq_religious_7        
+**Variable description**:  Indicator of the frequency of participation in a religious organization.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Weekly participation in religious organization 
+2 |  Less than monthly  participation in religious organization
+3 |  Monthly participation in religious organization
+4 |  Never participates in religious organization
+5 |  No answer/don’t know regarding participation in religious organization
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
 # Major life events subdomain
 
 ### **Variable label**:  Life event: victim     
