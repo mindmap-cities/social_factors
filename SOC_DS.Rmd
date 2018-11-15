@@ -422,9 +422,9 @@ output: html_document
 
 ```
 
-### **Variable label**:   Friends contact frequency   
-**Variable name**:   soc_sn_friends_inpersonfreq__0   
-**Variable description**:   In person contact frequency with close friends (distinguished from soc_sn_freq_friends_0 which is a variable measuring contact frequency but not necessarily in person contact).  
+### **Variable label**:   Frequency of contact with friends       
+**Variable name**:   soc_sn_freq_friends_inperson_0       
+**Variable description**:   Indicator of in-person contact frequency with close friends. This is a different variable than soc_sn_freq_friends, which is an indicator for contact frequency but not necessarily in-person contact.    
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:    
@@ -435,7 +435,7 @@ output: html_document
 1 |  Weekly 
 2 |  Biweekly  
 3 |  Monthly 
-4 |  Never or less than an year
+4 |  Never or less than a year
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -444,9 +444,9 @@ output: html_document
 #This is where the R-script will be written
 
 ``` 
-### **Variable label**:   Frequency of contact with friends      
-**Variable name**:   soc_sn_friends_inpersonfreq__1   
-**Variable description**:   In person contact frequency with close friends (distinguished from soc_sn_freq_friends_0 which is a variable measuring contact frequency but not necessarily in person contact).  
+### **Variable label**:   Frequency of contact with friends       
+**Variable name**:   soc_sn_freq_friends_inperson_1       
+**Variable description**:   Indicator of in-person contact frequency with close friends. This is a different variable than soc_sn_freq_friends, which is an indicator for contact frequency but not necessarily in-person contact.    
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:    
@@ -457,7 +457,7 @@ output: html_document
 1 |  Weekly 
 2 |  Biweekly  
 3 |  Monthly 
-4 |  Never or less than an year
+4 |  Never or less than a year  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -466,9 +466,9 @@ output: html_document
 #This is where the R-script will be written
 
 ``` 
-### **Variable label**:   Frequency of contact with friends      
-**Variable name**:   soc_sn_friends_inpersonfreq__2   
-**Variable description**:   In person contact frequency with close friends (distinguished from soc_sn_freq_friends_0 which is a variable measuring contact frequency but not necessarily in person contact).  
+### **Variable label**:   Frequency of contact with friends       
+**Variable name**:   soc_sn_freq_friends_inperson_2       
+**Variable description**:   Indicator of in-person contact frequency with close friends. This is a different variable than soc_sn_freq_friends, which is an indicator for contact frequency but not necessarily in-person contact.    
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:    
@@ -479,7 +479,7 @@ output: html_document
 1 |  Weekly 
 2 |  Biweekly  
 3 |  Monthly 
-4 |  Never or less than an year
+4 |  Never or less than a year  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -488,9 +488,9 @@ output: html_document
 #This is where the R-script will be written
 
 ``` 
-### **Variable label**:   Frequency of contact with friends      
-**Variable name**:   soc_sn_friends_inpersonfreq__3   
-**Variable description**:   In person contact frequency with close friends (distinguished from soc_sn_freq_friends_0 which is a variable measuring contact frequency but not necessarily in person contact).  
+### **Variable label**:   Frequency of contact with friends       
+**Variable name**:   soc_sn_freq_friends_inperson_3       
+**Variable description**:   Indicator of in-person contact frequency with close friends. This is a different variable than soc_sn_freq_friends, which is an indicator for contact frequency but not necessarily in-person contact.    
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:    
@@ -501,7 +501,7 @@ output: html_document
 1 |  Weekly 
 2 |  Biweekly  
 3 |  Monthly 
-4 |  Never or less than an year
+4 |  Never or less than a year  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -510,9 +510,9 @@ output: html_document
 #This is where the R-script will be written
 
 ``` 
-### **Variable label**:   Frequency of contact with friends      
-**Variable name**:   soc_sn_friends_inpersonfreq__4   
-**Variable description**:   In person contact frequency with close friends (distinguished from soc_sn_freq_friends_0 which is a variable measuring contact frequency but not necessarily in person contact).  
+### **Variable label**:   Frequency of contact with friends       
+**Variable name**:   soc_sn_freq_friends_inperson_4       
+**Variable description**:   Indicator of in-person contact frequency with close friends. This is a different variable than soc_sn_freq_friends, which is an indicator for contact frequency but not necessarily in-person contact.    
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:    
@@ -523,7 +523,7 @@ output: html_document
 1 |  Weekly 
 2 |  Biweekly  
 3 |  Monthly 
-4 |  Never or less than an year
+4 |  Never or less than a year  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -532,9 +532,9 @@ output: html_document
 #This is where the R-script will be written
 
 ``` 
-### **Variable label**:   Frequency of contact with friends      
-**Variable name**:   soc_sn_friends_inpersonfreq__5   
-**Variable description**:   In person contact frequency with close friends (distinguished from soc_sn_freq_friends_0 which is a variable measuring contact frequency but not necessarily in person contact).  
+### **Variable label**:   Frequency of contact with friends       
+**Variable name**:   soc_sn_freq_friends_inperson_5       
+**Variable description**:   Indicator of in-person contact frequency with close friends. This is a different variable than soc_sn_freq_friends, which is an indicator for contact frequency but not necessarily in-person contact.    
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:    
@@ -545,7 +545,7 @@ output: html_document
 1 |  Weekly 
 2 |  Biweekly  
 3 |  Monthly 
-4 |  Never or less than an year
+4 |  Never or less than a year  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -554,9 +554,9 @@ output: html_document
 #This is where the R-script will be written
 
 ``` 
-### **Variable label**:   Frequency of contact with friends      
-**Variable name**:   soc_sn_friends_inpersonfreq__6   
-**Variable description**:   In person contact frequency with close friends (distinguished from soc_sn_freq_friends_0 which is a variable measuring contact frequency but not necessarily in person contact).  
+### **Variable label**:   Frequency of contact with friends       
+**Variable name**:   soc_sn_freq_friends_inperson_6       
+**Variable description**:   Indicator of in-person contact frequency with close friends. This is a different variable than soc_sn_freq_friends, which is an indicator for contact frequency but not necessarily in-person contact.    
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:    
@@ -567,7 +567,7 @@ output: html_document
 1 |  Weekly 
 2 |  Biweekly  
 3 |  Monthly 
-4 |  Never or less than an year
+4 |  Never or less than a year  
 
 **Harmonization status**:  
 **Harmonization comment**:   
