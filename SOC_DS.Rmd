@@ -2152,9 +2152,9 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**: Emotional support      
-**Variable name**:   soc_ss_emotional_0    
-**Variable description**:  respondant received emotional support:     
+### **Variable label**: Perceived emotional support Z-score   
+**Variable name**:   soc_ss_Zscore_perceived_emo_1      
+**Variable description**:  Z-score of perceived emotional support from the participant’s 3 social network members that they are closest to.  
 **Value type**:  
 **Variable unit**:  
 **Category coding**:  
@@ -2171,9 +2171,9 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**: Instrumental support      
-**Variable name**:   soc_ss_instrumental_0        
-**Variable description**:  respondant feels they have received instrumental support:   
+### **Variable label**: Perceived emotional support Z-score   
+**Variable name**:   soc_ss_Zscore_perceived_emo_2      
+**Variable description**:  Z-score of perceived emotional support from the participant’s 3 social network members that they are closest to.  
 **Value type**:  
 **Variable unit**:  
 **Category coding**:  
@@ -2182,6 +2182,215 @@ output: html_document
 ------------- | -------------  
 0 |   
 1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Perceived emotional support Z-score   
+**Variable name**:   soc_ss_Zscore_perceived_emo_3      
+**Variable description**:  Z-score of perceived emotional support from the participant’s 3 social network members that they are closest to.  
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Perceived emotional support Z-score   
+**Variable name**:   soc_ss_Zscore_perceived_emo_4       
+**Variable description**:  Z-score of perceived emotional support from the participant’s 3 social network members that they are closest to.  
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Perceived emotional support Z-score   
+**Variable name**:   soc_ss_Zscore_perceived_emo_5        
+**Variable description**:  Z-score of perceived emotional support from the participant’s 3 social network members that they are closest to.  
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Perceived emotional support Z-score   
+**Variable name**:   soc_ss_Zscore_perceived_emo_6        
+**Variable description**:  Z-score of perceived emotional support from the participant’s 3 social network members that they are closest to.  
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Perceived instrumental support        
+**Variable name**:   soc_ss_perceived_instru_0      
+**Variable description**:  Indicator of perceived instrumental support, i.e. is there is someone to help with daily chores in case of need?       
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Perceived instrumental support available  
+1 |  No perceived instrumental support available  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Perceived instrumental support        
+**Variable name**:   soc_ss_perceived_instru_1      
+**Variable description**:  Indicator of perceived instrumental support, i.e. is there is someone to help with daily chores in case of need?       
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Perceived instrumental support available  
+1 |  No perceived instrumental support available  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Perceived instrumental support        
+**Variable name**:   soc_ss_perceived_instru_2      
+**Variable description**:  Indicator of perceived instrumental support, i.e. is there is someone to help with daily chores in case of need?       
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Perceived instrumental support available  
+1 |  No perceived instrumental support available  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Perceived instrumental support        
+**Variable name**:   soc_ss_perceived_instru_3      
+**Variable description**:  Indicator of perceived instrumental support, i.e. is there is someone to help with daily chores in case of need?       
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Perceived instrumental support available  
+1 |  No perceived instrumental support available  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Perceived instrumental support        
+**Variable name**:   soc_ss_perceived_instru_4      
+**Variable description**:  Indicator of perceived instrumental support, i.e. is there is someone to help with daily chores in case of need?       
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Perceived instrumental support available  
+1 |  No perceived instrumental support available  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Perceived instrumental support        
+**Variable name**:   soc_ss_perceived_instru_5      
+**Variable description**:  Indicator of perceived instrumental support, i.e. is there is someone to help with daily chores in case of need?       
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Perceived instrumental support available  
+1 |  No perceived instrumental support available  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Perceived instrumental support        
+**Variable name**:   soc_ss_perceived_instru_6      
+**Variable description**:  Indicator of perceived instrumental support, i.e. is there is someone to help with daily chores in case of need?       
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Perceived instrumental support available  
+1 |  No perceived instrumental support available  
 
 **Harmonization status**:  
 **Harmonization comment**:   
