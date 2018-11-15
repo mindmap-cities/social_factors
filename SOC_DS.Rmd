@@ -891,32 +891,10 @@ output: html_document
 #This is where the R-script will be written
 
 ``` 
-### **Variable label**:   Neighbours network size        
-**Variable name**:   soc_snfreq_nbhs_7    
-**Variable description**:  Contact frequency of respondent with neighbours which they know well and are in regular contact with     
-**Value type**:  integer    
-**Variable unit**:    
-**Category coding**:   
 
-**Code** | **Category Label**  
-------------- | -------------  
-1 | Daily
-2 | Weekly 
-3 | Biweekly
-4 | Monthly 
-5 | Never or less than an year  
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-``` 
-
-### **Variable label**:   Contact frequency with friends    
-**Variable name**:   soc_snfreq_friends_0  
-**Variable description**:  Contact frequency of respondent with close friends   
+### **Variable label**:   Contact frequency with neighbours        
+**Variable name**:   soc_sn_freq_neighbours_0    
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit with.   
 **Value type**:  integer  
 **Variable unit**:     
 **Category coding**:    
@@ -927,7 +905,7 @@ output: html_document
 2 | Weekly 
 3 | Biweekly
 4 | Monthly 
-5 | Never or less than an year   
+5 | Never or less than a year   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -936,7 +914,138 @@ output: html_document
 #This is where the R-script will be written
 
 ``` 
+### **Variable label**:   Contact frequency with neighbours        
+**Variable name**:   soc_sn_freq_neighbours_1    
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit with.   
+**Value type**:  integer  
+**Variable unit**:     
+**Category coding**:    
 
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily
+2 | Weekly 
+3 | Biweekly
+4 | Monthly 
+5 | Never or less than a year   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with neighbours        
+**Variable name**:   soc_sn_freq_neighbours_2    
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit with.   
+**Value type**:  integer  
+**Variable unit**:     
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily
+2 | Weekly 
+3 | Biweekly
+4 | Monthly 
+5 | Never or less than a year   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with neighbours        
+**Variable name**:   soc_sn_freq_neighbours_3    
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit with.   
+**Value type**:  integer  
+**Variable unit**:     
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily
+2 | Weekly 
+3 | Biweekly
+4 | Monthly 
+5 | Never or less than a year   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with neighbours        
+**Variable name**:   soc_sn_freq_neighbours_4    
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit with.   
+**Value type**:  integer  
+**Variable unit**:     
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily
+2 | Weekly 
+3 | Biweekly
+4 | Monthly 
+5 | Never or less than a year   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with neighbours        
+**Variable name**:   soc_sn_freq_neighbours_5    
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit with.   
+**Value type**:  integer  
+**Variable unit**:     
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily
+2 | Weekly 
+3 | Biweekly
+4 | Monthly 
+5 | Never or less than a year   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with neighbours        
+**Variable name**:   soc_sn_freq_neighbours_6      
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit with.   
+**Value type**:  integer  
+**Variable unit**:     
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Daily
+2 | Weekly 
+3 | Biweekly
+4 | Monthly 
+5 | Never or less than a year   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
 ### **Variable label**:  Social isolation    
 **Variable name**:  soc_si_0  
 **Variable description**:  Respondent has no social contact with anyone (family, relatives, neighbours, friends, colleagues) and no membership in any association    
