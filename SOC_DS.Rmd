@@ -730,9 +730,147 @@ output: html_document
 #This is where the R-script will be written
 
 ``` 
-### **Variable label**:   Neighbours network size       
+### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_0    
-**Variable description**:  Social network size comprised of neighbours that respondent knows well and is in regular contact with  
+**Variable description**:  Indicator of the number of neighbours that participant knows well enough to be in touch with or visit with.  
+**Value type**:  integer    
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | None 
+2 | 1 or 2 
+3 | 3 to 5 
+4 | 6 to 10 
+5 | 11 to 20 
+6 | More than 20   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Network size of neighbours           
+**Variable name**:   soc_sn_num_nbhs_1    
+**Variable description**:  Indicator of the number of neighbours that participant knows well enough to be in touch with or visit with.  
+**Value type**:  integer    
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | None 
+2 | 1 or 2 
+3 | 3 to 5 
+4 | 6 to 10 
+5 | 11 to 20 
+6 | More than 20   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Network size of neighbours           
+**Variable name**:   soc_sn_num_nbhs_2    
+**Variable description**:  Indicator of the number of neighbours that participant knows well enough to be in touch with or visit with.  
+**Value type**:  integer    
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | None 
+2 | 1 or 2 
+3 | 3 to 5 
+4 | 6 to 10 
+5 | 11 to 20 
+6 | More than 20   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Network size of neighbours           
+**Variable name**:   soc_sn_num_nbhs_3    
+**Variable description**:  Indicator of the number of neighbours that participant knows well enough to be in touch with or visit with.  
+**Value type**:  integer    
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | None 
+2 | 1 or 2 
+3 | 3 to 5 
+4 | 6 to 10 
+5 | 11 to 20 
+6 | More than 20   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Network size of neighbours           
+**Variable name**:   soc_sn_num_nbhs_4    
+**Variable description**:  Indicator of the number of neighbours that participant knows well enough to be in touch with or visit with.  
+**Value type**:  integer    
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | None 
+2 | 1 or 2 
+3 | 3 to 5 
+4 | 6 to 10 
+5 | 11 to 20 
+6 | More than 20   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Network size of neighbours           
+**Variable name**:   soc_sn_num_nbhs_5    
+**Variable description**:  Indicator of the number of neighbours that participant knows well enough to be in touch with or visit with.  
+**Value type**:  integer    
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | None 
+2 | 1 or 2 
+3 | 3 to 5 
+4 | 6 to 10 
+5 | 11 to 20 
+6 | More than 20   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Network size of neighbours           
+**Variable name**:   soc_sn_num_nbhs_6    
+**Variable description**:  Indicator of the number of neighbours that participant knows well enough to be in touch with or visit with.  
 **Value type**:  integer    
 **Variable unit**:    
 **Category coding**:   
@@ -754,7 +892,7 @@ output: html_document
 
 ``` 
 ### **Variable label**:   Neighbours network size        
-**Variable name**:   soc_snfreq_nbhs_0    
+**Variable name**:   soc_snfreq_nbhs_7    
 **Variable description**:  Contact frequency of respondent with neighbours which they know well and are in regular contact with     
 **Value type**:  integer    
 **Variable unit**:    
