@@ -3015,6 +3015,139 @@ output: html_document
 #This is where the R-script will be written
 
 ```
+### **Variable label**:  Cultural and educational participation   
+**Variable name**:  soc_sp_cultural_edu_0           
+**Variable description**:  Indicator of whether the participant is a member of/participates in a group, club or activity related to education or culture.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a cultural or educational organization  
+1 |  Participation in a cultural or educational organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Cultural and educational participation   
+**Variable name**:  soc_sp_cultural_edu_1           
+**Variable description**:  Indicator of whether the participant is a member of/participates in a group, club or activity related to education or culture.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a cultural or educational organization  
+1 |  Participation in a cultural or educational organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Cultural and educational participation   
+**Variable name**:  soc_sp_cultural_edu_2           
+**Variable description**:  Indicator of whether the participant is a member of/participates in a group, club or activity related to education or culture.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a cultural or educational organization  
+1 |  Participation in a cultural or educational organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Cultural and educational participation   
+**Variable name**:  soc_sp_cultural_edu_3           
+**Variable description**:  Indicator of whether the participant is a member of/participates in a group, club or activity related to education or culture.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a cultural or educational organization  
+1 |  Participation in a cultural or educational organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Cultural and educational participation   
+**Variable name**:  soc_sp_cultural_edu_4           
+**Variable description**:  Indicator of whether the participant is a member of/participates in a group, club or activity related to education or culture.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a cultural or educational organization  
+1 |  Participation in a cultural or educational organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Cultural and educational participation   
+**Variable name**:  soc_sp_cultural_edu_5           
+**Variable description**:  Indicator of whether the participant is a member of/participates in a group, club or activity related to education or culture.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a cultural or educational organization  
+1 |  Participation in a cultural or educational organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Cultural and educational participation   
+**Variable name**:  soc_sp_cultural_edu_6           
+**Variable description**:  Indicator of whether the participant is a member of/participates in a group, club or activity related to education or culture.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a cultural or educational organization  
+1 |  Participation in a cultural or educational organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
 # Major life events subdomain
 
 ### **Variable label**:  Life event: victim     
