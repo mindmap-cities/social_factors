@@ -1721,17 +1721,17 @@ output: html_document
 # Social support subdomain
 
 ### **Variable label**: Received emotional support    
-**Variable name**:   soc_ss_rec_emo_0 
-**Variable description**:  Frequency of received instrumental support from top 3 network members which are important to the respondent and with whom respondent shared personal experiences and feelings or received affection from.  
+**Variable name**:   soc_ss_received_emo_0 
+**Variable description**:  Indicator of the frequency of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
 **Value type**:  
 **Variable unit**:  
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   Never
-1 |   Sometimes
-2 |   Often
+0 |   Never received emotional support
+1 |   Sometimes received emotional support
+2 |   Often received emotional support
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1740,10 +1740,402 @@ output: html_document
 #This is where the R-script will be written
 
 ```
+### **Variable label**: Received emotional support    
+**Variable name**:   soc_ss_received_emo_1 
+**Variable description**:  Indicator of the frequency of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
 
-### **Variable label**: Perceived social support    
-**Variable name**:   soc_ss_perceived_0    
-**Variable description**:  respondant feels they have received support from   
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Never received emotional support
+1 |   Sometimes received emotional support
+2 |   Often received emotional support
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support    
+**Variable name**:   soc_ss_received_emo_2 
+**Variable description**:  Indicator of the frequency of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Never received emotional support
+1 |   Sometimes received emotional support
+2 |   Often received emotional support
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support    
+**Variable name**:   soc_ss_received_emo_3 
+**Variable description**:  Indicator of the frequency of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Never received emotional support
+1 |   Sometimes received emotional support
+2 |   Often received emotional support
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support    
+**Variable name**:   soc_ss_received_emo_4 
+**Variable description**:  Indicator of the frequency of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Never received emotional support
+1 |   Sometimes received emotional support
+2 |   Often received emotional support
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support    
+**Variable name**:   soc_ss_received_emo_5 
+**Variable description**:  Indicator of the frequency of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Never received emotional support
+1 |   Sometimes received emotional support
+2 |   Often received emotional support
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support    
+**Variable name**:   soc_ss_received_emo_6 
+**Variable description**:  Indicator of the frequency of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Never received emotional support
+1 |   Sometimes received emotional support
+2 |   Often received emotional support
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support Z-score    
+**Variable name**:   soc_ss_Zscore_received_emo_0 
+**Variable description**:  Zscore of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support Z-score    
+**Variable name**:   soc_ss_Zscore_received_emo_1 
+**Variable description**:  Zscore of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support Z-score    
+**Variable name**:   soc_ss_Zscore_received_emo_2 
+**Variable description**:  Zscore of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support Z-score    
+**Variable name**:   soc_ss_Zscore_received_emo_3 
+**Variable description**:  Zscore of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support Z-score    
+**Variable name**:   soc_ss_Zscore_received_emo_4 
+**Variable description**:  Zscore of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support Z-score    
+**Variable name**:   soc_ss_Zscore_received_emo_5 
+**Variable description**:  Zscore of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support Z-score    
+**Variable name**:   soc_ss_Zscore_received_emo_6 
+**Variable description**:  Zscore of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received instrumental support   
+**Variable name**:   soc_ss_received_instru_0 
+**Variable description**:  Indicator of the frequency of received instrumental support (i.e. help with chores) from the participant’s 3 social network members that they are closest to.    
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Never received instrumental support
+1 |   Sometimes received instrumental support
+2 |   Often received instrumental support
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received instrumental support   
+**Variable name**:   soc_ss_received_instru_1 
+**Variable description**:  Indicator of the frequency of received instrumental support (i.e. help with chores) from the participant’s 3 social network members that they are closest to.    
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Never received instrumental support
+1 |   Sometimes received instrumental support
+2 |   Often received instrumental support
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received instrumental support   
+**Variable name**:   soc_ss_received_instru_2 
+**Variable description**:  Indicator of the frequency of received instrumental support (i.e. help with chores) from the participant’s 3 social network members that they are closest to.    
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Never received instrumental support
+1 |   Sometimes received instrumental support
+2 |   Often received instrumental support
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received instrumental support   
+**Variable name**:   soc_ss_received_instru_3 
+**Variable description**:  Indicator of the frequency of received instrumental support (i.e. help with chores) from the participant’s 3 social network members that they are closest to.    
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Never received instrumental support
+1 |   Sometimes received instrumental support
+2 |   Often received instrumental support
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received instrumental support   
+**Variable name**:   soc_ss_received_instru_4 
+**Variable description**:  Indicator of the frequency of received instrumental support (i.e. help with chores) from the participant’s 3 social network members that they are closest to.    
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Never received instrumental support
+1 |   Sometimes received instrumental support
+2 |   Often received instrumental support
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received instrumental support   
+**Variable name**:   soc_ss_received_instru_5 
+**Variable description**:  Indicator of the frequency of received instrumental support (i.e. help with chores) from the participant’s 3 social network members that they are closest to.    
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Never received instrumental support
+1 |   Sometimes received instrumental support
+2 |   Often received instrumental support
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received instrumental support   
+**Variable name**:   soc_ss_received_instru_6 
+**Variable description**:  Indicator of the frequency of received instrumental support (i.e. help with chores) from the participant’s 3 social network members that they are closest to.    
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Never received instrumental support
+1 |   Sometimes received instrumental support
+2 |   Often received instrumental support
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Perceived emotional support Z-score   
+**Variable name**:   soc_ss_Zscore_perceived_emo_0      
+**Variable description**:  Z-score of perceived emotional support from the participant’s 3 social network members that they are closest to.  
 **Value type**:  
 **Variable unit**:  
 **Category coding**:  
