@@ -3148,6 +3148,671 @@ output: html_document
 #This is where the R-script will be written
 
 ```
+### **Variable label**:  Cultural and social participation    
+**Variable name**:  soc_sp_cultural_soc_0                 
+**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture or social activities.   
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a cultural or social organization  
+1 |  Participation in a cultural or social organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Cultural and social participation    
+**Variable name**:  soc_sp_cultural_soc_1                 
+**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture or social activities.   
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a cultural or social organization  
+1 |  Participation in a cultural or social organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Cultural and social participation    
+**Variable name**:  soc_sp_cultural_soc_2                 
+**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture or social activities.   
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a cultural or social organization  
+1 |  Participation in a cultural or social organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Cultural and social participation    
+**Variable name**:  soc_sp_cultural_soc_3               
+**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture or social activities.   
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a cultural or social organization  
+1 |  Participation in a cultural or social organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Cultural and social participation    
+**Variable name**:  soc_sp_cultural_soc_4               
+**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture or social activities.   
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a cultural or social organization  
+1 |  Participation in a cultural or social organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Cultural and social participation    
+**Variable name**:  soc_sp_cultural_soc_5               
+**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture or social activities.   
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a cultural or social organization  
+1 |  Participation in a cultural or social organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Cultural and social participation    
+**Variable name**:  soc_sp_cultural_soc_6               
+**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture or social activities.   
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a cultural or social organization  
+1 |  Participation in a cultural or social organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Volunteering      
+**Variable name**:  soc_sp_volunteer_0                
+**Variable description**:  Indicator of whether the participant takes part in volunteer activities including charity work or volunteer work in an association with a social aim.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not volunteer 
+1 |  Volunteers  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Volunteering      
+**Variable name**:  soc_sp_volunteer_1                
+**Variable description**:  Indicator of whether the participant takes part in volunteer activities including charity work or volunteer work in an association with a social aim.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not volunteer 
+1 |  Volunteers  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Volunteering      
+**Variable name**:  soc_sp_volunteer_2                
+**Variable description**:  Indicator of whether the participant takes part in volunteer activities including charity work or volunteer work in an association with a social aim.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not volunteer 
+1 |  Volunteers  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Volunteering      
+**Variable name**:  soc_sp_volunteer_3                
+**Variable description**:  Indicator of whether the participant takes part in volunteer activities including charity work or volunteer work in an association with a social aim.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not volunteer 
+1 |  Volunteers  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Volunteering      
+**Variable name**:  soc_sp_volunteer_4                
+**Variable description**:  Indicator of whether the participant takes part in volunteer activities including charity work or volunteer work in an association with a social aim.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not volunteer 
+1 |  Volunteers  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Volunteering      
+**Variable name**:  soc_sp_volunteer_5                
+**Variable description**:  Indicator of whether the participant takes part in volunteer activities including charity work or volunteer work in an association with a social aim.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not volunteer 
+1 |  Volunteers  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Volunteering      
+**Variable name**:  soc_sp_volunteer_6                
+**Variable description**:  Indicator of whether the participant takes part in volunteer activities including charity work or volunteer work in an association with a social aim.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not volunteer 
+1 |  Volunteers  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Civic participation       
+**Variable name**:  soc_sp_civic_0                
+**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a civic organization   
+1 |  Participation in a civic organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Civic participation       
+**Variable name**:  soc_sp_civic_1                
+**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a civic organization   
+1 |  Participation in a civic organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Civic participation       
+**Variable name**:  soc_sp_civic_2                
+**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a civic organization   
+1 |  Participation in a civic organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Civic participation       
+**Variable name**:  soc_sp_civic_3                
+**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a civic organization   
+1 |  Participation in a civic organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Civic participation       
+**Variable name**:  soc_sp_civic_4                
+**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a civic organization   
+1 |  Participation in a civic organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Civic participation       
+**Variable name**:  soc_sp_civic_5                
+**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a civic organization   
+1 |  Participation in a civic organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Civic participation       
+**Variable name**:  soc_sp_civic_6                
+**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a civic organization   
+1 |  Participation in a civic organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Professional participation         
+**Variable name**:  soc_sp_prof_0                
+**Variable description**:  Indicator of participation in a professional association, including a union or neighbourhood association.  
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a professional organization   
+1 |  Participation in a professional organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Professional participation         
+**Variable name**:  soc_sp_prof_1                
+**Variable description**:  Indicator of participation in a professional association, including a union or neighbourhood association.  
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a professional organization   
+1 |  Participation in a professional organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Professional participation         
+**Variable name**:  soc_sp_prof_2                
+**Variable description**:  Indicator of participation in a professional association, including a union or neighbourhood association.  
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a professional organization   
+1 |  Participation in a professional organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Professional participation         
+**Variable name**:  soc_sp_prof_3                
+**Variable description**:  Indicator of participation in a professional association, including a union or neighbourhood association.  
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a professional organization   
+1 |  Participation in a professional organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Professional participation         
+**Variable name**:  soc_sp_prof_4                
+**Variable description**:  Indicator of participation in a professional association, including a union or neighbourhood association.  
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a professional organization   
+1 |  Participation in a professional organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Professional participation         
+**Variable name**:  soc_sp_prof_5                
+**Variable description**:  Indicator of participation in a professional association, including a union or neighbourhood association.  
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a professional organization   
+1 |  Participation in a professional organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Professional participation         
+**Variable name**:  soc_sp_prof_6                
+**Variable description**:  Indicator of participation in a professional association, including a union or neighbourhood association.  
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in a professional organization   
+1 |  Participation in a professional organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Social participation indicator        
+**Variable name**:  soc_sp_general_0                
+**Variable description**:  Indicator of whether the participant takes part in any type of social participation.     
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in an organization   
+1 |  Participation in an organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Social participation indicator        
+**Variable name**:  soc_sp_general_1                
+**Variable description**:  Indicator of whether the participant takes part in any type of social participation.     
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in an organization   
+1 |  Participation in an organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Social participation indicator        
+**Variable name**:  soc_sp_general_2                
+**Variable description**:  Indicator of whether the participant takes part in any type of social participation.     
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in an organization   
+1 |  Participation in an organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Social participation indicator        
+**Variable name**:  soc_sp_general_3                
+**Variable description**:  Indicator of whether the participant takes part in any type of social participation.     
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in an organization   
+1 |  Participation in an organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Social participation indicator        
+**Variable name**:  soc_sp_general_4                
+**Variable description**:  Indicator of whether the participant takes part in any type of social participation.     
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in an organization   
+1 |  Participation in an organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Social participation indicator        
+**Variable name**:  soc_sp_general_5                
+**Variable description**:  Indicator of whether the participant takes part in any type of social participation.     
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in an organization   
+1 |  Participation in an organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Social participation indicator        
+**Variable name**:  soc_sp_general_6                
+**Variable description**:  Indicator of whether the participant takes part in any type of social participation.     
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  No participation in an organization   
+1 |  Participation in an organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
 # Major life events subdomain
 
 ### **Variable label**:  Life event: victim     
