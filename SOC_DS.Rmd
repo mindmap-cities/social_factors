@@ -287,9 +287,9 @@ output: html_document
 
 ```
 
-### **Variable label**:   Friends network size   
+### **Variable label**:   Network size of friends    
 **Variable name**:   soc_sn_num_friends_0  
-**Variable description**:  Number of close friends in the respondent’s social network, which respondent feels they can talk to/reach out to.   
+**Variable description**:  Indicator of the number of close friends. These are friends which the participant feels they can talk to/reach out to.    
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:      
@@ -306,9 +306,9 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Friends network size   
-**Variable name**:   soc_sn_num_friends_1  
-**Variable description**:  Number of close friends in the respondent’s social network, which respondent feels they can talk to/reach out to.   
+### **Variable label**:   Network size of friends    
+**Variable name**:   soc_sn_num_friends_1    
+**Variable description**:  Indicator of the number of close friends. These are friends which the participant feels they can talk to/reach out to.  
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:      
@@ -325,9 +325,9 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Friends network size   
-**Variable name**:   soc_sn_num_friends_2  
-**Variable description**:  Number of close friends in the respondent’s social network, which respondent feels they can talk to/reach out to.   
+### **Variable label**:   Network size of friends    
+**Variable name**:   soc_sn_num_friends_2    
+**Variable description**:  Indicator of the number of close friends. These are friends which the participant feels they can talk to/reach out to.    
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:      
@@ -344,9 +344,9 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Friends network size   
-**Variable name**:   soc_sn_num_friends_3  
-**Variable description**:  Number of close friends in the respondent’s social network, which respondent feels they can talk to/reach out to.   
+### **Variable label**:   Network size of friends    
+**Variable name**:   soc_sn_num_friends_3    
+**Variable description**:  Indicator of the number of close friends. These are friends which the participant feels they can talk to/reach out to.    
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:      
@@ -363,9 +363,9 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Friends network size    
-**Variable name**:   soc_sn_num_friends_4  
-**Variable description**:  Number of close friends in the respondent’s social network, which  respondent feels they can talk to/reach out to.   
+### **Variable label**:   Network size of friends    
+**Variable name**:   soc_sn_num_friends_4    
+**Variable description**:  Indicator of the number of close friends. These are friends which the participant feels they can talk to/reach out to.    
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:      
@@ -382,9 +382,9 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Friends network size    
-**Variable name**:   soc_sn_num_friends_5  
-**Variable description**:  Number of close friends in the respondent’s social network, which respondent feels they can talk to/reach out to.   
+### **Variable label**:   Network size of friends    
+**Variable name**:   soc_sn_num_friends_5    
+**Variable description**:  Indicator of the number of close friends. These are friends which the participant feels they can talk to/reach out to.      
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:      
@@ -401,9 +401,10 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Friends network size    
-**Variable name**:   soc_sn_num_friends_6  
-**Variable description**:  Number of close friends in the respondent’s social network, which respondent feels they can talk to/reach out to.   
+
+### **Variable label**:   Network size of friends    
+**Variable name**:   soc_sn_num_friends_6    
+**Variable description**:  Indicator of the number of close friends. These are friends which the participant feels they can talk to/reach out to.    
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:      
