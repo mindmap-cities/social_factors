@@ -4860,12 +4860,11 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-
 # Residential characteristics subdomain
 
-### **Variable label**:  Residential stability   
-**Variable name**:  soc_resstab_home_0  
-**Variable description**:  Number of years living at current home/address  
+### **Variable label**:  Residential stability in neighbourhood (individual - level)  
+**Variable name**:  soc_res_num_yrsnbh_0        
+**Variable description**:  Indicator of the number of years that participant has lived in the neighbourhood.  
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:  
@@ -4882,11 +4881,11 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Residential stability   
-**Variable name**:  soc_resstab_comm_0  
-**Variable description**:  Number of years living in current neighbourhood  
+### **Variable label**:  Residential stability in neighbourhood (individual - level)  
+**Variable name**:  soc_res_num_yrsnbh_1          
+**Variable description**:  Indicator of the number of years that participant has lived in the neighbourhood.  
 **Value type**:  integer  
-**Variable unit**:    
+**Variable unit**:   
 **Category coding**:  
 
 **Code** | **Category Label**  
@@ -4901,18 +4900,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-
-### **Variable label**:  Home ownership  
-**Variable name**:  soc_home_0    
-**Variable description**:  Respondent owns the home that they live in   
+### **Variable label**:  Residential stability in neighbourhood (individual - level)  
+**Variable name**:  soc_res_num_yrsnbh_2          
+**Variable description**:  Indicator of the number of years that participant has lived in the neighbourhood.  
 **Value type**:  integer  
-**Variable unit**:  
+**Variable unit**:   
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |   yes 
-0 |   no
+0 |   
+1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4921,7 +4919,690 @@ output: html_document
 #This is where the R-script will be written
 
 ```
+### **Variable label**:  Residential stability in neighbourhood (individual - level)  
+**Variable name**:  soc_res_num_yrsnbh_3          
+**Variable description**:  Indicator of the number of years that participant has lived in the neighbourhood.  
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
 
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
 
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
 
+```
+### **Variable label**:  Residential stability in neighbourhood (individual - level)  
+**Variable name**:  soc_res_num_yrsnbh_4          
+**Variable description**:  Indicator of the number of years that participant has lived in the neighbourhood.  
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
 
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential stability in neighbourhood (individual - level)  
+**Variable name**:  soc_res_num_yrsnbh_5          
+**Variable description**:  Indicator of the number of years that participant has lived in the neighbourhood.  
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential stability in neighbourhood (individual - level)  
+**Variable name**:  soc_res_num_yrsnbh_6          
+**Variable description**:  Indicator of the number of years that participant has lived in the neighbourhood.  
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential stability in home (individual - level)
+**Variable name**:  soc_res_num_yrshome_0          
+**Variable description**:  Indicator of the number of years that participant has lived in current home/address.    
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential stability in home (individual - level)
+**Variable name**:  soc_res_num_yrshome_1          
+**Variable description**:  Indicator of the number of years that participant has lived in current home/address.    
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential stability in home (individual - level)
+**Variable name**:  soc_res_num_yrshome_2          
+**Variable description**:  Indicator of the number of years that participant has lived in current home/address.    
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential stability in home (individual - level)
+**Variable name**:  soc_res_num_yrshome_3          
+**Variable description**:  Indicator of the number of years that participant has lived in current home/address.    
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential stability in home (individual - level)
+**Variable name**:  soc_res_num_yrshome_4          
+**Variable description**:  Indicator of the number of years that participant has lived in current home/address.    
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential stability in home (individual - level)
+**Variable name**:  soc_res_num_yrshome_5          
+**Variable description**:  Indicator of the number of years that participant has lived in current home/address.    
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential stability in home (individual - level)
+**Variable name**:  soc_res_num_yrshome_6          
+**Variable description**:  Indicator of the number of years that participant has lived in current home/address.    
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Neighbourhood satisfaction   
+**Variable name**:  soc_res_satis_0             
+**Variable description**:  Indicator of whether the participant desires to move away from their current neighbourhood.      
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not want to move out of neighbourhood
+1 |  Wants to move out of neighbourhood
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential mobility (individual - level)     
+**Variable name**:  soc_res_move_0                
+**Variable description**:  Indicator of whether the participant desires to move away from their current neighbourhood.      
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Has not moved since last interview
+1 |  Has moved since last interview
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential mobility (individual - level)     
+**Variable name**:  soc_res_move_1                
+**Variable description**:  Indicator of whether the participant desires to move away from their current neighbourhood.      
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Has not moved since last interview
+1 |  Has moved since last interview
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential mobility (individual - level)     
+**Variable name**:  soc_res_move_2                
+**Variable description**:  Indicator of whether the participant desires to move away from their current neighbourhood.      
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Has not moved since last interview
+1 |  Has moved since last interview
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential mobility (individual - level)     
+**Variable name**:  soc_res_move_3                
+**Variable description**:  Indicator of whether the participant desires to move away from their current neighbourhood.      
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Has not moved since last interview
+1 |  Has moved since last interview
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential mobility (individual - level)     
+**Variable name**:  soc_res_move_4                
+**Variable description**:  Indicator of whether the participant desires to move away from their current neighbourhood.      
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Has not moved since last interview
+1 |  Has moved since last interview
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential mobility (individual - level)     
+**Variable name**:  soc_res_move_5                
+**Variable description**:  Indicator of whether the participant desires to move away from their current neighbourhood.      
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Has not moved since last interview
+1 |  Has moved since last interview
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential mobility (individual - level)     
+**Variable name**:  soc_res_move_6                  
+**Variable description**:  Indicator of whether the participant desires to move away from their current neighbourhood.      
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Has not moved since last interview
+1 |  Has moved since last interview
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residence independence     
+**Variable name**:  soc_res_home_0                  
+**Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lives independently  
+1 |  Lives in a nursing home
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residence independence     
+**Variable name**:  soc_res_home_1                  
+**Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lives independently  
+1 |  Lives in a nursing home
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residence independence     
+**Variable name**:  soc_res_home_2                  
+**Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lives independently  
+1 |  Lives in a nursing home
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residence independence     
+**Variable name**:  soc_res_home_3                  
+**Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lives independently  
+1 |  Lives in a nursing home
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residence independence     
+**Variable name**:  soc_res_home_4                  
+**Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lives independently  
+1 |  Lives in a nursing home
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residence independence     
+**Variable name**:  soc_res_home_5                  
+**Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lives independently  
+1 |  Lives in a nursing home
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residence independence     
+**Variable name**:  soc_res_home_6                  
+**Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lives independently  
+1 |  Lives in a nursing home
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Home ownership (2-level)      
+**Variable name**:  soc_res_home_own_dich_0                     
+**Variable description**:  Indicator of whether the participant owns home or not (i.e. pays rent or mortgage).          
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not own home
+1 |  Owns home
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Home ownership (2-level)      
+**Variable name**:  soc_res_home_own_dich_1                     
+**Variable description**:  Indicator of whether the participant owns home or not (i.e. pays rent or mortgage).          
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not own home
+1 |  Owns home
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Home ownership (2-level)      
+**Variable name**:  soc_res_home_own_dich_2                     
+**Variable description**:  Indicator of whether the participant owns home or not (i.e. pays rent or mortgage).          
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not own home
+1 |  Owns home
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Home ownership (2-level)      
+**Variable name**:  soc_res_home_own_dich_3                     
+**Variable description**:  Indicator of whether the participant owns home or not (i.e. pays rent or mortgage).          
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not own home
+1 |  Owns home
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Home ownership (2-level)      
+**Variable name**:  soc_res_home_own_dich_4                     
+**Variable description**:  Indicator of whether the participant owns home or not (i.e. pays rent or mortgage).          
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not own home
+1 |  Owns home
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Home ownership (2-level)      
+**Variable name**:  soc_res_home_own_dich_5                     
+**Variable description**:  Indicator of whether the participant owns home or not (i.e. pays rent or mortgage).          
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not own home
+1 |  Owns home
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Home ownership (2-level)      
+**Variable name**:  soc_res_home_own_dich_6                     
+**Variable description**:  Indicator of whether the participant owns home or not (i.e. pays rent or mortgage).          
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not own home
+1 |  Owns home
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Home ownership (3-level)      
+**Variable name**:  soc_res_home_own_0                        
+**Variable description**:  Indicator of whether the participant owns home, pays mortgage or rents.             
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Owns home
+2 |  Pays mortgage 
+3 |  Rents home 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Home ownership (3-level)      
+**Variable name**:  soc_res_home_own_1                        
+**Variable description**:  Indicator of whether the participant owns home, pays mortgage or rents.             
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Owns home
+2 |  Pays mortgage 
+3 |  Rents home 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Home ownership (3-level)      
+**Variable name**:  soc_res_home_own_2                        
+**Variable description**:  Indicator of whether the participant owns home, pays mortgage or rents.             
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Owns home
+2 |  Pays mortgage 
+3 |  Rents home 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
