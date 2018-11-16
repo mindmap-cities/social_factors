@@ -4216,15 +4216,15 @@ output: html_document
 
 ### **Variable label**:  Life event: victim     
 **Variable name**:  soc_le_vic_0         
-**Variable description**:  Respondent was the victim of a crime (i.e. theft, assault) in the past few years.    
+**Variable description**:   Indicator of whether the participant experienced being the victim of a crime (i.e. theft, assault) in the past few years.     
 **Value type**:  integer    
-**Variable unit**: **: N/A      
+**Variable unit**:      
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Not a victim
-1 |  Victim
+0 |  Was not the victim of a crime
+1 |  Was the victim of a crime 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4234,16 +4234,16 @@ output: html_document
 
 ```
 ### **Variable label**:  Life event: victim     
-**Variable name**:  soc_le_vic_1           
-**Variable description**:  Respondent was the victim of a crime (i.e. theft, assault) in the past few years.    
+**Variable name**:  soc_le_vic_1         
+**Variable description**:   Indicator of whether the participant experienced being the victim of a crime (i.e. theft, assault) in the past few years.     
 **Value type**:  integer    
-**Variable unit**: **: N/A      
+**Variable unit**:      
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Not a victim
-1 |  Victim
+0 |  Was not the victim of a crime
+1 |  Was the victim of a crime 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4253,16 +4253,16 @@ output: html_document
 
 ```
 ### **Variable label**:  Life event: victim     
-**Variable name**:  soc_le_vic_2           
-**Variable description**:  Respondent was the victim of a crime (i.e. theft, assault) in the past few years.    
+**Variable name**:  soc_le_vic_2         
+**Variable description**:   Indicator of whether the participant experienced being the victim of a crime (i.e. theft, assault) in the past few years.     
 **Value type**:  integer    
-**Variable unit**: **: N/A      
+**Variable unit**:      
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Not a victim
-1 |  Victim
+0 |  Was not the victim of a crime
+1 |  Was the victim of a crime 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4272,16 +4272,16 @@ output: html_document
 
 ```
 ### **Variable label**:  Life event: victim     
-**Variable name**:  soc_le_vic_3           
-**Variable description**:  Respondent was the victim of a crime (i.e. theft, assault) in the past few years.    
+**Variable name**:  soc_le_vic_3         
+**Variable description**:   Indicator of whether the participant experienced being the victim of a crime (i.e. theft, assault) in the past few years.     
 **Value type**:  integer    
-**Variable unit**: **: N/A      
+**Variable unit**:      
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Not a victim
-1 |  Victim
+0 |  Was not the victim of a crime
+1 |  Was the victim of a crime 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4291,16 +4291,16 @@ output: html_document
 
 ```
 ### **Variable label**:  Life event: victim     
-**Variable name**:  soc_le_vic_4           
-**Variable description**:  Respondent was the victim of a crime (i.e. theft, assault) in the past few years.    
+**Variable name**:  soc_le_vic_4         
+**Variable description**:   Indicator of whether the participant experienced being the victim of a crime (i.e. theft, assault) in the past few years.     
 **Value type**:  integer    
-**Variable unit**: **: N/A      
+**Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Not a victim
-1 |  Victim
+0 |  Was not the victim of a crime
+1 |  Was the victim of a crime 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4310,16 +4310,16 @@ output: html_document
 
 ```
 ### **Variable label**:  Life event: victim     
-**Variable name**:  soc_le_vic_5           
-**Variable description**:  Respondent was the victim of a crime (i.e. theft, assault) in the past few years.    
+**Variable name**:  soc_le_vic_5         
+**Variable description**:   Indicator of whether the participant experienced being the victim of a crime (i.e. theft, assault) in the past few years.     
 **Value type**:  integer    
-**Variable unit**: **: N/A      
+**Variable unit**:      
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Not a victim
-1 |  Victim
+0 |  Was not the victim of a crime
+1 |  Was the victim of a crime 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4329,16 +4329,16 @@ output: html_document
 
 ```
 ### **Variable label**:  Life event: victim     
-**Variable name**:  soc_le_vic_6           
-**Variable description**:  Respondent was the victim of a crime (i.e. theft, assault) in the past few years.    
+**Variable name**:  soc_le_vic_6         
+**Variable description**:   Indicator of whether the participant experienced being the victim of a crime (i.e. theft, assault) in the past few years.     
 **Value type**:  integer    
-**Variable unit**: **: N/A      
+**Variable unit**:     
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Not a victim
-1 |  Victim
+0 |  Was not the victim of a crime
+1 |  Was the victim of a crime 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4348,16 +4348,16 @@ output: html_document
 
 ```
 ### **Variable label**:  Life event: financial problems      
-**Variable name**:  soc_le_finance_prob_0             
-**Variable description**:  Respondent experienced financial problems in the past few years.        
+**Variable name**:  soc_le_fprob_0             
+**Variable description**:  Indicator of whether the participant experienced financial problems in the past few years.        
 **Value type**:  integer      
-**Variable unit**: **: N/A        
+**Variable unit**:        
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No financial problems
-1 |  Financial problems 
+0 |  Did not experience financial problems
+1 |  Experienced financial problems  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4367,16 +4367,16 @@ output: html_document
 
 ```
 ### **Variable label**:  Life event: financial problems      
-**Variable name**:  soc_le_finance_prob_1             
-**Variable description**:  Respondent experienced financial problems in the past few years.        
+**Variable name**:  soc_le_fprob_1             
+**Variable description**:  Indicator of whether the participant experienced financial problems in the past few years.        
 **Value type**:  integer      
-**Variable unit**: **: N/A        
+**Variable unit**:       
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No financial problems
-1 |  Financial problems 
+0 |  Did not experience financial problems
+1 |  Experienced financial problems  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4386,16 +4386,16 @@ output: html_document
 
 ```
 ### **Variable label**:  Life event: financial problems      
-**Variable name**:  soc_le_finance_prob_2             
-**Variable description**:  Respondent experienced financial problems in the past few years.        
+**Variable name**:  soc_le_fprob_2             
+**Variable description**:  Indicator of whether the participant experienced financial problems in the past few years.        
 **Value type**:  integer      
-**Variable unit**: **: N/A        
+**Variable unit**:         
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No financial problems
-1 |  Financial problems 
+0 |  Did not experience financial problems
+1 |  Experienced financial problems  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4405,16 +4405,16 @@ output: html_document
 
 ```
 ### **Variable label**:  Life event: financial problems      
-**Variable name**:  soc_le_finance_prob_3               
-**Variable description**:  Respondent experienced financial problems in the past few years.        
+**Variable name**:  soc_le_fprob_3             
+**Variable description**:  Indicator of whether the participant experienced financial problems in the past few years.        
 **Value type**:  integer      
-**Variable unit**: **: N/A        
+**Variable unit**:        
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No financial problems
-1 |  Financial problems 
+0 |  Did not experience financial problems
+1 |  Experienced financial problems  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4424,16 +4424,16 @@ output: html_document
 
 ```
 ### **Variable label**:  Life event: financial problems      
-**Variable name**:  soc_le_finance_prob_4             
-**Variable description**:  Respondent experienced financial problems in the past few years.        
+**Variable name**:  soc_le_fprob_4             
+**Variable description**:  Indicator of whether the participant experienced financial problems in the past few years.        
 **Value type**:  integer      
-**Variable unit**: **: N/A        
+**Variable unit**:       
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No financial problems
-1 |  Financial problems 
+0 |  Did not experience financial problems
+1 |  Experienced financial problems  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4443,16 +4443,16 @@ output: html_document
 
 ```
 ### **Variable label**:  Life event: financial problems      
-**Variable name**:  soc_le_finance_prob_5               
-**Variable description**:  Respondent experienced financial problems in the past few years.        
+**Variable name**:  soc_le_fprob_5             
+**Variable description**:  Indicator of whether the participant experienced financial problems in the past few years.        
 **Value type**:  integer      
-**Variable unit**: **: N/A        
+**Variable unit**:        
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No financial problems
-1 |  Financial problems 
+0 |  Did not experience financial problems
+1 |  Experienced financial problems  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4462,16 +4462,16 @@ output: html_document
 
 ```
 ### **Variable label**:  Life event: financial problems      
-**Variable name**:  soc_le_finance_prob_6               
-**Variable description**:  Respondent experienced financial problems in the past few years.        
+**Variable name**:  soc_le_fprob_6             
+**Variable description**:  Indicator of whether the participant experienced financial problems in the past few years.        
 **Value type**:  integer      
-**Variable unit**: **: N/A        
+**Variable unit**:       
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No financial problems
-1 |  Financial problems 
+0 |  Did not experience financial problems
+1 |  Experienced financial problems  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4480,17 +4480,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Life event: relationship problems          
-**Variable name**:  soc_le_relation_prob_0                        
-**Variable description**:  Respondent experienced relationship problems in the past few years.         
+### **Variable label**:  Life event: financial problems      
+**Variable name**:  soc_le_fprob_7             
+**Variable description**:  Indicator of whether the participant experienced financial problems in the past few years.        
 **Value type**:  integer      
-**Variable unit**: **: N/A        
+**Variable unit**:         
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No relationship problems
-1 |  Relationship problems
+0 |  Did not experience financial problems
+1 |  Experienced financial problems  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4499,17 +4499,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Life event: relationship problems          
-**Variable name**:  soc_le_relation_prob_1                        
-**Variable description**:  Respondent experienced relationship problems in the past few years.         
+### **Variable label**:  Life event: relationship problems        
+**Variable name**:  soc_le_rprob_0             
+**Variable description**:  Indicator of whether the participant experienced relationship problems in the past few years.          
 **Value type**:  integer      
-**Variable unit**: **: N/A        
+**Variable unit**:        
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No relationship problems
-1 |  Relationship problems
+0 |  Did not experience relationship problems
+1 |  Experienced relationship problems
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4518,17 +4518,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Life event: relationship problems          
-**Variable name**:  soc_le_relation_prob_2                        
-**Variable description**:  Respondent experienced relationship problems in the past few years.         
+### **Variable label**:  Life event: relationship problems        
+**Variable name**:  soc_le_rprob_1             
+**Variable description**:  Indicator of whether the participant experienced relationship problems in the past few years.          
 **Value type**:  integer      
-**Variable unit**: **: N/A        
+**Variable unit**:        
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No relationship problems
-1 |  Relationship problems
+0 |  Did not experience relationship problems
+1 |  Experienced relationship problems
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4537,17 +4537,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Life event: relationship problems          
-**Variable name**:  soc_le_relation_prob_3                        
-**Variable description**:  Respondent experienced relationship problems in the past few years.         
+### **Variable label**:  Life event: relationship problems        
+**Variable name**:  soc_le_rprob_2             
+**Variable description**:  Indicator of whether the participant experienced relationship problems in the past few years.          
 **Value type**:  integer      
-**Variable unit**: **: N/A        
+**Variable unit**:        
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No relationship problems
-1 |  Relationship problems
+0 |  Did not experience relationship problems
+1 |  Experienced relationship problems
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4556,17 +4556,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Life event: relationship problems          
-**Variable name**:  soc_le_relation_prob_4                        
-**Variable description**:  Respondent experienced relationship problems in the past few years.         
+### **Variable label**:  Life event: divorce/relationship breakup           
+**Variable name**:  soc_le_divorce_0             
+**Variable description**:  Indicator of the occurrence of divorce/relationship breakup in the past few years.         
 **Value type**:  integer      
-**Variable unit**: **: N/A        
+**Variable unit**:        
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No relationship problems
-1 |  Relationship problems
+0 |  Did not divorce/ have relationship breakup
+1 |  Divorced/ had relationship breakup  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4575,17 +4575,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Life event: relationship problems          
-**Variable name**:  soc_le_relation_prob_5                        
-**Variable description**:  Respondent experienced relationship problems in the past few years.         
+### **Variable label**:  Life event: divorce/relationship breakup           
+**Variable name**:  soc_le_divorce_1             
+**Variable description**:  Indicator of the occurrence of divorce/relationship breakup in the past few years.         
 **Value type**:  integer      
-**Variable unit**: **: N/A        
+**Variable unit**:        
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No relationship problems
-1 |  Relationship problems
+0 |  Did not divorce/ have relationship breakup
+1 |  Divorced/ had relationship breakup  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4594,17 +4594,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Life event: relationship problems          
-**Variable name**:  soc_le_relation_prob_6                        
-**Variable description**:  Respondent experienced relationship problems in the past few years.         
+### **Variable label**:  Life event: divorce/relationship breakup           
+**Variable name**:  soc_le_divorce_2             
+**Variable description**:  Indicator of the occurrence of divorce/relationship breakup in the past few years.         
 **Value type**:  integer      
-**Variable unit**: **: N/A        
+**Variable unit**:         
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No relationship problems
-1 |  Relationship problems
+0 |  Did not divorce/ have relationship breakup
+1 |  Divorced/ had relationship breakup  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4613,17 +4613,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Life event: illness of family member          
-**Variable name**:  soc_le_ill_fam_0                                  
-**Variable description**:  Respondent indicated that the illness of family member (partner or other member) occurred in the past few years.        
+### **Variable label**:  Life event: illness of family member             
+**Variable name**:  soc_le_illfam_0                      
+**Variable description**:  Indicator of whether the participant experienced the illness of family member (including partner) in the past few years.         
 **Value type**:  integer      
-**Variable unit**: **: N/A        
+**Variable unit**:        
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No illness of family member 
-1 |  Illness of family member 
+0 |  Did not experience illness of family member 
+1 |  Experienced illness of family member 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4632,17 +4632,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Life event: illness of family member          
-**Variable name**:  soc_le_ill_fam_1                                  
-**Variable description**:  Respondent indicated that the illness of family member (partner or other member) occurred in the past few years.        
+### **Variable label**:  Life event: illness of family member             
+**Variable name**:  soc_le_illfam_1                      
+**Variable description**:  Indicator of whether the participant experienced the illness of family member (including partner) in the past few years.         
 **Value type**:  integer      
-**Variable unit**: **: N/A        
+**Variable unit**:        
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No illness of family member 
-1 |  Illness of family member 
+0 |  Did not experience illness of family member 
+1 |  Experienced illness of family member 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4651,17 +4651,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Life event: illness of family member          
-**Variable name**:  soc_le_ill_fam_2                                  
-**Variable description**:  Respondent indicated that the illness of family member (partner or other member) occurred in the past few years.        
+### **Variable label**:  Life event: illness of family member             
+**Variable name**:  soc_le_illfam_2                      
+**Variable description**:  Indicator of whether the participant experienced the illness of family member (including partner) in the past few years.         
 **Value type**:  integer      
-**Variable unit**: **: N/A        
+**Variable unit**:        
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No illness of family member 
-1 |  Illness of family member 
+0 |  Did not experience illness of family member 
+1 |  Experienced illness of family member 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4670,17 +4670,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Life event: illness of family member          
-**Variable name**:  soc_le_ill_fam_3                                  
-**Variable description**:  Respondent indicated that the illness of family member (partner or other member) occurred in the past few years.        
+### **Variable label**:  Life event: illness of family member             
+**Variable name**:  soc_le_illfam_3                      
+**Variable description**:  Indicator of whether the participant experienced the illness of family member (including partner) in the past few years.         
 **Value type**:  integer      
-**Variable unit**: **: N/A        
+**Variable unit**:        
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No illness of family member 
-1 |  Illness of family member 
+0 |  Did not experience illness of family member 
+1 |  Experienced illness of family member 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4689,17 +4689,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Life event: illness of family member          
-**Variable name**:  soc_le_ill_fam_4                                  
-**Variable description**:  Respondent indicated that the illness of family member (partner or other member) occurred in the past few years.        
+### **Variable label**:  Life event: illness of family member             
+**Variable name**:  soc_le_illfam_4                      
+**Variable description**:  Indicator of whether the participant experienced the illness of family member (including partner) in the past few years.         
 **Value type**:  integer      
-**Variable unit**: **: N/A        
+**Variable unit**:        
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No illness of family member 
-1 |  Illness of family member 
+0 |  Did not experience illness of family member 
+1 |  Experienced illness of family member 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4708,17 +4708,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Life event: illness of family member          
-**Variable name**:  soc_le_ill_fam_5                                  
-**Variable description**:  Respondent indicated that the illness of family member (partner or other member) occurred in the past few years.        
+### **Variable label**:  Life event: illness of family member             
+**Variable name**:  soc_le_illfam_5                      
+**Variable description**:  Indicator of whether the participant experienced the illness of family member (including partner) in the past few years.         
 **Value type**:  integer      
-**Variable unit**: **: N/A        
+**Variable unit**:        
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No illness of family member 
-1 |  Illness of family member 
+0 |  Did not experience illness of family member 
+1 |  Experienced illness of family member 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4727,17 +4727,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Life event: illness of family member          
-**Variable name**:  soc_le_ill_fam_6                                  
-**Variable description**:  Respondent indicated that the illness of family member (partner or other member) occurred in the past few years.        
+### **Variable label**:  Life event: illness of family member             
+**Variable name**:  soc_le_illfam_6                      
+**Variable description**:  Indicator of whether the participant experienced the illness of family member (including partner) in the past few years.         
 **Value type**:  integer      
-**Variable unit**: **: N/A        
+**Variable unit**:        
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No illness of family member 
-1 |  Illness of family member 
+0 |  Did not experience illness of family member 
+1 |  Experienced illness of family member 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4746,17 +4746,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Life event: death of partner            
-**Variable name**:  soc_le_death_part_0                                                        
-**Variable description**:  Respondent’s partner/ spouse died in the past few years.           
+### **Variable label**:  Life event: death of partner             
+**Variable name**:  soc_le_dpart_0                                           
+**Variable description**:  Indicator of whether the participant experienced the death of partner/spouse in the past few years.          
 **Value type**:  integer      
-**Variable unit**: **: N/A        
+**Variable unit**:        
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Partner did not die 
-1 |  Partner died 
+0 |  Did not experience death of partner/spouse
+1 |  Experienced death of partner/spouse 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4765,17 +4765,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Life event: death of partner            
-**Variable name**:  soc_le_death_part_1                                                        
-**Variable description**:  Respondent’s partner/ spouse died in the past few years.           
+### **Variable label**:  Life event: death of partner             
+**Variable name**:  soc_le_dpart_1                                           
+**Variable description**:  Indicator of whether the participant experienced the death of partner/spouse in the past few years.          
 **Value type**:  integer      
-**Variable unit**: **: N/A        
+**Variable unit**:        
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Partner did not die 
-1 |  Partner died 
+0 |  Did not experience death of partner/spouse
+1 |  Experienced death of partner/spouse 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4784,17 +4784,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Life event: death of partner            
-**Variable name**:  soc_le_death_part_2                                                        
-**Variable description**:  Respondent’s partner/ spouse died in the past few years.           
+### **Variable label**:  Life event: death of partner             
+**Variable name**:  soc_le_dpart_2                                           
+**Variable description**:  Indicator of whether the participant experienced the death of partner/spouse in the past few years.          
 **Value type**:  integer      
-**Variable unit**: **: N/A        
+**Variable unit**:        
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Partner did not die 
-1 |  Partner died 
+0 |  Did not experience death of partner/spouse
+1 |  Experienced death of partner/spouse 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4803,17 +4803,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Life event: death of family member or friend           
-**Variable name**:  soc_le_death_close_0                                                        
-**Variable description**:  Respondent’s child or relative or friend died  in the past few years.        
+### **Variable label**:  Life event: death of family member or friend                
+**Variable name**:  soc_le_dfam_0                                           
+**Variable description**:  Indicator of whether the participant experienced the death of a child/family member/friend in the past few years.           
 **Value type**:  integer      
-**Variable unit**: **: N/A        
+**Variable unit**:        
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No death of child/relative /friend
-1 |  Death of child/relative /friend
+0 |  Did not experience death of child/family member/friend  
+1 |  Experienced death of child/family member/friend  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4822,17 +4822,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-## **Variable label**:  Life event: death of family member or friend           
-**Variable name**:  soc_le_death_close_1                                                        
-**Variable description**:  Respondent’s child or relative or friend died  in the past few years.        
+### **Variable label**:  Life event: death of family member or friend                
+**Variable name**:  soc_le_dfam_1                                           
+**Variable description**:  Indicator of whether the participant experienced the death of a child/family member/friend in the past few years.           
 **Value type**:  integer      
-**Variable unit**: **: N/A        
+**Variable unit**:        
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No death of child/relative /friend
-1 |  Death of child/relative /friend
+0 |  Did not experience death of child/family member/friend  
+1 |  Experienced death of child/family member/friend  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4841,17 +4841,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-## **Variable label**:  Life event: death of family member or friend           
-**Variable name**:  soc_le_death_close_2                                                        
-**Variable description**:  Respondent’s child or relative or friend died  in the past few years.        
+### **Variable label**:  Life event: death of family member or friend                
+**Variable name**:  soc_le_dfam_2                                           
+**Variable description**:  Indicator of whether the participant experienced the death of a child/family member/friend in the past few years.           
 **Value type**:  integer      
-**Variable unit**: **: N/A        
+**Variable unit**:        
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No death of child/relative /friend
-1 |  Death of child/relative /friend
+0 |  Did not experience death of child/family member/friend  
+1 |  Experienced death of child/family member/friend  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4860,6 +4860,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
+
 # Residential characteristics subdomain
 
 ### **Variable label**:  Residential stability   
