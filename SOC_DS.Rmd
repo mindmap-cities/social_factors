@@ -14,15 +14,10 @@ output: html_document
 
 ### **Variable label**:   Network size of children      
 **Variable name**:   soc_sn_num_children_0    
-**Variable description**:  Indicator of the number of living biological, adopted or step children.      
+**Variable description**:  Number of living biological, adopted or step children.      
 **Value type**:  integer  
-**Variable unit**:      
-**Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
+**Variable unit**: children       
+**Category coding**:      
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -33,15 +28,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of children      
 **Variable name**:   soc_sn_num_children_1    
-**Variable description**:  Indicator of the number of living biological, adopted or step children.          
+**Variable description**:  Number of living biological, adopted or step children.          
 **Value type**:  integer  
-**Variable unit**:      
-**Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
+**Variable unit**:  children    
+**Category coding**:    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -52,15 +42,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of children      
 **Variable name**:   soc_sn_num_children_2    
-**Variable description**:  Indicator of the number of living biological, adopted or step children.        
+**Variable description**:  Number of living biological, adopted or step children.        
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**: children       
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -71,15 +56,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of children      
 **Variable name**:   soc_sn_num_children_3    
-**Variable description**:  Indicator of the number of living biological, adopted or step children.         
+**Variable description**:  Number of living biological, adopted or step children.         
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**: children       
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -90,15 +70,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of children      
 **Variable name**:   soc_sn_num_children_4    
-**Variable description**:  Indicator of the number of living biological, adopted or step children.         
+**Variable description**:  Number of living biological, adopted or step children.         
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**: children       
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -109,15 +84,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of children      
 **Variable name**:   soc_sn_num_children_5    
-**Variable description**:  Indicator of the number of living biological, adopted or step children.          
+**Variable description**:  Number of living biological, adopted or step children.          
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**: children     
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -128,15 +98,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of children      
 **Variable name**:   soc_sn_num_children_6    
-**Variable description**:  Indicator of the number of living biological, adopted or step children.          
+**Variable description**:  Number of living biological, adopted or step children.          
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**: children     
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -289,15 +254,10 @@ output: html_document
 
 ### **Variable label**:   Network size of friends    
 **Variable name**:   soc_sn_num_friends_0  
-**Variable description**:  Indicator of the number of close friends. These are friends which the participant feels they can talk to/reach out to.    
+**Variable description**:  Number of close friends. These are friends which the participant feels they can talk to/reach out to.    
 **Value type**:  integer  
-**Variable unit**:   
+**Variable unit**: friends  
 **Category coding**:      
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -308,15 +268,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of friends    
 **Variable name**:   soc_sn_num_friends_1    
-**Variable description**:  Indicator of the number of close friends. These are friends which the participant feels they can talk to/reach out to.  
+**Variable description**: Number of close friends. These are friends which the participant feels they can talk to/reach out to.  
 **Value type**:  integer  
-**Variable unit**:   
-**Category coding**:      
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
+**Variable unit**:  friends 
+**Category coding**:        
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -327,15 +282,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of friends    
 **Variable name**:   soc_sn_num_friends_2    
-**Variable description**:  Indicator of the number of close friends. These are friends which the participant feels they can talk to/reach out to.    
+**Variable description**:  Number of close friends. These are friends which the participant feels they can talk to/reach out to.    
 **Value type**:  integer  
-**Variable unit**:   
+**Variable unit**:  friends 
 **Category coding**:      
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -346,15 +296,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of friends    
 **Variable name**:   soc_sn_num_friends_3    
-**Variable description**:  Indicator of the number of close friends. These are friends which the participant feels they can talk to/reach out to.    
+**Variable description**: Number of close friends. These are friends which the participant feels they can talk to/reach out to.    
 **Value type**:  integer  
-**Variable unit**:   
-**Category coding**:      
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
+**Variable unit**:  friends 
+**Category coding**:         
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -365,15 +310,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of friends    
 **Variable name**:   soc_sn_num_friends_4    
-**Variable description**:  Indicator of the number of close friends. These are friends which the participant feels they can talk to/reach out to.    
+**Variable description**:  Number of close friends. These are friends which the participant feels they can talk to/reach out to.    
 **Value type**:  integer  
-**Variable unit**:   
+**Variable unit**:  friends 
 **Category coding**:      
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -384,15 +324,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of friends    
 **Variable name**:   soc_sn_num_friends_5    
-**Variable description**:  Indicator of the number of close friends. These are friends which the participant feels they can talk to/reach out to.      
+**Variable description**:  Number of close friends. These are friends which the participant feels they can talk to/reach out to.      
 **Value type**:  integer  
-**Variable unit**:   
+**Variable unit**:  friends  
 **Category coding**:      
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -404,15 +339,10 @@ output: html_document
 
 ### **Variable label**:   Network size of friends    
 **Variable name**:   soc_sn_num_friends_6    
-**Variable description**:  Indicator of the number of close friends. These are friends which the participant feels they can talk to/reach out to.    
+**Variable description**:  Number of close friends. These are friends which the participant feels they can talk to/reach out to.    
 **Value type**:  integer  
-**Variable unit**:   
-**Category coding**:      
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
+**Variable unit**:  friends 
+**Category coding**:         
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -424,7 +354,7 @@ output: html_document
 
 ### **Variable label**:   In-person contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_inperson_0       
-**Variable description**:   Indicator of in-person contact frequency with close friends. This is a different variable than soc_sn_freq_friends, which is an indicator for contact frequency but not necessarily in-person contact.    
+**Variable description**:   Indicator of in-person contact frequency with close friends.     
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:    
@@ -446,7 +376,7 @@ output: html_document
 ``` 
 ### **Variable label**:   In-person contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_inperson_1       
-**Variable description**:   Indicator of in-person contact frequency with close friends. This is a different variable than soc_sn_freq_friends, which is an indicator for contact frequency but not necessarily in-person contact.    
+**Variable description**:   Indicator of in-person contact frequency with close friends.   
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:    
@@ -468,7 +398,7 @@ output: html_document
 ``` 
 ### **Variable label**:   In-person contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_inperson_2       
-**Variable description**:   Indicator of in-person contact frequency with close friends. This is a different variable than soc_sn_freq_friends, which is an indicator for contact frequency but not necessarily in-person contact.    
+**Variable description**:   Indicator of in-person contact frequency with close friends.      
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:    
@@ -490,7 +420,7 @@ output: html_document
 ``` 
 ### **Variable label**:   In-person contact frequency with friends       
 **Variable name**:   soc_sn_freq_friends_inperson_3       
-**Variable description**:   Indicator of in-person contact frequency with close friends. This is a different variable than soc_sn_freq_friends, which is an indicator for contact frequency but not necessarily in-person contact.    
+**Variable description**:   Indicator of in-person contact frequency with close friends.     
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:    
@@ -512,7 +442,7 @@ output: html_document
 ``` 
 ### **Variable label**:   In-person contact frequency with friends       
 **Variable name**:   soc_sn_freq_friends_inperson_4       
-**Variable description**:   Indicator of in-person contact frequency with close friends. This is a different variable than soc_sn_freq_friends, which is an indicator for contact frequency but not necessarily in-person contact.    
+**Variable description**:   Indicator of in-person contact frequency with close friends.    
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:    
@@ -688,7 +618,7 @@ output: html_document
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_0    
-**Variable description**:  Indicator of the number of neighbours that participant knows well enough to be in touch with or visit with.  
+**Variable description**:  Indicator of the number of neighbours that the participant knows well enough to be in touch with or visit.    
 **Value type**:  integer    
 **Variable unit**:    
 **Category coding**:   
@@ -711,7 +641,7 @@ output: html_document
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_1    
-**Variable description**:  Indicator of the number of neighbours that participant knows well enough to be in touch with or visit with.  
+**Variable description**:  Indicator of the number of neighbours that the participant knows well enough to be in touch with or visit.  
 **Value type**:  integer    
 **Variable unit**:    
 **Category coding**:   
@@ -734,7 +664,7 @@ output: html_document
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_2    
-**Variable description**:  Indicator of the number of neighbours that participant knows well enough to be in touch with or visit with.  
+**Variable description**:  Indicator of the number of neighbours that the participant knows well enough to be in touch with or visit.  
 **Value type**:  integer    
 **Variable unit**:    
 **Category coding**:   
@@ -757,7 +687,7 @@ output: html_document
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_3    
-**Variable description**:  Indicator of the number of neighbours that participant knows well enough to be in touch with or visit with.  
+**Variable description**:  Indicator of the number of neighbours that the participant knows well enough to be in touch with or visit.  
 **Value type**:  integer    
 **Variable unit**:    
 **Category coding**:   
@@ -780,7 +710,7 @@ output: html_document
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_4    
-**Variable description**:  Indicator of the number of neighbours that participant knows well enough to be in touch with or visit with.  
+**Variable description**:  Indicator of the number of neighbours that the participant knows well enough to be in touch with or visit.  
 **Value type**:  integer    
 **Variable unit**:    
 **Category coding**:   
@@ -803,7 +733,7 @@ output: html_document
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_5    
-**Variable description**:  Indicator of the number of neighbours that participant knows well enough to be in touch with or visit with.  
+**Variable description**:  Indicator of the number of neighbours that the participant knows well enough to be in touch with or visit.  
 **Value type**:  integer    
 **Variable unit**:    
 **Category coding**:   
@@ -826,7 +756,7 @@ output: html_document
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_6    
-**Variable description**:  Indicator of the number of neighbours that participant knows well enough to be in touch with or visit with.  
+**Variable description**:  Indicator of the number of neighbours that the participant knows well enough to be in touch with or visit.  
 **Value type**:  integer    
 **Variable unit**:    
 **Category coding**:   
@@ -849,8 +779,8 @@ output: html_document
 ``` 
 
 ### **Variable label**:   Contact frequency with neighbours        
-**Variable name**:   soc_sn_freq_neighbours_0    
-**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit with.   
+**Variable name**:   soc_sn_freq_nbhs_0    
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit.   
 **Value type**:  integer  
 **Variable unit**:     
 **Category coding**:    
@@ -871,8 +801,8 @@ output: html_document
 
 ``` 
 ### **Variable label**:   Contact frequency with neighbours        
-**Variable name**:   soc_sn_freq_neighbours_1    
-**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit with.   
+**Variable name**:   soc_sn_freq_nbhs_1    
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit.   
 **Value type**:  integer  
 **Variable unit**:     
 **Category coding**:    
@@ -893,8 +823,8 @@ output: html_document
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
-**Variable name**:   soc_sn_freq_neighbours_2    
-**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit with.   
+**Variable name**:   soc_sn_freq_nbhs_2    
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit.   
 **Value type**:  integer  
 **Variable unit**:     
 **Category coding**:    
@@ -915,8 +845,8 @@ output: html_document
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
-**Variable name**:   soc_sn_freq_neighbours_3    
-**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit with.   
+**Variable name**:   soc_sn_freq_nbhs_3    
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit.   
 **Value type**:  integer  
 **Variable unit**:     
 **Category coding**:    
@@ -937,8 +867,8 @@ output: html_document
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
-**Variable name**:   soc_sn_freq_neighbours_4    
-**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit with.   
+**Variable name**:   soc_sn_freq_nbhs_4    
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit.   
 **Value type**:  integer  
 **Variable unit**:     
 **Category coding**:    
@@ -959,8 +889,8 @@ output: html_document
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
-**Variable name**:   soc_sn_freq_neighbours_5    
-**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit with.   
+**Variable name**:   soc_sn_freq_nbhs_5    
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit.   
 **Value type**:  integer  
 **Variable unit**:     
 **Category coding**:    
@@ -981,8 +911,8 @@ output: html_document
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
-**Variable name**:   soc_sn_freq_neighbours_6      
-**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit with.   
+**Variable name**:   soc_sn_freq_nbhs_6      
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit.   
 **Value type**:  integer  
 **Variable unit**:     
 **Category coding**:    
@@ -1004,15 +934,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_0    
-**Variable description**:  Indicator of the number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
+**Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which the participant is close to, i.e. is in touch with regularly.           
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**: relatives     
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1023,15 +948,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_1    
-**Variable description**:  Indicator of the number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
+**Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which the participant is close to, i.e. is in touch with regularly.           
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**:  relatives    
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1042,15 +962,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_2    
-**Variable description**:  Indicator of the number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
+**Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**:  relatives      
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1061,15 +976,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_3    
-**Variable description**:  Indicator of the number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
+**Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**: relatives        
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1080,15 +990,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_4    
-**Variable description**:  Indicator of the number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
+**Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**: relatives       
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1099,16 +1004,11 @@ output: html_document
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_5    
-**Variable description**:  Indicator of the number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
+**Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**:  relatives      
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
-
+   
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
@@ -1118,15 +1018,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_6    
-**Variable description**:  Indicator of the number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
+**Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**: relatives       
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1136,18 +1031,18 @@ output: html_document
 
 ```
 ### **Variable label**:   Contact frequency with family   
-**Variable name**:   soc_sn_freq_fam_0    
-**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
+**Variable name**:   soc_sn_freq_close_relatives_0    
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to.                
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close family
-2 |  Biweekly contact with close family
-3 |  Monthly contact with close family
-4 |  Never or less than a year contact with close family   
+1 |  Daily or weekly contact with close relatives
+2 |  Biweekly contact with close relatives
+3 |  Monthly contact with close relatives
+4 |  Never or less than a year contact with close relatives   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1157,18 +1052,18 @@ output: html_document
 
 ```
 ### **Variable label**:   Contact frequency with family     
-**Variable name**:   soc_sn_freq_fam_1    
-**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
+**Variable name**:   soc_sn_freq_close_relatives_1    
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to.                 
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close family
-2 |  Biweekly contact with close family
-3 |  Monthly contact with close family
-4 |  Never or less than a year contact with close family    
+1 |  Daily or weekly contact with close relatives
+2 |  Biweekly contact with close relatives
+3 |  Monthly contact with close relatives
+4 |  Never or less than a year contact with close relatives    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1178,18 +1073,18 @@ output: html_document
 
 ```
 ### **Variable label**:   Contact frequency with family    
-**Variable name**:   soc_sn_freq_fam_2    
-**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
+**Variable name**:   soc_sn_freq_close_relatives_2    
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to.               
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close family
-2 |  Biweekly contact with close family
-3 |  Monthly contact with close family
-4 |  Never or less than a year contact with close family       
+1 |  Daily or weekly contact with close relatives
+2 |  Biweekly contact with close relatives
+3 |  Monthly contact with close relatives
+4 |  Never or less than a year contact with close relatives       
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1199,18 +1094,18 @@ output: html_document
 
 ```
 ### **Variable label**:   Contact frequency with family    
-**Variable name**:   soc_sn_freq_fam_3      
-**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
+**Variable name**:   soc_sn_freq_close_relatives_3      
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to.                 
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close family
-2 |  Biweekly contact with close family
-3 |  Monthly contact with close family
-4 |  Never or less than a year contact with close family     
+1 |  Daily or weekly contact with close relatives
+2 |  Biweekly contact with close relatives
+3 |  Monthly contact with close relatives
+4 |  Never or less than a year contact with close relatives     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1220,18 +1115,18 @@ output: html_document
 
 ```
 ### **Variable label**:   Contact frequency with family   
-**Variable name**:   soc_sn_freq_fam_4      
-**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
+**Variable name**:   soc_sn_freq_close_relatives_4      
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to.                 
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close family
-2 |  Biweekly contact with close family
-3 |  Monthly contact with close family
-4 |  Never or less than a year contact with close family      
+1 |  Daily or weekly contact with close relatives
+2 |  Biweekly contact with close relatives
+3 |  Monthly contact with close relatives
+4 |  Never or less than a year contact with close relatives      
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1241,18 +1136,18 @@ output: html_document
 
 ```
 ### **Variable label**:   Contact frequency with family    
-**Variable name**:   soc_sn_freq_fam_5      
-**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
+**Variable name**:   soc_sn_freq_close_relatives_5      
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to.                 
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close family
-2 |  Biweekly contact with close family
-3 |  Monthly contact with close family
-4 |  Never or less than a year contact with close family      
+1 |  Daily or weekly contact with close relatives
+2 |  Biweekly contact with close relatives
+3 |  Monthly contact with close relatives
+4 |  Never or less than a year contact with close relatives      
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1262,18 +1157,18 @@ output: html_document
 
 ```
 ### **Variable label**:   Contact frequency with family    
-**Variable name**:   soc_sn_freq_fam_6      
-**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
+**Variable name**:   soc_sn_freq_close_relatives_6      
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to.               
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close family
-2 |  Biweekly contact with close family
-3 |  Monthly contact with close family
-4 |  Never or less than a year contact with close family    
+1 |  Daily or weekly contact with close relatives
+2 |  Biweekly contact with close relatives
+3 |  Monthly contact with close relatives
+4 |  Never or less than a year contact with close relatives    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1285,7 +1180,7 @@ output: html_document
 
 ### **Variable label**:   Contact frequency with relatives   
 **Variable name**:   soc_sn_freq_relatives_0        
-**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children regardless of how close the participant feels to them.                
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
@@ -1306,7 +1201,7 @@ output: html_document
 ```
 ### **Variable label**:   Contact frequency with relatives      
 **Variable name**:   soc_sn_freq_relatives_1          
-**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children regardless of how close the participant feels to them.                
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
@@ -1327,7 +1222,7 @@ output: html_document
 ```
 ### **Variable label**:   Contact frequency with relatives     
 **Variable name**:   soc_sn_freq_relatives_2          
-**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children regardless of how close the participant feels to them.                
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
@@ -1348,7 +1243,7 @@ output: html_document
 ```
 ### **Variable label**:   Contact frequency with relatives    
 **Variable name**:   soc_sn_freq_relatives_3          
-**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children regardless of how close the participant feels to them.                
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
@@ -1369,7 +1264,7 @@ output: html_document
 ```
 ### **Variable label**:   Contact frequency with relatives    
 **Variable name**:   soc_sn_freq_relatives_4          
-**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children regardless of how close the participant feels to them.                
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
@@ -1390,7 +1285,7 @@ output: html_document
 ```
 ### **Variable label**:   Contact frequency with relatives     
 **Variable name**:   soc_sn_freq_relatives_5          
-**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children regardless of how close the participant feels to them.                
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
@@ -1411,7 +1306,7 @@ output: html_document
 ```
 ### **Variable label**:   Contact frequency with relatives    
 **Variable name**:   soc_sn_freq_relatives_6          
-**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children regardless of how close the participant feels to them.                
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
@@ -1432,15 +1327,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of non-kin      
 **Variable name**:   soc_sn_num_nonkin_0    
-**Variable description**:  Indicator of the number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**: members       
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1451,15 +1341,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of non-kin      
 **Variable name**:   soc_sn_num_nonkin_1      
-**Variable description**:  Indicator of the number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**: members       
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1470,15 +1355,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of non-kin      
 **Variable name**:   soc_sn_num_nonkin_2      
-**Variable description**:  Indicator of the number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
 **Value type**:  integer  
-**Variable unit**:      
-**Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
+**Variable unit**: members       
+**Category coding**:      
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1489,15 +1369,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of non-kin      
 **Variable name**:   soc_sn_num_nonkin_3      
-**Variable description**:  Indicator of the number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**:  members      
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1508,15 +1383,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of non-kin      
 **Variable name**:   soc_sn_num_nonkin_4      
-**Variable description**:  Indicator of the number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
 **Value type**:  integer  
-**Variable unit**:      
-**Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
+**Variable unit**:  members      
+**Category coding**:     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1527,15 +1397,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of non-kin      
 **Variable name**:   soc_sn_num_nonkin_5      
-**Variable description**:  Indicator of the number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**:  members      
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1546,15 +1411,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of non-kin      
 **Variable name**:   soc_sn_num_nonkin_6      
-**Variable description**:  Indicator of the number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Variable description**: Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
 **Value type**:  integer  
-**Variable unit**:      
-**Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
+**Variable unit**: members       
+**Category coding**:      
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1573,11 +1433,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin
-2 |  Weekly contact with non-kin
-3 |  Biweekly contact with non-kin
-4 |  Monthly contact with non-kin
-5 |  Never or less than a year contact with non-kin   
+1 |  Daily contact with non-kin members  
+2 |  Weekly contact with non-kin members  
+3 |  Biweekly contact with non-kin members  
+4 |  Monthly contact with non-kin members  
+5 |  Never or less than a year contact with non-kin members     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1595,11 +1455,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin
-2 |  Weekly contact with non-kin
-3 |  Biweekly contact with non-kin
-4 |  Monthly contact with non-kin
-5 |  Never or less than a year contact with non-kin  
+1 |  Daily contact with non-kin members   
+2 |  Weekly contact with non-kin members   
+3 |  Biweekly contact with non-kin members   
+4 |  Monthly contact with non-kin members   
+5 |  Never or less than a year contact with non-kin members     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1617,11 +1477,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin
-2 |  Weekly contact with non-kin
-3 |  Biweekly contact with non-kin
-4 |  Monthly contact with non-kin
-5 |  Never or less than a year contact with non-kin    
+1 |  Daily contact with non-kin members   
+2 |  Weekly contact with non-kin members   
+3 |  Biweekly contact with non-kin members   
+4 |  Monthly contact with non-kin members   
+5 |  Never or less than a year contact with non-kin members       
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1639,11 +1499,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin
-2 |  Weekly contact with non-kin
-3 |  Biweekly contact with non-kin
-4 |  Monthly contact with non-kin
-5 |  Never or less than a year contact with non-kin  
+1 |  Daily contact with non-kin members   
+2 |  Weekly contact with non-kin members   
+3 |  Biweekly contact with non-kin members   
+4 |  Monthly contact with non-kin members   
+5 |  Never or less than a year contact with non-kin members     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1661,11 +1521,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin
-2 |  Weekly contact with non-kin
-3 |  Biweekly contact with non-kin
-4 |  Monthly contact with non-kin
-5 |  Never or less than a year contact with non-kin  
+1 |  Daily contact with non-kin members   
+2 |  Weekly contact with non-kin members   
+3 |  Biweekly contact with non-kin members   
+4 |  Monthly contact with non-kin members   
+5 |  Never or less than a year contact with non-kin members     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1683,11 +1543,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin
-2 |  Weekly contact with non-kin
-3 |  Biweekly contact with non-kin
-4 |  Monthly contact with non-kin
-5 |  Never or less than a year contact with non-kin  
+1 |  Daily contact with non-kin members   
+2 |  Weekly contact with non-kin members   
+3 |  Biweekly contact with non-kin members   
+4 |  Monthly contact with non-kin members   
+5 |  Never or less than a year contact with non-kin members     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1705,11 +1565,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin
-2 |  Weekly contact with non-kin
-3 |  Biweekly contact with non-kin
-4 |  Monthly contact with non-kin
-5 |  Never or less than a year contact with non-kin  
+1 |  Daily contact with non-kin members   
+2 |  Weekly contact with non-kin members   
+3 |  Biweekly contact with non-kin members   
+4 |  Monthly contact with non-kin members   
+5 |  Never or less than a year contact with non-kin members     
 
 **Harmonization status**:  
 **Harmonization comment**:   
