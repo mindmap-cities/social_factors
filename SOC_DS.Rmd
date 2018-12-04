@@ -1582,7 +1582,7 @@ output: html_document
 
 ### **Variable label**: Received emotional support    
 **Variable name**:   soc_ss_received_emo_0 
-**Variable description**:  Indicator of the frequency of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
+**Variable description**:  Indicator of the frequency at which the participant received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.    
 **Value type**:  
 **Variable unit**:  
 **Category coding**:  
@@ -1602,7 +1602,7 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support    
 **Variable name**:   soc_ss_received_emo_1 
-**Variable description**:  Indicator of the frequency of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
+**Variable description**:  Indicator of the frequency at which the participant received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.     
 **Value type**:  
 **Variable unit**:  
 **Category coding**:  
@@ -1622,7 +1622,7 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support    
 **Variable name**:   soc_ss_received_emo_2 
-**Variable description**:  Indicator of the frequency of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
+**Variable description**:  Indicator of the frequency at which the participant received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.      
 **Value type**:  
 **Variable unit**:  
 **Category coding**:  
@@ -1642,7 +1642,7 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support    
 **Variable name**:   soc_ss_received_emo_3 
-**Variable description**:  Indicator of the frequency of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
+**Variable description**:  Indicator of the frequency at which the participant received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.    
 **Value type**:  
 **Variable unit**:  
 **Category coding**:  
@@ -1662,7 +1662,7 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support    
 **Variable name**:   soc_ss_received_emo_4 
-**Variable description**:  Indicator of the frequency of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
+**Variable description**:  Indicator of the frequency at which the participant received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.    
 **Value type**:  
 **Variable unit**:  
 **Category coding**:  
@@ -1682,7 +1682,7 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support    
 **Variable name**:   soc_ss_received_emo_5 
-**Variable description**:  Indicator of the frequency of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
+**Variable description**:  Indicator of the frequency at which the participant received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.     
 **Value type**:  
 **Variable unit**:  
 **Category coding**:  
@@ -1727,11 +1727,6 @@ output: html_document
 **Variable unit**:  
 **Category coding**:  
 
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
-
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
@@ -1745,11 +1740,6 @@ output: html_document
 **Value type**:  
 **Variable unit**:  
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1765,11 +1755,6 @@ output: html_document
 **Variable unit**:  
 **Category coding**:  
 
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
-
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
@@ -1783,11 +1768,6 @@ output: html_document
 **Value type**:  
 **Variable unit**:  
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1803,11 +1783,6 @@ output: html_document
 **Variable unit**:  
 **Category coding**:  
 
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
-
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
@@ -1822,11 +1797,6 @@ output: html_document
 **Variable unit**:  
 **Category coding**:  
 
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
-
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
@@ -1840,11 +1810,6 @@ output: html_document
 **Value type**:  
 **Variable unit**:  
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2000,11 +1965,6 @@ output: html_document
 **Variable unit**:  
 **Category coding**:  
 
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
-
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
@@ -2018,11 +1978,6 @@ output: html_document
 **Value type**:  
 **Variable unit**:  
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2038,11 +1993,6 @@ output: html_document
 **Variable unit**:  
 **Category coding**:  
 
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
-
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
@@ -2057,11 +2007,6 @@ output: html_document
 **Variable unit**:  
 **Category coding**:  
 
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
-
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
@@ -2074,12 +2019,7 @@ output: html_document
 **Variable description**:  Z-score of perceived emotional support from the participant’s 3 social network members that they are closest to.  
 **Value type**:  
 **Variable unit**:  
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
+**Category coding**:     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2095,11 +2035,6 @@ output: html_document
 **Variable unit**:  
 **Category coding**:  
 
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
-
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
@@ -2113,12 +2048,7 @@ output: html_document
 **Value type**:  
 **Variable unit**:  
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
-
+ 
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
@@ -2128,7 +2058,7 @@ output: html_document
 ```
 ### **Variable label**: Perceived instrumental support        
 **Variable name**:   soc_ss_perceived_instru_0      
-**Variable description**:  Indicator of perceived instrumental support, i.e. is there is someone to help with daily chores in case of need?       
+**Variable description**:  Indicator of perceived instrumental support, i.e. if there is someone to help with daily chores in case of need?       
 **Value type**:  
 **Variable unit**:  
 **Category coding**:  
@@ -2147,7 +2077,7 @@ output: html_document
 ```
 ### **Variable label**: Perceived instrumental support        
 **Variable name**:   soc_ss_perceived_instru_1      
-**Variable description**:  Indicator of perceived instrumental support, i.e. is there is someone to help with daily chores in case of need?       
+**Variable description**:  Indicator of perceived instrumental support, i.e. if there is someone to help with daily chores in case of need?       
 **Value type**:  
 **Variable unit**:  
 **Category coding**:  
@@ -2166,7 +2096,7 @@ output: html_document
 ```
 ### **Variable label**: Perceived instrumental support        
 **Variable name**:   soc_ss_perceived_instru_2      
-**Variable description**:  Indicator of perceived instrumental support, i.e. is there is someone to help with daily chores in case of need?       
+**Variable description**:  Indicator of perceived instrumental support, i.e. if there is someone to help with daily chores in case of need?       
 **Value type**:  
 **Variable unit**:  
 **Category coding**:  
@@ -2185,7 +2115,7 @@ output: html_document
 ```
 ### **Variable label**: Perceived instrumental support        
 **Variable name**:   soc_ss_perceived_instru_3      
-**Variable description**:  Indicator of perceived instrumental support, i.e. is there is someone to help with daily chores in case of need?       
+**Variable description**:  Indicator of perceived instrumental support, i.e. if there is someone to help with daily chores in case of need?       
 **Value type**:  
 **Variable unit**:  
 **Category coding**:  
@@ -2204,7 +2134,7 @@ output: html_document
 ```
 ### **Variable label**: Perceived instrumental support        
 **Variable name**:   soc_ss_perceived_instru_4      
-**Variable description**:  Indicator of perceived instrumental support, i.e. is there is someone to help with daily chores in case of need?       
+**Variable description**:  Indicator of perceived instrumental support, i.e. if there is someone to help with daily chores in case of need?       
 **Value type**:  
 **Variable unit**:  
 **Category coding**:  
@@ -2223,7 +2153,7 @@ output: html_document
 ```
 ### **Variable label**: Perceived instrumental support        
 **Variable name**:   soc_ss_perceived_instru_5      
-**Variable description**:  Indicator of perceived instrumental support, i.e. is there is someone to help with daily chores in case of need?       
+**Variable description**:  Indicator of perceived instrumental support, i.e. if there is someone to help with daily chores in case of need?       
 **Value type**:  
 **Variable unit**:  
 **Category coding**:  
@@ -2242,7 +2172,7 @@ output: html_document
 ```
 ### **Variable label**: Perceived instrumental support        
 **Variable name**:   soc_ss_perceived_instru_6      
-**Variable description**:  Indicator of perceived instrumental support, i.e. is there is someone to help with daily chores in case of need?       
+**Variable description**:  Indicator of perceived instrumental support, i.e. if there is someone to help with daily chores in case of need?       
 **Value type**:  
 **Variable unit**:  
 **Category coding**:  
@@ -2264,7 +2194,7 @@ output: html_document
 
 ### **Variable label**:  Social isolation    
 **Variable name**:  soc_sp_isolation_0  
-**Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
@@ -2283,7 +2213,7 @@ output: html_document
 ```
 ### **Variable label**:  Social isolation    
 **Variable name**:  soc_sp_isolation_1  
-**Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
@@ -2302,7 +2232,7 @@ output: html_document
 ```
 ### **Variable label**:  Social isolation    
 **Variable name**:  soc_sp_isolation_2  
-**Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
@@ -2321,7 +2251,7 @@ output: html_document
 ```
 ### **Variable label**:  Social isolation    
 **Variable name**:  soc_sp_isolation_3  
-**Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
@@ -2340,7 +2270,7 @@ output: html_document
 ```
 ### **Variable label**:  Social isolation    
 **Variable name**:  soc_sp_isolation_4  
-**Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
@@ -2359,7 +2289,7 @@ output: html_document
 ```
 ### **Variable label**:  Social isolation    
 **Variable name**:  soc_sp_isolation_5  
-**Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
@@ -2378,7 +2308,7 @@ output: html_document
 ```
 ### **Variable label**:  Social isolation    
 **Variable name**:  soc_sp_isolation_6  
-**Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
@@ -2397,7 +2327,7 @@ output: html_document
 ```
 ### **Variable label**:  Social isolation    
 **Variable name**:  soc_sp_isolation_7  
-**Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
@@ -2556,8 +2486,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a religious organization   
-1 |  Participation in a religious organization 
+0 |  Does not participate in a religious organization   
+1 |  Does participate in a religious organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2575,8 +2505,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a religious organization   
-1 |  Participation in a religious organization 
+0 |  Does not participate in a religious organization   
+1 |  Does participate in a religious organization  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2594,8 +2524,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a religious organization   
-1 |  Participation in a religious organization 
+0 |  Does not participate in a religious organization   
+1 |  Does participate in a religious organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2613,8 +2543,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a religious organization   
-1 |  Participation in a religious organization 
+0 |  Does not participate in a religious organization   
+1 |  Does participate in a religious organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2632,8 +2562,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a religious organization   
-1 |  Participation in a religious organization 
+0 |  Does not participate in a religious organization   
+1 |  Does participate in a religious organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2651,8 +2581,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a religious organization   
-1 |  Participation in a religious organization 
+0 |  Does not participate in a religious organization   
+1 |  Does participate in a religious organization  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2670,8 +2600,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a religious organization   
-1 |  Participation in a religious organization 
+0 |  Does not participate in a religious organization   
+1 |  Does participate in a religious organization  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2689,8 +2619,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a religious organization   
-1 |  Participation in a religious organization 
+0 |  Does not participate in a religious organization   
+1 |  Does participate in a religious organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2709,7 +2639,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly  participation in religious organization
+2 |  Less than monthly participation in religious organization
 3 |  Monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
@@ -2731,7 +2661,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly  participation in religious organization
+2 |  Less than monthly participation in religious organization
 3 |  Monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
@@ -2753,7 +2683,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly  participation in religious organization
+2 |  Less than monthly participation in religious organization
 3 |  Monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
@@ -2775,7 +2705,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly  participation in religious organization
+2 |  Less than monthly participation in religious organization
 3 |  Monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
@@ -2797,7 +2727,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly  participation in religious organization
+2 |  Less than monthly participation in religious organization
 3 |  Monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
@@ -2819,7 +2749,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly  participation in religious organization
+2 |  Less than monthly participation in religious organization
 3 |  Monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
@@ -2841,7 +2771,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly  participation in religious organization
+2 |  Less than monthly participation in religious organization
 3 |  Monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
@@ -2863,7 +2793,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly  participation in religious organization
+2 |  Less than monthly participation in religious organization
 3 |  Monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
@@ -3150,8 +3080,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not volunteer 
-1 |  Volunteers  
+0 |  Does not take part in volunteer activities
+1 |  Does take part in volunteer activities  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3169,8 +3099,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not volunteer 
-1 |  Volunteers  
+0 |  Does not take part in volunteer activities
+1 |  Does take part in volunteer activities  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3188,8 +3118,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not volunteer 
-1 |  Volunteers  
+0 |  Does not take part in volunteer activities
+1 |  Does take part in volunteer activities  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3207,8 +3137,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not volunteer 
-1 |  Volunteers  
+0 |  Does not take part in volunteer activities
+1 |  Does take part in volunteer activities 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3226,8 +3156,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not volunteer 
-1 |  Volunteers  
+0 |  Does not take part in volunteer activities
+1 |  Does take part in volunteer activities 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3245,8 +3175,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not volunteer 
-1 |  Volunteers  
+0 |  Does not take part in volunteer activities
+1 |  Does take part in volunteer activities 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3264,8 +3194,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not volunteer 
-1 |  Volunteers  
+0 |  Does not take part in volunteer activities
+1 |  Does take part in volunteer activities 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3283,8 +3213,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a civic organization   
-1 |  Participation in a civic organization   
+0 |  Does not participate in a civic organization   
+1 |  Does participate in a civic organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3302,8 +3232,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a civic organization   
-1 |  Participation in a civic organization   
+0 |  Does not participate in a civic organization   
+1 |  Does participate in a civic organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3321,8 +3251,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a civic organization   
-1 |  Participation in a civic organization   
+0 |  Does not participate in a civic organization   
+1 |  Does participate in a civic organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3340,8 +3270,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a civic organization   
-1 |  Participation in a civic organization   
+0 |  Does not participate in a civic organization   
+1 |  Does participate in a civic organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3359,8 +3289,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a civic organization   
-1 |  Participation in a civic organization   
+0 |  Does not participate in a civic organization   
+1 |  Does participate in a civic organization  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3378,8 +3308,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a civic organization   
-1 |  Participation in a civic organization   
+0 |  Does not participate in a civic organization   
+1 |  Does participate in a civic organization  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3397,8 +3327,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a civic organization   
-1 |  Participation in a civic organization   
+0 |  Does not participate in a civic organization   
+1 |  Does participate in a civic organization  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3416,8 +3346,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a professional organization   
-1 |  Participation in a professional organization   
+0 |  Does not participate in a professional organization   
+1 |  Does participate in a professional organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3435,8 +3365,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a professional organization   
-1 |  Participation in a professional organization   
+0 |  Does not participate in a professional organization   
+1 |  Does participate in a professional organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3454,8 +3384,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a professional organization   
-1 |  Participation in a professional organization   
+0 |  Does not participate in a professional organization   
+1 |  Does participate in a professional organization  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3473,8 +3403,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a professional organization   
-1 |  Participation in a professional organization   
+0 |  Does not participate in a professional organization   
+1 |  Does participate in a professional organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3492,8 +3422,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a professional organization   
-1 |  Participation in a professional organization   
+0 |  Does not participate in a professional organization   
+1 |  Does participate in a professional organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3511,8 +3441,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a professional organization   
-1 |  Participation in a professional organization   
+0 |  Does not participate in a professional organization   
+1 |  Does participate in a professional organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3530,8 +3460,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a professional organization   
-1 |  Participation in a professional organization   
+0 |  Does not participate in a professional organization   
+1 |  Does participate in a professional organization    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3549,8 +3479,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in an organization   
-1 |  Participation in an organization   
+0 |  Does not participate in an organization   
+1 |  Does participate in an organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3568,8 +3498,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in an organization   
-1 |  Participation in an organization   
+0 |  Does not participate in an organization   
+1 |  Does participate in an organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3587,8 +3517,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in an organization   
-1 |  Participation in an organization   
+0 |  Does not participate in an organization   
+1 |  Does participate in an organization    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3606,8 +3536,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in an organization   
-1 |  Participation in an organization   
+0 |  Does not participate in an organization   
+1 |  Does participate in an organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3625,8 +3555,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in an organization   
-1 |  Participation in an organization   
+0 |  Does not participate in an organization   
+1 |  Does participate in an organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3644,8 +3574,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in an organization   
-1 |  Participation in an organization   
+0 |  Does not participate in an organization   
+1 |  Does participate in an organization  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3663,8 +3593,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in an organization   
-1 |  Participation in an organization   
+0 |  Does not participate in an organization   
+1 |  Does participate in an organization  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3948,8 +3878,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No hobby
-1 |  Has hobby  
+0 |  Does not have a hobby
+1 |  Does have a hobby  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3967,8 +3897,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No hobby
-1 |  Has hobby  
+0 |  Does not have a hobby
+1 |  Does have a hobby   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3986,8 +3916,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No hobby
-1 |  Has hobby  
+0 |  Does not have a hobby
+1 |  Does have a hobby  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4005,8 +3935,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No hobby
-1 |  Has hobby  
+0 |  Does not have a hobby
+1 |  Does have a hobby  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4024,8 +3954,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No hobby
-1 |  Has hobby  
+0 |  Does not have a hobby
+1 |  Does have a hobby 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4043,8 +3973,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No hobby
-1 |  Has hobby  
+0 |  Does not have a hobby
+1 |  Does have a hobby  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4062,8 +3992,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No hobby
-1 |  Has hobby  
+0 |  Does not have a hobby
+1 |  Does have a hobby 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4217,7 +4147,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience financial problems
-1 |  Experienced financial problems  
+1 |  Did experience financial problems  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4236,7 +4166,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience financial problems
-1 |  Experienced financial problems  
+1 |  Did experience financial problems    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4255,7 +4185,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience financial problems
-1 |  Experienced financial problems  
+1 |  Did experience financial problems   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4274,7 +4204,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience financial problems
-1 |  Experienced financial problems  
+1 |  Did experience financial problems   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4293,7 +4223,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience financial problems
-1 |  Experienced financial problems  
+1 |  Did experience financial problems   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4312,7 +4242,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience financial problems
-1 |  Experienced financial problems  
+1 |  Did experience financial problems    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4331,7 +4261,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience financial problems
-1 |  Experienced financial problems  
+1 |  Did experience financial problems    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4350,7 +4280,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience financial problems
-1 |  Experienced financial problems  
+1 |  Did experience financial problems    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4369,7 +4299,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience relationship problems
-1 |  Experienced relationship problems
+1 |  Did experience relationship problems
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4388,7 +4318,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience relationship problems
-1 |  Experienced relationship problems
+1 |  Did experience relationship problems
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4407,7 +4337,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience relationship problems
-1 |  Experienced relationship problems
+1 |  Did experience relationship problems  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4426,7 +4356,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not divorce/ have relationship breakup
-1 |  Divorced/ had relationship breakup  
+1 |  Did divorce/ had relationship breakup  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4445,7 +4375,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not divorce/ have relationship breakup
-1 |  Divorced/ had relationship breakup  
+1 |  Did divorce/ had relationship breakup  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4464,7 +4394,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not divorce/ have relationship breakup
-1 |  Divorced/ had relationship breakup  
+1 |  Did divorce/ had relationship breakup  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4483,7 +4413,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience illness of family member 
-1 |  Experienced illness of family member 
+1 |  Did experience illness of family member 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4502,7 +4432,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience illness of family member 
-1 |  Experienced illness of family member 
+1 |  Did experience illness of family member 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4521,7 +4451,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience illness of family member 
-1 |  Experienced illness of family member 
+1 |  Did experience illness of family member 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4540,7 +4470,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience illness of family member 
-1 |  Experienced illness of family member 
+1 |  Did experience illness of family member 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4559,7 +4489,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience illness of family member 
-1 |  Experienced illness of family member 
+1 |  Did experience illness of family member 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4578,7 +4508,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience illness of family member 
-1 |  Experienced illness of family member 
+1 |  Did experience illness of family member 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4597,7 +4527,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience illness of family member 
-1 |  Experienced illness of family member 
+1 |  Did experience illness of family member 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4616,7 +4546,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience death of partner/spouse
-1 |  Experienced death of partner/spouse 
+1 |  Did experience death of partner/spouse 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4635,7 +4565,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience death of partner/spouse
-1 |  Experienced death of partner/spouse 
+1 |  Did experience death of partner/spouse 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4654,7 +4584,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience death of partner/spouse
-1 |  Experienced death of partner/spouse 
+1 |  Did experience death of partner/spouse 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4673,7 +4603,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience death of child/family member/friend  
-1 |  Experienced death of child/family member/friend  
+1 |  Did experience death of child/family member/friend  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4692,7 +4622,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience death of child/family member/friend  
-1 |  Experienced death of child/family member/friend  
+1 |  Did experience death of child/family member/friend   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4711,7 +4641,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience death of child/family member/friend  
-1 |  Experienced death of child/family member/friend  
+1 |  Did experience death of child/family member/friend  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4729,11 +4659,6 @@ output: html_document
 **Variable unit**:   
 **Category coding**:  
 
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
-
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
@@ -4747,11 +4672,6 @@ output: html_document
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4767,11 +4687,6 @@ output: html_document
 **Variable unit**:   
 **Category coding**:  
 
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
-
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
@@ -4785,11 +4700,6 @@ output: html_document
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4805,11 +4715,6 @@ output: html_document
 **Variable unit**:   
 **Category coding**:  
 
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
-
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
@@ -4823,11 +4728,6 @@ output: html_document
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4843,11 +4743,6 @@ output: html_document
 **Variable unit**:   
 **Category coding**:  
 
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
-
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
@@ -4860,12 +4755,7 @@ output: html_document
 **Variable description**:  Indicator of the number of years that participant has lived in current home/address.    
 **Value type**:  integer  
 **Variable unit**:   
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
+**Category coding**:   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4879,12 +4769,7 @@ output: html_document
 **Variable description**:  Indicator of the number of years that participant has lived in current home/address.    
 **Value type**:  integer  
 **Variable unit**:   
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
+**Category coding**:    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4900,11 +4785,6 @@ output: html_document
 **Variable unit**:   
 **Category coding**:  
 
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
-
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
@@ -4918,11 +4798,6 @@ output: html_document
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4938,11 +4813,6 @@ output: html_document
 **Variable unit**:   
 **Category coding**:  
 
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
-
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
@@ -4957,11 +4827,6 @@ output: html_document
 **Variable unit**:   
 **Category coding**:  
 
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
-
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
@@ -4975,11 +4840,6 @@ output: html_document
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4998,7 +4858,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Does not want to move out of neighbourhood
-1 |  Wants to move out of neighbourhood
+1 |  Does want to move out of neighbourhood
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5283,7 +5143,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Does not own home
-1 |  Owns home
+1 |  Does own home  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5302,7 +5162,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Does not own home
-1 |  Owns home
+1 |  Does own home  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5321,7 +5181,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Does not own home
-1 |  Owns home
+1 |  Does own home  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5340,7 +5200,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Does not own home
-1 |  Owns home
+1 |  Does own home  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5359,7 +5219,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Does not own home
-1 |  Owns home
+1 |  Does own home  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5378,7 +5238,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Does not own home
-1 |  Owns home
+1 |  Does own home  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5397,7 +5257,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Does not own home
-1 |  Owns home
+1 |  Does own home  
 
 **Harmonization status**:  
 **Harmonization comment**:   
