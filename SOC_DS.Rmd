@@ -14,15 +14,10 @@ output: html_document
 
 ### **Variable label**:   Network size of children      
 **Variable name**:   soc_sn_num_children_0    
-**Variable description**:  Indicator of the number of living biological, adopted or step children.      
+**Variable description**:  Number of living biological, adopted or step children.      
 **Value type**:  integer  
-**Variable unit**:      
-**Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
+**Variable unit**: children       
+**Category coding**:      
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -33,15 +28,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of children      
 **Variable name**:   soc_sn_num_children_1    
-**Variable description**:  Indicator of the number of living biological, adopted or step children.          
+**Variable description**:  Number of living biological, adopted or step children.          
 **Value type**:  integer  
-**Variable unit**:      
-**Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
+**Variable unit**:  children    
+**Category coding**:    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -52,15 +42,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of children      
 **Variable name**:   soc_sn_num_children_2    
-**Variable description**:  Indicator of the number of living biological, adopted or step children.        
+**Variable description**:  Number of living biological, adopted or step children.        
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**: children       
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -71,15 +56,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of children      
 **Variable name**:   soc_sn_num_children_3    
-**Variable description**:  Indicator of the number of living biological, adopted or step children.         
+**Variable description**:  Number of living biological, adopted or step children.         
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**: children       
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -90,15 +70,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of children      
 **Variable name**:   soc_sn_num_children_4    
-**Variable description**:  Indicator of the number of living biological, adopted or step children.         
+**Variable description**:  Number of living biological, adopted or step children.         
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**: children       
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -109,15 +84,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of children      
 **Variable name**:   soc_sn_num_children_5    
-**Variable description**:  Indicator of the number of living biological, adopted or step children.          
+**Variable description**:  Number of living biological, adopted or step children.          
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**: children     
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -128,15 +98,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of children      
 **Variable name**:   soc_sn_num_children_6    
-**Variable description**:  Indicator of the number of living biological, adopted or step children.          
+**Variable description**:  Number of living biological, adopted or step children.          
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**: children     
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -289,15 +254,10 @@ output: html_document
 
 ### **Variable label**:   Network size of friends    
 **Variable name**:   soc_sn_num_friends_0  
-**Variable description**:  Indicator of the number of close friends. These are friends which the participant feels they can talk to/reach out to.    
+**Variable description**:  Number of close friends. These are friends which the participant feels they can talk to/reach out to.    
 **Value type**:  integer  
-**Variable unit**:   
+**Variable unit**: friends  
 **Category coding**:      
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -308,15 +268,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of friends    
 **Variable name**:   soc_sn_num_friends_1    
-**Variable description**:  Indicator of the number of close friends. These are friends which the participant feels they can talk to/reach out to.  
+**Variable description**: Number of close friends. These are friends which the participant feels they can talk to/reach out to.  
 **Value type**:  integer  
-**Variable unit**:   
-**Category coding**:      
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
+**Variable unit**:  friends 
+**Category coding**:        
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -327,15 +282,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of friends    
 **Variable name**:   soc_sn_num_friends_2    
-**Variable description**:  Indicator of the number of close friends. These are friends which the participant feels they can talk to/reach out to.    
+**Variable description**:  Number of close friends. These are friends which the participant feels they can talk to/reach out to.    
 **Value type**:  integer  
-**Variable unit**:   
+**Variable unit**:  friends 
 **Category coding**:      
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -346,15 +296,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of friends    
 **Variable name**:   soc_sn_num_friends_3    
-**Variable description**:  Indicator of the number of close friends. These are friends which the participant feels they can talk to/reach out to.    
+**Variable description**: Number of close friends. These are friends which the participant feels they can talk to/reach out to.    
 **Value type**:  integer  
-**Variable unit**:   
-**Category coding**:      
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
+**Variable unit**:  friends 
+**Category coding**:         
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -365,15 +310,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of friends    
 **Variable name**:   soc_sn_num_friends_4    
-**Variable description**:  Indicator of the number of close friends. These are friends which the participant feels they can talk to/reach out to.    
+**Variable description**:  Number of close friends. These are friends which the participant feels they can talk to/reach out to.    
 **Value type**:  integer  
-**Variable unit**:   
+**Variable unit**:  friends 
 **Category coding**:      
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -384,15 +324,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of friends    
 **Variable name**:   soc_sn_num_friends_5    
-**Variable description**:  Indicator of the number of close friends. These are friends which the participant feels they can talk to/reach out to.      
+**Variable description**:  Number of close friends. These are friends which the participant feels they can talk to/reach out to.      
 **Value type**:  integer  
-**Variable unit**:   
+**Variable unit**:  friends  
 **Category coding**:      
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -404,15 +339,10 @@ output: html_document
 
 ### **Variable label**:   Network size of friends    
 **Variable name**:   soc_sn_num_friends_6    
-**Variable description**:  Indicator of the number of close friends. These are friends which the participant feels they can talk to/reach out to.    
+**Variable description**:  Number of close friends. These are friends which the participant feels they can talk to/reach out to.    
 **Value type**:  integer  
-**Variable unit**:   
-**Category coding**:      
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
+**Variable unit**:  friends 
+**Category coding**:         
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -424,7 +354,7 @@ output: html_document
 
 ### **Variable label**:   In-person contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_inperson_0       
-**Variable description**:   Indicator of in-person contact frequency with close friends. This is a different variable than soc_sn_freq_friends, which is an indicator for contact frequency but not necessarily in-person contact.    
+**Variable description**:   Indicator of the frequency at which the participant has in-person contact with close friends.      
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:    
@@ -446,7 +376,7 @@ output: html_document
 ``` 
 ### **Variable label**:   In-person contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_inperson_1       
-**Variable description**:   Indicator of in-person contact frequency with close friends. This is a different variable than soc_sn_freq_friends, which is an indicator for contact frequency but not necessarily in-person contact.    
+**Variable description**:   Indicator of the frequency at which the participant has in-person contact with close friends.  
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:    
@@ -468,7 +398,7 @@ output: html_document
 ``` 
 ### **Variable label**:   In-person contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_inperson_2       
-**Variable description**:   Indicator of in-person contact frequency with close friends. This is a different variable than soc_sn_freq_friends, which is an indicator for contact frequency but not necessarily in-person contact.    
+**Variable description**:   Indicator of the frequency at which the participant has in-person contact with close friends.  
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:    
@@ -490,7 +420,7 @@ output: html_document
 ``` 
 ### **Variable label**:   In-person contact frequency with friends       
 **Variable name**:   soc_sn_freq_friends_inperson_3       
-**Variable description**:   Indicator of in-person contact frequency with close friends. This is a different variable than soc_sn_freq_friends, which is an indicator for contact frequency but not necessarily in-person contact.    
+**Variable description**:   Indicator of the frequency at which the participant has in-person contact with close friends.      
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:    
@@ -512,7 +442,7 @@ output: html_document
 ``` 
 ### **Variable label**:   In-person contact frequency with friends       
 **Variable name**:   soc_sn_freq_friends_inperson_4       
-**Variable description**:   Indicator of in-person contact frequency with close friends. This is a different variable than soc_sn_freq_friends, which is an indicator for contact frequency but not necessarily in-person contact.    
+**Variable description**:   Indicator of the frequency at which the participant has in-person contact with close friends.     
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:    
@@ -534,7 +464,7 @@ output: html_document
 ``` 
 ### **Variable label**:   Contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_0       
-**Variable description**:   Indicator of contact frequency with close friends.         
+**Variable description**:   Indicator of the frequency at which the participant has contact with close friends.         
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:    
@@ -556,7 +486,7 @@ output: html_document
 ``` 
 ### **Variable label**:   Contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_1       
-**Variable description**:   Indicator of contact frequency with close friends.         
+**Variable description**:   Indicator of the frequency at which the participant has contact with close friends.          
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:    
@@ -578,7 +508,7 @@ output: html_document
 ``` 
 ### **Variable label**:   Contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_2       
-**Variable description**:   Indicator of contact frequency with close friends.         
+**Variable description**:   Indicator of the frequency at which the participant has contact with close friends.          
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:    
@@ -600,7 +530,7 @@ output: html_document
 ``` 
 ### **Variable label**:   Contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_3       
-**Variable description**:   Indicator of contact frequency with close friends.         
+**Variable description**:   Indicator of the frequency at which the participant has contact with close friends.          
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:    
@@ -622,7 +552,7 @@ output: html_document
 ``` 
 ### **Variable label**:   Contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_4       
-**Variable description**:   Indicator of contact frequency with close friends.         
+**Variable description**:   Indicator of the frequency at which the participant has contact with close friends.          
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:    
@@ -644,7 +574,7 @@ output: html_document
 ``` 
 ### **Variable label**:   Contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_5       
-**Variable description**:   Indicator of contact frequency with close friends.         
+**Variable description**:   Indicator of the frequency at which the participant has contact with close friends.          
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:    
@@ -666,7 +596,7 @@ output: html_document
 ``` 
 ### **Variable label**:   Contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_6       
-**Variable description**:   Indicator of contact frequency with close friends.         
+**Variable description**:   Indicator of the frequency at which the participant has contact with close friends.           
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:    
@@ -688,7 +618,7 @@ output: html_document
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_0    
-**Variable description**:  Indicator of the number of neighbours that participant knows well enough to be in touch with or visit with.  
+**Variable description**:  Indicator of the number of neighbours that the participant knows well enough to be in touch with or visit.    
 **Value type**:  integer    
 **Variable unit**:    
 **Category coding**:   
@@ -711,7 +641,7 @@ output: html_document
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_1    
-**Variable description**:  Indicator of the number of neighbours that participant knows well enough to be in touch with or visit with.  
+**Variable description**:  Indicator of the number of neighbours that the participant knows well enough to be in touch with or visit.  
 **Value type**:  integer    
 **Variable unit**:    
 **Category coding**:   
@@ -734,7 +664,7 @@ output: html_document
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_2    
-**Variable description**:  Indicator of the number of neighbours that participant knows well enough to be in touch with or visit with.  
+**Variable description**:  Indicator of the number of neighbours that the participant knows well enough to be in touch with or visit.  
 **Value type**:  integer    
 **Variable unit**:    
 **Category coding**:   
@@ -757,7 +687,7 @@ output: html_document
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_3    
-**Variable description**:  Indicator of the number of neighbours that participant knows well enough to be in touch with or visit with.  
+**Variable description**:  Indicator of the number of neighbours that the participant knows well enough to be in touch with or visit.  
 **Value type**:  integer    
 **Variable unit**:    
 **Category coding**:   
@@ -780,7 +710,7 @@ output: html_document
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_4    
-**Variable description**:  Indicator of the number of neighbours that participant knows well enough to be in touch with or visit with.  
+**Variable description**:  Indicator of the number of neighbours that the participant knows well enough to be in touch with or visit.  
 **Value type**:  integer    
 **Variable unit**:    
 **Category coding**:   
@@ -803,7 +733,7 @@ output: html_document
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_5    
-**Variable description**:  Indicator of the number of neighbours that participant knows well enough to be in touch with or visit with.  
+**Variable description**:  Indicator of the number of neighbours that the participant knows well enough to be in touch with or visit.  
 **Value type**:  integer    
 **Variable unit**:    
 **Category coding**:   
@@ -826,7 +756,7 @@ output: html_document
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_6    
-**Variable description**:  Indicator of the number of neighbours that participant knows well enough to be in touch with or visit with.  
+**Variable description**:  Indicator of the number of neighbours that the participant knows well enough to be in touch with or visit.  
 **Value type**:  integer    
 **Variable unit**:    
 **Category coding**:   
@@ -849,8 +779,8 @@ output: html_document
 ``` 
 
 ### **Variable label**:   Contact frequency with neighbours        
-**Variable name**:   soc_sn_freq_neighbours_0    
-**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit with.   
+**Variable name**:   soc_sn_freq_nbhs_0    
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit.   
 **Value type**:  integer  
 **Variable unit**:     
 **Category coding**:    
@@ -871,8 +801,8 @@ output: html_document
 
 ``` 
 ### **Variable label**:   Contact frequency with neighbours        
-**Variable name**:   soc_sn_freq_neighbours_1    
-**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit with.   
+**Variable name**:   soc_sn_freq_nbhs_1    
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit.   
 **Value type**:  integer  
 **Variable unit**:     
 **Category coding**:    
@@ -893,8 +823,8 @@ output: html_document
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
-**Variable name**:   soc_sn_freq_neighbours_2    
-**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit with.   
+**Variable name**:   soc_sn_freq_nbhs_2    
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit.   
 **Value type**:  integer  
 **Variable unit**:     
 **Category coding**:    
@@ -915,8 +845,8 @@ output: html_document
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
-**Variable name**:   soc_sn_freq_neighbours_3    
-**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit with.   
+**Variable name**:   soc_sn_freq_nbhs_3    
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit.   
 **Value type**:  integer  
 **Variable unit**:     
 **Category coding**:    
@@ -937,8 +867,8 @@ output: html_document
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
-**Variable name**:   soc_sn_freq_neighbours_4    
-**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit with.   
+**Variable name**:   soc_sn_freq_nbhs_4    
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit.   
 **Value type**:  integer  
 **Variable unit**:     
 **Category coding**:    
@@ -959,8 +889,8 @@ output: html_document
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
-**Variable name**:   soc_sn_freq_neighbours_5    
-**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit with.   
+**Variable name**:   soc_sn_freq_nbhs_5    
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit.   
 **Value type**:  integer  
 **Variable unit**:     
 **Category coding**:    
@@ -981,8 +911,8 @@ output: html_document
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
-**Variable name**:   soc_sn_freq_neighbours_6      
-**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit with.   
+**Variable name**:   soc_sn_freq_nbhs_6      
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit.   
 **Value type**:  integer  
 **Variable unit**:     
 **Category coding**:    
@@ -1004,15 +934,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_0    
-**Variable description**:  Indicator of the number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
+**Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which the participant is close to, i.e. is in touch with regularly.           
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**: relatives     
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1023,15 +948,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_1    
-**Variable description**:  Indicator of the number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
+**Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which the participant is close to, i.e. is in touch with regularly.           
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**:  relatives    
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1042,15 +962,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_2    
-**Variable description**:  Indicator of the number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
+**Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**:  relatives      
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1061,15 +976,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_3    
-**Variable description**:  Indicator of the number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
+**Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**: relatives        
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1080,15 +990,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_4    
-**Variable description**:  Indicator of the number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
+**Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**: relatives       
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1099,16 +1004,11 @@ output: html_document
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_5    
-**Variable description**:  Indicator of the number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
+**Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**:  relatives      
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
-
+   
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
@@ -1118,15 +1018,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_6    
-**Variable description**:  Indicator of the number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
+**Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**: relatives       
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1136,18 +1031,18 @@ output: html_document
 
 ```
 ### **Variable label**:   Contact frequency with family   
-**Variable name**:   soc_sn_freq_fam_0    
-**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
+**Variable name**:   soc_sn_freq_close_relatives_0    
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to.                
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close family
-2 |  Biweekly contact with close family
-3 |  Monthly contact with close family
-4 |  Never or less than a year contact with close family   
+1 |  Daily or weekly contact with close relatives
+2 |  Biweekly contact with close relatives
+3 |  Monthly contact with close relatives
+4 |  Never or less than a year contact with close relatives   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1157,18 +1052,18 @@ output: html_document
 
 ```
 ### **Variable label**:   Contact frequency with family     
-**Variable name**:   soc_sn_freq_fam_1    
-**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
+**Variable name**:   soc_sn_freq_close_relatives_1    
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to.                 
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close family
-2 |  Biweekly contact with close family
-3 |  Monthly contact with close family
-4 |  Never or less than a year contact with close family    
+1 |  Daily or weekly contact with close relatives
+2 |  Biweekly contact with close relatives
+3 |  Monthly contact with close relatives
+4 |  Never or less than a year contact with close relatives    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1178,18 +1073,18 @@ output: html_document
 
 ```
 ### **Variable label**:   Contact frequency with family    
-**Variable name**:   soc_sn_freq_fam_2    
-**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
+**Variable name**:   soc_sn_freq_close_relatives_2    
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to.               
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close family
-2 |  Biweekly contact with close family
-3 |  Monthly contact with close family
-4 |  Never or less than a year contact with close family       
+1 |  Daily or weekly contact with close relatives
+2 |  Biweekly contact with close relatives
+3 |  Monthly contact with close relatives
+4 |  Never or less than a year contact with close relatives       
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1199,18 +1094,18 @@ output: html_document
 
 ```
 ### **Variable label**:   Contact frequency with family    
-**Variable name**:   soc_sn_freq_fam_3      
-**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
+**Variable name**:   soc_sn_freq_close_relatives_3      
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to.                 
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close family
-2 |  Biweekly contact with close family
-3 |  Monthly contact with close family
-4 |  Never or less than a year contact with close family     
+1 |  Daily or weekly contact with close relatives
+2 |  Biweekly contact with close relatives
+3 |  Monthly contact with close relatives
+4 |  Never or less than a year contact with close relatives     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1220,18 +1115,18 @@ output: html_document
 
 ```
 ### **Variable label**:   Contact frequency with family   
-**Variable name**:   soc_sn_freq_fam_4      
-**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
+**Variable name**:   soc_sn_freq_close_relatives_4      
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to.                 
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close family
-2 |  Biweekly contact with close family
-3 |  Monthly contact with close family
-4 |  Never or less than a year contact with close family      
+1 |  Daily or weekly contact with close relatives
+2 |  Biweekly contact with close relatives
+3 |  Monthly contact with close relatives
+4 |  Never or less than a year contact with close relatives      
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1241,18 +1136,18 @@ output: html_document
 
 ```
 ### **Variable label**:   Contact frequency with family    
-**Variable name**:   soc_sn_freq_fam_5      
-**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
+**Variable name**:   soc_sn_freq_close_relatives_5      
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to.                 
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close family
-2 |  Biweekly contact with close family
-3 |  Monthly contact with close family
-4 |  Never or less than a year contact with close family      
+1 |  Daily or weekly contact with close relatives
+2 |  Biweekly contact with close relatives
+3 |  Monthly contact with close relatives
+4 |  Never or less than a year contact with close relatives      
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1262,18 +1157,18 @@ output: html_document
 
 ```
 ### **Variable label**:   Contact frequency with family    
-**Variable name**:   soc_sn_freq_fam_6      
-**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to. This is a different variable from soc_sn_freq_fam_broad, this variable excludes CLSA since CLSA does not specify that these are persons that participant feels close to.               
+**Variable name**:   soc_sn_freq_close_relatives_6      
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to.               
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close family
-2 |  Biweekly contact with close family
-3 |  Monthly contact with close family
-4 |  Never or less than a year contact with close family    
+1 |  Daily or weekly contact with close relatives
+2 |  Biweekly contact with close relatives
+3 |  Monthly contact with close relatives
+4 |  Never or less than a year contact with close relatives    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1285,7 +1180,7 @@ output: html_document
 
 ### **Variable label**:   Contact frequency with relatives   
 **Variable name**:   soc_sn_freq_relatives_0        
-**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children regardless of how close the participant feels to them.                
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
@@ -1306,7 +1201,7 @@ output: html_document
 ```
 ### **Variable label**:   Contact frequency with relatives      
 **Variable name**:   soc_sn_freq_relatives_1          
-**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children regardless of how close the participant feels to them.                
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
@@ -1327,7 +1222,7 @@ output: html_document
 ```
 ### **Variable label**:   Contact frequency with relatives     
 **Variable name**:   soc_sn_freq_relatives_2          
-**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children regardless of how close the participant feels to them.                
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
@@ -1348,7 +1243,7 @@ output: html_document
 ```
 ### **Variable label**:   Contact frequency with relatives    
 **Variable name**:   soc_sn_freq_relatives_3          
-**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children regardless of how close the participant feels to them.                
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
@@ -1369,7 +1264,7 @@ output: html_document
 ```
 ### **Variable label**:   Contact frequency with relatives    
 **Variable name**:   soc_sn_freq_relatives_4          
-**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children regardless of how close the participant feels to them.                
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
@@ -1390,7 +1285,7 @@ output: html_document
 ```
 ### **Variable label**:   Contact frequency with relatives     
 **Variable name**:   soc_sn_freq_relatives_5          
-**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children regardless of how close the participant feels to them.                
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
@@ -1411,7 +1306,7 @@ output: html_document
 ```
 ### **Variable label**:   Contact frequency with relatives    
 **Variable name**:   soc_sn_freq_relatives_6          
-**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children. Note: this is a different variable from soc_sn_freq_fam. This variable includes any relative regardless of how close the participant feels to them.                
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children regardless of how close the participant feels to them.                
 **Value type**:  integer  
 **Variable unit**:      
 **Category coding**:   
@@ -1432,15 +1327,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of non-kin      
 **Variable name**:   soc_sn_num_nonkin_0    
-**Variable description**:  Indicator of the number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**: members       
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1451,15 +1341,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of non-kin      
 **Variable name**:   soc_sn_num_nonkin_1      
-**Variable description**:  Indicator of the number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**: members       
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1470,15 +1355,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of non-kin      
 **Variable name**:   soc_sn_num_nonkin_2      
-**Variable description**:  Indicator of the number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
 **Value type**:  integer  
-**Variable unit**:      
-**Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
+**Variable unit**: members       
+**Category coding**:      
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1489,15 +1369,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of non-kin      
 **Variable name**:   soc_sn_num_nonkin_3      
-**Variable description**:  Indicator of the number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**:  members      
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1508,15 +1383,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of non-kin      
 **Variable name**:   soc_sn_num_nonkin_4      
-**Variable description**:  Indicator of the number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
 **Value type**:  integer  
-**Variable unit**:      
-**Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
+**Variable unit**:  members      
+**Category coding**:     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1527,15 +1397,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of non-kin      
 **Variable name**:   soc_sn_num_nonkin_5      
-**Variable description**:  Indicator of the number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
 **Value type**:  integer  
-**Variable unit**:      
+**Variable unit**:  members      
 **Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1546,15 +1411,10 @@ output: html_document
 ```
 ### **Variable label**:   Network size of non-kin      
 **Variable name**:   soc_sn_num_nonkin_6      
-**Variable description**:  Indicator of the number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Variable description**: Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
 **Value type**:  integer  
-**Variable unit**:      
-**Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
+**Variable unit**: members       
+**Category coding**:      
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1573,11 +1433,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin
-2 |  Weekly contact with non-kin
-3 |  Biweekly contact with non-kin
-4 |  Monthly contact with non-kin
-5 |  Never or less than a year contact with non-kin   
+1 |  Daily contact with non-kin members  
+2 |  Weekly contact with non-kin members  
+3 |  Biweekly contact with non-kin members  
+4 |  Monthly contact with non-kin members  
+5 |  Never or less than a year contact with non-kin members     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1595,11 +1455,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin
-2 |  Weekly contact with non-kin
-3 |  Biweekly contact with non-kin
-4 |  Monthly contact with non-kin
-5 |  Never or less than a year contact with non-kin  
+1 |  Daily contact with non-kin members   
+2 |  Weekly contact with non-kin members   
+3 |  Biweekly contact with non-kin members   
+4 |  Monthly contact with non-kin members   
+5 |  Never or less than a year contact with non-kin members     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1617,11 +1477,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin
-2 |  Weekly contact with non-kin
-3 |  Biweekly contact with non-kin
-4 |  Monthly contact with non-kin
-5 |  Never or less than a year contact with non-kin    
+1 |  Daily contact with non-kin members   
+2 |  Weekly contact with non-kin members   
+3 |  Biweekly contact with non-kin members   
+4 |  Monthly contact with non-kin members   
+5 |  Never or less than a year contact with non-kin members       
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1639,11 +1499,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin
-2 |  Weekly contact with non-kin
-3 |  Biweekly contact with non-kin
-4 |  Monthly contact with non-kin
-5 |  Never or less than a year contact with non-kin  
+1 |  Daily contact with non-kin members   
+2 |  Weekly contact with non-kin members   
+3 |  Biweekly contact with non-kin members   
+4 |  Monthly contact with non-kin members   
+5 |  Never or less than a year contact with non-kin members     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1661,11 +1521,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin
-2 |  Weekly contact with non-kin
-3 |  Biweekly contact with non-kin
-4 |  Monthly contact with non-kin
-5 |  Never or less than a year contact with non-kin  
+1 |  Daily contact with non-kin members   
+2 |  Weekly contact with non-kin members   
+3 |  Biweekly contact with non-kin members   
+4 |  Monthly contact with non-kin members   
+5 |  Never or less than a year contact with non-kin members     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1683,11 +1543,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin
-2 |  Weekly contact with non-kin
-3 |  Biweekly contact with non-kin
-4 |  Monthly contact with non-kin
-5 |  Never or less than a year contact with non-kin  
+1 |  Daily contact with non-kin members   
+2 |  Weekly contact with non-kin members   
+3 |  Biweekly contact with non-kin members   
+4 |  Monthly contact with non-kin members   
+5 |  Never or less than a year contact with non-kin members     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1705,11 +1565,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin
-2 |  Weekly contact with non-kin
-3 |  Biweekly contact with non-kin
-4 |  Monthly contact with non-kin
-5 |  Never or less than a year contact with non-kin  
+1 |  Daily contact with non-kin members   
+2 |  Weekly contact with non-kin members   
+3 |  Biweekly contact with non-kin members   
+4 |  Monthly contact with non-kin members   
+5 |  Never or less than a year contact with non-kin members     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1722,8 +1582,8 @@ output: html_document
 
 ### **Variable label**: Received emotional support    
 **Variable name**:   soc_ss_received_emo_0 
-**Variable description**:  Indicator of the frequency of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
-**Value type**:  
+**Variable description**:  Indicator of the frequency at which the participant received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.    
+**Value type**: integer   
 **Variable unit**:  
 **Category coding**:  
 
@@ -1742,8 +1602,8 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support    
 **Variable name**:   soc_ss_received_emo_1 
-**Variable description**:  Indicator of the frequency of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
-**Value type**:  
+**Variable description**:  Indicator of the frequency at which the participant received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.     
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
 
@@ -1762,8 +1622,8 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support    
 **Variable name**:   soc_ss_received_emo_2 
-**Variable description**:  Indicator of the frequency of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
-**Value type**:  
+**Variable description**:  Indicator of the frequency at which the participant received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.      
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
 
@@ -1782,8 +1642,8 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support    
 **Variable name**:   soc_ss_received_emo_3 
-**Variable description**:  Indicator of the frequency of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
-**Value type**:  
+**Variable description**:  Indicator of the frequency at which the participant received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.    
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
 
@@ -1802,8 +1662,8 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support    
 **Variable name**:   soc_ss_received_emo_4 
-**Variable description**:  Indicator of the frequency of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
-**Value type**:  
+**Variable description**:  Indicator of the frequency at which the participant received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.    
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
 
@@ -1822,8 +1682,8 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support    
 **Variable name**:   soc_ss_received_emo_5 
-**Variable description**:  Indicator of the frequency of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
-**Value type**:  
+**Variable description**:  Indicator of the frequency at which the participant received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.     
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
 
@@ -1842,8 +1702,8 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support    
 **Variable name**:   soc_ss_received_emo_6 
-**Variable description**:  Indicator of the frequency of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
-**Value type**:  
+**Variable description**:  Indicator of the frequency at which the participant received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.  
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
 
@@ -1853,7 +1713,7 @@ output: html_document
 1 |  Sometimes received emotional support
 2 |  Often received emotional support
 
-**Harmonization status**:  
+**Harmonization status**:     
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1862,15 +1722,10 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support Z-score    
 **Variable name**:   soc_ss_Zscore_received_emo_0 
-**Variable description**:  Zscore of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
-**Value type**:  
+**Variable description**:  Zscore of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.    
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1881,15 +1736,10 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support Z-score    
 **Variable name**:   soc_ss_Zscore_received_emo_1 
-**Variable description**:  Zscore of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
-**Value type**:  
+**Variable description**:  Zscore of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.      
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1900,15 +1750,10 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support Z-score    
 **Variable name**:   soc_ss_Zscore_received_emo_2 
-**Variable description**:  Zscore of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
-**Value type**:  
+**Variable description**:  Zscore of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.      
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1919,15 +1764,10 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support Z-score    
 **Variable name**:   soc_ss_Zscore_received_emo_3 
-**Variable description**:  Zscore of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
-**Value type**:  
+**Variable description**:  Zscore of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.    
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1938,15 +1778,10 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support Z-score    
 **Variable name**:   soc_ss_Zscore_received_emo_4 
-**Variable description**:  Zscore of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
-**Value type**:  
+**Variable description**:  Zscore of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.    
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1957,15 +1792,10 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support Z-score    
 **Variable name**:   soc_ss_Zscore_received_emo_5 
-**Variable description**:  Zscore of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
-**Value type**:  
+**Variable description**:  Zscore of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.    
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1977,14 +1807,9 @@ output: html_document
 ### **Variable label**: Received emotional support Z-score    
 **Variable name**:   soc_ss_Zscore_received_emo_6 
 **Variable description**:  Zscore of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
-**Value type**:  
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1996,7 +1821,7 @@ output: html_document
 ### **Variable label**: Received instrumental support   
 **Variable name**:   soc_ss_received_instru_0 
 **Variable description**:  Indicator of the frequency of received instrumental support (i.e. help with chores) from the participant’s 3 social network members that they are closest to.    
-**Value type**:  
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
 
@@ -2016,7 +1841,7 @@ output: html_document
 ### **Variable label**: Received instrumental support   
 **Variable name**:   soc_ss_received_instru_1 
 **Variable description**:  Indicator of the frequency of received instrumental support (i.e. help with chores) from the participant’s 3 social network members that they are closest to.    
-**Value type**:  
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
 
@@ -2036,7 +1861,7 @@ output: html_document
 ### **Variable label**: Received instrumental support   
 **Variable name**:   soc_ss_received_instru_2 
 **Variable description**:  Indicator of the frequency of received instrumental support (i.e. help with chores) from the participant’s 3 social network members that they are closest to.    
-**Value type**:  
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
 
@@ -2056,7 +1881,7 @@ output: html_document
 ### **Variable label**: Received instrumental support   
 **Variable name**:   soc_ss_received_instru_3 
 **Variable description**:  Indicator of the frequency of received instrumental support (i.e. help with chores) from the participant’s 3 social network members that they are closest to.    
-**Value type**:  
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
 
@@ -2076,7 +1901,7 @@ output: html_document
 ### **Variable label**: Received instrumental support   
 **Variable name**:   soc_ss_received_instru_4 
 **Variable description**:  Indicator of the frequency of received instrumental support (i.e. help with chores) from the participant’s 3 social network members that they are closest to.    
-**Value type**:  
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
 
@@ -2096,7 +1921,7 @@ output: html_document
 ### **Variable label**: Received instrumental support   
 **Variable name**:   soc_ss_received_instru_5 
 **Variable description**:  Indicator of the frequency of received instrumental support (i.e. help with chores) from the participant’s 3 social network members that they are closest to.    
-**Value type**:  
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
 
@@ -2116,7 +1941,7 @@ output: html_document
 ### **Variable label**: Received instrumental support   
 **Variable name**:   soc_ss_received_instru_6 
 **Variable description**:  Indicator of the frequency of received instrumental support (i.e. help with chores) from the participant’s 3 social network members that they are closest to.    
-**Value type**:  
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
 
@@ -2136,14 +1961,9 @@ output: html_document
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_0      
 **Variable description**:  Z-score of perceived emotional support from the participant’s 3 social network members that they are closest to.  
-**Value type**:  
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2155,14 +1975,9 @@ output: html_document
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_1      
 **Variable description**:  Z-score of perceived emotional support from the participant’s 3 social network members that they are closest to.  
-**Value type**:  
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2174,14 +1989,9 @@ output: html_document
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_2      
 **Variable description**:  Z-score of perceived emotional support from the participant’s 3 social network members that they are closest to.  
-**Value type**:  
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2193,14 +2003,9 @@ output: html_document
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_3      
 **Variable description**:  Z-score of perceived emotional support from the participant’s 3 social network members that they are closest to.  
-**Value type**:  
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2212,14 +2017,9 @@ output: html_document
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_4       
 **Variable description**:  Z-score of perceived emotional support from the participant’s 3 social network members that they are closest to.  
-**Value type**:  
+**Value type**:  integer  
 **Variable unit**:  
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
+**Category coding**:     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2231,14 +2031,9 @@ output: html_document
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_5        
 **Variable description**:  Z-score of perceived emotional support from the participant’s 3 social network members that they are closest to.  
-**Value type**:  
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2250,15 +2045,10 @@ output: html_document
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_6        
 **Variable description**:  Z-score of perceived emotional support from the participant’s 3 social network members that they are closest to.  
-**Value type**:  
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
-
+ 
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
@@ -2268,8 +2058,8 @@ output: html_document
 ```
 ### **Variable label**: Perceived instrumental support        
 **Variable name**:   soc_ss_perceived_instru_0      
-**Variable description**:  Indicator of perceived instrumental support, i.e. is there is someone to help with daily chores in case of need?       
-**Value type**:  
+**Variable description**:  Indicator of perceived instrumental support, i.e. if there is someone to help with daily chores in case of need?       
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
 
@@ -2287,8 +2077,8 @@ output: html_document
 ```
 ### **Variable label**: Perceived instrumental support        
 **Variable name**:   soc_ss_perceived_instru_1      
-**Variable description**:  Indicator of perceived instrumental support, i.e. is there is someone to help with daily chores in case of need?       
-**Value type**:  
+**Variable description**:  Indicator of perceived instrumental support, i.e. if there is someone to help with daily chores in case of need?       
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
 
@@ -2306,8 +2096,8 @@ output: html_document
 ```
 ### **Variable label**: Perceived instrumental support        
 **Variable name**:   soc_ss_perceived_instru_2      
-**Variable description**:  Indicator of perceived instrumental support, i.e. is there is someone to help with daily chores in case of need?       
-**Value type**:  
+**Variable description**:  Indicator of perceived instrumental support, i.e. if there is someone to help with daily chores in case of need?       
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
 
@@ -2325,8 +2115,8 @@ output: html_document
 ```
 ### **Variable label**: Perceived instrumental support        
 **Variable name**:   soc_ss_perceived_instru_3      
-**Variable description**:  Indicator of perceived instrumental support, i.e. is there is someone to help with daily chores in case of need?       
-**Value type**:  
+**Variable description**:  Indicator of perceived instrumental support, i.e. if there is someone to help with daily chores in case of need?       
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
 
@@ -2344,8 +2134,8 @@ output: html_document
 ```
 ### **Variable label**: Perceived instrumental support        
 **Variable name**:   soc_ss_perceived_instru_4      
-**Variable description**:  Indicator of perceived instrumental support, i.e. is there is someone to help with daily chores in case of need?       
-**Value type**:  
+**Variable description**:  Indicator of perceived instrumental support, i.e. if there is someone to help with daily chores in case of need?       
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
 
@@ -2363,8 +2153,8 @@ output: html_document
 ```
 ### **Variable label**: Perceived instrumental support        
 **Variable name**:   soc_ss_perceived_instru_5      
-**Variable description**:  Indicator of perceived instrumental support, i.e. is there is someone to help with daily chores in case of need?       
-**Value type**:  
+**Variable description**:  Indicator of perceived instrumental support, i.e. if there is someone to help with daily chores in case of need?       
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
 
@@ -2382,8 +2172,8 @@ output: html_document
 ```
 ### **Variable label**: Perceived instrumental support        
 **Variable name**:   soc_ss_perceived_instru_6      
-**Variable description**:  Indicator of perceived instrumental support, i.e. is there is someone to help with daily chores in case of need?       
-**Value type**:  
+**Variable description**:  Indicator of perceived instrumental support, i.e. if there is someone to help with daily chores in case of need?       
+**Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
 
@@ -2404,7 +2194,7 @@ output: html_document
 
 ### **Variable label**:  Social isolation    
 **Variable name**:  soc_sp_isolation_0  
-**Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
@@ -2423,7 +2213,7 @@ output: html_document
 ```
 ### **Variable label**:  Social isolation    
 **Variable name**:  soc_sp_isolation_1  
-**Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
@@ -2442,7 +2232,7 @@ output: html_document
 ```
 ### **Variable label**:  Social isolation    
 **Variable name**:  soc_sp_isolation_2  
-**Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
@@ -2461,7 +2251,7 @@ output: html_document
 ```
 ### **Variable label**:  Social isolation    
 **Variable name**:  soc_sp_isolation_3  
-**Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
@@ -2480,7 +2270,7 @@ output: html_document
 ```
 ### **Variable label**:  Social isolation    
 **Variable name**:  soc_sp_isolation_4  
-**Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
@@ -2499,7 +2289,7 @@ output: html_document
 ```
 ### **Variable label**:  Social isolation    
 **Variable name**:  soc_sp_isolation_5  
-**Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
@@ -2518,7 +2308,7 @@ output: html_document
 ```
 ### **Variable label**:  Social isolation    
 **Variable name**:  soc_sp_isolation_6  
-**Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
@@ -2537,7 +2327,7 @@ output: html_document
 ```
 ### **Variable label**:  Social isolation    
 **Variable name**:  soc_sp_isolation_7  
-**Variable description**:  Indicator of whether participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
@@ -2696,8 +2486,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a religious organization   
-1 |  Participation in a religious organization 
+0 |  Does not participate in a religious organization   
+1 |  Does participate in a religious organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2715,8 +2505,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a religious organization   
-1 |  Participation in a religious organization 
+0 |  Does not participate in a religious organization   
+1 |  Does participate in a religious organization  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2734,8 +2524,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a religious organization   
-1 |  Participation in a religious organization 
+0 |  Does not participate in a religious organization   
+1 |  Does participate in a religious organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2753,8 +2543,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a religious organization   
-1 |  Participation in a religious organization 
+0 |  Does not participate in a religious organization   
+1 |  Does participate in a religious organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2772,8 +2562,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a religious organization   
-1 |  Participation in a religious organization 
+0 |  Does not participate in a religious organization   
+1 |  Does participate in a religious organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2791,8 +2581,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a religious organization   
-1 |  Participation in a religious organization 
+0 |  Does not participate in a religious organization   
+1 |  Does participate in a religious organization  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2810,8 +2600,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a religious organization   
-1 |  Participation in a religious organization 
+0 |  Does not participate in a religious organization   
+1 |  Does participate in a religious organization  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2829,8 +2619,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a religious organization   
-1 |  Participation in a religious organization 
+0 |  Does not participate in a religious organization   
+1 |  Does participate in a religious organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2849,7 +2639,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly  participation in religious organization
+2 |  Less than monthly participation in religious organization
 3 |  Monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
@@ -2871,7 +2661,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly  participation in religious organization
+2 |  Less than monthly participation in religious organization
 3 |  Monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
@@ -2893,7 +2683,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly  participation in religious organization
+2 |  Less than monthly participation in religious organization
 3 |  Monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
@@ -2915,7 +2705,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly  participation in religious organization
+2 |  Less than monthly participation in religious organization
 3 |  Monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
@@ -2937,7 +2727,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly  participation in religious organization
+2 |  Less than monthly participation in religious organization
 3 |  Monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
@@ -2959,7 +2749,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly  participation in religious organization
+2 |  Less than monthly participation in religious organization
 3 |  Monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
@@ -2981,7 +2771,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly  participation in religious organization
+2 |  Less than monthly participation in religious organization
 3 |  Monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
@@ -3003,7 +2793,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly  participation in religious organization
+2 |  Less than monthly participation in religious organization
 3 |  Monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
@@ -3024,8 +2814,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a cultural or educational organization  
-1 |  Participation in a cultural or educational organization 
+0 |  Does not participate in a cultural or educational organization  
+1 |  Does participate in a cultural or educational organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3043,8 +2833,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a cultural or educational organization  
-1 |  Participation in a cultural or educational organization 
+0 |  Does not participate in a cultural or educational organization  
+1 |  Does participate in a cultural or educational organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3062,8 +2852,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a cultural or educational organization  
-1 |  Participation in a cultural or educational organization 
+0 |  Does not participate in a cultural or educational organization  
+1 |  Does participate in a cultural or educational organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3081,8 +2871,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a cultural or educational organization  
-1 |  Participation in a cultural or educational organization 
+0 |  Does not participate in a cultural or educational organization  
+1 |  Does participate in a cultural or educational organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3100,8 +2890,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a cultural or educational organization  
-1 |  Participation in a cultural or educational organization 
+0 |  Does not participate in a cultural or educational organization  
+1 |  Does participate in a cultural or educational organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3119,8 +2909,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a cultural or educational organization  
-1 |  Participation in a cultural or educational organization 
+0 |  Does not participate in a cultural or educational organization  
+1 |  Does participate in a cultural or educational organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3138,8 +2928,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a cultural or educational organization  
-1 |  Participation in a cultural or educational organization 
+0 |  Does not participate in a cultural or educational organization  
+1 |  Does participate in a cultural or educational organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3157,8 +2947,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a cultural or social organization  
-1 |  Participation in a cultural or social organization 
+0 |  Does not participate in a cultural or social organization  
+1 |  Does participate in a cultural or social organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3176,8 +2966,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a cultural or social organization  
-1 |  Participation in a cultural or social organization 
+0 |  Does not participate in a cultural or social organization  
+1 |  Does participate in a cultural or social organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3195,8 +2985,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a cultural or social organization  
-1 |  Participation in a cultural or social organization 
+0 |  Does not participate in a cultural or social organization  
+1 |  Does participate in a cultural or social organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3214,8 +3004,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a cultural or social organization  
-1 |  Participation in a cultural or social organization 
+0 |  Does not participate in a cultural or social organization  
+1 |  Does participate in a cultural or social organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3233,8 +3023,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a cultural or social organization  
-1 |  Participation in a cultural or social organization 
+0 |  Does not participate in a cultural or social organization  
+1 |  Does participate in a cultural or social organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3252,8 +3042,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a cultural or social organization  
-1 |  Participation in a cultural or social organization 
+0 |  Does not participate in a cultural or social organization  
+1 |  Does participate in a cultural or social organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3271,8 +3061,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a cultural or social organization  
-1 |  Participation in a cultural or social organization 
+0 |  Does not participate in a cultural or social organization  
+1 |  Does participate in a cultural or social organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3290,8 +3080,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not volunteer 
-1 |  Volunteers  
+0 |  Does not take part in volunteer activities
+1 |  Does take part in volunteer activities  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3309,8 +3099,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not volunteer 
-1 |  Volunteers  
+0 |  Does not take part in volunteer activities
+1 |  Does take part in volunteer activities  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3328,8 +3118,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not volunteer 
-1 |  Volunteers  
+0 |  Does not take part in volunteer activities
+1 |  Does take part in volunteer activities  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3347,8 +3137,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not volunteer 
-1 |  Volunteers  
+0 |  Does not take part in volunteer activities
+1 |  Does take part in volunteer activities 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3366,8 +3156,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not volunteer 
-1 |  Volunteers  
+0 |  Does not take part in volunteer activities
+1 |  Does take part in volunteer activities 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3385,8 +3175,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not volunteer 
-1 |  Volunteers  
+0 |  Does not take part in volunteer activities
+1 |  Does take part in volunteer activities 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3404,8 +3194,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not volunteer 
-1 |  Volunteers  
+0 |  Does not take part in volunteer activities
+1 |  Does take part in volunteer activities 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3423,8 +3213,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a civic organization   
-1 |  Participation in a civic organization   
+0 |  Does not participate in a civic organization   
+1 |  Does participate in a civic organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3442,8 +3232,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a civic organization   
-1 |  Participation in a civic organization   
+0 |  Does not participate in a civic organization   
+1 |  Does participate in a civic organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3461,8 +3251,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a civic organization   
-1 |  Participation in a civic organization   
+0 |  Does not participate in a civic organization   
+1 |  Does participate in a civic organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3480,8 +3270,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a civic organization   
-1 |  Participation in a civic organization   
+0 |  Does not participate in a civic organization   
+1 |  Does participate in a civic organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3499,8 +3289,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a civic organization   
-1 |  Participation in a civic organization   
+0 |  Does not participate in a civic organization   
+1 |  Does participate in a civic organization  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3518,8 +3308,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a civic organization   
-1 |  Participation in a civic organization   
+0 |  Does not participate in a civic organization   
+1 |  Does participate in a civic organization  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3537,8 +3327,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a civic organization   
-1 |  Participation in a civic organization   
+0 |  Does not participate in a civic organization   
+1 |  Does participate in a civic organization  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3556,8 +3346,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a professional organization   
-1 |  Participation in a professional organization   
+0 |  Does not participate in a professional organization   
+1 |  Does participate in a professional organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3575,8 +3365,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a professional organization   
-1 |  Participation in a professional organization   
+0 |  Does not participate in a professional organization   
+1 |  Does participate in a professional organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3594,8 +3384,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a professional organization   
-1 |  Participation in a professional organization   
+0 |  Does not participate in a professional organization   
+1 |  Does participate in a professional organization  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3613,8 +3403,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a professional organization   
-1 |  Participation in a professional organization   
+0 |  Does not participate in a professional organization   
+1 |  Does participate in a professional organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3632,8 +3422,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a professional organization   
-1 |  Participation in a professional organization   
+0 |  Does not participate in a professional organization   
+1 |  Does participate in a professional organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3651,8 +3441,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a professional organization   
-1 |  Participation in a professional organization   
+0 |  Does not participate in a professional organization   
+1 |  Does participate in a professional organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3670,8 +3460,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in a professional organization   
-1 |  Participation in a professional organization   
+0 |  Does not participate in a professional organization   
+1 |  Does participate in a professional organization    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3689,8 +3479,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in an organization   
-1 |  Participation in an organization   
+0 |  Does not take part in a social organization   
+1 |  Does take part in a social organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3708,8 +3498,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in an organization   
-1 |  Participation in an organization   
+0 |  Does not take part in a social organization   
+1 |  Does take part in a social organization     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3727,8 +3517,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in an organization   
-1 |  Participation in an organization   
+0 |  Does not take part in a social organization   
+1 |  Does take part in a social organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3746,8 +3536,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in an organization   
-1 |  Participation in an organization   
+0 |  Does not take part in a social organization   
+1 |  Does take part in a social organization     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3765,8 +3555,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in an organization   
-1 |  Participation in an organization   
+0 |  Does not take part in a social organization   
+1 |  Does take part in a social organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3784,8 +3574,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in an organization   
-1 |  Participation in an organization   
+0 |  Does not take part in a social organization   
+1 |  Does take part in a social organization  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3803,8 +3593,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No participation in an organization   
-1 |  Participation in an organization   
+0 |  Does not take part in a social organization   
+1 |  Does take part in a social organization  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4088,8 +3878,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No hobby
-1 |  Has hobby  
+0 |  Does not have a hobby
+1 |  Does have a hobby  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4107,8 +3897,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No hobby
-1 |  Has hobby  
+0 |  Does not have a hobby
+1 |  Does have a hobby   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4126,8 +3916,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No hobby
-1 |  Has hobby  
+0 |  Does not have a hobby
+1 |  Does have a hobby  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4145,8 +3935,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No hobby
-1 |  Has hobby  
+0 |  Does not have a hobby
+1 |  Does have a hobby  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4164,8 +3954,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No hobby
-1 |  Has hobby  
+0 |  Does not have a hobby
+1 |  Does have a hobby 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4183,8 +3973,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No hobby
-1 |  Has hobby  
+0 |  Does not have a hobby
+1 |  Does have a hobby  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4202,8 +3992,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  No hobby
-1 |  Has hobby  
+0 |  Does not have a hobby
+1 |  Does have a hobby 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4223,8 +4013,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Was not the victim of a crime
-1 |  Was the victim of a crime 
+0 |  Did not experience being the victim of a crime
+1 |  Did experience being the victim of a crime 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4242,8 +4032,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Was not the victim of a crime
-1 |  Was the victim of a crime 
+0 |  Did not experience being the victim of a crime
+1 |  Did experience being the victim of a crime 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4261,8 +4051,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Was not the victim of a crime
-1 |  Was the victim of a crime 
+0 |  Did not experience being the victim of a crime
+1 |  Did experience being the victim of a crime 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4280,8 +4070,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Was not the victim of a crime
-1 |  Was the victim of a crime 
+0 |  Did not experience being the victim of a crime
+1 |  Did experience being the victim of a crime 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4299,8 +4089,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Was not the victim of a crime
-1 |  Was the victim of a crime 
+0 |  Did not experience being the victim of a crime
+1 |  Did experience being the victim of a crime 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4318,8 +4108,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Was not the victim of a crime
-1 |  Was the victim of a crime 
+0 |  Did not experience being the victim of a crime
+1 |  Did experience being the victim of a crime 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4337,8 +4127,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Was not the victim of a crime
-1 |  Was the victim of a crime 
+0 |  Did not experience being the victim of a crime
+1 |  Did experience being the victim of a crime 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4357,7 +4147,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience financial problems
-1 |  Experienced financial problems  
+1 |  Did experience financial problems  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4376,7 +4166,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience financial problems
-1 |  Experienced financial problems  
+1 |  Did experience financial problems    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4395,7 +4185,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience financial problems
-1 |  Experienced financial problems  
+1 |  Did experience financial problems   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4414,7 +4204,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience financial problems
-1 |  Experienced financial problems  
+1 |  Did experience financial problems   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4433,7 +4223,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience financial problems
-1 |  Experienced financial problems  
+1 |  Did experience financial problems   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4452,7 +4242,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience financial problems
-1 |  Experienced financial problems  
+1 |  Did experience financial problems    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4471,7 +4261,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience financial problems
-1 |  Experienced financial problems  
+1 |  Did experience financial problems    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4490,7 +4280,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience financial problems
-1 |  Experienced financial problems  
+1 |  Did experience financial problems    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4509,7 +4299,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience relationship problems
-1 |  Experienced relationship problems
+1 |  Did experience relationship problems
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4528,7 +4318,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience relationship problems
-1 |  Experienced relationship problems
+1 |  Did experience relationship problems
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4547,7 +4337,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience relationship problems
-1 |  Experienced relationship problems
+1 |  Did experience relationship problems  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4566,7 +4356,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not divorce/ have relationship breakup
-1 |  Divorced/ had relationship breakup  
+1 |  Did divorce/ had relationship breakup  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4585,7 +4375,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not divorce/ have relationship breakup
-1 |  Divorced/ had relationship breakup  
+1 |  Did divorce/ had relationship breakup  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4604,7 +4394,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not divorce/ have relationship breakup
-1 |  Divorced/ had relationship breakup  
+1 |  Did divorce/ had relationship breakup  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4623,7 +4413,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience illness of family member 
-1 |  Experienced illness of family member 
+1 |  Did experience illness of family member 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4642,7 +4432,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience illness of family member 
-1 |  Experienced illness of family member 
+1 |  Did experience illness of family member 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4661,7 +4451,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience illness of family member 
-1 |  Experienced illness of family member 
+1 |  Did experience illness of family member 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4680,7 +4470,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience illness of family member 
-1 |  Experienced illness of family member 
+1 |  Did experience illness of family member 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4699,7 +4489,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience illness of family member 
-1 |  Experienced illness of family member 
+1 |  Did experience illness of family member 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4718,7 +4508,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience illness of family member 
-1 |  Experienced illness of family member 
+1 |  Did experience illness of family member 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4737,7 +4527,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience illness of family member 
-1 |  Experienced illness of family member 
+1 |  Did experience illness of family member 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4748,7 +4538,7 @@ output: html_document
 ```
 ### **Variable label**:  Life event: death of partner             
 **Variable name**:  soc_le_dpart_0                                           
-**Variable description**:  Indicator of whether the participant experienced the death of partner/spouse in the past few years.          
+**Variable description**:  Indicator of whether the participant experienced the death of partner/spouse in the past few years.      
 **Value type**:  integer      
 **Variable unit**:        
 **Category coding**:  
@@ -4756,7 +4546,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience death of partner/spouse
-1 |  Experienced death of partner/spouse 
+1 |  Did experience death of partner/spouse 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4767,7 +4557,7 @@ output: html_document
 ```
 ### **Variable label**:  Life event: death of partner             
 **Variable name**:  soc_le_dpart_1                                           
-**Variable description**:  Indicator of whether the participant experienced the death of partner/spouse in the past few years.          
+**Variable description**:  Indicator of whether the participant experienced the death of partner/spouse in the past few years.         
 **Value type**:  integer      
 **Variable unit**:        
 **Category coding**:  
@@ -4775,7 +4565,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience death of partner/spouse
-1 |  Experienced death of partner/spouse 
+1 |  Did experience death of partner/spouse 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4786,7 +4576,7 @@ output: html_document
 ```
 ### **Variable label**:  Life event: death of partner             
 **Variable name**:  soc_le_dpart_2                                           
-**Variable description**:  Indicator of whether the participant experienced the death of partner/spouse in the past few years.          
+**Variable description**:  Indicator of whether the participant experienced the death of partner/spouse in the past few years.         
 **Value type**:  integer      
 **Variable unit**:        
 **Category coding**:  
@@ -4794,7 +4584,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience death of partner/spouse
-1 |  Experienced death of partner/spouse 
+1 |  Did experience death of partner/spouse 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4813,7 +4603,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience death of child/family member/friend  
-1 |  Experienced death of child/family member/friend  
+1 |  Did experience death of child/family member/friend  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4832,7 +4622,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience death of child/family member/friend  
-1 |  Experienced death of child/family member/friend  
+1 |  Did experience death of child/family member/friend   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4851,7 +4641,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Did not experience death of child/family member/friend  
-1 |  Experienced death of child/family member/friend  
+1 |  Did experience death of child/family member/friend  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4864,15 +4654,10 @@ output: html_document
 
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
 **Variable name**:  soc_res_num_yrsnbh_0        
-**Variable description**:  Indicator of the number of years that participant has lived in the neighbourhood.  
+**Variable description**:  Number of years that the participant has lived in the neighbourhood.  
 **Value type**:  integer  
-**Variable unit**:   
+**Variable unit**:  years   
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4883,15 +4668,10 @@ output: html_document
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
 **Variable name**:  soc_res_num_yrsnbh_1          
-**Variable description**:  Indicator of the number of years that participant has lived in the neighbourhood.  
+**Variable description**:  Number of years that the participant has lived in the neighbourhood.  
 **Value type**:  integer  
-**Variable unit**:   
+**Variable unit**:  years   
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4902,15 +4682,10 @@ output: html_document
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
 **Variable name**:  soc_res_num_yrsnbh_2          
-**Variable description**:  Indicator of the number of years that participant has lived in the neighbourhood.  
+**Variable description**:  Number of years that the participant has lived in the neighbourhood.  
 **Value type**:  integer  
-**Variable unit**:   
+**Variable unit**: years    
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4921,15 +4696,10 @@ output: html_document
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
 **Variable name**:  soc_res_num_yrsnbh_3          
-**Variable description**:  Indicator of the number of years that participant has lived in the neighbourhood.  
+**Variable description**:  Number of years that the participant has lived in the neighbourhood.  
 **Value type**:  integer  
-**Variable unit**:   
+**Variable unit**:  years   
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4940,15 +4710,10 @@ output: html_document
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
 **Variable name**:  soc_res_num_yrsnbh_4          
-**Variable description**:  Indicator of the number of years that participant has lived in the neighbourhood.  
+**Variable description**:  Number of years that participant has lived in the neighbourhood.  
 **Value type**:  integer  
-**Variable unit**:   
+**Variable unit**:  years   
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4959,15 +4724,10 @@ output: html_document
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
 **Variable name**:  soc_res_num_yrsnbh_5          
-**Variable description**:  Indicator of the number of years that participant has lived in the neighbourhood.  
+**Variable description**:  Number of years that participant has lived in the neighbourhood.  
 **Value type**:  integer  
-**Variable unit**:   
+**Variable unit**:  years   
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4978,15 +4738,10 @@ output: html_document
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
 **Variable name**:  soc_res_num_yrsnbh_6          
-**Variable description**:  Indicator of the number of years that participant has lived in the neighbourhood.  
+**Variable description**:  Number of years that participant has lived in the neighbourhood.  
 **Value type**:  integer  
-**Variable unit**:   
+**Variable unit**: years    
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4997,15 +4752,10 @@ output: html_document
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
 **Variable name**:  soc_res_num_yrshome_0          
-**Variable description**:  Indicator of the number of years that participant has lived in current home/address.    
+**Variable description**:  Number of years that participant has lived in current home/address.    
 **Value type**:  integer  
-**Variable unit**:   
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
+**Variable unit**: years    
+**Category coding**:   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5016,15 +4766,10 @@ output: html_document
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
 **Variable name**:  soc_res_num_yrshome_1          
-**Variable description**:  Indicator of the number of years that participant has lived in current home/address.    
+**Variable description**:  Number of years that participant has lived in current home/address.    
 **Value type**:  integer  
-**Variable unit**:   
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
+**Variable unit**:  years   
+**Category coding**:    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5035,15 +4780,10 @@ output: html_document
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
 **Variable name**:  soc_res_num_yrshome_2          
-**Variable description**:  Indicator of the number of years that participant has lived in current home/address.    
+**Variable description**:  Number of years that participant has lived in current home/address.    
 **Value type**:  integer  
-**Variable unit**:   
+**Variable unit**:  years   
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5054,15 +4794,10 @@ output: html_document
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
 **Variable name**:  soc_res_num_yrshome_3          
-**Variable description**:  Indicator of the number of years that participant has lived in current home/address.    
+**Variable description**:  Number of years that participant has lived in current home/address.    
 **Value type**:  integer  
-**Variable unit**:   
+**Variable unit**: years    
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5073,15 +4808,10 @@ output: html_document
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
 **Variable name**:  soc_res_num_yrshome_4          
-**Variable description**:  Indicator of the number of years that participant has lived in current home/address.    
+**Variable description**:  Number of years that participant has lived in current home/address.    
 **Value type**:  integer  
-**Variable unit**:   
+**Variable unit**: years    
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5092,15 +4822,10 @@ output: html_document
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
 **Variable name**:  soc_res_num_yrshome_5          
-**Variable description**:  Indicator of the number of years that participant has lived in current home/address.    
+**Variable description**:  Number of years that participant has lived in current home/address.    
 **Value type**:  integer  
-**Variable unit**:   
+**Variable unit**: years    
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5111,15 +4836,10 @@ output: html_document
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
 **Variable name**:  soc_res_num_yrshome_6          
-**Variable description**:  Indicator of the number of years that participant has lived in current home/address.    
+**Variable description**: Number of years that participant has lived in current home/address.    
 **Value type**:  integer  
-**Variable unit**:   
+**Variable unit**:  years   
 **Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5138,7 +4858,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Does not want to move out of neighbourhood
-1 |  Wants to move out of neighbourhood
+1 |  Does want to move out of neighbourhood
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5423,7 +5143,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Does not own home
-1 |  Owns home
+1 |  Does own home  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5442,7 +5162,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Does not own home
-1 |  Owns home
+1 |  Does own home  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5461,7 +5181,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Does not own home
-1 |  Owns home
+1 |  Does own home  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5480,7 +5200,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Does not own home
-1 |  Owns home
+1 |  Does own home  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5499,7 +5219,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Does not own home
-1 |  Owns home
+1 |  Does own home  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5518,7 +5238,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Does not own home
-1 |  Owns home
+1 |  Does own home  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5537,7 +5257,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Does not own home
-1 |  Owns home
+1 |  Does own home  
 
 **Harmonization status**:  
 **Harmonization comment**:   
