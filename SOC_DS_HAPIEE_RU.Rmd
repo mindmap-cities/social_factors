@@ -1,0 +1,5456 @@
+---
+title: "Social factors DataSchema"
+output: html_document
+---
+
+```{r, echo=TRUE}
+library(epiDisplay)
+library(dplyr)
+library(data.table)
+# Connecting with Opal data server
+## Login to server and assign study data
+#Load Opal R library
+library(opal)
+# Create an opal object with the login information
+erasmus_opal <- opal.login()
+#Login to Opal server and assign the content of the HAPIEE table(s) to your RStudio environment
+#HAPIEE_W1 
+opal.assign.table.tibble(erasmus_opal, 'HAPIEE_W1', 'HAPIEE.HAPIEE_W1',variables = list('country'))
+HAPIEE_W1<- opal.execute(erasmus_opal,'HAPIEE_W1')
+#HAPIEE_W2 
+opal.assign.table.tibble(erasmus_opal, 'HAPIEE_W2', 'HAPIEE.HAPIEE_W2',variables = list('country'))
+HAPIEE_W2<- opal.execute(erasmus_opal,'HAPIEE_W2')
+```
+## Select country-specific sample
+```{r,echo=FALSE}
+HAPIEE_W1 <- subset(HAPIEE_W1, HAPIEE_W1$country==2)
+HAPIEE_W2 <- subset(HAPIEE_W2, HAPIEE_W2$country==2)
+```
+## Assign participant id as first column of your harmonized dataframes
+```{r, echo=FALSE}
+soc_HAPIEE_RU_0 <- data.frame(id = HAPIEE_W1$id )
+soc_HAPIEE_RU_1 <- data.frame(id = HAPIEE_W2$id )
+```
+## When you are done with your work, logout of Opal server
+```{r, echo=FALSE}
+opal.logout(erasmus_opal) 
+```
+
+# Table of Contents  
+1. [Social network subdomain](#social-network-subdomain)  
+2. [Social support subdomain](#social-support-subdomain)  
+3. [Social participation subdomain](#social-participation-subdomain)  
+4. [Major life events subdomain](#major-life-events-subdomain)  
+5. [Residential characteristics subdomain](#residential-characteristics-subdomain)
+
+# Social network subdomain
+
+### **Variable label**:   Network size of children      
+**Variable name**:   soc_sn_num_children_0    
+**Variable description**:  Number of living biological, adopted or step children.      
+**Value type**:  integer  
+**Variable unit**: children       
+**Category coding**:      
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of children      
+**Variable name**:   soc_sn_num_children_1    
+**Variable description**:  Number of living biological, adopted or step children.          
+**Value type**:  integer  
+**Variable unit**:  children    
+**Category coding**:    
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of children      
+**Variable name**:   soc_sn_num_children_2    
+**Variable description**:  Number of living biological, adopted or step children.        
+**Value type**:  integer  
+**Variable unit**: children       
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of children      
+**Variable name**:   soc_sn_num_children_3    
+**Variable description**:  Number of living biological, adopted or step children.         
+**Value type**:  integer  
+**Variable unit**: children       
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of children      
+**Variable name**:   soc_sn_num_children_4    
+**Variable description**:  Number of living biological, adopted or step children.         
+**Value type**:  integer  
+**Variable unit**: children       
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of children      
+**Variable name**:   soc_sn_num_children_5    
+**Variable description**:  Number of living biological, adopted or step children.          
+**Value type**:  integer  
+**Variable unit**: children     
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of children      
+**Variable name**:   soc_sn_num_children_6    
+**Variable description**:  Number of living biological, adopted or step children.          
+**Value type**:  integer  
+**Variable unit**: children     
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Ranked network size of children         
+**Variable name**:   soc_sn_children_rank_0      
+**Variable description**:  Indicator of whether the participant has a low, medium or high network size compromised of children. It is measured by ranking the size of the network which is comprised of any type of child (biological, step, adoptive, foster, in-law son/daughter).  Low rank indicates no children.  Note: cohorts inquire about different types of children due to the particular questionnaire used, therefore a childless respondent in one study would not necessarily be considered childless in another study.  
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Low rank of network size comprised of children (childless) 
+1 |  Medium rank of network size comprised of children  (1 or 2 children)
+2 |  Large rank of network size comprised of children  (more than 2 children) 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+
+### **Variable label**:   Ranked network size of children           
+**Variable name**:   soc_sn_children_rank_1      
+**Variable description**:  Indicator of whether the participant has a low, medium or high network size compromised of children. It is measured by ranking the size of the network which is comprised of any type of child (biological, step, adoptive, foster, in-law son/daughter).  Low rank indicates no children.  Note: cohorts inquire about different types of children due to the particular questionnaire used, therefore a childless respondent in one study would not necessarily be considered childless in another study.  
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Low rank of network size comprised of children (childless) 
+1 |  Medium rank of network size comprised of children  (1 or 2 children)
+2 |  Large rank of network size comprised of children  (more than 2 children)  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Ranked network size of children           
+**Variable name**:   soc_sn_children_rank_2      
+**Variable description**:  Indicator of whether the participant has a low, medium or high network size compromised of children. It is measured by ranking the size of the network which is comprised of any type of child (biological, step, adoptive, foster, in-law son/daughter).  Low rank indicates no children.  Note: cohorts inquire about different types of children due to the particular questionnaire used, therefore a childless respondent in one study would not necessarily be considered childless in another study.    
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Low rank of network size comprised of children (childless) 
+1 |  Medium rank of network size comprised of children  (1 or 2 children)
+2 |  Large rank of network size comprised of children  (more than 2 children)  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Ranked network size of children          
+**Variable name**:   soc_sn_children_rank_3      
+**Variable description**:  Indicator of whether the participant has a low, medium or high network size compromised of children. It is measured by ranking the size of the network which is comprised of any type of child (biological, step, adoptive, foster, in-law son/daughter).  Low rank indicates no children.  Note: cohorts inquire about different types of children due to the particular questionnaire used, therefore a childless respondent in one study would not necessarily be considered childless in another study.  
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Low rank of network size comprised of children (childless) 
+1 |  Medium rank of network size comprised of children  (1 or 2 children)
+2 |  Large rank of network size comprised of children  (more than 2 children)  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Ranked network size of children          
+**Variable name**:   soc_sn_children_rank_4      
+**Variable description**:  Indicator of whether the participant has a low, medium or high network size compromised of children. It is measured by ranking the size of the network which is comprised of any type of child (biological, step, adoptive, foster, in-law son/daughter).  Low rank indicates no children.  Note: cohorts inquire about different types of children due to the particular questionnaire used, therefore a childless respondent in one study would not necessarily be considered childless in another study.  
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Low rank of network size comprised of children (childless) 
+1 |  Medium rank of network size comprised of children  (1 or 2 children)
+2 |  Large rank of network size comprised of children  (more than 2 children)  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Ranked network size of children          
+**Variable name**:   soc_sn_children_rank_5      
+**Variable description**:  Indicator of whether the participant has a low, medium or high network size compromised of children. It is measured by ranking the size of the network which is comprised of any type of child (biological, step, adoptive, foster, in-law son/daughter).  Low rank indicates no children.  Note: cohorts inquire about different types of children due to the particular questionnaire used, therefore a childless respondent in one study would not necessarily be considered childless in another study.  
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Low rank of network size comprised of children (childless) 
+1 |  Medium rank of network size comprised of children  (1 or 2 children)
+2 |  Large rank of network size comprised of children  (more than 2 children)  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Ranked network size of children         
+**Variable name**:   soc_sn_children_rank_6      
+**Variable description**:  Indicator of whether the participant has a low, medium or high network size compromised of children. It is measured by ranking the size of the network which is comprised of any type of child (biological, step, adoptive, foster, in-law son/daughter).  Low rank indicates no children.  Note: cohorts inquire about different types of children due to the particular questionnaire used, therefore a childless respondent in one study would not necessarily be considered childless in another study.  
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Low rank of network size comprised of children (childless) 
+1 |  Medium rank of network size comprised of children  (1 or 2 children)
+2 |  Large rank of network size comprised of children  (more than 2 children)  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+
+### **Variable label**:   Network size of friends    
+**Variable name**:   soc_sn_num_friends_0  
+**Variable description**:  Number of close friends. These are friends which the participant feels they can talk to/reach out to.    
+**Value type**:  integer  
+**Variable unit**: friends  
+**Category coding**:      
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of friends    
+**Variable name**:   soc_sn_num_friends_1    
+**Variable description**: Number of close friends. These are friends which the participant feels they can talk to/reach out to.  
+**Value type**:  integer  
+**Variable unit**:  friends 
+**Category coding**:        
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of friends    
+**Variable name**:   soc_sn_num_friends_2    
+**Variable description**:  Number of close friends. These are friends which the participant feels they can talk to/reach out to.    
+**Value type**:  integer  
+**Variable unit**:  friends 
+**Category coding**:      
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of friends    
+**Variable name**:   soc_sn_num_friends_3    
+**Variable description**: Number of close friends. These are friends which the participant feels they can talk to/reach out to.    
+**Value type**:  integer  
+**Variable unit**:  friends 
+**Category coding**:         
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of friends    
+**Variable name**:   soc_sn_num_friends_4    
+**Variable description**:  Number of close friends. These are friends which the participant feels they can talk to/reach out to.    
+**Value type**:  integer  
+**Variable unit**:  friends 
+**Category coding**:      
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of friends    
+**Variable name**:   soc_sn_num_friends_5    
+**Variable description**:  Number of close friends. These are friends which the participant feels they can talk to/reach out to.      
+**Value type**:  integer  
+**Variable unit**:  friends  
+**Category coding**:      
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+
+### **Variable label**:   Network size of friends    
+**Variable name**:   soc_sn_num_friends_6    
+**Variable description**:  Number of close friends. These are friends which the participant feels they can talk to/reach out to.    
+**Value type**:  integer  
+**Variable unit**:  friends 
+**Category coding**:         
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+
+### **Variable label**:   In-person contact frequency with friends        
+**Variable name**:   soc_sn_freq_friends_inperson_0       
+**Variable description**:   Indicator of the frequency at which the participant has in-person contact with close friends.      
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily in-person contact with friends  
+2 |  Weekly in-person contact with friends  
+3 |  Biweekly in-person contact with friends   
+4 |  Monthly in-person contact with friends   
+5 |  Never or less than a year in-person contact with friends  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   In-person contact frequency with friends        
+**Variable name**:   soc_sn_freq_friends_inperson_1       
+**Variable description**:   Indicator of the frequency at which the participant has in-person contact with close friends.  
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily in-person contact with friends  
+2 |  Weekly in-person contact with friends  
+3 |  Biweekly in-person contact with friends   
+4 |  Monthly in-person contact with friends   
+5 |  Never or less than a year in-person contact with friends     
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   In-person contact frequency with friends        
+**Variable name**:   soc_sn_freq_friends_inperson_2       
+**Variable description**:   Indicator of the frequency at which the participant has in-person contact with close friends.  
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily in-person contact with friends  
+2 |  Weekly in-person contact with friends  
+3 |  Biweekly in-person contact with friends   
+4 |  Monthly in-person contact with friends   
+5 |  Never or less than a year in-person contact with friends  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   In-person contact frequency with friends       
+**Variable name**:   soc_sn_freq_friends_inperson_3       
+**Variable description**:   Indicator of the frequency at which the participant has in-person contact with close friends.      
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily in-person contact with friends  
+2 |  Weekly in-person contact with friends  
+3 |  Biweekly in-person contact with friends   
+4 |  Monthly in-person contact with friends   
+5 |  Never or less than a year in-person contact with friends       
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   In-person contact frequency with friends       
+**Variable name**:   soc_sn_freq_friends_inperson_4       
+**Variable description**:   Indicator of the frequency at which the participant has in-person contact with close friends.     
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily in-person contact with friends  
+2 |  Weekly in-person contact with friends  
+3 |  Biweekly in-person contact with friends   
+4 |  Monthly in-person contact with friends   
+5 |  Never or less than a year in-person contact with friends    
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Contact frequency with friends        
+**Variable name**:   soc_sn_freq_friends_0       
+**Variable description**:   Indicator of the frequency at which the participant has contact with close friends.         
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with friends 
+2 |  Weekly contact with friends
+3 |  Biweekly contact with friends
+4 |  Monthly contact with friends
+5 |  Never or less than a year contact with friends
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Contact frequency with friends        
+**Variable name**:   soc_sn_freq_friends_1       
+**Variable description**:   Indicator of the frequency at which the participant has contact with close friends.          
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with friends 
+2 |  Weekly contact with friends
+3 |  Biweekly contact with friends
+4 |  Monthly contact with friends
+5 |  Never or less than a year contact with friends 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Contact frequency with friends        
+**Variable name**:   soc_sn_freq_friends_2       
+**Variable description**:   Indicator of the frequency at which the participant has contact with close friends.          
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with friends 
+2 |  Weekly contact with friends
+3 |  Biweekly contact with friends
+4 |  Monthly contact with friends
+5 |  Never or less than a year contact with friends 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Contact frequency with friends        
+**Variable name**:   soc_sn_freq_friends_3       
+**Variable description**:   Indicator of the frequency at which the participant has contact with close friends.          
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with friends 
+2 |  Weekly contact with friends
+3 |  Biweekly contact with friends
+4 |  Monthly contact with friends
+5 |  Never or less than a year contact with friends
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Contact frequency with friends        
+**Variable name**:   soc_sn_freq_friends_4       
+**Variable description**:   Indicator of the frequency at which the participant has contact with close friends.          
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with friends 
+2 |  Weekly contact with friends
+3 |  Biweekly contact with friends
+4 |  Monthly contact with friends
+5 |  Never or less than a year contact with friends  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Contact frequency with friends        
+**Variable name**:   soc_sn_freq_friends_5       
+**Variable description**:   Indicator of the frequency at which the participant has contact with close friends.          
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with friends 
+2 |  Weekly contact with friends
+3 |  Biweekly contact with friends
+4 |  Monthly contact with friends
+5 |  Never or less than a year contact with friends  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Contact frequency with friends        
+**Variable name**:   soc_sn_freq_friends_6       
+**Variable description**:   Indicator of the frequency at which the participant has contact with close friends.           
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with friends 
+2 |  Weekly contact with friends
+3 |  Biweekly contact with friends
+4 |  Monthly contact with friends
+5 |  Never or less than a year contact with friends 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Network size of neighbours           
+**Variable name**:   soc_sn_num_nbhs_0    
+**Variable description**:  Indicator of the number of neighbours that the participant knows well enough to be in touch with or visit.    
+**Value type**:  integer    
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  No neighbours 
+2 |  1 or 2 neighbours 
+3 |  3 to 5 neighbours 
+4 |  6 to 10 neighbours 
+5 |  11 to 20 neighbours 
+6 |  More than 20 neighbours   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Network size of neighbours           
+**Variable name**:   soc_sn_num_nbhs_1    
+**Variable description**:  Indicator of the number of neighbours that the participant knows well enough to be in touch with or visit.  
+**Value type**:  integer    
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  No neighbours 
+2 |  1 or 2 neighbours 
+3 |  3 to 5 neighbours 
+4 |  6 to 10 neighbours 
+5 |  11 to 20 neighbours 
+6 |  More than 20 neighbours    
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Network size of neighbours           
+**Variable name**:   soc_sn_num_nbhs_2    
+**Variable description**:  Indicator of the number of neighbours that the participant knows well enough to be in touch with or visit.  
+**Value type**:  integer    
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  No neighbours 
+2 |  1 or 2 neighbours 
+3 |  3 to 5 neighbours 
+4 |  6 to 10 neighbours 
+5 |  11 to 20 neighbours 
+6 |  More than 20 neighbours    
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Network size of neighbours           
+**Variable name**:   soc_sn_num_nbhs_3    
+**Variable description**:  Indicator of the number of neighbours that the participant knows well enough to be in touch with or visit.  
+**Value type**:  integer    
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  No neighbours 
+2 |  1 or 2 neighbours 
+3 |  3 to 5 neighbours 
+4 |  6 to 10 neighbours 
+5 |  11 to 20 neighbours 
+6 |  More than 20 neighbours    
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Network size of neighbours           
+**Variable name**:   soc_sn_num_nbhs_4    
+**Variable description**:  Indicator of the number of neighbours that the participant knows well enough to be in touch with or visit.  
+**Value type**:  integer    
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  No neighbours 
+2 |  1 or 2 neighbours 
+3 |  3 to 5 neighbours 
+4 |  6 to 10 neighbours 
+5 |  11 to 20 neighbours 
+6 |  More than 20 neighbours    
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Network size of neighbours           
+**Variable name**:   soc_sn_num_nbhs_5    
+**Variable description**:  Indicator of the number of neighbours that the participant knows well enough to be in touch with or visit.  
+**Value type**:  integer    
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  No neighbours 
+2 |  1 or 2 neighbours 
+3 |  3 to 5 neighbours 
+4 |  6 to 10 neighbours 
+5 |  11 to 20 neighbours 
+6 |  More than 20 neighbours    
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Network size of neighbours           
+**Variable name**:   soc_sn_num_nbhs_6    
+**Variable description**:  Indicator of the number of neighbours that the participant knows well enough to be in touch with or visit.  
+**Value type**:  integer    
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  No neighbours 
+2 |  1 or 2 neighbours 
+3 |  3 to 5 neighbours 
+4 |  6 to 10 neighbours 
+5 |  11 to 20 neighbours 
+6 |  More than 20 neighbours 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+
+### **Variable label**:   Contact frequency with neighbours        
+**Variable name**:   soc_sn_freq_nbhs_0    
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit.   
+**Value type**:  integer  
+**Variable unit**:     
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with neighbours
+2 |  Weekly contact with neighbours
+3 |  Biweekly contact with neighbours
+4 |  Monthly contact with neighbours
+5 |  Never or less than a year contact with neighbours  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+``` 
+### **Variable label**:   Contact frequency with neighbours        
+**Variable name**:   soc_sn_freq_nbhs_1    
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit.   
+**Value type**:  integer  
+**Variable unit**:     
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with neighbours
+2 |  Weekly contact with neighbours
+3 |  Biweekly contact with neighbours
+4 |  Monthly contact with neighbours
+5 |  Never or less than a year contact with neighbours  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with neighbours        
+**Variable name**:   soc_sn_freq_nbhs_2    
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit.   
+**Value type**:  integer  
+**Variable unit**:     
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with neighbours
+2 |  Weekly contact with neighbours
+3 |  Biweekly contact with neighbours
+4 |  Monthly contact with neighbours
+5 |  Never or less than a year contact with neighbours   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with neighbours        
+**Variable name**:   soc_sn_freq_nbhs_3    
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit.   
+**Value type**:  integer  
+**Variable unit**:     
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with neighbours
+2 |  Weekly contact with neighbours
+3 |  Biweekly contact with neighbours
+4 |  Monthly contact with neighbours
+5 |  Never or less than a year contact with neighbours    
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with neighbours        
+**Variable name**:   soc_sn_freq_nbhs_4    
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit.   
+**Value type**:  integer  
+**Variable unit**:     
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with neighbours
+2 |  Weekly contact with neighbours
+3 |  Biweekly contact with neighbours
+4 |  Monthly contact with neighbours
+5 |  Never or less than a year contact with neighbours    
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with neighbours        
+**Variable name**:   soc_sn_freq_nbhs_5    
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit.   
+**Value type**:  integer  
+**Variable unit**:     
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with neighbours
+2 |  Weekly contact with neighbours
+3 |  Biweekly contact with neighbours
+4 |  Monthly contact with neighbours
+5 |  Never or less than a year contact with neighbours    
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with neighbours        
+**Variable name**:   soc_sn_freq_nbhs_6      
+**Variable description**:  Indicator of the contact frequency with neighbours that the participant knows well enough to be in touch with or visit.   
+**Value type**:  integer  
+**Variable unit**:     
+**Category coding**:    
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with neighbours
+2 |  Weekly contact with neighbours
+3 |  Biweekly contact with neighbours
+4 |  Monthly contact with neighbours
+5 |  Never or less than a year contact with neighbours   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of relatives      
+**Variable name**:   soc_sn_num_relatives_0    
+**Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which the participant is close to, i.e. is in touch with regularly.           
+**Value type**:  integer  
+**Variable unit**: relatives     
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of relatives      
+**Variable name**:   soc_sn_num_relatives_1    
+**Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which the participant is close to, i.e. is in touch with regularly.           
+**Value type**:  integer  
+**Variable unit**:  relatives    
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of relatives      
+**Variable name**:   soc_sn_num_relatives_2    
+**Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
+**Value type**:  integer  
+**Variable unit**:  relatives      
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of relatives      
+**Variable name**:   soc_sn_num_relatives_3    
+**Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
+**Value type**:  integer  
+**Variable unit**: relatives        
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of relatives      
+**Variable name**:   soc_sn_num_relatives_4    
+**Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
+**Value type**:  integer  
+**Variable unit**: relatives       
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of relatives      
+**Variable name**:   soc_sn_num_relatives_5    
+**Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
+**Value type**:  integer  
+**Variable unit**:  relatives      
+**Category coding**:   
+   
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of relatives      
+**Variable name**:   soc_sn_num_relatives_6    
+**Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
+**Value type**:  integer  
+**Variable unit**: relatives       
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with family   
+**Variable name**:   soc_sn_freq_close_relatives_0    
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to.                
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily or weekly contact with close relatives
+2 |  Biweekly contact with close relatives
+3 |  Monthly contact with close relatives
+4 |  Never or less than a year contact with close relatives   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with family     
+**Variable name**:   soc_sn_freq_close_relatives_1    
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to.                 
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily or weekly contact with close relatives
+2 |  Biweekly contact with close relatives
+3 |  Monthly contact with close relatives
+4 |  Never or less than a year contact with close relatives    
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with family    
+**Variable name**:   soc_sn_freq_close_relatives_2    
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to.               
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily or weekly contact with close relatives
+2 |  Biweekly contact with close relatives
+3 |  Monthly contact with close relatives
+4 |  Never or less than a year contact with close relatives       
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with family    
+**Variable name**:   soc_sn_freq_close_relatives_3      
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to.                 
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily or weekly contact with close relatives
+2 |  Biweekly contact with close relatives
+3 |  Monthly contact with close relatives
+4 |  Never or less than a year contact with close relatives     
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with family   
+**Variable name**:   soc_sn_freq_close_relatives_4      
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to.                 
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily or weekly contact with close relatives
+2 |  Biweekly contact with close relatives
+3 |  Monthly contact with close relatives
+4 |  Never or less than a year contact with close relatives      
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with family    
+**Variable name**:   soc_sn_freq_close_relatives_5      
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to.                 
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily or weekly contact with close relatives
+2 |  Biweekly contact with close relatives
+3 |  Monthly contact with close relatives
+4 |  Never or less than a year contact with close relatives      
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with family    
+**Variable name**:   soc_sn_freq_close_relatives_6      
+**Variable description**:  Indicator of the contact frequency with relatives including siblings and children, which participant is close to.               
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily or weekly contact with close relatives
+2 |  Biweekly contact with close relatives
+3 |  Monthly contact with close relatives
+4 |  Never or less than a year contact with close relatives    
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+
+### **Variable label**:   Contact frequency with relatives   
+**Variable name**:   soc_sn_freq_relatives_0        
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children regardless of how close the participant feels to them.                
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily or weekly contact with relatives 
+2 |  Biweekly contact with relatives 
+3 |  Monthly contact with relatives 
+4 |  Never or less than a year contact with relatives  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with relatives      
+**Variable name**:   soc_sn_freq_relatives_1          
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children regardless of how close the participant feels to them.                
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily or weekly contact with relatives 
+2 |  Biweekly contact with relatives 
+3 |  Monthly contact with relatives 
+4 |  Never or less than a year contact with relatives  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with relatives     
+**Variable name**:   soc_sn_freq_relatives_2          
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children regardless of how close the participant feels to them.                
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily or weekly contact with relatives 
+2 |  Biweekly contact with relatives 
+3 |  Monthly contact with relatives 
+4 |  Never or less than a year contact with relatives  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with relatives    
+**Variable name**:   soc_sn_freq_relatives_3          
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children regardless of how close the participant feels to them.                
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily or weekly contact with relatives 
+2 |  Biweekly contact with relatives 
+3 |  Monthly contact with relatives 
+4 |  Never or less than a year contact with relatives    
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with relatives    
+**Variable name**:   soc_sn_freq_relatives_4          
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children regardless of how close the participant feels to them.                
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily or weekly contact with relatives 
+2 |  Biweekly contact with relatives 
+3 |  Monthly contact with relatives 
+4 |  Never or less than a year contact with relatives  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with relatives     
+**Variable name**:   soc_sn_freq_relatives_5          
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children regardless of how close the participant feels to them.                
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily or weekly contact with relatives 
+2 |  Biweekly contact with relatives 
+3 |  Monthly contact with relatives 
+4 |  Never or less than a year contact with relatives  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with relatives    
+**Variable name**:   soc_sn_freq_relatives_6          
+**Variable description**:  Indicator of the contact frequency with relatives, including siblings and children regardless of how close the participant feels to them.                
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily or weekly contact with relatives 
+2 |  Biweekly contact with relatives 
+3 |  Monthly contact with relatives 
+4 |  Never or less than a year contact with relatives  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of non-kin      
+**Variable name**:   soc_sn_num_nonkin_0    
+**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Value type**:  integer  
+**Variable unit**: members       
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of non-kin      
+**Variable name**:   soc_sn_num_nonkin_1      
+**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Value type**:  integer  
+**Variable unit**: members       
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of non-kin      
+**Variable name**:   soc_sn_num_nonkin_2      
+**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Value type**:  integer  
+**Variable unit**: members       
+**Category coding**:      
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of non-kin      
+**Variable name**:   soc_sn_num_nonkin_3      
+**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Value type**:  integer  
+**Variable unit**:  members      
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of non-kin      
+**Variable name**:   soc_sn_num_nonkin_4      
+**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Value type**:  integer  
+**Variable unit**:  members      
+**Category coding**:     
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of non-kin      
+**Variable name**:   soc_sn_num_nonkin_5      
+**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Value type**:  integer  
+**Variable unit**:  members      
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Network size of non-kin      
+**Variable name**:   soc_sn_num_nonkin_6      
+**Variable description**: Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Value type**:  integer  
+**Variable unit**: members       
+**Category coding**:      
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+
+### **Variable label**:   Contact frequency with non-kin  
+**Variable name**:   soc_sn_freq_nonkin_0          
+**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with non-kin members  
+2 |  Weekly contact with non-kin members  
+3 |  Biweekly contact with non-kin members  
+4 |  Monthly contact with non-kin members  
+5 |  Never or less than a year contact with non-kin members     
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with non-kin  
+**Variable name**:   soc_sn_freq_nonkin_1            
+**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with non-kin members   
+2 |  Weekly contact with non-kin members   
+3 |  Biweekly contact with non-kin members   
+4 |  Monthly contact with non-kin members   
+5 |  Never or less than a year contact with non-kin members     
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with non-kin  
+**Variable name**:   soc_sn_freq_nonkin_2            
+**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with non-kin members   
+2 |  Weekly contact with non-kin members   
+3 |  Biweekly contact with non-kin members   
+4 |  Monthly contact with non-kin members   
+5 |  Never or less than a year contact with non-kin members       
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with non-kin  
+**Variable name**:   soc_sn_freq_nonkin_3            
+**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with non-kin members   
+2 |  Weekly contact with non-kin members   
+3 |  Biweekly contact with non-kin members   
+4 |  Monthly contact with non-kin members   
+5 |  Never or less than a year contact with non-kin members     
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with non-kin  
+**Variable name**:   soc_sn_freq_nonkin_4            
+**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with non-kin members   
+2 |  Weekly contact with non-kin members   
+3 |  Biweekly contact with non-kin members   
+4 |  Monthly contact with non-kin members   
+5 |  Never or less than a year contact with non-kin members     
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with non-kin  
+**Variable name**:   soc_sn_freq_nonkin_5          
+**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with non-kin members   
+2 |  Weekly contact with non-kin members   
+3 |  Biweekly contact with non-kin members   
+4 |  Monthly contact with non-kin members   
+5 |  Never or less than a year contact with non-kin members     
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Contact frequency with non-kin  
+**Variable name**:   soc_sn_freq_nonkin_6          
+**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with non-kin members   
+2 |  Weekly contact with non-kin members   
+3 |  Biweekly contact with non-kin members   
+4 |  Monthly contact with non-kin members   
+5 |  Never or less than a year contact with non-kin members     
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+# Social support subdomain
+
+### **Variable label**: Received emotional support    
+**Variable name**:   soc_ss_received_emo_0 
+**Variable description**:  Indicator of the frequency of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.        
+**Value type**: integer   
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Never received emotional support
+1 |  Sometimes received emotional support
+2 |  Often received emotional support
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support    
+**Variable name**:   soc_ss_received_emo_1 
+**Variable description**:  Indicator of the frequency of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.        
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Never received emotional support
+1 |  Sometimes received emotional support
+2 |  Often received emotional support
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support    
+**Variable name**:   soc_ss_received_emo_2 
+**Variable description**:  Indicator of the frequency of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.          
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Never received emotional support
+1 |  Sometimes received emotional support
+2 |  Often received emotional support
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support    
+**Variable name**:   soc_ss_received_emo_3 
+**Variable description**:  Indicator of the frequency of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.       
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Never received emotional support
+1 |  Sometimes received emotional support
+2 |  Often received emotional support
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support    
+**Variable name**:   soc_ss_received_emo_4 
+**Variable description**:  Indicator of the frequency of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.       
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Never received emotional support
+1 |  Sometimes received emotional support
+2 |  Often received emotional support
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support    
+**Variable name**:   soc_ss_received_emo_5 
+**Variable description**:  Indicator of the frequency of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.       
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Never received emotional support
+1 |  Sometimes received emotional support
+2 |  Often received emotional support
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support    
+**Variable name**:   soc_ss_received_emo_6 
+**Variable description**:  Indicator of the frequency of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.    
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Never received emotional support
+1 |  Sometimes received emotional support
+2 |  Often received emotional support
+
+**Harmonization status**:     
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support Z-score    
+**Variable name**:   soc_ss_Zscore_received_emo_0 
+**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.       
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support Z-score    
+**Variable name**:   soc_ss_Zscore_received_emo_1 
+**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.         
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support Z-score    
+**Variable name**:   soc_ss_Zscore_received_emo_2 
+**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.         
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support Z-score    
+**Variable name**:   soc_ss_Zscore_received_emo_3 
+**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.      
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support Z-score    
+**Variable name**:   soc_ss_Zscore_received_emo_4 
+**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.       
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support Z-score    
+**Variable name**:   soc_ss_Zscore_received_emo_5 
+**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.       
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received emotional support Z-score    
+**Variable name**:   soc_ss_Zscore_received_emo_6 
+**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.      
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received instrumental support   
+**Variable name**:   soc_ss_received_instru_0 
+**Variable description**:  Indicator of the frequency of received instrumental support, i.e. tangible help, from the participant’s three social network members that they indicated they are closest to.      
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Never received instrumental support
+1 |  Sometimes received instrumental support
+2 |  Often received instrumental support
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received instrumental support   
+**Variable name**:   soc_ss_received_instru_1 
+**Variable description**:  Indicator of the frequency of received instrumental support, i.e. tangible help, from the participant’s three social network members that they indicated they are closest to.     
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Never received instrumental support
+1 |  Sometimes received instrumental support
+2 |  Often received instrumental support
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received instrumental support   
+**Variable name**:   soc_ss_received_instru_2 
+**Variable description**:  Indicator of the frequency of received instrumental support, i.e. tangible help, from the participant’s three social network members that they indicated they are closest to.      
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Never received instrumental support
+1 |  Sometimes received instrumental support
+2 |  Often received instrumental support
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received instrumental support   
+**Variable name**:   soc_ss_received_instru_3 
+**Variable description**:  Indicator of the frequency of received instrumental support, i.e. tangible help, from the participant’s three social network members that they indicated they are closest to.      
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Never received instrumental support
+1 |  Sometimes received instrumental support
+2 |  Often received instrumental support
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received instrumental support   
+**Variable name**:   soc_ss_received_instru_4 
+**Variable description**:  Indicator of the frequency of received instrumental support, i.e. tangible help, from the participant’s three social network members that they indicated they are closest to.      
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   Never received instrumental support
+1 |   Sometimes received instrumental support
+2 |   Often received instrumental support
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received instrumental support   
+**Variable name**:   soc_ss_received_instru_5 
+**Variable description**:  Indicator of the frequency of received instrumental support, i.e. tangible help, from the participant’s three social network members that they indicated they are closest to.      
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Never received instrumental support
+1 |  Sometimes received instrumental support
+2 |  Often received instrumental support
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Received instrumental support   
+**Variable name**:   soc_ss_received_instru_6 
+**Variable description**:  Indicator of the frequency of received instrumental support, i.e. tangible help, from the participant’s three social network members that they indicated they are closest to.      
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Never received instrumental support
+1 |  Sometimes received instrumental support
+2 |  Often received instrumental support
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Perceived emotional support Z-score   
+**Variable name**:   soc_ss_Zscore_perceived_emo_0      
+**Variable description**:  Z-score of perceived emotional support from the participant’s three social network members that they indicated they are closest to.   
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Perceived emotional support Z-score   
+**Variable name**:   soc_ss_Zscore_perceived_emo_1      
+**Variable description**:  Z-score of perceived emotional support from the participant’s three social network members that they indicated they are closest to.  
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Perceived emotional support Z-score   
+**Variable name**:   soc_ss_Zscore_perceived_emo_2      
+**Variable description**: Z-score of perceived emotional support from the participant’s three social network members that they indicated they are closest to.   
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Perceived emotional support Z-score   
+**Variable name**:   soc_ss_Zscore_perceived_emo_3      
+**Variable description**: Z-score of perceived emotional support from the participant’s three social network members that they indicated they are closest to.  
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Perceived emotional support Z-score   
+**Variable name**:   soc_ss_Zscore_perceived_emo_4       
+**Variable description**:  Z-score of perceived emotional support from the participant’s three social network members that they indicated they are closest to.  
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:     
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Perceived emotional support Z-score   
+**Variable name**:   soc_ss_Zscore_perceived_emo_5        
+**Variable description**:  Z-score of perceived emotional support from the participant’s three social network members that they indicated they are closest to.  
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Perceived emotional support Z-score   
+**Variable name**:   soc_ss_Zscore_perceived_emo_6        
+**Variable description**:  Z-score of perceived emotional support from the participant’s three social network members that they indicated they are closest to.  
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+ 
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Perceived instrumental support        
+**Variable name**:   soc_ss_perceived_instru_0      
+**Variable description**:  Indicator of perceived instrumental support, i.e. participant feels like there is someone to help with daily chores in case of need.          
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Feels tangible help is available  
+1 |  Does not feel tangible help is available   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Perceived instrumental support        
+**Variable name**:   soc_ss_perceived_instru_1      
+**Variable description**:  Indicator of perceived instrumental support, i.e. participant feels like there is someone to help with daily chores in case of need.        
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Feels tangible help is available  
+1 |  Does not feel tangible help is available   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Perceived instrumental support        
+**Variable name**:   soc_ss_perceived_instru_2      
+**Variable description**:  Indicator of perceived instrumental support, i.e. participant feels like there is someone to help with daily chores in case of need.        
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Feels tangible help is available   
+1 |  Does not feel tangible help is available   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Perceived instrumental support        
+**Variable name**:   soc_ss_perceived_instru_3      
+**Variable description**:  Indicator of perceived instrumental support, i.e. participant feels like there is someone to help with daily chores in case of need.       
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Feels tangible help is available   
+1 |  Does not feel tangible help is available    
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Perceived instrumental support        
+**Variable name**:   soc_ss_perceived_instru_4      
+**Variable description**:  Indicator of perceived instrumental support, i.e. participant feels like there is someone to help with daily chores in case of need.       
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Feels tangible help is available   
+1 |  Does not feel tangible help is available  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Perceived instrumental support        
+**Variable name**:   soc_ss_perceived_instru_5      
+**Variable description**:  Indicator of perceived instrumental support, i.e. participant feels like there is someone to help with daily chores in case of need.       
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Feels tangible help is available   
+1 |  Does not feel tangible help is available  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Perceived instrumental support        
+**Variable name**:   soc_ss_perceived_instru_6      
+**Variable description**:  Indicator of perceived instrumental support, i.e. participant feels like there is someone to help with daily chores in case of need.       
+**Value type**:  integer  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Feels tangible help is available   
+1 |  Does not feel tangible help is available   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+
+# Social participation subdomain
+
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_0  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_1  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_2  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_3  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_4  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_5  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_6  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_7  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Religious membership    
+**Variable name**:  soc_sp_mem_religious_0        
+**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not a member of a religious organization 
+1 |  Member of a religious organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Religious membership    
+**Variable name**:  soc_sp_mem_religious_1        
+**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not a member of a religious organization 
+1 |  Member of a religious organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Religious membership    
+**Variable name**:  soc_sp_mem_religious_2        
+**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not a member of a religious organization 
+1 |  Member of a religious organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Religious membership    
+**Variable name**:  soc_sp_mem_religious_3        
+**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not a member of a religious organization 
+1 |  Member of a religious organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Religious membership    
+**Variable name**:  soc_sp_mem_religious_4        
+**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not a member of a religious organization 
+1 |  Member of a religious organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Religious membership    
+**Variable name**:  soc_sp_mem_religious_5        
+**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not a member of a religious organization 
+1 |  Member of a religious organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Religious membership    
+**Variable name**:  soc_sp_mem_religious_6        
+**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not a member of a religious organization 
+1 |  Member of a religious organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Religious participation 
+**Variable name**:  soc_sp_religious_0        
+**Variable description**:  Indicator of participation in a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a religious organization   
+1 |  Does participate in a religious organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Religious participation 
+**Variable name**:  soc_sp_religious_1        
+**Variable description**:  Indicator of participation in a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a religious organization   
+1 |  Does participate in a religious organization  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Religious participation 
+**Variable name**:  soc_sp_religious_2        
+**Variable description**:  Indicator of participation in a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a religious organization   
+1 |  Does participate in a religious organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Religious participation 
+**Variable name**:  soc_sp_religious_3        
+**Variable description**:  Indicator of participation in a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a religious organization   
+1 |  Does participate in a religious organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Religious participation 
+**Variable name**:  soc_sp_religious_4        
+**Variable description**:  Indicator of participation in a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a religious organization   
+1 |  Does participate in a religious organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Religious participation 
+**Variable name**:  soc_sp_religious_5        
+**Variable description**:  Indicator of participation in a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a religious organization   
+1 |  Does participate in a religious organization  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Religious participation 
+**Variable name**:  soc_sp_religious_6        
+**Variable description**:  Indicator of participation in a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a religious organization   
+1 |  Does participate in a religious organization  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Religious participation 
+**Variable name**:  soc_sp_religious_7        
+**Variable description**:  Indicator of participation in a religious organization.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a religious organization   
+1 |  Does participate in a religious organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Frequency of religious participation 
+**Variable name**:  soc_sp_freq_religious_0        
+**Variable description**:  Indicator of the frequency of participation in a religious organization.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Weekly participation in religious organization 
+2 |  Less than monthly participation in religious organization
+3 |  Monthly participation in religious organization
+4 |  Never participates in religious organization
+5 |  No answer/don’t know regarding participation in religious organization
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Frequency of religious participation 
+**Variable name**:  soc_sp_freq_religious_1        
+**Variable description**:  Indicator of the frequency of participation in a religious organization.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Weekly participation in religious organization 
+2 |  Less than monthly participation in religious organization
+3 |  Monthly participation in religious organization
+4 |  Never participates in religious organization
+5 |  No answer/don’t know regarding participation in religious organization
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Frequency of religious participation 
+**Variable name**:  soc_sp_freq_religious_2        
+**Variable description**:  Indicator of the frequency of participation in a religious organization.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Weekly participation in religious organization 
+2 |  Less than monthly participation in religious organization
+3 |  Monthly participation in religious organization
+4 |  Never participates in religious organization
+5 |  No answer/don’t know regarding participation in religious organization
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Frequency of religious participation 
+**Variable name**:  soc_sp_freq_religious_3        
+**Variable description**:  Indicator of the frequency of participation in a religious organization.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Weekly participation in religious organization 
+2 |  Less than monthly participation in religious organization
+3 |  Monthly participation in religious organization
+4 |  Never participates in religious organization
+5 |  No answer/don’t know regarding participation in religious organization
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Frequency of religious participation 
+**Variable name**:  soc_sp_freq_religious_4        
+**Variable description**:  Indicator of the frequency of participation in a religious organization.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Weekly participation in religious organization 
+2 |  Less than monthly participation in religious organization
+3 |  Monthly participation in religious organization
+4 |  Never participates in religious organization
+5 |  No answer/don’t know regarding participation in religious organization
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Frequency of religious participation 
+**Variable name**:  soc_sp_freq_religious_5        
+**Variable description**:  Indicator of the frequency of participation in a religious organization.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Weekly participation in religious organization 
+2 |  Less than monthly participation in religious organization
+3 |  Monthly participation in religious organization
+4 |  Never participates in religious organization
+5 |  No answer/don’t know regarding participation in religious organization
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Frequency of religious participation 
+**Variable name**:  soc_sp_freq_religious_6        
+**Variable description**:  Indicator of the frequency of participation in a religious organization.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Weekly participation in religious organization 
+2 |  Less than monthly participation in religious organization
+3 |  Monthly participation in religious organization
+4 |  Never participates in religious organization
+5 |  No answer/don’t know regarding participation in religious organization
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Frequency of religious participation 
+**Variable name**:  soc_sp_freq_religious_7        
+**Variable description**:  Indicator of the frequency of participation in a religious organization.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Weekly participation in religious organization 
+2 |  Less than monthly participation in religious organization
+3 |  Monthly participation in religious organization
+4 |  Never participates in religious organization
+5 |  No answer/don’t know regarding participation in religious organization
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Cultural and educational participation   
+**Variable name**:  soc_sp_cultural_edu_0           
+**Variable description**:  Indicator of whether the participant is a member of/participates in a group, club or activity related to education or culture.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a cultural or educational organization  
+1 |  Does participate in a cultural or educational organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Cultural and educational participation   
+**Variable name**:  soc_sp_cultural_edu_1           
+**Variable description**:  Indicator of whether the participant is a member of/participates in a group, club or activity related to education or culture.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a cultural or educational organization  
+1 |  Does participate in a cultural or educational organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Cultural and educational participation   
+**Variable name**:  soc_sp_cultural_edu_2           
+**Variable description**:  Indicator of whether the participant is a member of/participates in a group, club or activity related to education or culture.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a cultural or educational organization  
+1 |  Does participate in a cultural or educational organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Cultural and educational participation   
+**Variable name**:  soc_sp_cultural_edu_3           
+**Variable description**:  Indicator of whether the participant is a member of/participates in a group, club or activity related to education or culture.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a cultural or educational organization  
+1 |  Does participate in a cultural or educational organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Cultural and educational participation   
+**Variable name**:  soc_sp_cultural_edu_4           
+**Variable description**:  Indicator of whether the participant is a member of/participates in a group, club or activity related to education or culture.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a cultural or educational organization  
+1 |  Does participate in a cultural or educational organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Cultural and educational participation   
+**Variable name**:  soc_sp_cultural_edu_5           
+**Variable description**:  Indicator of whether the participant is a member of/participates in a group, club or activity related to education or culture.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a cultural or educational organization  
+1 |  Does participate in a cultural or educational organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Cultural and educational participation   
+**Variable name**:  soc_sp_cultural_edu_6           
+**Variable description**:  Indicator of whether the participant is a member of/participates in a group, club or activity related to education or culture.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a cultural or educational organization  
+1 |  Does participate in a cultural or educational organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Cultural, educational and social participation    
+**Variable name**:  soc_sp_cul_edu_soc_0                 
+**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture, educational or social activities.   
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a cultural, educational or social organization  
+1 |  Does participate in a cultural, educational or social organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Cultural, educational and social participation       
+**Variable name**:  soc_sp_cul_edu_soc_1                 
+**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture, educational or social activities.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a cultural, educational or social organization  
+1 |  Does participate in a cultural, educational or social organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Cultural, educational and social participation       
+**Variable name**:  soc_sp_cul_edu_soc_2                 
+**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture, educational or social activities.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a cultural, educational or social organization  
+1 |  Does participate in a cultural, educational or social organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Cultural, educational and social participation       
+**Variable name**:  soc_sp_cul_edu_soc_3               
+**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture, educational or social activities.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a cultural, educational or social organization  
+1 |  Does participate in a cultural, educational or social organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Cultural, educational and social participation       
+**Variable name**:  ssoc_sp_cul_edu_soc_4               
+**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture, educational or social activities.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a cultural, educational or social organization  
+1 |  Does participate in a cultural, educational or social organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Cultural, educational and social participation       
+**Variable name**:  soc_sp_cul_edu_soc_5               
+**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture, educational or social activities.     
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a cultural, educational or social organization  
+1 |  Does participate in a cultural, educational or social organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Cultural, educational and social participation       
+**Variable name**:  soc_sp_cul_edu_soc_6               
+**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture, educational or social activities.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a cultural, educational or social organization  
+1 |  Does participate in a cultural, educational or social organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Volunteering      
+**Variable name**:  soc_sp_volunteer_0                
+**Variable description**:  Indicator of whether the participant takes part in volunteer activities including charity work or volunteer work in an association with a social aim.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not take part in volunteer activities
+1 |  Does take part in volunteer activities  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Volunteering      
+**Variable name**:  soc_sp_volunteer_1                
+**Variable description**:  Indicator of whether the participant takes part in volunteer activities including charity work or volunteer work in an association with a social aim.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not take part in volunteer activities
+1 |  Does take part in volunteer activities  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Volunteering      
+**Variable name**:  soc_sp_volunteer_2                
+**Variable description**:  Indicator of whether the participant takes part in volunteer activities including charity work or volunteer work in an association with a social aim.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not take part in volunteer activities
+1 |  Does take part in volunteer activities  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Volunteering      
+**Variable name**:  soc_sp_volunteer_3                
+**Variable description**:  Indicator of whether the participant takes part in volunteer activities including charity work or volunteer work in an association with a social aim.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not take part in volunteer activities
+1 |  Does take part in volunteer activities 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Volunteering      
+**Variable name**:  soc_sp_volunteer_4                
+**Variable description**:  Indicator of whether the participant takes part in volunteer activities including charity work or volunteer work in an association with a social aim.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not take part in volunteer activities
+1 |  Does take part in volunteer activities 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Volunteering      
+**Variable name**:  soc_sp_volunteer_5                
+**Variable description**:  Indicator of whether the participant takes part in volunteer activities including charity work or volunteer work in an association with a social aim.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not take part in volunteer activities
+1 |  Does take part in volunteer activities 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Volunteering      
+**Variable name**:  soc_sp_volunteer_6                
+**Variable description**:  Indicator of whether the participant takes part in volunteer activities including charity work or volunteer work in an association with a social aim.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not take part in volunteer activities
+1 |  Does take part in volunteer activities 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Civic participation       
+**Variable name**:  soc_sp_civic_0                
+**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a civic organization   
+1 |  Does participate in a civic organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Civic participation       
+**Variable name**:  soc_sp_civic_1                
+**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a civic organization   
+1 |  Does participate in a civic organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Civic participation       
+**Variable name**:  soc_sp_civic_2                
+**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a civic organization   
+1 |  Does participate in a civic organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Civic participation       
+**Variable name**:  soc_sp_civic_3                
+**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a civic organization   
+1 |  Does participate in a civic organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Civic participation       
+**Variable name**:  soc_sp_civic_4                
+**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a civic organization   
+1 |  Does participate in a civic organization  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Civic participation       
+**Variable name**:  soc_sp_civic_5                
+**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a civic organization   
+1 |  Does participate in a civic organization  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Civic participation       
+**Variable name**:  soc_sp_civic_6                
+**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in a civic organization   
+1 |  Does participate in a civic organization  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Professional participation         
+**Variable name**:  soc_sp_prof_0                
+**Variable description**:  Indicator of participation in a professional association, including a union or neighbourhood association.  
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in an union, professional or neighbourhood organization   
+1 |  Does participate in an union, professional or neighbourhood organization  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Professional participation         
+**Variable name**:  soc_sp_prof_1                
+**Variable description**:  Indicator of participation in a professional association, including a union or neighbourhood association.  
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in an union, professional or neighbourhood organization   
+1 |  Does participate in an union, professional or neighbourhood organization  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Professional participation         
+**Variable name**:  soc_sp_prof_2                
+**Variable description**:  Indicator of participation in a professional association, including a union or neighbourhood association.  
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in an union, professional or neighbourhood organization  
+1 |  Does participate in an union, professional or neighbourhood organization 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Professional participation         
+**Variable name**:  soc_sp_prof_3                
+**Variable description**:  Indicator of participation in a professional association, including a union or neighbourhood association.  
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in an union, professional or neighbourhood organization   
+1 |  Does participate in an union, professional or neighbourhood organization  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Professional participation         
+**Variable name**:  soc_sp_prof_4                
+**Variable description**:  Indicator of participation in a professional association, including a union or neighbourhood association.  
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in an union, professional or neighbourhood organization   
+1 |  Does participate in an union, professional or neighbourhood organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Professional participation         
+**Variable name**:  soc_sp_prof_5                
+**Variable description**:  Indicator of participation in a professional association, including a union or neighbourhood association.  
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in an union, professional or neighbourhood organization   
+1 |  Does participate in an union, professional or neighbourhood organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Professional participation         
+**Variable name**:  soc_sp_prof_6                
+**Variable description**:  Indicator of participation in a professional association, including a union or neighbourhood association.  
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not participate in an union, professional or neighbourhood organization  
+1 |  Does participate in an union, professional or neighbourhood organization   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  General social participation          
+**Variable name**:  soc_sp_general_0                
+**Variable description**:  Indicator of participation in a religious, cultural, educational, civic, political, social/charity work association and/or volunteering.        
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not take part in a social organization/volunteers   
+1 |  Does take part in a social organization/volunteers   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  General social participation            
+**Variable name**:  soc_sp_general_1                
+**Variable description**:  Indicator of participation in a religious, cultural, educational, civic, political, social/charity work association and/or volunteering.        
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not take part in a social organization/volunteers     
+1 |  Does take part in a social organization/volunteers       
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  General social participation          
+**Variable name**:  soc_sp_general_2                
+**Variable description**:  Indicator of participation in a religious, cultural, educational, civic, political, social/charity work association and/or volunteering.        
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not take part in a social organization/volunteers     
+1 |  Does take part in a social organization/volunteers     
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  General social participation          
+**Variable name**:  soc_sp_general_3                
+**Variable description**:  Indicator of participation in a religious, cultural, educational, civic, political, social/charity work association and/or volunteering.        
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not take part in a social organization/volunteers     
+1 |  Does take part in a social organization/volunteers       
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  General social participation          
+**Variable name**:  soc_sp_general_4                
+**Variable description**:  Indicator of participation in a religious, cultural, educational, civic, political, social/charity work association and/or volunteering.        
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not take part in a social organization/volunteers     
+1 |  Does take part in a social organization/volunteers     
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  General social participation          
+**Variable name**:  soc_sp_general_5                
+**Variable description**:  Indicator of participation in a religious, cultural, educational, civic, political, social/charity work association and/or volunteering.        
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not take part in a social organization/volunteers     
+1 |  Does take part in a social organization/volunteers    
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  General social participation          
+**Variable name**:  soc_sp_general_6                
+**Variable description**:  Indicator of participation in a religious, cultural, educational, civic, political, social/charity work association and/or volunteering.      
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not take part in a social organization/volunteers     
+1 |  Does take part in a social organization/volunteers    
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Non participation due to safety       
+**Variable name**:  soc_sp_nosafety_0                  
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to safety concerns.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Safety concerns did not affect participation  
+1 |  Did not participate due to safety concerns   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Non participation due to safety       
+**Variable name**:  soc_sp_nosafety_1                  
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to safety concerns.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Safety concerns did not affect participation  
+1 |  Did not participate due to safety concerns   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Non participation due to safety       
+**Variable name**:  soc_sp_nosafety_2                  
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to safety concerns.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Safety concerns did not affect participation  
+1 |  Did not participate due to safety concerns   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Non participation due to safety       
+**Variable name**:  soc_sp_nosafety_3                   
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to safety concerns.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Safety concerns did not affect participation  
+1 |  Did not participate due to safety concerns   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Non participation due to safety       
+**Variable name**:  soc_sp_nosafety_4                    
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to safety concerns.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Safety concerns did not affect participation  
+1 |  Did not participate due to safety concerns   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Non participation due to safety       
+**Variable name**:  soc_sp_nosafety_5                  
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to safety concerns.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Safety concerns did not affect participation  
+1 |  Did not participate due to safety concerns   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Non participation due to safety       
+**Variable name**:  soc_sp_nosafety_6                  
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to safety concerns.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Safety concerns did not affect participation  
+1 |  Did not participate due to safety concerns   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Non participation due to lack of transportation      
+**Variable name**:  soc_sp_notrans_0                  
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to transport issues.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lack of transportation did not affect participation
+1 |  Did not participate due to lack of transportation   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Non participation due to lack of transportation      
+**Variable name**:  soc_sp_notrans_1                  
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to transport issues.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lack of transportation did not affect participation
+1 |  Did not participate due to lack of transportation   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Non participation due to lack of transportation      
+**Variable name**:  soc_sp_notrans_2                  
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to transport issues.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lack of transportation did not affect participation
+1 |  Did not participate due to lack of transportation   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Non participation due to lack of transportation      
+**Variable name**:  soc_sp_notrans_3                  
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to transport issues.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lack of transportation did not affect participation
+1 |  Did not participate due to lack of transportation   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Non participation due to lack of transportation      
+**Variable name**:  soc_sp_notrans_4                  
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to transport issues.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lack of transportation did not affect participation
+1 |  Did not participate due to lack of transportation   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Non participation due to lack of transportation      
+**Variable name**:  soc_sp_notrans_5                  
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to transport issues.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lack of transportation did not affect participation
+1 |  Did not participate due to lack of transportation   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Non participation due to lack of transportation      
+**Variable name**:  soc_sp_notrans_6                  
+**Variable description**:  Indicator of whether the participant did not participate in social activities due to transport issues.       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lack of transportation did not affect participation
+1 |  Did not participate due to lack of transportation   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Hobby      
+**Variable name**:  soc_sp_hobby_0                       
+**Variable description**:  Indicator of whether the participant has a hobby.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not have a hobby
+1 |  Does have a hobby  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Hobby      
+**Variable name**:  soc_sp_hobby_1                       
+**Variable description**:  Indicator of whether the participant has a hobby.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not have a hobby
+1 |  Does have a hobby   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Hobby      
+**Variable name**:  soc_sp_hobby_2                       
+**Variable description**:  Indicator of whether the participant has a hobby.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not have a hobby
+1 |  Does have a hobby  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Hobby      
+**Variable name**:  soc_sp_hobby_3                       
+**Variable description**:  Indicator of whether the participant has a hobby.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not have a hobby
+1 |  Does have a hobby  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Hobby      
+**Variable name**:  soc_sp_hobby_4                       
+**Variable description**:  Indicator of whether the participant has a hobby.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not have a hobby
+1 |  Does have a hobby 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Hobby      
+**Variable name**:  soc_sp_hobby_5                       
+**Variable description**:  Indicator of whether the participant has a hobby.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not have a hobby
+1 |  Does have a hobby  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Hobby      
+**Variable name**:  soc_sp_hobby_6                       
+**Variable description**:  Indicator of whether the participant has a hobby.         
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not have a hobby
+1 |  Does have a hobby 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+# Major life events subdomain
+
+### **Variable label**:  Life event: victim     
+**Variable name**:  soc_le_vic_0         
+**Variable description**:   Indicator of whether the participant experienced being the victim of a crime (i.e. theft, assault) in the past few years.     
+**Value type**:  integer    
+**Variable unit**:      
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience being the victim of a crime
+1 |  Did experience being the victim of a crime 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: victim     
+**Variable name**:  soc_le_vic_1         
+**Variable description**:   Indicator of whether the participant experienced being the victim of a crime (i.e. theft, assault) in the past few years.     
+**Value type**:  integer    
+**Variable unit**:      
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience being the victim of a crime
+1 |  Did experience being the victim of a crime 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: victim     
+**Variable name**:  soc_le_vic_2         
+**Variable description**:   Indicator of whether the participant experienced being the victim of a crime (i.e. theft, assault) in the past few years.     
+**Value type**:  integer    
+**Variable unit**:      
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience being the victim of a crime
+1 |  Did experience being the victim of a crime 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: victim     
+**Variable name**:  soc_le_vic_3         
+**Variable description**:   Indicator of whether the participant experienced being the victim of a crime (i.e. theft, assault) in the past few years.     
+**Value type**:  integer    
+**Variable unit**:      
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience being the victim of a crime
+1 |  Did experience being the victim of a crime 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: victim     
+**Variable name**:  soc_le_vic_4         
+**Variable description**:   Indicator of whether the participant experienced being the victim of a crime (i.e. theft, assault) in the past few years.     
+**Value type**:  integer    
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience being the victim of a crime
+1 |  Did experience being the victim of a crime 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: victim     
+**Variable name**:  soc_le_vic_5         
+**Variable description**:   Indicator of whether the participant experienced being the victim of a crime (i.e. theft, assault) in the past few years.     
+**Value type**:  integer    
+**Variable unit**:      
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience being the victim of a crime
+1 |  Did experience being the victim of a crime 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: victim     
+**Variable name**:  soc_le_vic_6         
+**Variable description**:   Indicator of whether the participant experienced being the victim of a crime (i.e. theft, assault) in the past few years.     
+**Value type**:  integer    
+**Variable unit**:     
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience being the victim of a crime
+1 |  Did experience being the victim of a crime 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: financial problems      
+**Variable name**:  soc_le_fprob_0             
+**Variable description**:  Indicator of whether the participant experienced financial problems in the past few years.        
+**Value type**:  integer      
+**Variable unit**:        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience financial problems
+1 |  Did experience financial problems  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: financial problems      
+**Variable name**:  soc_le_fprob_1             
+**Variable description**:  Indicator of whether the participant experienced financial problems in the past few years.        
+**Value type**:  integer      
+**Variable unit**:       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience financial problems
+1 |  Did experience financial problems    
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: financial problems      
+**Variable name**:  soc_le_fprob_2             
+**Variable description**:  Indicator of whether the participant experienced financial problems in the past few years.        
+**Value type**:  integer      
+**Variable unit**:         
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience financial problems
+1 |  Did experience financial problems   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: financial problems      
+**Variable name**:  soc_le_fprob_3             
+**Variable description**:  Indicator of whether the participant experienced financial problems in the past few years.        
+**Value type**:  integer      
+**Variable unit**:        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience financial problems
+1 |  Did experience financial problems   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: financial problems      
+**Variable name**:  soc_le_fprob_4             
+**Variable description**:  Indicator of whether the participant experienced financial problems in the past few years.        
+**Value type**:  integer      
+**Variable unit**:       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience financial problems
+1 |  Did experience financial problems   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: financial problems      
+**Variable name**:  soc_le_fprob_5             
+**Variable description**:  Indicator of whether the participant experienced financial problems in the past few years.        
+**Value type**:  integer      
+**Variable unit**:        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience financial problems
+1 |  Did experience financial problems    
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: financial problems      
+**Variable name**:  soc_le_fprob_6             
+**Variable description**:  Indicator of whether the participant experienced financial problems in the past few years.        
+**Value type**:  integer      
+**Variable unit**:       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience financial problems
+1 |  Did experience financial problems    
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: financial problems      
+**Variable name**:  soc_le_fprob_7             
+**Variable description**:  Indicator of whether the participant experienced financial problems in the past few years.        
+**Value type**:  integer      
+**Variable unit**:         
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience financial problems
+1 |  Did experience financial problems    
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: relationship problems        
+**Variable name**:  soc_le_rprob_0             
+**Variable description**:  Indicator of whether the participant experienced relationship problems in the past few years.          
+**Value type**:  integer      
+**Variable unit**:        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience relationship problems
+1 |  Did experience relationship problems
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: relationship problems        
+**Variable name**:  soc_le_rprob_1             
+**Variable description**:  Indicator of whether the participant experienced relationship problems in the past few years.          
+**Value type**:  integer      
+**Variable unit**:        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience relationship problems
+1 |  Did experience relationship problems
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: relationship problems        
+**Variable name**:  soc_le_rprob_2             
+**Variable description**:  Indicator of whether the participant experienced relationship problems in the past few years.          
+**Value type**:  integer      
+**Variable unit**:        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience relationship problems
+1 |  Did experience relationship problems  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: divorce/relationship breakup           
+**Variable name**:  soc_le_divorce_0             
+**Variable description**:  Indicator of the occurrence of divorce/relationship breakup in the past few years.         
+**Value type**:  integer      
+**Variable unit**:        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not divorce/ have relationship breakup
+1 |  Did divorce/ had relationship breakup  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: divorce/relationship breakup           
+**Variable name**:  soc_le_divorce_1             
+**Variable description**:  Indicator of the occurrence of divorce/relationship breakup in the past few years.         
+**Value type**:  integer      
+**Variable unit**:        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not divorce/ have relationship breakup
+1 |  Did divorce/ had relationship breakup  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: divorce/relationship breakup           
+**Variable name**:  soc_le_divorce_2             
+**Variable description**:  Indicator of the occurrence of divorce/relationship breakup in the past few years.         
+**Value type**:  integer      
+**Variable unit**:         
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not divorce/ have relationship breakup
+1 |  Did divorce/ had relationship breakup  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: illness of family member             
+**Variable name**:  soc_le_illfam_0                      
+**Variable description**:  Indicator of whether the participant experienced the illness of family member (including partner) in the past few years.         
+**Value type**:  integer      
+**Variable unit**:        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience illness of family member 
+1 |  Did experience illness of family member 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: illness of family member             
+**Variable name**:  soc_le_illfam_1                      
+**Variable description**:  Indicator of whether the participant experienced the illness of family member (including partner) in the past few years.         
+**Value type**:  integer      
+**Variable unit**:        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience illness of family member 
+1 |  Did experience illness of family member 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: illness of family member             
+**Variable name**:  soc_le_illfam_2                      
+**Variable description**:  Indicator of whether the participant experienced the illness of family member (including partner) in the past few years.         
+**Value type**:  integer      
+**Variable unit**:        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience illness of family member 
+1 |  Did experience illness of family member 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: illness of family member             
+**Variable name**:  soc_le_illfam_3                      
+**Variable description**:  Indicator of whether the participant experienced the illness of family member (including partner) in the past few years.         
+**Value type**:  integer      
+**Variable unit**:        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience illness of family member 
+1 |  Did experience illness of family member 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: illness of family member             
+**Variable name**:  soc_le_illfam_4                      
+**Variable description**:  Indicator of whether the participant experienced the illness of family member (including partner) in the past few years.         
+**Value type**:  integer      
+**Variable unit**:        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience illness of family member 
+1 |  Did experience illness of family member 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: illness of family member             
+**Variable name**:  soc_le_illfam_5                      
+**Variable description**:  Indicator of whether the participant experienced the illness of family member (including partner) in the past few years.         
+**Value type**:  integer      
+**Variable unit**:        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience illness of family member 
+1 |  Did experience illness of family member 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: illness of family member             
+**Variable name**:  soc_le_illfam_6                      
+**Variable description**:  Indicator of whether the participant experienced the illness of family member (including partner) in the past few years.         
+**Value type**:  integer      
+**Variable unit**:        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience illness of family member 
+1 |  Did experience illness of family member 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: death of partner             
+**Variable name**:  soc_le_dpart_0                                           
+**Variable description**:  Indicator of whether the participant experienced the death of partner/spouse in the past few years.      
+**Value type**:  integer      
+**Variable unit**:        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience death of partner/spouse
+1 |  Did experience death of partner/spouse 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: death of partner             
+**Variable name**:  soc_le_dpart_1                                           
+**Variable description**:  Indicator of whether the participant experienced the death of partner/spouse in the past few years.         
+**Value type**:  integer      
+**Variable unit**:        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience death of partner/spouse
+1 |  Did experience death of partner/spouse 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: death of partner             
+**Variable name**:  soc_le_dpart_2                                           
+**Variable description**:  Indicator of whether the participant experienced the death of partner/spouse in the past few years.         
+**Value type**:  integer      
+**Variable unit**:        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience death of partner/spouse
+1 |  Did experience death of partner/spouse 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: death of family member or friend                
+**Variable name**:  soc_le_dfam_0                                           
+**Variable description**:  Indicator of whether the participant experienced the death of a child/family member/friend in the past few years.           
+**Value type**:  integer      
+**Variable unit**:        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience death of child/family member/friend  
+1 |  Did experience death of child/family member/friend  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: death of family member or friend                
+**Variable name**:  soc_le_dfam_1                                           
+**Variable description**:  Indicator of whether the participant experienced the death of a child/family member/friend in the past few years.           
+**Value type**:  integer      
+**Variable unit**:        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience death of child/family member/friend  
+1 |  Did experience death of child/family member/friend   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Life event: death of family member or friend                
+**Variable name**:  soc_le_dfam_2                                           
+**Variable description**:  Indicator of whether the participant experienced the death of a child/family member/friend in the past few years.           
+**Value type**:  integer      
+**Variable unit**:        
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Did not experience death of child/family member/friend  
+1 |  Did experience death of child/family member/friend  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+# Residential characteristics subdomain
+
+### **Variable label**:  Residential stability in neighbourhood (individual - level)  
+**Variable name**:  soc_res_num_yrsnbh_0        
+**Variable description**:  Number of years that the participant has lived in the neighbourhood.  
+**Value type**:  integer  
+**Variable unit**:  years   
+**Category coding**:  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential stability in neighbourhood (individual - level)  
+**Variable name**:  soc_res_num_yrsnbh_1          
+**Variable description**:  Number of years that the participant has lived in the neighbourhood.  
+**Value type**:  integer  
+**Variable unit**:  years   
+**Category coding**:  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential stability in neighbourhood (individual - level)  
+**Variable name**:  soc_res_num_yrsnbh_2          
+**Variable description**:  Number of years that the participant has lived in the neighbourhood.  
+**Value type**:  integer  
+**Variable unit**: years    
+**Category coding**:  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential stability in neighbourhood (individual - level)  
+**Variable name**:  soc_res_num_yrsnbh_3          
+**Variable description**:  Number of years that the participant has lived in the neighbourhood.  
+**Value type**:  integer  
+**Variable unit**:  years   
+**Category coding**:  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential stability in neighbourhood (individual - level)  
+**Variable name**:  soc_res_num_yrsnbh_4          
+**Variable description**:  Number of years that participant has lived in the neighbourhood.  
+**Value type**:  integer  
+**Variable unit**:  years   
+**Category coding**:  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential stability in neighbourhood (individual - level)  
+**Variable name**:  soc_res_num_yrsnbh_5          
+**Variable description**:  Number of years that participant has lived in the neighbourhood.  
+**Value type**:  integer  
+**Variable unit**:  years   
+**Category coding**:  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential stability in neighbourhood (individual - level)  
+**Variable name**:  soc_res_num_yrsnbh_6          
+**Variable description**:  Number of years that participant has lived in the neighbourhood.  
+**Value type**:  integer  
+**Variable unit**: years    
+**Category coding**:  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential stability in home (individual - level)
+**Variable name**:  soc_res_num_yrshome_0          
+**Variable description**:  Number of years that participant has lived in current home/address.    
+**Value type**:  integer  
+**Variable unit**: years    
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential stability in home (individual - level)
+**Variable name**:  soc_res_num_yrshome_1          
+**Variable description**:  Number of years that participant has lived in current home/address.    
+**Value type**:  integer  
+**Variable unit**:  years   
+**Category coding**:    
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential stability in home (individual - level)
+**Variable name**:  soc_res_num_yrshome_2          
+**Variable description**:  Number of years that participant has lived in current home/address.    
+**Value type**:  integer  
+**Variable unit**:  years   
+**Category coding**:  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential stability in home (individual - level)
+**Variable name**:  soc_res_num_yrshome_3          
+**Variable description**:  Number of years that participant has lived in current home/address.    
+**Value type**:  integer  
+**Variable unit**: years    
+**Category coding**:  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential stability in home (individual - level)
+**Variable name**:  soc_res_num_yrshome_4          
+**Variable description**:  Number of years that participant has lived in current home/address.    
+**Value type**:  integer  
+**Variable unit**: years    
+**Category coding**:  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential stability in home (individual - level)
+**Variable name**:  soc_res_num_yrshome_5          
+**Variable description**:  Number of years that participant has lived in current home/address.    
+**Value type**:  integer  
+**Variable unit**: years    
+**Category coding**:  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential stability in home (individual - level)
+**Variable name**:  soc_res_num_yrshome_6          
+**Variable description**: Number of years that participant has lived in current home/address.    
+**Value type**:  integer  
+**Variable unit**:  years   
+**Category coding**:  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Neighbourhood satisfaction   
+**Variable name**:  soc_res_satis_0             
+**Variable description**:  Indicator of whether the participant desires to move away from their current neighbourhood.      
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not want to move out of neighbourhood
+1 |  Does want to move out of neighbourhood
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Neighbourhood satisfaction   
+**Variable name**:  soc_res_satis_1             
+**Variable description**:  Indicator of whether the participant desires to move away from their current neighbourhood.      
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not want to move out of neighbourhood
+1 |  Does want to move out of neighbourhood
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Neighbourhood satisfaction   
+**Variable name**:  soc_res_satis_2             
+**Variable description**:  Indicator of whether the participant desires to move away from their current neighbourhood.      
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not want to move out of neighbourhood
+1 |  Does want to move out of neighbourhood
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Neighbourhood satisfaction   
+**Variable name**:  soc_res_satis_3             
+**Variable description**:  Indicator of whether the participant desires to move away from their current neighbourhood.      
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not want to move out of neighbourhood
+1 |  Does want to move out of neighbourhood
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Neighbourhood satisfaction   
+**Variable name**:  soc_res_satis_4             
+**Variable description**:  Indicator of whether the participant desires to move away from their current neighbourhood.      
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not want to move out of neighbourhood
+1 |  Does want to move out of neighbourhood
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Neighbourhood satisfaction   
+**Variable name**:  soc_res_satis_5             
+**Variable description**:  Indicator of whether the participant desires to move away from their current neighbourhood.      
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not want to move out of neighbourhood
+1 |  Does want to move out of neighbourhood
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential mobility (individual - level)     
+**Variable name**:  soc_res_move_0                
+**Variable description**:  Indicator of whether the participant moved from their current neighbourhood since last interview.       
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Has not moved since last interview
+1 |  Has moved since last interview
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential mobility (individual - level)     
+**Variable name**:  soc_res_move_1                
+**Variable description**:  Indicator of whether the participant moved from their current neighbourhood since last interview.          
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Has not moved since last interview
+1 |  Has moved since last interview
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential mobility (individual - level)     
+**Variable name**:  soc_res_move_2                
+**Variable description**:  Indicator of whether the participant moved from their current neighbourhood since last interview.          
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Has not moved since last interview
+1 |  Has moved since last interview
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential mobility (individual - level)     
+**Variable name**:  soc_res_move_3                
+**Variable description**:  Indicator of whether the participant moved from their current neighbourhood since last interview.          
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Has not moved since last interview
+1 |  Has moved since last interview
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential mobility (individual - level)     
+**Variable name**:  soc_res_move_4                
+**Variable description**:  Indicator of whether the participant moved from their current neighbourhood since last interview.          
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Has not moved since last interview
+1 |  Has moved since last interview
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential mobility (individual - level)     
+**Variable name**:  soc_res_move_5                
+**Variable description**:  Indicator of whether the participant moved from their current neighbourhood since last interview.          
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Has not moved since last interview
+1 |  Has moved since last interview
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residential mobility (individual - level)     
+**Variable name**:  soc_res_move_6                  
+**Variable description**:  Indicator of whether the participant moved from their current neighbourhood since last interview.          
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Has not moved since last interview
+1 |  Has moved since last interview
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residence independence     
+**Variable name**:  soc_res_home_0                  
+**Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lives independently  
+1 |  Lives in a nursing home
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residence independence     
+**Variable name**:  soc_res_home_1                  
+**Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lives independently  
+1 |  Lives in a nursing home
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residence independence     
+**Variable name**:  soc_res_home_2                  
+**Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lives independently  
+1 |  Lives in a nursing home
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residence independence     
+**Variable name**:  soc_res_home_3                  
+**Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lives independently  
+1 |  Lives in a nursing home
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residence independence     
+**Variable name**:  soc_res_home_4                  
+**Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lives independently  
+1 |  Lives in a nursing home
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residence independence     
+**Variable name**:  soc_res_home_5                  
+**Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lives independently  
+1 |  Lives in a nursing home
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residence independence     
+**Variable name**:  soc_res_home_6                  
+**Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Lives independently  
+1 |  Lives in a nursing home
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Home ownership (2-level)      
+**Variable name**:  soc_res_home_own_dich_0                     
+**Variable description**:  Indicator of whether the participant owns home or not (i.e. pays rent or mortgage).          
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not own home
+1 |  Does own home  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Home ownership (2-level)      
+**Variable name**:  soc_res_home_own_dich_1                     
+**Variable description**:  Indicator of whether the participant owns home or not (i.e. pays rent or mortgage).          
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not own home
+1 |  Does own home  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Home ownership (2-level)      
+**Variable name**:  soc_res_home_own_dich_2                     
+**Variable description**:  Indicator of whether the participant owns home or not (i.e. pays rent or mortgage).          
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not own home
+1 |  Does own home  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Home ownership (2-level)      
+**Variable name**:  soc_res_home_own_dich_3                     
+**Variable description**:  Indicator of whether the participant owns home or not (i.e. pays rent or mortgage).          
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not own home
+1 |  Does own home  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Home ownership (2-level)      
+**Variable name**:  soc_res_home_own_dich_4                     
+**Variable description**:  Indicator of whether the participant owns home or not (i.e. pays rent or mortgage).          
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not own home
+1 |  Does own home  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Home ownership (2-level)      
+**Variable name**:  soc_res_home_own_dich_5                     
+**Variable description**:  Indicator of whether the participant owns home or not (i.e. pays rent or mortgage).          
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not own home
+1 |  Does own home  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Home ownership (2-level)      
+**Variable name**:  soc_res_home_own_dich_6                     
+**Variable description**:  Indicator of whether the participant owns home or not (i.e. pays rent or mortgage).          
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not own home
+1 |  Does own home  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Home ownership (3-level)      
+**Variable name**:  soc_res_home_own_0                        
+**Variable description**:  Indicator of whether the participant owns home, pays mortgage or rents.             
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Owns home
+2 |  Pays mortgage 
+3 |  Rents home 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Home ownership (3-level)      
+**Variable name**:  soc_res_home_own_1                        
+**Variable description**:  Indicator of whether the participant owns home, pays mortgage or rents.             
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Owns home
+2 |  Pays mortgage 
+3 |  Rents home 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Home ownership (3-level)      
+**Variable name**:  soc_res_home_own_2                        
+**Variable description**:  Indicator of whether the participant owns home, pays mortgage or rents.             
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Owns home
+2 |  Pays mortgage 
+3 |  Rents home 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
