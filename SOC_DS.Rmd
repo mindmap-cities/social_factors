@@ -1582,7 +1582,7 @@ output: html_document
 
 ### **Variable label**: Received emotional support    
 **Variable name**:   soc_ss_received_emo_0 
-**Variable description**:  Indicator of the frequency at which the participant received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.    
+**Variable description**:  Indicator of the frequency of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.        
 **Value type**: integer   
 **Variable unit**:  
 **Category coding**:  
@@ -1602,7 +1602,7 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support    
 **Variable name**:   soc_ss_received_emo_1 
-**Variable description**:  Indicator of the frequency at which the participant received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.     
+**Variable description**:  Indicator of the frequency of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.        
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -1622,7 +1622,7 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support    
 **Variable name**:   soc_ss_received_emo_2 
-**Variable description**:  Indicator of the frequency at which the participant received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.      
+**Variable description**:  Indicator of the frequency of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.          
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -1642,7 +1642,7 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support    
 **Variable name**:   soc_ss_received_emo_3 
-**Variable description**:  Indicator of the frequency at which the participant received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.    
+**Variable description**:  Indicator of the frequency of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.       
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -1662,7 +1662,7 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support    
 **Variable name**:   soc_ss_received_emo_4 
-**Variable description**:  Indicator of the frequency at which the participant received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.    
+**Variable description**:  Indicator of the frequency of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.       
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -1682,7 +1682,7 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support    
 **Variable name**:   soc_ss_received_emo_5 
-**Variable description**:  Indicator of the frequency at which the participant received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.     
+**Variable description**:  Indicator of the frequency of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.       
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -1702,7 +1702,7 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support    
 **Variable name**:   soc_ss_received_emo_6 
-**Variable description**:  Indicator of the frequency at which the participant received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.  
+**Variable description**:  Indicator of the frequency of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.    
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -1722,7 +1722,7 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support Z-score    
 **Variable name**:   soc_ss_Zscore_received_emo_0 
-**Variable description**:  Zscore of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.    
+**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.       
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -1736,7 +1736,7 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support Z-score    
 **Variable name**:   soc_ss_Zscore_received_emo_1 
-**Variable description**:  Zscore of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.      
+**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.         
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -1750,7 +1750,7 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support Z-score    
 **Variable name**:   soc_ss_Zscore_received_emo_2 
-**Variable description**:  Zscore of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.      
+**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.         
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -1764,7 +1764,7 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support Z-score    
 **Variable name**:   soc_ss_Zscore_received_emo_3 
-**Variable description**:  Zscore of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.    
+**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.      
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -1778,7 +1778,7 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support Z-score    
 **Variable name**:   soc_ss_Zscore_received_emo_4 
-**Variable description**:  Zscore of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.    
+**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.       
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -1792,7 +1792,7 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support Z-score    
 **Variable name**:   soc_ss_Zscore_received_emo_5 
-**Variable description**:  Zscore of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) the participant’s 3 social network members that they are closest to.    
+**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.       
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -1806,7 +1806,7 @@ output: html_document
 ```
 ### **Variable label**: Received emotional support Z-score    
 **Variable name**:   soc_ss_Zscore_received_emo_6 
-**Variable description**:  Zscore of received emotional support (i.e. receiving affection from or sharing personal experiences/feelings with) from the participant’s 3 social network members that they are closest to.    
+**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.      
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -1820,7 +1820,7 @@ output: html_document
 ```
 ### **Variable label**: Received instrumental support   
 **Variable name**:   soc_ss_received_instru_0 
-**Variable description**:  Indicator of the frequency of received instrumental support (i.e. help with chores) from the participant’s 3 social network members that they are closest to.    
+**Variable description**:  Indicator of the frequency of received instrumental support, i.e. tangible help, from the participant’s three social network members that they indicated they are closest to.      
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -1840,7 +1840,7 @@ output: html_document
 ```
 ### **Variable label**: Received instrumental support   
 **Variable name**:   soc_ss_received_instru_1 
-**Variable description**:  Indicator of the frequency of received instrumental support (i.e. help with chores) from the participant’s 3 social network members that they are closest to.    
+**Variable description**:  Indicator of the frequency of received instrumental support, i.e. tangible help, from the participant’s three social network members that they indicated they are closest to.     
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -1860,7 +1860,7 @@ output: html_document
 ```
 ### **Variable label**: Received instrumental support   
 **Variable name**:   soc_ss_received_instru_2 
-**Variable description**:  Indicator of the frequency of received instrumental support (i.e. help with chores) from the participant’s 3 social network members that they are closest to.    
+**Variable description**:  Indicator of the frequency of received instrumental support, i.e. tangible help, from the participant’s three social network members that they indicated they are closest to.      
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -1880,7 +1880,7 @@ output: html_document
 ```
 ### **Variable label**: Received instrumental support   
 **Variable name**:   soc_ss_received_instru_3 
-**Variable description**:  Indicator of the frequency of received instrumental support (i.e. help with chores) from the participant’s 3 social network members that they are closest to.    
+**Variable description**:  Indicator of the frequency of received instrumental support, i.e. tangible help, from the participant’s three social network members that they indicated they are closest to.      
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -1900,7 +1900,7 @@ output: html_document
 ```
 ### **Variable label**: Received instrumental support   
 **Variable name**:   soc_ss_received_instru_4 
-**Variable description**:  Indicator of the frequency of received instrumental support (i.e. help with chores) from the participant’s 3 social network members that they are closest to.    
+**Variable description**:  Indicator of the frequency of received instrumental support, i.e. tangible help, from the participant’s three social network members that they indicated they are closest to.      
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -1920,7 +1920,7 @@ output: html_document
 ```
 ### **Variable label**: Received instrumental support   
 **Variable name**:   soc_ss_received_instru_5 
-**Variable description**:  Indicator of the frequency of received instrumental support (i.e. help with chores) from the participant’s 3 social network members that they are closest to.    
+**Variable description**:  Indicator of the frequency of received instrumental support, i.e. tangible help, from the participant’s three social network members that they indicated they are closest to.      
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -1940,7 +1940,7 @@ output: html_document
 ```
 ### **Variable label**: Received instrumental support   
 **Variable name**:   soc_ss_received_instru_6 
-**Variable description**:  Indicator of the frequency of received instrumental support (i.e. help with chores) from the participant’s 3 social network members that they are closest to.    
+**Variable description**:  Indicator of the frequency of received instrumental support, i.e. tangible help, from the participant’s three social network members that they indicated they are closest to.      
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -1960,7 +1960,7 @@ output: html_document
 ```
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_0      
-**Variable description**:  Z-score of perceived emotional support from the participant’s 3 social network members that they are closest to.  
+**Variable description**:  Z-score of perceived emotional support from the participant’s three social network members that they indicated they are closest to.   
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -1974,7 +1974,7 @@ output: html_document
 ```
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_1      
-**Variable description**:  Z-score of perceived emotional support from the participant’s 3 social network members that they are closest to.  
+**Variable description**:  Z-score of perceived emotional support from the participant’s three social network members that they indicated they are closest to.  
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -1988,7 +1988,7 @@ output: html_document
 ```
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_2      
-**Variable description**:  Z-score of perceived emotional support from the participant’s 3 social network members that they are closest to.  
+**Variable description**: Z-score of perceived emotional support from the participant’s three social network members that they indicated they are closest to.   
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -2002,7 +2002,7 @@ output: html_document
 ```
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_3      
-**Variable description**:  Z-score of perceived emotional support from the participant’s 3 social network members that they are closest to.  
+**Variable description**: Z-score of perceived emotional support from the participant’s three social network members that they indicated they are closest to.  
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -2016,7 +2016,7 @@ output: html_document
 ```
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_4       
-**Variable description**:  Z-score of perceived emotional support from the participant’s 3 social network members that they are closest to.  
+**Variable description**:  Z-score of perceived emotional support from the participant’s three social network members that they indicated they are closest to.  
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:     
@@ -2030,7 +2030,7 @@ output: html_document
 ```
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_5        
-**Variable description**:  Z-score of perceived emotional support from the participant’s 3 social network members that they are closest to.  
+**Variable description**:  Z-score of perceived emotional support from the participant’s three social network members that they indicated they are closest to.  
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -2044,7 +2044,7 @@ output: html_document
 ```
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_6        
-**Variable description**:  Z-score of perceived emotional support from the participant’s 3 social network members that they are closest to.  
+**Variable description**:  Z-score of perceived emotional support from the participant’s three social network members that they indicated they are closest to.  
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -2058,15 +2058,15 @@ output: html_document
 ```
 ### **Variable label**: Perceived instrumental support        
 **Variable name**:   soc_ss_perceived_instru_0      
-**Variable description**:  Indicator of perceived instrumental support, i.e. if there is someone to help with daily chores in case of need?       
+**Variable description**:  Indicator of perceived instrumental support, i.e. participant feels like there is someone to help with daily chores in case of need.          
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Perceived instrumental support available  
-1 |  No perceived instrumental support available  
+0 |  Feels tangible help is available  
+1 |  Does not feel tangible help is available   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2077,15 +2077,15 @@ output: html_document
 ```
 ### **Variable label**: Perceived instrumental support        
 **Variable name**:   soc_ss_perceived_instru_1      
-**Variable description**:  Indicator of perceived instrumental support, i.e. if there is someone to help with daily chores in case of need?       
+**Variable description**:  Indicator of perceived instrumental support, i.e. participant feels like there is someone to help with daily chores in case of need.        
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Perceived instrumental support available  
-1 |  No perceived instrumental support available  
+0 |  Feels tangible help is available  
+1 |  Does not feel tangible help is available   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2096,15 +2096,15 @@ output: html_document
 ```
 ### **Variable label**: Perceived instrumental support        
 **Variable name**:   soc_ss_perceived_instru_2      
-**Variable description**:  Indicator of perceived instrumental support, i.e. if there is someone to help with daily chores in case of need?       
+**Variable description**:  Indicator of perceived instrumental support, i.e. participant feels like there is someone to help with daily chores in case of need.        
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Perceived instrumental support available  
-1 |  No perceived instrumental support available  
+0 |  Feels tangible help is available   
+1 |  Does not feel tangible help is available   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2115,15 +2115,15 @@ output: html_document
 ```
 ### **Variable label**: Perceived instrumental support        
 **Variable name**:   soc_ss_perceived_instru_3      
-**Variable description**:  Indicator of perceived instrumental support, i.e. if there is someone to help with daily chores in case of need?       
+**Variable description**:  Indicator of perceived instrumental support, i.e. participant feels like there is someone to help with daily chores in case of need.       
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Perceived instrumental support available  
-1 |  No perceived instrumental support available  
+0 |  Feels tangible help is available   
+1 |  Does not feel tangible help is available    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2134,15 +2134,15 @@ output: html_document
 ```
 ### **Variable label**: Perceived instrumental support        
 **Variable name**:   soc_ss_perceived_instru_4      
-**Variable description**:  Indicator of perceived instrumental support, i.e. if there is someone to help with daily chores in case of need?       
+**Variable description**:  Indicator of perceived instrumental support, i.e. participant feels like there is someone to help with daily chores in case of need.       
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Perceived instrumental support available  
-1 |  No perceived instrumental support available  
+0 |  Feels tangible help is available   
+1 |  Does not feel tangible help is available  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2153,15 +2153,15 @@ output: html_document
 ```
 ### **Variable label**: Perceived instrumental support        
 **Variable name**:   soc_ss_perceived_instru_5      
-**Variable description**:  Indicator of perceived instrumental support, i.e. if there is someone to help with daily chores in case of need?       
+**Variable description**:  Indicator of perceived instrumental support, i.e. participant feels like there is someone to help with daily chores in case of need.       
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Perceived instrumental support available  
-1 |  No perceived instrumental support available  
+0 |  Feels tangible help is available   
+1 |  Does not feel tangible help is available  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2172,15 +2172,15 @@ output: html_document
 ```
 ### **Variable label**: Perceived instrumental support        
 **Variable name**:   soc_ss_perceived_instru_6      
-**Variable description**:  Indicator of perceived instrumental support, i.e. if there is someone to help with daily chores in case of need?       
+**Variable description**:  Indicator of perceived instrumental support, i.e. participant feels like there is someone to help with daily chores in case of need.       
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Perceived instrumental support available  
-1 |  No perceived instrumental support available  
+0 |  Feels tangible help is available   
+1 |  Does not feel tangible help is available   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2938,17 +2938,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Cultural and social participation    
-**Variable name**:  soc_sp_cultural_soc_0                 
-**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture or social activities.   
+### **Variable label**:  Cultural, educational and social participation    
+**Variable name**:  soc_sp_cul_edu_soc_0                 
+**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture, educational or social activities.   
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a cultural or social organization  
-1 |  Does participate in a cultural or social organization 
+0 |  Does not participate in a cultural, educational or social organization  
+1 |  Does participate in a cultural, educational or social organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2957,17 +2957,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Cultural and social participation    
-**Variable name**:  soc_sp_cultural_soc_1                 
-**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture or social activities.   
+### **Variable label**:  Cultural, educational and social participation       
+**Variable name**:  soc_sp_cul_edu_soc_1                 
+**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture, educational or social activities.      
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a cultural or social organization  
-1 |  Does participate in a cultural or social organization 
+0 |  Does not participate in a cultural, educational or social organization  
+1 |  Does participate in a cultural, educational or social organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2976,17 +2976,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Cultural and social participation    
-**Variable name**:  soc_sp_cultural_soc_2                 
-**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture or social activities.   
+### **Variable label**:  Cultural, educational and social participation       
+**Variable name**:  soc_sp_cul_edu_soc_2                 
+**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture, educational or social activities.      
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a cultural or social organization  
-1 |  Does participate in a cultural or social organization 
+0 |  Does not participate in a cultural, educational or social organization  
+1 |  Does participate in a cultural, educational or social organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2995,17 +2995,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Cultural and social participation    
-**Variable name**:  soc_sp_cultural_soc_3               
-**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture or social activities.   
+### **Variable label**:  Cultural, educational and social participation       
+**Variable name**:  soc_sp_cul_edu_soc_3               
+**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture, educational or social activities.      
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a cultural or social organization  
-1 |  Does participate in a cultural or social organization 
+0 |  Does not participate in a cultural, educational or social organization  
+1 |  Does participate in a cultural, educational or social organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3014,17 +3014,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Cultural and social participation    
-**Variable name**:  soc_sp_cultural_soc_4               
-**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture or social activities.   
+### **Variable label**:  Cultural, educational and social participation       
+**Variable name**:  ssoc_sp_cul_edu_soc_4               
+**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture, educational or social activities.      
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a cultural or social organization  
-1 |  Does participate in a cultural or social organization 
+0 |  Does not participate in a cultural, educational or social organization  
+1 |  Does participate in a cultural, educational or social organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3033,17 +3033,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Cultural and social participation    
-**Variable name**:  soc_sp_cultural_soc_5               
-**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture or social activities.   
+### **Variable label**:  Cultural, educational and social participation       
+**Variable name**:  soc_sp_cul_edu_soc_5               
+**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture, educational or social activities.     
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a cultural or social organization  
-1 |  Does participate in a cultural or social organization 
+0 |  Does not participate in a cultural, educational or social organization  
+1 |  Does participate in a cultural, educational or social organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3052,17 +3052,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Cultural and social participation    
-**Variable name**:  soc_sp_cultural_soc_6               
-**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture or social activities.   
+### **Variable label**:  Cultural, educational and social participation       
+**Variable name**:  soc_sp_cul_edu_soc_6               
+**Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture, educational or social activities.      
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a cultural or social organization  
-1 |  Does participate in a cultural or social organization 
+0 |  Does not participate in a cultural, educational or social organization  
+1 |  Does participate in a cultural, educational or social organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3346,8 +3346,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a professional organization   
-1 |  Does participate in a professional organization   
+0 |  Does not participate in an union, professional or neighbourhood organization   
+1 |  Does participate in an union, professional or neighbourhood organization  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3365,8 +3365,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a professional organization   
-1 |  Does participate in a professional organization   
+0 |  Does not participate in an union, professional or neighbourhood organization   
+1 |  Does participate in an union, professional or neighbourhood organization  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3384,8 +3384,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a professional organization   
-1 |  Does participate in a professional organization  
+0 |  Does not participate in an union, professional or neighbourhood organization  
+1 |  Does participate in an union, professional or neighbourhood organization 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3403,8 +3403,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a professional organization   
-1 |  Does participate in a professional organization   
+0 |  Does not participate in an union, professional or neighbourhood organization   
+1 |  Does participate in an union, professional or neighbourhood organization  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3422,8 +3422,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a professional organization   
-1 |  Does participate in a professional organization   
+0 |  Does not participate in an union, professional or neighbourhood organization   
+1 |  Does participate in an union, professional or neighbourhood organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3441,8 +3441,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a professional organization   
-1 |  Does participate in a professional organization   
+0 |  Does not participate in an union, professional or neighbourhood organization   
+1 |  Does participate in an union, professional or neighbourhood organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3460,8 +3460,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a professional organization   
-1 |  Does participate in a professional organization    
+0 |  Does not participate in an union, professional or neighbourhood organization  
+1 |  Does participate in an union, professional or neighbourhood organization   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3470,17 +3470,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Social participation indicator        
+### **Variable label**:  General social participation indicator        
 **Variable name**:  soc_sp_general_0                
-**Variable description**:  Indicator of whether the participant takes part in any type of social participation.     
+**Variable description**:  Indicator of participation in a religious, cultural, educational, civic, political, social/charity work association and/or volunteering.        
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not take part in a social organization   
-1 |  Does take part in a social organization   
+0 |  Does not take part in a social organization/volunteers   
+1 |  Does take part in a social organization/volunteers   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3489,17 +3489,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Social participation indicator        
+### **Variable label**:  General social participation indicator          
 **Variable name**:  soc_sp_general_1                
-**Variable description**:  Indicator of whether the participant takes part in any type of social participation.     
+**Variable description**:  Indicator of participation in a religious, cultural, educational, civic, political, social/charity work association and/or volunteering.        
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not take part in a social organization   
-1 |  Does take part in a social organization     
+0 |  Does not take part in a social organization/volunteers     
+1 |  Does take part in a social organization/volunteers       
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3508,17 +3508,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Social participation indicator        
+### **Variable label**:  General social participation indicator        
 **Variable name**:  soc_sp_general_2                
-**Variable description**:  Indicator of whether the participant takes part in any type of social participation.     
+**Variable description**:  Indicator of participation in a religious, cultural, educational, civic, political, social/charity work association and/or volunteering.        
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not take part in a social organization   
-1 |  Does take part in a social organization   
+0 |  Does not take part in a social organization/volunteers     
+1 |  Does take part in a social organization/volunteers     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3527,17 +3527,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Social participation indicator        
+### **Variable label**:  General social participation indicator        
 **Variable name**:  soc_sp_general_3                
-**Variable description**:  Indicator of whether the participant takes part in any type of social participation.     
+**Variable description**:  Indicator of participation in a religious, cultural, educational, civic, political, social/charity work association and/or volunteering.        
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not take part in a social organization   
-1 |  Does take part in a social organization     
+0 |  Does not take part in a social organization/volunteers     
+1 |  Does take part in a social organization/volunteers       
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3546,17 +3546,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Social participation indicator        
+### **Variable label**:  General social participation indicator        
 **Variable name**:  soc_sp_general_4                
-**Variable description**:  Indicator of whether the participant takes part in any type of social participation.     
+**Variable description**:  Indicator of participation in a religious, cultural, educational, civic, political, social/charity work association and/or volunteering.        
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not take part in a social organization   
-1 |  Does take part in a social organization   
+0 |  Does not take part in a social organization/volunteers     
+1 |  Does take part in a social organization/volunteers     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3565,17 +3565,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Social participation indicator        
+### **Variable label**:  General social participation indicator        
 **Variable name**:  soc_sp_general_5                
-**Variable description**:  Indicator of whether the participant takes part in any type of social participation.     
+**Variable description**:  Indicator of participation in a religious, cultural, educational, civic, political, social/charity work association and/or volunteering.        
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not take part in a social organization   
-1 |  Does take part in a social organization  
+0 |  Does not take part in a social organization/volunteers     
+1 |  Does take part in a social organization/volunteers    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3584,17 +3584,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Social participation indicator        
+### **Variable label**:  General social participation indicator        
 **Variable name**:  soc_sp_general_6                
-**Variable description**:  Indicator of whether the participant takes part in any type of social participation.     
+**Variable description**:  Indicator of participation in a religious, cultural, educational, civic, political, social/charity work association and/or volunteering.      
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not take part in a social organization   
-1 |  Does take part in a social organization  
+0 |  Does not take part in a social organization/volunteers     
+1 |  Does take part in a social organization/volunteers    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -4867,9 +4867,104 @@ output: html_document
 #This is where the R-script will be written
 
 ```
+### **Variable label**:  Neighbourhood satisfaction   
+**Variable name**:  soc_res_satis_1             
+**Variable description**:  Indicator of whether the participant desires to move away from their current neighbourhood.      
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not want to move out of neighbourhood
+1 |  Does want to move out of neighbourhood
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Neighbourhood satisfaction   
+**Variable name**:  soc_res_satis_2             
+**Variable description**:  Indicator of whether the participant desires to move away from their current neighbourhood.      
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not want to move out of neighbourhood
+1 |  Does want to move out of neighbourhood
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Neighbourhood satisfaction   
+**Variable name**:  soc_res_satis_3             
+**Variable description**:  Indicator of whether the participant desires to move away from their current neighbourhood.      
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not want to move out of neighbourhood
+1 |  Does want to move out of neighbourhood
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Neighbourhood satisfaction   
+**Variable name**:  soc_res_satis_4             
+**Variable description**:  Indicator of whether the participant desires to move away from their current neighbourhood.      
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not want to move out of neighbourhood
+1 |  Does want to move out of neighbourhood
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Neighbourhood satisfaction   
+**Variable name**:  soc_res_satis_5             
+**Variable description**:  Indicator of whether the participant desires to move away from their current neighbourhood.      
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Does not want to move out of neighbourhood
+1 |  Does want to move out of neighbourhood
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
 ### **Variable label**:  Residential mobility (individual - level)     
 **Variable name**:  soc_res_move_0                
-**Variable description**:  Indicator of whether the participant desires to move away from their current neighbourhood.      
+**Variable description**:  Indicator of whether the participant moved from their current neighbourhood since last interview.       
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:  
@@ -4888,7 +4983,7 @@ output: html_document
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
 **Variable name**:  soc_res_move_1                
-**Variable description**:  Indicator of whether the participant desires to move away from their current neighbourhood.      
+**Variable description**:  Indicator of whether the participant moved from their current neighbourhood since last interview.          
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:  
@@ -4907,7 +5002,7 @@ output: html_document
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
 **Variable name**:  soc_res_move_2                
-**Variable description**:  Indicator of whether the participant desires to move away from their current neighbourhood.      
+**Variable description**:  Indicator of whether the participant moved from their current neighbourhood since last interview.          
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:  
@@ -4926,7 +5021,7 @@ output: html_document
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
 **Variable name**:  soc_res_move_3                
-**Variable description**:  Indicator of whether the participant desires to move away from their current neighbourhood.      
+**Variable description**:  Indicator of whether the participant moved from their current neighbourhood since last interview.          
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:  
@@ -4945,7 +5040,7 @@ output: html_document
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
 **Variable name**:  soc_res_move_4                
-**Variable description**:  Indicator of whether the participant desires to move away from their current neighbourhood.      
+**Variable description**:  Indicator of whether the participant moved from their current neighbourhood since last interview.          
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:  
@@ -4964,7 +5059,7 @@ output: html_document
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
 **Variable name**:  soc_res_move_5                
-**Variable description**:  Indicator of whether the participant desires to move away from their current neighbourhood.      
+**Variable description**:  Indicator of whether the participant moved from their current neighbourhood since last interview.          
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:  
@@ -4983,7 +5078,7 @@ output: html_document
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
 **Variable name**:  soc_res_move_6                  
-**Variable description**:  Indicator of whether the participant desires to move away from their current neighbourhood.      
+**Variable description**:  Indicator of whether the participant moved from their current neighbourhood since last interview.          
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:  
