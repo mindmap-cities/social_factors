@@ -47,8 +47,8 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Variable unit**: children       
 **Category coding**:      
 
-**Harmonization status**: impossible   impossible    
-**Harmonization comment**: DelivN@NT2BLQ2 only refers to biological children and excludes other types.   
+**Harmonization status**:  impossible      
+**Harmonization comment**:     
 **R script**:  
 ```{r, echo=TRUE}
 #This is where the R-script will be written
@@ -62,7 +62,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Category coding**:    
 
 **Harmonization status**: impossible    
-**Harmonization comment**:   
+**Harmonization comment**: DelivN@NT2BLQ2 only refers to biological children and excludes other types.     
 **R script**:  
 ```{r, echo=TRUE}
 #This is where the R-script will be written
@@ -152,7 +152,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 2 |  Large rank of network size comprised of children  (more than 2 children) 
 
 **Harmonization status**: impossible    
-**Harmonization comment**: Initially I thought I can add HUNT's variable either but per Dany's email on 14-6, would this be incorrect? bc other cohorts would have more kids since they ask about e.g. adopted kids
+**Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
 #This is where the R-script will be written
@@ -1613,7 +1613,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Variable unit**:  quartile      
 **Category coding**:   
 
-**Harmonization status**: impossible    impossible  
+**Harmonization status**: impossible    
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1627,7 +1627,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Variable unit**:  quartile      
 **Category coding**:   
 
-**Harmonization status**: impossible    impossible  
+**Harmonization status**: impossible     
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1641,7 +1641,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Variable unit**:  quartile      
 **Category coding**:   
 
-**Harmonization status**: impossible    impossible  
+**Harmonization status**: impossible    
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1655,7 +1655,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Variable unit**:  quartile      
 **Category coding**:   
 
-**Harmonization status**: impossible    impossible  
+**Harmonization status**: impossible     
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1669,7 +1669,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Variable unit**:  quartile      
 **Category coding**:   
 
-**Harmonization status**: impossible    impossible  
+**Harmonization status**: impossible    
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1683,7 +1683,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Variable unit**:  quartile      
 **Category coding**:   
 
-**Harmonization status**: impossible    impossible  
+**Harmonization status**: impossible    
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1697,7 +1697,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Variable unit**:  quartile      
 **Category coding**:   
 
-**Harmonization status**: impossible    impossible  
+**Harmonization status**: impossible     
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -5258,7 +5258,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 4 |  Lives on a farm
 5 |  Other
 
-**Harmonization status**: impossible    
+**Harmonization status**: complete       
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
