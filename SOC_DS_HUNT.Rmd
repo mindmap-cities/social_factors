@@ -51,7 +51,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:     
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of children      
@@ -65,7 +65,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**: DelivN@NT2BLQ2 only refers to biological children and excludes other types.     
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of children      
@@ -79,7 +79,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of children      
@@ -93,7 +93,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of children      
@@ -107,7 +107,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of children      
@@ -121,7 +121,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of children      
@@ -135,7 +135,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Ranked network size of children         
@@ -155,7 +155,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -176,7 +176,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Ranked network size of children           
@@ -196,7 +196,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Ranked network size of children          
@@ -216,7 +216,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Ranked network size of children          
@@ -236,7 +236,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Ranked network size of children          
@@ -256,7 +256,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Ranked network size of children         
@@ -276,7 +276,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -291,7 +291,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of friends    
@@ -305,7 +305,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of friends    
@@ -319,7 +319,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of friends    
@@ -333,7 +333,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of friends    
@@ -347,7 +347,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of friends    
@@ -361,7 +361,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -376,7 +376,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -399,7 +399,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   In-person contact frequency with friends        
@@ -421,7 +421,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   In-person contact frequency with friends        
@@ -443,7 +443,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   In-person contact frequency with friends       
@@ -465,7 +465,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   In-person contact frequency with friends       
@@ -487,7 +487,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -509,7 +509,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -531,7 +531,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -553,7 +553,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -575,7 +575,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -597,7 +597,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -619,7 +619,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -641,7 +641,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -664,7 +664,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -687,7 +687,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -710,7 +710,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -733,7 +733,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -756,7 +756,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -779,7 +779,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -802,7 +802,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 
@@ -825,7 +825,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Contact frequency with neighbours        
@@ -847,7 +847,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -869,7 +869,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -891,7 +891,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -913,7 +913,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -935,7 +935,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -957,7 +957,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of relatives      
@@ -971,7 +971,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of relatives      
@@ -985,7 +985,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of relatives      
@@ -999,7 +999,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of relatives      
@@ -1013,7 +1013,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of relatives      
@@ -1027,7 +1027,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of relatives      
@@ -1041,7 +1041,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of relatives      
@@ -1055,7 +1055,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with family   
@@ -1076,7 +1076,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with family     
@@ -1097,7 +1097,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with family    
@@ -1118,7 +1118,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with family    
@@ -1139,7 +1139,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with family   
@@ -1160,7 +1160,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with family    
@@ -1181,7 +1181,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with family    
@@ -1202,7 +1202,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -1224,7 +1224,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with relatives      
@@ -1245,7 +1245,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with relatives     
@@ -1266,7 +1266,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with relatives    
@@ -1287,7 +1287,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with relatives    
@@ -1308,7 +1308,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with relatives     
@@ -1329,7 +1329,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with relatives    
@@ -1350,7 +1350,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of non-kin      
@@ -1364,7 +1364,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of non-kin      
@@ -1378,7 +1378,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of non-kin      
@@ -1392,7 +1392,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of non-kin      
@@ -1406,7 +1406,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of non-kin      
@@ -1420,7 +1420,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of non-kin      
@@ -1434,7 +1434,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of non-kin      
@@ -1448,7 +1448,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -1471,7 +1471,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with non-kin  
@@ -1493,7 +1493,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with non-kin  
@@ -1515,7 +1515,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with non-kin  
@@ -1537,7 +1537,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with non-kin  
@@ -1559,7 +1559,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with non-kin  
@@ -1581,7 +1581,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with non-kin  
@@ -1603,7 +1603,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Quartile of participant's network size          
@@ -1617,7 +1617,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Quartile of participant's network size          
@@ -1631,7 +1631,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Quartile of participant's network size          
@@ -1645,7 +1645,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Quartile of participant's network size          
@@ -1659,7 +1659,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Quartile of participant's network size          
@@ -1673,7 +1673,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Quartile of participant's network size          
@@ -1687,7 +1687,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Quartile of participant's network size          
@@ -1701,7 +1701,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 # Social support subdomain
@@ -1723,7 +1723,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received emotional support    
@@ -1743,7 +1743,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received emotional support    
@@ -1763,7 +1763,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received emotional support    
@@ -1783,7 +1783,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received emotional support    
@@ -1803,7 +1803,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received emotional support    
@@ -1823,7 +1823,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received emotional support    
@@ -1843,7 +1843,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received emotional support Z-score    
@@ -1857,7 +1857,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received emotional support Z-score    
@@ -1871,7 +1871,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received emotional support Z-score    
@@ -1885,7 +1885,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received emotional support Z-score    
@@ -1899,7 +1899,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received emotional support Z-score    
@@ -1913,7 +1913,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received emotional support Z-score    
@@ -1927,7 +1927,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received emotional support Z-score    
@@ -1941,7 +1941,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -1961,7 +1961,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -1981,7 +1981,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -2001,7 +2001,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -2021,7 +2021,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -2041,7 +2041,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -2061,7 +2061,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -2081,7 +2081,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -2095,7 +2095,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -2109,7 +2109,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -2123,7 +2123,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -2137,7 +2137,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -2151,7 +2151,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -2165,7 +2165,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -2179,7 +2179,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -2198,7 +2198,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -2217,7 +2217,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -2236,7 +2236,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -2255,7 +2255,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -2274,7 +2274,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -2293,7 +2293,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -2312,7 +2312,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -2334,7 +2334,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2353,7 +2353,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2372,7 +2372,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2391,7 +2391,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2410,7 +2410,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2429,7 +2429,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2448,7 +2448,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2467,7 +2467,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2489,7 +2489,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2511,7 +2511,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2533,7 +2533,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2555,7 +2555,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2577,7 +2577,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2599,7 +2599,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2621,7 +2621,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2643,7 +2643,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -2662,7 +2662,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -2681,7 +2681,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -2700,7 +2700,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -2719,7 +2719,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -2738,7 +2738,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -2757,7 +2757,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -2776,7 +2776,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation    
@@ -2795,7 +2795,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
@@ -2814,7 +2814,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
@@ -2833,7 +2833,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
@@ -2852,7 +2852,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
@@ -2871,7 +2871,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
@@ -2890,7 +2890,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
@@ -2909,7 +2909,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Volunteering      
@@ -2928,7 +2928,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Volunteering      
@@ -2947,7 +2947,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Volunteering      
@@ -2966,7 +2966,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Volunteering      
@@ -2985,7 +2985,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Volunteering      
@@ -3004,7 +3004,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Volunteering      
@@ -3023,7 +3023,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Volunteering      
@@ -3042,7 +3042,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -3061,7 +3061,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -3080,7 +3080,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -3099,7 +3099,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -3118,7 +3118,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -3137,7 +3137,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -3156,7 +3156,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -3175,7 +3175,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Professional participation         
@@ -3194,7 +3194,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Professional participation         
@@ -3213,7 +3213,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Professional participation         
@@ -3232,7 +3232,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Professional participation         
@@ -3251,7 +3251,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Professional participation         
@@ -3270,7 +3270,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Professional participation         
@@ -3289,7 +3289,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Professional participation         
@@ -3308,7 +3308,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  General social participation          
@@ -3327,7 +3327,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  General social participation            
@@ -3346,7 +3346,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  General social participation          
@@ -3365,7 +3365,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  General social participation          
@@ -3384,7 +3384,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  General social participation          
@@ -3403,7 +3403,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  General social participation          
@@ -3422,7 +3422,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  General social participation          
@@ -3441,7 +3441,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3460,7 +3460,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3479,7 +3479,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3498,7 +3498,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3517,7 +3517,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3536,7 +3536,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3555,7 +3555,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3574,7 +3574,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
@@ -3593,7 +3593,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
@@ -3612,7 +3612,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
@@ -3631,7 +3631,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
@@ -3650,7 +3650,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
@@ -3669,7 +3669,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
@@ -3688,7 +3688,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
@@ -3707,7 +3707,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Hobby      
@@ -3726,7 +3726,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Hobby      
@@ -3745,7 +3745,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Hobby      
@@ -3764,7 +3764,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Hobby      
@@ -3783,7 +3783,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Hobby      
@@ -3802,7 +3802,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Hobby      
@@ -3821,7 +3821,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Hobby      
@@ -3840,7 +3840,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Social isolation    
@@ -3859,7 +3859,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Social isolation    
@@ -3878,7 +3878,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Social isolation    
@@ -3897,7 +3897,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Social isolation    
@@ -3916,7 +3916,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Social isolation    
@@ -3935,7 +3935,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Social isolation    
@@ -3954,7 +3954,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Social isolation    
@@ -3973,7 +3973,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Social isolation    
@@ -3992,7 +3992,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 # Major life events subdomain
@@ -4013,7 +4013,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: victim     
@@ -4032,7 +4032,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: victim     
@@ -4051,7 +4051,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: victim     
@@ -4070,7 +4070,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: victim     
@@ -4089,7 +4089,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: victim     
@@ -4108,7 +4108,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: victim     
@@ -4127,7 +4127,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -4146,7 +4146,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -4165,7 +4165,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -4184,7 +4184,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -4203,7 +4203,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -4222,7 +4222,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -4241,7 +4241,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -4260,7 +4260,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -4279,7 +4279,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: relationship problems        
@@ -4298,7 +4298,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: relationship problems        
@@ -4317,7 +4317,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: relationship problems        
@@ -4336,7 +4336,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: divorce/relationship breakup           
@@ -4355,7 +4355,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: divorce/relationship breakup           
@@ -4374,7 +4374,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: divorce/relationship breakup           
@@ -4393,7 +4393,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4412,7 +4412,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4431,7 +4431,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4450,7 +4450,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4469,7 +4469,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4488,7 +4488,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4507,7 +4507,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4526,7 +4526,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: death of partner             
@@ -4545,7 +4545,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: death of partner             
@@ -4564,7 +4564,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: death of partner             
@@ -4583,7 +4583,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: death of family member or friend                
@@ -4602,7 +4602,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: death of family member or friend                
@@ -4621,7 +4621,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: death of family member or friend                
@@ -4640,7 +4640,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 # Residential characteristics subdomain
@@ -4656,7 +4656,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
@@ -4670,7 +4670,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
@@ -4684,7 +4684,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
@@ -4698,7 +4698,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
@@ -4712,7 +4712,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
@@ -4726,7 +4726,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
@@ -4740,7 +4740,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -4754,7 +4754,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -4768,7 +4768,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -4782,7 +4782,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -4796,7 +4796,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -4810,7 +4810,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -4824,7 +4824,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -4838,7 +4838,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
@@ -4857,7 +4857,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
@@ -4876,7 +4876,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
@@ -4895,7 +4895,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
@@ -4914,7 +4914,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
@@ -4933,7 +4933,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
@@ -4952,7 +4952,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -4971,7 +4971,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -4990,7 +4990,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -5009,7 +5009,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -5028,7 +5028,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -5047,7 +5047,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -5066,7 +5066,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -5085,7 +5085,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence independence     
@@ -5104,7 +5104,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence independence     
@@ -5123,7 +5123,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence independence     
@@ -5142,7 +5142,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence independence     
@@ -5161,7 +5161,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence independence     
@@ -5180,7 +5180,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence independence     
@@ -5199,7 +5199,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence independence     
@@ -5218,7 +5218,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence type     
@@ -5240,7 +5240,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence type     
@@ -5285,7 +5285,7 @@ env_HUNT_1$soc_res_type_1<-recode(as.integer(HUNT2$HouTyp_NT2BLQ2),'1'=2L,'2'=4L
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence type     
@@ -5307,7 +5307,7 @@ env_HUNT_1$soc_res_type_1<-recode(as.integer(HUNT2$HouTyp_NT2BLQ2),'1'=2L,'2'=4L
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence type     
@@ -5329,7 +5329,7 @@ env_HUNT_1$soc_res_type_1<-recode(as.integer(HUNT2$HouTyp_NT2BLQ2),'1'=2L,'2'=4L
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence type     
@@ -5351,7 +5351,7 @@ env_HUNT_1$soc_res_type_1<-recode(as.integer(HUNT2$HouTyp_NT2BLQ2),'1'=2L,'2'=4L
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence type     
@@ -5373,7 +5373,7 @@ env_HUNT_1$soc_res_type_1<-recode(as.integer(HUNT2$HouTyp_NT2BLQ2),'1'=2L,'2'=4L
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (2-level)      
@@ -5392,7 +5392,7 @@ env_HUNT_1$soc_res_type_1<-recode(as.integer(HUNT2$HouTyp_NT2BLQ2),'1'=2L,'2'=4L
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (2-level)      
@@ -5411,7 +5411,7 @@ env_HUNT_1$soc_res_type_1<-recode(as.integer(HUNT2$HouTyp_NT2BLQ2),'1'=2L,'2'=4L
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (2-level)      
@@ -5430,7 +5430,7 @@ env_HUNT_1$soc_res_type_1<-recode(as.integer(HUNT2$HouTyp_NT2BLQ2),'1'=2L,'2'=4L
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (2-level)      
@@ -5449,7 +5449,7 @@ env_HUNT_1$soc_res_type_1<-recode(as.integer(HUNT2$HouTyp_NT2BLQ2),'1'=2L,'2'=4L
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (2-level)      
@@ -5468,7 +5468,7 @@ env_HUNT_1$soc_res_type_1<-recode(as.integer(HUNT2$HouTyp_NT2BLQ2),'1'=2L,'2'=4L
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (2-level)      
@@ -5487,7 +5487,7 @@ env_HUNT_1$soc_res_type_1<-recode(as.integer(HUNT2$HouTyp_NT2BLQ2),'1'=2L,'2'=4L
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (2-level)      
@@ -5506,7 +5506,7 @@ env_HUNT_1$soc_res_type_1<-recode(as.integer(HUNT2$HouTyp_NT2BLQ2),'1'=2L,'2'=4L
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (3-level)      
@@ -5526,7 +5526,7 @@ env_HUNT_1$soc_res_type_1<-recode(as.integer(HUNT2$HouTyp_NT2BLQ2),'1'=2L,'2'=4L
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (3-level)      
@@ -5546,7 +5546,7 @@ env_HUNT_1$soc_res_type_1<-recode(as.integer(HUNT2$HouTyp_NT2BLQ2),'1'=2L,'2'=4L
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (3-level)      
@@ -5566,6 +5566,6 @@ env_HUNT_1$soc_res_type_1<-recode(as.integer(HUNT2$HouTyp_NT2BLQ2),'1'=2L,'2'=4L
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
