@@ -5,9 +5,5 @@
 *.Rproj
 SOC_DS_HUNT_validation.Rmd
 SOC_DS_RECORD_validation.Rmd
-<<<<<<< HEAD
 SOC_DS_HAPIEE_RU_validation.Rmd
-SOC_DS_RECORD_validation_AG.Rmd
-=======
 SOC_DS_RECORD_validation2.Rmd
->>>>>>> fb9000a6b6b2824143ff2449a93e0c1b0aa951ea
