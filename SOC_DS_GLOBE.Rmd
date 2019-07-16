@@ -15,10 +15,10 @@ library(opal)
 erasmus_opal <- opal.login()
 #Login to Opal server and assign the content of the GLOBE table(s) to your RStudio environment
 # GLOBE1991
-opal.assign.table.tibble(erasmus_opal, 'GLOBE1991', 'GLOBE.GLOBE1991',variables = list('v156','v169','v167','v168','v173','v174','v175','v172','v155','v156', 'v335'))
+opal.assign.table.tibble(erasmus_opal, 'GLOBE1991', 'GLOBE.GLOBE1991',variables = list('v156','v169','v167','v168','v173','v174','v175','v172','v155','v156','v335','SEGVv460','SEGVv461','SEGVv462','SEGVv454','SEGVv455','SEGVv456','SEGVv475','SEGVv476','SEGVv477','SEGVv472','SEGVv473','SEGVv474','SEGVv457','SEGVv458','SEGVv459'))
 GLOBE1991 <- opal.execute(erasmus_opal,'GLOBE1991')
 # GLOBE1997
-opal.assign.table.tibble(erasmus_opal, 'GLOBE1997', 'GLOBE.GLOBE1997',variables = list('v11c','v11a','v11b','v11g','v11h','v11i','v11f','g29a'))
+opal.assign.table.tibble(erasmus_opal, 'GLOBE1997', 'GLOBE.GLOBE1997',variables = list('v11c','v11a','v11b','v11g','v11h','v11i','v11f','g29a','g9c1','g9c2','g9c3','g9a2','g9a3','g9a1','g9g1','g9g2','g9g3','g9f1','g9f2','g9f3','g9b1','g9b2','g9b3'))
 GLOBE1997 <- opal.execute(erasmus_opal,'GLOBE1997')
 # GLOBE2004
 opal.assign.table.tibble(erasmus_opal, 'GLOBE2004', 'GLOBE.GLOBE2004',variables = list('w266','w264','w265','w270','w271','w272','w269','w072b','w051','w040a','w041'))
@@ -131,6 +131,7 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
+#This is where the R-script will be written
 
 ```
 ### **Variable label**:   Network size of children      
@@ -374,7 +375,6 @@ soc_GLOBE_4$soc_sn_num_friends_4 <- as.integer(GLOBE2014$G14v42)
 
 table(soc_GLOBE_4$soc_sn_num_friends_4) 
 summary(soc_GLOBE_4$soc_sn_num_friends_4) 
-
 ```
 ### **Variable label**:   Network size of friends    
 **Variable name**:   soc_sn_num_friends_5    
@@ -634,7 +634,7 @@ summary(soc_GLOBE_4$soc_sn_freq_friends_inperson_4)
 4 |  Monthly contact with friends
 5 |  Never or less than a year contact with friends  
 
-**Harmonization status**:  impossible    
+**Harmonization status**:  complete   
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -809,12 +809,11 @@ summary(soc_GLOBE_4$soc_sn_freq_friends_4)
 6 |  More than 20 neighbours    
 
 **Harmonization status**:  complete    
-**Harmonization comment**:   
+**Harmonization comment**:  DataSchema has same categories as the original GLOBE item.   
 **R script**:  
 ```{r, echo=TRUE}
 table(GLOBE2014$G14v54) 
 summary(GLOBE2014$G14v54)
-
 
 soc_GLOBE_4$soc_sn_num_nbhs_4 <- ifelse(GLOBE2014$G14v54=='1',1, 
                                                   ifelse(GLOBE2014$G14v54=='2',2,
@@ -825,7 +824,6 @@ soc_GLOBE_4$soc_sn_num_nbhs_4 <- ifelse(GLOBE2014$G14v54=='1',1,
 
 table(soc_GLOBE_4$soc_sn_num_nbhs_4) 
 summary(soc_GLOBE_4$soc_sn_num_nbhs_4) 
-
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_5    
@@ -978,7 +976,7 @@ summary(soc_GLOBE_4$soc_sn_num_nbhs_4)
 5 |  Never or less than a year contact with neighbours    
 
 **Harmonization status**:  complete    
-**Harmonization comment**:   
+**Harmonization comment**:  DataSchema has same categories as original GLOBE item.     
 **R script**:  
 ```{r, echo=TRUE}
 table(GLOBE2014$G14v55) 
@@ -1152,7 +1150,7 @@ summary(soc_GLOBE_4$soc_sn_freq_nbhs_4)
 6 |  More than 20
 
 **Harmonization status**:  complete    
-**Harmonization comment**:   
+**Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}
 table(GLOBE2014$G14v36)
@@ -1476,7 +1474,7 @@ summary(soc_GLOBE_4$soc_sn_freq_close_relatives_4)
 4 |  Never or less than a year contact with relatives  
 
 **Harmonization status**:  complete   
-**Harmonization comment**:  This |dataSchema was created to include CLSA, which does not identify if relatives are close to participant or not.    
+**Harmonization comment**:  This DataSchema was created to include CLSA, which does not identify if relatives are close to participant or not.    
 **R script**:  
 ```{r, echo=TRUE}
 table(GLOBE2014$G14v40)
@@ -1539,106 +1537,6 @@ summary(soc_GLOBE_4$soc_sn_freq_close_relatives_4)
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_0        
-**Variable description**:  Indicator of the participant’s quartile of social network, comprised of of children, friends, neighbours and relatives.                 
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_1          
-**Variable description**:  Indicator of the participant’s quartile of social network, comprised of of children, friends, neighbours and relatives.             
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_2          
-**Variable description**: Indicator of the participant’s quartile of social network, comprised of of children, friends, neighbours and relatives.                 
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_3          
-**Variable description**:  Indicator of the participant’s quartile of social network, comprised of of children, friends, neighbours and relatives.                 
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_4          
-**Variable description**:  Indicator of the participant’s quartile of social network, comprised of of children, friends, neighbours and relatives.                  
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-table(GLOBE2014$G14v9)  # children
-table(GLOBE2014$G14v42)  # friend
-
-
-```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_5          
-**Variable description**:  Indicator of the participant’s quartile of social network, comprised of of children, friends, neighbours and relatives.                   
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_6          
-**Variable description**:  Indicator of the participant’s quartile of social network, comprised of of children, friends, neighbours and relatives.                  
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
 # Social support subdomain
 
 ### **Variable label**: Received emotional support    
@@ -1654,12 +1552,27 @@ table(GLOBE2014$G14v42)  # friend
 1 |  Sometimes received emotional support
 2 |  Often received emotional support
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete     
+**Harmonization comment**: In the 1991 wave, this item only asked of a sub-sample of persons hence lots of NAs. Support from top 3 contact persons averaged, e.g. if respondent states that she/he does not receive support from 2 persons out of 3, and sometimes receives support from the third person, she/he are categorized as never receiving support.      
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(GLOBE1991$SEGVv460) # 1- never 2 sometimes 3 often 
+summary(GLOBE1991$SEGVv460)
+table(GLOBE1991$SEGVv461) # 0 - no second person 
+summary(GLOBE1991$SEGVv461)
+table(GLOBE1991$SEGVv462)# 0 - no third person 
+summary(GLOBE1991$SEGVv462)
 
+GLOBE1991$soc_ss_received_emo_0_inter <- as.numeric((GLOBE1991$SEGVv460+GLOBE1991$SEGVv461+GLOBE1991$SEGVv462)/3)
+
+table(GLOBE1991$soc_ss_received_emo_0_inter) 
+
+soc_GLOBE_0$soc_ss_received_emo_0 <- ifelse(GLOBE1991$soc_ss_received_emo_0_inter <'1.5', 0, 
+                                         ifelse(GLOBE1991$soc_ss_received_emo_0_inter <'2.5'                                                                    & GLOBE1991$soc_ss_received_emo_0_inter >'1.5', 1, 
+                                             ifelse(GLOBE1991$soc_ss_received_emo_0_inter >'2.5', 2, NA)))
+
+table(soc_GLOBE_0$soc_ss_received_emo_0) 
+summary(soc_GLOBE_0$soc_ss_received_emo_0)
 ```
 ### **Variable label**: Received emotional support    
 **Variable name**:   soc_ss_received_emo_1 
@@ -1674,12 +1587,27 @@ table(GLOBE2014$G14v42)  # friend
 1 |  Sometimes received emotional support
 2 |  Often received emotional support
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete      
+**Harmonization comment**:  Support from top 3 contact persons averaged, e.g. if respondent states that she/he does not receive support from 2 persons out of 3, and sometimes receives support from the third person, she/he are categorized as never receiving support.       
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(GLOBE1997$g9c1) # 1- never 2 sometimes 3 often 
+summary(GLOBE1997$g9c1)
+table(GLOBE1997$g9c2) # 0 - no second person 
+summary(GLOBE1997$g9c2)
+table(GLOBE1997$g9c3)# 0 - no third person 
+summary(GLOBE1997$g9c3)
 
+GLOBE1997$soc_ss_received_emo_1_inter <- as.numeric((GLOBE1997$g9c1+GLOBE1997$g9c2+GLOBE1997$g9c3)/3)
+
+table(GLOBE1997$soc_ss_received_emo_1_inter) 
+
+soc_GLOBE_1$soc_ss_received_emo_1 <- ifelse(GLOBE1997$soc_ss_received_emo_1_inter <'1.5', 0, 
+                                         ifelse(GLOBE1997$soc_ss_received_emo_1_inter <'2.5'                                                                    & GLOBE1997$soc_ss_received_emo_1_inter >'1.5', 1, 
+                                             ifelse(GLOBE1997$soc_ss_received_emo_1_inter >'2.5', 2, NA)))
+
+table(soc_GLOBE_1$soc_ss_received_emo_1) 
+summary(soc_GLOBE_1$soc_ss_received_emo_1)
 ```
 ### **Variable label**: Received emotional support    
 **Variable name**:   soc_ss_received_emo_2 
@@ -1892,11 +1820,27 @@ table(GLOBE2014$G14v42)  # friend
 1 |  Sometimes received instrumental support
 2 |  Often received instrumental support
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:  Support from top 3 contact persons averaged, e.g. if respondent states that she/he does not receive support from 2 persons out of 3, and sometimes receives support from the third person, she/he are categorized as never receiving support.      
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(GLOBE1991$SEGVv454) # 1- never 2 sometimes 3 often 
+summary(GLOBE1991$SEGVv454)
+table(GLOBE1991$SEGVv455) # 0 - no second person 
+summary(GLOBE1991$SEGVv455)
+table(GLOBE1991$SEGVv456)# 0 - no third person 
+summary(GLOBE1991$SEGVv456)
+
+GLOBE1991$soc_ss_received_instru_0_inter <- as.numeric((GLOBE1991$SEGVv454+GLOBE1991$SEGVv455+GLOBE1991$SEGVv456)/3)
+
+table(GLOBE1991$soc_ss_received_instru_0_inter) 
+
+soc_GLOBE_0$soc_ss_received_instru_0 <- ifelse(GLOBE1991$soc_ss_received_instru_0_inter <'1.5', 0, 
+                                         ifelse(GLOBE1991$soc_ss_received_instru_0_inter <'2.5'                                                                    & GLOBE1991$soc_ss_received_instru_0_inter >'1.5', 1, 
+                                             ifelse(GLOBE1991$soc_ss_received_instru_0_inter >'2.5', 2, NA)))
+
+table(soc_GLOBE_0$soc_ss_received_instru_0) 
+summary(soc_GLOBE_0$soc_ss_received_instru_0)
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -1912,11 +1856,27 @@ table(GLOBE2014$G14v42)  # friend
 1 |  Sometimes received instrumental support
 2 |  Often received instrumental support
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:  Support from top 3 contact persons averaged, e.g. if respondent states that she/he does not receive support from 2 persons out of 3, and sometimes receives support from the third person, she/he are categorized as never receiving support.       
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(GLOBE1997$g9a1) # 1- never 2 sometimes 3 often 
+summary(GLOBE1997$g9a1)
+table(GLOBE1997$g9a2) # 0 - no second person 
+summary(GLOBE1997$g9a2)
+table(GLOBE1997$g9a3)# 0 - no third person 
+summary(GLOBE1997$g9a3)
+
+GLOBE1997$soc_ss_received_instru_1_inter <- as.numeric((GLOBE1997$g9a1+GLOBE1997$g9a2+GLOBE1997$g9a3)/3)
+
+table(GLOBE1997$soc_ss_received_instru_1_inter) 
+
+soc_GLOBE_1$soc_ss_received_instru_1 <- ifelse(GLOBE1997$soc_ss_received_instru_1_inter <'1.5', 0, 
+                                         ifelse(GLOBE1997$soc_ss_received_instru_1_inter <'2.5'                                                                    & GLOBE1997$soc_ss_received_instru_1_inter >'1.5', 1, 
+                                             ifelse(GLOBE1997$soc_ss_received_instru_1_inter >'2.5', 2, NA)))
+
+table(soc_GLOBE_1$soc_ss_received_instru_1) 
+summary(soc_GLOBE_1$soc_ss_received_instru_1)
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -2026,11 +1986,33 @@ table(GLOBE2014$G14v42)  # friend
 **Variable unit**:  
 **Category coding**:  
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete   
+**Harmonization comment**:   The following GLOBE items were used: Would this person give good advice? Would you be able to go to this person in tears? Do you see that this person cares for you? - averaged over the top 3 contacts. Each item is rated 1 (never) to 3 (always) hence maximum score is out of 9 which was then converted into a Z-score in order to be comparable with items in other studies which might not use 3 separate items to create this DataSchema.   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+#'SEGVv475','SEGVv476','SEGVv477','SEGVv472','SEGVv473','SEGVv474','SEGVv457','SEGVv458','SEGVv459'
+table(GLOBE1991$SEGVv475) # 1- never 2 sometimes 3 often 
+table(GLOBE1991$SEGVv476) # 0 - no second person 
+table(GLOBE1991$SEGVv477)# 0 - no third person 
+
+table(GLOBE1991$SEGVv472) # 1- never 2 sometimes 3 often 
+table(GLOBE1991$SEGVv473) # 0 - no second person 
+table(GLOBE1991$SEGVv474)# 0 - no third person 
+
+table(GLOBE1991$SEGVv457) # 1- never 2 sometimes 3 often 
+table(GLOBE1991$SEGVv458) # 0 - no second person 
+table(GLOBE1991$SEGVv459)# 0 - no third person 
+
+GLOBE1991$soc_ss_Zscore_perceived_emo_0_inter <- as.numeric(GLOBE1991$SEGVv475 + GLOBE1991$SEGVv476 + GLOBE1991$SEGVv477
+                                                             + GLOBE1991$SEGVv472 + GLOBE1991$SEGVv473 + GLOBE1991$SEGVv474
+                                                             + GLOBE1991$SEGVv457 + GLOBE1991$SEGVv458 + GLOBE1991$SEGVv459)
+
+table(GLOBE1991$soc_ss_Zscore_perceived_emo_0_inter) 
+
+soc_GLOBE_0$soc_ss_Zscore_perceived_emo_0 <-as.numeric(scale(GLOBE1991$soc_ss_Zscore_perceived_emo_0_inter, center = TRUE, scale= TRUE)) 
+
+table(soc_GLOBE_0$soc_ss_Zscore_perceived_emo_0) 
+summary(soc_GLOBE_0$soc_ss_Zscore_perceived_emo_0)
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -2040,11 +2022,34 @@ table(GLOBE2014$G14v42)  # friend
 **Variable unit**:  
 **Category coding**:  
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete   
+**Harmonization comment**: The following GLOBE items were used: Would this person give good advice? Would you be able to go to this person in tears? Do you see that this person cares for you? - averaged over the top 3 contacts. Each item is rated 1 (never) to 3 (always) hence maximum score is out of 9 which was then converted into a Z-score in order to be comparable with items in other studies which might not use 3 separate items to create this DataSchema.   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+#'g9g1','g9g2','g9g3','g9f1','g9f2','g9f3','g9b1','g9b2','g9b3'))
+
+table(GLOBE1997$g9g1) # 1- never 2 sometimes 3 often 
+table(GLOBE1997$g9g2) # 0 - no second person 
+table(GLOBE1997$g9g3)# 0 - no third person 
+
+table(GLOBE1997$g9f1) # 1- never 2 sometimes 3 often 
+table(GLOBE1997$g9f2) # 0 - no second person 
+table(GLOBE1997$g9f3)# 0 - no third person 
+
+table(GLOBE1997$g9b1) # 1- never 2 sometimes 3 often 
+table(GLOBE1997$g9b2) # 0 - no second person 
+table(GLOBE1997$g9b3)# 0 - no third person 
+
+GLOBE1997$soc_ss_Zscore_perceived_emo_1_inter <- as.numeric(GLOBE1997$g9g1 + GLOBE1997$g9g2 + GLOBE1997$g9g3
+                                                             + GLOBE1997$g9f1 + GLOBE1997$g9f2 + GLOBE1997$g9f3
+                                                             + GLOBE1997$g9b1 + GLOBE1997$g9b2 + GLOBE1997$g9b3)
+
+table(GLOBE1997$soc_ss_Zscore_perceived_emo_1_inter) 
+
+soc_GLOBE_1$soc_ss_Zscore_perceived_emo_1 <- as.numeric(scale(GLOBE1997$soc_ss_Zscore_perceived_emo_1_inter, center = TRUE, scale= TRUE)) 
+
+table(soc_GLOBE_1$soc_ss_Zscore_perceived_emo_1) 
+summary(soc_GLOBE_1$soc_ss_Zscore_perceived_emo_1)
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
