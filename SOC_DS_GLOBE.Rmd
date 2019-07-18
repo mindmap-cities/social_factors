@@ -1720,7 +1720,7 @@ summary(soc_GLOBE_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+#This is where the R-script will be written THIS WILL BE DELETED
 
 ```
 ### **Variable label**: Received emotional support Z-score    
