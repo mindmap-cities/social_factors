@@ -3348,7 +3348,7 @@ summary(soc_RECORD_0$soc_sp_pol_0)
 1 |  Does take part in a social organization/volunteers   
 
 **Harmonization status**:  complete
-**Harmonization comment**: Composed of RECORD's items Q24_e_1/2/3 which asks about participation and the DataSchema: soc_sp_religious_0 soc_sp_volunteer_0 soc_sp_pol_0. 
+**Harmonization comment**: Composed of RECORD's items Q24_e_1/2/3 which asks about participation and the DataSchema variables: soc_sp_religious_0 soc_sp_volunteer_0 soc_sp_pol_0. 
 **R script**:  
 ```{r, echo=TRUE}
 table(RECORD_w1_1$Q24_e_1) # 1= Participates other association in neighbourhood
