@@ -2318,21 +2318,13 @@ soc_RECORD_0$soc_ss_received_emo_0[RECORD_w1_2$q6_no_voisserv==2|RECORD_w1_2$q23
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(RECORD_w1_1$Q24_d_1) # 1= Participate in religious organization in neighbourhood...
-table(RECORD_w1_1$Q24_d_2) # 1= Participate in religious organization outside neighbourhood ...unfortunately the rest is coded as NA
-table(RECORD_w1_1$Q24_d_3) # 1= Participate in religious organization in and outside neighbourhood ... unfortunately the rest is coded as NA
-table(RECORD_w1_1$Q24_d_4) # 1= Does not participate in religious organization
-typeof(RECORD_w1_1$Q24_d_1)
-                                                      
+
 RECORD_w1_1$soc_sp_religious_0_inter <- ifelse(RECORD_w1_1$Q24_d_1=='0' & is.na(RECORD_w1_1$Q24_d_2) &      
                                                  is.na(RECORD_w1_1$Q24_d_3),0, 
                  ifelse(RECORD_w1_1$Q24_d_1=='1' | RECORD_w1_1$Q24_d_2=='1' | RECORD_w1_1$Q24_d_3=='1',1,NA))
-table(RECORD_w1_1$soc_sp_religious_0_inter)
-summary(RECORD_w1_1$soc_sp_religious_0_inter)
+
 soc_RECORD_0$soc_sp_religious_0 <- ifelse(RECORD_w1_1$soc_sp_religious_0_inter == 0 & RECORD_w1_1$Q24_d_4 == '1',0, ifelse(RECORD_w1_1$soc_sp_religious_0_inter == 1 & is.na(RECORD_w1_1$Q24_d_4),1, NA))
 
-table(soc_RECORD_0$soc_sp_religious_0) 
-summary(soc_RECORD_0$soc_sp_religious_0) 
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2926,14 +2918,10 @@ summary(soc_RECORD_0$soc_sp_religious_0)
 **Harmonization comment**:   RECORD study was included in this harmonized definition but the variable is slightly different since it asks about aid and humanitarian organization participation therefore if differences are found in RECORD, these might be due to this difference.
 **R script**:  
 ```{r, echo=TRUE}
-table(RECORD_w1_1$Q24_b_1) # 1= Participate in aid or humanitarian  organization in neighbourhood
-table(RECORD_w1_1$Q24_b_2) # 1= Participate in aid or humanitarian  organization outside neighbourhood
-table(RECORD_w1_1$Q24_b_3) # 1= Participate in aid or humanitarian  organization in and outside neighbourhood
-table(RECORD_w1_1$Q24_b_4) # 1= Does not participate in aid or humanitarian organization
 
 RECORD_w1_1$humanitarian<-NA
 RECORD_w1_1$humanitarian[RECORD_w1_1$Q24_b_1=="1"|RECORD_w1_1$Q24_b_2=="1"|RECORD_w1_1$Q24_b_3=="1"]<-1
-table(RECORD_w1_1$humanitarian)
+
 soc_RECORD_0$soc_sp_volunteer_0 <-NA
 soc_RECORD_0$soc_sp_volunteer_0[RECORD_w1_1$humanitarian=="1"]<-"1"
 soc_RECORD_0$soc_sp_volunteer_0[RECORD_w1_1$Q24_b_4=="1"]<-"0"
@@ -3070,23 +3058,12 @@ soc_RECORD_0$soc_sp_volunteer_0[RECORD_w1_1$Q24_b_4=="1"&RECORD_w1_1$humanitaria
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(RECORD_w1_1$Q24_a_1) # 1= Participate in union or political party in neighbourhood
-table(RECORD_w1_1$Q24_a_2) # 1= Participate in union or political party outside neighbourhood
-table(RECORD_w1_1$Q24_a_3) # 1= Participate in union or political party outside neighbourhood
-table(RECORD_w1_1$Q24_a_4) # 1= Does not participate in union or political party 
-
 RECORD_w1_1$soc_sp_pol_0_inter <- ifelse(RECORD_w1_1$Q24_a_1=='0' & is.na(RECORD_w1_1$Q24_a_2) &      
                                                  is.na(RECORD_w1_1$Q24_a_3),0, 
                  ifelse(RECORD_w1_1$Q24_a_1=='1' | RECORD_w1_1$Q24_a_2=='1' | RECORD_w1_1$Q24_a_3=='1',1,NA))
 
-table(RECORD_w1_1$soc_sp_pol_0_inter)
-summary(RECORD_w1_1$soc_sp_pol_0_inter)
-
 soc_RECORD_0$soc_sp_pol_0  <- ifelse(RECORD_w1_1$soc_sp_pol_0_inter == 0 & RECORD_w1_1$Q24_a_4 == '1',0, 
                                        ifelse(RECORD_w1_1$soc_sp_pol_0_inter == 1 & is.na(RECORD_w1_1$Q24_a_4),1, NA))
-table(soc_RECORD_0$soc_sp_pol_0) 
-summary(soc_RECORD_0$soc_sp_pol_0)
-
 ```
 ### **Variable label**:  Political / union participation         
 **Variable name**:  soc_sp_pol_1                
@@ -3351,28 +3328,15 @@ summary(soc_RECORD_0$soc_sp_pol_0)
 **Harmonization comment**: Composed of RECORD's items Q24_e_1/2/3 which asks about participation and the DataSchema variables: soc_sp_religious_0 soc_sp_volunteer_0 soc_sp_pol_0. 
 **R script**:  
 ```{r, echo=TRUE}
-table(RECORD_w1_1$Q24_e_1) # 1= Participates other association in neighbourhood
-table(RECORD_w1_1$Q24_e_2) # 1= Participates other association outside neighbourhood
-table(RECORD_w1_1$Q24_e_3) # 1= Participates other association in and outside neighbourhood
-# if 0 to all these and 0 to the ones we did already then 0 as a participation 
+
 
 RECORD_w1_1$soc_sp_general_0_inter <- ifelse(RECORD_w1_1$Q24_e_1=='0' & is.na(RECORD_w1_1$Q24_e_2) &      
                                                  is.na(RECORD_w1_1$Q24_e_3),0, 
                  ifelse(RECORD_w1_1$Q24_e_1=='1' | RECORD_w1_1$Q24_e_2=='1' | RECORD_w1_1$Q24_e_3=='1',1,NA))
 
-table(RECORD_w1_1$soc_sp_general_0_inter)
-summary(RECORD_w1_1$soc_sp_general_0_inter)
 
 soc_RECORD_0$soc_sp_general_0 <- ifelse(RECORD_w1_1$soc_sp_general_0_inter == 1 | soc_RECORD_0$soc_sp_religious_0 == 1 | soc_RECORD_0$soc_sp_volunteer_0 == 1 | soc_RECORD_0$soc_sp_pol_0 == 1,1, 
                                  ifelse(RECORD_w1_1$soc_sp_general_0_inter == 0 | soc_RECORD_0$soc_sp_religious_0 == 0 | soc_RECORD_0$soc_sp_volunteer_0 == 0 | soc_RECORD_0$soc_sp_pol_0 == 0, 0, NA))
-#above, if I kept RECORD_w1_1$soc_sp_general_0_inter == 0  as well, wouldnt make a diff
-
-# if I reverse and put xxx==0 first then I get other answer 
-#soc_RECORD_0$soc_sp_general_0 <- ifelse(RECORD_w1_1$soc_sp_general_0_inter == 0 | soc_RECORD_0$soc_sp_religious_0 == 0 | soc_RECORD_0$soc_sp_volunteer_0 == 0 | soc_RECORD_0$soc_sp_pol_0 == 0,0, 
-#                                 ifelse(RECORD_w1_1$soc_sp_general_0_inter == 0 | soc_RECORD_0$soc_sp_religious_0 == 1 | #soc_RECORD_0$soc_sp_volunteer_0 == 1 | soc_RECORD_0$soc_sp_pol_0 == 1, 1, NA))
-
-table(soc_RECORD_0$soc_sp_general_0) 
-summary(soc_RECORD_0$soc_sp_general_0)
 
 
 ```
@@ -3905,8 +3869,6 @@ summary(soc_RECORD_0$soc_sp_general_0)
 **Harmonization comment**: composed of RECORD's item Q5_e that asks if the participant has no friends and soc_sp_general_0
 **R script**:  
 ```{r, echo=TRUE}
-table(RECORD_w1_1$Q5_e, useNA = "always") #=1 = has no friends plus the general variable above 
-table(soc_RECORD_0$soc_sp_general_0, useNA = "always") #0= no participation 
 
 soc_RECORD_0$soc_sp_isolation_0 <- ifelse(RECORD_w1_1$Q5_e=='1' & soc_RECORD_0$soc_sp_general_0 == 0,1, 
                  ifelse(RECORD_w1_1$Q5_e=='0' | soc_RECORD_0$soc_sp_general_0 == 1, 0, NA))
@@ -4706,11 +4668,8 @@ soc_RECORD_0$soc_sp_isolation_0 <- ifelse(RECORD_w1_1$Q5_e=='1' & soc_RECORD_0$s
 **Harmonization comment**:   RECORD asks about nr of years at current address not in neighbourhood specifically.  
 **R script**:  
 ```{r, echo=TRUE}
-table(RECORD_w1_1$Q52)
 
 soc_RECORD_0$soc_res_num_yrsnbh_0 <- as.integer(RECORD_w1_1$Q52)
-table(soc_RECORD_0$soc_res_num_yrsnbh_0) 
-summary(soc_RECORD_0$soc_res_num_yrsnbh_0) 
 
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
@@ -4808,10 +4767,7 @@ summary(soc_RECORD_0$soc_res_num_yrsnbh_0)
 **Harmonization comment**: RECORD asks about nr of years at current address.   
 **R script**:  
 ```{r, echo=TRUE}
-table(RECORD_w1_1$Q52)
 soc_RECORD_0$soc_res_num_yrshome_0 <- as.integer(RECORD_w1_1$Q52)
-table(soc_RECORD_0$soc_res_num_yrshome_0) 
-summary(soc_RECORD_0$soc_res_num_yrshome_0) 
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -4914,12 +4870,8 @@ summary(soc_RECORD_0$soc_res_num_yrshome_0)
 **Harmonization comment**: RECORD asks the reverse of the DataSchema:  will participant continue to live in their neighborhood in the future  
 **R script**:  
 ```{r, echo=TRUE}
-table(RECORD_w1_2$q13_contiviv)   # 1= I will continue to live in my neighborhood in the future
 
-soc_RECORD_0$soc_res_satis_0 <- as.integer(ifelse(RECORD_w1_2$q13_contiviv == '1', 0,                                            
-                                                 (ifelse (RECORD_w1_2$q13_contiviv == '0', 1, NA))))
-table(soc_RECORD_0$soc_res_satis_0) 
-summary(soc_RECORD_0$soc_res_satis_0) 
+soc_RECORD_0$soc_res_satis_0 <- as.integer(ifelse(RECORD_w1_2$q13_contiviv == '1', 0,                                             (ifelse (RECORD_w1_2$q13_contiviv == '0', 1, NA))))
 
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
@@ -4938,14 +4890,9 @@ summary(soc_RECORD_0$soc_res_satis_0)
 **Harmonization comment**:  Category 3 answer "I do not know" was recoded as "does not want to move out of neighbourhood."     
 **R script**:  
 ```{r, echo=TRUE}
-table(RECORD_w2$Q5_Demenagement_prevu) #1 yes i want to move 2 = no 3 = i don't know 
-summary(RECORD_w2$Q5_Demenagement_prevu) 
-sum(is.na(RECORD_w2$Q5_Demenagement_prevu))
 
 soc_RECORD_1$soc_res_satis_1 <- as.integer(ifelse(RECORD_w2$Q5_Demenagement_prevu == "1 [Oui]", 1,                                            
                                                  (ifelse (RECORD_w2$Q5_Demenagement_prevu == "2 [Non]" | RECORD_w2$Q5_Demenagement_prevu == "3 [Ne sait pas]", 0, NA))))
-table(soc_RECORD_1$soc_res_satis_1) 
-summary(soc_RECORD_1$soc_res_satis_1) 
 
 
 ```
