@@ -276,8 +276,9 @@ table(soc_GLOBE_4$soc_sn_children_rank_4)
 summary(soc_GLOBE_4$soc_sn_children_rank_4) 
 
 ```
-**Correction script**:  I am not totally sure but the difference between NAs between the DS variable and the raw data might be due to the operator ">", if you put the value in strings such as '2', R recognizes it as a text or categorical value so maybe that is why the operator for integers or numbers did not work very well. Converting the variable to integer returns the right number of NAs.
-**Validation comment**: 
+**Validation comment**:I am not totally sure but the difference between NAs between the DS variable and the raw data might be due to the operator ">", if you put the value in strings such as '2', R recognizes it as a text or categorical value so maybe that is why the operator for integers or numbers did not work very well. Converting the variable to integer returns the right number of NAs.
+ 
+**Correction script**:  
 ```{r, echo=TRUE}
 table(GLOBE2014$G14v9,useNA = "always")
 GLOBE2014$G14v9<-as.integer(GLOBE2014$G14v9)
@@ -699,7 +700,8 @@ class(soc_GLOBE_4$soc_sn_freq_friends_inperson_4)
 5 |  Never or less than a year contact with friends  
 
 **Harmonization status**:  complete   
-**Harmonization comment**:   
+**Harmonization comment**: 
+**Correction comment**:   The study-specific category "Several times a month or Once a week"" is coded under the category Biweekly in-person contact with friends.  
 **R script**:  
 ```{r, echo=TRUE}
 table(GLOBE2014$G14v46) 
@@ -886,7 +888,10 @@ table(soc_GLOBE_4$soc_sn_freq_friends_4, useNA="always")
 6 |  More than 20 neighbours    
 
 **Harmonization status**:  complete    
-**Harmonization comment**:  DataSchema has same categories as the original GLOBE item.   
+**Harmonization comment**:  DataSchema has same categories as the original GLOBE item.  
+**Validation comment**: I don't think we need this comment in the final harmonized file.       
+**Correction comment**:     
+
 **R script**:  
 ```{r, echo=TRUE}
 table(GLOBE2014$G14v54) 
@@ -1077,6 +1082,7 @@ table(soc_GLOBE_4$soc_sn_num_nbhs_4)
 
 **Harmonization status**:  complete    
 **Harmonization comment**:  DataSchema has same categories as original GLOBE item.     
+**Correction comment**:  
 **R script**:  
 ```{r, echo=TRUE}
 table(GLOBE2014$G14v55) 
@@ -1460,7 +1466,9 @@ soc_GLOBE_4$soc_sn_num_relatives_4 <- ifelse(GLOBE2014$G14v36=='1',1L,
 4 |  Never or less than a year contact with close relatives      
 
 **Harmonization status**:  complete    
-**Harmonization comment**:  GLOBE asks about contact frequency with relatives which to some respondents might include siblings and children. GLOBE item G14v39 was not used to harmonize this DataSchema since that item asks about how often one sees relatives, indicating in person contact, as opposed to communicate with.
+**Harmonization comment**:  GLOBE asks about contact frequency with relatives which to some respondents might include siblings and children. GLOBE item G14v39 was not used to harmonize this DataSchema since that item asks about how often one sees relatives, indicating in person contact, as opposed to communicate with. 
+**Validation comment**:  Because this variable asks "How many of these relatives..." it must be referring to G14v36 which asks them to exclude partner and children living at home.  
+**Correction comment**: The study-specific variable asks about the contact with relatives that one feels close to, excluding partner and children living at home. The study-specific category "Several times a month or Once a week"" is coded under the category Biweekly in-person contact with friends.  
 **R script**:  
 ```{r, echo=TRUE}
 table(GLOBE2014$G14v40)
@@ -1469,7 +1477,6 @@ table(GLOBE2014$G14v40)
 #3 Several times a month or Once a week 
 #4 Once a month 
 #5 Less than once a month
-
 soc_GLOBE_4$soc_sn_freq_close_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOBE2014$G14v40=='2' ,1, 
                                                   ifelse(GLOBE2014$G14v40=='3',2,
                                                     ifelse(GLOBE2014$G14v40=='4',3,
@@ -1654,6 +1661,9 @@ table(soc_GLOBE_4$soc_sn_freq_close_relatives_4, useNA = "always")
 
 **Harmonization status**:  complete   
 **Harmonization comment**:  This DataSchema was created to include CLSA, which does not identify if relatives are close to participant or not.    
+**Validation comment**:  The DS variable name was changed from soc_sn_freq_close_relatives_4 to soc_sn_freq_relatives_4  
+**Correction comment**: The study-specific variable asks about the contact with relatives that one feels close to, excluding partner and children living at home. The study-specific category "Several times a month or Once a week"" is coded under the category Biweekly in-person contact with friends.  
+ 
 **R script**:  
 ```{r, echo=TRUE}
 table(GLOBE2014$G14v40)
@@ -1677,14 +1687,14 @@ summary(soc_GLOBE_4$soc_sn_freq_close_relatives_4)
 **Validation script**:  
 ```{r, echo=TRUE}
 table(GLOBE2014$G14v40,useNA="always")
-soc_GLOBE_4$soc_sn_freq_close_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOBE2014$G14v40=='2' ,1, 
+soc_GLOBE_4$soc_sn_freq_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOBE2014$G14v40=='2' ,1, 
                                                   ifelse(GLOBE2014$G14v40=='3',2,
                                                     ifelse(GLOBE2014$G14v40=='4',3,
                                                            ifelse(GLOBE2014$G14v40=='5',4,
                                                                    ifelse(GLOBE2014$G14v40=='5',5, 
                                                                          ifelse(GLOBE2014$G14v40=='6',6, NA))))))
 
-table(soc_GLOBE_4$soc_sn_freq_close_relatives_4,useNA="always") 
+table(soc_GLOBE_4$soc_sn_freq_relatives_4,useNA="always") 
 
 ```
 **Correction script**:  
@@ -1757,9 +1767,10 @@ soc_GLOBE_4$soc_sn_freq_close_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOB
 
 **Harmonization status**:  complete     
 **Harmonization comment**: In the 1991 wave, this item only asked of a sub-sample of persons hence lots of NAs. Support from top 3 contact persons averaged, e.g. if respondent states that she/he does not receive support from 2 persons out of 3, and sometimes receives support from the third person, she/he are categorized as never receiving support.      
+**Validation comment**: The study variables used for harmonization ask: Do you get affection from this person, does this person embrace or kiss you or give you an affectionate handshake? Isn't it more likely that the participants would interpret this question as physical affection, rather than emotional affection?
 
-**Validation comment**: The harmonized variables ask: Do you get affection from this person, does this person embrace or kiss you or give you an affectionate handshake? The participants can understand more physical affection, rather than emotional from this question. 
-Maybe we should instead harmonize: Would you be able to share your feelings with this person? I am still not very sure if this is exactly the same thing but it might be closer to the DataSchema variable. 
+Could we consider either of the questions:"Do you see that this person cares for you?" or "Do you show this person your blunders?" as recieved emotional support or would it be perceived emotional support?
+
 
 
 **R script**:  
@@ -1800,8 +1811,7 @@ summary(soc_GLOBE_0$soc_ss_received_emo_0)
 **Harmonization status**:  complete      
 **Harmonization comment**:  Support from top 3 contact persons averaged, e.g. if respondent states that she/he does not receive support from 2 persons out of 3, and sometimes receives support from the third person, she/he are categorized as never receiving support.       
 
-**Validation comment**: The harmonized variables ask: Do you get affection from this person, does this person embrace or kiss you or give you an affectionate handshake? The participants can understand more physical affection, rather than emotional from this question. 
-Maybe we should instead harmonize: Would you be able to share your feelings with this person? I am still not very sure if this is exactly the same thing but it might be closer to the DataSchema variable. 
+**Validation comment**: The study variables used for harmonization ask: Do you get affection from this person, does this person embrace or kiss you or give you an affectionate handshake? The participants are more likely to understand physical affection from the question, rather than emotional affection. 
 
 **R script**:  
 ```{r, echo=TRUE}
@@ -2036,8 +2046,11 @@ summary(soc_GLOBE_1$soc_ss_received_emo_1)
 
 **Harmonization status**:  complete    
 **Harmonization comment**:  Support from top 3 contact persons averaged, e.g. if respondent states that she/he does not receive support from 2 persons out of 3, and sometimes receives support from the third person, she/he are categorized as never receiving support.      
+**Validation comment 1**: Maybe we should add: g9i1: Would this person accompany with you when you find it difficult to go somewhere alone?
+r52h1: Would this person offer you practical assistance like giving you a ride or doing your shopping, etc? in harmonization of this variable, since these are also forms of tangible/insturmental support
+**Validation comment 2**: I think including the study-specific question/s in the harmo comment could be good in order to indicate that it is not necessarily about financial support. 
+**Validation comment 3**: Is this method of taking a mean a common practice in the field? Otherwise, should we try to consider this harmonization method again? Because an argument could be: for example if a person gets support from one person often and sometimes gets support from the other 2, then she/he might feel like getting support often, as an average; or if she get supports often from 2, but never from 1; she might still feel like getting support often as an average? 
 
-**Correction comment**: The study specific variable asks: Does this person help you with small things like shopping, borrowing things, doing odd jobs? Support from top 3 contact persons averaged, e.g. if respondent states that she/he does not receive support from 2 persons out of 3, and sometimes receives support from the third person, she/he are categorized as never receiving support.      
 
 **R script**:  
 ```{r, echo=TRUE}
@@ -2084,7 +2097,7 @@ table(soc_GLOBE_0$soc_ss_received_instru_0, useNA= "always")
 GLOBE1991$soc_ss_received_instru_0_inter <- as.numeric((GLOBE1991$SEGVv454+GLOBE1991$SEGVv455+GLOBE1991$SEGVv456)/3)
 
 soc_GLOBE_0$soc_ss_received_instru_0 <- ifelse(GLOBE1991$soc_ss_received_instru_0_inter <1.5, 0L, 
-                                         ifelse(GLOBE1991$soc_ss_received_instru_0_inter <2.5                                                                    & GLOBE1991$soc_ss_received_instru_0_inter >1.5, 1L, 
+                                         ifelse(GLOBE1991$soc_ss_received_instru_0_inter <2.5 & GLOBE1991$soc_ss_received_instru_0_inter >1.5, 1L, 
                                              ifelse(GLOBE1991$soc_ss_received_instru_0_inter >2.5, 2L, NA)))
 
 table(soc_GLOBE_0$soc_ss_received_instru_0, useNA= "always") 
@@ -2106,8 +2119,7 @@ table(soc_GLOBE_0$soc_ss_received_instru_0, useNA= "always")
 **Harmonization status**:  complete    
 **Harmonization comment**:  Support from top 3 contact persons averaged, e.g. if respondent states that she/he does not receive support from 2 persons out of 3, and sometimes receives support from the third person, she/he are categorized as never receiving support.       
 **Correction comment**: The study specific variable asks: Does this person help you with small things like shopping, borrowing things, doing odd jobs? Support from top 3 contact persons averaged, e.g. if respondent states that she/he does not receive support from 2 persons out of 3, and sometimes receives support from the third person, she/he are categorized as never receiving support.      
-
-**R script**:  
+***R script**:  
 ```{r, echo=TRUE}
 table(GLOBE1997$g9a1) # 1- never 2 sometimes 3 often 
 summary(GLOBE1997$g9a1)
@@ -2115,7 +2127,8 @@ table(GLOBE1997$g9a2) # 0 - no second person
 summary(GLOBE1997$g9a2)
 table(GLOBE1997$g9a3)# 0 - no third person 
 summary(GLOBE1997$g9a3)
-
+	
+  
 GLOBE1997$soc_ss_received_instru_1_inter <- as.numeric((GLOBE1997$g9a1+GLOBE1997$g9a2+GLOBE1997$g9a3)/3)
 
 table(GLOBE1997$soc_ss_received_instru_1_inter) 
@@ -2266,7 +2279,8 @@ summary(soc_GLOBE_1$soc_ss_received_instru_1)
 **Category coding**:  
 
 **Harmonization status**:  complete   
-**Harmonization comment**:   The following GLOBE items were used: Would this person give good advice? Would you be able to go to this person in tears? Do you see that this person cares for you? - averaged over the top 3 contacts. Each item is rated 1 (never) to 3 (always) hence maximum score is out of 9 which was then converted into a Z-score in order to be comparable with items in other studies which might not use 3 separate items to create this DataSchema.   
+**Harmonization comment**:   The following GLOBE items were used: Would this person give good advice? Would you be able to go to this person in tears? Do you see that this person cares for you? - averaged over the top 3 contacts. Each item is rated 1 (never) to 3 (always) hence maximum score is out of 9 which was then converted into a Z-score in order to be comparable with items in other studies which might not use 3 separate items to create this DataSchema. 
+**Validation comment**: To this 3 variables should we also add "Would you be able to share your feelings with this person?" for GLOBE 1991. The other waves do not have this variable.  
 **R script**:  
 ```{r, echo=TRUE}
 #'SEGVv475','SEGVv476','SEGVv477','SEGVv472','SEGVv473','SEGVv474','SEGVv457','SEGVv458','SEGVv459'
@@ -2287,7 +2301,6 @@ GLOBE1991$soc_ss_Zscore_perceived_emo_0_inter <- as.numeric(GLOBE1991$SEGVv475 +
                                                              + GLOBE1991$SEGVv457 + GLOBE1991$SEGVv458 + GLOBE1991$SEGVv459)
 
 table(GLOBE1991$soc_ss_Zscore_perceived_emo_0_inter) 
-
 soc_GLOBE_0$soc_ss_Zscore_perceived_emo_0 <-as.numeric(scale(GLOBE1991$soc_ss_Zscore_perceived_emo_0_inter, center = TRUE, scale= TRUE)) 
 
 table(soc_GLOBE_0$soc_ss_Zscore_perceived_emo_0) 
@@ -4646,11 +4659,16 @@ v172
 1 |  Did experience illness of family member 
 
 **Harmonization status**:  impossible    
+**Harmonization status**:  complete    
+
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
 v11f
+
 ```
+
+
 ### **Variable label**:  Life event: illness of family member             
 **Variable name**:  soc_le_illfam_2                      
 **Variable description**:  Indicator of whether the participant experienced the illness of family member (including partner) in the past few years.         
@@ -4664,10 +4682,13 @@ v11f
 1 |  Did experience illness of family member 
 
 **Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization comment**: 
+**Validation comment**:  Should we harmonize this variable and put a harmo comment?
+
 **R script**:  
 ```{r, echo=TRUE}
 w269
+
 ```
 ### **Variable label**:  Life event: illness of family member             
 **Variable name**:  soc_le_illfam_3                      
