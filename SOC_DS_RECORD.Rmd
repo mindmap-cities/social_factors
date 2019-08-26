@@ -52,7 +52,7 @@ opal.logout(erasmus_opal)
 **Category coding**:      
 
 **Harmonization status**:  complete
-**Harmonization comment**:   Non-whole numbers that were reported are set as NA. RECORD does not ask what type of child respondent has. 
+**Harmonization comment**:  RECORD questions do not specify the type of children. Sixteen cases of non-whole numbers that were reported are set as NA.  
 **R script**:  
 ```{r, echo=TRUE}
 soc_RECORD_0$soc_sn_num_children_0 <- as.integer(ifelse(RECORD_w1_1$Qm3 %in% c(0:15), RECORD_w1_1$Qm3,NA))
@@ -66,7 +66,7 @@ soc_RECORD_0$soc_sn_num_children_0 <- as.integer(ifelse(RECORD_w1_1$Qm3 %in% c(0
 **Category coding**:    
 
 **Harmonization status**:  complete
-**Harmonization comment**:  Numbers above 15 set as NA, note many NAs. Non-whole numbers set as NA.   RECORD does not ask what type of child respondent has.  
+**Harmonization comment**: RECORD questions do not specify the type of children. Three cases with reported number of 43 children and above are set to NA.  
 **R script**:  
 ```{r, echo=TRUE}
 soc_RECORD_1$soc_sn_num_children_1 <- as.integer(ifelse(RECORD_w2$Qm137 %in% c(0:15), RECORD_w2$Qm137,NA))
@@ -1699,14 +1699,10 @@ soc_RECORD_1$soc_sn_children_rank_1 <- as.integer(ifelse(RECORD_w2$Qm137==0,0L, 
 1 |  Sometimes received emotional support
 2 |  Often received emotional support
 
-**Harmonization status**:  complete   
+**Harmonization status**:  impossible    
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-soc_RECORD_0$soc_ss_received_emo_0<-NA
-soc_RECORD_0$soc_ss_received_emo_0[(RECORD_w1_2$q6_no_voisserv==4|RECORD_w1_2$q6_no_voisserv==3)&(RECORD_w1_2$q23_no_aideexte==4|RECORD_w1_2$q23_no_aideexte==3)&(RECORD_w1_2$q23_no_aidemnge==4|RECORD_w1_2$q23_no_aidemnge==3)]<-0
-soc_RECORD_0$soc_ss_received_emo_0[RECORD_w1_2$q6_no_voisserv==1|RECORD_w1_2$q23_no_aideexte==1|RECORD_w1_2$q23_no_aidemnge==1]<-2
-soc_RECORD_0$soc_ss_received_emo_0[RECORD_w1_2$q6_no_voisserv==2|RECORD_w1_2$q23_no_aideexte==2|RECORD_w1_2$q23_no_aidemnge==2]<-1
 
 
 ```
