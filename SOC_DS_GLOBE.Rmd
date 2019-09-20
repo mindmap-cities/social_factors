@@ -15,19 +15,19 @@ library(opal)
 erasmus_opal <- opal.login()
 #Login to Opal server and assign the content of the GLOBE table(s) to your RStudio environment
 # GLOBE1991
-opal.assign.table.tibble(erasmus_opal, 'GLOBE1991', 'GLOBE.GLOBE1991',variables = list('v156','v169','v167','v168','v173','v174','v175','v172','v155','v156','v335','SEGVv460','SEGVv461','SEGVv462','SEGVv454','SEGVv455','SEGVv456','SEGVv475','SEGVv476','SEGVv477','SEGVv472','SEGVv473','SEGVv474','SEGVv457','SEGVv458','SEGVv459'))
+opal.assign.table.tibble(erasmus_opal, 'GLOBE1991', 'GLOBE.GLOBE1991',variables = list('v156','v169','v167','v168','v173','v174','v175','v172','v155','v156','v335','SEGVv460','SEGVv461','SEGVv462','SEGVv454','SEGVv455','SEGVv456','SEGVv475','SEGVv476','SEGVv477','SEGVv472','SEGVv473','SEGVv474','SEGVv457','SEGVv458','SEGVv459','v167','v168','v169','v170','v171','v172','v173','v174','v175','v167'))
 GLOBE1991 <- opal.execute(erasmus_opal,'GLOBE1991')
 # GLOBE1997
-opal.assign.table.tibble(erasmus_opal, 'GLOBE1997', 'GLOBE.GLOBE1997',variables = list('v11c','v11a','v11b','v11g','v11h','v11i','v11f','g29a','g9c1','g9c2','g9c3','g9a2','g9a3','g9a1','g9g1','g9g2','g9g3','g9f1','g9f2','g9f3','g9b1','g9b2','g9b3'))
+opal.assign.table.tibble(erasmus_opal, 'GLOBE1997', 'GLOBE.GLOBE1997',variables = list('v11c','v11a','v11b','v11g','v11h','v11i','v11f','g29a','g9c1','g9c2','g9c3','g9a2','g9a3','g9a1','g9g1','g9g2','g9g3','g9f1','g9f2','g9f3','g9b1','g9b2','g9b3','v11a','v11b','v11c','v11d','v11e','v11f','v11g','v11h','v11i','v11a'))
 GLOBE1997 <- opal.execute(erasmus_opal,'GLOBE1997')
 # GLOBE2004
-opal.assign.table.tibble(erasmus_opal, 'GLOBE2004', 'GLOBE.GLOBE2004',variables = list('w266','w264','w265','w270','w271','w272','w269','w072b','w051','w040a','w041'))
+opal.assign.table.tibble(erasmus_opal, 'GLOBE2004', 'GLOBE.GLOBE2004',variables = list('w266','w264','w265','w270','w271','w272','w269','w072b','w051','w040a','w041','w289','w264','w265','w266','w267','w268','w269','w270','w271','w272','w072b','w051','w264'))
 GLOBE2004 <- opal.execute(erasmus_opal,'GLOBE2004')
 # GLOBE2011
-opal.assign.table.tibble(erasmus_opal, 'GLOBE2011', 'GLOBE.GLOBE2011',variables = list('v49_buurt_wndr','53_b_buur2','v50_huis_bez','v61_c_o_vak','v61_d_o_pol','v61_e_o_ker','v61_f_o_buu','v61_g_o_ner',''))
+opal.assign.table.tibble(erasmus_opal, 'GLOBE2011', 'GLOBE.GLOBE2011',variables = list('v49_buurt_wndr','53_b_buur2','v50_huis_bez','v61_c_o_vak','v61_d_o_pol','v61_e_o_ker','v61_f_o_buu','v61_g_o_ner','v59_f_ond6','v61_d_o_pol','v61_c_o_vak','v61_f_o_buu','v61_g_o_ner','v61_b_o_hob','v49_buurt_wndr','v53_b_buur2'))
 GLOBE2011 <- opal.execute(erasmus_opal,'GLOBE2011')
 # GLOBE2014
-opal.assign.table.tibble(erasmus_opal, 'GLOBE2014', 'GLOBE.GLOBE2014',variables = list('G14v9','G14v87','G14v90_g','G14v88','G14v42','G14v46','G14v54','G14v55','G14v36','G14v40'))
+opal.assign.table.tibble(erasmus_opal, 'GLOBE2014', 'GLOBE.GLOBE2014',variables = list('G14v9','G14v87','G14v90_g','G14v88','G14v42','G14v46','G14v54','G14v55','G14v36','G14v40','G14v59_f','G14v56_e','G14v56_g','G14v56_c','G14v56_d','G14v56_f','G14v56_h','G14v56_b','G14v87','G14v90_g'))
 GLOBE2014 <- opal.execute(erasmus_opal,'GLOBE2014')
 ```
 ## Assign participant id as first column of your harmonized dataframes
@@ -1553,7 +1553,7 @@ summary(soc_GLOBE_4$soc_sn_freq_close_relatives_4)
 2 |  Often received emotional support
 
 **Harmonization status**:  complete     
-**Harmonization comment**: In the 1991 wave, this item only asked of a sub-sample of persons hence lots of NAs. Support from top 3 contact persons averaged, e.g. if respondent states that she/he does not receive support from 2 persons out of 3, and sometimes receives support from the third person, she/he are categorized as never receiving support.      
+**Harmonization comment**: Receiving support from any 1 of 3 confidants is categorized as often receiving support, otherwise receiving support sometimes from any 1 of 3 confidants is categorized as sometimes receiving support. Study specific variable asks 'Do you get affection from this person, does this person embrace or kiss you or give you an affectionate handshake?', which might be interpreted as physical not emotional affection by perticipants. 
 **R script**:  
 ```{r, echo=TRUE}
 table(GLOBE1991$SEGVv460) # 1- never 2 sometimes 3 often 
@@ -1563,14 +1563,11 @@ summary(GLOBE1991$SEGVv461)
 table(GLOBE1991$SEGVv462)# 0 - no third person 
 summary(GLOBE1991$SEGVv462)
 
-GLOBE1991$soc_ss_received_emo_0_inter <- as.numeric((GLOBE1991$SEGVv460+GLOBE1991$SEGVv461+GLOBE1991$SEGVv462)/3)
-
-table(GLOBE1991$soc_ss_received_emo_0_inter) 
-
-soc_GLOBE_0$soc_ss_received_emo_0 <- ifelse(GLOBE1991$soc_ss_received_emo_0_inter <'1.5', 0, 
-                                         ifelse(GLOBE1991$soc_ss_received_emo_0_inter <'2.5'                                                                    & GLOBE1991$soc_ss_received_emo_0_inter >'1.5', 1, 
-                                             ifelse(GLOBE1991$soc_ss_received_emo_0_inter >'2.5', 2, NA)))
-
+#picking most frequent
+soc_GLOBE_0$soc_ss_received_emo_0 <- ifelse(GLOBE1991$SEGVv460 ==3 | GLOBE1991$SEGVv461 ==3 |GLOBE1991$SEGVv462 == 3, 2L, 
+                                         ifelse(GLOBE1991$SEGVv460 ==2 | GLOBE1991$SEGVv461 ==2 |GLOBE1991$SEGVv462 == 2, 1L, 
+                                             ifelse(GLOBE1991$SEGVv460 ==1 | GLOBE1991$SEGVv461 ==1 |GLOBE1991$SEGVv462 == 1, 0L, NA)))
+ 
 table(soc_GLOBE_0$soc_ss_received_emo_0) 
 summary(soc_GLOBE_0$soc_ss_received_emo_0)
 ```
@@ -1588,7 +1585,7 @@ summary(soc_GLOBE_0$soc_ss_received_emo_0)
 2 |  Often received emotional support
 
 **Harmonization status**:  complete      
-**Harmonization comment**:  Support from top 3 contact persons averaged, e.g. if respondent states that she/he does not receive support from 2 persons out of 3, and sometimes receives support from the third person, she/he are categorized as never receiving support.       
+**Harmonization comment**:  Receiving support from any 1 of 3 confidants is categorized as often receiving support, otherwise receiving support sometimes from any 1 of 3 confidants is categorized as sometimes receiving support. Study specific variable asks 'Do you get affection from this person, does this person embrace or kiss you or give you an affectionate handshake?', which might be interpreted as physical not emotional affection by perticipants.       
 **R script**:  
 ```{r, echo=TRUE}
 table(GLOBE1997$g9c1) # 1- never 2 sometimes 3 often 
@@ -1598,13 +1595,11 @@ summary(GLOBE1997$g9c2)
 table(GLOBE1997$g9c3)# 0 - no third person 
 summary(GLOBE1997$g9c3)
 
-GLOBE1997$soc_ss_received_emo_1_inter <- as.numeric((GLOBE1997$g9c1+GLOBE1997$g9c2+GLOBE1997$g9c3)/3)
+#alternative: pick most often  
+soc_GLOBE_1$soc_ss_received_emo_1 <- ifelse(GLOBE1997$g9c1 ==3 | GLOBE1997$g9c2 ==3 |GLOBE1997$g9c3 == 3, 2L, 
+                                         ifelse(GLOBE1997$g9c1 ==2 | GLOBE1997$g9c2 ==2 |GLOBE1997$g9c3 == 2, 1L, 
+                                             ifelse(GLOBE1997$g9c1 ==1 | GLOBE1997$g9c2 ==1 |GLOBE1997$g9c3 == 1, 0L, NA)))
 
-table(GLOBE1997$soc_ss_received_emo_1_inter) 
-
-soc_GLOBE_1$soc_ss_received_emo_1 <- ifelse(GLOBE1997$soc_ss_received_emo_1_inter <'1.5', 0, 
-                                         ifelse(GLOBE1997$soc_ss_received_emo_1_inter <'2.5'                                                                    & GLOBE1997$soc_ss_received_emo_1_inter >'1.5', 1, 
-                                             ifelse(GLOBE1997$soc_ss_received_emo_1_inter >'2.5', 2, NA)))
 
 table(soc_GLOBE_1$soc_ss_received_emo_1) 
 summary(soc_GLOBE_1$soc_ss_received_emo_1)
@@ -1821,26 +1816,22 @@ summary(soc_GLOBE_1$soc_ss_received_emo_1)
 2 |  Often received instrumental support
 
 **Harmonization status**:  complete    
-**Harmonization comment**:  Support from top 3 contact persons averaged, e.g. if respondent states that she/he does not receive support from 2 persons out of 3, and sometimes receives support from the third person, she/he are categorized as never receiving support.      
+**Harmonization comment**:  Receiving support from any 1 of 3 confidants is categorized as often receiving support, otherwise receiving support sometimes from any 1 of 3 confidants is categorized as sometimes receiving support.     
 **R script**:  
 ```{r, echo=TRUE}
-table(GLOBE1991$SEGVv454) # 1- never 2 sometimes 3 often 
+table(GLOBE1991$SEGVv454) # 1- never 2 sometimes 3 often  ? why so many NAs
 summary(GLOBE1991$SEGVv454)
 table(GLOBE1991$SEGVv455) # 0 - no second person 
 summary(GLOBE1991$SEGVv455)
 table(GLOBE1991$SEGVv456)# 0 - no third person 
 summary(GLOBE1991$SEGVv456)
 
-GLOBE1991$soc_ss_received_instru_0_inter <- as.numeric((GLOBE1991$SEGVv454+GLOBE1991$SEGVv455+GLOBE1991$SEGVv456)/3)
-
-table(GLOBE1991$soc_ss_received_instru_0_inter) 
-
-soc_GLOBE_0$soc_ss_received_instru_0 <- ifelse(GLOBE1991$soc_ss_received_instru_0_inter <'1.5', 0, 
-                                         ifelse(GLOBE1991$soc_ss_received_instru_0_inter <'2.5'                                                                    & GLOBE1991$soc_ss_received_instru_0_inter >'1.5', 1, 
-                                             ifelse(GLOBE1991$soc_ss_received_instru_0_inter >'2.5', 2, NA)))
+# most frequent 
+soc_GLOBE_0$soc_ss_received_instru_0 <- ifelse(GLOBE1991$SEGVv454 ==3 | GLOBE1991$SEGVv455 ==3 |GLOBE1991$SEGVv456 == 3, 2L, 
+                                         ifelse(GLOBE1991$SEGVv454 ==2 | GLOBE1991$SEGVv455 ==2 |GLOBE1991$SEGVv456 == 2, 1L, 
+                                             ifelse(GLOBE1991$SEGVv454 ==1 | GLOBE1991$SEGVv455 ==1 |GLOBE1991$SEGVv456 == 1, 0L, NA)))
 
 table(soc_GLOBE_0$soc_ss_received_instru_0) 
-summary(soc_GLOBE_0$soc_ss_received_instru_0)
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -1857,7 +1848,7 @@ summary(soc_GLOBE_0$soc_ss_received_instru_0)
 2 |  Often received instrumental support
 
 **Harmonization status**:  complete    
-**Harmonization comment**:  Support from top 3 contact persons averaged, e.g. if respondent states that she/he does not receive support from 2 persons out of 3, and sometimes receives support from the third person, she/he are categorized as never receiving support.       
+**Harmonization comment**:  Receiving support from any 1 of 3 confidants is categorized as often receiving support, otherwise receiving support sometimes from any 1 of 3 confidants is categorized as sometimes receiving support.      
 **R script**:  
 ```{r, echo=TRUE}
 table(GLOBE1997$g9a1) # 1- never 2 sometimes 3 often 
@@ -1867,13 +1858,11 @@ summary(GLOBE1997$g9a2)
 table(GLOBE1997$g9a3)# 0 - no third person 
 summary(GLOBE1997$g9a3)
 
-GLOBE1997$soc_ss_received_instru_1_inter <- as.numeric((GLOBE1997$g9a1+GLOBE1997$g9a2+GLOBE1997$g9a3)/3)
+soc_GLOBE_1$soc_ss_received_instru_1 <- ifelse(GLOBE1997$g9a1 ==3 | GLOBE1997$g9a2 ==3 |GLOBE1997$g9a3 == 3, 2L, 
+                                         ifelse(GLOBE1997$g9a1 ==2 | GLOBE1997$g9a2 ==2 |GLOBE1997$g9a3 == 2, 1L, 
+                                             ifelse(GLOBE1997$g9a1 ==1 | GLOBE1997$g9a2 ==1 |GLOBE1997$g9a3 == 1, 0L, NA)))
 
-table(GLOBE1997$soc_ss_received_instru_1_inter) 
 
-soc_GLOBE_1$soc_ss_received_instru_1 <- ifelse(GLOBE1997$soc_ss_received_instru_1_inter <'1.5', 0, 
-                                         ifelse(GLOBE1997$soc_ss_received_instru_1_inter <'2.5'                                                                    & GLOBE1997$soc_ss_received_instru_1_inter >'1.5', 1, 
-                                             ifelse(GLOBE1997$soc_ss_received_instru_1_inter >'2.5', 2, NA)))
 
 table(soc_GLOBE_1$soc_ss_received_instru_1) 
 summary(soc_GLOBE_1$soc_ss_received_instru_1)
@@ -2191,11 +2180,16 @@ summary(soc_GLOBE_1$soc_ss_Zscore_perceived_emo_1)
 0 |  Feels tangible help is available   
 1 |  Does not feel tangible help is available    
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:   Study specific variable categories: all of the time, most of the time, some of the time (help is available...) are harmonized as "feels tangible help is available", categories: a litte of the time, never are harmonized as "does not feel tangible help is avilable".
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(GLOBE2011$v59_f_ond6)
+
+soc_GLOBE_3$soc_ss_perceived_instru_3 <- ifelse(GLOBE2011$v59_f_ond6 ==1|GLOBE2011$v59_f_ond6 ==2|GLOBE2011$v59_f_ond6==3 ,0L, 
+                                              ifelse(GLOBE2011$v59_f_ond6 ==4 | GLOBE2011$v59_f_ond6 ==5,1L,NA))
+
+table(soc_GLOBE_3$soc_ss_perceived_instru_3)
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -2214,8 +2208,12 @@ summary(soc_GLOBE_1$soc_ss_Zscore_perceived_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(GLOBE2014$G14v59_f)
 
+soc_GLOBE_4$soc_ss_perceived_instru_4 <- ifelse(GLOBE2014$G14v59_f ==1|GLOBE2014$G14v59_f ==2|GLOBE2014$G14v59_f==3 ,0L, 
+                                              ifelse(GLOBE2014$G14v59_f ==4 | GLOBE2014$G14v59_f ==5,1L,NA))
+
+table(soc_GLOBE_4$soc_ss_perceived_instru_4)
 ```
 ### **Variable label**: Perceived instrumental support        
 **Variable name**:   soc_ss_perceived_instru_5      
@@ -2270,8 +2268,8 @@ summary(soc_GLOBE_1$soc_ss_Zscore_perceived_emo_1)
 0 |  Does not participate in a religious organization   
 1 |  Does participate in a religious organization 
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  impossible   
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 #This is where the R-script will be written
@@ -2327,11 +2325,17 @@ summary(soc_GLOBE_1$soc_ss_Zscore_perceived_emo_1)
 0 |  Does not participate in a religious organization   
 1 |  Does participate in a religious organization 
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:  Study specific variable also asks about mosque, synagogue or other religious organization. 
 **R script**:  
 ```{r, echo=TRUE}
-v61_e_o_ker
+
+table(GLOBE2011$v61_e_o_ker) #1= yes 
+
+soc_GLOBE_3$soc_sp_religious_3 <- ifelse(GLOBE2011$v61_e_o_ker ==1,1L, 
+                                              ifelse(GLOBE2011$v61_e_o_ker ==0,0L,NA))
+
+table(soc_GLOBE_3$soc_sp_religious_3)
 
 
 ```
@@ -2347,12 +2351,16 @@ v61_e_o_ker
 0 |  Does not participate in a religious organization   
 1 |  Does participate in a religious organization 
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**: Study specific variable also asks about mosque, synagogue or other religious organization.  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(GLOBE2014$G14v56_e)
 
+soc_GLOBE_4$soc_sp_religious_4 <- ifelse(GLOBE2014$G14v56_e==1,1L, 
+                                              ifelse(GLOBE2014$G14v56_e ==0,0L,NA))
+
+table(soc_GLOBE_4$soc_sp_religious_4)
 ```
 ### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_5        
@@ -2770,11 +2778,17 @@ v61_e_o_ker
 0 |  Does not participate in a cultural, educational or social organization  
 1 |  Does participate in a cultural, educational or social organization 
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete   
+**Harmonization comment**:  Study specific variable asks if participant has memberhsip and it does not ask about educational participation.   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(GLOBE2004$w289) #1=yes 2=no
+
+soc_GLOBE_2$soc_sp_cul_edu_soc_2 <- ifelse(GLOBE2004$w289=='1',1, 
+                                                  ifelse(GLOBE2004$w289=='2',2, NA))
+
+table(soc_GLOBE_2$soc_sp_cul_edu_soc_2) 
+summary(soc_GLOBE_2$soc_sp_cul_edu_soc_2)
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
@@ -2941,11 +2955,17 @@ v61_e_o_ker
 0 |  Does not take part in volunteer activities
 1 |  Does take part in volunteer activities 
 
-**Harmonization status**:  impossible    
+**Harmonization status**:  complete   
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(GLOBE2014$G14v56_g) #1=yes 0=no
+
+soc_GLOBE_4$soc_sp_volunteer_4 <- ifelse(GLOBE2014$G14v56_g=='1',1L, 
+                                                  ifelse(GLOBE2014$G14v56_g=='0',0L, NA))
+
+table(soc_GLOBE_4$soc_sp_volunteer_4) 
+summary(soc_GLOBE_4$soc_sp_volunteer_4)
 
 ```
 ### **Variable label**:  Volunteering      
@@ -3055,13 +3075,23 @@ v61_e_o_ker
 0 |  Does not participate in a civic organization   
 1 |  Does participate in a civic organization   
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete   
+**Harmonization comment**:   Two study specific variables were harmonized, one asking about political party participation and one asking about union but also professional organization participation. Answering yes to either was harmonized as participates in a civic organization.  
 **R script**:  
 ```{r, echo=TRUE}
 	
 v61_d_o_pol #0= not 1 = involved w political 
 v61_c_o_vak #0 not 1= involved w union (or professional) 
+
+table(GLOBE2011$v61_d_o_pol) #1=yes 0=no
+table(GLOBE2011$v61_c_o_vak) #1=yes 0=no
+
+
+soc_GLOBE_3$soc_sp_pol_3 <- ifelse(GLOBE2011$v61_d_o_pol =='1' | GLOBE2011$v61_c_o_vak =='1',1L, 
+                                                  ifelse(GLOBE2011$v61_d_o_pol =='0' | GLOBE2011$v61_c_o_vak =='0',0L, NA))
+
+table(soc_GLOBE_3$soc_sp_pol_3) 
+summary(soc_GLOBE_3$soc_sp_pol_3)
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -3076,11 +3106,19 @@ v61_c_o_vak #0 not 1= involved w union (or professional)
 0 |  Does not participate in a civic organization   
 1 |  Does participate in a civic organization  
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:  Two study specific variables were harmonized, one asking about political party participation and one asking about union but also professional organization participation. Answering yes to either was harmonized as participates in a civic organization.   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(GLOBE2014$G14v56_c) #1=yes 0=no
+table(GLOBE2014$G14v56_d) #1=yes 0=no
+
+
+soc_GLOBE_4$soc_sp_pol_4 <- ifelse(GLOBE2014$G14v56_c =='1' | GLOBE2014$G14v56_d =='1',1L, 
+                                                  ifelse(GLOBE2014$G14v56_c =='0' | GLOBE2014$G14v56_d =='0',0L, NA))
+
+table(soc_GLOBE_4$soc_sp_pol_4) 
+summary(soc_GLOBE_4$soc_sp_pol_4)
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -3190,11 +3228,21 @@ v61_c_o_vak #0 not 1= involved w union (or professional)
 0 |  Does not participate in an union, professional or neighbourhood organization   
 1 |  Does participate in an union, professional or neighbourhood organization  
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:  Harmonized 2 study specific variables, participation in either i) union/professional organizations or ii) a neighbourhood, civic or community association, was harmonized as participation.
 **R script**:  
 ```{r, echo=TRUE}
-v61_f_o_buu # 0= no 1=yes 
+#v61_f_o_buu # 0= no 1=yes 
+#v61_c_o_vak #0 not 1= involved w union (or professional) 
+
+table(GLOBE2011$v61_f_o_buu) #1=yes 0=no
+table(GLOBE2011$v61_c_o_vak) #1=yes 0=no
+
+
+soc_GLOBE_3$soc_sp_prof_3 <- ifelse(GLOBE2011$v61_f_o_buu =='1' | GLOBE2011$v61_c_o_vak =='1',1L, 
+                                                  ifelse(GLOBE2011$v61_f_o_buu =='0' | GLOBE2011$v61_c_o_vak =='0',0L, NA))
+
+table(soc_GLOBE_3$soc_sp_prof_3)
 
 
 ```
@@ -3210,11 +3258,17 @@ v61_f_o_buu # 0= no 1=yes
 0 |  Does not participate in an union, professional or neighbourhood organization   
 1 |  Does participate in an union, professional or neighbourhood organization   
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:  Harmonized 2 study specific variables, participation in either i) union/professional organizations or ii) a neighbourhood, civic or community association, was harmonized as participation.   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(GLOBE2014$G14v56_c) #1=yes 0=no
+table(GLOBE2014$G14v56_f) #1=yes 0=no
+
+soc_GLOBE_4$soc_sp_prof_4 <- ifelse(GLOBE2014$G14v56_c =='1' | GLOBE2014$G14v56_f =='1',1L, 
+                                                  ifelse(GLOBE2014$G14v56_c =='0' | GLOBE2014$G14v56_f =='0',0L, NA))
+
+table(soc_GLOBE_4$soc_sp_prof_4)
 
 ```
 ### **Variable label**:  Professional participation         
@@ -3267,8 +3321,8 @@ v61_f_o_buu # 0= no 1=yes
 0 |  Does not take part in a social organization/volunteers   
 1 |  Does take part in a social organization/volunteers   
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  impossible   
+**Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}
 #This is where the R-script will be written
@@ -3324,11 +3378,17 @@ v61_f_o_buu # 0= no 1=yes
 0 |  Does not take part in a social organization/volunteers     
 1 |  Does take part in a social organization/volunteers       
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**: Study specific variable asking respondent if they do NOT participate in any organization is used in this harmonization.    
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+#this is the item, I am not involved in any participation, will use this to identify participants vs non participants as opposed to using all the items: v61_a_o_spo v61_b_o_hob v61_c_o_vak v61_d_o_pol v61_e_o_ker v61_f_o_buu. 
+table (GLOBE2011$v61_g_o_ner) #1, yes I do not participate 0= I participate 
+
+soc_GLOBE_3$soc_sp_general_3 <- ifelse(GLOBE2011$v61_g_o_ner =='1',0L, 
+                                                  ifelse(GLOBE2011$v61_g_o_ner =='0',1L, NA))
+
+table(soc_GLOBE_3$soc_sp_general_3)
 
 ```
 ### **Variable label**:  General social participation          
@@ -3343,11 +3403,16 @@ v61_f_o_buu # 0= no 1=yes
 0 |  Does not take part in a social organization/volunteers     
 1 |  Does take part in a social organization/volunteers     
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:  Study specific variable asking respondent if they do NOT participate in any organization is used in this harmonization.   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(GLOBE2014$G14v56_h) #1=yes, no participation  0=no ..I participate 
+
+soc_GLOBE_4$soc_sp_general_4 <- ifelse(GLOBE2014$G14v56_h =='1',0L, 
+                                                  ifelse(GLOBE2014$G14v56_h =='0',1L, NA))
+
+table(soc_GLOBE_4$soc_sp_general_4)
 
 ```
 ### **Variable label**:  General social participation          
@@ -3723,11 +3788,16 @@ v61_f_o_buu # 0= no 1=yes
 0 |  Does not have a hobby
 1 |  Does have a hobby  
 
-**Harmonization status**:  impossible    
+**Harmonization status**:  complete    
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(GLOBE2011$v61_b_o_hob) #1=yes 0=no
+
+soc_GLOBE_3$soc_sp_hobby_3 <- ifelse(GLOBE2011$v61_b_o_hob =='1',1L, 
+                                                  ifelse(GLOBE2011$v61_b_o_hob =='0',0L, NA))
+
+table(soc_GLOBE_3$soc_sp_hobby_3)
 
 ```
 ### **Variable label**:  Hobby      
@@ -3742,11 +3812,16 @@ v61_f_o_buu # 0= no 1=yes
 0 |  Does not have a hobby
 1 |  Does have a hobby 
 
-**Harmonization status**:  impossible    
+**Harmonization status**:  complete    
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(GLOBE2014$G14v56_b) #1=yes, 0=no
+
+soc_GLOBE_4$soc_sp_hobby_4 <- ifelse(GLOBE2014$G14v56_b =='1',1L, 
+                                                  ifelse(GLOBE2014$G14v56_b =='0',0L, NA))
+
+table(soc_GLOBE_4$soc_sp_hobby_4)
 
 ```
 ### **Variable label**:  Hobby      
@@ -3860,8 +3935,8 @@ v61_f_o_buu # 0= no 1=yes
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-v61_g_o_ner #0= not selected 1= yes i am NOT involved w any organization  
- 
+#check network, nr children was not harmonized in this wave (_3) but it was in (_4) thus I do not think we should harmonize without it  since then we might be miscategorizing those with children as having no network
+
 
 ```
 ### **Variable label**:  Social isolation    
@@ -3876,12 +3951,15 @@ v61_g_o_ner #0= not selected 1= yes i am NOT involved w any organization
 0 |  Not socially isolated, has social network and/ or social participation 
 1 |  Socially isolated, no social network and no social participation 
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete   
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
 
+soc_GLOBE_4$soc_sp_isolation_4 <- ifelse((soc_GLOBE_4$soc_sn_children_rank_4 == 0 | soc_GLOBE_4$soc_sn_num_friends_4 ==0 | soc_GLOBE_4$soc_sn_num_nbhs_4 ==0 | soc_GLOBE_4$soc_sn_num_relatives_4 ==0) & soc_GLOBE_4$soc_sp_general_4 == 0,1L, 
+                                                  ifelse((soc_GLOBE_4$soc_sn_children_rank_4 >= 1 | soc_GLOBE_4$soc_sn_num_friends_4 >= 1 | soc_GLOBE_4$soc_sn_num_nbhs_4 >= 1 | soc_GLOBE_4$soc_sn_num_relatives_4 >= 1) & soc_GLOBE_4$soc_sp_general_4 == 1, 0L, NA ))
+
+table(soc_GLOBE_4$soc_sp_isolation_4)
 ```
 ### **Variable label**:  Social isolation    
 **Variable name**:  soc_sp_isolation_5  
@@ -3954,11 +4032,17 @@ v61_g_o_ner #0= not selected 1= yes i am NOT involved w any organization
 0 |  Did not experience being the victim of a crime
 1 |  Did experience being the victim of a crime 
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:  GLOBE asks about the past 12 months.  
+**Harmonization status**:  complete    
+**Harmonization comment**:  Study specific variable asks about the past 12 months.  
 **R script**:  
 ```{r, echo=TRUE}
-v169 #1 = yes 2= no 9 = NA
+#1 = yes 2= no 9 = NA
+table(GLOBE1991$v169) 
+
+soc_GLOBE_0$soc_le_vic_0 <- ifelse(GLOBE1991$v169 =='1',1L, 
+                            ifelse(GLOBE1991$v169 =='2',0L, NA))
+
+table(soc_GLOBE_0$soc_le_vic_0)
 ```
 ### **Variable label**:  Life event: victim     
 **Variable name**:  soc_le_vic_1         
@@ -3972,11 +4056,17 @@ v169 #1 = yes 2= no 9 = NA
 0 |  Did not experience being the victim of a crime
 1 |  Did experience being the victim of a crime 
 
-**Harmonization status**:  impossible    
-**Harmonization comment**: GLOBE asks about the past 12 months.    
+**Harmonization status**:  complete    
+**Harmonization comment**:  Study specific variable asks about the past 12 months.    
 **R script**:  
 ```{r, echo=TRUE}
-v11c #1 = yes 2= no -1=?
+#1 = yes 2= no -1=?
+table(GLOBE1997$v11c) 
+
+soc_GLOBE_1$soc_le_vic_1 <- ifelse(GLOBE1997$v11c =='1',1L, 
+                            ifelse(GLOBE1997$v11c =='2',0L, NA))
+
+table(soc_GLOBE_1$soc_le_vic_1)
 ```
 ### **Variable label**:  Life event: victim     
 **Variable name**:  soc_le_vic_2         
@@ -3990,11 +4080,17 @@ v11c #1 = yes 2= no -1=?
 0 |  Did not experience being the victim of a crime
 1 |  Did experience being the victim of a crime 
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   GLOBE asks about the past 12 months.   
+**Harmonization status**:  complete    
+**Harmonization comment**:  Study specific variable asks about the past 12 months.   
 **R script**:  
 ```{r, echo=TRUE}
-w266 #1 = yes 2= no 888=? 9=? 
+#1 = yes 2= no 888=? 9=? 
+table(GLOBE2004$w266)
+
+soc_GLOBE_2$soc_le_vic_2 <- ifelse(GLOBE2004$w266 =='1',1L, 
+                            ifelse(GLOBE2004$w266 =='2',0L, NA))
+
+table(soc_GLOBE_2$soc_le_vic_2)
 ```
 ### **Variable label**:  Life event: victim     
 **Variable name**:  soc_le_vic_3         
@@ -4084,11 +4180,17 @@ w266 #1 = yes 2= no 888=? 9=?
 0 |  Did not experience financial problems
 1 |  Did experience financial problems  
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   Asked about the past 12 months. 
+**Harmonization status**:  complete    
+**Harmonization comment**:  Study specific variable asks about the past 12 months. 
 **R script**:  
 ```{r, echo=TRUE}
-v168 #1= yes 2 = no
+#1= yes 2 = no
+table(GLOBE1991$v168) 
+
+soc_GLOBE_0$soc_le_fprob_0 <- ifelse(GLOBE1991$v168 =='1',1L, 
+                            ifelse(GLOBE1991$v168 =='2',0L, NA))
+
+table(soc_GLOBE_0$soc_le_fprob_0)
 ```
 ### **Variable label**:  Life event: financial problems      
 **Variable name**:  soc_le_fprob_1             
@@ -4102,12 +4204,18 @@ v168 #1= yes 2 = no
 0 |  Did not experience financial problems
 1 |  Did experience financial problems    
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:  Study specific variable asks about the past 12 months.   
 **R script**:  
 ```{r, echo=TRUE}
 #This is where the R-script will be written
-v11b #1= yes 2 = no
+#1= yes 2 = no
+table(GLOBE1997$v11b) 
+
+soc_GLOBE_1$soc_le_fprob_1 <- ifelse(GLOBE1997$v11b =='1',1L, 
+                            ifelse(GLOBE1997$v11b =='2',0L, NA))
+
+table(soc_GLOBE_1$soc_le_fprob_1)
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -4122,11 +4230,17 @@ v11b #1= yes 2 = no
 0 |  Did not experience financial problems
 1 |  Did experience financial problems   
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:  Study specific variable asks about the past 12 months.  
 **R script**:  
 ```{r, echo=TRUE}
-w265 #1= yes 2 = no
+#1= yes 2 = no
+table(GLOBE2004$w265) 
+
+soc_GLOBE_2$soc_le_fprob_2 <- ifelse(GLOBE2004$w265 =='1',1L, 
+                            ifelse(GLOBE2004$w265 =='0',0L, NA))
+
+table(soc_GLOBE_2$soc_le_fprob_2)
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -4236,12 +4350,16 @@ w265 #1= yes 2 = no
 0 |  Did not experience relationship problems
 1 |  Did experience relationship problems
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:  Study specific variable asks about the past 12 months.  
 **R script**:  
 ```{r, echo=TRUE}
-v175
+table(GLOBE1991$v175) #1=yes 2=no
 
+soc_GLOBE_0$soc_le_rprob_0 <- ifelse(GLOBE1991$v175 =='1',1L, 
+                            ifelse(GLOBE1991$v175 =='2',0L, NA))
+
+table(soc_GLOBE_0$soc_le_rprob_0)
 ```
 ### **Variable label**:  Life event: relationship problems        
 **Variable name**:  soc_le_rprob_1             
@@ -4255,11 +4373,16 @@ v175
 0 |  Did not experience relationship problems
 1 |  Did experience relationship problems
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:  Study specific variable asks about the past 12 months.  
 **R script**:  
 ```{r, echo=TRUE}
-v11i
+table(GLOBE1997$v11i) #1=yes 2=no
+
+soc_GLOBE_1$soc_le_rprob_1 <- ifelse(GLOBE1997$v11i =='1',1L, 
+                            ifelse(GLOBE1997$v11i =='2',0L, NA))
+
+table(soc_GLOBE_1$soc_le_rprob_1)
 ```
 ### **Variable label**:  Life event: relationship problems        
 **Variable name**:  soc_le_rprob_2             
@@ -4273,11 +4396,17 @@ v11i
 0 |  Did not experience relationship problems
 1 |  Did experience relationship problems  
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:  Study specific variable asks about the past 12 months.  
 **R script**:  
 ```{r, echo=TRUE}
 w272
+table(GLOBE2004$w272) #1=yes 2=no
+
+soc_GLOBE_2$soc_le_rprob_2 <- ifelse(GLOBE2004$w272 =='1',1L, 
+                            ifelse(GLOBE2004$w272 =='2',0L, NA))
+
+table(soc_GLOBE_2$soc_le_rprob_2)
 ```
 ### **Variable label**:  Life event: divorce/relationship breakup           
 **Variable name**:  soc_le_divorce_0             
@@ -4291,11 +4420,16 @@ w272
 0 |  Did not divorce/ have relationship breakup
 1 |  Did divorce/ had relationship breakup  
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:  Study specific variable asks about the past 12 months.   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(GLOBE1991$v175) #1=yes 2=no
+
+soc_GLOBE_0$soc_le_divorce_0 <- ifelse(GLOBE1991$v175 =='1',1L, 
+                            ifelse(GLOBE1991$v175 =='2',0L, NA))
+
+table(soc_GLOBE_0$soc_le_divorce_0)
 
 ```
 ### **Variable label**:  Life event: divorce/relationship breakup           
@@ -4310,11 +4444,16 @@ w272
 0 |  Did not divorce/ have relationship breakup
 1 |  Did divorce/ had relationship breakup  
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:  Study specific variable asks about the past 12 months.    
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(GLOBE1997$v11i) #1=yes 2=no
+
+soc_GLOBE_1$soc_le_divorce_1 <- ifelse(GLOBE1997$v11i =='1',1L, 
+                            ifelse(GLOBE1997$v11i =='2',0L, NA))
+
+table(soc_GLOBE_1$soc_le_divorce_1)
 
 ```
 ### **Variable label**:  Life event: divorce/relationship breakup           
@@ -4329,11 +4468,16 @@ w272
 0 |  Did not divorce/ have relationship breakup
 1 |  Did divorce/ had relationship breakup  
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:  Study specific variable asks about the past 12 months.    
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(GLOBE2004$w272) #1=yes 2=no
+
+soc_GLOBE_2$soc_le_divorce_2 <- ifelse(GLOBE2004$w272 =='1',1L, 
+                            ifelse(GLOBE2004$w272 =='2',0L, NA))
+
+table(soc_GLOBE_2$soc_le_divorce_2)
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4348,11 +4492,16 @@ w272
 0 |  Did not experience illness of family member 
 1 |  Did experience illness of family member 
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:  Study specific variable asks about the past 12 months. 
 **R script**:  
 ```{r, echo=TRUE}
-v172
+table(GLOBE1991$v172) #1=yes 2=no
+
+soc_GLOBE_0$soc_le_illfam_0 <- ifelse(GLOBE1991$v172 =='1',1L, 
+                            ifelse(GLOBE1991$v172 =='2',0L, NA))
+
+table(soc_GLOBE_0$soc_le_illfam_0)
 ```
 ### **Variable label**:  Life event: illness of family member             
 **Variable name**:  soc_le_illfam_1                      
@@ -4366,11 +4515,16 @@ v172
 0 |  Did not experience illness of family member 
 1 |  Did experience illness of family member 
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:  Study specific variable asks about the past 12 months.  
 **R script**:  
 ```{r, echo=TRUE}
-v11f
+table(GLOBE1997$v11f) #1=yes 2=no
+
+soc_GLOBE_1$soc_le_illfam_1 <- ifelse(GLOBE1997$v11f =='1',1L, 
+                            ifelse(GLOBE1997$v11f =='2',0L, NA))
+
+table(soc_GLOBE_1$soc_le_illfam_1)
 ```
 ### **Variable label**:  Life event: illness of family member             
 **Variable name**:  soc_le_illfam_2                      
@@ -4384,11 +4538,16 @@ v11f
 0 |  Did not experience illness of family member 
 1 |  Did experience illness of family member 
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:  Study specific variable asks about the past 12 months. 
 **R script**:  
 ```{r, echo=TRUE}
-w269
+table(GLOBE2004$w269) #1=yes 0=no
+
+soc_GLOBE_2$soc_le_illfam_2 <- ifelse(GLOBE2004$w269 =='1',1L, 
+                            ifelse(GLOBE2004$w269 =='2',0L, NA))
+
+table(soc_GLOBE_2$soc_le_illfam_2)
 ```
 ### **Variable label**:  Life event: illness of family member             
 **Variable name**:  soc_le_illfam_3                      
@@ -4478,12 +4637,16 @@ w269
 0 |  Did not experience death of partner/spouse
 1 |  Did experience death of partner/spouse 
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:  Study specific variable asks about the past 12 months.   
 **R script**:  
 ```{r, echo=TRUE}
-v173
+table(GLOBE1991$v173) #1=yes 2=no
 
+soc_GLOBE_0$soc_le_dpart_0 <- ifelse(GLOBE1991$v173 =='1',1L, 
+                            ifelse(GLOBE1991$v173 =='2',0L, NA))
+
+table(soc_GLOBE_0$soc_le_dpart_0)
 ```
 ### **Variable label**:  Life event: death of partner             
 **Variable name**:  soc_le_dpart_1                                           
@@ -4497,11 +4660,16 @@ v173
 0 |  Did not experience death of partner/spouse
 1 |  Did experience death of partner/spouse 
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:  Study specific variable asks about the past 12 months.    
 **R script**:  
 ```{r, echo=TRUE}
-v11g
+table(GLOBE1997$v11g) #1=yes 2=no
+
+soc_GLOBE_1$soc_le_dpart_1 <- ifelse(GLOBE1997$v11g =='1',1L, 
+                            ifelse(GLOBE1997$v11g =='2',0L, NA))
+
+table(soc_GLOBE_1$soc_le_dpart_1)
 ```
 ### **Variable label**:  Life event: death of partner             
 **Variable name**:  soc_le_dpart_2                                           
@@ -4515,11 +4683,16 @@ v11g
 0 |  Did not experience death of partner/spouse
 1 |  Did experience death of partner/spouse 
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:  Study specific variable asks about the past 12 months.    
 **R script**:  
 ```{r, echo=TRUE}
-w270
+table(GLOBE2004$w270) #1=yes 2=no
+
+soc_GLOBE_2$soc_le_dpart_2 <- ifelse(GLOBE2004$w270 =='1',1L, 
+                            ifelse(GLOBE2004$w270 =='2',0L, NA))
+
+table(soc_GLOBE_2$soc_le_dpart_2)
 ```
 ### **Variable label**:  Life event: death of family member or friend                
 **Variable name**:  soc_le_dfam_0                                           
@@ -4533,11 +4706,16 @@ w270
 0 |  Did not experience death of child/family member/friend 
 1 |  Did experience death of child/family member/friend  
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:  Study specific variable asks about the past 12 months.     
 **R script**:  
 ```{r, echo=TRUE}
-v174
+table(GLOBE1991$v174) #1=yes 2=no
+
+soc_GLOBE_0$soc_le_dfam_0 <- ifelse(GLOBE1991$v174 =='1',1L, 
+                            ifelse(GLOBE1991$v174 =='2',0L, NA))
+
+table(soc_GLOBE_0$soc_le_dfam_0)
 ```
 ### **Variable label**:  Life event: death of family member or friend                
 **Variable name**:  soc_le_dfam_1                                           
@@ -4551,11 +4729,16 @@ v174
 0 |  Did not experience death of child/family member/friend  
 1 |  Did experience death of child/family member/friend   
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:  Study specific variable asks about the past 12 months.    
 **R script**:  
 ```{r, echo=TRUE}
-v11h
+table(GLOBE1997$v11h) #1=yes 2=no
+
+soc_GLOBE_1$soc_le_dfam_1 <- ifelse(GLOBE1997$v11h =='1',1L, 
+                            ifelse(GLOBE1997$v11h =='2',0L, NA))
+
+table(soc_GLOBE_1$soc_le_dfam_1)
 ```
 ### **Variable label**:  Life event: death of family member or friend                
 **Variable name**:  soc_le_dfam_2                                           
@@ -4569,11 +4752,16 @@ v11h
 0 |  Did not experience death of child/family member/friend  
 1 |  Did experience death of child/family member/friend  
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:  Study specific variable asks about the past 12 months.     
 **R script**:  
 ```{r, echo=TRUE}
-w271
+table(GLOBE2004$w271) #1=yes 2=no
+
+soc_GLOBE_2$soc_le_dfam_2 <- ifelse(GLOBE2004$w271 =='1',1L, 
+                            ifelse(GLOBE2004$w271 =='2',0L, NA))
+
+table(soc_GLOBE_2$soc_le_dfam_2)
 ```
 # Residential characteristics subdomain
 
@@ -4612,11 +4800,16 @@ w271
 **Variable unit**: years    
 **Category coding**:  
 
-**Harmonization status**:  impossible    
+**Harmonization status**:  complete   
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-w072b
+
+table(GLOBE2004$w072b) #1=yes 2=no
+
+soc_GLOBE_2$soc_res_num_yrsnbh_2 <- GLOBE2004$w072b
+
+table(soc_GLOBE_2$soc_res_num_yrsnbh_2)
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
 **Variable name**:  soc_res_num_yrsnbh_3          
@@ -4625,11 +4818,16 @@ w072b
 **Variable unit**:  years   
 **Category coding**:  
 
-**Harmonization status**:  impossible    
+**Harmonization status**:  complete    
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-v49_buurt_wndr
+table(GLOBE2011$v49_buurt_wndr)
+
+soc_GLOBE_3$soc_res_num_yrsnbh_3 <-GLOBE2011$v49_buurt_wndr 
+
+table(soc_GLOBE_3$soc_res_num_yrsnbh_3)
+
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
 **Variable name**:  soc_res_num_yrsnbh_4          
@@ -4638,11 +4836,15 @@ v49_buurt_wndr
 **Variable unit**:  years   
 **Category coding**:  
 
-**Harmonization status**:  impossible    
+**Harmonization status**:  complete   
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-G14v87
+table(GLOBE2014$G14v87)
+
+soc_GLOBE_4$soc_res_num_yrsnbh_4 <-GLOBE2014$G14v87 
+
+table(soc_GLOBE_4$soc_res_num_yrsnbh_4)
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
 **Variable name**:  soc_res_num_yrsnbh_5          
@@ -4820,11 +5022,17 @@ G14v87
 0 |  Does not want to move out of neighbourhood
 1 |  Does want to move out of neighbourhood
 
-**Harmonization status**:  impossible    
+**Harmonization status**:  complete    
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-w051 #1 strongly agree ...5= strongly disagree
+#w051 #1 strongly agree ...5= strongly disagree I would not move out
+table(GLOBE2004$w051)
+
+soc_GLOBE_2$soc_res_satis_2 <- ifelse(GLOBE2004$w051 == 4 | GLOBE2004$w051 == 5, 1L,     
+                                ifelse(GLOBE2004$w051 == 3 | GLOBE2004$w051 == 2 | GLOBE2004$w051 == 1, 0L, NA))
+                                               
+table(soc_GLOBE_2$soc_res_satis_2)
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
 **Variable name**:  soc_res_satis_3             
@@ -4838,11 +5046,17 @@ w051 #1 strongly agree ...5= strongly disagree
 0 |  Does not want to move out of neighbourhood
 1 |  Does want to move out of neighbourhood
 
-**Harmonization status**:  impossible    
+**Harmonization status**:  complete    
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-v53_b_buur2 #ATTENTION ******* not same coding as before****** 1= strongly DISAGREE and .... 5 = strongly AGREE 
+#ATTENTION ******* not same coding as before****** 1= strongly DISAGREE and .... 5 = strongly AGREE 
+table(GLOBE2011$v53_b_buur2)
+
+soc_GLOBE_3$soc_res_satis_3 <- ifelse(GLOBE2011$v53_b_buur2 == 1 | GLOBE2011$v53_b_buur2 == 2, 0L,     
+                                ifelse(GLOBE2011$v53_b_buur2 == 3 | GLOBE2011$v53_b_buur2 == 4 | GLOBE2011$v53_b_buur2 == 5, 1L, NA))
+                                               
+table(soc_GLOBE_3$soc_res_satis_3)
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
 **Variable name**:  soc_res_satis_4             
@@ -4856,11 +5070,17 @@ v53_b_buur2 #ATTENTION ******* not same coding as before****** 1= strongly DISAG
 0 |  Does not want to move out of neighbourhood
 1 |  Does want to move out of neighbourhood
 
-**Harmonization status**:  impossible    
+**Harmonization status**:  complete    
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-G14v90_g  #ATTENTION:******* 1= strongly agree and 5= strongly disagree
+#ATTENTION:******* 1= strongly agree and 5= strongly disagree
+table(GLOBE2014$G14v90_g)
+
+soc_GLOBE_4$soc_res_satis_4 <- ifelse(GLOBE2014$G14v90_g == 4 | GLOBE2014$G14v90_g == 5, 0L,     
+                                ifelse(GLOBE2014$G14v90_g == 1 | GLOBE2014$G14v90_g == 2 | GLOBE2014$G14v90_g == 3, 1L, NA))
+                                               
+table(soc_GLOBE_4$soc_res_satis_4)
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
 **Variable name**:  soc_res_satis_5             
@@ -4893,11 +5113,16 @@ G14v90_g  #ATTENTION:******* 1= strongly agree and 5= strongly disagree
 0 |  Has not moved since last interview
 1 |  Has moved since last interview
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   GLOBE asks if participant has moved in the past 12 months. 
+**Harmonization status**:  complete   
+**Harmonization comment**:   GLOBE asks if participant has moved in the past 12 months.   
 **R script**:  
 ```{r, echo=TRUE}
-v167 #1 yes 2 = no 9=?
+#1 yes 2 = no 9=?
+table(GLOBE1991$v167) 
+soc_GLOBE_0$soc_res_move_0 <- ifelse(GLOBE1991$v167=='1',1L, 
+                                             ifelse(GLOBE1991$v335=='2',0L, NA))
+table(soc_GLOBE_0$soc_res_move_0) 
+summary(soc_GLOBE_0$soc_res_move_0) 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
 **Variable name**:  soc_res_move_1                
@@ -4911,11 +5136,16 @@ v167 #1 yes 2 = no 9=?
 0 |  Has not moved since last interview
 1 |  Has moved since last interview
 
-**Harmonization status**:  impossible    
+**Harmonization status**:  complete    
 **Harmonization comment**:  GLOBE asks if participant has moved in the past 12 months.  
 **R script**:  
 ```{r, echo=TRUE}
-v11a  # -1 1= yes 2 = no 
+#v11a  # -1 1= yes 2 = no 
+table(GLOBE1997$v11a) 
+soc_GLOBE_1$soc_res_move_1 <- ifelse(GLOBE1997$v11a=='1',1L, 
+                                             ifelse(GLOBE1997$v11a=='2',0L, NA))
+table(soc_GLOBE_1$soc_res_move_1) 
+summary(soc_GLOBE_1$soc_res_move_1) 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
 **Variable name**:  soc_res_move_2                
@@ -4929,11 +5159,16 @@ v11a  # -1 1= yes 2 = no
 0 |  Has not moved since last interview
 1 |  Has moved since last interview
 
-**Harmonization status**:  impossible    
+**Harmonization status**:  complete    
 **Harmonization comment**:   GLOBE asks if participant has moved in the past 12 months. 
 **R script**:  
 ```{r, echo=TRUE}
-w264 # 1= yes 2=no 888 and 9 = ? 
+ # 1= yes 2=no 888 and 9 = ? 
+table(GLOBE2004$w264) 
+soc_GLOBE_2$soc_res_move_2 <- ifelse(GLOBE2004$w264=='1',1L, 
+                                             ifelse(GLOBE2004$w264=='2',0L, NA))
+table(soc_GLOBE_2$soc_res_move_2) 
+summary(soc_GLOBE_2$soc_res_move_2) 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
 **Variable name**:  soc_res_move_3                
@@ -5023,11 +5258,18 @@ w264 # 1= yes 2=no 888 and 9 = ?
 0 |  Lives independently  
 1 |  Lives in a nursing/ retirement home
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   GLOBE asks participant if they live in nursing/ retirement home. 
+**Harmonization status**:  complete   
+**Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-v155 # 1, 2, 4,5,6 = NOT nursing #3 nursing/ retirement home 
+ # 1, 2, 4,5,6 = NOT nursing #3 nursing/ retirement home 
+#Possible issue: frequency shows a 7th category but this is not present in the data dictionary
+table(GLOBE1991$v155) 
+soc_GLOBE_0$soc_res_indep_0 <- ifelse(GLOBE1991$v155=='1'|GLOBE1991$v155=='2'|GLOBE1991$v155=='4'|GLOBE1991$v155=='5'|GLOBE1991$v155=='6',0L, 
+                                             ifelse(GLOBE1991$v155=='3',1L, NA))
+table(soc_GLOBE_0$soc_res_indep_0) 
+summary(soc_GLOBE_0$soc_res_indep_0) 
+
 
 ```
 ### **Variable label**:  Residence independence     
@@ -5042,11 +5284,13 @@ v155 # 1, 2, 4,5,6 = NOT nursing #3 nursing/ retirement home
 0 |  Lives independently  
 1 |  Lives in a nursing/ retirement home
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**: impossible     
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
-r33d # 1  yes -nursing 2 yes-care 3 no 
+#This is where the R-script will be written
+# will not use the r variable since it is for critically ill sample only 
+
 ```
 ### **Variable label**:  Residence independence     
 **Variable name**:  soc_res_indep_2                  
@@ -5060,11 +5304,16 @@ r33d # 1  yes -nursing 2 yes-care 3 no
 0 |  Lives independently  
 1 |  Lives in a nursing/ retirement home
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:  GLOBE asks about nursing home/ retirement home.  
+**Harmonization status**:  complete    
+**Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-w040a # 1, 2, 4,5,6 = NOT nursing #3 nursing/ retirement home 
+ # 1, 2, 4,5,6 = NOT nursing #3 nursing/ retirement home 
+table(GLOBE2004$w040a) 
+soc_GLOBE_2$soc_res_indep_2 <-ifelse(GLOBE2004$w040a=='1'|GLOBE2004$w040a=='2'|GLOBE2004$w040a=='4'|GLOBE2004$w040a=='5'|GLOBE2004$w040a=='6',0L, 
+                                             ifelse(GLOBE2004$w040a=='3',1L, NA))
+table(soc_GLOBE_2$soc_res_indep_2) 
+summary(soc_GLOBE_2$soc_res_indep_2) 
 ```
 ### **Variable label**:  Residence independence     
 **Variable name**:  soc_res_indep_3                  
@@ -5157,11 +5406,20 @@ w040a # 1, 2, 4,5,6 = NOT nursing #3 nursing/ retirement home
 4 |  Lives on a farm
 5 |  Other
 
-**Harmonization status**:  impossible    
+**Harmonization status**:  complete    
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+ # 1, 2, 4,5,6 = NOT nursing #3 nursing/ retirement home 
+#Possible issue: frequency shows a 7th category but this is not present in the data dictionary
+table(GLOBE1991$v155) 
+soc_GLOBE_0$soc_res_type_0 <- ifelse(GLOBE1991$v155=='1',2L, 
+                                     ifelse(GLOBE1991$v155=='2',1L, 
+                                          ifelse(GLOBE1991$v155=='3',3L, 
+                                               ifelse(GLOBE1991$v155=='4'|GLOBE1991$v155=='6',5L,
+                                                    ifelse(GLOBE1991$v155=='5',4L, NA)))))
+table(soc_GLOBE_0$soc_res_type_0) 
+summary(soc_GLOBE_0$soc_res_type_0) 
 
 ```
 ### **Variable label**:  Residence type     
@@ -5201,11 +5459,19 @@ w040a # 1, 2, 4,5,6 = NOT nursing #3 nursing/ retirement home
 4 |  Lives on a farm
 5 |  Other
 
-**Harmonization status**:  impossible    
+**Harmonization status**:  complete    
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(GLOBE2004$w040a) 
+soc_GLOBE_2$soc_res_type_2 <- ifelse(GLOBE2004$w040a=='1',2L, 
+                                     ifelse(GLOBE2004$w040a=='2',1L, 
+                                          ifelse(GLOBE2004$w040a=='3',3L, 
+                                               ifelse(GLOBE2004$w040a=='4'|GLOBE2004$w040a=='6',5L,
+                                                    ifelse(GLOBE2004$w040a=='5',4L, NA)))))
+table(soc_GLOBE_2$soc_res_type_2) 
+summary(soc_GLOBE_2$soc_res_type_2) 
+
 
 ```
 ### **Variable label**:  Residence type     
@@ -5308,11 +5574,17 @@ w040a # 1, 2, 4,5,6 = NOT nursing #3 nursing/ retirement home
 0 |  Does not own home
 1 |  Does own home  
 
-**Harmonization status**:  impossible    
+**Harmonization status**:  complete    
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-v156 #1= owns 2= rent 9=NA?
+#1= owns 2= rent 9=NA?
+table(GLOBE1991$v156) 
+soc_GLOBE_0$soc_res_home_own_dich_0 <- ifelse(GLOBE1991$v156=='1',1L, 
+                                     ifelse(GLOBE1991$v156=='2',0L, NA))
+table(soc_GLOBE_0$soc_res_home_own_dich_0) 
+summary(soc_GLOBE_0$soc_res_home_own_dich_0) 
+
 ```
 ### **Variable label**:  Home ownership (2-level)      
 **Variable name**:  soc_res_home_own_dich_1                     
@@ -5326,11 +5598,16 @@ v156 #1= owns 2= rent 9=NA?
 0 |  Does not own home
 1 |  Does own home  
 
-**Harmonization status**:  impossible    
+**Harmonization status**:  complete    
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-g29a #1= own 2= other? 3? 
+ #1= own 2= other?
+table(GLOBE1997$g29a) 
+soc_GLOBE_1$soc_res_home_own_dich_1 <- ifelse(GLOBE1997$g29a=='1',1L, 
+                                             ifelse(GLOBE1997$g29a=='2',0L, NA))
+table(soc_GLOBE_1$soc_res_home_own_dich_1) 
+summary(soc_GLOBE_1$soc_res_home_own_dich_1) 
 ```
 ### **Variable label**:  Home ownership (2-level)      
 **Variable name**:  soc_res_home_own_dich_2                     
@@ -5344,11 +5621,16 @@ g29a #1= own 2= other? 3?
 0 |  Does not own home
 1 |  Does own home  
 
-**Harmonization status**:  impossible    
+**Harmonization status**:  complete    
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-w041 #1 = rent 
+ #1 = rent 
+table(GLOBE2004$w041) 
+soc_GLOBE_2$soc_res_home_own_dich_2 <- ifelse(GLOBE2004$w041=='1',1L, 
+                                             ifelse(GLOBE2004$w041=='2',0L, NA))
+table(soc_GLOBE_2$soc_res_home_own_dich_2) 
+summary(soc_GLOBE_2$soc_res_home_own_dich_2) 
 ```
 ### **Variable label**:  Home ownership (2-level)      
 **Variable name**:  soc_res_home_own_dich_3                     
@@ -5362,11 +5644,17 @@ w041 #1 = rent
 0 |  Does not own home
 1 |  Does own home  
 
-**Harmonization status**:  impossible    
+**Harmonization status**:  complete    
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-v50_huis_bez #1 own 
+ #1 own 
+table(GLOBE2011$v50_huis_bez) 
+
+soc_GLOBE_3$soc_res_home_own_dich_3 <- ifelse(GLOBE2011$v50_huis_bez =='1',1L, 
+                                                  ifelse(GLOBE2011$v50_huis_bez =='2',0L, NA))
+
+table(soc_GLOBE_3$soc_res_home_own_dich_3)
 ```
 ### **Variable label**:  Home ownership (2-level)      
 **Variable name**:  soc_res_home_own_dich_4                     
@@ -5380,11 +5668,17 @@ v50_huis_bez #1 own
 0 |  Does not own home
 1 |  Does own home  
 
-**Harmonization status**:  impossible    
+**Harmonization status**:  complete    
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-G14v88 #1 own 
+ #1 own 
+table(GLOBE2014$G14v88) 
+summary(GLOBE2014$G14v88) 
+soc_GLOBE_4$soc_res_home_own_dich_4 <- ifelse(GLOBE2014$G14v88=='1',1L, 
+                                             ifelse(GLOBE2014$G14v88=='2'|GLOBE2014$G14v88=='3',0L,NA))
+table(soc_GLOBE_4$soc_res_home_own_dich_4) 
+summary(soc_GLOBE_4$soc_res_home_own_dich_4) 
 ```
 ### **Variable label**:  Home ownership (2-level)      
 **Variable name**:  soc_res_home_own_dich_5                     
