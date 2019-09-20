@@ -51,9 +51,9 @@ soc_LASA1_6 <- data.frame(id = LASA1H$id)
 opal.logout(erasmus_opal) 
 ```
 
-# Table of Contents  
+# Table of Contents  
 1. [Social network subdomain](#social-network-subdomain)  
-2. [Social support subdomain](#social-support-subdomain)  
+2. [Social support subdomain](#social-support-subdomain)  
 3. [Social participation subdomain](#social-participation-subdomain)  
 4. [Major life events subdomain](#major-life-events-subdomain)  
 5. [Residential characteristics subdomain](#residential-characteristics-subdomain)
@@ -1626,6 +1626,104 @@ opal.logout(erasmus_opal)
 #This is where the R-script will be written
 
 ```
+### **Variable label**:   Quartile of participant's network size          
+**Variable name**:   soc_sn_num_network_all_0        
+**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
+**Value type**:  integer  
+**Variable unit**:  quartile      
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Quartile of participant's network size          
+**Variable name**:   soc_sn_num_network_all_1          
+**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
+**Value type**:  integer  
+**Variable unit**:  quartile      
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Quartile of participant's network size          
+**Variable name**:   soc_sn_num_network_all_2          
+**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
+**Value type**:  integer  
+**Variable unit**:  quartile      
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Quartile of participant's network size          
+**Variable name**:   soc_sn_num_network_all_3          
+**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
+**Value type**:  integer  
+**Variable unit**:  quartile      
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Quartile of participant's network size          
+**Variable name**:   soc_sn_num_network_all_4          
+**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
+**Value type**:  integer  
+**Variable unit**:  quartile      
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Quartile of participant's network size          
+**Variable name**:   soc_sn_num_network_all_5          
+**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
+**Value type**:  integer  
+**Variable unit**:  quartile      
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:   Quartile of participant's network size          
+**Variable name**:   soc_sn_num_network_all_6          
+**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
+**Value type**:  integer  
+**Variable unit**:  quartile      
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
 # Social support subdomain
 
 ### **Variable label**: Received emotional support    
@@ -2240,291 +2338,6 @@ opal.logout(erasmus_opal)
 
 # Social participation subdomain
 
-### **Variable label**:  Social isolation    
-**Variable name**:  soc_sp_isolation_0  
-**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not socially isolated, has social network and/ or social participation 
-1 |  Socially isolated, no social network and no social participation 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:  Social isolation    
-**Variable name**:  soc_sp_isolation_1  
-**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not socially isolated, has social network and/ or social participation 
-1 |  Socially isolated, no social network and no social participation 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:  Social isolation    
-**Variable name**:  soc_sp_isolation_2  
-**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not socially isolated, has social network and/ or social participation 
-1 |  Socially isolated, no social network and no social participation 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:  Social isolation    
-**Variable name**:  soc_sp_isolation_3  
-**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not socially isolated, has social network and/ or social participation 
-1 |  Socially isolated, no social network and no social participation 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:  Social isolation    
-**Variable name**:  soc_sp_isolation_4  
-**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not socially isolated, has social network and/ or social participation 
-1 |  Socially isolated, no social network and no social participation 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:  Social isolation    
-**Variable name**:  soc_sp_isolation_5  
-**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not socially isolated, has social network and/ or social participation 
-1 |  Socially isolated, no social network and no social participation 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:  Social isolation    
-**Variable name**:  soc_sp_isolation_6  
-**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not socially isolated, has social network and/ or social participation 
-1 |  Socially isolated, no social network and no social participation 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:  Social isolation    
-**Variable name**:  soc_sp_isolation_7  
-**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not socially isolated, has social network and/ or social participation 
-1 |  Socially isolated, no social network and no social participation 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:  Religious membership    
-**Variable name**:  soc_sp_mem_religious_0        
-**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not a member of a religious organization 
-1 |  Member of a religious organization 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:  Religious membership    
-**Variable name**:  soc_sp_mem_religious_1        
-**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not a member of a religious organization 
-1 |  Member of a religious organization 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:  Religious membership    
-**Variable name**:  soc_sp_mem_religious_2        
-**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not a member of a religious organization 
-1 |  Member of a religious organization 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:  Religious membership    
-**Variable name**:  soc_sp_mem_religious_3        
-**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not a member of a religious organization 
-1 |  Member of a religious organization 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:  Religious membership    
-**Variable name**:  soc_sp_mem_religious_4        
-**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not a member of a religious organization 
-1 |  Member of a religious organization 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:  Religious membership    
-**Variable name**:  soc_sp_mem_religious_5        
-**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not a member of a religious organization 
-1 |  Member of a religious organization 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:  Religious membership    
-**Variable name**:  soc_sp_mem_religious_6        
-**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not a member of a religious organization 
-1 |  Member of a religious organization 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
 ### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_0        
 **Variable description**:  Indicator of participation in a religious organization.      
@@ -3252,9 +3065,9 @@ opal.logout(erasmus_opal)
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Civic participation       
-**Variable name**:  soc_sp_civic_0                
-**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+### **Variable label**:  Political / union participation         
+**Variable name**:  soc_sp_pol_0                
+**Variable description**:  Indicator of participation in a union or political party.        
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
@@ -3271,9 +3084,9 @@ opal.logout(erasmus_opal)
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Civic participation       
-**Variable name**:  soc_sp_civic_1                
-**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+### **Variable label**:  Political / union participation         
+**Variable name**:  soc_sp_pol_1                
+**Variable description**:  Indicator of participation in a union or political party.        
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
@@ -3290,9 +3103,9 @@ opal.logout(erasmus_opal)
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Civic participation       
-**Variable name**:  soc_sp_civic_2                
-**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+### **Variable label**:  Political / union participation         
+**Variable name**:  soc_sp_pol_2                
+**Variable description**:  Indicator of participation in a union or political party.        
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
@@ -3309,9 +3122,9 @@ opal.logout(erasmus_opal)
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Civic participation       
-**Variable name**:  soc_sp_civic_3                
-**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+### **Variable label**:  Political / union participation         
+**Variable name**:  soc_sp_pol_3                
+**Variable description**:  Indicator of participation in a union or political party.        
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
@@ -3328,9 +3141,9 @@ opal.logout(erasmus_opal)
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Civic participation       
-**Variable name**:  soc_sp_civic_4                
-**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+### **Variable label**:  Political / union participation         
+**Variable name**:  soc_sp_pol_4                
+**Variable description**:  Indicator of participation in a union or political party.        
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
@@ -3347,9 +3160,9 @@ opal.logout(erasmus_opal)
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Civic participation       
-**Variable name**:  soc_sp_civic_5                
-**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+### **Variable label**:  Political / union participation         
+**Variable name**:  soc_sp_pol_5                
+**Variable description**:  Indicator of participation in a union or political party.        
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
@@ -3366,9 +3179,9 @@ opal.logout(erasmus_opal)
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Civic participation       
-**Variable name**:  soc_sp_civic_6                
-**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+### **Variable label**:  Political / union participation         
+**Variable name**:  soc_sp_pol_6                
+**Variable description**:  Indicator of participation in a union or political party.        
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
@@ -4042,6 +3855,158 @@ opal.logout(erasmus_opal)
 ------------- | -------------  
 0 |  Does not have a hobby
 1 |  Does have a hobby 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_0  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no/ low social network and no participation in an association (any type, including religious organization and volunteering).  
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_1  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no/ low social network and no participation in an association (any type, including religious organization and volunteering).  
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_2  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no/ low social network and no participation in an association (any type, including religious organization and volunteering).  
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_3  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no/ low social network and no participation in an association (any type, including religious organization and volunteering).  
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_4  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no/ low social network and no participation in an association (any type, including religious organization and volunteering).  
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_5  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no/ low social network and no participation in an association (any type, including religious organization and volunteering).  
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_6  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no/ low social network and no participation in an association (any type, including religious organization and volunteering).  
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_7  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no/ low social network and no participation in an association (any type, including religious organization and volunteering).  
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5144,8 +5109,8 @@ opal.logout(erasmus_opal)
 
 ```
 ### **Variable label**:  Residence independence     
-**Variable name**:  soc_res_home_0                  
-**Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
+**Variable name**:  soc_res_indep_0                  
+**Variable description**:  Indicator of whether the participant lives independently or in a nursing/ retirement home.        
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:  
@@ -5153,7 +5118,7 @@ opal.logout(erasmus_opal)
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Lives independently  
-1 |  Lives in a nursing home
+1 |  Lives in a nursing/ retirement home
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5163,8 +5128,8 @@ opal.logout(erasmus_opal)
 
 ```
 ### **Variable label**:  Residence independence     
-**Variable name**:  soc_res_home_1                  
-**Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
+**Variable name**:  soc_res_indep_1                  
+**Variable description**:  Indicator of whether the participant lives independently or in a nursing/ retirement home.        
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:  
@@ -5172,7 +5137,7 @@ opal.logout(erasmus_opal)
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Lives independently  
-1 |  Lives in a nursing home
+1 |  Lives in a nursing/ retirement home
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5182,8 +5147,8 @@ opal.logout(erasmus_opal)
 
 ```
 ### **Variable label**:  Residence independence     
-**Variable name**:  soc_res_home_2                  
-**Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
+**Variable name**:  soc_res_indep_2                  
+**Variable description**:  Indicator of whether the participant lives independently or in a nursing/ retirement home.        
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:  
@@ -5191,7 +5156,7 @@ opal.logout(erasmus_opal)
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Lives independently  
-1 |  Lives in a nursing home
+1 |  Lives in a nursing/ retirement home
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5201,8 +5166,8 @@ opal.logout(erasmus_opal)
 
 ```
 ### **Variable label**:  Residence independence     
-**Variable name**:  soc_res_home_3                  
-**Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
+**Variable name**:  soc_res_indep_3                  
+**Variable description**:  Indicator of whether the participant lives independently or in a nursing/ retirement home.        
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:  
@@ -5210,7 +5175,7 @@ opal.logout(erasmus_opal)
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Lives independently  
-1 |  Lives in a nursing home
+1 |  Lives in a nursing/ retirement home
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5220,8 +5185,8 @@ opal.logout(erasmus_opal)
 
 ```
 ### **Variable label**:  Residence independence     
-**Variable name**:  soc_res_home_4                  
-**Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
+**Variable name**:  soc_res_indep_4                  
+**Variable description**:  Indicator of whether the participant lives independently or in a nursing/ retirement home.        
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:  
@@ -5229,7 +5194,7 @@ opal.logout(erasmus_opal)
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Lives independently  
-1 |  Lives in a nursing home
+1 |  Lives in a nursing/ retirement home
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5239,8 +5204,8 @@ opal.logout(erasmus_opal)
 
 ```
 ### **Variable label**:  Residence independence     
-**Variable name**:  soc_res_home_5                  
-**Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
+**Variable name**:  soc_res_indep_5                  
+**Variable description**:  Indicator of whether the participant lives independently or in a nursing/ retirement home.        
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:  
@@ -5248,7 +5213,7 @@ opal.logout(erasmus_opal)
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Lives independently  
-1 |  Lives in a nursing home
+1 |  Lives in a nursing/ retirement home
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -5258,8 +5223,8 @@ opal.logout(erasmus_opal)
 
 ```
 ### **Variable label**:  Residence independence     
-**Variable name**:  soc_res_home_6                  
-**Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
+**Variable name**:  soc_res_indep_6                  
+**Variable description**:  Indicator of whether the participant lives independently or in a nursing/ retirement home.        
 **Value type**:  integer  
 **Variable unit**:   
 **Category coding**:  
@@ -5267,7 +5232,161 @@ opal.logout(erasmus_opal)
 **Code** | **Category Label**  
 ------------- | -------------  
 0 |  Lives independently  
-1 |  Lives in a nursing home
+1 |  Lives in a nursing/ retirement home
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residence type     
+**Variable name**:  soc_res_type_0                    
+**Variable description**:  Indicator of type of home in which participant lives.           
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Lives in a flat/ apartment   
+2 |  Lives in a single-family house (terraced house/ townhouse, semi-detached, detached)  
+3 |  Lives in a nursing home, retirement home, home for the elderly
+4 |  Lives on a farm
+5 |  Other
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residence type     
+**Variable name**:  soc_res_type_1                    
+**Variable description**:  Indicator of type of home in which participant lives.           
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Lives in a flat/ apartment   
+2 |  Lives in a single-family house (terraced house/ townhouse, semi-detached, detached)  
+3 |  Lives in a nursing home, retirement home, home for the elderly
+4 |  Lives on a farm
+5 |  Other
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residence type     
+**Variable name**:  soc_res_type_2                    
+**Variable description**:  Indicator of type of home in which participant lives.           
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Lives in a flat/ apartment   
+2 |  Lives in a single-family house (terraced house/ townhouse, semi-detached, detached)  
+3 |  Lives in a nursing home, retirement home, home for the elderly
+4 |  Lives on a farm
+5 |  Other
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residence type     
+**Variable name**:  soc_res_type_3                    
+**Variable description**:  Indicator of type of home in which participant lives.           
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Lives in a flat/ apartment   
+2 |  Lives in a single-family house (terraced house/ townhouse, semi-detached, detached)  
+3 |  Lives in a nursing home, retirement home, home for the elderly
+4 |  Lives on a farm
+5 |  Other
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residence type     
+**Variable name**:  soc_res_type_4                    
+**Variable description**:  Indicator of type of home in which participant lives.           
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Lives in a flat/ apartment   
+2 |  Lives in a single-family house (terraced house/ townhouse, semi-detached, detached)  
+3 |  Lives in a nursing home, retirement home, home for the elderly
+4 |  Lives on a farm
+5 |  Other
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residence type     
+**Variable name**:  soc_res_type_5                    
+**Variable description**:  Indicator of type of home in which participant lives.           
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Lives in a flat/ apartment   
+2 |  Lives in a single-family house (terraced house/ townhouse, semi-detached, detached)  
+3 |  Lives in a nursing home, retirement home, home for the elderly
+4 |  Lives on a farm
+5 |  Other
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Residence type     
+**Variable name**:  soc_res_type_6                    
+**Variable description**:  Indicator of type of home in which participant lives.           
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Lives in a flat/ apartment   
+2 |  Lives in a single-family house (terraced house/ townhouse, semi-detached, detached)  
+3 |  Lives in a nursing home, retirement home, home for the elderly
+4 |  Lives on a farm
+5 |  Other
 
 **Harmonization status**:  
 **Harmonization comment**:   
