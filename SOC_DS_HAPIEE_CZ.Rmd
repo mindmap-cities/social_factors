@@ -15,7 +15,7 @@ library(opal)
 erasmus_opal <- opal.login()
 #Login to Opal server and assign the content of the HAPIEE table(s) to your RStudio environment
 #HAPIEE_W1 
-opal.assign.table.tibble(erasmus_opal, 'HAPIEE_W1', 'HAPIEE.HAPIEE_W1',variables = list('country'))
+opal.assign.table.tibble(erasmus_opal, 'HAPIEE_W1', 'HAPIEE.HAPIEE_W1',variables = list('country','p58','p57','p55'))
 HAPIEE_W1<- opal.execute(erasmus_opal,'HAPIEE_W1')
 #HAPIEE_W2 
 opal.assign.table.tibble(erasmus_opal, 'HAPIEE_W2', 'HAPIEE.HAPIEE_W2',variables = list('country'))
@@ -160,7 +160,7 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+#w2chldno exists but it is not loaded in Obiba (only w2child_lt)
 
 ```
 
@@ -400,12 +400,19 @@ opal.logout(erasmus_opal)
 4 |  Monthly in-person contact with friends   
 5 |  Never or less than a year in-person contact with friends  
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  complete  
+**Harmonization comment**: Study specific variable does not ask about daily contact with friends therefore for this study the DataSchema's category 1, daily in-person contact with friends, is empty. To use this DataSchema with other MINDMAP cohorts, category 1 and 2 of this DataSchema must be collapsed into one category: daily and weekly in-person contact with friends.     
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+#p58
+table(HAPIEE_W1$p58) 
 
+soc_HAPIEE_CZ_0$soc_sn_freq_friends_inperson_0 <-  ifelse(HAPIEE_W1$p58=='1',2L, 
+                                                     ifelse(HAPIEE_W1$p58=='2' | HAPIEE_W1$p58=='3',3L,
+                                                       ifelse(HAPIEE_W1$p58 =='4',4L, 
+                                                         ifelse(HAPIEE_W1$p58 =='5' | HAPIEE_W1$p58 =='5',5L,NA))))
+
+table(soc_HAPIEE_CZ_0$soc_sn_freq_friends_inperson_0) 
 ``` 
 ### **Variable label**:   In-person contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_inperson_1       
@@ -1225,11 +1232,18 @@ opal.logout(erasmus_opal)
 3 |  Monthly contact with relatives 
 4 |  Never or less than a year contact with relatives  
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  complete  
+**Harmonization comment**:   Study specific variable does not ask about daily contact with relatives therefore for this study the DataSchema's category 1, daily in-person contact with relatives, is empty. To use this DataSchema with other MINDMAP cohorts, category 1 and 2 of this DataSchema must be collapsed into one category: daily and weekly in-person contact with relatives.       
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+#p57
+table(HAPIEE_W1$p57) 
+
+soc_HAPIEE_CZ_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W1$p57=='1'|HAPIEE_W1$p57=='2',1L, 
+                                                     ifelse(HAPIEE_W1$p57=='3',2L,
+                                                       ifelse(HAPIEE_W1$p57 =='4',3L, 
+                                                         ifelse(HAPIEE_W1$p57 =='5' | HAPIEE_W1$p57 =='6',4L,NA))))
+table(soc_HAPIEE_CZ_0$soc_sn_freq_relatives_0)
 
 ```
 ### **Variable label**:   Contact frequency with relatives      
@@ -1352,357 +1366,6 @@ opal.logout(erasmus_opal)
 4 |  Never or less than a year contact with relatives  
 
 **Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Network size of non-kin      
-**Variable name**:   soc_sn_num_nonkin_0    
-**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
-**Value type**:  integer  
-**Variable unit**: members       
-**Category coding**:   
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Network size of non-kin      
-**Variable name**:   soc_sn_num_nonkin_1      
-**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
-**Value type**:  integer  
-**Variable unit**: members       
-**Category coding**:   
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Network size of non-kin      
-**Variable name**:   soc_sn_num_nonkin_2      
-**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
-**Value type**:  integer  
-**Variable unit**: members       
-**Category coding**:      
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Network size of non-kin      
-**Variable name**:   soc_sn_num_nonkin_3      
-**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
-**Value type**:  integer  
-**Variable unit**:  members      
-**Category coding**:   
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Network size of non-kin      
-**Variable name**:   soc_sn_num_nonkin_4      
-**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
-**Value type**:  integer  
-**Variable unit**:  members      
-**Category coding**:     
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Network size of non-kin      
-**Variable name**:   soc_sn_num_nonkin_5      
-**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
-**Value type**:  integer  
-**Variable unit**:  members      
-**Category coding**:   
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Network size of non-kin      
-**Variable name**:   soc_sn_num_nonkin_6      
-**Variable description**: Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
-**Value type**:  integer  
-**Variable unit**: members       
-**Category coding**:      
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-
-### **Variable label**:   Contact frequency with non-kin  
-**Variable name**:   soc_sn_freq_nonkin_0          
-**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
-**Value type**:  integer  
-**Variable unit**:      
-**Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-1 |  Daily contact with non-kin members  
-2 |  Weekly contact with non-kin members  
-3 |  Biweekly contact with non-kin members  
-4 |  Monthly contact with non-kin members  
-5 |  Never or less than a year contact with non-kin members     
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Contact frequency with non-kin  
-**Variable name**:   soc_sn_freq_nonkin_1            
-**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
-**Value type**:  integer  
-**Variable unit**:      
-**Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members     
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Contact frequency with non-kin  
-**Variable name**:   soc_sn_freq_nonkin_2            
-**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
-**Value type**:  integer  
-**Variable unit**:      
-**Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members       
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Contact frequency with non-kin  
-**Variable name**:   soc_sn_freq_nonkin_3            
-**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
-**Value type**:  integer  
-**Variable unit**:      
-**Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members     
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Contact frequency with non-kin  
-**Variable name**:   soc_sn_freq_nonkin_4            
-**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
-**Value type**:  integer  
-**Variable unit**:      
-**Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members     
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Contact frequency with non-kin  
-**Variable name**:   soc_sn_freq_nonkin_5          
-**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
-**Value type**:  integer  
-**Variable unit**:      
-**Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members     
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Contact frequency with non-kin  
-**Variable name**:   soc_sn_freq_nonkin_6          
-**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
-**Value type**:  integer  
-**Variable unit**:      
-**Category coding**:   
-
-**Code** | **Category Label**  
-------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members     
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_0        
-**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_1          
-**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_2          
-**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_3          
-**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_4          
-**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_5          
-**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_6          
-**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3328,11 +2991,18 @@ opal.logout(erasmus_opal)
 0 |  Does not take part in a social organization/volunteers   
 1 |  Does take part in a social organization/volunteers   
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:  Study specific variable asks about membership in particular, not participation.    
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+#p55
+
+table(HAPIEE_W1$p55) #1 yes, a member  2 no
+
+soc_HAPIEE_CZ_0$soc_sp_general_0 <- ifelse(HAPIEE_W1$p55=='1',1L, 
+                                                    ifelse(HAPIEE_W1$p55 =='2',0L, NA))
+
+table(soc_HAPIEE_CZ_0$soc_sp_general_0)
 
 ```
 ### **Variable label**:  General social participation            

@@ -24,10 +24,10 @@ GLOBE1997 <- opal.execute(erasmus_opal,'GLOBE1997')
 opal.assign.table.tibble(erasmus_opal, 'GLOBE2004', 'GLOBE.GLOBE2004',variables = list('w266','w264','w265','w270','w271','w272','w269','w072b','w051','w040a','w041','w289','w264','w265','w266','w267','w268','w269','w270','w271','w272','w072b','w051','w264'))
 GLOBE2004 <- opal.execute(erasmus_opal,'GLOBE2004')
 # GLOBE2011
-opal.assign.table.tibble(erasmus_opal, 'GLOBE2011', 'GLOBE.GLOBE2011',variables = list('v49_buurt_wndr','53_b_buur2','v50_huis_bez','v61_c_o_vak','v61_d_o_pol','v61_e_o_ker','v61_f_o_buu','v61_g_o_ner','v59_f_ond6','v61_d_o_pol','v61_c_o_vak','v61_f_o_buu','v61_g_o_ner','v61_b_o_hob','v49_buurt_wndr','v53_b_buur2'))
+opal.assign.table.tibble(erasmus_opal, 'GLOBE2011', 'GLOBE.GLOBE2011',variables = list('v49_buurt_wndr','53_b_buur2','v50_huis_bez','v61_c_o_vak','v61_d_o_pol','v61_e_o_ker','v61_f_o_buu','v61_g_o_ner','v59_f_ond6','v61_d_o_pol','v61_c_o_vak','v61_f_o_buu','v61_g_o_ner','v61_b_o_hob','v49_buurt_wndr','v53_b_buur2','v59_a_ond1'))
 GLOBE2011 <- opal.execute(erasmus_opal,'GLOBE2011')
 # GLOBE2014
-opal.assign.table.tibble(erasmus_opal, 'GLOBE2014', 'GLOBE.GLOBE2014',variables = list('G14v9','G14v87','G14v90_g','G14v88','G14v42','G14v46','G14v54','G14v55','G14v36','G14v40','G14v59_f','G14v56_e','G14v56_g','G14v56_c','G14v56_d','G14v56_f','G14v56_h','G14v56_b','G14v87','G14v90_g'))
+opal.assign.table.tibble(erasmus_opal, 'GLOBE2014', 'GLOBE.GLOBE2014',variables = list('G14v9','G14v87','G14v90_g','G14v88','G14v42','G14v46','G14v54','G14v55','G14v36','G14v40','G14v59_f','G14v56_e','G14v56_g','G14v56_c','G14v56_d','G14v56_f','G14v56_h','G14v56_b','G14v87','G14v90_g','G14v45','G14v59_a'))
 GLOBE2014 <- opal.execute(erasmus_opal,'GLOBE2014')
 ```
 ## Assign participant id as first column of your harmonized dataframes
@@ -1484,15 +1484,15 @@ table(GLOBE2014$G14v40)
 #4 Once a month 
 #5 Less than once a month
 
-soc_GLOBE_4$soc_sn_freq_close_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOBE2014$G14v40=='2' ,1, 
+soc_GLOBE_4$soc_sn_freq_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOBE2014$G14v40=='2' ,1, 
                                                   ifelse(GLOBE2014$G14v40=='3',2,
                                                     ifelse(GLOBE2014$G14v40=='4',3,
                                                            ifelse(GLOBE2014$G14v40=='5',4,
                                                                    ifelse(GLOBE2014$G14v40=='5',5, 
                                                                          ifelse(GLOBE2014$G14v40=='6',6, NA))))))
 
-table(soc_GLOBE_4$soc_sn_freq_close_relatives_4) 
-summary(soc_GLOBE_4$soc_sn_freq_close_relatives_4)
+table(soc_GLOBE_4$soc_sn_freq_relatives_4) 
+summary(soc_GLOBE_4$soc_sn_freq_relatives_4)
 
 ```
 ### **Variable label**:   Contact frequency with relatives     
@@ -1637,11 +1637,18 @@ summary(soc_GLOBE_1$soc_ss_received_emo_1)
 1 |  Sometimes received emotional support
 2 |  Often received emotional support
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:  This DataSchema is composed of one item:  How often is this kind of support available to you if you need it: Someone who shows you love and affection, unlike soc_ss_received_emo_0, soc_ss_received_emo_1 which are composed of 3 items (per three confidants). Study specific variable categories: 'one of the time' and 'most of the time' are recoded as 'never receiving support', 'some of the time' is recoded as 'sometimes receiving support', and 'most of the time' and 'all of the time' are recoded as often reciving emotional support.   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+#someone who shows you love and affection v59_a_ond1 1 and 2 is none of the time 
+table(GLOBE2011$v59_a_ond1)
+
+soc_GLOBE_3$soc_ss_received_emo_3 <- ifelse(GLOBE2011$v59_a_ond1 ==1|GLOBE2011$v59_a_ond1 ==2,0L, 
+                                            ifelse(GLOBE2011$v59_a_ond1 ==3, 1L, 
+                                              ifelse(GLOBE2011$v59_a_ond1 ==4 | GLOBE2011$v59_a_ond1 ==5,2L,NA)))
+
+table(soc_GLOBE_3$soc_ss_received_emo_3)
 
 ```
 ### **Variable label**: Received emotional support    
@@ -1657,11 +1664,19 @@ summary(soc_GLOBE_1$soc_ss_received_emo_1)
 1 |  Sometimes received emotional support
 2 |  Often received emotional support
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
+**Harmonization status**:  complete    
+**Harmonization comment**:  This DataSchema is composed of one item:  How often is this kind of support available to you if you need it: Someone who shows you love and affection, unlike soc_ss_received_emo_0, soc_ss_received_emo_1 which are composed of 3 items (per three confidants). Study specific variable categories: 'one of the time' and 'most of the time' are recoded as 'never receiving support', 'some of the time' is recoded as 'sometimes receiving support', and 'most of the time' and 'all of the time' are recoded as often reciving emotional support  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+# G14v59_a 1 and 2 are most and all of the time
+
+table(GLOBE2014$G14v59_a)
+
+soc_GLOBE_4$soc_ss_received_emo_4 <- ifelse(GLOBE2014$G14v59_a ==4|GLOBE2014$G14v59_a ==5,0L, 
+                                            ifelse(GLOBE2014$G14v59_a ==3, 1L, 
+                                              ifelse(GLOBE2014$G14v59_a ==1 | GLOBE2014$G14v59_a ==2,2L,NA)))
+
+table(soc_GLOBE_4$soc_ss_received_emo_4)
 
 ```
 ### **Variable label**: Received emotional support    
@@ -3935,7 +3950,7 @@ table(soc_GLOBE_4$soc_sp_hobby_4)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#check network, nr children was not harmonized in this wave (_3) but it was in (_4) thus I do not think we should harmonize without it  since then we might be miscategorizing those with children as having no network
+#This is where the R-script will be written
 
 
 ```
@@ -3952,14 +3967,39 @@ table(soc_GLOBE_4$soc_sp_hobby_4)
 1 |  Socially isolated, no social network and no social participation 
 
 **Harmonization status**:  complete   
-**Harmonization comment**:    
+**Harmonization comment**: 97% of respondents were categorized the same (as isolated or not isoldated) using either i) study available DataSchema social network variables (children, friends, neighbours, relatives) in addition to the general participation variable or ii) study available DataSchema social network - contact frequency variables (friends, neighbours, relatives, close relatived) in addition to the general participation variable. Approach i) was chosen for the transformation of this DataSchema.       
 **R script**:  
 ```{r, echo=TRUE}
 
+# using network (all)
 soc_GLOBE_4$soc_sp_isolation_4 <- ifelse((soc_GLOBE_4$soc_sn_children_rank_4 == 0 | soc_GLOBE_4$soc_sn_num_friends_4 ==0 | soc_GLOBE_4$soc_sn_num_nbhs_4 ==0 | soc_GLOBE_4$soc_sn_num_relatives_4 ==0) & soc_GLOBE_4$soc_sp_general_4 == 0,1L, 
                                                   ifelse((soc_GLOBE_4$soc_sn_children_rank_4 >= 1 | soc_GLOBE_4$soc_sn_num_friends_4 >= 1 | soc_GLOBE_4$soc_sn_num_nbhs_4 >= 1 | soc_GLOBE_4$soc_sn_num_relatives_4 >= 1) & soc_GLOBE_4$soc_sp_general_4 == 1, 0L, NA ))
 
 table(soc_GLOBE_4$soc_sp_isolation_4)
+#0 3178 not isolated 
+#1 417 isolated
+
+# or using frequency (all)
+
+soc_GLOBE_4$soc_sn_freq_friends_inperson_4
+soc_GLOBE_4$soc_sn_freq_friends_4
+soc_GLOBE_4$soc_sn_freq_nbhs_4
+soc_sn_freq_close_relatives_4
+soc_sn_freq_relatives_4
+
+soc_GLOBE_4$soc_sp_isolation_4x <- ifelse((soc_GLOBE_4$soc_sn_freq_friends_inperson_4 == 5 | soc_GLOBE_4$soc_sn_freq_friends_4 ==5 | soc_GLOBE_4$soc_sn_freq_nbhs_4 ==5 | soc_GLOBE_4$soc_sn_freq_close_relatives_4 ==4 |soc_GLOBE_4$soc_sn_freq_relatives_4==4 ) & soc_GLOBE_4$soc_sp_general_4 == 0,1L, 
+                                                  ifelse((soc_GLOBE_4$soc_sn_children_rank_4 >= 1 | soc_GLOBE_4$soc_sn_num_friends_4 >= 1 | soc_GLOBE_4$soc_sn_num_nbhs_4 >= 1 | soc_GLOBE_4$soc_sn_num_relatives_4 >= 1) & soc_GLOBE_4$soc_sp_general_4 == 1, 0L, NA ))
+table(soc_GLOBE_4$soc_sp_isolation_4x)
+# 3178 not isolated, 474 isolated
+# using freq only the 2 vars that HAPIEE has makes no sense since diff cultures might have diff social processes e.g. frequncy of seeing family in E Europe might be enough vs Western cultures
+
+#check if same ppl have low soc ntwork and low freq
+
+soc_GLOBE_4$cor_measure<-ifelse(soc_GLOBE_4$soc_sp_isolation_4x ==0 & soc_GLOBE_4$soc_sp_isolation_4 == 0, 1, ifelse(soc_GLOBE_4$soc_sp_isolation_4x ==1 & soc_GLOBE_4$soc_sp_isolation_4 == 1, 0, NA))
+
+table(soc_GLOBE_4$cor_measure) # shows that 3178 participants have the same isolation characterization using either the network or contact frequency (in addition to participation)  
+
+
 ```
 ### **Variable label**:  Social isolation    
 **Variable name**:  soc_sp_isolation_5  

@@ -158,7 +158,7 @@ soc_RECORD_1$soc_sn_num_children_1 <- as.integer(ifelse(RECORD_w2$Qm137 %in% c(0
 **Harmonization comment**:  Non-whole numbers set as NA.  RECORD does not ask what type of child respondent has.   
 **R script**:  
 ```{r, echo=TRUE}
-soc_RECORD_0$soc_sn_children_rank_0_test <- as.integer(ifelse(RECORD_w1_1$Qm3==0,0L, ifelse(RECORD_w1_1$Qm3==1 | RECORD_w1_1$Qm3==2,1L, ifelse(RECORD_w1_1$Qm3 %in% c(3:15),2L,NA))))
+soc_RECORD_0$soc_sn_children_rank_0 <- as.integer(ifelse(RECORD_w1_1$Qm3==0,0L, ifelse(RECORD_w1_1$Qm3==1 | RECORD_w1_1$Qm3==2,1L, ifelse(RECORD_w1_1$Qm3 %in% c(3:15),2L,NA))))
 
 ```
 
@@ -3862,12 +3862,22 @@ soc_RECORD_0$soc_sp_general_0 <- ifelse(RECORD_w1_1$soc_sp_general_0_inter == 1 
 1 |  Socially isolated, no social network and no social participation 
 
 **Harmonization status**:  complete
-**Harmonization comment**: composed of RECORD's item Q5_e that asks if the participant has no friends and soc_sp_general_0
+**Harmonization comment**: Participants that have reported that they have no friends or children, and reported no social participation are used to identify socially isolated participants in RECORD. 
 **R script**:  
 ```{r, echo=TRUE}
+table(soc_RECORD_0$soc_sn_children_rank_0)
+
+soc_RECORD_0$soc_sp_isolation_0 <- ifelse((RECORD_w1_1$Q5_e=='1' | soc_RECORD_0$soc_sn_children_rank_0=='0') & soc_RECORD_0$soc_sp_general_0 == 0,1, 
+                 ifelse((RECORD_w1_1$Q5_e=='0' | soc_RECORD_0$soc_sn_children_rank_0>='1') & soc_RECORD_0$soc_sp_general_0 == 1, 0, NA))
+table(soc_RECORD_0$soc_sp_isolation_0)
+summary(soc_RECORD_0$soc_sp_isolation_0) #2787 1597 isolated 
+
+#old code
 
 soc_RECORD_0$soc_sp_isolation_0 <- ifelse(RECORD_w1_1$Q5_e=='1' & soc_RECORD_0$soc_sp_general_0 == 0,1, 
-                 ifelse(RECORD_w1_1$Q5_e=='0' | soc_RECORD_0$soc_sp_general_0 == 1, 0, NA))
+                 ifelse(RECORD_w1_1$Q5_e=='0'  & soc_RECORD_0$soc_sp_general_0 == 1, 0, NA))
+table(soc_RECORD_0$soc_sp_isolation_0)
+summary(soc_RECORD_0$soc_sp_isolation_0) #2639    406 isolated 
 
 ```
 ### **Variable label**:  Social isolation    
