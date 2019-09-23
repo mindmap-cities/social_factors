@@ -4844,10 +4844,10 @@ table(soc_GLOBE_2$soc_le_dfam_2)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
+#email from Marielle says that w072b is in months not years, w072a is the residence duration in months, hence I corrected this in the code below
+table(GLOBE2004$w072a) #1=yes 2=no
 
-table(GLOBE2004$w072b) #1=yes 2=no
-
-soc_GLOBE_2$soc_res_num_yrsnbh_2 <- GLOBE2004$w072b
+soc_GLOBE_2$soc_res_num_yrsnbh_2 <- GLOBE2004$w072a
 
 table(soc_GLOBE_2$soc_res_num_yrsnbh_2)
 ```
