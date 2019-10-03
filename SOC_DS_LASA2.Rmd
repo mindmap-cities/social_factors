@@ -17,14 +17,26 @@ erasmus_opal <- opal.login()
 # LASA2B
 opal.assign.table.tibble(erasmus_opal, 'LASA2B', 'LASA.LASA2B',variables = list())
 LASA2B <- opal.execute(erasmus_opal,'LASA2B')
+
+opal.assign.table.tibble(erasmus_opal, 'LASA2B', 'LASA.LASA2B_socialnet',variables = list())
+LASA2B <- opal.execute(erasmus_opal,'LASA2B')
 # LASA2F
 opal.assign.table.tibble(erasmus_opal, 'LASA2F', 'LASA.LASA2F', variables=list()) 
 LASA2F<- opal.execute(erasmus_opal,'LASA2F')
+
+opal.assign.table.tibble(erasmus_opal, 'LASA2F', 'LASA.LASA2F_socialnet', variables=list()) 
+LASA2F<- opal.execute(erasmus_opal,'LASA2F')
 # LASA2G
-opal.assign.table.tibble(erasmus_opal,'LASA2G','LASA.LASA1G',variables=list()) 
+opal.assign.table.tibble(erasmus_opal,'LASA2G','LASA.LASA2G',variables=list()) 
+LASA2G <- opal.execute(erasmus_opal,'LASA2G')
+
+opal.assign.table.tibble(erasmus_opal,'LASA2G','LASA.LASA2G_socialnet',variables=list()) 
 LASA2G <- opal.execute(erasmus_opal,'LASA2G')
 # LASA2H
 opal.assign.table.tibble(erasmus_opal, 'LASA2H', 'LASA.LASA2H', variables= list()) 
+LASA2H <- opal.execute(erasmus_opal,'LASA2H')
+
+opal.assign.table.tibble(erasmus_opal, 'LASA2H', 'LASA.LASA2H_socialnet', variables= list()) 
 LASA2H <- opal.execute(erasmus_opal,'LASA2H')
 ```
 ## Assign participant id as first column of your harmonized dataframes
@@ -971,9 +983,18 @@ opal.logout(erasmus_opal)
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_0    
 **Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which the participant is close to, i.e. is in touch with regularly.           
-**Value type**:  integer  
+**Value type**:  
 **Variable unit**: relatives     
 **Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  None
+2 |  1 or 2
+3 |  3 to 5
+4 |  6 to 10
+5 |  11 to 20 
+6 |  More than 20
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -985,9 +1006,18 @@ opal.logout(erasmus_opal)
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_1    
 **Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which the participant is close to, i.e. is in touch with regularly.           
-**Value type**:  integer  
+**Value type**:    
 **Variable unit**:  relatives    
 **Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  None
+2 |  1 or 2
+3 |  3 to 5
+4 |  6 to 10
+5 |  11 to 20 
+6 |  More than 20
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -999,9 +1029,18 @@ opal.logout(erasmus_opal)
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_2    
 **Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
-**Value type**:  integer  
+**Value type**: 
 **Variable unit**:  relatives      
 **Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  None
+2 |  1 or 2
+3 |  3 to 5
+4 |  6 to 10
+5 |  11 to 20 
+6 |  More than 20
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1013,9 +1052,18 @@ opal.logout(erasmus_opal)
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_3    
 **Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
-**Value type**:  integer  
+**Value type**:   
 **Variable unit**: relatives        
 **Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  None
+2 |  1 or 2
+3 |  3 to 5
+4 |  6 to 10
+5 |  11 to 20 
+6 |  More than 20
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1027,9 +1075,18 @@ opal.logout(erasmus_opal)
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_4    
 **Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
-**Value type**:  integer  
+**Value type**:   
 **Variable unit**: relatives       
 **Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  None
+2 |  1 or 2
+3 |  3 to 5
+4 |  6 to 10
+5 |  11 to 20 
+6 |  More than 20
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1041,9 +1098,18 @@ opal.logout(erasmus_opal)
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_5    
 **Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
-**Value type**:  integer  
+**Value type**:  
 **Variable unit**:  relatives      
 **Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  None
+2 |  1 or 2
+3 |  3 to 5
+4 |  6 to 10
+5 |  11 to 20 
+6 |  More than 20
    
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1055,9 +1121,18 @@ opal.logout(erasmus_opal)
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_6    
 **Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
-**Value type**:  integer  
+**Value type**:    
 **Variable unit**: relatives       
 **Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  None
+2 |  1 or 2
+3 |  3 to 5
+4 |  6 to 10
+5 |  11 to 20 
+6 |  More than 20
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1614,104 +1689,6 @@ opal.logout(erasmus_opal)
 #This is where the R-script will be written
 
 ```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_0        
-**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_1          
-**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_2          
-**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_3          
-**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_4          
-**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_5          
-**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_6          
-**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
 # Social support subdomain
 
 ### **Variable label**: Received emotional support    
@@ -1848,104 +1825,6 @@ opal.logout(erasmus_opal)
 2 |  Often received emotional support
 
 **Harmonization status**:     
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_0 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.       
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_1 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.         
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_2 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.         
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_3 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.      
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_4 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.       
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_5 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.       
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_6 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.      
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}

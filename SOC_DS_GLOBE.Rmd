@@ -21,7 +21,7 @@ GLOBE1991 <- opal.execute(erasmus_opal,'GLOBE1991')
 opal.assign.table.tibble(erasmus_opal, 'GLOBE1997', 'GLOBE.GLOBE1997',variables = list('v11c','v11a','v11b','v11g','v11h','v11i','v11f','g29a','g9c1','g9c2','g9c3','g9a2','g9a3','g9a1','g9g1','g9g2','g9g3','g9f1','g9f2','g9f3','g9b1','g9b2','g9b3','v11a','v11b','v11c','v11d','v11e','v11f','v11g','v11h','v11i','v11a'))
 GLOBE1997 <- opal.execute(erasmus_opal,'GLOBE1997')
 # GLOBE2004
-opal.assign.table.tibble(erasmus_opal, 'GLOBE2004', 'GLOBE.GLOBE2004',variables = list('w266','w264','w265','w270','w271','w272','w269','w072b','w051','w040a','w041','w289','w264','w265','w266','w267','w268','w269','w270','w271','w272','w072b','w051','w264'))
+opal.assign.table.tibble(erasmus_opal, 'GLOBE2004', 'GLOBE.GLOBE2004',variables = list('w266','w264','w265','w270','w271','w272','w269','w072b','w051','w040a','w041','w289','w264','w265','w266','w267','w268','w269','w270','w271','w272','w072b','w051','w264','w072a'))
 GLOBE2004 <- opal.execute(erasmus_opal,'GLOBE2004')
 # GLOBE2011
 opal.assign.table.tibble(erasmus_opal, 'GLOBE2011', 'GLOBE.GLOBE2011',variables = list('v49_buurt_wndr','53_b_buur2','v50_huis_bez','v61_c_o_vak','v61_d_o_pol','v61_e_o_ker','v61_f_o_buu','v61_g_o_ner','v59_f_ond6','v61_d_o_pol','v61_c_o_vak','v61_f_o_buu','v61_g_o_ner','v61_b_o_hob','v49_buurt_wndr','v53_b_buur2','v59_a_ond1'))
@@ -167,9 +167,9 @@ opal.logout(erasmus_opal)
 ```{r, echo=TRUE}
 table(GLOBE1991$v335) 
 summary(GLOBE1991$v335) 
-soc_GLOBE_0$soc_sn_children_rank_0 <- ifelse(GLOBE1991$v335=='0',0, 
-                                             ifelse(GLOBE1991$v335=='1' | GLOBE1991$v335=='2',1,
-                                                    ifelse(GLOBE1991$v335 >'2',2, NA)))
+soc_GLOBE_0$soc_sn_children_rank_0 <- ifelse(GLOBE1991$v335=='0',0L, 
+                                             ifelse(GLOBE1991$v335=='1' | GLOBE1991$v335=='2',1L,
+                                                    ifelse(GLOBE1991$v335 >'2',2L, NA)))
 table(soc_GLOBE_0$soc_sn_children_rank_0) 
 summary(soc_GLOBE_0$soc_sn_children_rank_0) 
 ```
@@ -253,9 +253,9 @@ summary(soc_GLOBE_0$soc_sn_children_rank_0)
 ```{r, echo=TRUE}
 table(GLOBE2014$G14v9) 
 summary(GLOBE2014$G14v9) 
-soc_GLOBE_4$soc_sn_children_rank_4 <- ifelse(GLOBE2014$G14v9=='0',0, 
-                                             ifelse(GLOBE2014$G14v9=='1' | GLOBE2014$G14v9=='2',1,
-                                                    ifelse(GLOBE2014$G14v9 >'2',2, NA)))
+soc_GLOBE_4$soc_sn_children_rank_4 <- ifelse(GLOBE2014$G14v9=='0',0L, 
+                                             ifelse(GLOBE2014$G14v9=='1' | GLOBE2014$G14v9=='2',1L,
+                                                    ifelse(GLOBE2014$G14v9 >'2',2L, NA)))
 table(soc_GLOBE_4$soc_sn_children_rank_4) 
 summary(soc_GLOBE_4$soc_sn_children_rank_4) 
 
@@ -521,11 +521,7 @@ summary(GLOBE2014$G14v45)
 #4 Once a month 
 #5 Less than once a month
 
-soc_GLOBE_4$soc_sn_freq_friends_inperson_4 <- ifelse(GLOBE2014$G14v45=='1',1, 
-                                                  ifelse(GLOBE2014$G14v45=='2',2,
-                                                    ifelse(GLOBE2014$G14v45=='3',3,
-                                                           ifelse(GLOBE2014$G14v45=='4',4,
-                                                                   ifelse(GLOBE2014$G14v45=='5',5, NA)))))
+soc_GLOBE_4$soc_sn_freq_friends_inperson_4 <- as.integer(GLOBE2014$G14v45)
 
 table(soc_GLOBE_4$soc_sn_freq_friends_inperson_4) 
 summary(soc_GLOBE_4$soc_sn_freq_friends_inperson_4) 
@@ -646,11 +642,7 @@ summary(GLOBE2014$G14v46)
 #4 Once a month 
 #5 Less than once a month
 
-soc_GLOBE_4$soc_sn_freq_friends_4 <- ifelse(GLOBE2014$G14v46=='1',1, 
-                                                  ifelse(GLOBE2014$G14v46=='2',2,
-                                                    ifelse(GLOBE2014$G14v46=='3',3,
-                                                           ifelse(GLOBE2014$G14v46=='4',4,
-                                                                   ifelse(GLOBE2014$G14v46=='5',5, NA)))))
+soc_GLOBE_4$soc_sn_freq_friends_4 <- as.integer(GLOBE2014$G14v46)
 
 table(soc_GLOBE_4$soc_sn_freq_friends_4) 
 summary(soc_GLOBE_4$soc_sn_freq_friends_4) 
@@ -815,12 +807,7 @@ summary(soc_GLOBE_4$soc_sn_freq_friends_4)
 table(GLOBE2014$G14v54) 
 summary(GLOBE2014$G14v54)
 
-soc_GLOBE_4$soc_sn_num_nbhs_4 <- ifelse(GLOBE2014$G14v54=='1',1, 
-                                                  ifelse(GLOBE2014$G14v54=='2',2,
-                                                    ifelse(GLOBE2014$G14v54=='3',3,
-                                                           ifelse(GLOBE2014$G14v54=='4',4,
-                                                                   ifelse(GLOBE2014$G14v54=='5',5,
-                                                                          ifelse(GLOBE2014$G14v54=='6',6, NA))))))
+soc_GLOBE_4$soc_sn_num_nbhs_4 <- as.integer(GLOBE2014$G14v54)
 
 table(soc_GLOBE_4$soc_sn_num_nbhs_4) 
 summary(soc_GLOBE_4$soc_sn_num_nbhs_4) 
@@ -987,11 +974,7 @@ summary(GLOBE2014$G14v55)
 #4 Once a month 
 #5 Less than once a month
 
-soc_GLOBE_4$soc_sn_freq_nbhs_4 <- ifelse(GLOBE2014$G14v55=='1',1, 
-                                                  ifelse(GLOBE2014$G14v55=='2',2,
-                                                    ifelse(GLOBE2014$G14v55=='3',3,
-                                                           ifelse(GLOBE2014$G14v55=='4',4,
-                                                                   ifelse(GLOBE2014$G14v55=='5',5, NA)))))
+soc_GLOBE_4$soc_sn_freq_nbhs_4 <- as.integer(GLOBE2014$G14v55)
 
 table(soc_GLOBE_4$soc_sn_freq_nbhs_4) 
 summary(soc_GLOBE_4$soc_sn_freq_nbhs_4) 
@@ -1155,12 +1138,13 @@ summary(soc_GLOBE_4$soc_sn_freq_nbhs_4)
 ```{r, echo=TRUE}
 table(GLOBE2014$G14v36)
 
-soc_GLOBE_4$soc_sn_num_relatives_4 <- ifelse(GLOBE2014$G14v36=='1',1, 
-                                                  ifelse(GLOBE2014$G14v36=='2',2,
-                                                    ifelse(GLOBE2014$G14v36=='3',3,
-                                                           ifelse(GLOBE2014$G14v36=='4',4,
-                                                                   ifelse(GLOBE2014$G14v36=='5',5, 
-                                                                         ifelse(GLOBE2014$G14v36=='6',6, NA))))))
+soc_GLOBE_4$soc_sn_num_relatives_4 <- ifelse(GLOBE2014$G14v36=='0',1L, 
+                                                  ifelse(GLOBE2014$G14v36=='1' | GLOBE2014$G14v36=='2',2L,
+                                                      ifelse(GLOBE2014$G14v36>='3' & GLOBE2014$G14v36 <='5',3L,
+                                                           ifelse(GLOBE2014$G14v36>='6' & GLOBE2014$G14v36s <='10',4L,
+                                                                   ifelse(GLOBE2014$G14v36>='11' & GLOBE2014$G14v36 <='20',5L,
+                                                                          ifelse(GLOBE2014$G14v36>='21',6L, NA))))))
+ 
 
 table(soc_GLOBE_4$soc_sn_num_relatives_4) 
 summary(soc_GLOBE_4$soc_sn_num_relatives_4)
@@ -1319,14 +1303,11 @@ table(GLOBE2014$G14v40)
 #2 Several times a week 
 #3 Several times a month or Once a week 
 #4 Once a month 
-#5 Less than once a month
 
-soc_GLOBE_4$soc_sn_freq_close_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOBE2014$G14v40=='2' ,1, 
-                                                  ifelse(GLOBE2014$G14v40=='3',2,
-                                                    ifelse(GLOBE2014$G14v40=='4',3,
-                                                           ifelse(GLOBE2014$G14v40=='5',4,
-                                                                   ifelse(GLOBE2014$G14v40=='5',5, 
-                                                                         ifelse(GLOBE2014$G14v40=='6',6, NA))))))
+soc_GLOBE_4$soc_sn_freq_close_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOBE2014$G14v40=='2' ,1L, 
+                                                  ifelse(GLOBE2014$G14v40=='3',2L,
+                                                    ifelse(GLOBE2014$G14v40=='4',3L,
+                                                           ifelse(GLOBE2014$G14v40=='5',4L, NA))))
 
 table(soc_GLOBE_4$soc_sn_freq_close_relatives_4) 
 summary(soc_GLOBE_4$soc_sn_freq_close_relatives_4)
@@ -1484,12 +1465,11 @@ table(GLOBE2014$G14v40)
 #4 Once a month 
 #5 Less than once a month
 
-soc_GLOBE_4$soc_sn_freq_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOBE2014$G14v40=='2' ,1, 
-                                                  ifelse(GLOBE2014$G14v40=='3',2,
-                                                    ifelse(GLOBE2014$G14v40=='4',3,
-                                                           ifelse(GLOBE2014$G14v40=='5',4,
-                                                                   ifelse(GLOBE2014$G14v40=='5',5, 
-                                                                         ifelse(GLOBE2014$G14v40=='6',6, NA))))))
+soc_GLOBE_4$soc_sn_freq_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOBE2014$G14v40=='2' ,1L, 
+                                                  ifelse(GLOBE2014$G14v40=='3',2L,
+                                                    ifelse(GLOBE2014$G14v40=='4',3L,
+                                                           ifelse(GLOBE2014$G14v40=='5',4L, NA))))
+
 
 table(soc_GLOBE_4$soc_sn_freq_relatives_4) 
 summary(soc_GLOBE_4$soc_sn_freq_relatives_4)
@@ -1566,7 +1546,7 @@ summary(GLOBE1991$SEGVv462)
 #picking most frequent
 soc_GLOBE_0$soc_ss_received_emo_0 <- ifelse(GLOBE1991$SEGVv460 ==3 | GLOBE1991$SEGVv461 ==3 |GLOBE1991$SEGVv462 == 3, 2L, 
                                          ifelse(GLOBE1991$SEGVv460 ==2 | GLOBE1991$SEGVv461 ==2 |GLOBE1991$SEGVv462 == 2, 1L, 
-                                             ifelse(GLOBE1991$SEGVv460 ==1 | GLOBE1991$SEGVv461 ==1 |GLOBE1991$SEGVv462 == 1, 0L, NA)))
+                                             ifelse(GLOBE1991$SEGVv460 <=1 | GLOBE1991$SEGVv461 <=1 |GLOBE1991$SEGVv462 <=1, 0L, NA)))
  
 table(soc_GLOBE_0$soc_ss_received_emo_0) 
 summary(soc_GLOBE_0$soc_ss_received_emo_0)
@@ -1713,104 +1693,6 @@ table(soc_GLOBE_4$soc_ss_received_emo_4)
 2 |  Often received emotional support
 
 **Harmonization status**:  impossible       
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_0 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.       
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written THIS DataSchema will WILL BE DELETED 
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_1 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.         
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written  this will be deleted
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_2 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.         
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written THIS WILL BE DELETED
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_3 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.      
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_4 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.       
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_5 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.       
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_6 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.      
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  impossible    
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2351,8 +2233,6 @@ soc_GLOBE_3$soc_sp_religious_3 <- ifelse(GLOBE2011$v61_e_o_ker ==1,1L,
                                               ifelse(GLOBE2011$v61_e_o_ker ==0,0L,NA))
 
 table(soc_GLOBE_3$soc_sp_religious_3)
-
-
 ```
 ### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_4        
@@ -2374,8 +2254,6 @@ table(GLOBE2014$G14v56_e)
 
 soc_GLOBE_4$soc_sp_religious_4 <- ifelse(GLOBE2014$G14v56_e==1,1L, 
                                               ifelse(GLOBE2014$G14v56_e ==0,0L,NA))
-
-table(soc_GLOBE_4$soc_sp_religious_4)
 ```
 ### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_5        
@@ -2804,7 +2682,6 @@ soc_GLOBE_2$soc_sp_cul_edu_soc_2 <- ifelse(GLOBE2004$w289=='1',1,
 
 table(soc_GLOBE_2$soc_sp_cul_edu_soc_2) 
 summary(soc_GLOBE_2$soc_sp_cul_edu_soc_2)
-
 ```
 ### **Variable label**:  Cultural, educational and social participation       
 **Variable name**:  soc_sp_cul_edu_soc_3               
@@ -3101,13 +2978,11 @@ v61_c_o_vak #0 not 1= involved w union (or professional)
 table(GLOBE2011$v61_d_o_pol) #1=yes 0=no
 table(GLOBE2011$v61_c_o_vak) #1=yes 0=no
 
-
 soc_GLOBE_3$soc_sp_pol_3 <- ifelse(GLOBE2011$v61_d_o_pol =='1' | GLOBE2011$v61_c_o_vak =='1',1L, 
-                                                  ifelse(GLOBE2011$v61_d_o_pol =='0' | GLOBE2011$v61_c_o_vak =='0',0L, NA))
+                                                  ifelse(GLOBE2011$v61_d_o_pol =='0' & GLOBE2011$v61_c_o_vak =='0',0L, NA))
 
 table(soc_GLOBE_3$soc_sp_pol_3) 
 summary(soc_GLOBE_3$soc_sp_pol_3)
-
 ```
 ### **Variable label**:  Political / union participation         
 **Variable name**:  soc_sp_pol_4                
@@ -3130,11 +3005,10 @@ table(GLOBE2014$G14v56_d) #1=yes 0=no
 
 
 soc_GLOBE_4$soc_sp_pol_4 <- ifelse(GLOBE2014$G14v56_c =='1' | GLOBE2014$G14v56_d =='1',1L, 
-                                                  ifelse(GLOBE2014$G14v56_c =='0' | GLOBE2014$G14v56_d =='0',0L, NA))
+                                                  ifelse(GLOBE2014$G14v56_c =='0' & GLOBE2014$G14v56_d =='0',0L, NA))
 
 table(soc_GLOBE_4$soc_sp_pol_4) 
 summary(soc_GLOBE_4$soc_sp_pol_4)
-
 ```
 ### **Variable label**:  Political / union participation         
 **Variable name**:  soc_sp_pol_5                
@@ -3253,13 +3127,11 @@ summary(soc_GLOBE_4$soc_sp_pol_4)
 table(GLOBE2011$v61_f_o_buu) #1=yes 0=no
 table(GLOBE2011$v61_c_o_vak) #1=yes 0=no
 
-
 soc_GLOBE_3$soc_sp_prof_3 <- ifelse(GLOBE2011$v61_f_o_buu =='1' | GLOBE2011$v61_c_o_vak =='1',1L, 
-                                                  ifelse(GLOBE2011$v61_f_o_buu =='0' | GLOBE2011$v61_c_o_vak =='0',0L, NA))
+                                                  ifelse(GLOBE2011$v61_f_o_buu =='0' & GLOBE2011$v61_c_o_vak =='0',0L, NA))
+
 
 table(soc_GLOBE_3$soc_sp_prof_3)
-
-
 ```
 ### **Variable label**:  Professional participation         
 **Variable name**:  soc_sp_prof_4                
@@ -3281,7 +3153,7 @@ table(GLOBE2014$G14v56_c) #1=yes 0=no
 table(GLOBE2014$G14v56_f) #1=yes 0=no
 
 soc_GLOBE_4$soc_sp_prof_4 <- ifelse(GLOBE2014$G14v56_c =='1' | GLOBE2014$G14v56_f =='1',1L, 
-                                                  ifelse(GLOBE2014$G14v56_c =='0' | GLOBE2014$G14v56_f =='0',0L, NA))
+                                                  ifelse(GLOBE2014$G14v56_c =='0' & GLOBE2014$G14v56_f =='0',0L, NA))
 
 table(soc_GLOBE_4$soc_sp_prof_4)
 
@@ -3400,11 +3272,17 @@ table(soc_GLOBE_4$soc_sp_prof_4)
 #this is the item, I am not involved in any participation, will use this to identify participants vs non participants as opposed to using all the items: v61_a_o_spo v61_b_o_hob v61_c_o_vak v61_d_o_pol v61_e_o_ker v61_f_o_buu. 
 table (GLOBE2011$v61_g_o_ner) #1, yes I do not participate 0= I participate 
 
-soc_GLOBE_3$soc_sp_general_3 <- ifelse(GLOBE2011$v61_g_o_ner =='1',0L, 
-                                                  ifelse(GLOBE2011$v61_g_o_ner =='0',1L, NA))
+soc_GLOBE_3$soc_sp_general_3 <- ifelse(GLOBE2011$v61_g_o_ner =='1'|GLOBE2011$v61_f_o_buu=='1'| GLOBE2011$v61_c_o_vak=='1'| GLOBE2011$v61_d_o_pol=='1'| GLOBE2011$v61_e_o_ker=='1' ,1L, 
+                                                  ifelse(GLOBE2011$v61_g_o_ner =='0' &   GLOBE2011$v61_f_o_buu =='0' & GLOBE2011$v61_c_o_vak =='0' &   GLOBE2011$v61_d_o_pol =='0'&   GLOBE2011$v61_e_o_ker =='0' ,0L, NA))
 
 table(soc_GLOBE_3$soc_sp_general_3)
 
+
+#old code, identifies 1498 isolated participants, not 1108 as in the updated version above 
+soc_GLOBE_3$soc_sp_general_3x <- ifelse(GLOBE2011$v61_g_o_ner =='1',0L, 
+                                                  ifelse(GLOBE2011$v61_g_o_ner =='0',1L, NA))
+
+table(soc_GLOBE_3$soc_sp_general_3x)
 ```
 ### **Variable label**:  General social participation          
 **Variable name**:  soc_sp_general_4                
@@ -3424,8 +3302,8 @@ table(soc_GLOBE_3$soc_sp_general_3)
 ```{r, echo=TRUE}
 table(GLOBE2014$G14v56_h) #1=yes, no participation  0=no ..I participate 
 
-soc_GLOBE_4$soc_sp_general_4 <- ifelse(GLOBE2014$G14v56_h =='1',0L, 
-                                                  ifelse(GLOBE2014$G14v56_h =='0',1L, NA))
+soc_GLOBE_4$soc_sp_general_4 <- ifelse(GLOBE2014$G14v56_h =='1'|GLOBE2014$G14v56_c=='1'| GLOBE2014$G14v56_f=='1'| GLOBE2014$G14v56_d=='1'| GLOBE2014$G14v56_g=='1'| GLOBE2014$G14v56_e=='1' ,1L, 
+                                                  ifelse(GLOBE2014$G14v56_h =='0' &   GLOBE2014$G14v56_c =='0' & GLOBE2014$G14v56_f =='0' &   GLOBE2014$G14v56_d =='0'&   GLOBE2014$G14v56_g =='0' & GLOBE2014$G14v56_e =='0',0L, NA))
 
 table(soc_GLOBE_4$soc_sp_general_4)
 
@@ -3967,37 +3845,18 @@ table(soc_GLOBE_4$soc_sp_hobby_4)
 1 |  Socially isolated, no social network and no social participation 
 
 **Harmonization status**:  complete   
-**Harmonization comment**: 97% of respondents were categorized the same (as isolated or not isoldated) using either i) study available DataSchema social network variables (children, friends, neighbours, relatives) in addition to the general participation variable or ii) study available DataSchema social network - contact frequency variables (friends, neighbours, relatives, close relatived) in addition to the general participation variable. Approach i) was chosen for the transformation of this DataSchema.       
+**Harmonization comment**: 97% of respondents were categorized the same (as isolated or not isoldated) using either i) study available DataSchema social network variables (children, friends, neighbours, relatives) in addition to the general participation variable or ii) study available DataSchema social network - contact frequency variables (friends, neighbours, relatives, close relatived) in addition to the general participation variable. Approach ii) was chosen for the transformation of this DataSchema.       
 **R script**:  
 ```{r, echo=TRUE}
 
-# using network (all)
-soc_GLOBE_4$soc_sp_isolation_4 <- ifelse((soc_GLOBE_4$soc_sn_children_rank_4 == 0 | soc_GLOBE_4$soc_sn_num_friends_4 ==0 | soc_GLOBE_4$soc_sn_num_nbhs_4 ==0 | soc_GLOBE_4$soc_sn_num_relatives_4 ==0) & soc_GLOBE_4$soc_sp_general_4 == 0,1L, 
+soc_GLOBE_4$soc_sp_isolation_4 <- ifelse((soc_GLOBE_4$soc_sn_freq_friends_inperson_4 == 5 | soc_GLOBE_4$soc_sn_freq_friends_4 ==5 | soc_GLOBE_4$soc_sn_freq_nbhs_4 ==5 | soc_GLOBE_4$soc_sn_freq_close_relatives_4 ==4 |soc_GLOBE_4$soc_sn_freq_relatives_4==4 ) & soc_GLOBE_4$soc_sp_general_4 == 0,1L, 
                                                   ifelse((soc_GLOBE_4$soc_sn_children_rank_4 >= 1 | soc_GLOBE_4$soc_sn_num_friends_4 >= 1 | soc_GLOBE_4$soc_sn_num_nbhs_4 >= 1 | soc_GLOBE_4$soc_sn_num_relatives_4 >= 1) & soc_GLOBE_4$soc_sp_general_4 == 1, 0L, NA ))
+table(soc_GLOBE_4$soc_sp_isolation_4, useNA="always")
 
-table(soc_GLOBE_4$soc_sp_isolation_4)
-#0 3178 not isolated 
-#1 417 isolated
 
-# or using frequency (all)
+table((soc_GLOBE_4$soc_sn_children_rank_4 >= 1 | soc_GLOBE_4$soc_sn_num_friends_4 >= 1 | soc_GLOBE_4$soc_sn_num_nbhs_4 >= 1 | soc_GLOBE_4$soc_sn_num_relatives_4 >= 1) & soc_GLOBE_4$soc_sp_general_4 == 1)
 
-soc_GLOBE_4$soc_sn_freq_friends_inperson_4
-soc_GLOBE_4$soc_sn_freq_friends_4
-soc_GLOBE_4$soc_sn_freq_nbhs_4
-soc_sn_freq_close_relatives_4
-soc_sn_freq_relatives_4
-
-soc_GLOBE_4$soc_sp_isolation_4x <- ifelse((soc_GLOBE_4$soc_sn_freq_friends_inperson_4 == 5 | soc_GLOBE_4$soc_sn_freq_friends_4 ==5 | soc_GLOBE_4$soc_sn_freq_nbhs_4 ==5 | soc_GLOBE_4$soc_sn_freq_close_relatives_4 ==4 |soc_GLOBE_4$soc_sn_freq_relatives_4==4 ) & soc_GLOBE_4$soc_sp_general_4 == 0,1L, 
-                                                  ifelse((soc_GLOBE_4$soc_sn_children_rank_4 >= 1 | soc_GLOBE_4$soc_sn_num_friends_4 >= 1 | soc_GLOBE_4$soc_sn_num_nbhs_4 >= 1 | soc_GLOBE_4$soc_sn_num_relatives_4 >= 1) & soc_GLOBE_4$soc_sp_general_4 == 1, 0L, NA ))
-table(soc_GLOBE_4$soc_sp_isolation_4x)
-# 3178 not isolated, 474 isolated
-# using freq only the 2 vars that HAPIEE has makes no sense since diff cultures might have diff social processes e.g. frequncy of seeing family in E Europe might be enough vs Western cultures
-
-#check if same ppl have low soc ntwork and low freq
-
-soc_GLOBE_4$cor_measure<-ifelse(soc_GLOBE_4$soc_sp_isolation_4x ==0 & soc_GLOBE_4$soc_sp_isolation_4 == 0, 1, ifelse(soc_GLOBE_4$soc_sp_isolation_4x ==1 & soc_GLOBE_4$soc_sp_isolation_4 == 1, 0, NA))
-
-table(soc_GLOBE_4$cor_measure) # shows that 3178 participants have the same isolation characterization using either the network or contact frequency (in addition to participation)  
+table((soc_GLOBE_4$soc_sn_freq_friends_inperson_4 == 5 | soc_GLOBE_4$soc_sn_freq_friends_4 ==5 | soc_GLOBE_4$soc_sn_freq_nbhs_4 ==5 | soc_GLOBE_4$soc_sn_freq_close_relatives_4 ==4 |soc_GLOBE_4$soc_sn_freq_relatives_4==4 ) & soc_GLOBE_4$soc_sp_general_4 == 0)
 
 
 ```
@@ -4278,7 +4137,7 @@ table(soc_GLOBE_1$soc_le_fprob_1)
 table(GLOBE2004$w265) 
 
 soc_GLOBE_2$soc_le_fprob_2 <- ifelse(GLOBE2004$w265 =='1',1L, 
-                            ifelse(GLOBE2004$w265 =='0',0L, NA))
+                            ifelse(GLOBE2004$w265 =='2',0L, NA))
 
 table(soc_GLOBE_2$soc_le_fprob_2)
 
@@ -4844,7 +4703,7 @@ table(soc_GLOBE_2$soc_le_dfam_2)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#email from Marielle says that w072b is in months not years, w072a is the residence duration in months, hence I corrected this in the code below
+#email from Marielle says that w072b is in months not years, w072a is the residence duration in years, hence I corrected this in the code below
 table(GLOBE2004$w072a) #1=yes 2=no
 
 soc_GLOBE_2$soc_res_num_yrsnbh_2 <- GLOBE2004$w072a
@@ -5069,8 +4928,8 @@ table(soc_GLOBE_4$soc_res_num_yrsnbh_4)
 #w051 #1 strongly agree ...5= strongly disagree I would not move out
 table(GLOBE2004$w051)
 
-soc_GLOBE_2$soc_res_satis_2 <- ifelse(GLOBE2004$w051 == 4 | GLOBE2004$w051 == 5, 1L,     
-                                ifelse(GLOBE2004$w051 == 3 | GLOBE2004$w051 == 2 | GLOBE2004$w051 == 1, 0L, NA))
+soc_GLOBE_2$soc_res_satis_2 <- ifelse(GLOBE2004$w051 == 1 | GLOBE2004$w051 == 2 | GLOBE2004$w051 == 3 , 1L,     
+                                ifelse(GLOBE2004$w051 == 4 | GLOBE2004$w051 == 5, 0L, NA))
                                                
 table(soc_GLOBE_2$soc_res_satis_2)
 ```
@@ -5305,7 +5164,7 @@ summary(soc_GLOBE_2$soc_res_move_2)
  # 1, 2, 4,5,6 = NOT nursing #3 nursing/ retirement home 
 #Possible issue: frequency shows a 7th category but this is not present in the data dictionary
 table(GLOBE1991$v155) 
-soc_GLOBE_0$soc_res_indep_0 <- ifelse(GLOBE1991$v155=='1'|GLOBE1991$v155=='2'|GLOBE1991$v155=='4'|GLOBE1991$v155=='5'|GLOBE1991$v155=='6',0L, 
+soc_GLOBE_0$soc_res_indep_0 <- ifelse(GLOBE1991$v155=='1'|GLOBE1991$v155=='2'|GLOBE1991$v155=='4'|GLOBE1991$v155=='5'|GLOBE1991$v155=='6'|GLOBE1991$v155=='7',0L, 
                                              ifelse(GLOBE1991$v155=='3',1L, NA))
 table(soc_GLOBE_0$soc_res_indep_0) 
 summary(soc_GLOBE_0$soc_res_indep_0) 

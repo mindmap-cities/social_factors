@@ -15,7 +15,7 @@ library(opal)
 erasmus_opal <- opal.login()
 #Login to Opal server and assign the content of the HAPIEE table(s) to your RStudio environment
 #HAPIEE_W2 
-opal.assign.table.tibble(erasmus_opal, 'HAPIEE_W2', 'HAPIEE.HAPIEE_W2',variables = list('country','w2chldno_lt','p58_lt','p57_lt','p55_lt'))
+opal.assign.table.tibble(erasmus_opal, 'HAPIEE_W2', 'HAPIEE.HAPIEE_W2',variables = list('country','w2chldno_lt','p58_lt','p57_lt','p55_lt','w2child_lt'))
 HAPIEE_W2<- opal.execute(erasmus_opal,'HAPIEE_W2')
 ```
 ## Select country-specific sample
@@ -55,7 +55,7 @@ opal.logout(erasmus_opal)
 #w2child_lt 
 table(HAPIEE_W2$w2chldno_lt) 
 
-soc_HAPIEE_LT_0$soc_sn_num_children_0 <- as.integer(HAPIEE_W2$w2chldno_lt)
+soc_HAPIEE_LT_0$soc_sn_num_children_0 <- ifelse(HAPIEE_W2$w2child_lt==2,0L, as.integer(HAPIEE_W2$w2chldno_lt))
 
 table(soc_HAPIEE_LT_0$soc_sn_num_children_0) 
 
@@ -163,7 +163,7 @@ table(soc_HAPIEE_LT_0$soc_sn_num_children_0)
 ```{r, echo=TRUE}
 table(HAPIEE_W2$w2chldno_lt) 
 
-soc_HAPIEE_LT_0$soc_sn_children_rank_0 <- ifelse(HAPIEE_W2$w2chldno_lt=='0',0L, 
+soc_HAPIEE_LT_0$soc_sn_children_rank_0 <- ifelse(HAPIEE_W2$w2child_lt=='2',0L, 
                                              ifelse(HAPIEE_W2$w2chldno_lt=='1' | HAPIEE_W2$w2chldno_lt=='2',1L,
                                                     ifelse(HAPIEE_W2$w2chldno_lt >'2',2L, NA)))
 
@@ -413,12 +413,11 @@ table(soc_HAPIEE_LT_0$soc_sn_children_rank_0)
 ```{r, echo=TRUE}
 #p58_lt
 table(HAPIEE_W2$p58_lt) 
-# should we go back and chang categories for all other DataSchemas?
 
-soc_HAPIEE_LT_0$soc_sn_freq_friends_inperson_0 <-  ifelse(HAPIEE_W2$p58_lt=='1',2L, 
-                                                     ifelse(HAPIEE_W2$p58_lt=='2' | HAPIEE_W2$p58_lt=='3',3L,
+soc_HAPIEE_LT_0$soc_sn_freq_friends_inperson_0 <-  ifelse(HAPIEE_W2$p58_lt=='1'|HAPIEE_W2$p58_lt=='2' ,2L, 
+                                                     ifelse(HAPIEE_W2$p58_lt=='3',3L,
                                                        ifelse(HAPIEE_W2$p58_lt =='4',4L, 
-                                                         ifelse(HAPIEE_W2$p58_lt =='5' | HAPIEE_W2$p58_lt =='5',5L,NA))))
+                                                         ifelse(HAPIEE_W2$p58_lt =='5' | HAPIEE_W2$p58_lt =='6',5L,NA))))
 
 table(soc_HAPIEE_LT_0$soc_sn_freq_friends_inperson_0) 
 ``` 
@@ -984,8 +983,17 @@ table(soc_HAPIEE_LT_0$soc_sn_freq_friends_inperson_0)
 **Variable name**:   soc_sn_num_relatives_0    
 **Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which the participant is close to, i.e. is in touch with regularly.           
 **Value type**:  integer  
-**Variable unit**: relatives     
-**Category coding**:   
+**Variable unit**:      
+**Category coding**:
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  None
+2 |  1 or 2
+3 |  3 to 5
+4 |  6 to 10
+5 |  11 to 20 
+6 |  More than 20
 
 **Harmonization status**:  impossible  
 **Harmonization comment**:   
@@ -998,8 +1006,17 @@ table(soc_HAPIEE_LT_0$soc_sn_freq_friends_inperson_0)
 **Variable name**:   soc_sn_num_relatives_1    
 **Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which the participant is close to, i.e. is in touch with regularly.           
 **Value type**:  integer  
-**Variable unit**:  relatives    
-**Category coding**:   
+**Variable unit**:      
+**Category coding**:
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  None
+2 |  1 or 2
+3 |  3 to 5
+4 |  6 to 10
+5 |  11 to 20 
+6 |  More than 20
 
 **Harmonization status**:  impossible  
 **Harmonization comment**:   
@@ -1012,8 +1029,17 @@ table(soc_HAPIEE_LT_0$soc_sn_freq_friends_inperson_0)
 **Variable name**:   soc_sn_num_relatives_2    
 **Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
 **Value type**:  integer  
-**Variable unit**:  relatives      
-**Category coding**:   
+**Variable unit**:        
+**Category coding**:
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  None
+2 |  1 or 2
+3 |  3 to 5
+4 |  6 to 10
+5 |  11 to 20 
+6 |  More than 20
 
 **Harmonization status**:  impossible  
 **Harmonization comment**:   
@@ -1026,8 +1052,17 @@ table(soc_HAPIEE_LT_0$soc_sn_freq_friends_inperson_0)
 **Variable name**:   soc_sn_num_relatives_3    
 **Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
 **Value type**:  integer  
-**Variable unit**: relatives        
-**Category coding**:   
+**Variable unit**:         
+**Category coding**:
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  None
+2 |  1 or 2
+3 |  3 to 5
+4 |  6 to 10
+5 |  11 to 20 
+6 |  More than 20
 
 **Harmonization status**:  impossible  
 **Harmonization comment**:   
@@ -1040,8 +1075,17 @@ table(soc_HAPIEE_LT_0$soc_sn_freq_friends_inperson_0)
 **Variable name**:   soc_sn_num_relatives_4    
 **Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
 **Value type**:  integer  
-**Variable unit**: relatives       
-**Category coding**:   
+**Variable unit**:        
+**Category coding**:
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  None
+2 |  1 or 2
+3 |  3 to 5
+4 |  6 to 10
+5 |  11 to 20 
+6 |  More than 20
 
 **Harmonization status**:  impossible  
 **Harmonization comment**:   
@@ -1054,9 +1098,18 @@ table(soc_HAPIEE_LT_0$soc_sn_freq_friends_inperson_0)
 **Variable name**:   soc_sn_num_relatives_5    
 **Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
 **Value type**:  integer  
-**Variable unit**:  relatives      
-**Category coding**:   
-   
+**Variable unit**:        
+**Category coding**:
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  None
+2 |  1 or 2
+3 |  3 to 5
+4 |  6 to 10
+5 |  11 to 20 
+6 |  More than 20
+
 **Harmonization status**:  impossible  
 **Harmonization comment**:   
 **R script**:  
@@ -1068,8 +1121,17 @@ table(soc_HAPIEE_LT_0$soc_sn_freq_friends_inperson_0)
 **Variable name**:   soc_sn_num_relatives_6    
 **Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
 **Value type**:  integer  
-**Variable unit**: relatives       
-**Category coding**:   
+**Variable unit**:        
+**Category coding**:
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  None
+2 |  1 or 2
+3 |  3 to 5
+4 |  6 to 10
+5 |  11 to 20 
+6 |  More than 20 
 
 **Harmonization status**:  impossible  
 **Harmonization comment**:   
@@ -1245,7 +1307,7 @@ table(soc_HAPIEE_LT_0$soc_sn_freq_friends_inperson_0)
 **R script**:  
 ```{r, echo=TRUE}
 #p57_lt
-#s68 and s67 are missing from LT set to I cannot use these to calculate DAILY contact, should we go back and change for all cohorts the categories 
+#s68 and s67 are missing from LT set to I cannot use these to calculate DAILY contact
 
 table(HAPIEE_W2$p57_lt) 
 
@@ -1518,104 +1580,6 @@ table(soc_HAPIEE_LT_0$soc_sn_freq_relatives_0)
 2 |  Often received emotional support
 
 **Harmonization status**:  impossible     
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_0 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.       
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_1 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.         
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_2 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.         
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_3 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.      
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_4 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.       
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_5 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.       
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_6 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.      
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}

@@ -17,23 +17,49 @@ erasmus_opal <- opal.login()
 # LASA1B
 opal.assign.table.tibble(erasmus_opal, 'LASA1B', 'LASA.LASA1B',variables = list())
 LASA1B <- opal.execute(erasmus_opal,'LASA1B')
+
+opal.assign.table.tibble(erasmus_opal, 'LASA1B', 'LASA.LASA1B_socialnet',variables = list('nkids'))
+LASA1B <- opal.execute(erasmus_opal,'LASA1B')
+
 # LASA1C
 opal.assign.table.tibble(erasmus_opal, 'LASA1C', 'LASA.LASA1C', variables=list()) 
 LASA1C<- opal.execute(erasmus_opal,'LASA1C')
+
+opal.assign.table.tibble(erasmus_opal, 'LASA1C', 'LASA.LASA1C_socialnet', variables=list()) 
+LASA1C<- opal.execute(erasmus_opal,'LASA1C')
+
 # LASA1D
 opal.assign.table.tibble(erasmus_opal, 'LASA1D', 'LASA.LASA1D',variables=list()) 
 LASA1D <- opal.execute(erasmus_opal,'LASA1D')
+
+opal.assign.table.tibble(erasmus_opal, 'LASA1D', 'LASA.LASA1D_socialnet',variables=list()) 
+LASA1D <- opal.execute(erasmus_opal,'LASA1D')
+
 # LASA1E
 opal.assign.table.tibble(erasmus_opal, 'LASA1E', 'LASA.LASA1E',variables=list()) 
 LASA1E <- opal.execute(erasmus_opal,'LASA1E')
+
+opal.assign.table.tibble(erasmus_opal, 'LASA1E', 'LASA.LASA1E_socialnet',variables=list()) 
+LASA1E <- opal.execute(erasmus_opal,'LASA1E')
+
 # LASA1F
 opal.assign.table.tibble(erasmus_opal, 'LASA1F', 'LASA.LASA1F',variables=list()) 
+LASA1F <- opal.execute(erasmus_opal,'LASA1F')
+
+opal.assign.table.tibble(erasmus_opal, 'LASA1F', 'LASA.LASA1F_socialnet',variables=list()) 
 LASA1F <- opal.execute(erasmus_opal,'LASA1F')
 # LASA1G
 opal.assign.table.tibble(erasmus_opal, 'LASA1G', 'LASA.LASA1G',variables=list()) 
 LASA1G <- opal.execute(erasmus_opal,'LASA1G')
+
+opal.assign.table.tibble(erasmus_opal, 'LASA1G', 'LASA.LASA1G_socialnet',variables=list()) 
+LASA1G <- opal.execute(erasmus_opal,'LASA1G')
+
 # LASA1H
 opal.assign.table.tibble(erasmus_opal, 'LASA1H', 'LASA.LASA1H',variables=list()) 
+LASA1H <- opal.execute(erasmus_opal,'LASA1H')
+
+opal.assign.table.tibble(erasmus_opal, 'LASA1H', 'LASA.LASA1H_socialnet',variables=list()) 
 LASA1H <- opal.execute(erasmus_opal,'LASA1H')
 ```
 ## Assign participant id as first column of your harmonized dataframes
@@ -68,10 +94,14 @@ opal.logout(erasmus_opal)
 **Category coding**:      
 
 **Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization comment**:  Study specific item includes biological, step and adopted children belonging to the social network that were identified as part of the participant's social network.    
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1B_socialnet$nkids) 
+summary(LASA1B_socialnet$nkids) 
+soc_LASA1_0$soc_sn_num_children_0 <- as.integer(ifelse(LASA1B_socialnet$nkids %in% c(0:15)))
+table(soc_LASA1_0$soc_sn_num_children_0) 
+summary(soc_LASA1_0$soc_sn_num_children_0) 
 
 ```
 ### **Variable label**:   Network size of children      
@@ -85,7 +115,11 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1C_socialnet$nkids) 
+summary(LASA1C_socialnet$nkids) 
+soc_LASA1_1$soc_sn_num_children_1 <- as.integer(ifelse(LASA1C_socialnet$nkids %in% c(0:15)))
+table(soc_LASA1_1$soc_sn_num_children_1) 
+summary(soc_LASA1_1$soc_sn_num_children_1)
 
 ```
 ### **Variable label**:   Network size of children      
@@ -99,7 +133,11 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1D_socialnet$nkids) 
+summary(LASA1D_socialnet$nkids) 
+soc_LASA1_2$soc_sn_num_children_2 <- as.integer(ifelse(LASA1D_socialnet$nkids %in% c(0:15)))
+table(soc_LASA1_2$soc_sn_num_children_2) 
+summary(soc_LASA1_2$soc_sn_num_children_2)
 
 ```
 ### **Variable label**:   Network size of children      
@@ -113,7 +151,11 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1E_socialnet$nkids) 
+summary(LASA1E_socialnet$nkids) 
+soc_LASA1_3$soc_sn_num_children_3 <- as.integer(ifelse(LASA1E_socialnet$nkids %in% c(0:15)))
+table(soc_LASA1_3$soc_sn_num_children_3) 
+summary(soc_LASA1_3$soc_sn_num_children_3)
 
 ```
 ### **Variable label**:   Network size of children      
@@ -127,7 +169,11 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1F_socialnet$nkids) 
+summary(LASA1F_socialnet$nkids) 
+soc_LASA1_4$soc_sn_num_children_4 <- as.integer(ifelse(LASA1F_socialnet$nkids %in% c(0:15)))
+table(soc_LASA1_4$soc_sn_num_children_4) 
+summary(soc_LASA1_4$soc_sn_num_children_4)
 
 ```
 ### **Variable label**:   Network size of children      
@@ -141,7 +187,11 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1G_socialnet$nkids) 
+summary(LASA1G_socialnet$nkids) 
+soc_LASA1_5$soc_sn_num_children_5 <- as.integer(ifelse(LASA1G_socialnet$nkids %in% c(0:15)))
+table(soc_LASA1_5$soc_sn_num_children_5) 
+summary(soc_LASA1_5$soc_sn_num_children_5)
 
 ```
 ### **Variable label**:   Network size of children      
@@ -155,7 +205,11 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1H_socialnet$nkids) 
+summary(LASA1H_socialnet$nkids) 
+soc_LASA1_6$soc_sn_num_children_6 <- as.integer(ifelse(LASA1H_socialnet$nkids %in% c(0:15)))
+table(soc_LASA1_6$soc_sn_num_children_6) 
+summary(soc_LASA1_6$soc_sn_num_children_6)
 
 ```
 ### **Variable label**:   Ranked network size of children         
@@ -172,10 +226,16 @@ opal.logout(erasmus_opal)
 2 |  Large rank of network size comprised of children  (more than 2 children) 
 
 **Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization comment**:  Study specific item does not specify if children are alive or dead, it includes biological, step and adopted children.   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1B_socialnet$nkids) 
+summary(LASA1B_socialnet$nkids)  
+soc_GLOBE_0$soc_sn_children_rank_0 <- ifelse(LASA1B_socialnet$nkids=='0',0, 
+                                             ifelse(LASA1B_socialnet$nkids=='1' | LASA1B_socialnet$nkids=='2',1,
+                                                    ifelse(LASA1B_socialnet$nkids >'2',2, NA)))
+table(soc_LASA1_0$soc_sn_children_rank_0) 
+summary(soc_LASA1_0$soc_sn_children_rank_0) 
 
 ```
 
@@ -196,7 +256,13 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1C_socialnet$nkids) 
+summary(LASA1C_socialnet$nkids)  
+soc_GLOBE_1$soc_sn_children_rank_1 <- ifelse(LASA1C_socialnet$nkids=='0',0, 
+                                             ifelse(LASA1C_socialnet$nkids=='1' | LASA1C_socialnet$nkids=='2',1,
+                                                    ifelse(LASA1C_socialnet$nkids >'2',2, NA)))
+table(soc_LASA1_1$soc_sn_children_rank_1) 
+summary(soc_LASA1_1$soc_sn_children_rank_1) 
 
 ```
 ### **Variable label**:   Ranked network size of children           
@@ -216,7 +282,13 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1D_socialnet$nkids) 
+summary(LASA1D_socialnet$nkids)  
+soc_GLOBE_2$soc_sn_children_rank_2 <- ifelse(LASA1D_socialnet$nkids=='0',0, 
+                                             ifelse(LASA1D_socialnet$nkids=='1' | LASA1D_socialnet$nkids=='2',1,
+                                                    ifelse(LASA1D_socialnet$nkids >'2',2, NA)))
+table(soc_LASA1_2$soc_sn_children_rank_2) 
+summary(soc_LASA1_2$soc_sn_children_rank_2) 
 
 ```
 ### **Variable label**:   Ranked network size of children          
@@ -236,7 +308,13 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1E_socialnet$nkids) 
+summary(LASA1E_socialnet$nkids)  
+soc_GLOBE_3$soc_sn_children_rank_3<- ifelse(LASA1E_socialnet$nkids=='0',0, 
+                                             ifelse(LASA1E_socialnet$nkids=='1' | LASA1E_socialnet$nkids=='2',1,
+                                                    ifelse(LASA1E_socialnet$nkids >'2',2, NA)))
+table(soc_LASA1_3$soc_sn_children_rank_3) 
+summary(soc_LASA1_3$soc_sn_children_rank_3) 
 
 ```
 ### **Variable label**:   Ranked network size of children          
@@ -256,7 +334,13 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1F_socialnet$nkids) 
+summary(LASA1F_socialnet$nkids)  
+soc_GLOBE_4$soc_sn_children_rank_4 <- ifelse(LASA1F_socialnet$nkids=='0',0, 
+                                             ifelse(LASA1F_socialnet$nkids=='1' | LASA1F_socialnet$nkids=='2',1,
+                                                    ifelse(LASA1F_socialnet$nkids >'2',2, NA)))
+table(soc_LASA1_4$soc_sn_children_rank_4) 
+summary(soc_LASA1_4$soc_sn_children_rank_4) 
 
 ```
 ### **Variable label**:   Ranked network size of children          
@@ -276,7 +360,13 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1G_socialnet$nkids) 
+summary(LASA1G_socialnet$nkids)  
+soc_GLOBE_5$soc_sn_children_rank_5 <- ifelse(LASA1G_socialnet$nkids=='0',0, 
+                                             ifelse(LASA1G_socialnet$nkids=='1' | LASA1G_socialnet$nkids=='2',1,
+                                                    ifelse(LASA1G_socialnet$nkids >'2',2, NA)))
+table(soc_LASA1_5$soc_sn_children_rank_5) 
+summary(soc_LASA1_5$soc_sn_children_rank_5) 
 
 ```
 ### **Variable label**:   Ranked network size of children         
@@ -296,7 +386,13 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1H_socialnet$nkids) 
+summary(LASA1H_socialnet$nkids)  
+soc_GLOBE_6$soc_sn_children_rank_6 <- ifelse(LASA1H_socialnet$nkids=='0',0, 
+                                             ifelse(LASA1H_socialnet$nkids=='1' | LASA1H_socialnet$nkids=='2',1,
+                                                    ifelse(LASA1H_socialnet$nkids >'2',2, NA)))
+table(soc_LASA1_6$soc_sn_children_rank_6) 
+summary(soc_LASA1_6$soc_sn_children_rank_6) 
 
 ```
 
@@ -308,10 +404,14 @@ opal.logout(erasmus_opal)
 **Category coding**:      
 
 **Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization comment**:  Study specific variable includes friends belonging to the social network that were identified as part of the participant's social network. 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1B_socialnet$nfriends) 
+summary(LASA1B_socialnet$nfriends) 
+soc_LASA1_0$soc_sn_num_friends_0 <- as.integer(ifelse(LASA1B_socialnet$nfriends %in% c(0:50)))
+table(soc_LASA1_0$soc_sn_num_friends_0) 
+summary(soc_LASA1_0$soc_sn_num_friends_0)
 
 ```
 ### **Variable label**:   Network size of friends    
@@ -325,7 +425,11 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1C_socialnet$nfriends) 
+summary(LASA1C_socialnet$nfriends) 
+soc_LASA1_1$soc_sn_num_friends_1 <- as.integer(ifelse(LASA1C_socialnet$nfriends %in% c(0:50)))
+table(soc_LASA1_1$soc_sn_num_friends_1) 
+summary(soc_LASA1_1$soc_sn_num_friends_1)
 
 ```
 ### **Variable label**:   Network size of friends    
@@ -339,7 +443,11 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1D_socialnet$nfriends) 
+summary(LASA1D_socialnet$nfriends) 
+soc_LASA1_2$soc_sn_num_friends_2 <- as.integer(ifelse(LASA1D_socialnet$nfriends %in% c(0:50)))
+table(soc_LASA1_2$soc_sn_num_friends_2) 
+summary(soc_LASA1_2$soc_sn_num_friends_2)
 
 ```
 ### **Variable label**:   Network size of friends    
@@ -353,7 +461,11 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1E_socialnet$nfriends) 
+summary(LASA1E_socialnet$nfriends) 
+soc_LASA1_3$soc_sn_num_friends_3 <- as.integer(ifelse(LASA1E_socialnet$nfriends %in% c(0:50)))
+table(soc_LASA1_3$soc_sn_num_friends_3) 
+summary(soc_LASA1_3$soc_sn_num_friends_3)
 
 ```
 ### **Variable label**:   Network size of friends    
@@ -367,7 +479,11 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1F_socialnet$nfriends) 
+summary(LASA1F_socialnet$nfriends) 
+soc_LASA1_4$soc_sn_num_friends_4 <- as.integer(ifelse(LASA1F_socialnet$nfriends %in% c(0:50)))
+table(soc_LASA1_4$soc_sn_num_friends_4) 
+summary(soc_LASA1_4$soc_sn_num_friends_4)
 
 ```
 ### **Variable label**:   Network size of friends    
@@ -381,7 +497,11 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1G_socialnet$nfriends) 
+summary(LASA1G_socialnet$nfriends) 
+soc_LASA1_5$soc_sn_num_friends_5 <- as.integer(ifelse(LASA1G_socialnet$nfriends %in% c(0:50)))
+table(soc_LASA1_5$soc_sn_num_friends_5) 
+summary(soc_LASA1_5$soc_sn_num_friends_5)
 
 ```
 
@@ -396,7 +516,11 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1H_socialnet$nfriends) 
+summary(LASA1H_socialnet$nfriends) 
+soc_LASA1_6$soc_sn_num_friends_6 <- as.integer(ifelse(LASA1H_socialnet$nfriends %in% c(0:50)))
+table(soc_LASA1_6$soc_sn_num_friends_6) 
+summary(soc_LASA1_6$soc_sn_num_friends_6)
 
 ```
 
@@ -526,11 +650,14 @@ opal.logout(erasmus_opal)
 5 |  Never or less than a year contact with friends
 
 **Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
+**Harmonization comment**: Study specific variable uses highest contact frequency reported with any of the friends identified in the social network (e.g. if participant has 4 friends and meets with 3 of them weekly but daily with the 4th, then they are coded as having saily contact with friends.)  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
-
+table(LASA1B_socialnet$friendscf) 
+summary(LASA1B_socialnet$friendscf)
+soc_LASA1_0$soc_sn_freq_friends_0 <- as.integer(LASA1B_socialnet$friendscf)
+ 
+table(soc_LASA1_0$soc_sn_freq_friends_0) 
+summary(soc_LASA1_0$soc_sn_freq_friends_0) 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_1       
@@ -551,7 +678,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1C$friendscf) 
+summary(LASA1C$friendscf)
+soc_LASA1_1$soc_sn_freq_friends_1 <- as.integer(LASA1C$friendscf)
+ 
+table(soc_LASA1_1$soc_sn_freq_friends_1) 
+summary(soc_LASA1_1$soc_sn_freq_friends_1) 
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -573,7 +705,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1D_socialnet$friendscf) 
+summary(LASA1D_socialnet$friendscf)
+soc_LASA1_2$soc_sn_freq_friends_2 <- as.integer(LASA1D_socialnet$friendscf)
+ 
+table(soc_LASA1_2$soc_sn_freq_friends_2) 
+summary(soc_LASA1_2$soc_sn_freq_friends_2) 
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -595,7 +732,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1E_socialnet$friendscf) 
+summary(LASA1E_socialnet$friendscf)
+soc_LASA1_3$soc_sn_freq_friends_3 <- as.integer(LASA1E_socialnet$friendscf)
+ 
+table(soc_LASA1_3$soc_sn_freq_friends_3) 
+summary(soc_LASA1_3$soc_sn_freq_friends_3) 
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -617,7 +759,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1F_socialnet$friendscf) 
+summary(LASA1F_socialnet$friendscf)
+soc_LASA1_4$soc_sn_freq_friends_4 <- as.integer(LASA1F_socialnet$friendscf)
+ 
+table(soc_LASA1_4$soc_sn_freq_friends_4) 
+summary(soc_LASA1_4$soc_sn_freq_friends_4) 
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -639,7 +786,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1G_socialnet$friendscf) 
+summary(LASA1G_socialnet$friendscf)
+soc_LASA1_5$soc_sn_freq_friends_5 <- as.integer(LASA1G_socialnet$friendscf)
+ 
+table(soc_LASA1_5$soc_sn_freq_friends_5) 
+summary(soc_LASA1_5$soc_sn_freq_friends_5) 
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -661,7 +813,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1H_socialnet$friendscf) 
+summary(LASA1H_socialnet$friendscf)
+soc_LASA1_6$soc_sn_freq_friends_6 <- as.integer(LASA1H_socialnet$friendscf)
+ 
+table(soc_LASA1_6$soc_sn_freq_friends_6) 
+summary(soc_LASA1_6$soc_sn_freq_friends_6) 
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -684,7 +841,17 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1B_socialnet$nneighbours) 
+summary(LASA1B_socialnet$nneighbours)
+soc_LASA1_0$soc_sn_num_nbhs_0 <- ifelse(LASA1B_socialnet$nneighbours=='0',1L, 
+                                                  ifelse(LASA1B_socialnet$nneighbours=='1' | LASA1B_socialnet$nneighbours=='2',2L,
+                                                      ifelse(LASA1B_socialnet$nneighbours>='3' & LASA1B_socialnet$nneighbours <='5',3L,
+                                                           ifelse(LASA1B_socialnet$nneighbours>='6' & LASA1B_socialnet$nneighbours <='10',4L,
+                                                                   ifelse(LASA1B_socialnet$nneighbours>='11' & LASA1B_socialnet$nneighbours <='20',5L,
+                                                                          ifelse(nneighbours>='21',6L, NA))))))
+ 
+table(soc_LASA1_0$soc_sn_num_nbhs_0) 
+summary(soc_LASA1_0$soc_sn_num_nbhs_0) 
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -707,7 +874,17 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1C$nneighbours) 
+summary(LASA1C$nneighbours)
+soc_LASA1_1$soc_sn_num_nbhs_1 <- ifelse(LASA1C$nneighbours=='0',1L, 
+                                                  ifelse(LASA1C$nneighbours=='1' | LASA1C$nneighbours=='2',2L,
+                                                      ifelse(LASA1C$nneighbours>='3' & LASA1C$nneighbours <='5',3L,
+                                                           ifelse(LASA1C$nneighbours>='6' & LASA1C$nneighbours <='10',4L,
+                                                                   ifelse(LASA1C$nneighbours>='11' & LASA1C$nneighbours <='20',5L,
+                                                                          ifelse(LASA1C$nneighbours>='21',6L, NA))))))
+ 
+table(soc_LASA1_1$soc_sn_num_nbhs_1) 
+summary(soc_LASA1_1$soc_sn_num_nbhs_1)
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -730,7 +907,17 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1D_socialnet$nneighbours) 
+summary(LASA1D_socialnet$nneighbours)
+soc_LASA1_2$soc_sn_num_nbhs_2<- ifelse(LASA1D_socialnet$nneighbours=='0',1L, 
+                                                  ifelse(LASA1D_socialnet$nneighbours=='1' | LASA1D_socialnet$nneighbours=='2',2L,
+                                                      ifelse(LASA1D_socialnet$nneighbours>='3' & LASA1D_socialnet$nneighbours <='5',3L,
+                                                           ifelse(LASA1D_socialnet$nneighbours>='6' & LASA1D_socialnet$nneighbours <='10',4L,
+                                                                   ifelse(LASA1D_socialnet$nneighbours>='11' & LASA1D_socialnet$nneighbours <='20',5L,
+                                                                          ifelse(LASA1D_socialnet$nneighbours>='21',6L, NA))))))
+ 
+table(soc_LASA1_2$soc_sn_num_nbhs_2) 
+summary(soc_LASA1_2$soc_sn_num_nbhs_2)
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -753,7 +940,17 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1E_socialnet$nneighbours) 
+summary(LASA1E_socialnet$nneighbours)
+soc_LASA1_3$soc_sn_num_nbhs_3 <- ifelse(LASA1E_socialnet$nneighbours=='0',1L, 
+                                                  ifelse(LASA1E_socialnet$nneighbours=='1' | LASA1E_socialnet$nneighbours=='2',2L,
+                                                      ifelse(LASA1E_socialnet$nneighbours>='3' & LASA1E_socialnet$nneighbours <='5',3L,
+                                                           ifelse(LASA1E_socialnet$nneighbours>='6' & LASA1E_socialnet$nneighbours <='10',4L,
+                                                                   ifelse(LASA1E_socialnet$nneighbours>='11' & LASA1E_socialnet$nneighbours <='20',5L,
+                                                                          ifelse(LASA1E_socialnet$nneighbours>='21',6L, NA))))))
+ 
+table(soc_LASA1_3$soc_sn_num_nbhs_3) 
+summary(soc_LASA1_3$soc_sn_num_nbhs_3)
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -776,7 +973,17 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1F_socialnet$nneighbours) 
+summary(LASA1F_socialnet$nneighbours)
+soc_LASA1_4$soc_sn_num_nbhs_4 <- ifelse(LASA1F_socialnet$nneighbours=='0',1L, 
+                                                  ifelse(LASA1F_socialnet$nneighbours=='1' | LASA1F_socialnet$nneighbours=='2',2L,
+                                                      ifelse(LASA1F_socialnet$nneighbours>='3' & LASA1F_socialnet$nneighbours <='5',3L,
+                                                           ifelse(LASA1F_socialnet$nneighbours>='6' & LASA1F_socialnet$nneighbours <='10',4L,
+                                                                   ifelse(LASA1F_socialnet$nneighbours>='11' & LASA1F_socialnet$nneighbours <='20',5L,
+                                                                          ifelse(LASA1F_socialnet$nneighbours>='21',6L, NA))))))
+ 
+table(soc_LASA1_4$soc_sn_num_nbhs_4) 
+summary(soc_LASA1_4$soc_sn_num_nbhs_4)
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -799,7 +1006,17 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1G_socialnet$nneighbours) 
+summary(LASA1G_socialnet$nneighbours)
+soc_LASA1_5$soc_sn_num_nbhs_5 <- ifelse(LASA1G_socialnet$nneighbours=='0',1L, 
+                                                  ifelse(LASA1G_socialnet$nneighbours=='1' | LASA1G_socialnet$nneighbours=='2',2L,
+                                                      ifelse(LASA1G_socialnet$nneighbours>='3' & LASA1G_socialnet$nneighbours <='5',3L,
+                                                           ifelse(LASA1G_socialnet$nneighbours>='6' & LASA1G_socialnet$nneighbours <='10',4L,
+                                                                   ifelse(LASA1G_socialnet$nneighbours>='11' & LASA1G_socialnet$nneighbours <='20',5L,
+                                                                          ifelse(LASA1G_socialnet$nneighbours>='21',6L, NA))))))
+ 
+table(soc_LASA1_5$soc_sn_num_nbhs_5) 
+summary(soc_LASA1_5$soc_sn_num_nbhs_5)
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -822,7 +1039,17 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1H_socialnet$nneighbours) 
+summary(LASA1H_socialnet$nneighbours)
+soc_LASA1_6$soc_sn_num_nbhs_6 <- ifelse(LASA1H_socialnet$nneighbours=='0',1L, 
+                                                  ifelse(LASA1H_socialnet$nneighbours=='1' | LASA1H_socialnet$nneighbours=='2',2L,
+                                                      ifelse(LASA1H_socialnet$nneighbours>='3' & LASA1H_socialnet$nneighbours <='5',3L,
+                                                           ifelse(LASA1H_socialnet$nneighbours>='6' & LASA1H_socialnet$nneighbours <='10',4L,
+                                                                   ifelse(LASA1H_socialnet$nneighbours>='11' & LASA1H_socialnet$nneighbours <='20',5L,
+                                                                          ifelse(LASA1H_socialnet$nneighbours>='21',6L, NA))))))
+ 
+table(soc_LASA1_6$soc_sn_num_nbhs_6) 
+summary(soc_LASA1_6$soc_sn_num_nbhs_6)
 
 ``` 
 
@@ -845,7 +1072,11 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1B_socialnet$neighbourscf) 
+summary(LASA1B_socialnet$neighbourscf)
+soc_LASA1_0$soc_sn_freq_nbhs_0 <- as.integer(LASA1B_socialnet$neighbourscf)
+table(soc_LASA1_0$soc_sn_freq_nbhs_0) 
+summary(soc_LASA1_0$soc_sn_freq_nbhs_0) 
 
 ``` 
 ### **Variable label**:   Contact frequency with neighbours        
@@ -867,7 +1098,11 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1C_socialnet$neighbourscf) 
+summary(LASA1C_socialnet$neighbourscf)
+soc_LASA1_1$soc_sn_freq_nbhs_1 <- as.integer(LASA1C_socialnet$neighbourscf)
+table(soc_LASA1_1$soc_sn_freq_nbhs_1) 
+summary(soc_LASA1_1$soc_sn_freq_nbhs_1)
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -889,7 +1124,11 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1D_socialnet$neighbourscf) 
+summary(LASA1D_socialnet$neighbourscf)
+soc_LASA1_2$soc_sn_freq_nbhs_2 <- as.integer(LASA1D_socialnet$neighbourscf)
+table(soc_LASA1_2$soc_sn_freq_nbhs_2) 
+summary(soc_LASA1_2$soc_sn_freq_nbhs_2)
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -911,7 +1150,11 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1E_socialnet$neighbourscf) 
+summary(LASA1E_socialnet$neighbourscf)
+soc_LASA1_3$soc_sn_freq_nbhs_3 <- as.integer(LASA1E_socialnet$neighbourscf)
+table(soc_LASA1_3$soc_sn_freq_nbhs_3) 
+summary(soc_LASA1_3$soc_sn_freq_nbhs_3)
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -933,7 +1176,11 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1F_socialnet$neighbourscf) 
+summary(LASA1F_socialnet$neighbourscf)
+soc_LASA1_4$soc_sn_freq_nbhs_4 <- as.integer(LASA1F_socialnet$neighbourscf)
+table(soc_LASA1_4$soc_sn_freq_nbhs_4) 
+summary(soc_LASA1_4$soc_sn_freq_nbhs_4)
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -955,7 +1202,11 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1G_socialnet$neighbourscf) 
+summary(LASA1G_socialnet$neighbourscf)
+soc_LASA1_5$soc_sn_freq_nbhs_5 <- as.integer(LASA1G_socialnet$neighbourscf)
+table(soc_LASA1_5$soc_sn_freq_nbhs_5) 
+summary(soc_LASA1_5$soc_sn_freq_nbhs_5)
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -977,105 +1228,242 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1H_socialnet$neighbourscf) 
+summary(LASA1H_socialnet$neighbourscf)
+soc_LASA1_6$soc_sn_freq_nbhs_6 <- as.integer(LASA1H_socialnet$neighbourscf)
+table(soc_LASA1_6$soc_sn_freq_nbhs_6) 
+summary(soc_LASA1_6$soc_sn_freq_nbhs_6)
 
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_0    
 **Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which the participant is close to, i.e. is in touch with regularly.           
-**Value type**:  integer  
+**Value type**:   
 **Variable unit**: relatives     
 **Category coding**:   
 
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  None
+2 |  1 or 2
+3 |  3 to 5
+4 |  6 to 10
+5 |  11 to 20 
+6 |  More than 20
+
 **Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization comment**:   Study specific variables includes the following types of social network members which do not live in the household: partner, child (biological, of partner, step, adoptive, child-in-law, sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin). 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1B_socialnet$nrelatives) 
+summary(LASA1B_socialnet$nrelatives)
+soc_LASA1_0$soc_sn_num_relatives_0 <- ifelse(LASA1B_socialnet$nrelatives=='0',1L, 
+                                                  ifelse(LASA1B_socialnet$nrelatives=='1' | LASA1B_socialnet$nrelatives=='2',2L,
+                                                      ifelse(LASA1B_socialnet$nrelatives>='3' & LASA1B_socialnet$nrelatives <='5',3L,
+                                                           ifelse(LASA1B_socialnet$nrelatives>='6' & LASA1B_socialnet$nrelatives <='10',4L,
+                                                                   ifelse(LASA1B_socialnet$nrelatives>='11' & LASA1B_socialnet$nrelatives <='20',5L,
+                                                                          ifelse(LASA1B_socialnet$nrelatives4>='21',6L, NA))))))
+ 
+table(soc_LASA1_0$soc_sn_num_relatives_0) 
+summary(soc_LASA1_0$soc_sn_num_relatives_0) 
 
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_1    
 **Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which the participant is close to, i.e. is in touch with regularly.           
-**Value type**:  integer  
+**Value type**:   
 **Variable unit**:  relatives    
 **Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  None
+2 |  1 or 2
+3 |  3 to 5
+4 |  6 to 10
+5 |  11 to 20 
+6 |  More than 20
 
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1C_socialnet$nrelatives) 
+summary(LASA1C_socialnet$nrelatives)
+soc_LASA1_1$soc_sn_num_relatives_1 <- ifelse(LASA1C_socialnet$nrelatives=='0',1L, 
+                                                  ifelse(LASA1C_socialnet$nrelatives=='1' | LASA1C_socialnet$nrelatives=='2',2L,
+                                                      ifelse(LASA1C_socialnet$nrelatives>='3' & LASA1C_socialnet$nrelatives <='5',3L,
+                                                           ifelse(LASA1C_socialnet$nrelatives>='6' & LASA1C_socialnet$nrelatives <='10',4L,
+                                                                   ifelse(LASA1C_socialnet$nrelatives>='11' & LASA1C_socialnet$nrelatives <='20',5L,
+                                                                          ifelse(LASA1C_socialnet$nrelatives4>='21',6L, NA))))))
+ 
+table(soc_LASA1_1$soc_sn_num_relatives_1) 
+summary(soc_LASA1_1$soc_sn_num_relatives_1) 
 
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_2    
 **Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
-**Value type**:  integer  
+**Value type**:   
 **Variable unit**:  relatives      
 **Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  None
+2 |  1 or 2
+3 |  3 to 5
+4 |  6 to 10
+5 |  11 to 20 
+6 |  More than 20
 
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1D_socialnet$nrelatives) 
+summary(LASA1D_socialnet$nrelatives)
+soc_LASA1_2$soc_sn_num_relatives_2 <- ifelse(LASA1D_socialnet$nrelatives=='0',1L, 
+                                                  ifelse(LASA1D_socialnet$nrelatives=='1' | LASA1D_socialnet$nrelatives=='2',2L,
+                                                      ifelse(LASA1D_socialnet$nrelatives>='3' & LASA1D_socialnet$nrelatives <='5',3L,
+                                                           ifelse(LASA1D_socialnet$nrelatives>='6' & LASA1D_socialnet$nrelatives <='10',4L,
+                                                                   ifelse(LASA1D_socialnet$nrelatives>='11' & LASA1D_socialnet$nrelatives <='20',5L,
+                                                                          ifelse(LASA1D_socialnet$nrelatives4>='21',6L, NA))))))
+ 
+table(soc_LASA1_2$soc_sn_num_relatives_2) 
+summary(soc_LASA1_2$soc_sn_num_relatives_2) 
 
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_3    
 **Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
-**Value type**:  integer  
+**Value type**:    
 **Variable unit**: relatives        
 **Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  None
+2 |  1 or 2
+3 |  3 to 5
+4 |  6 to 10
+5 |  11 to 20 
+6 |  More than 20
 
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1E_socialnet$nrelatives) 
+summary(LASA1E_socialnet$nrelatives)
+soc_LASA1_3$soc_sn_num_relatives_3 <- ifelse(LASA1B_socialnet$nrelatives=='0',1L, 
+                                                  ifelse(LASA1E_socialnet$nrelatives=='1' | LASA1E_socialnet$nrelatives=='2',2L,
+                                                      ifelse(LASA1E_socialnet$nrelatives>='3' & LASA1E_socialnet$nrelatives <='5',3L,
+                                                           ifelse(LASA1E_socialnet$nrelatives>='6' & LASA1E_socialnet$nrelatives <='10',4L,
+                                                                   ifelse(LASA1E_socialnet$nrelatives>='11' & LASA1E_socialnet$nrelatives <='20',5L,
+                                                                          ifelse(LASA1E_socialnet$nrelatives4>='21',6L, NA))))))
+ 
+table(soc_LASA1_3$soc_sn_num_relatives_3) 
+summary(soc_LASA1_3$soc_sn_num_relatives_3) 
 
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_4    
 **Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
-**Value type**:  integer  
+**Value type**:    
 **Variable unit**: relatives       
 **Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  None
+2 |  1 or 2
+3 |  3 to 5
+4 |  6 to 10
+5 |  11 to 20 
+6 |  More than 20
 
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1F_socialnet$nrelatives) 
+summary(LASA1F_socialnet$nrelatives)
+soc_LASA1_4$soc_sn_num_relatives_4 <- ifelse(LASA1F_socialnet$nrelatives=='0',1L, 
+                                                  ifelse(LASA1F_socialnet$nrelatives=='1' | LASA1F_socialnet$nrelatives=='2',2L,
+                                                      ifelse(LASA1F_socialnet$nrelatives>='3' & LASA1F_socialnet$nrelatives <='5',3L,
+                                                           ifelse(LASA1F_socialnet$nrelatives>='6' & LASA1F_socialnet$nrelatives <='10',4L,
+                                                                   ifelse(LASA1F_socialnet$nrelatives>='11' & LASA1F_socialnet$nrelatives <='20',5L,
+                                                                          ifelse(LASA1F_socialnet$nrelatives4>='21',6L, NA))))))
+ 
+table(soc_LASA1_4$soc_sn_num_relatives_4) 
+summary(soc_LASA1_4$soc_sn_num_relatives_4) 
 
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_5    
 **Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
-**Value type**:  integer  
+**Value type**:   
 **Variable unit**:  relatives      
 **Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  None
+2 |  1 or 2
+3 |  3 to 5
+4 |  6 to 10
+5 |  11 to 20 
+6 |  More than 20
    
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1G_socialnet$nrelatives) 
+summary(LASA1G_socialnet$nrelatives)
+soc_LASA1_5$soc_sn_num_relatives_5 <- ifelse(LASA1G_socialnet$nrelatives=='0',1L, 
+                                                  ifelse(LASA1G_socialnet$nrelatives=='1' | LASA1G_socialnet$nrelatives=='2',2L,
+                                                      ifelse(LASA1G_socialnet$nrelatives>='3' & LASA1G_socialnet$nrelatives <='5',3L,
+                                                           ifelse(LASA1G_socialnet$nrelatives>='6' & LASA1G_socialnet$nrelatives <='10',4L,
+                                                                   ifelse(LASA1G_socialnet$nrelatives>='11' & LASA1G_socialnet$nrelatives <='20',5L,
+                                                                          ifelse(LASA1G_socialnet$nrelatives4>='21',6L, NA))))))
+ 
+table(soc_LASA1_5$soc_sn_num_relatives_5) 
+summary(soc_LASA1_5$soc_sn_num_relatives_5) 
 
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_6    
 **Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which participant is close to, i.e. is in touch with regularly.           
-**Value type**:  integer  
+**Value type**:   
 **Variable unit**: relatives       
 **Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  None
+2 |  1 or 2
+3 |  3 to 5
+4 |  6 to 10
+5 |  11 to 20 
+6 |  More than 20
 
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1H_socialnet$nrelatives) 
+summary(LASA1H_socialnet$nrelatives)
+soc_LASA1_6$soc_sn_num_relatives_6 <- ifelse(LASA1H_socialnet$nrelatives=='0',1L, 
+                                                  ifelse(LASA1H_socialnet$nrelatives=='1' | LASA1H_socialnet$nrelatives=='2',2L,
+                                                      ifelse(LASA1H_socialnet$nrelatives>='3' & LASA1H_socialnet$nrelatives <='5',3L,
+                                                           ifelse(LASA1H_socialnet$nrelatives>='6' & LASA1H_socialnet$nrelatives <='10',4L,
+                                                                   ifelse(LASA1H_socialnet$nrelatives>='11' & LASA1H_socialnet$nrelatives <='20',5L,
+                                                                          ifelse(LASA1H_socialnet$nrelatives4>='21',6L, NA))))))
+ 
+table(soc_LASA1_6$soc_sn_num_relatives_6) 
+summary(soc_LASA1_6$soc_sn_num_relatives_6) 
 
 ```
 ### **Variable label**:   Contact frequency with family   
@@ -1093,10 +1481,15 @@ opal.logout(erasmus_opal)
 4 |  Never or less than a year contact with close relatives   
 
 **Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization comment**:  Study specific variable is the contact frequency with relatives and it includes the following types of social network members which might live in the household: partner, child (biological, of partner, step, adoptive, child-in-law, sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin). 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1B_socialnet$familycf) 
+summary(LASA1B_socialnet$familycf)
+soc_LASA1_0$soc_sn_freq_close_relatives_0 <- as.integer(LASA1B_socialnet$familycf)
+ 
+table(soc_LASA1_0$soc_sn_freq_close_relatives_0) 
+summary(soc_LASA1_0$soc_sn_freq_close_relatives_0) 
 
 ```
 ### **Variable label**:   Contact frequency with family     
@@ -1117,7 +1510,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1C_socialnet$familycf) 
+summary(LASA1C_socialnet$familycf)
+soc_LASA1_1$soc_sn_freq_close_relatives_1 <- as.integer(LASA1C_socialnet$familycf)
+ 
+table(soc_LASA1_1$soc_sn_freq_close_relatives_1) 
+summary(soc_LASA1_1$soc_sn_freq_close_relatives_1)
 
 ```
 ### **Variable label**:   Contact frequency with family    
@@ -1138,7 +1536,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1D_socialnet$familycf) 
+summary(LASA1D_socialnet$familycf)
+soc_LASA1_2$soc_sn_freq_close_relatives_2 <- as.integer(LASA1D_socialnet$familycf)
+ 
+table(soc_LASA1_2$soc_sn_freq_close_relatives_2) 
+summary(soc_LASA1_2$soc_sn_freq_close_relatives_2)
 
 ```
 ### **Variable label**:   Contact frequency with family    
@@ -1159,7 +1562,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1E_socialnet$familycf) 
+summary(LASA1E_socialnet$familycf)
+soc_LASA1_3$soc_sn_freq_close_relatives_3 <- as.integer(LASA1E_socialnet$familycf)
+ 
+table(soc_LASA1_3$soc_sn_freq_close_relatives_3) 
+summary(soc_LASA1_3$soc_sn_freq_close_relatives_3)
 
 ```
 ### **Variable label**:   Contact frequency with family   
@@ -1180,7 +1588,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1F_socialnet$familycf) 
+summary(LASA1F_socialnet$familycf)
+soc_LASA1_4$soc_sn_freq_close_relatives_4 <- as.integer(LASA1F_socialnet$familycf)
+ 
+table(soc_LASA1_4$soc_sn_freq_close_relatives_4) 
+summary(soc_LASA1_4$soc_sn_freq_close_relatives_4)
 
 ```
 ### **Variable label**:   Contact frequency with family    
@@ -1201,7 +1614,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1G_socialnet$familycf) 
+summary(LASA1G_socialnet$familycf)
+soc_LASA1_5$soc_sn_freq_close_relatives_5 <- as.integer(LASA1G_socialnet$familycf)
+ 
+table(soc_LASA1_5$soc_sn_freq_close_relatives_5) 
+summary(soc_LASA1_5$soc_sn_freq_close_relatives_5)
 
 ```
 ### **Variable label**:   Contact frequency with family    
@@ -1222,7 +1640,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1H_socialnet$familycf) 
+summary(LASA1H_socialnet$familycf)
+soc_LASA1_6$soc_sn_freq_close_relatives_6 <- as.integer(LASA1H_socialnet$familycf)
+ 
+table(soc_LASA1_6$soc_sn_freq_close_relatives_6) 
+summary(soc_LASA1_6$soc_sn_freq_close_relatives_6)
 
 ```
 
@@ -1241,10 +1664,16 @@ opal.logout(erasmus_opal)
 4 |  Never or less than a year contact with relatives  
 
 **Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization comment**:   Study specific variable is the contact frequency with relatives and it includes the following types of social network members which do not live in the household: partner, child (biological, of partner, step, adoptive, child-in-law, sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin). 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
+table(LASA1B_socialnet$relativescf) 
+summary(LASA1B_socialnet$relativescf)
+soc_LASA1_0$soc_sn_freq_relatives_0 <- as.integer(LASA1B_socialnet$relativescf)
+ 
+table(soc_LASA1_0$soc_sn_freq_relatives_0) 
+summary(soc_LASA1_0$soc_sn_freq_relatives_0) 
 
 ```
 ### **Variable label**:   Contact frequency with relatives      
@@ -1265,7 +1694,13 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1C_socialnet$relativescf) 
+summary(LASA1C_socialnet$relativescf)
+soc_LASA1_1$soc_sn_freq_relatives_1 <- as.integer(LASA1C_socialnet$relativescf)
+ 
+table(soc_LASA1_1$soc_sn_freq_relatives_1) 
+summary(soc_LASA1_1$soc_sn_freq_relatives_1) 
+
 
 ```
 ### **Variable label**:   Contact frequency with relatives     
@@ -1286,7 +1721,13 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1D_socialnet$relativescf) 
+summary(LASA1D_socialnet$relativescf)
+soc_LASA1_2$soc_sn_freq_relatives_2 <- as.integer(LASA1D_socialnet$relativescf)
+ 
+table(soc_LASA1_2$soc_sn_freq_relatives_2) 
+summary(soc_LASA1_2$soc_sn_freq_relatives_2) 
+
 
 ```
 ### **Variable label**:   Contact frequency with relatives    
@@ -1307,7 +1748,13 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1E_socialnet$relativescf) 
+summary(LASA1E_socialnet$relativescf)
+soc_LASA1_3$soc_sn_freq_relatives_3 <- as.integer(LASA1E_socialnet$relativescf)
+ 
+table(soc_LASA1_3$soc_sn_freq_relatives_3) 
+summary(soc_LASA1_3$soc_sn_freq_relatives_3) 
+
 
 ```
 ### **Variable label**:   Contact frequency with relatives    
@@ -1328,7 +1775,13 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1F_socialnet$relativescf) 
+summary(LASA1F_socialnet$relativescf)
+soc_LASA1_4$soc_sn_freq_relatives_4 <- as.integer(LASA1F_socialnet$relativescf)
+ 
+table(soc_LASA1_4$soc_sn_freq_relatives_4) 
+summary(soc_LASA1_4$soc_sn_freq_relatives_4) 
+
 
 ```
 ### **Variable label**:   Contact frequency with relatives     
@@ -1349,7 +1802,13 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1G_socialnet$relativescf) 
+summary(LASA1G_socialnet$relativescf)
+soc_LASA1_5$soc_sn_freq_relatives_5 <- as.integer(LASA1G_socialnet$relativescf)
+ 
+table(soc_LASA1_5$soc_sn_freq_relatives_5) 
+summary(soc_LASA1_5$soc_sn_freq_relatives_5) 
+
 
 ```
 ### **Variable label**:   Contact frequency with relatives    
@@ -1370,7 +1829,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1H_socialnet$relativescf) 
+summary(LASA1H_socialnet$relativescf)
+soc_LASA1_6$soc_sn_freq_relatives_6 <- as.integer(LASA1H_socialnet$relativescf)
+ 
+table(soc_LASA1_6$soc_sn_freq_relatives_6) 
+summary(soc_LASA1_6$soc_sn_freq_relatives_6) 
 
 ```
 ### **Variable label**:   Network size of non-kin      
@@ -1381,10 +1845,16 @@ opal.logout(erasmus_opal)
 **Category coding**:   
 
 **Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization comment**:  Study specific variable includes the following types of social network members:  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
+table(LASA1B_socialnet$nnonkin) 
+summary(LASA1B_socialnet$nnonkin)
+soc_LASA1_0$soc_sn_num_nonkin_0 <- as.integer(LASA1B_socialnet$nnonkin)
+ 
+table(soc_LASA1_0$soc_sn_num_nonkin_0) 
+summary(soc_LASA1_0$soc_sn_num_nonkin_0) 
 
 ```
 ### **Variable label**:   Network size of non-kin      
@@ -1398,7 +1868,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1C_socialnet$nnonkin) 
+summary(LASA1C_socialnet$nnonkin)
+soc_LASA1_1$soc_sn_num_nonkin_1 <- as.integer(LASA1C_socialnet$nnonkin)
+ 
+table(soc_LASA1_1$soc_sn_num_nonkin_1) 
+summary(soc_LASA1_1$soc_sn_num_nonkin_1) 
 
 ```
 ### **Variable label**:   Network size of non-kin      
@@ -1412,7 +1887,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1D_socialnet$nnonkin) 
+summary(LASA1D_socialnet$nnonkin)
+soc_LASA1_2$soc_sn_num_nonkin_2 <- as.integer(LASA1D_socialnet$nnonkin)
+ 
+table(soc_LASA1_2$soc_sn_num_nonkin_2) 
+summary(soc_LASA1_2$soc_sn_num_nonkin_2) 
 
 ```
 ### **Variable label**:   Network size of non-kin      
@@ -1426,7 +1906,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1E_socialnet$nnonkin) 
+summary(LASA1E_socialnet$nnonkin)
+soc_LASA1_3$soc_sn_num_nonkin_3 <- as.integer(LASA1E_socialnet$nnonkin)
+ 
+table(soc_LASA1_3$soc_sn_num_nonkin_3) 
+summary(soc_LASA1_3$soc_sn_num_nonkin_3) 
 
 ```
 ### **Variable label**:   Network size of non-kin      
@@ -1440,7 +1925,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1F_socialnet$nnonkin) 
+summary(LASA1F_socialnet$nnonkin)
+soc_LASA1_4$soc_sn_num_nonkin_4 <- as.integer(LASA1F_socialnet$nnonkin)
+ 
+table(soc_LASA1_4$soc_sn_num_nonkin_4) 
+summary(soc_LASA1_4$soc_sn_num_nonkin_4) 
 
 ```
 ### **Variable label**:   Network size of non-kin      
@@ -1454,7 +1944,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1G_socialnet$nnonkin) 
+summary(LASA1G_socialnet$nnonkin)
+soc_LASA1_5$soc_sn_num_nonkin_5 <- as.integer(LASA1G_socialnet$nnonkin)
+ 
+table(soc_LASA1_5$soc_sn_num_nonkin_5) 
+summary(soc_LASA1_5$soc_sn_num_nonkin_5) 
 
 ```
 ### **Variable label**:   Network size of non-kin      
@@ -1468,7 +1963,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1H_socialnet$nnonkin) 
+summary(LASA1H_socialnet$nnonkin)
+soc_LASA1_6$soc_sn_num_nonkin_6 <- as.integer(LASA1H_socialnet$nnonkin)
+ 
+table(soc_LASA1_6$soc_sn_num_nonkin_6) 
+summary(soc_LASA1_6$soc_sn_num_nonkin_6) 
 
 ```
 
@@ -1491,8 +1991,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
-
+table(LASA1B_socialnet$nonkincf) 
+summary(LASA1B_socialnet$nonkincf)
+soc_LASA1_0$soc_sn_freq_nonkin_0 <- as.integer(LASA1B_socialnet$nonkincf)
+ 
+table(soc_LASA1_0$soc_sn_freq_nonkin_0) 
+summary(soc_LASA1_0$soc_sn_freq_nonkin_0) 
 ```
 ### **Variable label**:   Contact frequency with non-kin  
 **Variable name**:   soc_sn_freq_nonkin_1            
@@ -1513,8 +2017,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
-
+table(LASA1C_socialnet$nonkincf) 
+summary(LASA1C_socialnet$nonkincf)
+soc_LASA1_1$soc_sn_freq_nonkin_1 <- as.integer(LASA1C_socialnet$nonkincf)
+ 
+table(soc_LASA1_1$soc_sn_freq_nonkin_1) 
+summary(soc_LASA1_1$soc_sn_freq_nonkin_1)
 ```
 ### **Variable label**:   Contact frequency with non-kin  
 **Variable name**:   soc_sn_freq_nonkin_2            
@@ -1535,7 +2043,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1D_socialnet$nonkincf) 
+summary(LASA1D_socialnet$nonkincf)
+soc_LASA1_2$soc_sn_freq_nonkin_2 <- as.integer(LASA1D_socialnet$nonkincf)
+ 
+table(soc_LASA1_2$soc_sn_freq_nonkin_2) 
+summary(soc_LASA1_2$soc_sn_freq_nonkin_2)
 
 ```
 ### **Variable label**:   Contact frequency with non-kin  
@@ -1557,7 +2070,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1E_socialnet$nonkincf) 
+summary(LASA1E_socialnet$nonkincf)
+soc_LASA1_3$soc_sn_freq_nonkin_3 <- as.integer(LASA1E_socialnet$nonkincf)
+ 
+table(soc_LASA1_3$soc_sn_freq_nonkin_3) 
+summary(soc_LASA1_3$soc_sn_freq_nonkin_3)
 
 ```
 ### **Variable label**:   Contact frequency with non-kin  
@@ -1579,7 +2097,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1F_socialnet$nonkincf) 
+summary(LASA1F_socialnet$nonkincf)
+soc_LASA1_4$soc_sn_freq_nonkin_4 <- as.integer(LASA1F_socialnet$nonkincf)
+ 
+table(soc_LASA1_4$soc_sn_freq_nonkin_4) 
+summary(soc_LASA1_4$soc_sn_freq_nonkin_4)
 
 ```
 ### **Variable label**:   Contact frequency with non-kin  
@@ -1601,7 +2124,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1G_socialnet$nonkincf) 
+summary(LASA1G_socialnet$nonkincf)
+soc_LASA1_5$soc_sn_freq_nonkin_5 <- as.integer(LASA1G_socialnet$nonkincf)
+ 
+table(soc_LASA1_5$soc_sn_freq_nonkin_5) 
+summary(soc_LASA1_5$soc_sn_freq_nonkin_5)
 
 ```
 ### **Variable label**:   Contact frequency with non-kin  
@@ -1623,105 +2151,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_0        
-**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_1          
-**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_2          
-**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_3          
-**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_4          
-**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_5          
-**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:   Quartile of participant's network size          
-**Variable name**:   soc_sn_num_network_all_6          
-**Variable description**:  Indicator of the participant’s quartile of social network, comprised of any type of member reported.               
-**Value type**:  integer  
-**Variable unit**:  quartile      
-**Category coding**:   
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
+table(LASA1H_socialnet$nonkincf) 
+summary(LASA1H_socialnet$nonkincf)
+soc_LASA1_6$soc_sn_freq_nonkin_6 <- as.integer(LASA1H_socialnet$nonkincf)
+ 
+table(soc_LASA1_6$soc_sn_freq_nonkin_6) 
+summary(soc_LASA1_6$soc_sn_freq_nonkin_6)
 
 ```
 # Social support subdomain
@@ -1740,10 +2175,15 @@ opal.logout(erasmus_opal)
 2 |  Often received emotional support
 
 **Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization comment**: Confidants are not identified in LASAB.   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+soc_LASA1_0$soc_ss_received_emo_0 <- ifelse(LASA1B_socialnet$rec_emo_conf1 ==3 | LASA1B_socialnet$rec_emo_conf2 ==3 |LASA1B_socialnet$rec_emo_conf3 == 3, 2L, 
+                                         ifelse((LASA1B_socialnet$rec_emo_conf1  ==2 | LASA1B_socialnet$rec_emo_conf2  ==2 |LASA1B_socialnet$rec_emo_conf3 == 2) & (LASA1B_socialnet$rec_emo_conf1  !=3 & LASA1B_socialnet$rec_emo_conf2  !=3 & LASA1B_socialnet$rec_emo_conf3 !=3), 1L, 
+                                             ifelse(LASA1B_socialnet$rec_emo_conf1 <=1 | LASA1B_socialnet$rec_emo_conf2 <=1 |LASA1B_socialnet$rec_emo_conf3 <=1, 0L, NA)))
+
+table(soc_LASA1_0$soc_ss_received_emo_0) 
+summary(soc_LASA1_0$soc_ss_received_emo_0)
 
 ```
 ### **Variable label**: Received emotional support    
@@ -1763,7 +2203,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+soc_LASA1_1$soc_ss_received_emo_1 <- ifelse(LASA1C_socialnet$rec_emo_conf1 ==3 | LASA1C_socialnet$rec_emo_conf2 ==3 |LASA1C_socialnet$rec_emo_conf3 == 3, 2L, 
+                                         ifelse((LASA1C_socialnet$rec_emo_conf1  ==2 | LASA1C_socialnet$rec_emo_conf2  ==2 |LASA1C_socialnet$rec_emo_conf3 == 2) & (LASA1C_socialnet$rec_emo_conf1  !=3 & LASA1C_socialnet$rec_emo_conf2  !=3 & LASA1C_socialnet$rec_emo_conf3 !=3), 1L, 
+                                             ifelse(LASA1C_socialnet$rec_emo_conf1 <=1 | LASA1C_socialnet$rec_emo_conf2 <=1 |LASA1C_socialnet$rec_emo_conf3 <=1, 0L, NA)))
+
+table(soc_LASA1_1$soc_ss_received_emo_1) 
+summary(soc_LASA1_1$soc_ss_received_emo_1) 
 
 ```
 ### **Variable label**: Received emotional support    
@@ -1783,7 +2228,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+soc_LASA1_2$soc_ss_received_emo_2 <- ifelse(LASA1D_socialnet$rec_emo_conf1 ==3 | LASA1D_socialnet$rec_emo_conf2 ==3 |LASA1D_socialnet$rec_emo_conf3 == 3, 2L, 
+                                         ifelse((LASA1D_socialnet$rec_emo_conf1  ==2 | LASA1D_socialnet$rec_emo_conf2  ==2 |LASA1D_socialnet$rec_emo_conf3 == 2) & (LASA1D_socialnet$rec_emo_conf1  !=3 & LASA1D_socialnet$rec_emo_conf2  !=3 & LASA1D_socialnet$rec_emo_conf3 !=3), 1L, 
+                                             ifelse(LASA1D_socialnet$rec_emo_conf1 <=1 | LASA1D_socialnet$rec_emo_conf2 <=1 |LASA1D_socialnet$rec_emo_conf3 <=1, 0L, NA)))
+
+table(soc_LASA1_2$soc_ss_received_emo_2) 
+summary(soc_LASA1_2$soc_ss_received_emo_2)
 
 ```
 ### **Variable label**: Received emotional support    
@@ -1803,7 +2253,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+soc_LASA1_3$soc_ss_received_emo_3 <- ifelse(LASA1E_socialnet$rec_emo_conf1 ==3 | LASA1E_socialnet$rec_emo_conf2 ==3 |LASA1E_socialnet$rec_emo_conf3 == 3, 2L, 
+                                         ifelse((LASA1E_socialnet$rec_emo_conf1  ==2 | LASA1E_socialnet$rec_emo_conf2  ==2 |LASA1E_socialnet$rec_emo_conf3 == 2) & (LASA1E_socialnet$rec_emo_conf1  !=3 & LASA1E_socialnet$rec_emo_conf2  !=3 & LASA1E_socialnet$rec_emo_conf3 !=3), 1L, 
+                                             ifelse(LASA1E_socialnet$rec_emo_conf1 <=1 | LASA1E_socialnet$rec_emo_conf2 <=1 |LASA1E_socialnet$rec_emo_conf3 <=1, 0L, NA)))
+
+table(soc_LASA1_3$soc_ss_received_emo_3) 
+summary(soc_LASA1_3$soc_ss_received_emo_3)
 
 ```
 ### **Variable label**: Received emotional support    
@@ -1823,7 +2278,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+soc_LASA1_1$soc_ss_received_emo_1 <- ifelse(LASA1C_socialnet$rec_emo_conf1 ==3 | LASA1C_socialnet$rec_emo_conf2 ==3 |LASA1C_socialnet$rec_emo_conf3 == 3, 2L, 
+                                         ifelse((LASA1C_socialnet$rec_emo_conf1  ==2 | LASA1C_socialnet$rec_emo_conf2  ==2 |LASA1C_socialnet$rec_emo_conf3 == 2) & (LASA1C_socialnet$rec_emo_conf1  !=3 & LASA1C_socialnet$rec_emo_conf2  !=3 & LASA1C_socialnet$rec_emo_conf3 !=3), 1L, 
+                                             ifelse(LASA1C_socialnet$rec_emo_conf1 <=1 | LASA1C_socialnet$rec_emo_conf2 <=1 |LASA1C_socialnet$rec_emo_conf3 <=1, 0L, NA)))
+
+table(soc_LASA1_1$soc_ss_received_emo_1) 
+summary(soc_LASA1_1$soc_ss_received_emo_1)
 
 ```
 ### **Variable label**: Received emotional support    
@@ -1860,104 +2320,6 @@ opal.logout(erasmus_opal)
 2 |  Often received emotional support
 
 **Harmonization status**:     
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_0 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.       
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_1 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.         
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_2 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.         
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_3 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.      
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_4 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.       
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_5 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.       
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Received emotional support Z-score    
-**Variable name**:   soc_ss_Zscore_received_emo_6 
-**Variable description**:  Zscore of received emotional support i.e. receiving affection from or sharing personal experiences/feelings with, from the participant’s three social network members that they indicated they are closest to.      
-**Value type**:  integer  
-**Variable unit**:  
-**Category coding**:  
-
-**Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
