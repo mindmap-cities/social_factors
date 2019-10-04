@@ -15,13 +15,13 @@ library(data.table)
 erasmus_opal <- opal.login()
 #Login to Opal server and assign the content of the RECORD table(s) to your RStudio environment
 # RECORD wave 1, part 1
-opal.assign.table.tibble(erasmus_opal, 'RECORD_w1_1', 'RECORD.RECORD_w1_1', variables = list('Qm3','Q5_e','Q24_d_1','Q24_d_2','Q24_d_3','Q24_d_4','Q24_b_1','Q24_b_2','Q24_b_3','Q24_b_4','Q24_a_1','Q24_a_2','Q24_a_3','Q24_a_4','Q24_e_1','Q24_e_2','Q24_e_3','Q52'))
+opal.assign.table.tibble(erasmus_opal, 'RECORD_w1_1', 'RECORD.RECORD_w1_1', variables = list('Qm3','Q5_e','Q24_d_1','Q24_d_2','Q24_d_3','Q24_d_4','Q24_b_1','Q24_b_2','Q24_b_3','Q24_b_4','Q24_a_1','Q24_a_2','Q24_a_3','Q24_a_4','Q24_e_1','Q24_e_2','Q24_e_3','Q52', "Adm21"))
 RECORD_w1_1 <- opal.execute(erasmus_opal,'RECORD_w1_1')
 # RECORD wave 1, part 2
 opal.assign.table.tibble(erasmus_opal, 'RECORD_w1_2', 'RECORD.RECORD_w1_2', variables = list('q13_contiviv')) 
 RECORD_w1_2<- opal.execute(erasmus_opal,'RECORD_w1_2')
 # RECORD wave 2
-opal.assign.table.tibble(erasmus_opal, 'RECORD_w2', 'RECORD.RECORD_W2',variables=list('Qm137','Q5_Demenagement_prevu','P58_Q3_1240','P58_Q3_1241')) 
+opal.assign.table.tibble(erasmus_opal, 'RECORD_w2', 'RECORD.RECORD_W2',variables=list('Qm137','Q5_Demenagement_prevu','P58_Q3_1240','P58_Q3_1241', "Adm21")) 
 RECORD_w2 <- opal.execute(erasmus_opal,'RECORD_w2')
 ```
 ## Assign participant id as first column of your harmonized dataframes

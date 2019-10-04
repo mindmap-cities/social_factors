@@ -24,7 +24,7 @@ GLOBE1997 <- opal.execute(erasmus_opal,'GLOBE1997')
 opal.assign.table.tibble(erasmus_opal, 'GLOBE2004', 'GLOBE.GLOBE2004',variables = list('w266','w264','w265','w270','w271','w272','w269','w072b','w051','w040a','w041','w289','w264','w265','w266','w267','w268','w269','w270','w271','w272','w072b','w051','w264','w072a'))
 GLOBE2004 <- opal.execute(erasmus_opal,'GLOBE2004')
 # GLOBE2011
-opal.assign.table.tibble(erasmus_opal, 'GLOBE2011', 'GLOBE.GLOBE2011',variables = list('v49_buurt_wndr','53_b_buur2','v50_huis_bez','v61_c_o_vak','v61_d_o_pol','v61_e_o_ker','v61_f_o_buu','v61_g_o_ner','v59_f_ond6','v61_d_o_pol','v61_c_o_vak','v61_f_o_buu','v61_g_o_ner','v61_b_o_hob','v49_buurt_wndr','v53_b_buur2','v59_a_ond1'))
+opal.assign.table.tibble(erasmus_opal, 'GLOBE2011', 'GLOBE.GLOBE2011',variables = list('v49_buurt_wndr','53_b_buur2','v50_huis_bez','v61_c_o_vak','v61_d_o_pol','v61_e_o_ker','v61_f_o_buu','v61_g_o_ner','v59_f_ond6','v61_c_o_vak','v61_f_o_buu','v61_g_o_ner','v61_b_o_hob','v49_buurt_wndr','v53_b_buur2','v59_a_ond1'))
 GLOBE2011 <- opal.execute(erasmus_opal,'GLOBE2011')
 # GLOBE2014
 opal.assign.table.tibble(erasmus_opal, 'GLOBE2014', 'GLOBE.GLOBE2014',variables = list('G14v9','G14v87','G14v90_g','G14v88','G14v42','G14v46','G14v54','G14v55','G14v36','G14v40','G14v59_f','G14v56_e','G14v56_g','G14v56_c','G14v56_d','G14v56_f','G14v56_h','G14v56_b','G14v87','G14v90_g','G14v45','G14v59_a'))
@@ -1141,7 +1141,7 @@ table(GLOBE2014$G14v36)
 soc_GLOBE_4$soc_sn_num_relatives_4 <- ifelse(GLOBE2014$G14v36=='0',1L, 
                                                   ifelse(GLOBE2014$G14v36=='1' | GLOBE2014$G14v36=='2',2L,
                                                       ifelse(GLOBE2014$G14v36>='3' & GLOBE2014$G14v36 <='5',3L,
-                                                           ifelse(GLOBE2014$G14v36>='6' & GLOBE2014$G14v36s <='10',4L,
+                                                           ifelse(GLOBE2014$G14v36>='6' & GLOBE2014$G14v36 <='10',4L,
                                                                    ifelse(GLOBE2014$G14v36>='11' & GLOBE2014$G14v36 <='20',5L,
                                                                           ifelse(GLOBE2014$G14v36>='21',6L, NA))))))
  
