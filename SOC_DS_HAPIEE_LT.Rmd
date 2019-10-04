@@ -55,7 +55,7 @@ opal.logout(erasmus_opal)
 #w2child_lt 
 table(HAPIEE_W2$w2chldno_lt) 
 
-soc_HAPIEE_LT_0$soc_sn_num_children_0 <- ifelse(HAPIEE_W2$w2child_lt==2,0L, as.integer(HAPIEE_W2$w2chldno_lt))
+soc_HAPIEE_LT_0$soc_sn_num_children_0 <- ifelse(HAPIEE_W2$w2child_lt=="2",0L, as.integer(HAPIEE_W2$w2chldno_lt))
 
 table(soc_HAPIEE_LT_0$soc_sn_num_children_0) 
 
@@ -3509,7 +3509,7 @@ table(soc_HAPIEE_LT_0$soc_sp_general_0)
 ```{r, echo=TRUE}
 table(soc_HAPIEE_LT_0$soc_sn_children_rank_0)
 table(soc_HAPIEE_LT_0$soc_sp_general_0)
-soc_sn_num_children_0
+
 # so no body is isolated since no one is childless but perhaphs the child has passed away, one way is to use contact frequency to identify isolated persons, checking with supervisor
 
 table(soc_HAPIEE_LT_0$soc_sn_freq_friends_inperson_0)

@@ -5228,7 +5228,7 @@ soc_HUNT_2 <- data.frame(id = HUNT3$id)
 **R script**:  
 ```{r, echo=TRUE}
 
-env_HUNT_1$soc_res_type_1<-recode(as.integer(HUNT2$HouTyp_NT2BLQ2),'1'=2L,'2'=4L,'3'=1L,'4'=2L,'5'=3L, '6'=3L,'7'=5L)
+soc_HUNT_1$soc_res_type_1<-recode(as.integer(HUNT2$HouTyp_NT2BLQ2),'1'=2L,'2'=4L,'3'=1L,'4'=2L,'5'=3L, '6'=3L,'7'=5L)
 
 ```
 ### **Variable label**:  Residence type     
