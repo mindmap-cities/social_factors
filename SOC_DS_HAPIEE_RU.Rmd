@@ -56,7 +56,7 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   w2chldno missing from database thus cannot harmonize 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of children      
@@ -70,7 +70,7 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of children      
@@ -84,7 +84,7 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of children      
@@ -98,7 +98,7 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of children      
@@ -112,7 +112,7 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of children      
@@ -126,7 +126,7 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of children      
@@ -140,7 +140,7 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Ranked network size of children         
@@ -160,7 +160,6 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#w2chldno exists but it is not loaded in Obiba (only w2child_lt)
 
 ```
 
@@ -181,7 +180,7 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Ranked network size of children           
@@ -201,7 +200,7 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Ranked network size of children          
@@ -221,7 +220,7 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Ranked network size of children          
@@ -241,7 +240,7 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Ranked network size of children          
@@ -261,7 +260,7 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Ranked network size of children         
@@ -281,7 +280,7 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -296,7 +295,7 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of friends    
@@ -310,7 +309,7 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of friends    
@@ -324,7 +323,7 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of friends    
@@ -338,7 +337,7 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of friends    
@@ -352,7 +351,7 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of friends    
@@ -366,7 +365,7 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -381,7 +380,7 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -404,15 +403,11 @@ opal.logout(erasmus_opal)
 **Harmonization comment**: Study specific variable does not ask about daily contact with friends therefore for this study the DataSchema's category 1, daily in-person contact with friends, is empty. To use this DataSchema with other MINDMAP cohorts, category 1 and 2 of this DataSchema must be collapsed into one category: daily and weekly in-person contact with friends.    
 **R script**:  
 ```{r, echo=TRUE}
-#p58
-table(HAPIEE_W1$p58) 
 
 soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0 <-  ifelse(HAPIEE_W1$p58=='1'|HAPIEE_W1$p58=='2',2L, 
                                                      ifelse(HAPIEE_W1$p58=='3',3L,
                                                        ifelse(HAPIEE_W1$p58 =='4',4L, 
                                                          ifelse(HAPIEE_W1$p58 =='5' | HAPIEE_W1$p58 =='6',5L,NA))))
-
-table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0) 
 
 ``` 
 ### **Variable label**:   In-person contact frequency with friends        
@@ -434,7 +429,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   In-person contact frequency with friends        
@@ -456,7 +451,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   In-person contact frequency with friends       
@@ -478,7 +473,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   In-person contact frequency with friends       
@@ -500,7 +495,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -522,7 +517,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -544,7 +539,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -566,7 +561,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -588,7 +583,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -610,7 +605,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -632,7 +627,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -654,7 +649,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -677,7 +672,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -700,7 +695,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -723,7 +718,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -746,7 +741,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -769,7 +764,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -792,7 +787,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -815,7 +810,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 
@@ -838,7 +833,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Contact frequency with neighbours        
@@ -860,7 +855,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -882,7 +877,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -904,7 +899,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -926,7 +921,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -948,7 +943,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -970,7 +965,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of relatives      
@@ -993,7 +988,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of relatives      
@@ -1016,7 +1011,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of relatives      
@@ -1039,7 +1034,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of relatives      
@@ -1062,7 +1057,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of relatives      
@@ -1085,7 +1080,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of relatives      
@@ -1108,7 +1103,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of relatives      
@@ -1131,7 +1126,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with family   
@@ -1152,7 +1147,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with family     
@@ -1173,7 +1168,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with family    
@@ -1194,7 +1189,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with family    
@@ -1215,7 +1210,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with family   
@@ -1236,7 +1231,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with family    
@@ -1257,7 +1252,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with family    
@@ -1278,7 +1273,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -1300,14 +1295,11 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   Study specific variable does not ask about daily contact with relatives therefore for this study the DataSchema's category 1, daily in-person contact with relatives, is empty. To use this DataSchema with other MINDMAP cohorts, category 1 and 2 of this DataSchema must be collapsed into one category: daily and weekly in-person contact with relatives.      
 **R script**:  
 ```{r, echo=TRUE}
-#p57
-table(HAPIEE_W1$p57) 
 
 soc_HAPIEE_RU_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W1$p57=='1'|HAPIEE_W1$p57=='2',1L, 
                                                      ifelse(HAPIEE_W1$p57=='3',2L,
                                                        ifelse(HAPIEE_W1$p57 =='4',3L, 
                                                          ifelse(HAPIEE_W1$p57 =='5' | HAPIEE_W1$p57 =='6',4L,NA))))
-table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 ```
 ### **Variable label**:   Contact frequency with relatives      
 **Variable name**:   soc_sn_freq_relatives_1          
@@ -1327,7 +1319,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with relatives     
@@ -1348,7 +1340,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with relatives    
@@ -1369,7 +1361,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with relatives    
@@ -1390,7 +1382,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with relatives     
@@ -1411,7 +1403,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with relatives    
@@ -1432,7 +1424,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 # Social support subdomain
@@ -1454,7 +1446,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received emotional support    
@@ -1474,7 +1466,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received emotional support    
@@ -1494,7 +1486,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received emotional support    
@@ -1514,7 +1506,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received emotional support    
@@ -1534,7 +1526,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received emotional support    
@@ -1554,7 +1546,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received emotional support    
@@ -1574,7 +1566,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -1594,7 +1586,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -1614,7 +1606,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -1634,7 +1626,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -1654,7 +1646,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -1674,7 +1666,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -1694,7 +1686,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -1714,7 +1706,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -1728,7 +1720,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -1742,7 +1734,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -1756,7 +1748,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -1770,7 +1762,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -1784,7 +1776,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -1798,7 +1790,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -1812,7 +1804,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -1831,7 +1823,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -1850,7 +1842,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -1869,7 +1861,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -1888,7 +1880,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -1907,7 +1899,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -1926,7 +1918,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -1945,7 +1937,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -1967,7 +1959,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Religious participation 
@@ -1986,7 +1978,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2005,7 +1997,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2024,7 +2016,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2043,7 +2035,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2062,7 +2054,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2081,7 +2073,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2100,7 +2092,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2122,7 +2114,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2144,7 +2136,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2166,7 +2158,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2188,7 +2180,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2210,7 +2202,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2232,7 +2224,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2254,7 +2246,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2276,7 +2268,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -2295,7 +2287,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -2314,7 +2306,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -2333,7 +2325,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -2352,7 +2344,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -2371,7 +2363,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -2390,7 +2382,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -2409,7 +2401,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation    
@@ -2428,7 +2420,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
@@ -2447,7 +2439,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
@@ -2466,7 +2458,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
@@ -2485,7 +2477,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
@@ -2504,7 +2496,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
@@ -2523,7 +2515,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
@@ -2542,7 +2534,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Volunteering      
@@ -2561,7 +2553,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Volunteering      
@@ -2580,7 +2572,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Volunteering      
@@ -2599,7 +2591,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Volunteering      
@@ -2618,7 +2610,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Volunteering      
@@ -2637,7 +2629,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Volunteering      
@@ -2656,7 +2648,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Volunteering      
@@ -2675,7 +2667,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -2694,7 +2686,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -2713,7 +2705,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -2732,7 +2724,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -2751,7 +2743,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -2770,7 +2762,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -2789,7 +2781,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -2808,7 +2800,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Professional participation         
@@ -2827,7 +2819,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Professional participation         
@@ -2846,7 +2838,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Professional participation         
@@ -2865,7 +2857,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Professional participation         
@@ -2884,7 +2876,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Professional participation         
@@ -2903,7 +2895,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Professional participation         
@@ -2922,7 +2914,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Professional participation         
@@ -2941,7 +2933,7 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  General social participation          
@@ -2960,13 +2952,9 @@ table(soc_HAPIEE_RU_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:  Study specific variable asks about membership in particular, not participation.      
 **R script**:  
 ```{r, echo=TRUE}
-#p55
-table(HAPIEE_W1$p55) #1 yes, a member  2 no
 
 soc_HAPIEE_RU_0$soc_sp_general_0 <- ifelse(HAPIEE_W1$p55=='1',1L, 
                                                     ifelse(HAPIEE_W1$p55 =='2',0L, NA))
-
-table(soc_HAPIEE_RU_0$soc_sp_general_0)
 
 ```
 ### **Variable label**:  General social participation            
@@ -2985,7 +2973,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  General social participation          
@@ -3004,7 +2992,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  General social participation          
@@ -3023,7 +3011,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  General social participation          
@@ -3042,7 +3030,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  General social participation          
@@ -3061,7 +3049,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  General social participation          
@@ -3080,7 +3068,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3099,7 +3087,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3118,7 +3106,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3137,7 +3125,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3156,7 +3144,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3175,7 +3163,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3194,7 +3182,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3213,7 +3201,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
@@ -3232,7 +3220,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
@@ -3251,7 +3239,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
@@ -3270,7 +3258,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
@@ -3289,7 +3277,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
@@ -3308,7 +3296,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
@@ -3327,7 +3315,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
@@ -3346,7 +3334,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Hobby      
@@ -3365,7 +3353,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Hobby      
@@ -3384,7 +3372,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Hobby      
@@ -3403,7 +3391,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Hobby      
@@ -3422,7 +3410,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Hobby      
@@ -3441,7 +3429,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Hobby      
@@ -3460,7 +3448,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Hobby      
@@ -3479,7 +3467,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Social isolation    
@@ -3498,7 +3486,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Social isolation    
@@ -3517,7 +3505,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Social isolation    
@@ -3536,7 +3524,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Social isolation    
@@ -3555,7 +3543,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Social isolation    
@@ -3574,7 +3562,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Social isolation    
@@ -3593,7 +3581,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Social isolation    
@@ -3612,7 +3600,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Social isolation    
@@ -3631,7 +3619,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -3653,7 +3641,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: victim     
@@ -3672,7 +3660,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: victim     
@@ -3691,7 +3679,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: victim     
@@ -3710,7 +3698,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: victim     
@@ -3729,7 +3717,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: victim     
@@ -3748,7 +3736,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: victim     
@@ -3767,7 +3755,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -3786,7 +3774,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -3805,7 +3793,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -3824,7 +3812,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -3843,7 +3831,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -3862,7 +3850,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -3881,7 +3869,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -3900,7 +3888,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -3919,7 +3907,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: relationship problems        
@@ -3938,7 +3926,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: relationship problems        
@@ -3957,7 +3945,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: relationship problems        
@@ -3976,7 +3964,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: divorce/relationship breakup           
@@ -3995,7 +3983,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: divorce/relationship breakup           
@@ -4014,7 +4002,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: divorce/relationship breakup           
@@ -4033,7 +4021,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4052,7 +4040,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4071,7 +4059,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4090,7 +4078,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4109,7 +4097,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4128,7 +4116,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4147,7 +4135,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4166,7 +4154,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: death of partner             
@@ -4185,7 +4173,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: death of partner             
@@ -4204,7 +4192,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: death of partner             
@@ -4223,7 +4211,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: death of family member or friend                
@@ -4242,7 +4230,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: death of family member or friend                
@@ -4261,7 +4249,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: death of family member or friend                
@@ -4280,7 +4268,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 # Residential characteristics subdomain
@@ -4296,7 +4284,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
@@ -4310,7 +4298,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
@@ -4324,7 +4312,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
@@ -4338,7 +4326,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
@@ -4352,7 +4340,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
@@ -4366,7 +4354,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
@@ -4380,7 +4368,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -4394,7 +4382,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -4408,7 +4396,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -4422,7 +4410,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -4436,7 +4424,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -4450,7 +4438,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -4464,7 +4452,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -4478,7 +4466,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
@@ -4497,7 +4485,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
@@ -4516,7 +4504,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
@@ -4535,7 +4523,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
@@ -4554,7 +4542,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
@@ -4573,7 +4561,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
@@ -4592,7 +4580,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -4611,7 +4599,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -4630,7 +4618,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -4649,7 +4637,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -4668,7 +4656,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -4687,7 +4675,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -4706,7 +4694,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -4725,7 +4713,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence independence     
@@ -4744,7 +4732,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence independence     
@@ -4763,7 +4751,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence independence     
@@ -4782,7 +4770,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence independence     
@@ -4801,7 +4789,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence independence     
@@ -4820,7 +4808,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence independence     
@@ -4839,7 +4827,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence independence     
@@ -4858,7 +4846,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence type     
@@ -4880,7 +4868,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence type     
@@ -4902,7 +4890,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence type     
@@ -4924,7 +4912,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence type     
@@ -4946,7 +4934,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence type     
@@ -4968,7 +4956,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence type     
@@ -4990,7 +4978,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence type     
@@ -5012,7 +5000,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (2-level)      
@@ -5031,7 +5019,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (2-level)      
@@ -5050,7 +5038,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (2-level)      
@@ -5069,7 +5057,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (2-level)      
@@ -5088,7 +5076,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (2-level)      
@@ -5107,7 +5095,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (2-level)      
@@ -5126,7 +5114,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (2-level)      
@@ -5145,7 +5133,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (3-level)      
@@ -5165,7 +5153,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (3-level)      
@@ -5185,7 +5173,7 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (3-level)      
@@ -5205,6 +5193,6 @@ table(soc_HAPIEE_RU_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
