@@ -97,11 +97,7 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:  Study specific item includes biological, step and adopted children belonging to the social network that were identified as part of the participant's social network.    
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1B_socialnet$nkids) 
-summary(LASA1B_socialnet$nkids) 
 soc_LASA1_0$soc_sn_num_children_0 <- as.integer(ifelse(LASA1B_socialnet$nkids %in% c(0:15)))
-table(soc_LASA1_0$soc_sn_num_children_0) 
-summary(soc_LASA1_0$soc_sn_num_children_0) 
 
 ```
 ### **Variable label**:   Network size of children      
@@ -115,11 +111,7 @@ summary(soc_LASA1_0$soc_sn_num_children_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1C_socialnet$nkids) 
-summary(LASA1C_socialnet$nkids) 
 soc_LASA1_1$soc_sn_num_children_1 <- as.integer(ifelse(LASA1C_socialnet$nkids %in% c(0:15)))
-table(soc_LASA1_1$soc_sn_num_children_1) 
-summary(soc_LASA1_1$soc_sn_num_children_1)
 
 ```
 ### **Variable label**:   Network size of children      
@@ -133,11 +125,7 @@ summary(soc_LASA1_1$soc_sn_num_children_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1D_socialnet$nkids) 
-summary(LASA1D_socialnet$nkids) 
 soc_LASA1_2$soc_sn_num_children_2 <- as.integer(ifelse(LASA1D_socialnet$nkids %in% c(0:15)))
-table(soc_LASA1_2$soc_sn_num_children_2) 
-summary(soc_LASA1_2$soc_sn_num_children_2)
 
 ```
 ### **Variable label**:   Network size of children      
@@ -151,11 +139,7 @@ summary(soc_LASA1_2$soc_sn_num_children_2)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1E_socialnet$nkids) 
-summary(LASA1E_socialnet$nkids) 
 soc_LASA1_3$soc_sn_num_children_3 <- as.integer(ifelse(LASA1E_socialnet$nkids %in% c(0:15)))
-table(soc_LASA1_3$soc_sn_num_children_3) 
-summary(soc_LASA1_3$soc_sn_num_children_3)
 
 ```
 ### **Variable label**:   Network size of children      
@@ -169,11 +153,7 @@ summary(soc_LASA1_3$soc_sn_num_children_3)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1F_socialnet$nkids) 
-summary(LASA1F_socialnet$nkids) 
 soc_LASA1_4$soc_sn_num_children_4 <- as.integer(ifelse(LASA1F_socialnet$nkids %in% c(0:15)))
-table(soc_LASA1_4$soc_sn_num_children_4) 
-summary(soc_LASA1_4$soc_sn_num_children_4)
 
 ```
 ### **Variable label**:   Network size of children      
@@ -187,11 +167,7 @@ summary(soc_LASA1_4$soc_sn_num_children_4)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1G_socialnet$nkids) 
-summary(LASA1G_socialnet$nkids) 
 soc_LASA1_5$soc_sn_num_children_5 <- as.integer(ifelse(LASA1G_socialnet$nkids %in% c(0:15)))
-table(soc_LASA1_5$soc_sn_num_children_5) 
-summary(soc_LASA1_5$soc_sn_num_children_5)
 
 ```
 ### **Variable label**:   Network size of children      
@@ -205,11 +181,7 @@ summary(soc_LASA1_5$soc_sn_num_children_5)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1H_socialnet$nkids) 
-summary(LASA1H_socialnet$nkids) 
 soc_LASA1_6$soc_sn_num_children_6 <- as.integer(ifelse(LASA1H_socialnet$nkids %in% c(0:15)))
-table(soc_LASA1_6$soc_sn_num_children_6) 
-summary(soc_LASA1_6$soc_sn_num_children_6)
 
 ```
 ### **Variable label**:   Ranked network size of children         
@@ -229,14 +201,9 @@ summary(soc_LASA1_6$soc_sn_num_children_6)
 **Harmonization comment**:  Study specific item does not specify if children are alive or dead, it includes biological, step and adopted children.   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1B_socialnet$nkids) 
-summary(LASA1B_socialnet$nkids)  
 soc_GLOBE_0$soc_sn_children_rank_0 <- ifelse(LASA1B_socialnet$nkids=='0',0, 
                                              ifelse(LASA1B_socialnet$nkids=='1' | LASA1B_socialnet$nkids=='2',1,
                                                     ifelse(LASA1B_socialnet$nkids >'2',2, NA)))
-table(soc_LASA1_0$soc_sn_children_rank_0) 
-summary(soc_LASA1_0$soc_sn_children_rank_0) 
-
 ```
 
 ### **Variable label**:   Ranked network size of children           
@@ -256,14 +223,9 @@ summary(soc_LASA1_0$soc_sn_children_rank_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1C_socialnet$nkids) 
-summary(LASA1C_socialnet$nkids)  
 soc_GLOBE_1$soc_sn_children_rank_1 <- ifelse(LASA1C_socialnet$nkids=='0',0, 
                                              ifelse(LASA1C_socialnet$nkids=='1' | LASA1C_socialnet$nkids=='2',1,
                                                     ifelse(LASA1C_socialnet$nkids >'2',2, NA)))
-table(soc_LASA1_1$soc_sn_children_rank_1) 
-summary(soc_LASA1_1$soc_sn_children_rank_1) 
-
 ```
 ### **Variable label**:   Ranked network size of children           
 **Variable name**:   soc_sn_children_rank_2      
@@ -282,13 +244,9 @@ summary(soc_LASA1_1$soc_sn_children_rank_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1D_socialnet$nkids) 
-summary(LASA1D_socialnet$nkids)  
 soc_GLOBE_2$soc_sn_children_rank_2 <- ifelse(LASA1D_socialnet$nkids=='0',0, 
                                              ifelse(LASA1D_socialnet$nkids=='1' | LASA1D_socialnet$nkids=='2',1,
                                                     ifelse(LASA1D_socialnet$nkids >'2',2, NA)))
-table(soc_LASA1_2$soc_sn_children_rank_2) 
-summary(soc_LASA1_2$soc_sn_children_rank_2) 
 
 ```
 ### **Variable label**:   Ranked network size of children          
@@ -308,14 +266,9 @@ summary(soc_LASA1_2$soc_sn_children_rank_2)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1E_socialnet$nkids) 
-summary(LASA1E_socialnet$nkids)  
 soc_GLOBE_3$soc_sn_children_rank_3<- ifelse(LASA1E_socialnet$nkids=='0',0, 
                                              ifelse(LASA1E_socialnet$nkids=='1' | LASA1E_socialnet$nkids=='2',1,
                                                     ifelse(LASA1E_socialnet$nkids >'2',2, NA)))
-table(soc_LASA1_3$soc_sn_children_rank_3) 
-summary(soc_LASA1_3$soc_sn_children_rank_3) 
-
 ```
 ### **Variable label**:   Ranked network size of children          
 **Variable name**:   soc_sn_children_rank_4      
@@ -334,13 +287,9 @@ summary(soc_LASA1_3$soc_sn_children_rank_3)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1F_socialnet$nkids) 
-summary(LASA1F_socialnet$nkids)  
 soc_GLOBE_4$soc_sn_children_rank_4 <- ifelse(LASA1F_socialnet$nkids=='0',0, 
                                              ifelse(LASA1F_socialnet$nkids=='1' | LASA1F_socialnet$nkids=='2',1,
                                                     ifelse(LASA1F_socialnet$nkids >'2',2, NA)))
-table(soc_LASA1_4$soc_sn_children_rank_4) 
-summary(soc_LASA1_4$soc_sn_children_rank_4) 
 
 ```
 ### **Variable label**:   Ranked network size of children          
@@ -360,14 +309,9 @@ summary(soc_LASA1_4$soc_sn_children_rank_4)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1G_socialnet$nkids) 
-summary(LASA1G_socialnet$nkids)  
 soc_GLOBE_5$soc_sn_children_rank_5 <- ifelse(LASA1G_socialnet$nkids=='0',0, 
                                              ifelse(LASA1G_socialnet$nkids=='1' | LASA1G_socialnet$nkids=='2',1,
                                                     ifelse(LASA1G_socialnet$nkids >'2',2, NA)))
-table(soc_LASA1_5$soc_sn_children_rank_5) 
-summary(soc_LASA1_5$soc_sn_children_rank_5) 
-
 ```
 ### **Variable label**:   Ranked network size of children         
 **Variable name**:   soc_sn_children_rank_6      
@@ -386,14 +330,9 @@ summary(soc_LASA1_5$soc_sn_children_rank_5)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1H_socialnet$nkids) 
-summary(LASA1H_socialnet$nkids)  
 soc_GLOBE_6$soc_sn_children_rank_6 <- ifelse(LASA1H_socialnet$nkids=='0',0, 
                                              ifelse(LASA1H_socialnet$nkids=='1' | LASA1H_socialnet$nkids=='2',1,
                                                     ifelse(LASA1H_socialnet$nkids >'2',2, NA)))
-table(soc_LASA1_6$soc_sn_children_rank_6) 
-summary(soc_LASA1_6$soc_sn_children_rank_6) 
-
 ```
 
 ### **Variable label**:   Network size of friends    
@@ -407,11 +346,7 @@ summary(soc_LASA1_6$soc_sn_children_rank_6)
 **Harmonization comment**:  Study specific variable includes friends belonging to the social network that were identified as part of the participant's social network. 
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1B_socialnet$nfriends) 
-summary(LASA1B_socialnet$nfriends) 
 soc_LASA1_0$soc_sn_num_friends_0 <- as.integer(ifelse(LASA1B_socialnet$nfriends %in% c(0:50)))
-table(soc_LASA1_0$soc_sn_num_friends_0) 
-summary(soc_LASA1_0$soc_sn_num_friends_0)
 
 ```
 ### **Variable label**:   Network size of friends    
@@ -425,11 +360,7 @@ summary(soc_LASA1_0$soc_sn_num_friends_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1C_socialnet$nfriends) 
-summary(LASA1C_socialnet$nfriends) 
 soc_LASA1_1$soc_sn_num_friends_1 <- as.integer(ifelse(LASA1C_socialnet$nfriends %in% c(0:50)))
-table(soc_LASA1_1$soc_sn_num_friends_1) 
-summary(soc_LASA1_1$soc_sn_num_friends_1)
 
 ```
 ### **Variable label**:   Network size of friends    
@@ -443,11 +374,7 @@ summary(soc_LASA1_1$soc_sn_num_friends_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1D_socialnet$nfriends) 
-summary(LASA1D_socialnet$nfriends) 
 soc_LASA1_2$soc_sn_num_friends_2 <- as.integer(ifelse(LASA1D_socialnet$nfriends %in% c(0:50)))
-table(soc_LASA1_2$soc_sn_num_friends_2) 
-summary(soc_LASA1_2$soc_sn_num_friends_2)
 
 ```
 ### **Variable label**:   Network size of friends    
@@ -461,11 +388,7 @@ summary(soc_LASA1_2$soc_sn_num_friends_2)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1E_socialnet$nfriends) 
-summary(LASA1E_socialnet$nfriends) 
 soc_LASA1_3$soc_sn_num_friends_3 <- as.integer(ifelse(LASA1E_socialnet$nfriends %in% c(0:50)))
-table(soc_LASA1_3$soc_sn_num_friends_3) 
-summary(soc_LASA1_3$soc_sn_num_friends_3)
 
 ```
 ### **Variable label**:   Network size of friends    
@@ -479,11 +402,7 @@ summary(soc_LASA1_3$soc_sn_num_friends_3)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1F_socialnet$nfriends) 
-summary(LASA1F_socialnet$nfriends) 
 soc_LASA1_4$soc_sn_num_friends_4 <- as.integer(ifelse(LASA1F_socialnet$nfriends %in% c(0:50)))
-table(soc_LASA1_4$soc_sn_num_friends_4) 
-summary(soc_LASA1_4$soc_sn_num_friends_4)
 
 ```
 ### **Variable label**:   Network size of friends    
@@ -497,12 +416,7 @@ summary(soc_LASA1_4$soc_sn_num_friends_4)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1G_socialnet$nfriends) 
-summary(LASA1G_socialnet$nfriends) 
 soc_LASA1_5$soc_sn_num_friends_5 <- as.integer(ifelse(LASA1G_socialnet$nfriends %in% c(0:50)))
-table(soc_LASA1_5$soc_sn_num_friends_5) 
-summary(soc_LASA1_5$soc_sn_num_friends_5)
-
 ```
 
 ### **Variable label**:   Network size of friends    
@@ -516,11 +430,7 @@ summary(soc_LASA1_5$soc_sn_num_friends_5)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1H_socialnet$nfriends) 
-summary(LASA1H_socialnet$nfriends) 
 soc_LASA1_6$soc_sn_num_friends_6 <- as.integer(ifelse(LASA1H_socialnet$nfriends %in% c(0:50)))
-table(soc_LASA1_6$soc_sn_num_friends_6) 
-summary(soc_LASA1_6$soc_sn_num_friends_6)
 
 ```
 
@@ -543,7 +453,7 @@ summary(soc_LASA1_6$soc_sn_num_friends_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   In-person contact frequency with friends        
@@ -565,7 +475,7 @@ summary(soc_LASA1_6$soc_sn_num_friends_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   In-person contact frequency with friends        
@@ -587,7 +497,7 @@ summary(soc_LASA1_6$soc_sn_num_friends_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   In-person contact frequency with friends       
@@ -609,7 +519,7 @@ summary(soc_LASA1_6$soc_sn_num_friends_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   In-person contact frequency with friends       
@@ -631,7 +541,7 @@ summary(soc_LASA1_6$soc_sn_num_friends_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -652,12 +562,8 @@ summary(soc_LASA1_6$soc_sn_num_friends_6)
 **Harmonization status**:  
 **Harmonization comment**: Study specific variable uses highest contact frequency reported with any of the friends identified in the social network (e.g. if participant has 4 friends and meets with 3 of them weekly but daily with the 4th, then they are coded as having saily contact with friends.)  
 ```{r, echo=TRUE}
-table(LASA1B_socialnet$friendscf) 
-summary(LASA1B_socialnet$friendscf)
 soc_LASA1_0$soc_sn_freq_friends_0 <- as.integer(LASA1B_socialnet$friendscf)
  
-table(soc_LASA1_0$soc_sn_freq_friends_0) 
-summary(soc_LASA1_0$soc_sn_freq_friends_0) 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_1       
@@ -678,13 +584,8 @@ summary(soc_LASA1_0$soc_sn_freq_friends_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1C$friendscf) 
-summary(LASA1C$friendscf)
 soc_LASA1_1$soc_sn_freq_friends_1 <- as.integer(LASA1C$friendscf)
  
-table(soc_LASA1_1$soc_sn_freq_friends_1) 
-summary(soc_LASA1_1$soc_sn_freq_friends_1) 
-
 ``` 
 ### **Variable label**:   Contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_2       
@@ -705,12 +606,7 @@ summary(soc_LASA1_1$soc_sn_freq_friends_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1D_socialnet$friendscf) 
-summary(LASA1D_socialnet$friendscf)
 soc_LASA1_2$soc_sn_freq_friends_2 <- as.integer(LASA1D_socialnet$friendscf)
- 
-table(soc_LASA1_2$soc_sn_freq_friends_2) 
-summary(soc_LASA1_2$soc_sn_freq_friends_2) 
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -732,13 +628,8 @@ summary(soc_LASA1_2$soc_sn_freq_friends_2)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1E_socialnet$friendscf) 
-summary(LASA1E_socialnet$friendscf)
 soc_LASA1_3$soc_sn_freq_friends_3 <- as.integer(LASA1E_socialnet$friendscf)
  
-table(soc_LASA1_3$soc_sn_freq_friends_3) 
-summary(soc_LASA1_3$soc_sn_freq_friends_3) 
-
 ``` 
 ### **Variable label**:   Contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_4       
@@ -759,12 +650,8 @@ summary(soc_LASA1_3$soc_sn_freq_friends_3)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1F_socialnet$friendscf) 
-summary(LASA1F_socialnet$friendscf)
 soc_LASA1_4$soc_sn_freq_friends_4 <- as.integer(LASA1F_socialnet$friendscf)
  
-table(soc_LASA1_4$soc_sn_freq_friends_4) 
-summary(soc_LASA1_4$soc_sn_freq_friends_4) 
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -786,13 +673,8 @@ summary(soc_LASA1_4$soc_sn_freq_friends_4)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1G_socialnet$friendscf) 
-summary(LASA1G_socialnet$friendscf)
 soc_LASA1_5$soc_sn_freq_friends_5 <- as.integer(LASA1G_socialnet$friendscf)
  
-table(soc_LASA1_5$soc_sn_freq_friends_5) 
-summary(soc_LASA1_5$soc_sn_freq_friends_5) 
-
 ``` 
 ### **Variable label**:   Contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_6       
@@ -813,12 +695,7 @@ summary(soc_LASA1_5$soc_sn_freq_friends_5)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1H_socialnet$friendscf) 
-summary(LASA1H_socialnet$friendscf)
 soc_LASA1_6$soc_sn_freq_friends_6 <- as.integer(LASA1H_socialnet$friendscf)
- 
-table(soc_LASA1_6$soc_sn_freq_friends_6) 
-summary(soc_LASA1_6$soc_sn_freq_friends_6) 
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -841,8 +718,6 @@ summary(soc_LASA1_6$soc_sn_freq_friends_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1B_socialnet$nneighbours) 
-summary(LASA1B_socialnet$nneighbours)
 soc_LASA1_0$soc_sn_num_nbhs_0 <- ifelse(LASA1B_socialnet$nneighbours=='0',1L, 
                                                   ifelse(LASA1B_socialnet$nneighbours=='1' | LASA1B_socialnet$nneighbours=='2',2L,
                                                       ifelse(LASA1B_socialnet$nneighbours>='3' & LASA1B_socialnet$nneighbours <='5',3L,
@@ -850,9 +725,6 @@ soc_LASA1_0$soc_sn_num_nbhs_0 <- ifelse(LASA1B_socialnet$nneighbours=='0',1L,
                                                                    ifelse(LASA1B_socialnet$nneighbours>='11' & LASA1B_socialnet$nneighbours <='20',5L,
                                                                           ifelse(nneighbours>='21',6L, NA))))))
  
-table(soc_LASA1_0$soc_sn_num_nbhs_0) 
-summary(soc_LASA1_0$soc_sn_num_nbhs_0) 
-
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_1    
@@ -874,8 +746,6 @@ summary(soc_LASA1_0$soc_sn_num_nbhs_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1C$nneighbours) 
-summary(LASA1C$nneighbours)
 soc_LASA1_1$soc_sn_num_nbhs_1 <- ifelse(LASA1C$nneighbours=='0',1L, 
                                                   ifelse(LASA1C$nneighbours=='1' | LASA1C$nneighbours=='2',2L,
                                                       ifelse(LASA1C$nneighbours>='3' & LASA1C$nneighbours <='5',3L,
@@ -883,9 +753,6 @@ soc_LASA1_1$soc_sn_num_nbhs_1 <- ifelse(LASA1C$nneighbours=='0',1L,
                                                                    ifelse(LASA1C$nneighbours>='11' & LASA1C$nneighbours <='20',5L,
                                                                           ifelse(LASA1C$nneighbours>='21',6L, NA))))))
  
-table(soc_LASA1_1$soc_sn_num_nbhs_1) 
-summary(soc_LASA1_1$soc_sn_num_nbhs_1)
-
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_2    
@@ -907,8 +774,6 @@ summary(soc_LASA1_1$soc_sn_num_nbhs_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1D_socialnet$nneighbours) 
-summary(LASA1D_socialnet$nneighbours)
 soc_LASA1_2$soc_sn_num_nbhs_2<- ifelse(LASA1D_socialnet$nneighbours=='0',1L, 
                                                   ifelse(LASA1D_socialnet$nneighbours=='1' | LASA1D_socialnet$nneighbours=='2',2L,
                                                       ifelse(LASA1D_socialnet$nneighbours>='3' & LASA1D_socialnet$nneighbours <='5',3L,
@@ -916,9 +781,6 @@ soc_LASA1_2$soc_sn_num_nbhs_2<- ifelse(LASA1D_socialnet$nneighbours=='0',1L,
                                                                    ifelse(LASA1D_socialnet$nneighbours>='11' & LASA1D_socialnet$nneighbours <='20',5L,
                                                                           ifelse(LASA1D_socialnet$nneighbours>='21',6L, NA))))))
  
-table(soc_LASA1_2$soc_sn_num_nbhs_2) 
-summary(soc_LASA1_2$soc_sn_num_nbhs_2)
-
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_3    
@@ -940,8 +802,6 @@ summary(soc_LASA1_2$soc_sn_num_nbhs_2)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1E_socialnet$nneighbours) 
-summary(LASA1E_socialnet$nneighbours)
 soc_LASA1_3$soc_sn_num_nbhs_3 <- ifelse(LASA1E_socialnet$nneighbours=='0',1L, 
                                                   ifelse(LASA1E_socialnet$nneighbours=='1' | LASA1E_socialnet$nneighbours=='2',2L,
                                                       ifelse(LASA1E_socialnet$nneighbours>='3' & LASA1E_socialnet$nneighbours <='5',3L,
@@ -949,9 +809,6 @@ soc_LASA1_3$soc_sn_num_nbhs_3 <- ifelse(LASA1E_socialnet$nneighbours=='0',1L,
                                                                    ifelse(LASA1E_socialnet$nneighbours>='11' & LASA1E_socialnet$nneighbours <='20',5L,
                                                                           ifelse(LASA1E_socialnet$nneighbours>='21',6L, NA))))))
  
-table(soc_LASA1_3$soc_sn_num_nbhs_3) 
-summary(soc_LASA1_3$soc_sn_num_nbhs_3)
-
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_4    
@@ -973,8 +830,6 @@ summary(soc_LASA1_3$soc_sn_num_nbhs_3)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1F_socialnet$nneighbours) 
-summary(LASA1F_socialnet$nneighbours)
 soc_LASA1_4$soc_sn_num_nbhs_4 <- ifelse(LASA1F_socialnet$nneighbours=='0',1L, 
                                                   ifelse(LASA1F_socialnet$nneighbours=='1' | LASA1F_socialnet$nneighbours=='2',2L,
                                                       ifelse(LASA1F_socialnet$nneighbours>='3' & LASA1F_socialnet$nneighbours <='5',3L,
@@ -982,9 +837,6 @@ soc_LASA1_4$soc_sn_num_nbhs_4 <- ifelse(LASA1F_socialnet$nneighbours=='0',1L,
                                                                    ifelse(LASA1F_socialnet$nneighbours>='11' & LASA1F_socialnet$nneighbours <='20',5L,
                                                                           ifelse(LASA1F_socialnet$nneighbours>='21',6L, NA))))))
  
-table(soc_LASA1_4$soc_sn_num_nbhs_4) 
-summary(soc_LASA1_4$soc_sn_num_nbhs_4)
-
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_5    
@@ -1006,8 +858,6 @@ summary(soc_LASA1_4$soc_sn_num_nbhs_4)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1G_socialnet$nneighbours) 
-summary(LASA1G_socialnet$nneighbours)
 soc_LASA1_5$soc_sn_num_nbhs_5 <- ifelse(LASA1G_socialnet$nneighbours=='0',1L, 
                                                   ifelse(LASA1G_socialnet$nneighbours=='1' | LASA1G_socialnet$nneighbours=='2',2L,
                                                       ifelse(LASA1G_socialnet$nneighbours>='3' & LASA1G_socialnet$nneighbours <='5',3L,
@@ -1015,9 +865,6 @@ soc_LASA1_5$soc_sn_num_nbhs_5 <- ifelse(LASA1G_socialnet$nneighbours=='0',1L,
                                                                    ifelse(LASA1G_socialnet$nneighbours>='11' & LASA1G_socialnet$nneighbours <='20',5L,
                                                                           ifelse(LASA1G_socialnet$nneighbours>='21',6L, NA))))))
  
-table(soc_LASA1_5$soc_sn_num_nbhs_5) 
-summary(soc_LASA1_5$soc_sn_num_nbhs_5)
-
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_6    
@@ -1039,8 +886,6 @@ summary(soc_LASA1_5$soc_sn_num_nbhs_5)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1H_socialnet$nneighbours) 
-summary(LASA1H_socialnet$nneighbours)
 soc_LASA1_6$soc_sn_num_nbhs_6 <- ifelse(LASA1H_socialnet$nneighbours=='0',1L, 
                                                   ifelse(LASA1H_socialnet$nneighbours=='1' | LASA1H_socialnet$nneighbours=='2',2L,
                                                       ifelse(LASA1H_socialnet$nneighbours>='3' & LASA1H_socialnet$nneighbours <='5',3L,
@@ -1048,9 +893,6 @@ soc_LASA1_6$soc_sn_num_nbhs_6 <- ifelse(LASA1H_socialnet$nneighbours=='0',1L,
                                                                    ifelse(LASA1H_socialnet$nneighbours>='11' & LASA1H_socialnet$nneighbours <='20',5L,
                                                                           ifelse(LASA1H_socialnet$nneighbours>='21',6L, NA))))))
  
-table(soc_LASA1_6$soc_sn_num_nbhs_6) 
-summary(soc_LASA1_6$soc_sn_num_nbhs_6)
-
 ``` 
 
 ### **Variable label**:   Contact frequency with neighbours        
@@ -1072,11 +914,7 @@ summary(soc_LASA1_6$soc_sn_num_nbhs_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1B_socialnet$neighbourscf) 
-summary(LASA1B_socialnet$neighbourscf)
 soc_LASA1_0$soc_sn_freq_nbhs_0 <- as.integer(LASA1B_socialnet$neighbourscf)
-table(soc_LASA1_0$soc_sn_freq_nbhs_0) 
-summary(soc_LASA1_0$soc_sn_freq_nbhs_0) 
 
 ``` 
 ### **Variable label**:   Contact frequency with neighbours        
@@ -1098,11 +936,7 @@ summary(soc_LASA1_0$soc_sn_freq_nbhs_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1C_socialnet$neighbourscf) 
-summary(LASA1C_socialnet$neighbourscf)
 soc_LASA1_1$soc_sn_freq_nbhs_1 <- as.integer(LASA1C_socialnet$neighbourscf)
-table(soc_LASA1_1$soc_sn_freq_nbhs_1) 
-summary(soc_LASA1_1$soc_sn_freq_nbhs_1)
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -1124,12 +958,7 @@ summary(soc_LASA1_1$soc_sn_freq_nbhs_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1D_socialnet$neighbourscf) 
-summary(LASA1D_socialnet$neighbourscf)
 soc_LASA1_2$soc_sn_freq_nbhs_2 <- as.integer(LASA1D_socialnet$neighbourscf)
-table(soc_LASA1_2$soc_sn_freq_nbhs_2) 
-summary(soc_LASA1_2$soc_sn_freq_nbhs_2)
-
 ```
 ### **Variable label**:   Contact frequency with neighbours        
 **Variable name**:   soc_sn_freq_nbhs_3    
@@ -1150,11 +979,7 @@ summary(soc_LASA1_2$soc_sn_freq_nbhs_2)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1E_socialnet$neighbourscf) 
-summary(LASA1E_socialnet$neighbourscf)
 soc_LASA1_3$soc_sn_freq_nbhs_3 <- as.integer(LASA1E_socialnet$neighbourscf)
-table(soc_LASA1_3$soc_sn_freq_nbhs_3) 
-summary(soc_LASA1_3$soc_sn_freq_nbhs_3)
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -1176,11 +1001,7 @@ summary(soc_LASA1_3$soc_sn_freq_nbhs_3)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1F_socialnet$neighbourscf) 
-summary(LASA1F_socialnet$neighbourscf)
 soc_LASA1_4$soc_sn_freq_nbhs_4 <- as.integer(LASA1F_socialnet$neighbourscf)
-table(soc_LASA1_4$soc_sn_freq_nbhs_4) 
-summary(soc_LASA1_4$soc_sn_freq_nbhs_4)
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -1202,11 +1023,7 @@ summary(soc_LASA1_4$soc_sn_freq_nbhs_4)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1G_socialnet$neighbourscf) 
-summary(LASA1G_socialnet$neighbourscf)
 soc_LASA1_5$soc_sn_freq_nbhs_5 <- as.integer(LASA1G_socialnet$neighbourscf)
-table(soc_LASA1_5$soc_sn_freq_nbhs_5) 
-summary(soc_LASA1_5$soc_sn_freq_nbhs_5)
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -1228,11 +1045,7 @@ summary(soc_LASA1_5$soc_sn_freq_nbhs_5)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1H_socialnet$neighbourscf) 
-summary(LASA1H_socialnet$neighbourscf)
 soc_LASA1_6$soc_sn_freq_nbhs_6 <- as.integer(LASA1H_socialnet$neighbourscf)
-table(soc_LASA1_6$soc_sn_freq_nbhs_6) 
-summary(soc_LASA1_6$soc_sn_freq_nbhs_6)
 
 ```
 ### **Variable label**:   Network size of relatives      
@@ -1255,8 +1068,6 @@ summary(soc_LASA1_6$soc_sn_freq_nbhs_6)
 **Harmonization comment**:   Study specific variables includes the following types of social network members which do not live in the household: partner, child (biological, of partner, step, adoptive, child-in-law, sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin). 
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1B_socialnet$nrelatives) 
-summary(LASA1B_socialnet$nrelatives)
 soc_LASA1_0$soc_sn_num_relatives_0 <- ifelse(LASA1B_socialnet$nrelatives=='0',1L, 
                                                   ifelse(LASA1B_socialnet$nrelatives=='1' | LASA1B_socialnet$nrelatives=='2',2L,
                                                       ifelse(LASA1B_socialnet$nrelatives>='3' & LASA1B_socialnet$nrelatives <='5',3L,
@@ -1264,9 +1075,6 @@ soc_LASA1_0$soc_sn_num_relatives_0 <- ifelse(LASA1B_socialnet$nrelatives=='0',1L
                                                                    ifelse(LASA1B_socialnet$nrelatives>='11' & LASA1B_socialnet$nrelatives <='20',5L,
                                                                           ifelse(LASA1B_socialnet$nrelatives4>='21',6L, NA))))))
  
-table(soc_LASA1_0$soc_sn_num_relatives_0) 
-summary(soc_LASA1_0$soc_sn_num_relatives_0) 
-
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_1    
@@ -1288,18 +1096,12 @@ summary(soc_LASA1_0$soc_sn_num_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1C_socialnet$nrelatives) 
-summary(LASA1C_socialnet$nrelatives)
 soc_LASA1_1$soc_sn_num_relatives_1 <- ifelse(LASA1C_socialnet$nrelatives=='0',1L, 
                                                   ifelse(LASA1C_socialnet$nrelatives=='1' | LASA1C_socialnet$nrelatives=='2',2L,
                                                       ifelse(LASA1C_socialnet$nrelatives>='3' & LASA1C_socialnet$nrelatives <='5',3L,
                                                            ifelse(LASA1C_socialnet$nrelatives>='6' & LASA1C_socialnet$nrelatives <='10',4L,
                                                                    ifelse(LASA1C_socialnet$nrelatives>='11' & LASA1C_socialnet$nrelatives <='20',5L,
                                                                           ifelse(LASA1C_socialnet$nrelatives4>='21',6L, NA))))))
- 
-table(soc_LASA1_1$soc_sn_num_relatives_1) 
-summary(soc_LASA1_1$soc_sn_num_relatives_1) 
-
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_2    
@@ -1321,17 +1123,12 @@ summary(soc_LASA1_1$soc_sn_num_relatives_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1D_socialnet$nrelatives) 
-summary(LASA1D_socialnet$nrelatives)
 soc_LASA1_2$soc_sn_num_relatives_2 <- ifelse(LASA1D_socialnet$nrelatives=='0',1L, 
                                                   ifelse(LASA1D_socialnet$nrelatives=='1' | LASA1D_socialnet$nrelatives=='2',2L,
                                                       ifelse(LASA1D_socialnet$nrelatives>='3' & LASA1D_socialnet$nrelatives <='5',3L,
                                                            ifelse(LASA1D_socialnet$nrelatives>='6' & LASA1D_socialnet$nrelatives <='10',4L,
                                                                    ifelse(LASA1D_socialnet$nrelatives>='11' & LASA1D_socialnet$nrelatives <='20',5L,
                                                                           ifelse(LASA1D_socialnet$nrelatives4>='21',6L, NA))))))
- 
-table(soc_LASA1_2$soc_sn_num_relatives_2) 
-summary(soc_LASA1_2$soc_sn_num_relatives_2) 
 
 ```
 ### **Variable label**:   Network size of relatives      
@@ -1354,8 +1151,6 @@ summary(soc_LASA1_2$soc_sn_num_relatives_2)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1E_socialnet$nrelatives) 
-summary(LASA1E_socialnet$nrelatives)
 soc_LASA1_3$soc_sn_num_relatives_3 <- ifelse(LASA1B_socialnet$nrelatives=='0',1L, 
                                                   ifelse(LASA1E_socialnet$nrelatives=='1' | LASA1E_socialnet$nrelatives=='2',2L,
                                                       ifelse(LASA1E_socialnet$nrelatives>='3' & LASA1E_socialnet$nrelatives <='5',3L,
@@ -1363,9 +1158,6 @@ soc_LASA1_3$soc_sn_num_relatives_3 <- ifelse(LASA1B_socialnet$nrelatives=='0',1L
                                                                    ifelse(LASA1E_socialnet$nrelatives>='11' & LASA1E_socialnet$nrelatives <='20',5L,
                                                                           ifelse(LASA1E_socialnet$nrelatives4>='21',6L, NA))))))
  
-table(soc_LASA1_3$soc_sn_num_relatives_3) 
-summary(soc_LASA1_3$soc_sn_num_relatives_3) 
-
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_4    
@@ -1387,8 +1179,6 @@ summary(soc_LASA1_3$soc_sn_num_relatives_3)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1F_socialnet$nrelatives) 
-summary(LASA1F_socialnet$nrelatives)
 soc_LASA1_4$soc_sn_num_relatives_4 <- ifelse(LASA1F_socialnet$nrelatives=='0',1L, 
                                                   ifelse(LASA1F_socialnet$nrelatives=='1' | LASA1F_socialnet$nrelatives=='2',2L,
                                                       ifelse(LASA1F_socialnet$nrelatives>='3' & LASA1F_socialnet$nrelatives <='5',3L,
@@ -1396,9 +1186,6 @@ soc_LASA1_4$soc_sn_num_relatives_4 <- ifelse(LASA1F_socialnet$nrelatives=='0',1L
                                                                    ifelse(LASA1F_socialnet$nrelatives>='11' & LASA1F_socialnet$nrelatives <='20',5L,
                                                                           ifelse(LASA1F_socialnet$nrelatives4>='21',6L, NA))))))
  
-table(soc_LASA1_4$soc_sn_num_relatives_4) 
-summary(soc_LASA1_4$soc_sn_num_relatives_4) 
-
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_5    
@@ -1420,8 +1207,6 @@ summary(soc_LASA1_4$soc_sn_num_relatives_4)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1G_socialnet$nrelatives) 
-summary(LASA1G_socialnet$nrelatives)
 soc_LASA1_5$soc_sn_num_relatives_5 <- ifelse(LASA1G_socialnet$nrelatives=='0',1L, 
                                                   ifelse(LASA1G_socialnet$nrelatives=='1' | LASA1G_socialnet$nrelatives=='2',2L,
                                                       ifelse(LASA1G_socialnet$nrelatives>='3' & LASA1G_socialnet$nrelatives <='5',3L,
@@ -1429,8 +1214,6 @@ soc_LASA1_5$soc_sn_num_relatives_5 <- ifelse(LASA1G_socialnet$nrelatives=='0',1L
                                                                    ifelse(LASA1G_socialnet$nrelatives>='11' & LASA1G_socialnet$nrelatives <='20',5L,
                                                                           ifelse(LASA1G_socialnet$nrelatives4>='21',6L, NA))))))
  
-table(soc_LASA1_5$soc_sn_num_relatives_5) 
-summary(soc_LASA1_5$soc_sn_num_relatives_5) 
 
 ```
 ### **Variable label**:   Network size of relatives      
@@ -1453,8 +1236,6 @@ summary(soc_LASA1_5$soc_sn_num_relatives_5)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1H_socialnet$nrelatives) 
-summary(LASA1H_socialnet$nrelatives)
 soc_LASA1_6$soc_sn_num_relatives_6 <- ifelse(LASA1H_socialnet$nrelatives=='0',1L, 
                                                   ifelse(LASA1H_socialnet$nrelatives=='1' | LASA1H_socialnet$nrelatives=='2',2L,
                                                       ifelse(LASA1H_socialnet$nrelatives>='3' & LASA1H_socialnet$nrelatives <='5',3L,
@@ -1462,9 +1243,6 @@ soc_LASA1_6$soc_sn_num_relatives_6 <- ifelse(LASA1H_socialnet$nrelatives=='0',1L
                                                                    ifelse(LASA1H_socialnet$nrelatives>='11' & LASA1H_socialnet$nrelatives <='20',5L,
                                                                           ifelse(LASA1H_socialnet$nrelatives4>='21',6L, NA))))))
  
-table(soc_LASA1_6$soc_sn_num_relatives_6) 
-summary(soc_LASA1_6$soc_sn_num_relatives_6) 
-
 ```
 ### **Variable label**:   Contact frequency with family   
 **Variable name**:   soc_sn_freq_close_relatives_0    
@@ -1484,12 +1262,8 @@ summary(soc_LASA1_6$soc_sn_num_relatives_6)
 **Harmonization comment**:  Study specific variable is the contact frequency with relatives and it includes the following types of social network members which might live in the household: partner, child (biological, of partner, step, adoptive, child-in-law, sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin). 
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1B_socialnet$familycf) 
-summary(LASA1B_socialnet$familycf)
 soc_LASA1_0$soc_sn_freq_close_relatives_0 <- as.integer(LASA1B_socialnet$familycf)
  
-table(soc_LASA1_0$soc_sn_freq_close_relatives_0) 
-summary(soc_LASA1_0$soc_sn_freq_close_relatives_0) 
 
 ```
 ### **Variable label**:   Contact frequency with family     
@@ -1510,12 +1284,8 @@ summary(soc_LASA1_0$soc_sn_freq_close_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1C_socialnet$familycf) 
-summary(LASA1C_socialnet$familycf)
 soc_LASA1_1$soc_sn_freq_close_relatives_1 <- as.integer(LASA1C_socialnet$familycf)
  
-table(soc_LASA1_1$soc_sn_freq_close_relatives_1) 
-summary(soc_LASA1_1$soc_sn_freq_close_relatives_1)
 
 ```
 ### **Variable label**:   Contact frequency with family    
@@ -1536,13 +1306,8 @@ summary(soc_LASA1_1$soc_sn_freq_close_relatives_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1D_socialnet$familycf) 
-summary(LASA1D_socialnet$familycf)
 soc_LASA1_2$soc_sn_freq_close_relatives_2 <- as.integer(LASA1D_socialnet$familycf)
  
-table(soc_LASA1_2$soc_sn_freq_close_relatives_2) 
-summary(soc_LASA1_2$soc_sn_freq_close_relatives_2)
-
 ```
 ### **Variable label**:   Contact frequency with family    
 **Variable name**:   soc_sn_freq_close_relatives_3      
@@ -1562,13 +1327,8 @@ summary(soc_LASA1_2$soc_sn_freq_close_relatives_2)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1E_socialnet$familycf) 
-summary(LASA1E_socialnet$familycf)
 soc_LASA1_3$soc_sn_freq_close_relatives_3 <- as.integer(LASA1E_socialnet$familycf)
  
-table(soc_LASA1_3$soc_sn_freq_close_relatives_3) 
-summary(soc_LASA1_3$soc_sn_freq_close_relatives_3)
-
 ```
 ### **Variable label**:   Contact frequency with family   
 **Variable name**:   soc_sn_freq_close_relatives_4      
@@ -1588,12 +1348,7 @@ summary(soc_LASA1_3$soc_sn_freq_close_relatives_3)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1F_socialnet$familycf) 
-summary(LASA1F_socialnet$familycf)
 soc_LASA1_4$soc_sn_freq_close_relatives_4 <- as.integer(LASA1F_socialnet$familycf)
- 
-table(soc_LASA1_4$soc_sn_freq_close_relatives_4) 
-summary(soc_LASA1_4$soc_sn_freq_close_relatives_4)
 
 ```
 ### **Variable label**:   Contact frequency with family    
@@ -1614,13 +1369,8 @@ summary(soc_LASA1_4$soc_sn_freq_close_relatives_4)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1G_socialnet$familycf) 
-summary(LASA1G_socialnet$familycf)
 soc_LASA1_5$soc_sn_freq_close_relatives_5 <- as.integer(LASA1G_socialnet$familycf)
  
-table(soc_LASA1_5$soc_sn_freq_close_relatives_5) 
-summary(soc_LASA1_5$soc_sn_freq_close_relatives_5)
-
 ```
 ### **Variable label**:   Contact frequency with family    
 **Variable name**:   soc_sn_freq_close_relatives_6      
@@ -1640,12 +1390,7 @@ summary(soc_LASA1_5$soc_sn_freq_close_relatives_5)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1H_socialnet$familycf) 
-summary(LASA1H_socialnet$familycf)
 soc_LASA1_6$soc_sn_freq_close_relatives_6 <- as.integer(LASA1H_socialnet$familycf)
- 
-table(soc_LASA1_6$soc_sn_freq_close_relatives_6) 
-summary(soc_LASA1_6$soc_sn_freq_close_relatives_6)
 
 ```
 
@@ -1667,14 +1412,8 @@ summary(soc_LASA1_6$soc_sn_freq_close_relatives_6)
 **Harmonization comment**:   Study specific variable is the contact frequency with relatives and it includes the following types of social network members which do not live in the household: partner, child (biological, of partner, step, adoptive, child-in-law, sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin). 
 **R script**:  
 ```{r, echo=TRUE}
-
-table(LASA1B_socialnet$relativescf) 
-summary(LASA1B_socialnet$relativescf)
 soc_LASA1_0$soc_sn_freq_relatives_0 <- as.integer(LASA1B_socialnet$relativescf)
  
-table(soc_LASA1_0$soc_sn_freq_relatives_0) 
-summary(soc_LASA1_0$soc_sn_freq_relatives_0) 
-
 ```
 ### **Variable label**:   Contact frequency with relatives      
 **Variable name**:   soc_sn_freq_relatives_1          
@@ -1694,14 +1433,8 @@ summary(soc_LASA1_0$soc_sn_freq_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1C_socialnet$relativescf) 
-summary(LASA1C_socialnet$relativescf)
 soc_LASA1_1$soc_sn_freq_relatives_1 <- as.integer(LASA1C_socialnet$relativescf)
  
-table(soc_LASA1_1$soc_sn_freq_relatives_1) 
-summary(soc_LASA1_1$soc_sn_freq_relatives_1) 
-
-
 ```
 ### **Variable label**:   Contact frequency with relatives     
 **Variable name**:   soc_sn_freq_relatives_2          
@@ -1721,14 +1454,8 @@ summary(soc_LASA1_1$soc_sn_freq_relatives_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1D_socialnet$relativescf) 
-summary(LASA1D_socialnet$relativescf)
 soc_LASA1_2$soc_sn_freq_relatives_2 <- as.integer(LASA1D_socialnet$relativescf)
  
-table(soc_LASA1_2$soc_sn_freq_relatives_2) 
-summary(soc_LASA1_2$soc_sn_freq_relatives_2) 
-
-
 ```
 ### **Variable label**:   Contact frequency with relatives    
 **Variable name**:   soc_sn_freq_relatives_3          
@@ -1748,14 +1475,8 @@ summary(soc_LASA1_2$soc_sn_freq_relatives_2)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1E_socialnet$relativescf) 
-summary(LASA1E_socialnet$relativescf)
 soc_LASA1_3$soc_sn_freq_relatives_3 <- as.integer(LASA1E_socialnet$relativescf)
  
-table(soc_LASA1_3$soc_sn_freq_relatives_3) 
-summary(soc_LASA1_3$soc_sn_freq_relatives_3) 
-
-
 ```
 ### **Variable label**:   Contact frequency with relatives    
 **Variable name**:   soc_sn_freq_relatives_4          
@@ -1775,12 +1496,7 @@ summary(soc_LASA1_3$soc_sn_freq_relatives_3)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1F_socialnet$relativescf) 
-summary(LASA1F_socialnet$relativescf)
 soc_LASA1_4$soc_sn_freq_relatives_4 <- as.integer(LASA1F_socialnet$relativescf)
- 
-table(soc_LASA1_4$soc_sn_freq_relatives_4) 
-summary(soc_LASA1_4$soc_sn_freq_relatives_4) 
 
 
 ```
@@ -1802,13 +1518,7 @@ summary(soc_LASA1_4$soc_sn_freq_relatives_4)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1G_socialnet$relativescf) 
-summary(LASA1G_socialnet$relativescf)
 soc_LASA1_5$soc_sn_freq_relatives_5 <- as.integer(LASA1G_socialnet$relativescf)
- 
-table(soc_LASA1_5$soc_sn_freq_relatives_5) 
-summary(soc_LASA1_5$soc_sn_freq_relatives_5) 
-
 
 ```
 ### **Variable label**:   Contact frequency with relatives    
@@ -1829,12 +1539,7 @@ summary(soc_LASA1_5$soc_sn_freq_relatives_5)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1H_socialnet$relativescf) 
-summary(LASA1H_socialnet$relativescf)
 soc_LASA1_6$soc_sn_freq_relatives_6 <- as.integer(LASA1H_socialnet$relativescf)
- 
-table(soc_LASA1_6$soc_sn_freq_relatives_6) 
-summary(soc_LASA1_6$soc_sn_freq_relatives_6) 
 
 ```
 ### **Variable label**:   Network size of non-kin      
@@ -1848,13 +1553,7 @@ summary(soc_LASA1_6$soc_sn_freq_relatives_6)
 **Harmonization comment**:  Study specific variable includes the following types of social network members:  
 **R script**:  
 ```{r, echo=TRUE}
-
-table(LASA1B_socialnet$nnonkin) 
-summary(LASA1B_socialnet$nnonkin)
 soc_LASA1_0$soc_sn_num_nonkin_0 <- as.integer(LASA1B_socialnet$nnonkin)
- 
-table(soc_LASA1_0$soc_sn_num_nonkin_0) 
-summary(soc_LASA1_0$soc_sn_num_nonkin_0) 
 
 ```
 ### **Variable label**:   Network size of non-kin      
@@ -1868,13 +1567,7 @@ summary(soc_LASA1_0$soc_sn_num_nonkin_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1C_socialnet$nnonkin) 
-summary(LASA1C_socialnet$nnonkin)
 soc_LASA1_1$soc_sn_num_nonkin_1 <- as.integer(LASA1C_socialnet$nnonkin)
- 
-table(soc_LASA1_1$soc_sn_num_nonkin_1) 
-summary(soc_LASA1_1$soc_sn_num_nonkin_1) 
-
 ```
 ### **Variable label**:   Network size of non-kin      
 **Variable name**:   soc_sn_num_nonkin_2      
@@ -1887,12 +1580,7 @@ summary(soc_LASA1_1$soc_sn_num_nonkin_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1D_socialnet$nnonkin) 
-summary(LASA1D_socialnet$nnonkin)
 soc_LASA1_2$soc_sn_num_nonkin_2 <- as.integer(LASA1D_socialnet$nnonkin)
- 
-table(soc_LASA1_2$soc_sn_num_nonkin_2) 
-summary(soc_LASA1_2$soc_sn_num_nonkin_2) 
 
 ```
 ### **Variable label**:   Network size of non-kin      
@@ -1906,13 +1594,8 @@ summary(soc_LASA1_2$soc_sn_num_nonkin_2)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1E_socialnet$nnonkin) 
-summary(LASA1E_socialnet$nnonkin)
 soc_LASA1_3$soc_sn_num_nonkin_3 <- as.integer(LASA1E_socialnet$nnonkin)
  
-table(soc_LASA1_3$soc_sn_num_nonkin_3) 
-summary(soc_LASA1_3$soc_sn_num_nonkin_3) 
-
 ```
 ### **Variable label**:   Network size of non-kin      
 **Variable name**:   soc_sn_num_nonkin_4      
@@ -1925,13 +1608,8 @@ summary(soc_LASA1_3$soc_sn_num_nonkin_3)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1F_socialnet$nnonkin) 
-summary(LASA1F_socialnet$nnonkin)
 soc_LASA1_4$soc_sn_num_nonkin_4 <- as.integer(LASA1F_socialnet$nnonkin)
  
-table(soc_LASA1_4$soc_sn_num_nonkin_4) 
-summary(soc_LASA1_4$soc_sn_num_nonkin_4) 
-
 ```
 ### **Variable label**:   Network size of non-kin      
 **Variable name**:   soc_sn_num_nonkin_5      
@@ -1944,13 +1622,8 @@ summary(soc_LASA1_4$soc_sn_num_nonkin_4)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1G_socialnet$nnonkin) 
-summary(LASA1G_socialnet$nnonkin)
 soc_LASA1_5$soc_sn_num_nonkin_5 <- as.integer(LASA1G_socialnet$nnonkin)
  
-table(soc_LASA1_5$soc_sn_num_nonkin_5) 
-summary(soc_LASA1_5$soc_sn_num_nonkin_5) 
-
 ```
 ### **Variable label**:   Network size of non-kin      
 **Variable name**:   soc_sn_num_nonkin_6      
@@ -1963,12 +1636,7 @@ summary(soc_LASA1_5$soc_sn_num_nonkin_5)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1H_socialnet$nnonkin) 
-summary(LASA1H_socialnet$nnonkin)
 soc_LASA1_6$soc_sn_num_nonkin_6 <- as.integer(LASA1H_socialnet$nnonkin)
- 
-table(soc_LASA1_6$soc_sn_num_nonkin_6) 
-summary(soc_LASA1_6$soc_sn_num_nonkin_6) 
 
 ```
 
@@ -1991,12 +1659,7 @@ summary(soc_LASA1_6$soc_sn_num_nonkin_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1B_socialnet$nonkincf) 
-summary(LASA1B_socialnet$nonkincf)
 soc_LASA1_0$soc_sn_freq_nonkin_0 <- as.integer(LASA1B_socialnet$nonkincf)
- 
-table(soc_LASA1_0$soc_sn_freq_nonkin_0) 
-summary(soc_LASA1_0$soc_sn_freq_nonkin_0) 
 ```
 ### **Variable label**:   Contact frequency with non-kin  
 **Variable name**:   soc_sn_freq_nonkin_1            
@@ -2017,12 +1680,7 @@ summary(soc_LASA1_0$soc_sn_freq_nonkin_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1C_socialnet$nonkincf) 
-summary(LASA1C_socialnet$nonkincf)
 soc_LASA1_1$soc_sn_freq_nonkin_1 <- as.integer(LASA1C_socialnet$nonkincf)
- 
-table(soc_LASA1_1$soc_sn_freq_nonkin_1) 
-summary(soc_LASA1_1$soc_sn_freq_nonkin_1)
 ```
 ### **Variable label**:   Contact frequency with non-kin  
 **Variable name**:   soc_sn_freq_nonkin_2            
@@ -2043,13 +1701,8 @@ summary(soc_LASA1_1$soc_sn_freq_nonkin_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1D_socialnet$nonkincf) 
-summary(LASA1D_socialnet$nonkincf)
 soc_LASA1_2$soc_sn_freq_nonkin_2 <- as.integer(LASA1D_socialnet$nonkincf)
  
-table(soc_LASA1_2$soc_sn_freq_nonkin_2) 
-summary(soc_LASA1_2$soc_sn_freq_nonkin_2)
-
 ```
 ### **Variable label**:   Contact frequency with non-kin  
 **Variable name**:   soc_sn_freq_nonkin_3            
@@ -2070,13 +1723,8 @@ summary(soc_LASA1_2$soc_sn_freq_nonkin_2)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1E_socialnet$nonkincf) 
-summary(LASA1E_socialnet$nonkincf)
 soc_LASA1_3$soc_sn_freq_nonkin_3 <- as.integer(LASA1E_socialnet$nonkincf)
  
-table(soc_LASA1_3$soc_sn_freq_nonkin_3) 
-summary(soc_LASA1_3$soc_sn_freq_nonkin_3)
-
 ```
 ### **Variable label**:   Contact frequency with non-kin  
 **Variable name**:   soc_sn_freq_nonkin_4            
@@ -2097,13 +1745,8 @@ summary(soc_LASA1_3$soc_sn_freq_nonkin_3)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1F_socialnet$nonkincf) 
-summary(LASA1F_socialnet$nonkincf)
 soc_LASA1_4$soc_sn_freq_nonkin_4 <- as.integer(LASA1F_socialnet$nonkincf)
  
-table(soc_LASA1_4$soc_sn_freq_nonkin_4) 
-summary(soc_LASA1_4$soc_sn_freq_nonkin_4)
-
 ```
 ### **Variable label**:   Contact frequency with non-kin  
 **Variable name**:   soc_sn_freq_nonkin_5          
@@ -2124,13 +1767,8 @@ summary(soc_LASA1_4$soc_sn_freq_nonkin_4)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1G_socialnet$nonkincf) 
-summary(LASA1G_socialnet$nonkincf)
 soc_LASA1_5$soc_sn_freq_nonkin_5 <- as.integer(LASA1G_socialnet$nonkincf)
  
-table(soc_LASA1_5$soc_sn_freq_nonkin_5) 
-summary(soc_LASA1_5$soc_sn_freq_nonkin_5)
-
 ```
 ### **Variable label**:   Contact frequency with non-kin  
 **Variable name**:   soc_sn_freq_nonkin_6          
@@ -2151,13 +1789,8 @@ summary(soc_LASA1_5$soc_sn_freq_nonkin_5)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1H_socialnet$nonkincf) 
-summary(LASA1H_socialnet$nonkincf)
 soc_LASA1_6$soc_sn_freq_nonkin_6 <- as.integer(LASA1H_socialnet$nonkincf)
  
-table(soc_LASA1_6$soc_sn_freq_nonkin_6) 
-summary(soc_LASA1_6$soc_sn_freq_nonkin_6)
-
 ```
 # Social support subdomain
 
@@ -2182,8 +1815,6 @@ soc_LASA1_0$soc_ss_received_emo_0 <- ifelse(LASA1B_socialnet$rec_emo_conf1 ==3 |
                                          ifelse((LASA1B_socialnet$rec_emo_conf1  ==2 | LASA1B_socialnet$rec_emo_conf2  ==2 |LASA1B_socialnet$rec_emo_conf3 == 2) & (LASA1B_socialnet$rec_emo_conf1  !=3 & LASA1B_socialnet$rec_emo_conf2  !=3 & LASA1B_socialnet$rec_emo_conf3 !=3), 1L, 
                                              ifelse(LASA1B_socialnet$rec_emo_conf1 <=1 | LASA1B_socialnet$rec_emo_conf2 <=1 |LASA1B_socialnet$rec_emo_conf3 <=1, 0L, NA)))
 
-table(soc_LASA1_0$soc_ss_received_emo_0) 
-summary(soc_LASA1_0$soc_ss_received_emo_0)
 
 ```
 ### **Variable label**: Received emotional support    
@@ -2207,8 +1838,6 @@ soc_LASA1_1$soc_ss_received_emo_1 <- ifelse(LASA1C_socialnet$rec_emo_conf1 ==3 |
                                          ifelse((LASA1C_socialnet$rec_emo_conf1  ==2 | LASA1C_socialnet$rec_emo_conf2  ==2 |LASA1C_socialnet$rec_emo_conf3 == 2) & (LASA1C_socialnet$rec_emo_conf1  !=3 & LASA1C_socialnet$rec_emo_conf2  !=3 & LASA1C_socialnet$rec_emo_conf3 !=3), 1L, 
                                              ifelse(LASA1C_socialnet$rec_emo_conf1 <=1 | LASA1C_socialnet$rec_emo_conf2 <=1 |LASA1C_socialnet$rec_emo_conf3 <=1, 0L, NA)))
 
-table(soc_LASA1_1$soc_ss_received_emo_1) 
-summary(soc_LASA1_1$soc_ss_received_emo_1) 
 
 ```
 ### **Variable label**: Received emotional support    
@@ -2232,9 +1861,6 @@ soc_LASA1_2$soc_ss_received_emo_2 <- ifelse(LASA1D_socialnet$rec_emo_conf1 ==3 |
                                          ifelse((LASA1D_socialnet$rec_emo_conf1  ==2 | LASA1D_socialnet$rec_emo_conf2  ==2 |LASA1D_socialnet$rec_emo_conf3 == 2) & (LASA1D_socialnet$rec_emo_conf1  !=3 & LASA1D_socialnet$rec_emo_conf2  !=3 & LASA1D_socialnet$rec_emo_conf3 !=3), 1L, 
                                              ifelse(LASA1D_socialnet$rec_emo_conf1 <=1 | LASA1D_socialnet$rec_emo_conf2 <=1 |LASA1D_socialnet$rec_emo_conf3 <=1, 0L, NA)))
 
-table(soc_LASA1_2$soc_ss_received_emo_2) 
-summary(soc_LASA1_2$soc_ss_received_emo_2)
-
 ```
 ### **Variable label**: Received emotional support    
 **Variable name**:   soc_ss_received_emo_3 
@@ -2256,9 +1882,6 @@ summary(soc_LASA1_2$soc_ss_received_emo_2)
 soc_LASA1_3$soc_ss_received_emo_3 <- ifelse(LASA1E_socialnet$rec_emo_conf1 ==3 | LASA1E_socialnet$rec_emo_conf2 ==3 |LASA1E_socialnet$rec_emo_conf3 == 3, 2L, 
                                          ifelse((LASA1E_socialnet$rec_emo_conf1  ==2 | LASA1E_socialnet$rec_emo_conf2  ==2 |LASA1E_socialnet$rec_emo_conf3 == 2) & (LASA1E_socialnet$rec_emo_conf1  !=3 & LASA1E_socialnet$rec_emo_conf2  !=3 & LASA1E_socialnet$rec_emo_conf3 !=3), 1L, 
                                              ifelse(LASA1E_socialnet$rec_emo_conf1 <=1 | LASA1E_socialnet$rec_emo_conf2 <=1 |LASA1E_socialnet$rec_emo_conf3 <=1, 0L, NA)))
-
-table(soc_LASA1_3$soc_ss_received_emo_3) 
-summary(soc_LASA1_3$soc_ss_received_emo_3)
 
 ```
 ### **Variable label**: Received emotional support    
@@ -2282,9 +1905,6 @@ soc_LASA1_1$soc_ss_received_emo_1 <- ifelse(LASA1C_socialnet$rec_emo_conf1 ==3 |
                                          ifelse((LASA1C_socialnet$rec_emo_conf1  ==2 | LASA1C_socialnet$rec_emo_conf2  ==2 |LASA1C_socialnet$rec_emo_conf3 == 2) & (LASA1C_socialnet$rec_emo_conf1  !=3 & LASA1C_socialnet$rec_emo_conf2  !=3 & LASA1C_socialnet$rec_emo_conf3 !=3), 1L, 
                                              ifelse(LASA1C_socialnet$rec_emo_conf1 <=1 | LASA1C_socialnet$rec_emo_conf2 <=1 |LASA1C_socialnet$rec_emo_conf3 <=1, 0L, NA)))
 
-table(soc_LASA1_1$soc_ss_received_emo_1) 
-summary(soc_LASA1_1$soc_ss_received_emo_1)
-
 ```
 ### **Variable label**: Received emotional support    
 **Variable name**:   soc_ss_received_emo_5 
@@ -2303,7 +1923,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received emotional support    
@@ -2323,7 +1943,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -2343,7 +1963,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -2363,7 +1983,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -2383,7 +2003,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -2403,7 +2023,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -2423,7 +2043,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -2443,7 +2063,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -2463,7 +2083,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -2477,7 +2097,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -2491,7 +2111,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -2505,7 +2125,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -2519,7 +2139,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -2533,7 +2153,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -2547,7 +2167,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -2561,7 +2181,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -2580,7 +2200,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -2599,7 +2219,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -2618,7 +2238,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -2637,7 +2257,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -2656,7 +2276,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -2675,7 +2295,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -2694,7 +2314,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -2716,7 +2336,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2735,7 +2355,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2754,7 +2374,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2773,7 +2393,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2792,7 +2412,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2811,7 +2431,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2830,7 +2450,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2849,7 +2469,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2871,7 +2491,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2893,7 +2513,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2915,7 +2535,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2937,7 +2557,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2959,7 +2579,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2981,7 +2601,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -3003,7 +2623,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -3025,7 +2645,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -3044,7 +2664,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -3063,7 +2683,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -3082,7 +2702,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -3101,7 +2721,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -3120,7 +2740,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -3139,7 +2759,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -3158,7 +2778,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation    
@@ -3177,7 +2797,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
@@ -3196,7 +2816,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
@@ -3215,7 +2835,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
@@ -3234,7 +2854,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
@@ -3253,7 +2873,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
@@ -3272,7 +2892,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
@@ -3291,7 +2911,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Volunteering      
@@ -3310,7 +2930,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Volunteering      
@@ -3329,7 +2949,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Volunteering      
@@ -3348,7 +2968,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Volunteering      
@@ -3367,7 +2987,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Volunteering      
@@ -3386,7 +3006,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Volunteering      
@@ -3405,7 +3025,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Volunteering      
@@ -3424,7 +3044,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -3443,7 +3063,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -3462,7 +3082,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -3481,7 +3101,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -3500,7 +3120,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -3519,7 +3139,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -3538,7 +3158,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -3557,7 +3177,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Professional participation         
@@ -3576,7 +3196,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Professional participation         
@@ -3595,7 +3215,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Professional participation         
@@ -3614,7 +3234,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Professional participation         
@@ -3633,7 +3253,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Professional participation         
@@ -3652,7 +3272,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Professional participation         
@@ -3671,7 +3291,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Professional participation         
@@ -3690,7 +3310,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  General social participation          
@@ -3709,7 +3329,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  General social participation            
@@ -3728,7 +3348,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  General social participation          
@@ -3747,7 +3367,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  General social participation          
@@ -3766,7 +3386,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  General social participation          
@@ -3785,7 +3405,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  General social participation          
@@ -3804,7 +3424,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  General social participation          
@@ -3823,7 +3443,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3842,7 +3462,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3861,7 +3481,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3880,7 +3500,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3899,7 +3519,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3918,7 +3538,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3937,7 +3557,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3956,7 +3576,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
@@ -3975,7 +3595,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
@@ -3994,7 +3614,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
@@ -4013,7 +3633,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
@@ -4032,7 +3652,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
@@ -4051,7 +3671,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
@@ -4070,7 +3690,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
@@ -4089,7 +3709,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Hobby      
@@ -4108,7 +3728,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Hobby      
@@ -4127,7 +3747,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Hobby      
@@ -4146,7 +3766,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Hobby      
@@ -4165,7 +3785,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Hobby      
@@ -4184,7 +3804,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Hobby      
@@ -4203,7 +3823,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Hobby      
@@ -4222,7 +3842,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Social isolation    
@@ -4241,7 +3861,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Social isolation    
@@ -4260,7 +3880,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Social isolation    
@@ -4279,7 +3899,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Social isolation    
@@ -4298,7 +3918,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Social isolation    
@@ -4317,7 +3937,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Social isolation    
@@ -4336,7 +3956,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Social isolation    
@@ -4355,7 +3975,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Social isolation    
@@ -4374,7 +3994,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 # Major life events subdomain
@@ -4395,7 +4015,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: victim     
@@ -4414,7 +4034,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: victim     
@@ -4433,7 +4053,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: victim     
@@ -4452,7 +4072,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: victim     
@@ -4471,7 +4091,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: victim     
@@ -4490,7 +4110,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: victim     
@@ -4509,7 +4129,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -4528,7 +4148,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -4547,7 +4167,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -4566,7 +4186,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -4585,7 +4205,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -4604,7 +4224,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -4623,7 +4243,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -4642,7 +4262,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -4661,7 +4281,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: relationship problems        
@@ -4680,7 +4300,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: relationship problems        
@@ -4699,7 +4319,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: relationship problems        
@@ -4718,7 +4338,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: divorce/relationship breakup           
@@ -4737,7 +4357,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: divorce/relationship breakup           
@@ -4756,7 +4376,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: divorce/relationship breakup           
@@ -4775,7 +4395,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4794,7 +4414,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4813,7 +4433,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4832,7 +4452,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4851,7 +4471,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4870,7 +4490,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4889,7 +4509,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4908,7 +4528,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: death of partner             
@@ -4927,7 +4547,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: death of partner             
@@ -4946,7 +4566,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: death of partner             
@@ -4965,7 +4585,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: death of family member or friend                
@@ -4984,7 +4604,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: death of family member or friend                
@@ -5003,7 +4623,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: death of family member or friend                
@@ -5022,7 +4642,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 # Residential characteristics subdomain
@@ -5038,7 +4658,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
@@ -5052,7 +4672,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
@@ -5066,7 +4686,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
@@ -5080,7 +4700,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
@@ -5094,7 +4714,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
@@ -5108,7 +4728,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
@@ -5122,7 +4742,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -5136,7 +4756,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -5150,7 +4770,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -5164,7 +4784,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -5178,7 +4798,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -5192,7 +4812,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -5206,7 +4826,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -5220,7 +4840,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
@@ -5239,7 +4859,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
@@ -5258,7 +4878,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
@@ -5277,7 +4897,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
@@ -5296,7 +4916,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
@@ -5315,7 +4935,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
@@ -5334,7 +4954,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -5353,7 +4973,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -5372,7 +4992,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -5391,7 +5011,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -5410,7 +5030,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -5429,7 +5049,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -5448,7 +5068,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -5467,7 +5087,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence independence     
@@ -5486,7 +5106,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence independence     
@@ -5505,7 +5125,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence independence     
@@ -5524,7 +5144,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence independence     
@@ -5543,7 +5163,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence independence     
@@ -5562,7 +5182,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence independence     
@@ -5581,7 +5201,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence independence     
@@ -5600,7 +5220,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence type     
@@ -5622,7 +5242,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence type     
@@ -5644,7 +5264,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence type     
@@ -5666,7 +5286,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence type     
@@ -5688,7 +5308,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence type     
@@ -5710,7 +5330,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence type     
@@ -5732,7 +5352,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence type     
@@ -5754,7 +5374,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (2-level)      
@@ -5773,7 +5393,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (2-level)      
@@ -5792,7 +5412,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (2-level)      
@@ -5811,7 +5431,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (2-level)      
@@ -5830,7 +5450,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (2-level)      
@@ -5849,7 +5469,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (2-level)      
@@ -5868,7 +5488,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (2-level)      
@@ -5887,7 +5507,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (3-level)      
@@ -5907,7 +5527,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (3-level)      
@@ -5927,7 +5547,7 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (3-level)      
@@ -5947,6 +5567,6 @@ summary(soc_LASA1_1$soc_ss_received_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
