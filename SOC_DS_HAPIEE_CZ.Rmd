@@ -2473,7 +2473,7 @@ soc_HAPIEE_CZ_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W1$p57=='1'|HAPIEE_W1$
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
-**Variable name**:  ssoc_sp_cul_edu_soc_4               
+**Variable name**:  soc_sp_cul_edu_soc_4               
 **Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture, educational or social activities.      
 **Value type**:  integer  
 **Variable unit**:    
