@@ -3484,7 +3484,7 @@ soc_HAPIEE_LT_0$soc_sp_general_0 <- ifelse(HAPIEE_W2$p55_lt=='1',1L,
 0 |  Not socially isolated, has social network and/ or social participation 
 1 |  Socially isolated, no social network and no social participation 
 
-**Harmonization status**:  impossible  complete
+**Harmonization status**:  complete
 **Harmonization comment**: Participants that had low (never) contact frequency with friends (in person) and with relatives (2 items), and reported no participation were categorized as isolated. We did not use a low social network as a criteria (alongside no participation) for social isolation, as in GLOBE and RECORD, since the social network item harmonized in HAPIEE is ranking of children and all participants have at least 1 child, which might or might not be alive. 
 **R script**:  
 ```{r, echo=TRUE}
