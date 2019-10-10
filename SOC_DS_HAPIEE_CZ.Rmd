@@ -3474,7 +3474,7 @@ soc_HAPIEE_CZ_0$soc_sp_general_0 <- ifelse(HAPIEE_W1$p55=='1',1L,
 0 |  Not socially isolated, has social network and/ or social participation 
 1 |  Socially isolated, no social network and no social participation 
 
-**Harmonization status**:impossible  impossible   
+**Harmonization status**:  impossible     
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
