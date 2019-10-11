@@ -41,7 +41,7 @@ opal.logout(erasmus_opal)
 **Variable unit**: children       
 **Category coding**:      
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -55,7 +55,7 @@ opal.logout(erasmus_opal)
 **Variable unit**:  children    
 **Category coding**:    
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -69,7 +69,7 @@ opal.logout(erasmus_opal)
 **Variable unit**: children       
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -83,7 +83,7 @@ opal.logout(erasmus_opal)
 **Variable unit**: children       
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -97,7 +97,7 @@ opal.logout(erasmus_opal)
 **Variable unit**: children       
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -111,7 +111,7 @@ opal.logout(erasmus_opal)
 **Variable unit**: children     
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -125,7 +125,7 @@ opal.logout(erasmus_opal)
 **Variable unit**: children     
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -145,7 +145,7 @@ opal.logout(erasmus_opal)
 1 |  Medium rank of network size comprised of children  (1 or 2 children)
 2 |  Large rank of network size comprised of children  (more than 2 children) 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -166,7 +166,7 @@ opal.logout(erasmus_opal)
 1 |  Medium rank of network size comprised of children  (1 or 2 children)
 2 |  Large rank of network size comprised of children  (more than 2 children)  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -186,7 +186,7 @@ opal.logout(erasmus_opal)
 1 |  Medium rank of network size comprised of children  (1 or 2 children)
 2 |  Large rank of network size comprised of children  (more than 2 children)  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -206,7 +206,7 @@ opal.logout(erasmus_opal)
 1 |  Medium rank of network size comprised of children  (1 or 2 children)
 2 |  Large rank of network size comprised of children  (more than 2 children)  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -226,7 +226,7 @@ opal.logout(erasmus_opal)
 1 |  Medium rank of network size comprised of children  (1 or 2 children)
 2 |  Large rank of network size comprised of children  (more than 2 children)  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -246,7 +246,7 @@ opal.logout(erasmus_opal)
 1 |  Medium rank of network size comprised of children  (1 or 2 children)
 2 |  Large rank of network size comprised of children  (more than 2 children)  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -266,7 +266,7 @@ opal.logout(erasmus_opal)
 1 |  Medium rank of network size comprised of children  (1 or 2 children)
 2 |  Large rank of network size comprised of children  (more than 2 children)  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -281,7 +281,7 @@ opal.logout(erasmus_opal)
 **Variable unit**: friends  
 **Category coding**:      
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -295,7 +295,7 @@ opal.logout(erasmus_opal)
 **Variable unit**:  friends 
 **Category coding**:        
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -309,7 +309,7 @@ opal.logout(erasmus_opal)
 **Variable unit**:  friends 
 **Category coding**:      
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -323,7 +323,7 @@ opal.logout(erasmus_opal)
 **Variable unit**:  friends 
 **Category coding**:         
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -337,7 +337,7 @@ opal.logout(erasmus_opal)
 **Variable unit**:  friends 
 **Category coding**:      
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -351,7 +351,7 @@ opal.logout(erasmus_opal)
 **Variable unit**:  friends  
 **Category coding**:      
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -366,7 +366,7 @@ opal.logout(erasmus_opal)
 **Variable unit**:  friends 
 **Category coding**:         
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -389,7 +389,7 @@ opal.logout(erasmus_opal)
 4 |  Monthly in-person contact with friends   
 5 |  Never or less than a year in-person contact with friends  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -411,7 +411,7 @@ opal.logout(erasmus_opal)
 4 |  Monthly in-person contact with friends   
 5 |  Never or less than a year in-person contact with friends     
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -433,7 +433,7 @@ opal.logout(erasmus_opal)
 4 |  Monthly in-person contact with friends   
 5 |  Never or less than a year in-person contact with friends  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -455,7 +455,7 @@ opal.logout(erasmus_opal)
 4 |  Monthly in-person contact with friends   
 5 |  Never or less than a year in-person contact with friends       
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -477,7 +477,7 @@ opal.logout(erasmus_opal)
 4 |  Monthly in-person contact with friends   
 5 |  Never or less than a year in-person contact with friends    
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -499,7 +499,7 @@ opal.logout(erasmus_opal)
 4 |  Monthly contact with friends
 5 |  Never or less than a year contact with friends
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -521,7 +521,7 @@ opal.logout(erasmus_opal)
 4 |  Monthly contact with friends
 5 |  Never or less than a year contact with friends 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -543,7 +543,7 @@ opal.logout(erasmus_opal)
 4 |  Monthly contact with friends
 5 |  Never or less than a year contact with friends 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -565,7 +565,7 @@ opal.logout(erasmus_opal)
 4 |  Monthly contact with friends
 5 |  Never or less than a year contact with friends
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -587,7 +587,7 @@ opal.logout(erasmus_opal)
 4 |  Monthly contact with friends
 5 |  Never or less than a year contact with friends  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -609,7 +609,7 @@ opal.logout(erasmus_opal)
 4 |  Monthly contact with friends
 5 |  Never or less than a year contact with friends  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -631,7 +631,7 @@ opal.logout(erasmus_opal)
 4 |  Monthly contact with friends
 5 |  Never or less than a year contact with friends 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -654,7 +654,7 @@ opal.logout(erasmus_opal)
 5 |  11 to 20 neighbours 
 6 |  More than 20 neighbours   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -677,7 +677,7 @@ opal.logout(erasmus_opal)
 5 |  11 to 20 neighbours 
 6 |  More than 20 neighbours    
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -700,7 +700,7 @@ opal.logout(erasmus_opal)
 5 |  11 to 20 neighbours 
 6 |  More than 20 neighbours    
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -723,7 +723,7 @@ opal.logout(erasmus_opal)
 5 |  11 to 20 neighbours 
 6 |  More than 20 neighbours    
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -746,7 +746,7 @@ opal.logout(erasmus_opal)
 5 |  11 to 20 neighbours 
 6 |  More than 20 neighbours    
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -769,7 +769,7 @@ opal.logout(erasmus_opal)
 5 |  11 to 20 neighbours 
 6 |  More than 20 neighbours    
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -792,7 +792,7 @@ opal.logout(erasmus_opal)
 5 |  11 to 20 neighbours 
 6 |  More than 20 neighbours 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -815,7 +815,7 @@ opal.logout(erasmus_opal)
 4 |  Monthly contact with neighbours
 5 |  Never or less than a year contact with neighbours  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -837,7 +837,7 @@ opal.logout(erasmus_opal)
 4 |  Monthly contact with neighbours
 5 |  Never or less than a year contact with neighbours  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -859,7 +859,7 @@ opal.logout(erasmus_opal)
 4 |  Monthly contact with neighbours
 5 |  Never or less than a year contact with neighbours   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -881,7 +881,7 @@ opal.logout(erasmus_opal)
 4 |  Monthly contact with neighbours
 5 |  Never or less than a year contact with neighbours    
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -903,7 +903,7 @@ opal.logout(erasmus_opal)
 4 |  Monthly contact with neighbours
 5 |  Never or less than a year contact with neighbours    
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -925,7 +925,7 @@ opal.logout(erasmus_opal)
 4 |  Monthly contact with neighbours
 5 |  Never or less than a year contact with neighbours    
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -947,7 +947,7 @@ opal.logout(erasmus_opal)
 4 |  Monthly contact with neighbours
 5 |  Never or less than a year contact with neighbours   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -970,7 +970,7 @@ opal.logout(erasmus_opal)
 5 |  11 to 20 
 6 |  More than 20
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -993,7 +993,7 @@ opal.logout(erasmus_opal)
 5 |  11 to 20 
 6 |  More than 20
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1016,7 +1016,7 @@ opal.logout(erasmus_opal)
 5 |  11 to 20 
 6 |  More than 20
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1039,7 +1039,7 @@ opal.logout(erasmus_opal)
 5 |  11 to 20 
 6 |  More than 20
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1062,7 +1062,7 @@ opal.logout(erasmus_opal)
 5 |  11 to 20 
 6 |  More than 20
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1085,7 +1085,7 @@ opal.logout(erasmus_opal)
 5 |  11 to 20 
 6 |  More than 20
    
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1108,7 +1108,7 @@ opal.logout(erasmus_opal)
 5 |  11 to 20 
 6 |  More than 20
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1129,7 +1129,7 @@ opal.logout(erasmus_opal)
 3 |  Monthly contact with close relatives
 4 |  Never or less than a year contact with close relatives   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1150,7 +1150,7 @@ opal.logout(erasmus_opal)
 3 |  Monthly contact with close relatives
 4 |  Never or less than a year contact with close relatives    
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1171,7 +1171,7 @@ opal.logout(erasmus_opal)
 3 |  Monthly contact with close relatives
 4 |  Never or less than a year contact with close relatives       
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1192,7 +1192,7 @@ opal.logout(erasmus_opal)
 3 |  Monthly contact with close relatives
 4 |  Never or less than a year contact with close relatives     
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1213,7 +1213,7 @@ opal.logout(erasmus_opal)
 3 |  Monthly contact with close relatives
 4 |  Never or less than a year contact with close relatives      
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1234,7 +1234,7 @@ opal.logout(erasmus_opal)
 3 |  Monthly contact with close relatives
 4 |  Never or less than a year contact with close relatives      
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1255,7 +1255,7 @@ opal.logout(erasmus_opal)
 3 |  Monthly contact with close relatives
 4 |  Never or less than a year contact with close relatives    
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1277,7 +1277,7 @@ opal.logout(erasmus_opal)
 3 |  Monthly contact with relatives 
 4 |  Never or less than a year contact with relatives  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1298,7 +1298,7 @@ opal.logout(erasmus_opal)
 3 |  Monthly contact with relatives 
 4 |  Never or less than a year contact with relatives  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1319,7 +1319,7 @@ opal.logout(erasmus_opal)
 3 |  Monthly contact with relatives 
 4 |  Never or less than a year contact with relatives  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1340,7 +1340,7 @@ opal.logout(erasmus_opal)
 3 |  Monthly contact with relatives 
 4 |  Never or less than a year contact with relatives    
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1361,7 +1361,7 @@ opal.logout(erasmus_opal)
 3 |  Monthly contact with relatives 
 4 |  Never or less than a year contact with relatives  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1382,7 +1382,7 @@ opal.logout(erasmus_opal)
 3 |  Monthly contact with relatives 
 4 |  Never or less than a year contact with relatives  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1403,7 +1403,7 @@ opal.logout(erasmus_opal)
 3 |  Monthly contact with relatives 
 4 |  Never or less than a year contact with relatives  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1417,7 +1417,7 @@ opal.logout(erasmus_opal)
 **Variable unit**: members       
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1431,7 +1431,7 @@ opal.logout(erasmus_opal)
 **Variable unit**: members       
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1445,7 +1445,7 @@ opal.logout(erasmus_opal)
 **Variable unit**: members       
 **Category coding**:      
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1459,7 +1459,7 @@ opal.logout(erasmus_opal)
 **Variable unit**:  members      
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1473,7 +1473,7 @@ opal.logout(erasmus_opal)
 **Variable unit**:  members      
 **Category coding**:     
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1487,7 +1487,7 @@ opal.logout(erasmus_opal)
 **Variable unit**:  members      
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1501,7 +1501,7 @@ opal.logout(erasmus_opal)
 **Variable unit**: members       
 **Category coding**:      
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1524,7 +1524,7 @@ opal.logout(erasmus_opal)
 4 |  Monthly contact with non-kin members  
 5 |  Never or less than a year contact with non-kin members     
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1546,7 +1546,7 @@ opal.logout(erasmus_opal)
 4 |  Monthly contact with non-kin members   
 5 |  Never or less than a year contact with non-kin members     
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1568,7 +1568,7 @@ opal.logout(erasmus_opal)
 4 |  Monthly contact with non-kin members   
 5 |  Never or less than a year contact with non-kin members       
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1590,7 +1590,7 @@ opal.logout(erasmus_opal)
 4 |  Monthly contact with non-kin members   
 5 |  Never or less than a year contact with non-kin members     
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1612,7 +1612,7 @@ opal.logout(erasmus_opal)
 4 |  Monthly contact with non-kin members   
 5 |  Never or less than a year contact with non-kin members     
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1634,7 +1634,7 @@ opal.logout(erasmus_opal)
 4 |  Monthly contact with non-kin members   
 5 |  Never or less than a year contact with non-kin members     
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1656,7 +1656,7 @@ opal.logout(erasmus_opal)
 4 |  Monthly contact with non-kin members   
 5 |  Never or less than a year contact with non-kin members     
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1678,7 +1678,7 @@ opal.logout(erasmus_opal)
 1 |  Sometimes received emotional support
 2 |  Often received emotional support
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1698,7 +1698,7 @@ opal.logout(erasmus_opal)
 1 |  Sometimes received emotional support
 2 |  Often received emotional support
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1718,7 +1718,7 @@ opal.logout(erasmus_opal)
 1 |  Sometimes received emotional support
 2 |  Often received emotional support
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1738,7 +1738,7 @@ opal.logout(erasmus_opal)
 1 |  Sometimes received emotional support
 2 |  Often received emotional support
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1758,7 +1758,7 @@ opal.logout(erasmus_opal)
 1 |  Sometimes received emotional support
 2 |  Often received emotional support
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1778,7 +1778,7 @@ opal.logout(erasmus_opal)
 1 |  Sometimes received emotional support
 2 |  Often received emotional support
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1798,7 +1798,7 @@ opal.logout(erasmus_opal)
 1 |  Sometimes received emotional support
 2 |  Often received emotional support
 
-**Harmonization status**:     
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1818,7 +1818,7 @@ opal.logout(erasmus_opal)
 1 |  Sometimes received instrumental support
 2 |  Often received instrumental support
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1838,7 +1838,7 @@ opal.logout(erasmus_opal)
 1 |  Sometimes received instrumental support
 2 |  Often received instrumental support
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1858,7 +1858,7 @@ opal.logout(erasmus_opal)
 1 |  Sometimes received instrumental support
 2 |  Often received instrumental support
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1878,7 +1878,7 @@ opal.logout(erasmus_opal)
 1 |  Sometimes received instrumental support
 2 |  Often received instrumental support
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1898,7 +1898,7 @@ opal.logout(erasmus_opal)
 1 |   Sometimes received instrumental support
 2 |   Often received instrumental support
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1918,7 +1918,7 @@ opal.logout(erasmus_opal)
 1 |  Sometimes received instrumental support
 2 |  Often received instrumental support
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1938,7 +1938,7 @@ opal.logout(erasmus_opal)
 1 |  Sometimes received instrumental support
 2 |  Often received instrumental support
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1952,7 +1952,7 @@ opal.logout(erasmus_opal)
 **Variable unit**:  
 **Category coding**:  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1966,7 +1966,7 @@ opal.logout(erasmus_opal)
 **Variable unit**:  
 **Category coding**:  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1980,7 +1980,7 @@ opal.logout(erasmus_opal)
 **Variable unit**:  
 **Category coding**:  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1994,7 +1994,7 @@ opal.logout(erasmus_opal)
 **Variable unit**:  
 **Category coding**:  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2008,7 +2008,7 @@ opal.logout(erasmus_opal)
 **Variable unit**:  
 **Category coding**:     
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2022,7 +2022,7 @@ opal.logout(erasmus_opal)
 **Variable unit**:  
 **Category coding**:  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2036,7 +2036,7 @@ opal.logout(erasmus_opal)
 **Variable unit**:  
 **Category coding**:  
  
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2055,7 +2055,7 @@ opal.logout(erasmus_opal)
 0 |  Feels tangible help is available  
 1 |  Does not feel tangible help is available   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2074,7 +2074,7 @@ opal.logout(erasmus_opal)
 0 |  Feels tangible help is available  
 1 |  Does not feel tangible help is available   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2093,7 +2093,7 @@ opal.logout(erasmus_opal)
 0 |  Feels tangible help is available   
 1 |  Does not feel tangible help is available   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2112,7 +2112,7 @@ opal.logout(erasmus_opal)
 0 |  Feels tangible help is available   
 1 |  Does not feel tangible help is available    
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2131,7 +2131,7 @@ opal.logout(erasmus_opal)
 0 |  Feels tangible help is available   
 1 |  Does not feel tangible help is available  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2150,7 +2150,7 @@ opal.logout(erasmus_opal)
 0 |  Feels tangible help is available   
 1 |  Does not feel tangible help is available  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2169,7 +2169,7 @@ opal.logout(erasmus_opal)
 0 |  Feels tangible help is available   
 1 |  Does not feel tangible help is available   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2191,7 +2191,7 @@ opal.logout(erasmus_opal)
 0 |  Not socially isolated, has social network and/ or social participation 
 1 |  Socially isolated, no social network and no social participation 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2210,7 +2210,7 @@ opal.logout(erasmus_opal)
 0 |  Not socially isolated, has social network and/ or social participation 
 1 |  Socially isolated, no social network and no social participation 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2229,7 +2229,7 @@ opal.logout(erasmus_opal)
 0 |  Not socially isolated, has social network and/ or social participation 
 1 |  Socially isolated, no social network and no social participation 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2248,7 +2248,7 @@ opal.logout(erasmus_opal)
 0 |  Not socially isolated, has social network and/ or social participation 
 1 |  Socially isolated, no social network and no social participation 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2267,7 +2267,7 @@ opal.logout(erasmus_opal)
 0 |  Not socially isolated, has social network and/ or social participation 
 1 |  Socially isolated, no social network and no social participation 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2286,7 +2286,7 @@ opal.logout(erasmus_opal)
 0 |  Not socially isolated, has social network and/ or social participation 
 1 |  Socially isolated, no social network and no social participation 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2305,7 +2305,7 @@ opal.logout(erasmus_opal)
 0 |  Not socially isolated, has social network and/ or social participation 
 1 |  Socially isolated, no social network and no social participation 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2324,146 +2324,14 @@ opal.logout(erasmus_opal)
 0 |  Not socially isolated, has social network and/ or social participation 
 1 |  Socially isolated, no social network and no social participation 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
 
 
 ```
-### **Variable label**:  Religious membership    
-**Variable name**:  soc_sp_mem_religious_0        
-**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
 
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not a member of a religious organization 
-1 |  Member of a religious organization 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-
-
-```
-### **Variable label**:  Religious membership    
-**Variable name**:  soc_sp_mem_religious_1        
-**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not a member of a religious organization 
-1 |  Member of a religious organization 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-
-
-```
-### **Variable label**:  Religious membership    
-**Variable name**:  soc_sp_mem_religious_2        
-**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not a member of a religious organization 
-1 |  Member of a religious organization 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-
-
-```
-### **Variable label**:  Religious membership    
-**Variable name**:  soc_sp_mem_religious_3        
-**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not a member of a religious organization 
-1 |  Member of a religious organization 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-
-
-```
-### **Variable label**:  Religious membership    
-**Variable name**:  soc_sp_mem_religious_4        
-**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not a member of a religious organization 
-1 |  Member of a religious organization 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-
-
-```
-### **Variable label**:  Religious membership    
-**Variable name**:  soc_sp_mem_religious_5        
-**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not a member of a religious organization 
-1 |  Member of a religious organization 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-
-
-```
-### **Variable label**:  Religious membership    
-**Variable name**:  soc_sp_mem_religious_6        
-**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not a member of a religious organization 
-1 |  Member of a religious organization 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-
-
-```
 ### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_0        
 **Variable description**:  Indicator of participation in a religious organization.      
@@ -2476,7 +2344,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in a religious organization   
 1 |  Does participate in a religious organization 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2495,7 +2363,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in a religious organization   
 1 |  Does participate in a religious organization  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2514,7 +2382,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in a religious organization   
 1 |  Does participate in a religious organization 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2533,7 +2401,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in a religious organization   
 1 |  Does participate in a religious organization 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2552,7 +2420,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in a religious organization   
 1 |  Does participate in a religious organization 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2571,7 +2439,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in a religious organization   
 1 |  Does participate in a religious organization  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2590,7 +2458,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in a religious organization   
 1 |  Does participate in a religious organization  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2609,7 +2477,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in a religious organization   
 1 |  Does participate in a religious organization 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2631,7 +2499,7 @@ opal.logout(erasmus_opal)
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2653,7 +2521,7 @@ opal.logout(erasmus_opal)
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2675,7 +2543,7 @@ opal.logout(erasmus_opal)
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2697,7 +2565,7 @@ opal.logout(erasmus_opal)
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2719,7 +2587,7 @@ opal.logout(erasmus_opal)
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2741,7 +2609,7 @@ opal.logout(erasmus_opal)
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2763,7 +2631,7 @@ opal.logout(erasmus_opal)
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2785,7 +2653,7 @@ opal.logout(erasmus_opal)
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2804,7 +2672,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in a cultural or educational organization  
 1 |  Does participate in a cultural or educational organization 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2823,7 +2691,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in a cultural or educational organization  
 1 |  Does participate in a cultural or educational organization 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2842,7 +2710,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in a cultural or educational organization  
 1 |  Does participate in a cultural or educational organization 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2861,7 +2729,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in a cultural or educational organization  
 1 |  Does participate in a cultural or educational organization 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2880,7 +2748,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in a cultural or educational organization  
 1 |  Does participate in a cultural or educational organization 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2899,7 +2767,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in a cultural or educational organization  
 1 |  Does participate in a cultural or educational organization 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2918,7 +2786,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in a cultural or educational organization  
 1 |  Does participate in a cultural or educational organization 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2937,7 +2805,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in a cultural, educational or social organization  
 1 |  Does participate in a cultural, educational or social organization 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2956,7 +2824,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in a cultural, educational or social organization  
 1 |  Does participate in a cultural, educational or social organization 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2975,7 +2843,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in a cultural, educational or social organization  
 1 |  Does participate in a cultural, educational or social organization 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -2994,7 +2862,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in a cultural, educational or social organization  
 1 |  Does participate in a cultural, educational or social organization 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3002,7 +2870,7 @@ opal.logout(erasmus_opal)
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
-**Variable name**:  ssoc_sp_cul_edu_soc_4               
+**Variable name**:  soc_sp_cul_edu_soc_4               
 **Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture, educational or social activities.      
 **Value type**:  integer  
 **Variable unit**:    
@@ -3013,7 +2881,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in a cultural, educational or social organization  
 1 |  Does participate in a cultural, educational or social organization 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3032,7 +2900,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in a cultural, educational or social organization  
 1 |  Does participate in a cultural, educational or social organization 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3051,7 +2919,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in a cultural, educational or social organization  
 1 |  Does participate in a cultural, educational or social organization 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3070,7 +2938,7 @@ opal.logout(erasmus_opal)
 0 |  Does not take part in volunteer activities
 1 |  Does take part in volunteer activities  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3089,7 +2957,7 @@ opal.logout(erasmus_opal)
 0 |  Does not take part in volunteer activities
 1 |  Does take part in volunteer activities  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3108,7 +2976,7 @@ opal.logout(erasmus_opal)
 0 |  Does not take part in volunteer activities
 1 |  Does take part in volunteer activities  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3127,7 +2995,7 @@ opal.logout(erasmus_opal)
 0 |  Does not take part in volunteer activities
 1 |  Does take part in volunteer activities 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3146,7 +3014,7 @@ opal.logout(erasmus_opal)
 0 |  Does not take part in volunteer activities
 1 |  Does take part in volunteer activities 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3165,7 +3033,7 @@ opal.logout(erasmus_opal)
 0 |  Does not take part in volunteer activities
 1 |  Does take part in volunteer activities 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3184,144 +3052,143 @@ opal.logout(erasmus_opal)
 0 |  Does not take part in volunteer activities
 1 |  Does take part in volunteer activities 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
 
 
 ```
-### **Variable label**:  Civic participation       
-**Variable name**:  soc_sp_civic_0                
-**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+### **Variable label**:  Political / union participation         
+**Variable name**:  soc_sp_pol_0                
+**Variable description**:  Indicator of participation in a union or political party.        
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a civic organization   
-1 |  Does participate in a civic organization   
+0 |  Does not participate in a union or political party     
+1 |  Does participate in a union or political party     
 
-**Harmonization status**:  
+**Harmonization status**:  impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-
 
 ```
-### **Variable label**:  Civic participation       
-**Variable name**:  soc_sp_civic_1                
-**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+### **Variable label**:  Political / union participation         
+**Variable name**:  soc_sp_pol_1                
+**Variable description**:  Indicator of participation in a union or political party.        
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a civic organization   
-1 |  Does participate in a civic organization   
+0 |  Does not participate in a union or political party     
+1 |  Does participate in a union or political party     
 
-**Harmonization status**:  
+**Harmonization status**:  impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-
+ 
 
 ```
-### **Variable label**:  Civic participation       
-**Variable name**:  soc_sp_civic_2                
-**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+### **Variable label**:  Political / union participation         
+**Variable name**:  soc_sp_pol_2                
+**Variable description**:  Indicator of participation in a union or political party.        
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a civic organization   
-1 |  Does participate in a civic organization   
+0 |  Does not participate in a union or political party     
+1 |  Does participate in a union or political party     
 
-**Harmonization status**:  
+**Harmonization status**:  impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-
+ 
 
 ```
-### **Variable label**:  Civic participation       
-**Variable name**:  soc_sp_civic_3                
-**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+### **Variable label**:  Political / union participation         
+**Variable name**:  soc_sp_pol_3                
+**Variable description**:  Indicator of participation in a union or political party.        
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a civic organization   
-1 |  Does participate in a civic organization   
+0 |  Does not participate in a union or political party     
+1 |  Does participate in a union or political party     
 
-**Harmonization status**:  
+**Harmonization status**:  impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-
+ 
 
 ```
-### **Variable label**:  Civic participation       
-**Variable name**:  soc_sp_civic_4                
-**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+### **Variable label**:  Political / union participation         
+**Variable name**:  soc_sp_pol_4                
+**Variable description**:  Indicator of participation in a union or political party.        
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a civic organization   
-1 |  Does participate in a civic organization  
+0 |  Does not participate in a union or political party     
+1 |  Does participate in a union or political party    
 
-**Harmonization status**:  
+**Harmonization status**:  impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-
+ 
 
 ```
-### **Variable label**:  Civic participation       
-**Variable name**:  soc_sp_civic_5                
-**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+### **Variable label**:  Political / union participation         
+**Variable name**:  soc_sp_pol_5                
+**Variable description**:  Indicator of participation in a union or political party.        
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a civic organization   
-1 |  Does participate in a civic organization  
+0 |  Does not participate in a union or political party     
+1 |  Does participate in a union or political party    
 
-**Harmonization status**:  
+**Harmonization status**:  impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-
+ 
 
 ```
-### **Variable label**:  Civic participation       
-**Variable name**:  soc_sp_civic_6                
-**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+### **Variable label**:  Political / union participation         
+**Variable name**:  soc_sp_pol_6                
+**Variable description**:  Indicator of participation in a union or political party.        
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a civic organization   
-1 |  Does participate in a civic organization  
+0 |  Does not participate in a union or political party     
+1 |  Does participate in a union or political party    
 
-**Harmonization status**:  
+**Harmonization status**:  impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-
+ 
 
 ```
 ### **Variable label**:  Professional participation         
@@ -3336,7 +3203,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in an union, professional or neighbourhood organization   
 1 |  Does participate in an union, professional or neighbourhood organization  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3355,7 +3222,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in an union, professional or neighbourhood organization   
 1 |  Does participate in an union, professional or neighbourhood organization  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3374,7 +3241,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in an union, professional or neighbourhood organization  
 1 |  Does participate in an union, professional or neighbourhood organization 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3393,7 +3260,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in an union, professional or neighbourhood organization   
 1 |  Does participate in an union, professional or neighbourhood organization  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3412,7 +3279,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in an union, professional or neighbourhood organization   
 1 |  Does participate in an union, professional or neighbourhood organization   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3431,7 +3298,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in an union, professional or neighbourhood organization   
 1 |  Does participate in an union, professional or neighbourhood organization   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3450,7 +3317,7 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in an union, professional or neighbourhood organization  
 1 |  Does participate in an union, professional or neighbourhood organization   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3469,7 +3336,7 @@ opal.logout(erasmus_opal)
 0 |  Does not take part in a social organization/volunteers   
 1 |  Does take part in a social organization/volunteers   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3488,7 +3355,7 @@ opal.logout(erasmus_opal)
 0 |  Does not take part in a social organization/volunteers     
 1 |  Does take part in a social organization/volunteers       
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3507,7 +3374,7 @@ opal.logout(erasmus_opal)
 0 |  Does not take part in a social organization/volunteers     
 1 |  Does take part in a social organization/volunteers     
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3526,7 +3393,7 @@ opal.logout(erasmus_opal)
 0 |  Does not take part in a social organization/volunteers     
 1 |  Does take part in a social organization/volunteers       
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3545,7 +3412,7 @@ opal.logout(erasmus_opal)
 0 |  Does not take part in a social organization/volunteers     
 1 |  Does take part in a social organization/volunteers     
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3564,7 +3431,7 @@ opal.logout(erasmus_opal)
 0 |  Does not take part in a social organization/volunteers     
 1 |  Does take part in a social organization/volunteers    
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3583,7 +3450,7 @@ opal.logout(erasmus_opal)
 0 |  Does not take part in a social organization/volunteers     
 1 |  Does take part in a social organization/volunteers    
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3602,7 +3469,7 @@ opal.logout(erasmus_opal)
 0 |  Safety concerns did not affect participation  
 1 |  Did not participate due to safety concerns   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3621,7 +3488,7 @@ opal.logout(erasmus_opal)
 0 |  Safety concerns did not affect participation  
 1 |  Did not participate due to safety concerns   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3640,7 +3507,7 @@ opal.logout(erasmus_opal)
 0 |  Safety concerns did not affect participation  
 1 |  Did not participate due to safety concerns   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3659,7 +3526,7 @@ opal.logout(erasmus_opal)
 0 |  Safety concerns did not affect participation  
 1 |  Did not participate due to safety concerns   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3678,7 +3545,7 @@ opal.logout(erasmus_opal)
 0 |  Safety concerns did not affect participation  
 1 |  Did not participate due to safety concerns   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3697,7 +3564,7 @@ opal.logout(erasmus_opal)
 0 |  Safety concerns did not affect participation  
 1 |  Did not participate due to safety concerns   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3716,7 +3583,7 @@ opal.logout(erasmus_opal)
 0 |  Safety concerns did not affect participation  
 1 |  Did not participate due to safety concerns   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3735,7 +3602,7 @@ opal.logout(erasmus_opal)
 0 |  Lack of transportation did not affect participation
 1 |  Did not participate due to lack of transportation   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3754,7 +3621,7 @@ opal.logout(erasmus_opal)
 0 |  Lack of transportation did not affect participation
 1 |  Did not participate due to lack of transportation   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3773,7 +3640,7 @@ opal.logout(erasmus_opal)
 0 |  Lack of transportation did not affect participation
 1 |  Did not participate due to lack of transportation   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3792,7 +3659,7 @@ opal.logout(erasmus_opal)
 0 |  Lack of transportation did not affect participation
 1 |  Did not participate due to lack of transportation   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3811,7 +3678,7 @@ opal.logout(erasmus_opal)
 0 |  Lack of transportation did not affect participation
 1 |  Did not participate due to lack of transportation   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3830,7 +3697,7 @@ opal.logout(erasmus_opal)
 0 |  Lack of transportation did not affect participation
 1 |  Did not participate due to lack of transportation   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3849,7 +3716,7 @@ opal.logout(erasmus_opal)
 0 |  Lack of transportation did not affect participation
 1 |  Did not participate due to lack of transportation   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3868,7 +3735,7 @@ opal.logout(erasmus_opal)
 0 |  Does not have a hobby
 1 |  Does have a hobby  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3887,7 +3754,7 @@ opal.logout(erasmus_opal)
 0 |  Does not have a hobby
 1 |  Does have a hobby   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3906,7 +3773,7 @@ opal.logout(erasmus_opal)
 0 |  Does not have a hobby
 1 |  Does have a hobby  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3925,7 +3792,7 @@ opal.logout(erasmus_opal)
 0 |  Does not have a hobby
 1 |  Does have a hobby  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3944,7 +3811,7 @@ opal.logout(erasmus_opal)
 0 |  Does not have a hobby
 1 |  Does have a hobby 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3963,7 +3830,7 @@ opal.logout(erasmus_opal)
 0 |  Does not have a hobby
 1 |  Does have a hobby  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -3982,7 +3849,7 @@ opal.logout(erasmus_opal)
 0 |  Does not have a hobby
 1 |  Does have a hobby 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4003,7 +3870,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience being the victim of a crime
 1 |  Did experience being the victim of a crime 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4022,7 +3889,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience being the victim of a crime
 1 |  Did experience being the victim of a crime 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4041,7 +3908,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience being the victim of a crime
 1 |  Did experience being the victim of a crime 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4060,7 +3927,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience being the victim of a crime
 1 |  Did experience being the victim of a crime 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4079,7 +3946,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience being the victim of a crime
 1 |  Did experience being the victim of a crime 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4098,7 +3965,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience being the victim of a crime
 1 |  Did experience being the victim of a crime 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4117,7 +3984,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience being the victim of a crime
 1 |  Did experience being the victim of a crime 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4136,7 +4003,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience financial problems
 1 |  Did experience financial problems  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4155,7 +4022,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience financial problems
 1 |  Did experience financial problems    
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4174,7 +4041,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience financial problems
 1 |  Did experience financial problems   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4193,7 +4060,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience financial problems
 1 |  Did experience financial problems   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4212,7 +4079,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience financial problems
 1 |  Did experience financial problems   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4231,7 +4098,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience financial problems
 1 |  Did experience financial problems    
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4250,7 +4117,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience financial problems
 1 |  Did experience financial problems    
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4269,7 +4136,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience financial problems
 1 |  Did experience financial problems    
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4288,7 +4155,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience relationship problems
 1 |  Did experience relationship problems
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4307,7 +4174,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience relationship problems
 1 |  Did experience relationship problems
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4326,7 +4193,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience relationship problems
 1 |  Did experience relationship problems  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4345,7 +4212,7 @@ opal.logout(erasmus_opal)
 0 |  Did not divorce/ have relationship breakup
 1 |  Did divorce/ had relationship breakup  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4364,7 +4231,7 @@ opal.logout(erasmus_opal)
 0 |  Did not divorce/ have relationship breakup
 1 |  Did divorce/ had relationship breakup  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4383,7 +4250,7 @@ opal.logout(erasmus_opal)
 0 |  Did not divorce/ have relationship breakup
 1 |  Did divorce/ had relationship breakup  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4402,7 +4269,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience illness of family member 
 1 |  Did experience illness of family member 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4421,7 +4288,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience illness of family member 
 1 |  Did experience illness of family member 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4440,7 +4307,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience illness of family member 
 1 |  Did experience illness of family member 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4459,7 +4326,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience illness of family member 
 1 |  Did experience illness of family member 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4478,7 +4345,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience illness of family member 
 1 |  Did experience illness of family member 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4497,7 +4364,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience illness of family member 
 1 |  Did experience illness of family member 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4516,7 +4383,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience illness of family member 
 1 |  Did experience illness of family member 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4535,7 +4402,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience death of partner/spouse
 1 |  Did experience death of partner/spouse 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4554,7 +4421,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience death of partner/spouse
 1 |  Did experience death of partner/spouse 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4573,7 +4440,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience death of partner/spouse
 1 |  Did experience death of partner/spouse 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4592,7 +4459,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience death of child/family member/friend  
 1 |  Did experience death of child/family member/friend  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4611,7 +4478,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience death of child/family member/friend  
 1 |  Did experience death of child/family member/friend   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4630,7 +4497,7 @@ opal.logout(erasmus_opal)
 0 |  Did not experience death of child/family member/friend  
 1 |  Did experience death of child/family member/friend  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4646,7 +4513,7 @@ opal.logout(erasmus_opal)
 **Variable unit**:  years   
 **Category coding**:  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4660,7 +4527,7 @@ opal.logout(erasmus_opal)
 **Variable unit**:  years   
 **Category coding**:  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4674,7 +4541,7 @@ opal.logout(erasmus_opal)
 **Variable unit**: years    
 **Category coding**:  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4688,7 +4555,7 @@ opal.logout(erasmus_opal)
 **Variable unit**:  years   
 **Category coding**:  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4702,7 +4569,7 @@ opal.logout(erasmus_opal)
 **Variable unit**:  years   
 **Category coding**:  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4716,7 +4583,7 @@ opal.logout(erasmus_opal)
 **Variable unit**:  years   
 **Category coding**:  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4730,7 +4597,7 @@ opal.logout(erasmus_opal)
 **Variable unit**: years    
 **Category coding**:  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4744,7 +4611,7 @@ opal.logout(erasmus_opal)
 **Variable unit**: years    
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4758,7 +4625,7 @@ opal.logout(erasmus_opal)
 **Variable unit**:  years   
 **Category coding**:    
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4772,7 +4639,7 @@ opal.logout(erasmus_opal)
 **Variable unit**:  years   
 **Category coding**:  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4786,7 +4653,7 @@ opal.logout(erasmus_opal)
 **Variable unit**: years    
 **Category coding**:  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4800,7 +4667,7 @@ opal.logout(erasmus_opal)
 **Variable unit**: years    
 **Category coding**:  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4814,7 +4681,7 @@ opal.logout(erasmus_opal)
 **Variable unit**: years    
 **Category coding**:  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4828,7 +4695,7 @@ opal.logout(erasmus_opal)
 **Variable unit**:  years   
 **Category coding**:  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4847,7 +4714,7 @@ opal.logout(erasmus_opal)
 0 |  Does not want to move out of neighbourhood
 1 |  Does want to move out of neighbourhood
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4866,7 +4733,7 @@ opal.logout(erasmus_opal)
 0 |  Does not want to move out of neighbourhood
 1 |  Does want to move out of neighbourhood
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4885,7 +4752,7 @@ opal.logout(erasmus_opal)
 0 |  Does not want to move out of neighbourhood
 1 |  Does want to move out of neighbourhood
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4904,7 +4771,7 @@ opal.logout(erasmus_opal)
 0 |  Does not want to move out of neighbourhood
 1 |  Does want to move out of neighbourhood
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4923,7 +4790,7 @@ opal.logout(erasmus_opal)
 0 |  Does not want to move out of neighbourhood
 1 |  Does want to move out of neighbourhood
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4942,7 +4809,7 @@ opal.logout(erasmus_opal)
 0 |  Does not want to move out of neighbourhood
 1 |  Does want to move out of neighbourhood
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4961,7 +4828,7 @@ opal.logout(erasmus_opal)
 0 |  Has not moved since last interview
 1 |  Has moved since last interview
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4980,7 +4847,7 @@ opal.logout(erasmus_opal)
 0 |  Has not moved since last interview
 1 |  Has moved since last interview
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -4999,7 +4866,7 @@ opal.logout(erasmus_opal)
 0 |  Has not moved since last interview
 1 |  Has moved since last interview
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -5018,7 +4885,7 @@ opal.logout(erasmus_opal)
 0 |  Has not moved since last interview
 1 |  Has moved since last interview
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -5037,7 +4904,7 @@ opal.logout(erasmus_opal)
 0 |  Has not moved since last interview
 1 |  Has moved since last interview
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -5056,7 +4923,7 @@ opal.logout(erasmus_opal)
 0 |  Has not moved since last interview
 1 |  Has moved since last interview
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -5075,7 +4942,7 @@ opal.logout(erasmus_opal)
 0 |  Has not moved since last interview
 1 |  Has moved since last interview
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -5083,7 +4950,7 @@ opal.logout(erasmus_opal)
 
 ```
 ### **Variable label**:  Residence independence     
-**Variable name**:  soc_res_home_0                  
+**Variable name**:  soc_res_indep_0                  
 **Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
 **Value type**:  integer  
 **Variable unit**:   
@@ -5094,7 +4961,7 @@ opal.logout(erasmus_opal)
 0 |  Lives independently  
 1 |  Lives in a nursing home
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -5102,7 +4969,7 @@ opal.logout(erasmus_opal)
 
 ```
 ### **Variable label**:  Residence independence     
-**Variable name**:  soc_res_home_1                  
+**Variable name**:  soc_res_indep_1                  
 **Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
 **Value type**:  integer  
 **Variable unit**:   
@@ -5113,7 +4980,7 @@ opal.logout(erasmus_opal)
 0 |  Lives independently  
 1 |  Lives in a nursing home
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -5121,7 +4988,7 @@ opal.logout(erasmus_opal)
 
 ```
 ### **Variable label**:  Residence independence     
-**Variable name**:  soc_res_home_2                  
+**Variable name**:  soc_res_indep_2                  
 **Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
 **Value type**:  integer  
 **Variable unit**:   
@@ -5132,7 +4999,7 @@ opal.logout(erasmus_opal)
 0 |  Lives independently  
 1 |  Lives in a nursing home
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -5140,7 +5007,7 @@ opal.logout(erasmus_opal)
 
 ```
 ### **Variable label**:  Residence independence     
-**Variable name**:  soc_res_home_3                  
+**Variable name**:  soc_res_indep_3                  
 **Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
 **Value type**:  integer  
 **Variable unit**:   
@@ -5151,7 +5018,7 @@ opal.logout(erasmus_opal)
 0 |  Lives independently  
 1 |  Lives in a nursing home
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -5159,7 +5026,7 @@ opal.logout(erasmus_opal)
 
 ```
 ### **Variable label**:  Residence independence     
-**Variable name**:  soc_res_home_4                  
+**Variable name**:  soc_res_indep_4                  
 **Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
 **Value type**:  integer  
 **Variable unit**:   
@@ -5170,7 +5037,7 @@ opal.logout(erasmus_opal)
 0 |  Lives independently  
 1 |  Lives in a nursing home
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -5178,7 +5045,7 @@ opal.logout(erasmus_opal)
 
 ```
 ### **Variable label**:  Residence independence     
-**Variable name**:  soc_res_home_5                  
+**Variable name**:  soc_res_indep_5                  
 **Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
 **Value type**:  integer  
 **Variable unit**:   
@@ -5189,7 +5056,7 @@ opal.logout(erasmus_opal)
 0 |  Lives independently  
 1 |  Lives in a nursing home
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -5197,7 +5064,7 @@ opal.logout(erasmus_opal)
 
 ```
 ### **Variable label**:  Residence independence     
-**Variable name**:  soc_res_home_6                  
+**Variable name**:  soc_res_indep_6                  
 **Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
 **Value type**:  integer  
 **Variable unit**:   
@@ -5208,7 +5075,161 @@ opal.logout(erasmus_opal)
 0 |  Lives independently  
 1 |  Lives in a nursing home
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:  Residence type     
+**Variable name**:  soc_res_type_0                    
+**Variable description**:  Indicator of type of home in which participant lives.           
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Lives in a flat/ apartment   
+2 |  Lives in a single-family house (terraced house/ townhouse, semi-detached, detached)  
+3 |  Lives in a nursing home, retirement home, home for the elderly
+4 |  Lives on a farm
+5 |  Other
+
+**Harmonization status**:  impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:  Residence type     
+**Variable name**:  soc_res_type_1                    
+**Variable description**:  Indicator of type of home in which participant lives.           
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Lives in a flat/ apartment   
+2 |  Lives in a single-family house (terraced house/ townhouse, semi-detached, detached)  
+3 |  Lives in a nursing home, retirement home, home for the elderly
+4 |  Lives on a farm
+5 |  Other
+
+**Harmonization status**:  impossible     
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:  Residence type     
+**Variable name**:  soc_res_type_2                    
+**Variable description**:  Indicator of type of home in which participant lives.           
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Lives in a flat/ apartment   
+2 |  Lives in a single-family house (terraced house/ townhouse, semi-detached, detached)  
+3 |  Lives in a nursing home, retirement home, home for the elderly
+4 |  Lives on a farm
+5 |  Other
+
+**Harmonization status**: impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:  Residence type     
+**Variable name**:  soc_res_type_3                    
+**Variable description**:  Indicator of type of home in which participant lives.           
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Lives in a flat/ apartment   
+2 |  Lives in a single-family house (terraced house/ townhouse, semi-detached, detached)  
+3 |  Lives in a nursing home, retirement home, home for the elderly
+4 |  Lives on a farm
+5 |  Other
+
+**Harmonization status**: impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:  Residence type     
+**Variable name**:  soc_res_type_4                    
+**Variable description**:  Indicator of type of home in which participant lives.           
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Lives in a flat/ apartment   
+2 |  Lives in a single-family house (terraced house/ townhouse, semi-detached, detached)  
+3 |  Lives in a nursing home, retirement home, home for the elderly
+4 |  Lives on a farm
+5 |  Other
+
+**Harmonization status**:  impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:  Residence type     
+**Variable name**:  soc_res_type_5                    
+**Variable description**:  Indicator of type of home in which participant lives.           
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Lives in a flat/ apartment   
+2 |  Lives in a single-family house (terraced house/ townhouse, semi-detached, detached)  
+3 |  Lives in a nursing home, retirement home, home for the elderly
+4 |  Lives on a farm
+5 |  Other
+
+**Harmonization status**:  impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:  Residence type     
+**Variable name**:  soc_res_type_6                    
+**Variable description**:  Indicator of type of home in which participant lives.           
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Lives in a flat/ apartment   
+2 |  Lives in a single-family house (terraced house/ townhouse, semi-detached, detached)  
+3 |  Lives in a nursing home, retirement home, home for the elderly
+4 |  Lives on a farm
+5 |  Other
+
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -5227,7 +5248,7 @@ opal.logout(erasmus_opal)
 0 |  Does not own home
 1 |  Does own home  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -5246,7 +5267,7 @@ opal.logout(erasmus_opal)
 0 |  Does not own home
 1 |  Does own home  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -5265,7 +5286,7 @@ opal.logout(erasmus_opal)
 0 |  Does not own home
 1 |  Does own home  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -5284,7 +5305,7 @@ opal.logout(erasmus_opal)
 0 |  Does not own home
 1 |  Does own home  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -5303,7 +5324,7 @@ opal.logout(erasmus_opal)
 0 |  Does not own home
 1 |  Does own home  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -5322,7 +5343,7 @@ opal.logout(erasmus_opal)
 0 |  Does not own home
 1 |  Does own home  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -5341,7 +5362,7 @@ opal.logout(erasmus_opal)
 0 |  Does not own home
 1 |  Does own home  
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -5361,7 +5382,7 @@ opal.logout(erasmus_opal)
 2 |  Pays mortgage 
 3 |  Rents home 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -5381,7 +5402,7 @@ opal.logout(erasmus_opal)
 2 |  Pays mortgage 
 3 |  Rents home 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -5401,7 +5422,7 @@ opal.logout(erasmus_opal)
 2 |  Pays mortgage 
 3 |  Rents home 
 
-**Harmonization status**:  
+**Harmonization status**:    impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}

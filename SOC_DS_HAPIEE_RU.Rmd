@@ -1427,6 +1427,259 @@ soc_HAPIEE_RU_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W1$p57=='1'|HAPIEE_W1$
 
 
 ```
+### **Variable label**:   Network size of non-kin      
+**Variable name**:   soc_sn_num_nonkin_0    
+**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Value type**:  integer  
+**Variable unit**: members       
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:   Network size of non-kin      
+**Variable name**:   soc_sn_num_nonkin_1      
+**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Value type**:  integer  
+**Variable unit**: members       
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:   Network size of non-kin      
+**Variable name**:   soc_sn_num_nonkin_2      
+**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Value type**:  integer  
+**Variable unit**: members       
+**Category coding**:      
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:   Network size of non-kin      
+**Variable name**:   soc_sn_num_nonkin_3      
+**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Value type**:  integer  
+**Variable unit**:  members      
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:   Network size of non-kin      
+**Variable name**:   soc_sn_num_nonkin_4      
+**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Value type**:  integer  
+**Variable unit**:  members      
+**Category coding**:     
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:   Network size of non-kin      
+**Variable name**:   soc_sn_num_nonkin_5      
+**Variable description**:  Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Value type**:  integer  
+**Variable unit**:  members      
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:   Network size of non-kin      
+**Variable name**:   soc_sn_num_nonkin_6      
+**Variable description**: Number of non-kin members of the participant’s social network consisting of neighbours, colleagues (from work or school), members of associations (that participant is a part of, such as community activities and organization) and friends.         
+**Value type**:  integer  
+**Variable unit**: members       
+**Category coding**:      
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:   Contact frequency with non-kin  
+**Variable name**:   soc_sn_freq_nonkin_0          
+**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with non-kin members  
+2 |  Weekly contact with non-kin members  
+3 |  Biweekly contact with non-kin members  
+4 |  Monthly contact with non-kin members  
+5 |  Never or less than a year contact with non-kin members     
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:   Contact frequency with non-kin  
+**Variable name**:   soc_sn_freq_nonkin_1            
+**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with non-kin members   
+2 |  Weekly contact with non-kin members   
+3 |  Biweekly contact with non-kin members   
+4 |  Monthly contact with non-kin members   
+5 |  Never or less than a year contact with non-kin members     
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:   Contact frequency with non-kin  
+**Variable name**:   soc_sn_freq_nonkin_2            
+**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with non-kin members   
+2 |  Weekly contact with non-kin members   
+3 |  Biweekly contact with non-kin members   
+4 |  Monthly contact with non-kin members   
+5 |  Never or less than a year contact with non-kin members       
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:   Contact frequency with non-kin  
+**Variable name**:   soc_sn_freq_nonkin_3            
+**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with non-kin members   
+2 |  Weekly contact with non-kin members   
+3 |  Biweekly contact with non-kin members   
+4 |  Monthly contact with non-kin members   
+5 |  Never or less than a year contact with non-kin members     
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:   Contact frequency with non-kin  
+**Variable name**:   soc_sn_freq_nonkin_4            
+**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with non-kin members   
+2 |  Weekly contact with non-kin members   
+3 |  Biweekly contact with non-kin members   
+4 |  Monthly contact with non-kin members   
+5 |  Never or less than a year contact with non-kin members     
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:   Contact frequency with non-kin  
+**Variable name**:   soc_sn_freq_nonkin_5          
+**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with non-kin members   
+2 |  Weekly contact with non-kin members   
+3 |  Biweekly contact with non-kin members   
+4 |  Monthly contact with non-kin members   
+5 |  Never or less than a year contact with non-kin members     
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:   Contact frequency with non-kin  
+**Variable name**:   soc_sn_freq_nonkin_6          
+**Variable description**:  Indicator of the contact frequency with non-kin members of social network, consisting of neighbours, relatives and friends.            
+**Value type**:  integer  
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Daily contact with non-kin members   
+2 |  Weekly contact with non-kin members   
+3 |  Biweekly contact with non-kin members   
+4 |  Monthly contact with non-kin members   
+5 |  Never or less than a year contact with non-kin members     
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+
 # Social support subdomain
 
 ### **Variable label**: Received emotional support    
@@ -2481,7 +2734,7 @@ soc_HAPIEE_RU_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W1$p57=='1'|HAPIEE_W1$
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
-**Variable name**:  ssoc_sp_cul_edu_soc_4               
+**Variable name**:  soc_sp_cul_edu_soc_4               
 **Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture, educational or social activities.      
 **Value type**:  integer  
 **Variable unit**:    
