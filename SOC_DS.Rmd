@@ -2344,139 +2344,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Religious membership    
-**Variable name**:  soc_sp_mem_religious_0        
-**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
 
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not a member of a religious organization 
-1 |  Member of a religious organization 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:  Religious membership    
-**Variable name**:  soc_sp_mem_religious_1        
-**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not a member of a religious organization 
-1 |  Member of a religious organization 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:  Religious membership    
-**Variable name**:  soc_sp_mem_religious_2        
-**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not a member of a religious organization 
-1 |  Member of a religious organization 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:  Religious membership    
-**Variable name**:  soc_sp_mem_religious_3        
-**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not a member of a religious organization 
-1 |  Member of a religious organization 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:  Religious membership    
-**Variable name**:  soc_sp_mem_religious_4        
-**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not a member of a religious organization 
-1 |  Member of a religious organization 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:  Religious membership    
-**Variable name**:  soc_sp_mem_religious_5        
-**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not a member of a religious organization 
-1 |  Member of a religious organization 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:  Religious membership    
-**Variable name**:  soc_sp_mem_religious_6        
-**Variable description**:  Indicator of whether the participant is a member of a religious organization.      
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not a member of a religious organization 
-1 |  Member of a religious organization 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
 ### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_0        
 **Variable description**:  Indicator of participation in a religious organization.      
@@ -3204,17 +3072,17 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Civic participation       
-**Variable name**:  soc_sp_civic_0                
-**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+### **Variable label**:  Political / union participation         
+**Variable name**:  soc_sp_pol_0                
+**Variable description**:  Indicator of participation in a union or political party.        
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a civic organization   
-1 |  Does participate in a civic organization   
+0 |  Does not participate in a union or political party     
+1 |  Does participate in a union or political party     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -3223,117 +3091,123 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Civic participation       
-**Variable name**:  soc_sp_civic_1                
-**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+### **Variable label**:  Political / union participation         
+**Variable name**:  soc_sp_pol_1                
+**Variable description**:  Indicator of participation in a union or political party.        
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a civic organization   
-1 |  Does participate in a civic organization   
+0 |  Does not participate in a union or political party     
+1 |  Does participate in a union or political party     
 
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
+ 
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Civic participation       
-**Variable name**:  soc_sp_civic_2                
-**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+### **Variable label**:  Political / union participation         
+**Variable name**:  soc_sp_pol_2                
+**Variable description**:  Indicator of participation in a union or political party.        
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a civic organization   
-1 |  Does participate in a civic organization   
+0 |  Does not participate in a union or political party     
+1 |  Does participate in a union or political party     
 
-**Harmonization status**:  
+**Harmonization status**:   
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
+ 
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Civic participation       
-**Variable name**:  soc_sp_civic_3                
-**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+### **Variable label**:  Political / union participation         
+**Variable name**:  soc_sp_pol_3                
+**Variable description**:  Indicator of participation in a union or political party.        
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a civic organization   
-1 |  Does participate in a civic organization   
+0 |  Does not participate in a union or political party     
+1 |  Does participate in a union or political party     
 
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
+ 
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Civic participation       
-**Variable name**:  soc_sp_civic_4                
-**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+### **Variable label**:  Political / union participation         
+**Variable name**:  soc_sp_pol_4                
+**Variable description**:  Indicator of participation in a union or political party.        
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a civic organization   
-1 |  Does participate in a civic organization  
+0 |  Does not participate in a union or political party     
+1 |  Does participate in a union or political party    
 
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
+ 
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Civic participation       
-**Variable name**:  soc_sp_civic_5                
-**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+### **Variable label**:  Political / union participation         
+**Variable name**:  soc_sp_pol_5                
+**Variable description**:  Indicator of participation in a union or political party.        
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a civic organization   
-1 |  Does participate in a civic organization  
+0 |  Does not participate in a union or political party     
+1 |  Does participate in a union or political party    
 
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
+ 
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Civic participation       
-**Variable name**:  soc_sp_civic_6                
-**Variable description**:  Indicator of participation in a civic organization such as a union or political party.        
+### **Variable label**:  Political / union participation         
+**Variable name**:  soc_sp_pol_6                
+**Variable description**:  Indicator of participation in a union or political party.        
 **Value type**:  integer  
 **Variable unit**:    
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |  Does not participate in a civic organization   
-1 |  Does participate in a civic organization  
+0 |  Does not participate in a union or political party     
+1 |  Does participate in a union or political party    
 
 **Harmonization status**:  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
+ 
 #This is where the R-script will be written
 
 ```
