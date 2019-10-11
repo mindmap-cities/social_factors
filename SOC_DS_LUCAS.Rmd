@@ -5082,6 +5082,160 @@ opal.logout(erasmus_opal)
 
 
 ```
+### **Variable label**:  Residence type     
+**Variable name**:  soc_res_type_0                    
+**Variable description**:  Indicator of type of home in which participant lives.           
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Lives in a flat/ apartment   
+2 |  Lives in a single-family house (terraced house/ townhouse, semi-detached, detached)  
+3 |  Lives in a nursing home, retirement home, home for the elderly
+4 |  Lives on a farm
+5 |  Other
+
+**Harmonization status**:  impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:  Residence type     
+**Variable name**:  soc_res_type_1                    
+**Variable description**:  Indicator of type of home in which participant lives.           
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Lives in a flat/ apartment   
+2 |  Lives in a single-family house (terraced house/ townhouse, semi-detached, detached)  
+3 |  Lives in a nursing home, retirement home, home for the elderly
+4 |  Lives on a farm
+5 |  Other
+
+**Harmonization status**:  impossible     
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:  Residence type     
+**Variable name**:  soc_res_type_2                    
+**Variable description**:  Indicator of type of home in which participant lives.           
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Lives in a flat/ apartment   
+2 |  Lives in a single-family house (terraced house/ townhouse, semi-detached, detached)  
+3 |  Lives in a nursing home, retirement home, home for the elderly
+4 |  Lives on a farm
+5 |  Other
+
+**Harmonization status**: impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:  Residence type     
+**Variable name**:  soc_res_type_3                    
+**Variable description**:  Indicator of type of home in which participant lives.           
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Lives in a flat/ apartment   
+2 |  Lives in a single-family house (terraced house/ townhouse, semi-detached, detached)  
+3 |  Lives in a nursing home, retirement home, home for the elderly
+4 |  Lives on a farm
+5 |  Other
+
+**Harmonization status**: impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:  Residence type     
+**Variable name**:  soc_res_type_4                    
+**Variable description**:  Indicator of type of home in which participant lives.           
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Lives in a flat/ apartment   
+2 |  Lives in a single-family house (terraced house/ townhouse, semi-detached, detached)  
+3 |  Lives in a nursing home, retirement home, home for the elderly
+4 |  Lives on a farm
+5 |  Other
+
+**Harmonization status**:  impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:  Residence type     
+**Variable name**:  soc_res_type_5                    
+**Variable description**:  Indicator of type of home in which participant lives.           
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Lives in a flat/ apartment   
+2 |  Lives in a single-family house (terraced house/ townhouse, semi-detached, detached)  
+3 |  Lives in a nursing home, retirement home, home for the elderly
+4 |  Lives on a farm
+5 |  Other
+
+**Harmonization status**:  impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:  Residence type     
+**Variable name**:  soc_res_type_6                    
+**Variable description**:  Indicator of type of home in which participant lives.           
+**Value type**:  integer  
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  Lives in a flat/ apartment   
+2 |  Lives in a single-family house (terraced house/ townhouse, semi-detached, detached)  
+3 |  Lives in a nursing home, retirement home, home for the elderly
+4 |  Lives on a farm
+5 |  Other
+
+**Harmonization status**:  impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
 ### **Variable label**:  Home ownership (2-level)      
 **Variable name**:  soc_res_home_own_dich_0                     
 **Variable description**:  Indicator of whether the participant owns home or not (i.e. pays rent or mortgage).          
