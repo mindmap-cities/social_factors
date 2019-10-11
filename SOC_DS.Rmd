@@ -5096,7 +5096,7 @@ output: html_document
 
 ```
 ### **Variable label**:  Residence independence     
-**Variable name**:  soc_res_home_0                  
+**Variable name**:  soc_res_indep_0                  
 **Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
 **Value type**:  integer  
 **Variable unit**:   
@@ -5115,7 +5115,7 @@ output: html_document
 
 ```
 ### **Variable label**:  Residence independence     
-**Variable name**:  soc_res_home_1                  
+**Variable name**:  soc_res_indep_1                  
 **Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
 **Value type**:  integer  
 **Variable unit**:   
@@ -5134,7 +5134,7 @@ output: html_document
 
 ```
 ### **Variable label**:  Residence independence     
-**Variable name**:  soc_res_home_2                  
+**Variable name**:  soc_res_indep_2                  
 **Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
 **Value type**:  integer  
 **Variable unit**:   
@@ -5153,7 +5153,7 @@ output: html_document
 
 ```
 ### **Variable label**:  Residence independence     
-**Variable name**:  soc_res_home_3                  
+**Variable name**:  soc_res_indep_3                  
 **Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
 **Value type**:  integer  
 **Variable unit**:   
@@ -5172,7 +5172,7 @@ output: html_document
 
 ```
 ### **Variable label**:  Residence independence     
-**Variable name**:  soc_res_home_4                  
+**Variable name**:  soc_res_indep_4                  
 **Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
 **Value type**:  integer  
 **Variable unit**:   
@@ -5191,7 +5191,7 @@ output: html_document
 
 ```
 ### **Variable label**:  Residence independence     
-**Variable name**:  soc_res_home_5                  
+**Variable name**:  soc_res_indep_5                  
 **Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
 **Value type**:  integer  
 **Variable unit**:   
@@ -5210,7 +5210,7 @@ output: html_document
 
 ```
 ### **Variable label**:  Residence independence     
-**Variable name**:  soc_res_home_6                  
+**Variable name**:  soc_res_indep_6                  
 **Variable description**:  Indicator of whether the participant lives independently or in a nursing home.        
 **Value type**:  integer  
 **Variable unit**:   
