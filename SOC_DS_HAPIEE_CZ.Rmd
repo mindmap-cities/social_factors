@@ -1957,7 +1957,7 @@ soc_HAPIEE_CZ_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W1$p57=='1'|HAPIEE_W1$
 ```
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_0      
-**Variable description**:  Z-score of perceived emotional support from the participant’s three social network members that they indicated they are closest to.   
+**Variable description**:  Z-score of perceived emotional support.   
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -1971,7 +1971,7 @@ soc_HAPIEE_CZ_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W1$p57=='1'|HAPIEE_W1$
 ```
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_1      
-**Variable description**:  Z-score of perceived emotional support from the participant’s three social network members that they indicated they are closest to.  
+**Variable description**:  Z-score of perceived emotional support.  
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -1985,7 +1985,7 @@ soc_HAPIEE_CZ_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W1$p57=='1'|HAPIEE_W1$
 ```
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_2      
-**Variable description**: Z-score of perceived emotional support from the participant’s three social network members that they indicated they are closest to.   
+**Variable description**: Z-score of perceived emotional support.   
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -1999,7 +1999,7 @@ soc_HAPIEE_CZ_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W1$p57=='1'|HAPIEE_W1$
 ```
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_3      
-**Variable description**: Z-score of perceived emotional support from the participant’s three social network members that they indicated they are closest to.  
+**Variable description**: Z-score of perceived emotional support.  
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -2013,7 +2013,7 @@ soc_HAPIEE_CZ_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W1$p57=='1'|HAPIEE_W1$
 ```
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_4       
-**Variable description**:  Z-score of perceived emotional support from the participant’s three social network members that they indicated they are closest to.  
+**Variable description**:  Z-score of perceived emotional support.  
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:     
@@ -2027,7 +2027,7 @@ soc_HAPIEE_CZ_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W1$p57=='1'|HAPIEE_W1$
 ```
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_5        
-**Variable description**:  Z-score of perceived emotional support from the participant’s three social network members that they indicated they are closest to.  
+**Variable description**:  Z-score of perceived emotional support.  
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
@@ -2041,7 +2041,7 @@ soc_HAPIEE_CZ_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W1$p57=='1'|HAPIEE_W1$
 ```
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_6        
-**Variable description**:  Z-score of perceived emotional support from the participant’s three social network members that they indicated they are closest to.  
+**Variable description**:  Z-score of perceived emotional support.  
 **Value type**:  integer  
 **Variable unit**:  
 **Category coding**:  
