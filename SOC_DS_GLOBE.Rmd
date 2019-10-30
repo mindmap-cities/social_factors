@@ -2197,7 +2197,7 @@ soc_GLOBE_3$soc_ss_perceived_instru_3 <- ifelse(GLOBE2011$v59_f_ond6 ==1|GLOBE20
 0 |  Feels tangible help is available   
 1 |  Does not feel tangible help is available  
 
-**Harmonization status**:  impossible    
+**Harmonization status**:  complete    
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
