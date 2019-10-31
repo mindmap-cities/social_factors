@@ -973,7 +973,16 @@ soc_HAPIEE_CZ_0$soc_sn_freq_friends_inperson_0 <-  ifelse(HAPIEE_W1$p58=='1'| HA
 **Variable description**:  Number of relatives, including siblings and excluding partner/children living at home, which the participant is close to, i.e. is in touch with regularly.           
 **Value type**:  integer  
 **Variable unit**: relatives     
-**Category coding**:   
+**Category coding**: 
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |  None
+2 |  1 or 2
+3 |  3 to 5
+4 |  6 to 10
+5 |  11 to 20 
+6 |  More than 20
 
 **Harmonization status**:impossible  
 **Harmonization comment**:   
