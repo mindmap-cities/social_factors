@@ -2001,7 +2001,7 @@ soc_GLOBE_1$soc_ss_received_instru_1 <- ifelse(GLOBE1997$g9a1 ==3 | GLOBE1997$g9
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_0      
 **Variable description**:  Z-score of perceived emotional support.   
-**Value type**:  integer  
+**Value type**:  decimal    
 **Variable unit**:  
 **Category coding**:  
 
@@ -2020,7 +2020,7 @@ soc_GLOBE_0$soc_ss_Zscore_perceived_emo_0 <-as.numeric(scale(GLOBE1991$soc_ss_Zs
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_1      
 **Variable description**:  Z-score of perceived emotional support.  
-**Value type**:  integer  
+**Value type**:  decimal    
 **Variable unit**:  
 **Category coding**:  
 
@@ -2040,7 +2040,7 @@ soc_GLOBE_1$soc_ss_Zscore_perceived_emo_1 <- as.numeric(scale(GLOBE1997$soc_ss_Z
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_2      
 **Variable description**: Z-score of perceived emotional support.   
-**Value type**:  integer  
+**Value type**:  decimal    
 **Variable unit**:  
 **Category coding**:  
 
@@ -2054,7 +2054,7 @@ soc_GLOBE_1$soc_ss_Zscore_perceived_emo_1 <- as.numeric(scale(GLOBE1997$soc_ss_Z
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_3      
 **Variable description**: Z-score of perceived emotional support.  
-**Value type**:  integer  
+**Value type**:  decimal    
 **Variable unit**:  
 **Category coding**:  
 
@@ -2068,7 +2068,7 @@ soc_GLOBE_1$soc_ss_Zscore_perceived_emo_1 <- as.numeric(scale(GLOBE1997$soc_ss_Z
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_4       
 **Variable description**:  Z-score of perceived emotional support.  
-**Value type**:  integer  
+**Value type**:  decimal    
 **Variable unit**:  
 **Category coding**:     
 
@@ -2082,7 +2082,7 @@ soc_GLOBE_1$soc_ss_Zscore_perceived_emo_1 <- as.numeric(scale(GLOBE1997$soc_ss_Z
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_5        
 **Variable description**:  Z-score of perceived emotional support.  
-**Value type**:  integer  
+**Value type**:  decimal    
 **Variable unit**:  
 **Category coding**:  
 
@@ -2096,7 +2096,7 @@ soc_GLOBE_1$soc_ss_Zscore_perceived_emo_1 <- as.numeric(scale(GLOBE1997$soc_ss_Z
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_6        
 **Variable description**:  Z-score of perceived emotional support.  
-**Value type**:  integer  
+**Value type**:  decimal    
 **Variable unit**:  
 **Category coding**:  
  
