@@ -18,7 +18,7 @@ library(data.table)
 erasmus_opal <- opal.login()
 #Login to Opal server and assign the content of the LASA table(s) to your RStudio environment
 # LASA1B
-opal.assign.table.tibble(erasmus_opal, 'LASA1B', 'LASA.LASA1B',variables = list('blo1','blo4','blo7','blo8','blo11','bsocp14','bsocp15','bsocp16','bsocp17','bsocp18','bsocp19','bsocp20','bsocp21','bsocp23','bsocp24','bsocp31','bsocp43','bsocp44','bsocp46','bsocp48','bsocp55','bsocp57','bmoved','bhindep','bhoustyp')) 
+opal.assign.table.tibble(erasmus_opal, 'LASA1B', 'LASA.LASA1B',variables = list('blo1','blo4','blo7','blo8','blo11','bsocp04','bsocp14','bsocp15','bsocp16','bsocp17','bsocp18','bsocp19','bsocp20','bsocp21','bsocp23','bsocp24','bsocp31','bsocp43','bsocp44','bsocp46','bsocp48','bsocp55','bsocp57','bsocpyn','bmoved','bhindep','bhoustyp')) 
 LASA1B <- opal.execute(erasmus_opal,'LASA1B')
 
 opal.assign.table.tibble(erasmus_opal, 'LASA1B_socialnet', 'LASA.LASA1B_socialnet',variables = list ('nkids','nfriends','friendscf','nneighbours','neighbourscf','nrelatives','familycf','relativescf','nnonkin','nonkincf','rec_emo_conf1','rec_emo_conf2','rec_emo_conf3','rec_instru_conf1','rec_instru_conf2','rec_instru_conf3','perceived_instru'))
@@ -2193,9 +2193,15 @@ summary(soc_LASA1_6$soc_sn_freq_nonkin_6)
 **Harmonization comment**: Confidants are not identified in this wave hence picked top 3 most frequent contacts as sources of received emotional support. Study specific variable is categorized as following: 'often' receiving support from any 1 of 3 top most frequent contacts  is categorized as (->) often receives support, otherwise if 'sometimes' receiving support sometimes from any 1 of 3 top most frequent contacts -> sometimes receives support, otherwise if receiving 'seldom' or 'never' support from all 3 top most frequent contacts -> never receives emotional support.  
 **R script**:  
 ```{r, echo=TRUE}
+table(LASA1B_socialnet$rec_emo_conf1, useNA="always")
+table(LASA1B_socialnet$rec_emo_conf2, useNA="always")
+table(LASA1B_socialnet$rec_emo_conf3, useNA="always")
+
 soc_LASA1_0$soc_ss_received_emo_0 <- ifelse(LASA1B_socialnet$rec_emo_conf1 ==4 | LASA1B_socialnet$rec_emo_conf2 ==4 |LASA1B_socialnet$rec_emo_conf3 == 4, 2L, 
                                          ifelse((LASA1B_socialnet$rec_emo_conf1  ==3 | LASA1B_socialnet$rec_emo_conf2  ==3 |LASA1B_socialnet$rec_emo_conf3 == 3) & (LASA1B_socialnet$rec_emo_conf1  !=4 & LASA1B_socialnet$rec_emo_conf2  !=4 & LASA1B_socialnet$rec_emo_conf3 !=4), 1L, 
                                              ifelse(LASA1B_socialnet$rec_emo_conf1 <=2 | LASA1B_socialnet$rec_emo_conf2 <=2 |LASA1B_socialnet$rec_emo_conf3 <=2, 0L, NA)))
+
+table(do.call( pmax, c(LASA1B_socialnet[12:14], na.rm=T )), useNA="always")
 
 table(soc_LASA1_0$soc_ss_received_emo_0) 
 summary(soc_LASA1_0$soc_ss_received_emo_0)
@@ -2222,8 +2228,12 @@ soc_LASA1_1$soc_ss_received_emo_1 <- ifelse(LASA1C_socialnet$rec_emo_conf1 ==4 |
                                          ifelse((LASA1C_socialnet$rec_emo_conf1  ==3 | LASA1C_socialnet$rec_emo_conf2  ==3 |LASA1C_socialnet$rec_emo_conf3 == 3) & (LASA1C_socialnet$rec_emo_conf1  !=4 & LASA1C_socialnet$rec_emo_conf2  !=4 & LASA1C_socialnet$rec_emo_conf3 !=4), 1L, 
                                              ifelse(LASA1C_socialnet$rec_emo_conf1 <=2 | LASA1C_socialnet$rec_emo_conf2 <=2 |LASA1C_socialnet$rec_emo_conf3 <=2, 0L, NA)))
 
-table(soc_LASA1_1$soc_ss_received_emo_1) 
+table(soc_LASA1_1$soc_ss_received_emo_1,useNA="always")
 summary(soc_LASA1_1$soc_ss_received_emo_1) 
+
+table(do.call( pmax, c(LASA1C_socialnet[12:14], na.rm=T )), useNA="always")
+
+
 
 ```
 ### **Variable label**: Received emotional support    
@@ -2954,6 +2964,9 @@ summary(LASA1B$bsocp17)
 
 soc_LASA1_0$soc_sp_religious_0 <- ifelse(LASA1B$bsocp17 ==2,1L, 
                        ifelse(LASA1B$bsocp17 ==1,0L, NA))
+
+soc_LASA1_0$soc_sp_religious_0 <- ifelse(LASA1B$bsocpyn==1|LASA1B$bsocp04==0|LASA1B$bsocp17==1,0L, ifelse(LASA1B$bsocp17 ==2,1L, NA))
+
 
 table(soc_LASA1_0$soc_sp_religious_0) 
 summary(soc_LASA1_0$soc_sp_religious_0) 
@@ -5774,9 +5787,9 @@ summary(soc_LASA1_6$soc_le_illfam_6)
 ```{r, echo=TRUE}
 
 soc_LASA1_1$soc_le_dfam_1 <- ifelse(LASA1C$cfadied =='2' | LASA1C$cmodied =='2'| LASA1C$cbrodied =='2'| LASA1C$csisdied =='2'| LASA1C$csondied =='2'| LASA1C$cdaudied =='2'| LASA1C$cgcdied =='2',1L, 
-                                     ifelse(LASA1C$cfadied =='1' & LASA1C$cmodied =='1' & LASA1C$cbrodied =='1'& LASA1C$csisdied =='1'& LASA1C$csondied =='1'& LASA1C$cdaudied =='1'& LASA1C$cgcdied =='1',0L, NA))
+                                     ifelse((LASA1C$cfadied =='1' | LASA1C$cfadied =='-2') & (LASA1C$cmodied =='1'|LASA1C$cmodied=='-2' ) & (LASA1C$cbrodied =='1'| (LASA1C$cbrodied =='-2')& (LASA1C$csisdied =='1'|LASA1C$csisdied =='-2' )& (LASA1C$csondied =='1'| LASA1C$csondied =='-2')& (LASA1C$cdaudied =='1'|LASA1C$cdaudied =='-2' )& (LASA1C$cgcdied =='1'| LASA1C$cgcdied =='-2'),0L, NA))
 
-table(soc_LASA1_1$soc_le_dfam_1) 
+table(soc_LASA1_1$soc_le_dfam_1,useNA="always") 
 summary(soc_LASA1_1$soc_le_dfam_1) 
 ```
 ### **Variable label**:  Life event: death of family member or friend                
