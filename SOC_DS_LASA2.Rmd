@@ -15,46 +15,58 @@ library(data.table)
 erasmus_opal <- opal.login()
 #Login to Opal server and assign the content of the LASA table(s) to your RStudio environment
 # LASA2B
-opal.assign.table.tibble(erasmus_opal, 'LASA2B', 'LASA.LASA2B',variables = list('blo1','blo4','blo7','blo8','blo11','bsocp14','bsocp15','bsocp16','bsocp17','bsocp18','bsocp19','bsocp20','bsocp21','bsocp23','bsocp24','bsocp31','bsocp43','bsocp44','bsocp46','bsocp48','bsocp55','bsocp57','bmoved','bhindep','bhoustyp'))
+opal.assign.table.tibble(erasmus_opal, 'LASA2B', 'LASA.LASA2B',variables = list('blo1','blo4','blo7','blo8','blo11','bsocp04','bsocp14','bsocp15','bsocp16','bsocp17','bsocp18','bsocp19','bsocp20','bsocp21','bsocp23','bsocp24','bsocp31','bsocp43','bsocp44','bsocp46','bsocp48','bsocp55','bsocp57','bsocpyn','bmoved','bhindep','bhoustyp','bsocp01','bsocp02','bsocp03','bsocp04','bsocp05','bsocp07','bsocp08','bsocp10','bsocp11','bmoved'))
 LASA2B <- opal.execute(erasmus_opal,'LASA2B')
 
-opal.assign.table.tibble(erasmus_opal, 'LASA2B', 'LASA.LASA2B_socialnet',variables = list('nkids','nfriends','friendscf','nneighbours','neighbourscf','nrelatives','familycf','relativescf','nnonkin','nonkincf','rec_emo_conf1','rec_emo_conf2','rec_emo_conf3','rec_instru_conf1','rec_instru_conf2','rec_instru_conf3','perceived_instru'))
-LASA2B_socialnet <- opal.execute(erasmus_opal,'LASA2B')
+opal.assign.table.tibble(erasmus_opal, 'LASA2B_socialnet', 'LASA.LASA2B_socialnet',variables = list('nkids','nfriends','friendscf','nneighbours','neighbourscf','nrelatives','familycf','relativescf','nnonkin','nonkincf','rec_emo_conf1','rec_emo_conf2','rec_emo_conf3','rec_instru_conf1','rec_instru_conf2','rec_instru_conf3','perceived_instru'))
+LASA2B_socialnet <- opal.execute(erasmus_opal,'LASA2B_socialnet')
 
 opal.assign.table.tibble(erasmus_opal, 'LASA2B_extradata2', 'LASA.LASA2B_extradata2',variables = list ('byneigh','bmovefut','bhowner','bmortga'))
 LASA2B_extradata2 <- opal.execute(erasmus_opal,'LASA2B_extradata2')
 
 # LASA2F
-opal.assign.table.tibble(erasmus_opal, 'LASA2F', 'LASA.LASA2F', variables=list('flo1','flo4','flo7','flo8','flo11','fsocp14','fsocp15','fsocp16','fsocp17','fsocp18','fsocp19','fsocp20','fsocp21','fsocp23','fsocp24','fsocp31','fsocp43','fsocp44','fsocp46','fsocp48','fsocp55','fsocp57','fmoved','fhindep','fhoustyp','fcrime','ffinanc','fillpart','filloth','ffadied','fmodied','fbrodied','fsisdied','fsondied','fdaudied','fgcdied')) 
+opal.assign.table.tibble(erasmus_opal, 'LASA2F', 'LASA.LASA2F', variables=list('flo1','flo4','flo7','flo8','flo11','fsocp14','fsocp15','fsocp16','fsocp17','fsocp18','fsocp19','fsocp20','fsocp21','fsocp23','fsocp24','fsocp31','fsocp43','fsocp44','fsocp46','fsocp48','fsocp55','fsocp57','fmoved','fhindep','fhoustyp','fcrime','ffinanc','fillpart','filloth','ffadied','fmodied','fbrodied','fsisdied','fsondied','fdaudied','fgcdied','fsocpyn','fsocp01','fsocp02','fsocp03','fsocp04','fsocp05','fsocp07','fsocp08','fsocp10','fsocp11','fpartst')) 
 LASA2F<- opal.execute(erasmus_opal,'LASA2F')
 
-opal.assign.table.tibble(erasmus_opal, 'LASA2F', 'LASA.LASA2F_socialnet', variables=list('nkids','nfriends','friendscf','nneighbours','neighbourscf','nrelatives','familycf','relativescf','nnonkin','nonkincf','rec_emo_conf1','rec_emo_conf2','rec_emo_conf3','rec_instru_conf1','rec_instru_conf2','rec_instru_conf3','perceived_instru')) 
-LASA2F_socialnet<- opal.execute(erasmus_opal,'LASA2F')
+opal.assign.table.tibble(erasmus_opal, 'LASA2F_socialnet', 'LASA.LASA2F_socialnet', variables=list('nkids','nfriends','friendscf','nneighbours','neighbourscf','nrelatives','familycf','relativescf','nnonkin','nonkincf','rec_emo_conf1','rec_emo_conf2','rec_emo_conf3','rec_instru_conf1','rec_instru_conf2','rec_instru_conf3','perceived_instru')) 
+LASA2F_socialnet<- opal.execute(erasmus_opal,'LASA2F_socialnet')
 
 opal.assign.table.tibble(erasmus_opal, 'LASA2F_extradata2', 'LASA.LASA2F_extradata2',variables = list ('fyneigh','fmovefut','fhowner','fmortga'))
 LASA2F_extradata2 <- opal.execute(erasmus_opal,'LASA2F_extradata2')
 
 
 # LASA2G
-opal.assign.table.tibble(erasmus_opal,'LASA2G','LASA.LASA2G',variables=list('glo1','glo4','glo7','glo8','glo11','gsocp14','gsocp15','gsocp16','gsocp17','gsocp18','gsocp19','gsocp20','gsocp21','gsocp23','gsocp24','gsocp25','gsocp26','gsocp27','gsocp28','gsocp29','gsocp30','gsocp31','gsocp32','gsocp33','gsocp46','gsocp47','gsocp48','gsocp49','gsocp50','gsocp51','gsocp54','gsocp55','gmoved','ghindep','ghoustyp','gcrime','gfinanc','gillpart','gilloth','gfadied','gmodied','gbrodied','gsisdied','gsondied','gdaudied','ggcdied')) 
+opal.assign.table.tibble(erasmus_opal,'LASA2G','LASA.LASA2G',variables=list('glo1','glo4','glo7','glo8','glo11','gsocp14','gsocp15','gsocp16','gsocp17','gsocp18','gsocp19','gsocp20','gsocp21','gsocp23','gsocp24','gsocp25','gsocp26','gsocp27','gsocp28','gsocp29','gsocp30','gsocp31','gsocp32','gsocp33','gsocp46','gsocp47','gsocp48','gsocp49','gsocp50','gsocp51','gsocp54','gsocp55','gsocp44','gsocp57','gsocp43','gmoved','ghindep','ghoustyp','gcrime','gfinanc','gillpart','gilloth','gfadied','gmodied','gbrodied','gsisdied','gsondied','gdaudied','ggcdied','gsocpyn','gsocp01','gsocp02','gsocp03','gsocp04','gsocp05','gsocp07','gsocp08','gsocp10','gsocp11','gpartst')) 
 LASA2G <- opal.execute(erasmus_opal,'LASA2G')
 
-opal.assign.table.tibble(erasmus_opal,'LASA2G','LASA.LASA2G_socialnet',variables=list('nkids','nfriends','friendscf','nneighbours','neighbourscf','nrelatives','familycf','relativescf','nnonkin','nonkincf','rec_emo_conf1','rec_emo_conf2','rec_emo_conf3','rec_instru_conf1','rec_instru_conf2','rec_instru_conf3','perceived_instru')) 
-LASA2G_socialnet <- opal.execute(erasmus_opal,'LASA2G')
+opal.assign.table.tibble(erasmus_opal,'LASA2G_socialnet','LASA.LASA2G_socialnet',variables=list('nkids','nfriends','friendscf','nneighbours','neighbourscf','nrelatives','familycf','relativescf','nnonkin','nonkincf','rec_emo_conf1','rec_emo_conf2','rec_emo_conf3','rec_instru_conf1','rec_instru_conf2','rec_instru_conf3','perceived_instru')) 
+LASA2G_socialnet <- opal.execute(erasmus_opal,'LASA2G_socialnet')
 
 opal.assign.table.tibble(erasmus_opal, 'LASA2G_extradata2', 'LASA.LASA2G_extradata2',variables = list ('gyneigh','gmovefut','ghowner','gmortga'))
 LASA2G_extradata2 <- opal.execute(erasmus_opal,'LASA2G_extradata2')
 
 # LASA2H
-opal.assign.table.tibble(erasmus_opal, 'LASA2H', 'LASA.LASA2H', variables= list('Hlo1','Hlo4','Hlo7','Hlo8','Hlo11','HSOCP14','HSOCP15','HSOCP16','HSOCP17','HSOCP18','HSOCP19','HSOCP20','HSOCP21','HSOCP23','HSOCP24','HSOCP31','HSOCP43','HSOCP44','HSOCP46','HSOCP48','HSOCP55','HSOCP57','HMOVED','HHINDEP','HHOUSTYP','Hcrime','Hfinanc','Hillpart','Hilloth','Hfadied','Hmodied','Hbrodied','Hsisdied','Hsondied','Hdaudied','Hgcdied')) 
+opal.assign.table.tibble(erasmus_opal, 'LASA2H', 'LASA.LASA2H', variables= list('Hlo1','Hlo4','Hlo7','Hlo8','Hlo11','HSOCP14','HSOCP15','HSOCP16','HSOCP17','HSOCP18','HSOCP19','HSOCP20','HSOCP21','HSOCP23','HSOCP24','HSOCP31','HSOCP46','HSOCP48','HSOCP55','HSOCP57','HMOVED','HHINDEP','HHOUSTYP','Hcrime','Hfinanc','Hillpart','Hilloth','Hfadied','Hmodied','Hbrodied','Hsisdied','Hsondied','Hdaudied','Hgcdied','HSOCPYN','HSOCP01','HSOCP02','HSOCP03','HSOCP04','HSOCP05','HSOCP07','HSOCP08','HSOCP10','HSOCP11','hpartst')) 
 
 LASA2H <- opal.execute(erasmus_opal,'LASA2H')
 
-opal.assign.table.tibble(erasmus_opal, 'LASA2H', 'LASA.LASA2H_socialnet', variables= list('nkids','nfriends','friendscf','nneighbours','neighbourscf','nrelatives','familycf','relativescf','nnonkin','nonkincf','rec_emo_conf1','rec_emo_conf2','rec_emo_conf3','rec_instru_conf1','rec_instru_conf2','rec_instru_conf3','perceived_instru'))
-LASA2H_socialnet <- opal.execute(erasmus_opal,'LASA2H')
+opal.assign.table.tibble(erasmus_opal, 'LASA2H_socialnet', 'LASA.LASA2H_socialnet', variables= list('nkids','nfriends','friendscf','nneighbours','neighbourscf','nrelatives','familycf','relativescf','nnonkin','nonkincf','rec_emo_conf1','rec_emo_conf2','rec_emo_conf3','rec_instru_conf1','rec_instru_conf2','rec_instru_conf3','perceived_instru'))
+LASA2H_socialnet <- opal.execute(erasmus_opal,'LASA2H_socialnet')
 
 opal.assign.table.tibble(erasmus_opal, 'LASA2H_extradata2', 'LASA.LASA2H_extradata2',variables = list ('HYNEIGH','HMOVEFUT','HHOWNER','HMORTGA'))
 LASA2H_extradata2 <- opal.execute(erasmus_opal,'LASA2H_extradata2')
+
+LASA2B <-merge(LASA2B, LASA2B_extradata2,  by="id", all = TRUE)
+LASA2B <-merge(LASA2B, LASA2B_socialnet,  by="id", all = TRUE)
+
+LASA2F <-merge(LASA2F, LASA2F_extradata2,  by="id", all = TRUE)
+LASA2F <-merge(LASA2F, LASA2F_socialnet,  by="id", all = TRUE)
+
+LASA2G <-merge(LASA2G, LASA2G_extradata2,  by="id", all = TRUE)
+LASA2G <-merge(LASA2G, LASA2G_socialnet,  by="id", all = TRUE)
+
+LASA2H <-merge(LASA2H, LASA2H_extradata2,  by="id", all = TRUE)
+LASA2H <-merge(LASA2H, LASA2H_socialnet,  by="id", all = TRUE)
 
 ```
 ## Assign participant id as first column of your harmonized dataframes
@@ -86,11 +98,11 @@ opal.logout(erasmus_opal)
 **Category coding**:      
 
 **Harmonization status**:  complete
-**Harmonization comment**:  Study specific item includes biological, step and adopted children belonging to the social network that were identified as part of the participant's social network.    
+**Harmonization comment**:  Study specific item includes biological, step and adopted children that were identified as part of the participant's social network.     
 **R script**:  
 ```{r, echo=TRUE}
 
-soc_LASA2_0$soc_sn_num_children_0 <- as.integer(LASA2B_socialnet$nkids)
+soc_LASA2_0$soc_sn_num_children_0 <- as.integer(LASA2B$nkids)
 table(soc_LASA2_0$soc_sn_num_children_0) 
 summary(soc_LASA2_0$soc_sn_num_children_0) 
 ```
@@ -102,12 +114,12 @@ summary(soc_LASA2_0$soc_sn_num_children_0)
 **Category coding**:    
 
 **Harmonization status**:  complete
-**Harmonization comment**:  Study specific item includes biological, step and adopted children belonging to the social network that were identified as part of the participant's social network.    
+**Harmonization comment**:  Study specific item includes biological, step and adopted children that were identified as part of the participant's social network.    
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2F_socialnet$nkids) 
-summary(LASA2F_socialnet$nkids) 
-soc_LASA2_1$soc_sn_num_children_1 <- as.integer(LASA2F_socialnet$nkids)
+table(LASA2F$nkids) 
+summary(LASA2F$nkids) 
+soc_LASA2_1$soc_sn_num_children_1 <- as.integer(LASA2F$nkids)
 table(soc_LASA2_1$soc_sn_num_children_1) 
 summary(soc_LASA2_1$soc_sn_num_children_1)
 ```
@@ -119,14 +131,15 @@ summary(soc_LASA2_1$soc_sn_num_children_1)
 **Category coding**:   
 
 **Harmonization status**:  complete
-**Harmonization comment**:  Study specific item includes biological, step and adopted children belonging to the social network that were identified as part of the participant's social network.    
+**Harmonization comment**:  Study specific item includes biological, step and adopted children that were identified as part of the participant's social network.  
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2G_socialnet$nkids) 
-summary(LASA2G_socialnet$nkids) 
-soc_LASA2_2$soc_sn_num_children_2 <- as.integer(LASA2G_socialnet$nkids)
+table(LASA2G$nkids) 
+summary(LASA2G$nkids) 
+soc_LASA2_2$soc_sn_num_children_2 <- as.integer(LASA2G$nkids)
 table(soc_LASA2_2$soc_sn_num_children_2) 
 summary(soc_LASA2_2$soc_sn_num_children_2)
+
 ```
 ### **Variable label**:   Network size of children      
 **Variable name**:   soc_sn_num_children_3    
@@ -136,12 +149,12 @@ summary(soc_LASA2_2$soc_sn_num_children_2)
 **Category coding**:   
 
 **Harmonization status**:  complete
-**Harmonization comment**:  Study specific item includes biological, step and adopted children belonging to the social network that were identified as part of the participant's social network.    
+**Harmonization comment**:  Study specific item includes biological, step and adopted children that were identified as part of the participant's social network.     
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2H_socialnet$nkids) 
-summary(LASA2H_socialnet$nkids) 
-soc_LASA2_3$soc_sn_num_children_3 <- as.integer(LASA2H_socialnet$nkids)
+table(LASA2H$nkids) 
+summary(LASA2H$nkids) 
+soc_LASA2_3$soc_sn_num_children_3 <- as.integer(LASA2H$nkids)
 table(soc_LASA2_3$soc_sn_num_children_3) 
 summary(soc_LASA2_3$soc_sn_num_children_3)
 ```
@@ -204,11 +217,11 @@ summary(soc_LASA2_3$soc_sn_num_children_3)
 **Harmonization comment**:  Study specific item does not specify if children are alive or dead, it includes biological, step and adopted children.     
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2B_socialnet$nkids) 
-summary(LASA2B_socialnet$nkids)  
-soc_LASA2_0$soc_sn_children_rank_0 <- ifelse(LASA2B_socialnet$nkids=='0',0, 
-                                             ifelse(LASA2B_socialnet$nkids=='1' | LASA2B_socialnet$nkids=='2',1,
-                                                    ifelse(LASA2B_socialnet$nkids >'2',2, NA)))
+table(LASA2B$nkids) 
+summary(LASA2B$nkids)  
+soc_LASA2_0$soc_sn_children_rank_0 <- ifelse(LASA2B$nkids=='0',0, 
+                                             ifelse(LASA2B$nkids=='1' | LASA2B$nkids=='2',1,
+                                                    ifelse(LASA2B$nkids >'2',2, NA)))
 table(soc_LASA2_0$soc_sn_children_rank_0) 
 summary(soc_LASA2_0$soc_sn_children_rank_0)  
 ```
@@ -230,11 +243,11 @@ summary(soc_LASA2_0$soc_sn_children_rank_0)
 **Harmonization comment**:  Study specific item does not specify if children are alive or dead, it includes biological, step and adopted children.    
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2F_socialnet$nkids) 
-summary(LASA2F_socialnet$nkids)  
-soc_LASA2_1$soc_sn_children_rank_1 <- ifelse(LASA2F_socialnet$nkids=='0',0, 
-                                             ifelse(LASA2F_socialnet$nkids=='1' | LASA2F_socialnet$nkids=='2',1,
-                                                    ifelse(LASA2F_socialnet$nkids >'2',2, NA)))
+table(LASA2F$nkids) 
+summary(LASA2F$nkids)  
+soc_LASA2_1$soc_sn_children_rank_1 <- ifelse(LASA2F$nkids=='0',0, 
+                                             ifelse(LASA2F$nkids=='1' | LASA2F$nkids=='2',1,
+                                                    ifelse(LASA2F$nkids >'2',2, NA)))
 table(soc_LASA2_1$soc_sn_children_rank_1) 
 summary(soc_LASA2_1$soc_sn_children_rank_1) 
 ```
@@ -255,11 +268,11 @@ summary(soc_LASA2_1$soc_sn_children_rank_1)
 **Harmonization comment**:  Study specific item does not specify if children are alive or dead, it includes biological, step and adopted children.    
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2G_socialnet$nkids) 
-summary(LASA2G_socialnet$nkids)  
-soc_LASA2_2$soc_sn_children_rank_2 <- ifelse(LASA2G_socialnet$nkids=='0',0, 
-                                             ifelse(LASA2G_socialnet$nkids=='1' | LASA2G_socialnet$nkids=='2',1,
-                                                    ifelse(LASA2G_socialnet$nkids >'2',2, NA)))
+table(LASA2G$nkids) 
+summary(LASA2G$nkids)  
+soc_LASA2_2$soc_sn_children_rank_2 <- ifelse(LASA2G$nkids=='0',0, 
+                                             ifelse(LASA2G$nkids=='1' | LASA2G$nkids=='2',1,
+                                                    ifelse(LASA2G$nkids >'2',2, NA)))
 table(soc_LASA2_2$soc_sn_children_rank_2) 
 summary(soc_LASA2_2$soc_sn_children_rank_2) 
 
@@ -281,11 +294,11 @@ summary(soc_LASA2_2$soc_sn_children_rank_2)
 **Harmonization comment**:  Study specific item does not specify if children are alive or dead, it includes biological, step and adopted children.    
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2H_socialnet$nkids) 
-summary(LASA2H_socialnet$nkids)  
-soc_LASA2_3$soc_sn_children_rank_3 <- ifelse(LASA2H_socialnet$nkids=='0',0, 
-                                             ifelse(LASA2H_socialnet$nkids=='1' | LASA2H_socialnet$nkids=='2',1,
-                                                    ifelse(LASA2H_socialnet$nkids >'2',2, NA)))
+table(LASA2H$nkids) 
+summary(LASA2H$nkids)  
+soc_LASA2_3$soc_sn_children_rank_3 <- ifelse(LASA2H$nkids=='0',0, 
+                                             ifelse(LASA2H$nkids=='1' | LASA2H$nkids=='2',1,
+                                                    ifelse(LASA2H$nkids >'2',2, NA)))
 table(soc_LASA2_3$soc_sn_children_rank_3) 
 summary(soc_LASA2_3$soc_sn_children_rank_3) 
 ```
@@ -361,9 +374,9 @@ summary(soc_LASA2_3$soc_sn_children_rank_3)
 **Harmonization comment**:  Study specific variable includes friends belonging to the social network that were identified as part of the participant's social network.   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2B_socialnet$nfriends) 
-summary(LASA2B_socialnet$nfriends) 
-soc_LASA2_0$soc_sn_num_friends_0 <- as.integer(LASA2B_socialnet$nfriends)
+table(LASA2B$nfriends) 
+summary(LASA2B$nfriends) 
+soc_LASA2_0$soc_sn_num_friends_0 <- as.integer(LASA2B$nfriends)
 table(soc_LASA2_0$soc_sn_num_friends_0) 
 summary(soc_LASA2_0$soc_sn_num_friends_0)
 ```
@@ -378,9 +391,9 @@ summary(soc_LASA2_0$soc_sn_num_friends_0)
 **Harmonization comment**:  Study specific variable includes friends belonging to the social network that were identified as part of the participant's social network.   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2F_socialnet$nfriends) 
-summary(LASA2F_socialnet$nfriends) 
-soc_LASA2_1$soc_sn_num_friends_1 <- as.integer(LASA2F_socialnet$nfriends)
+table(LASA2F$nfriends) 
+summary(LASA2F$nfriends) 
+soc_LASA2_1$soc_sn_num_friends_1 <- as.integer(LASA2F$nfriends)
 table(soc_LASA2_1$soc_sn_num_friends_1) 
 summary(soc_LASA2_1$soc_sn_num_friends_1)
 ```
@@ -395,9 +408,9 @@ summary(soc_LASA2_1$soc_sn_num_friends_1)
 **Harmonization comment**:  Study specific variable includes friends belonging to the social network that were identified as part of the participant's social network.   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2G_socialnet$nfriends) 
-summary(LASA2G_socialnet$nfriends) 
-soc_LASA2_2$soc_sn_num_friends_2 <- as.integer(LASA2G_socialnet$nfriends)
+table(LASA2G$nfriends) 
+summary(LASA2G$nfriends) 
+soc_LASA2_2$soc_sn_num_friends_2 <- as.integer(LASA2G$nfriends)
 table(soc_LASA2_2$soc_sn_num_friends_2) 
 summary(soc_LASA2_2$soc_sn_num_friends_2)
 ```
@@ -412,9 +425,9 @@ summary(soc_LASA2_2$soc_sn_num_friends_2)
 **Harmonization comment**:  Study specific variable includes friends belonging to the social network that were identified as part of the participant's social network.    
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2H_socialnet$nfriends) 
-summary(LASA2H_socialnet$nfriends) 
-soc_LASA2_3$soc_sn_num_friends_3 <- as.integer(LASA2H_socialnet$nfriends)
+table(LASA2H$nfriends) 
+summary(LASA2H$nfriends) 
+soc_LASA2_3$soc_sn_num_friends_3 <- as.integer(LASA2H$nfriends)
 table(soc_LASA2_3$soc_sn_num_friends_3) 
 summary(soc_LASA2_3$soc_sn_num_friends_3)
 ```
@@ -471,11 +484,9 @@ summary(soc_LASA2_3$soc_sn_num_friends_3)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily in-person contact with friends  
-2 |  Weekly in-person contact with friends  
-3 |  Biweekly in-person contact with friends   
-4 |  Monthly in-person contact with friends   
-5 |  Never or less than a year in-person contact with friends  
+1 |  Daily to less than monthly (once per month) in-person contact with friends 
+2 |  Once per month in-person contact with friends
+3 |  A few times per year, once per year or never in-person contact with friends 
 
 **Harmonization status**:  impossible
 **Harmonization comment**:   
@@ -493,11 +504,9 @@ summary(soc_LASA2_3$soc_sn_num_friends_3)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily in-person contact with friends  
-2 |  Weekly in-person contact with friends  
-3 |  Biweekly in-person contact with friends   
-4 |  Monthly in-person contact with friends   
-5 |  Never or less than a year in-person contact with friends     
+1 |  Daily to less than monthly (once per month) in-person contact with friends 
+2 |  Once per month in-person contact with friends
+3 |  A few times per year, once per year or never in-person contact with friends    
 
 **Harmonization status**:  impossible
 **Harmonization comment**:   
@@ -515,11 +524,9 @@ summary(soc_LASA2_3$soc_sn_num_friends_3)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily in-person contact with friends  
-2 |  Weekly in-person contact with friends  
-3 |  Biweekly in-person contact with friends   
-4 |  Monthly in-person contact with friends   
-5 |  Never or less than a year in-person contact with friends  
+1 |  Daily to less than monthly (once per month) in-person contact with friends 
+2 |  Once per month in-person contact with friends
+3 |  A few times per year, once per year or never in-person contact with friends 
 
 **Harmonization status**:  impossible
 **Harmonization comment**:   
@@ -537,11 +544,9 @@ summary(soc_LASA2_3$soc_sn_num_friends_3)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily in-person contact with friends  
-2 |  Weekly in-person contact with friends  
-3 |  Biweekly in-person contact with friends   
-4 |  Monthly in-person contact with friends   
-5 |  Never or less than a year in-person contact with friends       
+1 |  Daily to less than monthly (once per month) in-person contact with friends 
+2 |  Once per month in-person contact with friends
+3 |  A few times per year, once per year or never in-person contact with friends    
 
 **Harmonization status**:  impossible
 **Harmonization comment**:   
@@ -559,11 +564,9 @@ summary(soc_LASA2_3$soc_sn_num_friends_3)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily in-person contact with friends  
-2 |  Weekly in-person contact with friends  
-3 |  Biweekly in-person contact with friends   
-4 |  Monthly in-person contact with friends   
-5 |  Never or less than a year in-person contact with friends    
+1 |  Daily to less than monthly (once per month) in-person contact with friends 
+2 |  Once per month in-person contact with friends
+3 |  A few times per year, once per year or never in-person contact with friends  
 
 **Harmonization status**:  impossible
 **Harmonization comment**:   
@@ -581,19 +584,18 @@ summary(soc_LASA2_3$soc_sn_num_friends_3)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:  complete
 **Harmonization comment**: Study specific variable is the highest contact frequency reported with any friends identified in participant's social network (e.g. if participant has 4 friends and is in touch weekly  with 3 of them  but in touch daily with the 4th, then they are coded as having daily contact with friends.)    
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2B_socialnet$friendscf) 
-summary(LASA2B_socialnet$friendscf)
-soc_LASA2_0$soc_sn_freq_friends_0 <- as.integer(LASA2B_socialnet$friendscf)
+table(LASA2B$friendscf) 
+summary(LASA2B$friendscf)
+soc_LASA2_0$soc_sn_freq_friends_0 <- as.integer(LASA2B$friendscf)
+soc_LASA2_0$soc_sn_freq_friends_0 <-car::recode(soc_LASA2_0$soc_sn_freq_friends_0, "5=3L; 4=2L; 3=1L; 2=1L; 1=1L" )
  
 table(soc_LASA2_0$soc_sn_freq_friends_0) 
 summary(soc_LASA2_0$soc_sn_freq_friends_0) 
@@ -607,19 +609,18 @@ summary(soc_LASA2_0$soc_sn_freq_friends_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends 
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:  complete
 **Harmonization comment**: Study specific variable is the highest contact frequency reported with any friends identified in participant's social network (e.g. if participant has 4 friends and is in touch weekly  with 3 of them  but in touch daily with the 4th, then they are coded as having daily contact with friends.)    
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2F_socialnet$friendscf) 
-summary(LASA2F_socialnet$friendscf)
-soc_LASA2_1$soc_sn_freq_friends_1 <- as.integer(LASA2F_socialnet$friendscf)
+table(LASA2F$friendscf) 
+summary(LASA2F$friendscf)
+soc_LASA2_1$soc_sn_freq_friends_1 <- as.integer(LASA2F$friendscf)
+soc_LASA2_1$soc_sn_freq_friends_1 <-car::recode(soc_LASA2_1$soc_sn_freq_friends_1, "5=3L; 4=2L; 3=1L; 2=1L; 1=1L" ) 
  
 table(soc_LASA2_1$soc_sn_freq_friends_1) 
 summary(soc_LASA2_1$soc_sn_freq_friends_1) 
@@ -633,19 +634,18 @@ summary(soc_LASA2_1$soc_sn_freq_friends_1)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends 
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:  complete
 **Harmonization comment**: Study specific variable is the highest contact frequency reported with any friends identified in participant's social network (e.g. if participant has 4 friends and is in touch weekly  with 3 of them  but in touch daily with the 4th, then they are coded as having daily contact with friends.)    
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2G_socialnet$friendscf) 
-summary(LASA2G_socialnet$friendscf)
-soc_LASA2_2$soc_sn_freq_friends_2 <- as.integer(LASA2G_socialnet$friendscf)
+table(LASA2G$friendscf) 
+summary(LASA2G$friendscf)
+soc_LASA2_2$soc_sn_freq_friends_2 <- as.integer(LASA2G$friendscf)
+soc_LASA2_2$soc_sn_freq_friends_2 <-car::recode(soc_LASA2_2$soc_sn_freq_friends_2, "5=3L; 4=2L; 3=1L; 2=1L; 1=1L" ) 
  
 table(soc_LASA2_2$soc_sn_freq_friends_2) 
 summary(soc_LASA2_2$soc_sn_freq_friends_2) 
@@ -659,19 +659,18 @@ summary(soc_LASA2_2$soc_sn_freq_friends_2)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:  complete
 **Harmonization comment**: Study specific variable is the highest contact frequency reported with any friends identified in participant's social network (e.g. if participant has 4 friends and is in touch weekly  with 3 of them  but in touch daily with the 4th, then they are coded as having daily contact with friends.)    
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2H_socialnet$friendscf) 
-summary(LASA2H_socialnet$friendscf)
-soc_LASA2_3$soc_sn_freq_friends_3 <- as.integer(LASA2H_socialnet$friendscf)
+table(LASA2H$friendscf) 
+summary(LASA2H$friendscf)
+soc_LASA2_3$soc_sn_freq_friends_3 <- as.integer(LASA2H$friendscf)
+soc_LASA2_3$soc_sn_freq_friends_3 <-car::recode(soc_LASA2_3$soc_sn_freq_friends_3, "5=3L; 4=2L; 3=1L; 2=1L; 1=1L" ) 
  
 table(soc_LASA2_3$soc_sn_freq_friends_3) 
 summary(soc_LASA2_3$soc_sn_freq_friends_3) 
@@ -685,11 +684,9 @@ summary(soc_LASA2_3$soc_sn_freq_friends_3)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends  
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:  impossible 
 **Harmonization comment**:   
@@ -707,11 +704,9 @@ summary(soc_LASA2_3$soc_sn_freq_friends_3)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends  
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:  impossible 
 **Harmonization comment**:   
@@ -729,11 +724,9 @@ summary(soc_LASA2_3$soc_sn_freq_friends_3)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends 
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:  impossible 
 **Harmonization comment**:   
@@ -762,14 +755,14 @@ summary(soc_LASA2_3$soc_sn_freq_friends_3)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2B_socialnet$nneighbours) 
-summary(LASA2B_socialnet$nneighbours)
-soc_LASA2_0$soc_sn_num_nbhs_0 <- ifelse(LASA2B_socialnet$nneighbours=='0',1L, 
-                                                  ifelse(LASA2B_socialnet$nneighbours=='1' | LASA2B_socialnet$nneighbours=='2',2L,
-                                                      ifelse(LASA2B_socialnet$nneighbours>='3' & LASA2B_socialnet$nneighbours <='5',3L,
-                                                           ifelse(LASA2B_socialnet$nneighbours>='6' & LASA2B_socialnet$nneighbours <='10',4L,
-                                                                   ifelse(LASA2B_socialnet$nneighbours>='11' & LASA2B_socialnet$nneighbours <='20',5L,
-                                                                          ifelse(LASA2B_socialnet$nneighbours>='21',6L, NA))))))
+table(LASA2B$nneighbours) 
+summary(LASA2B$nneighbours)
+soc_LASA2_0$soc_sn_num_nbhs_0 <- ifelse(LASA2B$nneighbours=='0',1L, 
+                                                  ifelse(LASA2B$nneighbours=='1' | LASA2B$nneighbours=='2',2L,
+                                                      ifelse(LASA2B$nneighbours>='3' & LASA2B$nneighbours <='5',3L,
+                                                           ifelse(LASA2B$nneighbours>='6' & LASA2B$nneighbours <='10',4L,
+                                                                   ifelse(LASA2B$nneighbours>='11' & LASA2B$nneighbours <='20',5L,
+                                                                          ifelse(LASA2B$nneighbours>='21',6L, NA))))))
  
 table(soc_LASA2_0$soc_sn_num_nbhs_0) 
 summary(soc_LASA2_0$soc_sn_num_nbhs_0)
@@ -794,14 +787,14 @@ summary(soc_LASA2_0$soc_sn_num_nbhs_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2F_socialnet$nneighbours) 
-summary(LASA2F_socialnet$nneighbours)
-soc_LASA2_1$soc_sn_num_nbhs_1 <- ifelse(LASA2F_socialnet$nneighbours=='0',1L, 
-                                                  ifelse(LASA2F_socialnet$nneighbours=='1' | LASA2F_socialnet$nneighbours=='2',2L,
-                                                      ifelse(LASA2F_socialnet$nneighbours>='3' & LASA2F_socialnet$nneighbours <='5',3L,
-                                                           ifelse(LASA2F_socialnet$nneighbours>='6' & LASA2F_socialnet$nneighbours <='10',4L,
-                                                                   ifelse(LASA2F_socialnet$nneighbours>='11' & LASA2F_socialnet$nneighbours <='20',5L,
-                                                                          ifelse(LASA2F_socialnet$nneighbours>='21',6L, NA))))))
+table(LASA2F$nneighbours) 
+summary(LASA2F$nneighbours)
+soc_LASA2_1$soc_sn_num_nbhs_1 <- ifelse(LASA2F$nneighbours=='0',1L, 
+                                                  ifelse(LASA2F$nneighbours=='1' | LASA2F$nneighbours=='2',2L,
+                                                      ifelse(LASA2F$nneighbours>='3' & LASA2F$nneighbours <='5',3L,
+                                                           ifelse(LASA2F$nneighbours>='6' & LASA2F$nneighbours <='10',4L,
+                                                                   ifelse(LASA2F$nneighbours>='11' & LASA2F$nneighbours <='20',5L,
+                                                                          ifelse(LASA2F$nneighbours>='21',6L, NA))))))
  
 table(soc_LASA2_1$soc_sn_num_nbhs_1) 
 summary(soc_LASA2_1$soc_sn_num_nbhs_1)
@@ -826,14 +819,14 @@ summary(soc_LASA2_1$soc_sn_num_nbhs_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2G_socialnet$nneighbours) 
-summary(LASA2G_socialnet$nneighbours)
-soc_LASA2_2$soc_sn_num_nbhs_2 <- ifelse(LASA2G_socialnet$nneighbours=='0',1L, 
-                                                  ifelse(LASA2G_socialnet$nneighbours=='1' | LASA2G_socialnet$nneighbours=='2',2L,
-                                                      ifelse(LASA2G_socialnet$nneighbours>='3' & LASA2G_socialnet$nneighbours <='5',3L,
-                                                           ifelse(LASA2G_socialnet$nneighbours>='6' & LASA2G_socialnet$nneighbours <='10',4L,
-                                                                   ifelse(LASA2G_socialnet$nneighbours>='11' & LASA2G_socialnet$nneighbours <='20',5L,
-                                                                          ifelse(LASA2G_socialnet$nneighbours>='21',6L, NA))))))
+table(LASA2G$nneighbours) 
+summary(LASA2G$nneighbours)
+soc_LASA2_2$soc_sn_num_nbhs_2 <- ifelse(LASA2G$nneighbours=='0',1L, 
+                                                  ifelse(LASA2G$nneighbours=='1' | LASA2G$nneighbours=='2',2L,
+                                                      ifelse(LASA2G$nneighbours>='3' & LASA2G$nneighbours <='5',3L,
+                                                           ifelse(LASA2G$nneighbours>='6' & LASA2G$nneighbours <='10',4L,
+                                                                   ifelse(LASA2G$nneighbours>='11' & LASA2G$nneighbours <='20',5L,
+                                                                          ifelse(LASA2G$nneighbours>='21',6L, NA))))))
  
 table(soc_LASA2_2$soc_sn_num_nbhs_2) 
 summary(soc_LASA2_2$soc_sn_num_nbhs_2)
@@ -858,14 +851,14 @@ summary(soc_LASA2_2$soc_sn_num_nbhs_2)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2H_socialnet$nneighbours) 
-summary(LASA2H_socialnet$nneighbours)
-soc_LASA2_3$soc_sn_num_nbhs_3 <- ifelse(LASA2H_socialnet$nneighbours=='0',1L, 
-                                                  ifelse(LASA2H_socialnet$nneighbours=='1' | LASA2H_socialnet$nneighbours=='2',2L,
-                                                      ifelse(LASA2H_socialnet$nneighbours>='3' & LASA2H_socialnet$nneighbours <='5',3L,
-                                                           ifelse(LASA2H_socialnet$nneighbours>='6' & LASA2H_socialnet$nneighbours <='10',4L,
-                                                                   ifelse(LASA2H_socialnet$nneighbours>='11' & LASA2H_socialnet$nneighbours <='20',5L,
-                                                                          ifelse(LASA2H_socialnet$nneighbours>='21',6L, NA))))))
+table(LASA2H$nneighbours) 
+summary(LASA2H$nneighbours)
+soc_LASA2_3$soc_sn_num_nbhs_3 <- ifelse(LASA2H$nneighbours=='0',1L, 
+                                                  ifelse(LASA2H$nneighbours=='1' | LASA2H$nneighbours=='2',2L,
+                                                      ifelse(LASA2H$nneighbours>='3' & LASA2H$nneighbours <='5',3L,
+                                                           ifelse(LASA2H$nneighbours>='6' & LASA2H$nneighbours <='10',4L,
+                                                                   ifelse(LASA2H$nneighbours>='11' & LASA2H$nneighbours <='20',5L,
+                                                                          ifelse(LASA2H$nneighbours>='21',6L, NA))))))
  
 table(soc_LASA2_3$soc_sn_num_nbhs_3) 
 summary(soc_LASA2_3$soc_sn_num_nbhs_3)
@@ -949,19 +942,19 @@ summary(soc_LASA2_3$soc_sn_num_nbhs_3)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours  
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours
 
 **Harmonization status**: complete 
 **Harmonization comment**: Study specific variable uses highest contact frequency reported with any neighbours identified in their social network (e.g. if participant has 4 neighbours and is in touch weekly  with 3 of them  but in touch daily with the 4th, then they are coded as having daily contact with neighbours.)   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2B_socialnet$neighbourscf) 
-summary(LASA2B_socialnet$neighbourscf)
-soc_LASA2_0$soc_sn_freq_nbhs_0 <- as.integer(LASA2B_socialnet$neighbourscf)
+table(LASA2B$neighbourscf) 
+summary(LASA2B$neighbourscf)
+soc_LASA2_0$soc_sn_freq_nbhs_0 <- as.integer(LASA2B$neighbourscf)
+soc_LASA2_0$soc_sn_freq_nbhs_0 <- car::recode(soc_LASA2_0$soc_sn_freq_nbhs_0, "5=3L; 4=2L; 3=1L; 2=1L; 1=1L")
+
 table(soc_LASA2_0$soc_sn_freq_nbhs_0) 
 summary(soc_LASA2_0$soc_sn_freq_nbhs_0)
 ``` 
@@ -974,19 +967,19 @@ summary(soc_LASA2_0$soc_sn_freq_nbhs_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours  
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours
 
 **Harmonization status**: complete 
 **Harmonization comment**: Study specific variable uses highest contact frequency reported with any neighbours identified in their social network (e.g. if participant has 4 neighbours and is in touch weekly  with 3 of them  but in touch daily with the 4th, then they are coded as having daily contact with neighbours.)   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2F_socialnet$neighbourscf) 
-summary(LASA2F_socialnet$neighbourscf)
-soc_LASA2_1$soc_sn_freq_nbhs_1 <- as.integer(LASA2F_socialnet$neighbourscf)
+table(LASA2F$neighbourscf) 
+summary(LASA2F$neighbourscf)
+soc_LASA2_1$soc_sn_freq_nbhs_1 <- as.integer(LASA2F$neighbourscf)
+soc_LASA2_1$soc_sn_freq_nbhs_1 <- car::recode(soc_LASA2_1$soc_sn_freq_nbhs_1, "5=3L; 4=2L; 3=1L; 2=1L; 1=1L")
+
 table(soc_LASA2_1$soc_sn_freq_nbhs_1) 
 summary(soc_LASA2_1$soc_sn_freq_nbhs_1)
 ```
@@ -999,19 +992,19 @@ summary(soc_LASA2_1$soc_sn_freq_nbhs_1)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours   
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours 
 
 **Harmonization status**: complete 
 **Harmonization comment**: Study specific variable uses highest contact frequency reported with any neighbours identified in their social network (e.g. if participant has 4 neighbours and is in touch weekly  with 3 of them  but in touch daily with the 4th, then they are coded as having daily contact with neighbours.)   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2G_socialnet$neighbourscf) 
-summary(LASA2G_socialnet$neighbourscf)
-soc_LASA2_2$soc_sn_freq_nbhs_2 <- as.integer(LASA2G_socialnet$neighbourscf)
+table(LASA2G$neighbourscf) 
+summary(LASA2G$neighbourscf)
+soc_LASA2_2$soc_sn_freq_nbhs_2 <- as.integer(LASA2G$neighbourscf)
+soc_LASA2_2$soc_sn_freq_nbhs_2 <- car::recode(soc_LASA2_2$soc_sn_freq_nbhs_2, "5=3L; 4=2L; 3=1L; 2=1L; 1=1L")
+
 table(soc_LASA2_2$soc_sn_freq_nbhs_2) 
 summary(soc_LASA2_2$soc_sn_freq_nbhs_2)
 ```
@@ -1024,19 +1017,19 @@ summary(soc_LASA2_2$soc_sn_freq_nbhs_2)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours    
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours   
 
 **Harmonization status**: complete 
 **Harmonization comment**: Study specific variable uses highest contact frequency reported with any neighbours identified in their social network (e.g. if participant has 4 neighbours and is in touch weekly  with 3 of them  but in touch daily with the 4th, then they are coded as having daily contact with neighbours.)    
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2H_socialnet$neighbourscf) 
-summary(LASA2H_socialnet$neighbourscf)
-soc_LASA2_3$soc_sn_freq_nbhs_3 <- as.integer(LASA2H_socialnet$neighbourscf)
+table(LASA2H$neighbourscf) 
+summary(LASA2H$neighbourscf)
+soc_LASA2_3$soc_sn_freq_nbhs_3 <- as.integer(LASA2H$neighbourscf)
+soc_LASA2_3$soc_sn_freq_nbhs_3 <- car::recode(soc_LASA2_3$soc_sn_freq_nbhs_3, "5=3L; 4=2L; 3=1L; 2=1L; 1=1L")
+
 table(soc_LASA2_3$soc_sn_freq_nbhs_3) 
 summary(soc_LASA2_3$soc_sn_freq_nbhs_3)
 ```
@@ -1049,11 +1042,9 @@ summary(soc_LASA2_3$soc_sn_freq_nbhs_3)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours    
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours 
 
 **Harmonization status**:  impossible   
 **Harmonization comment**:   
@@ -1071,11 +1062,9 @@ summary(soc_LASA2_3$soc_sn_freq_nbhs_3)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours    
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours   
 
 **Harmonization status**:  impossible   
 **Harmonization comment**:   
@@ -1093,11 +1082,9 @@ summary(soc_LASA2_3$soc_sn_freq_nbhs_3)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours   
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours  
 
 **Harmonization status**:  impossible   
 **Harmonization comment**:   
@@ -1126,14 +1113,14 @@ summary(soc_LASA2_3$soc_sn_freq_nbhs_3)
 **Harmonization comment**:   Study specific variables includes the following types of social network members which do not live in the household: partner, child (biological, of partner, step, adoptive, child-in-law), sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin).    
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2B_socialnet$nrelatives) 
-summary(LASA2B_socialnet$nrelatives)
-soc_LASA2_0$soc_sn_num_relatives_0 <- ifelse(LASA2B_socialnet$nrelatives=='0',1L, 
-                                                  ifelse(LASA2B_socialnet$nrelatives=='1' | LASA2B_socialnet$nrelatives=='2',2L,
-                                                      ifelse(LASA2B_socialnet$nrelatives>='3' & LASA2B_socialnet$nrelatives <='5',3L,
-                                                           ifelse(LASA2B_socialnet$nrelatives>='6' & LASA2B_socialnet$nrelatives <='10',4L,
-                                                                   ifelse(LASA2B_socialnet$nrelatives>='11' & LASA2B_socialnet$nrelatives <='20',5L,
-                                                                          ifelse(LASA2B_socialnet$nrelatives>='21',6L, NA))))))
+table(LASA2B$nrelatives) 
+summary(LASA2B$nrelatives)
+soc_LASA2_0$soc_sn_num_relatives_0 <- ifelse(LASA2B$nrelatives=='0',1L, 
+                                                  ifelse(LASA2B$nrelatives=='1' | LASA2B$nrelatives=='2',2L,
+                                                      ifelse(LASA2B$nrelatives>='3' & LASA2B$nrelatives <='5',3L,
+                                                           ifelse(LASA2B$nrelatives>='6' & LASA2B$nrelatives <='10',4L,
+                                                                   ifelse(LASA2B$nrelatives>='11' & LASA2B$nrelatives <='20',5L,
+                                                                          ifelse(LASA2B$nrelatives>='21',6L, NA))))))
  
 table(soc_LASA2_0$soc_sn_num_relatives_0) 
 summary(soc_LASA2_0$soc_sn_num_relatives_0) 
@@ -1158,14 +1145,14 @@ summary(soc_LASA2_0$soc_sn_num_relatives_0)
 **Harmonization comment**:   Study specific variables includes the following types of social network members which do not live in the household: partner, child (biological, of partner, step, adoptive, child-in-law), sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin).    
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2F_socialnet$nrelatives) 
-summary(LASA2F_socialnet$nrelatives)
-soc_LASA2_1$soc_sn_num_relatives_1 <- ifelse(LASA2F_socialnet$nrelatives=='0',1L, 
-                                                  ifelse(LASA2F_socialnet$nrelatives=='1' | LASA2F_socialnet$nrelatives=='2',2L,
-                                                      ifelse(LASA2F_socialnet$nrelatives>='3' & LASA2F_socialnet$nrelatives <='5',3L,
-                                                           ifelse(LASA2F_socialnet$nrelatives>='6' & LASA2F_socialnet$nrelatives <='10',4L,
-                                                                   ifelse(LASA2F_socialnet$nrelatives>='11' & LASA2F_socialnet$nrelatives <='20',5L,
-                                                                          ifelse(LASA2F_socialnet$nrelatives4>='21',6L, NA))))))
+table(LASA2F$nrelatives) 
+summary(LASA2F$nrelatives)
+soc_LASA2_1$soc_sn_num_relatives_1 <- ifelse(LASA2F$nrelatives=='0',1L, 
+                                                  ifelse(LASA2F$nrelatives=='1' | LASA2F$nrelatives=='2',2L,
+                                                      ifelse(LASA2F$nrelatives>='3' & LASA2F$nrelatives <='5',3L,
+                                                           ifelse(LASA2F$nrelatives>='6' & LASA2F$nrelatives <='10',4L,
+                                                                   ifelse(LASA2F$nrelatives>='11' & LASA2F$nrelatives <='20',5L,
+                                                                          ifelse(LASA2F$nrelatives4>='21',6L, NA))))))
  
 table(soc_LASA2_1$soc_sn_num_relatives_1) 
 summary(soc_LASA2_1$soc_sn_num_relatives_1)
@@ -1190,14 +1177,14 @@ summary(soc_LASA2_1$soc_sn_num_relatives_1)
 **Harmonization comment**:   Study specific variables includes the following types of social network members which do not live in the household: partner, child (biological, of partner, step, adoptive, child-in-law), sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin).   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2G_socialnet$nrelatives) 
-summary(LASA2G_socialnet$nrelatives)
-soc_LASA2_2$soc_sn_num_relatives_2 <- ifelse(LASA2G_socialnet$nrelatives=='0',1L, 
-                                                  ifelse(LASA2G_socialnet$nrelatives=='1' | LASA2G_socialnet$nrelatives=='2',2L,
-                                                      ifelse(LASA2G_socialnet$nrelatives>='3' & LASA2G_socialnet$nrelatives <='5',3L,
-                                                           ifelse(LASA2G_socialnet$nrelatives>='6' & LASA2G_socialnet$nrelatives <='10',4L,
-                                                                   ifelse(LASA2G_socialnet$nrelatives>='11' & LASA2G_socialnet$nrelatives <='20',5L,
-                                                                          ifelse(LASA2G_socialnet$nrelatives4>='21',6L, NA))))))
+table(LASA2G$nrelatives) 
+summary(LASA2G$nrelatives)
+soc_LASA2_2$soc_sn_num_relatives_2 <- ifelse(LASA2G$nrelatives=='0',1L, 
+                                                  ifelse(LASA2G$nrelatives=='1' | LASA2G$nrelatives=='2',2L,
+                                                      ifelse(LASA2G$nrelatives>='3' & LASA2G$nrelatives <='5',3L,
+                                                           ifelse(LASA2G$nrelatives>='6' & LASA2G$nrelatives <='10',4L,
+                                                                   ifelse(LASA2G$nrelatives>='11' & LASA2G$nrelatives <='20',5L,
+                                                                          ifelse(LASA2G$nrelatives4>='21',6L, NA))))))
  
 table(soc_LASA2_2$soc_sn_num_relatives_2) 
 summary(soc_LASA2_2$soc_sn_num_relatives_2) 
@@ -1222,14 +1209,14 @@ summary(soc_LASA2_2$soc_sn_num_relatives_2)
 **Harmonization comment**:   Study specific variables includes the following types of social network members which do not live in the household: partner, child (biological, of partner, step, adoptive, child-in-law), sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin).  
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2H_socialnet$nrelatives) 
-summary(LASA2H_socialnet$nrelatives)
-soc_LASA2_3$soc_sn_num_relatives_3 <- ifelse(LASA2H_socialnet$nrelatives=='0',1L, 
-                                                  ifelse(LASA2H_socialnet$nrelatives=='1' | LASA2H_socialnet$nrelatives=='2',2L,
-                                                      ifelse(LASA2H_socialnet$nrelatives>='3' & LASA2H_socialnet$nrelatives <='5',3L,
-                                                           ifelse(LASA2H_socialnet$nrelatives>='6' & LASA2H_socialnet$nrelatives <='10',4L,
-                                                                   ifelse(LASA2H_socialnet$nrelatives>='11' & LASA2H_socialnet$nrelatives <='20',5L,
-                                                                          ifelse(LASA2H_socialnet$nrelatives4>='21',6L, NA))))))
+table(LASA2H$nrelatives) 
+summary(LASA2H$nrelatives)
+soc_LASA2_3$soc_sn_num_relatives_3 <- ifelse(LASA2H$nrelatives=='0',1L, 
+                                                  ifelse(LASA2H$nrelatives=='1' | LASA2H$nrelatives=='2',2L,
+                                                      ifelse(LASA2H$nrelatives>='3' & LASA2H$nrelatives <='5',3L,
+                                                           ifelse(LASA2H$nrelatives>='6' & LASA2H$nrelatives <='10',4L,
+                                                                   ifelse(LASA2H$nrelatives>='11' & LASA2H$nrelatives <='20',5L,
+                                                                          ifelse(LASA2H$nrelatives4>='21',6L, NA))))))
  
 table(soc_LASA2_3$soc_sn_num_relatives_3) 
 summary(soc_LASA2_3$soc_sn_num_relatives_3) 
@@ -1312,19 +1299,19 @@ summary(soc_LASA2_3$soc_sn_num_relatives_3)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives   
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family   
 
 **Harmonization status**:  complete
 **Harmonization comment**:  Study specific variable uses highest contact frequency reported with any family member and it includes the following types of social network members which might live in the household: partner, child (biological, of partner, step, adoptive, child-in-law, sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin).    
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2B_socialnet$familycf) 
-summary(LASA2B_socialnet$familycf)
-soc_LASA2_0$soc_sn_freq_close_relatives_0 <- as.integer(LASA2B_socialnet$familycf)
- 
+table(LASA2B$familycf) 
+summary(LASA2B$familycf)
+soc_LASA2_0$soc_sn_freq_close_relatives_0 <- as.integer(LASA2B$familycf)
+soc_LASA2_0$soc_sn_freq_close_relatives_0 <- car::recode(soc_LASA2_0$soc_sn_freq_close_relatives_0, "4=3L; 3=2L; 2=1L; 1=1L")
+
 table(soc_LASA2_0$soc_sn_freq_close_relatives_0) 
 summary(soc_LASA2_0$soc_sn_freq_close_relatives_0) 
 ```
@@ -1337,18 +1324,18 @@ summary(soc_LASA2_0$soc_sn_freq_close_relatives_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives    
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family    
 
 **Harmonization status**:  complete
 **Harmonization comment**:  Study specific variable uses highest contact frequency reported with any family member and it includes the following types of social network members which might live in the household: partner, child (biological, of partner, step, adoptive, child-in-law, sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin).   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2F_socialnet$familycf) 
-summary(LASA2F_socialnet$familycf)
-soc_LASA2_1$soc_sn_freq_close_relatives_1 <- as.integer(LASA2F_socialnet$familycf)
+table(LASA2F$familycf) 
+summary(LASA2F$familycf)
+soc_LASA2_1$soc_sn_freq_close_relatives_1 <- as.integer(LASA2F$familycf)
+soc_LASA2_1$soc_sn_freq_close_relatives_1 <- car::recode(soc_LASA2_1$soc_sn_freq_close_relatives_1, "4=3L; 3=2L; 2=1L; 1=1L")
  
 table(soc_LASA2_1$soc_sn_freq_close_relatives_1) 
 summary(soc_LASA2_1$soc_sn_freq_close_relatives_1)
@@ -1362,18 +1349,18 @@ summary(soc_LASA2_1$soc_sn_freq_close_relatives_1)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives       
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family       
 
 **Harmonization status**:  complete
 **Harmonization comment**:  Study specific variable uses highest contact frequency reported with any family member and it includes the following types of social network members which might live in the household: partner, child (biological, of partner, step, adoptive, child-in-law, sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin).   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2G_socialnet$familycf) 
-summary(LASA2G_socialnet$familycf)
-soc_LASA2_2$soc_sn_freq_close_relatives_2 <- as.integer(LASA2G_socialnet$familycf)
+table(LASA2G$familycf) 
+summary(LASA2G$familycf)
+soc_LASA2_2$soc_sn_freq_close_relatives_2 <- as.integer(LASA2G$familycf)
+soc_LASA2_2$soc_sn_freq_close_relatives_2 <- car::recode(soc_LASA2_2$soc_sn_freq_close_relatives_2, "4=3L; 3=2L; 2=1L; 1=1L")
  
 table(soc_LASA2_2$soc_sn_freq_close_relatives_2) 
 summary(soc_LASA2_2$soc_sn_freq_close_relatives_2)
@@ -1387,18 +1374,18 @@ summary(soc_LASA2_2$soc_sn_freq_close_relatives_2)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives     
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family     
 
 **Harmonization status**:  complete
 **Harmonization comment**:  Study specific variable uses highest contact frequency reported with any family member and it includes the following types of social network members which might live in the household: partner, child (biological, of partner, step, adoptive, child-in-law, sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin).  
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2H_socialnet$familycf) 
-summary(LASA2H_socialnet$familycf)
-soc_LASA2_3$soc_sn_freq_close_relatives_3 <- as.integer(LASA2H_socialnet$familycf)
+table(LASA2H$familycf) 
+summary(LASA2H$familycf)
+soc_LASA2_3$soc_sn_freq_close_relatives_3 <- as.integer(LASA2H$familycf)
+soc_LASA2_3$soc_sn_freq_close_relatives_3 <- car::recode(soc_LASA2_3$soc_sn_freq_close_relatives_3, "4=3L; 3=2L; 2=1L; 1=1L")
  
 table(soc_LASA2_3$soc_sn_freq_close_relatives_3) 
 summary(soc_LASA2_3$soc_sn_freq_close_relatives_3)
@@ -1412,10 +1399,9 @@ summary(soc_LASA2_3$soc_sn_freq_close_relatives_3)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives      
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family    
 
 **Harmonization status**:  impossible   
 **Harmonization comment**:   
@@ -1433,10 +1419,9 @@ summary(soc_LASA2_3$soc_sn_freq_close_relatives_3)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives      
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family      
 
 **Harmonization status**:  impossible   
 **Harmonization comment**:   
@@ -1454,10 +1439,9 @@ summary(soc_LASA2_3$soc_sn_freq_close_relatives_3)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives    
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family    
 
 **Harmonization status**:  impossible   
 **Harmonization comment**:   
@@ -1476,17 +1460,17 @@ summary(soc_LASA2_3$soc_sn_freq_close_relatives_3)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives  
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives  
 
 **Harmonization status**:  complete
 **Harmonization comment**:   Study specific variable uses highest contact frequency reported with any relative and it includes the following types of social network members : partner and child (biological, of partner, step, adoptive, child-in-law), which do not live in the household, sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin). **R script**:  
 ```{r, echo=TRUE}
-table(LASA2B_socialnet$relativescf) 
-summary(LASA2B_socialnet$relativescf)
-soc_LASA2_0$soc_sn_freq_relatives_0 <- as.integer(LASA2B_socialnet$relativescf)
+table(LASA2B$relativescf) 
+summary(LASA2B$relativescf)
+soc_LASA2_0$soc_sn_freq_relatives_0 <- as.integer(LASA2B$relativescf)
+soc_LASA2_0$soc_sn_freq_relatives_0 <- car::recode(soc_LASA2_0$soc_sn_freq_relatives_0, "4=3L; 3=2L; 2=1L; 1=1L")
  
 table(soc_LASA2_0$soc_sn_freq_relatives_0) 
 summary(soc_LASA2_0$soc_sn_freq_relatives_0) 
@@ -1501,17 +1485,17 @@ summary(soc_LASA2_0$soc_sn_freq_relatives_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives  
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives  
 
 **Harmonization status**:  complete
 **Harmonization comment**:   Study specific variable uses highest contact frequency reported with any relative and it includes the following types of social network members : partner and child (biological, of partner, step, adoptive, child-in-law), which do not live in the household, sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin). **R script**:  
 ```{r, echo=TRUE}
-table(LASA2F_socialnet$relativescf) 
-summary(LASA2F_socialnet$relativescf)
-soc_LASA2_1$soc_sn_freq_relatives_1 <- as.integer(LASA2F_socialnet$relativescf)
+table(LASA2F$relativescf) 
+summary(LASA2F$relativescf)
+soc_LASA2_1$soc_sn_freq_relatives_1 <- as.integer(LASA2F$relativescf)
+soc_LASA2_1$soc_sn_freq_relatives_1 <- car::recode(soc_LASA2_1$soc_sn_freq_relatives_1, "4=3L; 3=2L; 2=1L; 1=1L")
  
 table(soc_LASA2_1$soc_sn_freq_relatives_1) 
 summary(soc_LASA2_1$soc_sn_freq_relatives_1) 
@@ -1525,18 +1509,18 @@ summary(soc_LASA2_1$soc_sn_freq_relatives_1)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives  
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives  
 
 **Harmonization status**:  complete
 **Harmonization comment**:   Study specific variable uses highest contact frequency reported with any relative and it includes the following types of social network members : partner and child (biological, of partner, step, adoptive, child-in-law), which do not live in the household, sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin). 
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2G_socialnet$relativescf) 
-summary(LASA2G_socialnet$relativescf)
-soc_LASA2_2$soc_sn_freq_relatives_2 <- as.integer(LASA2G_socialnet$relativescf)
+table(LASA2G$relativescf) 
+summary(LASA2G$relativescf)
+soc_LASA2_2$soc_sn_freq_relatives_2 <- as.integer(LASA2G$relativescf)
+soc_LASA2_2$soc_sn_freq_relatives_2 <- car::recode(soc_LASA2_2$soc_sn_freq_relatives_2, "4=3L; 3=2L; 2=1L; 1=1L")
  
 table(soc_LASA2_2$soc_sn_freq_relatives_2) 
 summary(soc_LASA2_2$soc_sn_freq_relatives_2) 
@@ -1550,18 +1534,18 @@ summary(soc_LASA2_2$soc_sn_freq_relatives_2)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives    
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives    
 
 **Harmonization status**:  complete
 **Harmonization comment**:   Study specific variable uses highest contact frequency reported with any relative and it includes the following types of social network members : partner and child (biological, of partner, step, adoptive, child-in-law), which do not live in the household, sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin). 
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2H_socialnet$relativescf) 
-summary(LASA2H_socialnet$relativescf)
-soc_LASA2_3$soc_sn_freq_relatives_3 <- as.integer(LASA2H_socialnet$relativescf)
+table(LASA2H$relativescf) 
+summary(LASA2H$relativescf)
+soc_LASA2_3$soc_sn_freq_relatives_3 <- as.integer(LASA2H$relativescf)
+soc_LASA2_3$soc_sn_freq_relatives_3 <- car::recode(soc_LASA2_3$soc_sn_freq_relatives_3, "4=3L; 3=2L; 2=1L; 1=1L")
  
 table(soc_LASA2_3$soc_sn_freq_relatives_3) 
 summary(soc_LASA2_3$soc_sn_freq_relatives_3)
@@ -1575,10 +1559,9 @@ summary(soc_LASA2_3$soc_sn_freq_relatives_3)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives  
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives 
 
 **Harmonization status**:  impossible   
 **Harmonization comment**:   
@@ -1596,10 +1579,9 @@ summary(soc_LASA2_3$soc_sn_freq_relatives_3)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives  
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives  
 
 **Harmonization status**:  impossible   
 **Harmonization comment**:   
@@ -1617,10 +1599,9 @@ summary(soc_LASA2_3$soc_sn_freq_relatives_3)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives  
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives   
 
 **Harmonization status**:  impossible   
 **Harmonization comment**:   
@@ -1640,9 +1621,9 @@ summary(soc_LASA2_3$soc_sn_freq_relatives_3)
 **Harmonization comment**:  Study specific variable includes the following types of social network members:  friends, neighbours, former colleagues, person they know through volunteer work, voluntary organizations or educational activities (excludes acquaintances).  
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2B_socialnet$nnonkin) 
-summary(LASA2B_socialnet$nnonkin)
-soc_LASA2_0$soc_sn_num_nonkin_0 <- as.integer(LASA2B_socialnet$nnonkin)
+table(LASA2B$nnonkin) 
+summary(LASA2B$nnonkin)
+soc_LASA2_0$soc_sn_num_nonkin_0 <- as.integer(LASA2B$nnonkin)
  
 table(soc_LASA2_0$soc_sn_num_nonkin_0) 
 summary(soc_LASA2_0$soc_sn_num_nonkin_0) 
@@ -1658,9 +1639,9 @@ summary(soc_LASA2_0$soc_sn_num_nonkin_0)
 **Harmonization comment**:  Study specific variable includes the following types of social network members:  friends, neighbours, former colleagues, person they know through volunteer work, voluntary organizations or educational activities (excludes acquaintances).   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2F_socialnet$nnonkin) 
-summary(LASA2F_socialnet$nnonkin)
-soc_LASA2_1$soc_sn_num_nonkin_1 <- as.integer(LASA2F_socialnet$nnonkin)
+table(LASA2F$nnonkin) 
+summary(LASA2F$nnonkin)
+soc_LASA2_1$soc_sn_num_nonkin_1 <- as.integer(LASA2F$nnonkin)
  
 table(soc_LASA2_1$soc_sn_num_nonkin_1) 
 summary(soc_LASA2_1$soc_sn_num_nonkin_1) 
@@ -1676,9 +1657,9 @@ summary(soc_LASA2_1$soc_sn_num_nonkin_1)
 **Harmonization comment**:  Study specific variable includes the following types of social network members:  friends, neighbours, former colleagues, person they know through volunteer work, voluntary organizations or educational activities (excludes acquaintances).   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2G_socialnet$nnonkin) 
-summary(LASA2G_socialnet$nnonkin)
-soc_LASA2_2$soc_sn_num_nonkin_2 <- as.integer(LASA2G_socialnet$nnonkin)
+table(LASA2G$nnonkin) 
+summary(LASA2G$nnonkin)
+soc_LASA2_2$soc_sn_num_nonkin_2 <- as.integer(LASA2G$nnonkin)
  
 table(soc_LASA2_2$soc_sn_num_nonkin_2) 
 summary(soc_LASA2_2$soc_sn_num_nonkin_2) 
@@ -1694,9 +1675,9 @@ summary(soc_LASA2_2$soc_sn_num_nonkin_2)
 **Harmonization comment**:  Study specific variable includes the following types of social network members:  friends, neighbours, former colleagues, person they know through volunteer work, voluntary organizations or educational activities (excludes acquaintances).   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2H_socialnet$nnonkin) 
-summary(LASA2H_socialnet$nnonkin)
-soc_LASA2_3$soc_sn_num_nonkin_3 <- as.integer(LASA2H_socialnet$nnonkin)
+table(LASA2H$nnonkin) 
+summary(LASA2H$nnonkin)
+soc_LASA2_3$soc_sn_num_nonkin_3 <- as.integer(LASA2H$nnonkin)
  
 table(soc_LASA2_3$soc_sn_num_nonkin_3) 
 summary(soc_LASA2_3$soc_sn_num_nonkin_3) 
@@ -1753,19 +1734,18 @@ summary(soc_LASA2_3$soc_sn_num_nonkin_3)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members  
-2 |  Weekly contact with non-kin members  
-3 |  Biweekly contact with non-kin members  
-4 |  Monthly contact with non-kin members  
-5 |  Never or less than a year contact with non-kin members     
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members    
 
 **Harmonization status**:  complete
 **Harmonization comment**:   Study specific variable uses highest contact frequency reported with any non-kin member in participant's social network. 
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2B_socialnet$nonkincf) 
-summary(LASA2B_socialnet$nonkincf)
-soc_LASA2_0$soc_sn_freq_nonkin_0 <- as.integer(LASA2B_socialnet$nonkincf)
+table(LASA2B$nonkincf) 
+summary(LASA2B$nonkincf)
+soc_LASA2_0$soc_sn_freq_nonkin_0 <- as.integer(LASA2B$nonkincf)
+soc_LASA2_0$soc_sn_freq_nonkin_0 <-car::recode(soc_LASA2_0$soc_sn_freq_nonkin_0, "5=3L; 4=2L; 3=1L; 2=1L; 1=1L" )
  
 table(soc_LASA2_0$soc_sn_freq_nonkin_0) 
 summary(soc_LASA2_0$soc_sn_freq_nonkin_0) 
@@ -1779,19 +1759,18 @@ summary(soc_LASA2_0$soc_sn_freq_nonkin_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members     
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members      
 
 **Harmonization status**:  complete
 **Harmonization comment**:   Study specific variable uses highest contact frequency reported with any non-kin member in participant's social network.
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2F_socialnet$nonkincf) 
-summary(LASA2F_socialnet$nonkincf)
-soc_LASA2_1$soc_sn_freq_nonkin_1 <- as.integer(LASA2F_socialnet$nonkincf)
+table(LASA2F$nonkincf) 
+summary(LASA2F$nonkincf)
+soc_LASA2_1$soc_sn_freq_nonkin_1 <- as.integer(LASA2F$nonkincf)
+soc_LASA2_1$soc_sn_freq_nonkin_1 <-car::recode(soc_LASA2_1$soc_sn_freq_nonkin_1, "5=3L; 4=2L; 3=1L; 2=1L; 1=1L" )
  
 table(soc_LASA2_1$soc_sn_freq_nonkin_1) 
 summary(soc_LASA2_1$soc_sn_freq_nonkin_1)
@@ -1805,19 +1784,18 @@ summary(soc_LASA2_1$soc_sn_freq_nonkin_1)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members       
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members      
 
 **Harmonization status**:  complete
 **Harmonization comment**:   Study specific variable uses highest contact frequency reported with any non-kin member in participant's social network.  
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2G_socialnet$nonkincf) 
-summary(LASA2G_socialnet$nonkincf)
-soc_LASA2_2$soc_sn_freq_nonkin_2 <- as.integer(LASA2G_socialnet$nonkincf)
+table(LASA2G$nonkincf) 
+summary(LASA2G$nonkincf)
+soc_LASA2_2$soc_sn_freq_nonkin_2 <- as.integer(LASA2G$nonkincf)
+soc_LASA2_2$soc_sn_freq_nonkin_2 <-car::recode(soc_LASA2_2$soc_sn_freq_nonkin_2, "5=3L; 4=2L; 3=1L; 2=1L; 1=1L" )
  
 table(soc_LASA2_2$soc_sn_freq_nonkin_2) 
 summary(soc_LASA2_2$soc_sn_freq_nonkin_2)
@@ -1831,19 +1809,18 @@ summary(soc_LASA2_2$soc_sn_freq_nonkin_2)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members     
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members      
 
 **Harmonization status**:  complete
 **Harmonization comment**:   Study specific variable uses highest contact frequency reported with any non-kin member in participant's social network.   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2H_socialnet$nonkincf) 
-summary(LASA2H_socialnet$nonkincf)
-soc_LASA2_3$soc_sn_freq_nonkin_3 <- as.integer(LASA2H_socialnet$nonkincf)
+table(LASA2H$nonkincf) 
+summary(LASA2H$nonkincf)
+soc_LASA2_3$soc_sn_freq_nonkin_3 <- as.integer(LASA2H$nonkincf)
+soc_LASA2_3$soc_sn_freq_nonkin_3 <-car::recode(soc_LASA2_3$soc_sn_freq_nonkin_3, "5=3L; 4=2L; 3=1L; 2=1L; 1=1L" )
  
 table(soc_LASA2_3$soc_sn_freq_nonkin_3) 
 summary(soc_LASA2_3$soc_sn_freq_nonkin_3)
@@ -1857,11 +1834,9 @@ summary(soc_LASA2_3$soc_sn_freq_nonkin_3)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members     
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members    
 
 **Harmonization status**:  impossible   
 **Harmonization comment**:   
@@ -1879,11 +1854,9 @@ summary(soc_LASA2_3$soc_sn_freq_nonkin_3)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members     
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members     
 
 **Harmonization status**:  impossible   
 **Harmonization comment**:   
@@ -1901,11 +1874,9 @@ summary(soc_LASA2_3$soc_sn_freq_nonkin_3)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members     
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members      
 
 **Harmonization status**:  impossible   
 **Harmonization comment**:   
@@ -1930,15 +1901,20 @@ summary(soc_LASA2_3$soc_sn_freq_nonkin_3)
 2 |  Often received emotional support
 
 **Harmonization status**:  complete
-**Harmonization comment**: Confidants are not identified in this wave hence picked top 3 most frequent contacts as sources of received emotional support. Study specific variable is categorized as following: 'often' receiving support from any 1 of 3 top most frequent contacts  is categorized as (->) often receives support, otherwise if 'sometimes' receiving support sometimes from any 1 of 3 top most frequent contacts -> sometimes receives support, otherwise if receiving 'seldom' or 'never' support from all 3 top most frequent contacts -> never receives emotional support.    
+**Harmonization comment**: If the participant reported receiving emotional support 'often' from any 1 of 3 top most frequent contacts, the harmonized variable is categorized as 2 | Often received emotional support, otherwise if they reported 'sometimes' receiving emotional support from any 1 of the 3 contacts, the harmonized variable is coded as  1 |  Sometimes received emotional support, otherwise if they reported receiving emotional support 'seldom' or 'never' from all 3 contacts, they were categorized under 0 |  Never received emotional support.  In case participant reported as only having 1 or 2 confidants instead of 3, then only support from the first confidant, or the first 2 confidants, is used to categorize support received per participant. 
 **R script**:  
 ```{r, echo=TRUE}
-soc_LASA2_0$soc_ss_received_emo_0 <- ifelse(LASA2B_socialnet$rec_emo_conf1 ==4 | LASA2B_socialnet$rec_emo_conf2 ==4 |LASA2B_socialnet$rec_emo_conf3 == 4, 2L, 
-                                         ifelse((LASA2B_socialnet$rec_emo_conf1  ==3 | LASA2B_socialnet$rec_emo_conf2  ==3 |LASA2B_socialnet$rec_emo_conf3 == 3) & (LASA2B_socialnet$rec_emo_conf1  !=4 & LASA2B_socialnet$rec_emo_conf2  !=4 & LASA2B_socialnet$rec_emo_conf3 !=4), 1L, 
-                                             ifelse(LASA2B_socialnet$rec_emo_conf1 <=2 | LASA2B_socialnet$rec_emo_conf2 <=2 |LASA2B_socialnet$rec_emo_conf3 <=2, 0L, NA)))
+colnames(LASA2B)
+table(LASA2B$rec_emo_conf1, useNA="always")
+table(LASA2B$rec_emo_conf2, useNA="always")
+table(LASA2B$rec_emo_conf3, useNA="always")
 
-table(soc_LASA2_0$soc_ss_received_emo_0) 
+soc_LASA2_0$soc_ss_received_emo_0 <-do.call( pmax, c(LASA2B[50:52], na.rm=T ))
+soc_LASA2_0$soc_ss_received_emo_0 <- car::recode(soc_LASA2_0$soc_ss_received_emo_0, "4=2L; 3=1L; 2=0L; 1=0L" )
+
+table(soc_LASA2_0$soc_ss_received_emo_0, useNA="always") 
 summary(soc_LASA2_0$soc_ss_received_emo_0)
+
 ```
 ### **Variable label**: Received emotional support    
 **Variable name**:   soc_ss_received_emo_1 
@@ -1954,11 +1930,16 @@ summary(soc_LASA2_0$soc_ss_received_emo_0)
 2 |  Often received emotional support
 
 **Harmonization status**:  complete
-**Harmonization comment**: The 3 confidants were identified as the top 3 most frequent contacts that are also the top 3 confidants reported by the respondent.  Study specific variable is categorized as following: 'often' receiving support from any 1 of 3 confidants  is categorized as (->) often receives support, otherwise if 'sometimes' receiving support sometimes from any 1 of 3 confidants -> sometimes receives support, otherwise if receiving 'seldom' or 'never' support from all 3 confidants -> never receives emotional support.  **R script**:  
+**Harmonization comment**: If the participant reported receiving emotional support 'often' from any 1 of 3 top most frequent contacts, the harmonized variable is categorized as 2 | Often received emotional support, otherwise if they reported 'sometimes' receiving emotional support from any 1 of the 3 contacts, the harmonized variable is coded as  1 |  Sometimes received emotional support, otherwise if they reported receiving emotional support 'seldom' or 'never' from all 3 contacts, they were categorized under 0 |  Never received emotional support. In case participant reported as only having 1 or 2 confidants instead of 3, then only support from the first confidant, or the first 2 confidants, is used to categorize support received per participant. 
+**R script**:  
 ```{r, echo=TRUE}
-soc_LASA2_1$soc_ss_received_emo_1 <- ifelse(LASA2F_socialnet$rec_emo_conf1 ==4 | LASA2F_socialnet$rec_emo_conf2 ==4 |LASA2F_socialnet$rec_emo_conf3 == 4, 2L, 
-                                         ifelse((LASA2F_socialnet$rec_emo_conf1  ==3 | LASA2F_socialnet$rec_emo_conf2  ==3 |LASA2F_socialnet$rec_emo_conf3 == 3) & (LASA2F_socialnet$rec_emo_conf1  !=4 & LASA2F_socialnet$rec_emo_conf2  !=4 & LASA2F_socialnet$rec_emo_conf3 !=4), 1L, 
-                                             ifelse(LASA2F_socialnet$rec_emo_conf1 <=2 | LASA2F_socialnet$rec_emo_conf2 <=2 |LASA2F_socialnet$rec_emo_conf3 <=2, 0L, NA)))
+colnames(LASA2F)
+table(LASA2F$rec_emo_conf1, useNA="always")
+table(LASA2F$rec_emo_conf2, useNA="always")
+table(LASA2F$rec_emo_conf3, useNA="always")
+
+soc_LASA2_1$soc_ss_received_emo_1  <-do.call( pmax, c(LASA2F[62:64], na.rm=T ))
+soc_LASA2_1$soc_ss_received_emo_1  <- car::recode(soc_LASA2_1$soc_ss_received_emo_1 , "4=2L; 3=1L; 2=0L; 1=0L" )
 
 table(soc_LASA2_1$soc_ss_received_emo_1) 
 summary(soc_LASA2_1$soc_ss_received_emo_1)
@@ -1977,11 +1958,16 @@ summary(soc_LASA2_1$soc_ss_received_emo_1)
 2 |  Often received emotional support
 
 **Harmonization status**:  complete
-**Harmonization comment**: The 3 confidants were identified as the top 3 most frequent contacts that are also the top 3 confidants reported by the respondent.  Study specific variable is categorized as following: 'often' receiving support from any 1 of 3 confidants  is categorized as (->) often receives support, otherwise if 'sometimes' receiving support sometimes from any 1 of 3 confidants -> sometimes receives support, otherwise if receiving 'seldom' or 'never' support from all 3 confidants -> never receives emotional support.  **R script**:  
+**Harmonization comment**: If the participant reported receiving emotional support 'often' from any 1 of 3 top most frequent contacts, the harmonized variable is categorized as 2 | Often received emotional support, otherwise if they reported 'sometimes' receiving emotional support from any 1 of the 3 contacts, the harmonized variable is coded as  1 |  Sometimes received emotional support, otherwise if they reported receiving emotional support 'seldom' or 'never' from all 3 contacts, they were categorized under 0 |  Never received emotional support.  In case participant reported as only having 1 or 2 confidants instead of 3, then only support from the first confidant, or the first 2 confidants, is used to categorize support received per participant. 
+**R script**:  
 ```{r, echo=TRUE}
-soc_LASA2_2$soc_ss_received_emo_2 <- ifelse(LASA2G_socialnet$rec_emo_conf1 ==4 | LASA2G_socialnet$rec_emo_conf2 ==4 |LASA2G_socialnet$rec_emo_conf3 == 4, 2L, 
-                                         ifelse((LASA2G_socialnet$rec_emo_conf1  ==3 | LASA2G_socialnet$rec_emo_conf2  ==3 |LASA2G_socialnet$rec_emo_conf3 == 3) & (LASA2G_socialnet$rec_emo_conf1  !=4 & LASA2G_socialnet$rec_emo_conf2  !=4 & LASA2G_socialnet$rec_emo_conf3 !=4), 1L, 
-                                             ifelse(LASA2G_socialnet$rec_emo_conf1 <=2 | LASA2G_socialnet$rec_emo_conf2 <=2 |LASA2G_socialnet$rec_emo_conf3 <=2, 0L, NA)))
+colnames(LASA2G)
+table(LASA2G$rec_emo_conf1, useNA="always")
+table(LASA2G$rec_emo_conf2, useNA="always")
+table(LASA2G$rec_emo_conf3, useNA="always")
+
+soc_LASA2_2$soc_ss_received_emo_2  <-do.call( pmax, c(LASA2G[72:74], na.rm=T ))
+soc_LASA2_2$soc_ss_received_emo_2  <- car::recode(soc_LASA2_2$soc_ss_received_emo_2, "4=2L; 3=1L; 2=0L; 1=0L" )
 
 table(soc_LASA2_2$soc_ss_received_emo_2) 
 summary(soc_LASA2_2$soc_ss_received_emo_2)
@@ -2000,12 +1986,16 @@ summary(soc_LASA2_2$soc_ss_received_emo_2)
 2 |  Often received emotional support
 
 **Harmonization status**:  complete
-**Harmonization comment**: The 3 confidants were identified as the top 3 most frequent contacts that are also the top 3 confidants reported by the respondent.  Study specific variable is categorized as following: 'often' receiving support from any 1 of 3 confidants  is categorized as (->) often receives support, otherwise if 'sometimes' receiving support sometimes from any 1 of 3 confidants -> sometimes receives support, otherwise if receiving 'seldom' or 'never' support from all 3 confidants -> never receives emotional support.  
+**Harmonization comment**: If the participant reported receiving emotional support 'often' from any 1 of 3 top most frequent contacts, the harmonized variable is categorized as 2 | Often received emotional support, otherwise if they reported 'sometimes' receiving emotional support from any 1 of the 3 contacts, the harmonized variable is coded as  1 |  Sometimes received emotional support, otherwise if they reported receiving emotional support 'seldom' or 'never' from all 3 contacts, they were categorized under 0 |  Never received emotional support.  In case participant reported as only having 1 or 2 confidants instead of 3, then only support from the first confidant, or the first 2 confidants, is used to categorize support received per participant. 
 **R script**:  
 ```{r, echo=TRUE}
-soc_LASA2_3$soc_ss_received_emo_3 <- ifelse(LASA2H_socialnet$rec_emo_conf1 ==4 | LASA2H_socialnet$rec_emo_conf2 ==4 |LASA2H_socialnet$rec_emo_conf3 == 4, 2L, 
-                                         ifelse((LASA2H_socialnet$rec_emo_conf1  ==3 | LASA2H_socialnet$rec_emo_conf2  ==3 |LASA2H_socialnet$rec_emo_conf3 == 3) & (LASA2H_socialnet$rec_emo_conf1  !=4 & LASA2H_socialnet$rec_emo_conf2  !=4 & LASA2H_socialnet$rec_emo_conf3 !=4), 1L, 
-                                             ifelse(LASA2H_socialnet$rec_emo_conf1 <=2 | LASA2H_socialnet$rec_emo_conf2 <=2 |LASA2H_socialnet$rec_emo_conf3 <=2, 0L, NA)))
+colnames(LASA2H)
+table(LASA2H$rec_emo_conf1, useNA="always")
+table(LASA2H$rec_emo_conf2, useNA="always")
+table(LASA2H$rec_emo_conf3, useNA="always")
+
+soc_LASA2_3$soc_ss_received_emo_3  <-do.call( pmax, c(LASA2H[60:62], na.rm=T ))
+soc_LASA2_3$soc_ss_received_emo_3  <- car::recode(soc_LASA2_3$soc_ss_received_emo_3, "4=2L; 3=1L; 2=0L; 1=0L" )
 
 table(soc_LASA2_3$soc_ss_received_emo_3) 
 summary(soc_LASA2_3$soc_ss_received_emo_3)
@@ -2084,15 +2074,17 @@ summary(soc_LASA2_3$soc_ss_received_emo_3)
 2 |  Often received instrumental support
 
 **Harmonization status**:  complete
-**Harmonization comment**: Confidants are not identified in this wave hence picked top 3 most frequent contacts as sources of received instrumental support. Study specific variable is categorized as following: 'often' receiving support from any 1 of 3 top most frequent contacts  is categorized as (->) often receives support, otherwise if 'sometimes' receiving support sometimes from any 1 of 3 top most frequent contacts -> sometimes receives support, otherwise if receiving 'seldom' or 'never' support from all 3 top most frequent contacts -> never receives support.   
+**Harmonization comment**: If the participant reported receiving instrumental support 'often' from any 1 of 3 top most frequent contacts, the harmonized variable is categorized as 2 | Often received instrumental support, otherwise if they reported 'sometimes' receiving instrumental support from any 1 of the 3 contacts, the harmonized variable is coded as  1 |  Sometimes received instrumental support, otherwise if they reported receiving instrumental support 'seldom' or 'never' from all 3 contacts, they were categorized under 0 |  Never received instrumental support. In case participant reported as only having 1 or 2 confidants instead of 3, then only support from the first confidant, or the first 2 confidants, is used to categorize support received per participant. 
 **R script**:  
 ```{r, echo=TRUE}
-soc_LASA2_0$soc_ss_received_instru_0 <- ifelse(LASA2B_socialnet$rec_instru_conf1 ==4 | LASA2B_socialnet$rec_instru_conf2 ==4 |LASA2B_socialnet$rec_instru_conf3 == 4, 2L, 
-                                         ifelse((LASA2B_socialnet$rec_instru_conf1  ==3 | LASA2B_socialnet$rec_instru_conf2  ==3 |LASA2B_socialnet$rec_instru_conf3 == 3) & (LASA2B_socialnet$rec_instru_conf1  !=4 & LASA2B_socialnet$rec_instru_conf2  !=4 & LASA2B_socialnet$rec_instru_conf3 !=4), 1L, 
-                                             ifelse(LASA2B_socialnet$rec_instru_conf1 <=2 | LASA2B_socialnet$rec_instru_conf2 <=2 |LASA2B_socialnet$rec_instru_conf3 <=2, 0L, NA)))
+colnames(LASA2B)
 
-table(soc_LASA2_0$soc_ss_received_instru_0) 
+soc_LASA2_0$soc_ss_received_instru_0<-do.call( pmax, c(LASA2B[53:55], na.rm=T ))
+soc_LASA2_0$soc_ss_received_instru_0 <- car::recode(soc_LASA2_0$soc_ss_received_instru_0, "4=2L; 3=1L; 2=0L; 1=0L" )
+
+table(soc_LASA2_0$soc_ss_received_instru_0, useNA="always") 
 summary(soc_LASA2_0$soc_ss_received_instru_0)
+
 ```
 ### **Variable label**: Received instrumental support   
 **Variable name**:   soc_ss_received_instru_1 
@@ -2108,14 +2100,15 @@ summary(soc_LASA2_0$soc_ss_received_instru_0)
 2 |  Often received instrumental support
 
 **Harmonization status**:  complete
-**Harmonization comment**: The 3 confidants were identified as the top 3 most frequent contacts that are also the top 3 confidants reported by the respondent.  Study specific variable is categorized as following: 'often' receiving support from any 1 of 3 confidants  is categorized as (->) often receives support, otherwise if 'sometimes' receiving support sometimes from any 1 of 3 confidants -> sometimes receives support, otherwise if receiving 'seldom' or 'never' support from all 3 confidants -> never receives support.   
+**Harmonization comment**: If the participant reported receiving instrumental support 'often' from any 1 of 3 top most frequent contacts, the harmonized variable is categorized as 2 | Often received instrumental support, otherwise if they reported 'sometimes' receiving instrumental support from any 1 of the 3 contacts, the harmonized variable is coded as  1 |  Sometimes received instrumental support, otherwise if they reported receiving instrumental support 'seldom' or 'never' from all 3 contacts, they were categorized under 0 |  Never received instrumental support.  In case participant reported as only having 1 or 2 confidants instead of 3, then only support from the first confidant, or the first 2 confidants, is used to categorize support received per participant. 
 **R script**:  
 ```{r, echo=TRUE}
-soc_LASA2_1$soc_ss_received_instru_1 <- ifelse(LASA2F_socialnet$rec_instru_conf1 ==4 | LASA2F_socialnet$rec_instru_conf2 ==4 |LASA2F_socialnet$rec_instru_conf3 == 4, 2L, 
-                                         ifelse((LASA2F_socialnet$rec_instru_conf1  ==3 | LASA2F_socialnet$rec_instru_conf2  ==3 |LASA2F_socialnet$rec_instru_conf3 == 3) & (LASA2F_socialnet$rec_instru_conf1  !=4 & LASA2F_socialnet$rec_instru_conf2  !=4 & LASA2F_socialnet$rec_instru_conf3 !=4), 1L, 
-                                             ifelse(LASA2F_socialnet$rec_instru_conf1 <=2 | LASA2F_socialnet$rec_instru_conf2 <=2 |LASA2F_socialnet$rec_instru_conf3 <=2, 0L, NA)))
+colnames(LASA2F)
 
-table(soc_LASA2_1$soc_ss_received_instru_1) 
+soc_LASA2_1$soc_ss_received_instru_1 <-do.call( pmax, c(LASA2F[65:67], na.rm=T ))
+soc_LASA2_1$soc_ss_received_instru_1 <- car::recode(soc_LASA2_1$soc_ss_received_instru_1, "4=2L; 3=1L; 2=0L; 1=0L" )
+
+table(soc_LASA2_1$soc_ss_received_instru_1, useNA="always") 
 summary(soc_LASA2_1$soc_ss_received_instru_1)
 ```
 ### **Variable label**: Received instrumental support   
@@ -2132,12 +2125,13 @@ summary(soc_LASA2_1$soc_ss_received_instru_1)
 2 |  Often received instrumental support
 
 **Harmonization status**:  complete
-**Harmonization comment**: The 3 confidants were identified as the top 3 most frequent contacts that are also the top 3 confidants reported by the respondent.  Study specific variable is categorized as following: 'often' receiving support from any 1 of 3 confidants  is categorized as (->) often receives support, otherwise if 'sometimes' receiving support sometimes from any 1 of 3 confidants -> sometimes receives support, otherwise if receiving 'seldom' or 'never' support from all 3 confidants -> never receives support.   
+**Harmonization comment**: If the participant reported receiving instrumental support 'often' from any 1 of 3 top most frequent contacts, the harmonized variable is categorized as 2 | Often received instrumental support, otherwise if they reported 'sometimes' receiving instrumental support from any 1 of the 3 contacts, the harmonized variable is coded as  1 |  Sometimes received instrumental support, otherwise if they reported receiving instrumental support 'seldom' or 'never' from all 3 contacts, they were categorized under 0 |  Never received instrumental support.  In case participant reported as only having 1 or 2 confidants instead of 3, then only support from the first confidant, or the first 2 confidants, is used to categorize support received per participant. 
 **R script**:  
 ```{r, echo=TRUE}
-soc_LASA2_2$soc_ss_received_instru_2 <- ifelse(LASA2G_socialnet$rec_instru_conf1 ==4 | LASA2G_socialnet$rec_instru_conf2 ==4 |LASA2G_socialnet$rec_instru_conf3 == 4, 2L, 
-                                         ifelse((LASA2G_socialnet$rec_instru_conf1  ==3 | LASA2G_socialnet$rec_instru_conf2  ==3 |LASA2G_socialnet$rec_instru_conf3 == 3) & (LASA2G_socialnet$rec_instru_conf1  !=4 & LASA2G_socialnet$rec_instru_conf2  !=4 & LASA2G_socialnet$rec_instru_conf3 !=4), 1L, 
-                                             ifelse(LASA2G_socialnet$rec_instru_conf1 <=2 | LASA2G_socialnet$rec_instru_conf2 <=2 |LASA2G_socialnet$rec_instru_conf3 <=2, 0L, NA)))
+colnames(LASA2G)
+
+soc_LASA2_2$soc_ss_received_instru_2 <-do.call( pmax, c(LASA2G[75:77], na.rm=T ))
+soc_LASA2_2$soc_ss_received_instru_2 <- car::recode(soc_LASA2_2$soc_ss_received_instru_2, "4=2L; 3=1L; 2=0L; 1=0L" )
 
 table(soc_LASA2_2$soc_ss_received_instru_2) 
 summary(soc_LASA2_2$soc_ss_received_instru_2)
@@ -2156,12 +2150,13 @@ summary(soc_LASA2_2$soc_ss_received_instru_2)
 2 |  Often received instrumental support
 
 **Harmonization status**:  complete
-**Harmonization comment**: The 3 confidants were identified as the top 3 most frequent contacts that are also the top 3 confidants reported by the respondent.  Study specific variable is categorized as following: 'often' receiving support from any 1 of 3 confidants  is categorized as (->) often receives support, otherwise if 'sometimes' receiving support sometimes from any 1 of 3 confidants -> sometimes receives support, otherwise if receiving 'seldom' or 'never' support from all 3 confidants -> never receives support.   
+**Harmonization comment**: If the participant reported receiving instrumental support 'often' from any 1 of 3 top most frequent contacts, the harmonized variable is categorized as 2 | Often received instrumental support, otherwise if they reported 'sometimes' receiving instrumental support from any 1 of the 3 contacts, the harmonized variable is coded as  1 |  Sometimes received instrumental support, otherwise if they reported receiving instrumental support 'seldom' or 'never' from all 3 contacts, they were categorized under 0 |  Never received instrumental support.  In case participant reported as only having 1 or 2 confidants instead of 3, then only support from the first confidant, or the first 2 confidants, is used to categorize support received per participant. 
 **R script**:  
 ```{r, echo=TRUE}
-soc_LASA2_3$soc_ss_received_instru_3 <- ifelse(LASA2H_socialnet$rec_instru_conf1 ==4 | LASA2H_socialnet$rec_instru_conf2 ==4 |LASA2H_socialnet$rec_instru_conf3 == 4, 2L, 
-                                         ifelse((LASA2H_socialnet$rec_instru_conf1  ==3 | LASA2H_socialnet$rec_instru_conf2  ==3 |LASA2H_socialnet$rec_instru_conf3 == 3) & (LASA2H_socialnet$rec_instru_conf1  !=4 & LASA2H_socialnet$rec_instru_conf2  !=4 & LASA2H_socialnet$rec_instru_conf3 !=4), 1L, 
-                                             ifelse(LASA2H_socialnet$rec_instru_conf1 <=2 | LASA2H_socialnet$rec_instru_conf2 <=2 |LASA2H_socialnet$rec_instru_conf3 <=2, 0L, NA)))
+colnames(LASA2H)
+
+soc_LASA2_3$soc_ss_received_instru_3 <-do.call( pmax, c(LASA2H[63:65], na.rm=T ))
+soc_LASA2_3$soc_ss_received_instru_3 <- car::recode(soc_LASA2_3$soc_ss_received_instru_3, "4=2L; 3=1L; 2=0L; 1=0L" )
 
 table(soc_LASA2_3$soc_ss_received_instru_3) 
 summary(soc_LASA2_3$soc_ss_received_instru_3)
@@ -2428,9 +2423,9 @@ summary(soc_LASA2_3$soc_ss_Zscore_perceived_emo_3)
 **Harmonization comment**:  Study specific variable is based on one item that asks: "If you were sick, would there be someone available to help you out?" If respondent answered "myself", they are not categorized as feeling that tangible help is available. Respondents that did not answer this question because they have stated previously that they are receiving help (e.g. most likely living in nursing home or similar care residences) are categorized as feeling that tangible help is available.   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2B_socialnet$perceived_instru) 
-summary(LASA2B_socialnet$perceived_instru)
-soc_LASA2_0$soc_ss_perceived_instru_0 <- as.integer(LASA2B_socialnet$perceived_instru)
+table(LASA2B$perceived_instru) 
+summary(LASA2B$perceived_instru)
+soc_LASA2_0$soc_ss_perceived_instru_0 <- as.integer(LASA2B$perceived_instru)
 
 table(soc_LASA2_0$soc_ss_perceived_instru_0) 
 summary(soc_LASA2_0$soc_ss_perceived_instru_0)
@@ -2451,9 +2446,9 @@ summary(soc_LASA2_0$soc_ss_perceived_instru_0)
 **Harmonization comment**:  Study specific variable is based on one item that asks: "If you were sick, would there be someone available to help you out?" If respondent answered "myself", they are not categorized as feeling that tangible help is available. Respondents that did not answer this question because they have stated previously that they are receiving help (e.g. most likely living in nursing home or similar care residences) are categorized as feeling that tangible help is available.   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2F_socialnet$perceived_instru) 
-summary(LASA2F_socialnet$perceived_instru)
-soc_LASA2_1$soc_sn_perceived_instru_1 <- as.integer(LASA2F_socialnet$perceived_instru)
+table(LASA2F$perceived_instru) 
+summary(LASA2F$perceived_instru)
+soc_LASA2_1$soc_sn_perceived_instru_1 <- as.integer(LASA2F$perceived_instru)
 
 table(soc_LASA2_1$soc_sn_perceived_instru_1) 
 summary(soc_LASA2_1$soc_sn_perceived_instru_1)
@@ -2474,9 +2469,9 @@ summary(soc_LASA2_1$soc_sn_perceived_instru_1)
 **Harmonization comment**:  Study specific variable is based on one item that asks: "If you were sick, would there be someone available to help you out?" If respondent answered "myself", they are not categorized as feeling that tangible help is available. Respondents that did not answer this question because they have stated previously that they are receiving help (e.g. most likely living in nursing home or similar care residences) are categorized as feeling that tangible help is available.    
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2G_socialnet$perceived_instru) 
-summary(LASA2G_socialnet$perceived_instru)
-soc_LASA2_2$soc_sn_perceived_instru_2 <- as.integer(LASA2G_socialnet$perceived_instru)
+table(LASA2G$perceived_instru) 
+summary(LASA2G$perceived_instru)
+soc_LASA2_2$soc_sn_perceived_instru_2 <- as.integer(LASA2G$perceived_instru)
 
 table(soc_LASA2_2$soc_sn_perceived_instru_2) 
 summary(soc_LASA2_2$soc_sn_perceived_instru_2)
@@ -2497,9 +2492,9 @@ summary(soc_LASA2_2$soc_sn_perceived_instru_2)
 **Harmonization comment**:  Study specific variable is based on one item that asks: "If you were sick, would there be someone available to help you out?" If respondent answered "myself", they are not categorized as feeling that tangible help is available. Respondents that did not answer this question because they have stated previously that they are receiving help (e.g. most likely living in nursing home or similar care residences) are categorized as feeling that tangible help is available.   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2H_socialnet$perceived_instru) 
-summary(LASA2H_socialnet$perceived_instru)
-soc_LASA2_3$soc_sn_perceived_instru_3 <- as.integer(LASA2H_socialnet$perceived_instru)
+table(LASA2H$perceived_instru) 
+summary(LASA2H$perceived_instru)
+soc_LASA2_3$soc_sn_perceived_instru_3 <- as.integer(LASA2H$perceived_instru)
 
 table(soc_LASA2_3$soc_sn_perceived_instru_3) 
 summary(soc_LASA2_3$soc_sn_perceived_instru_3)
@@ -2577,17 +2572,17 @@ summary(soc_LASA2_3$soc_sn_perceived_instru_3)
 1 |  Does participate in a religious organization 
 
 **Harmonization status**:  complete 
-**Harmonization comment**:   
+**Harmonization comment**:  Participants were asked if: 1.they are involved in an association, 2. they are a member of a specific organization and 3. they visit the organization. The first two items were used to identify non-participants and the third item was used to identify participants in this particular organization.    
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2B$bsocp17)  #  2= yes 1 = no 
-summary(LASA2B$bsocp17)
+table(LASA2B$bsocpyn, useNA="always")  #  2= yes 1 = no 
+table(LASA2B$bsocp04, useNA="always")  #  2= yes 1 = no 
+table(LASA2B$bsocp17, useNA="always")  #  2= yes 1 = no 
 
-soc_LASA2_0$soc_sp_religious_0 <- ifelse(LASA2B$bsocp17 ==2,1L, 
-                       ifelse(LASA2B$bsocp17 ==1,0L, NA))
+soc_LASA2_0$soc_sp_religious_0 <- ifelse(LASA2B$bsocpyn==1|LASA2B$bsocp04==0|LASA2B$bsocp17==1,0L, 
+                                         ifelse(LASA2B$bsocp17 ==2,1L, NA))
 
-table(soc_LASA2_0$soc_sp_religious_0) 
-summary(soc_LASA2_0$soc_sp_religious_0) 
+table(soc_LASA2_0$soc_sp_religious_0, useNA="always") 
 ```
 ### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_1        
@@ -2602,16 +2597,13 @@ summary(soc_LASA2_0$soc_sp_religious_0)
 1 |  Does participate in a religious organization  
 
 **Harmonization status**:  complete  
-**Harmonization comment**:   
+**Harmonization comment**:  Participants were asked if: 1.they are involved in an association, 2. they are a member of a specific organization and 3. they visit the organization. The first two items were used to identify non-participants and the third item was used to identify participants in this particular organization.    
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2F$fsocp17)  
-summary(LASA2F$fsocp17)
-soc_LASA2_1$soc_sp_religious_1 <- ifelse(LASA2F$fsocp17 ==2,1L, 
-                       ifelse(LASA2F$fsocp17 ==1,0L, NA))
+soc_LASA2_1$soc_sp_religious_1 <- ifelse(LASA2F$fsocpyn==1|LASA2F$fsocp04==0|LASA2F$fsocp17==1,0L, 
+                                         ifelse(LASA2F$fsocp17 ==2,1L, NA))
 
-table(soc_LASA2_1$soc_sp_religious_1) 
-summary(soc_LASA2_1$soc_sp_religious_1) 
+table(soc_LASA2_1$soc_sp_religious_1, useNA="always") 
 ```
 ### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_2        
@@ -2626,16 +2618,13 @@ summary(soc_LASA2_1$soc_sp_religious_1)
 1 |  Does participate in a religious organization 
 
 **Harmonization status**:  complete  
-**Harmonization comment**:   
+**Harmonization comment**:  Participants were asked if: 1.they are involved in an association, 2. they are a member of a specific organization and 3. they visit the organization. The first two items were used to identify non-participants and the third item was used to identify participants in this particular organization.    
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2G$gsocp17)  
-summary(LASA2G$gsocp17)
-soc_LASA2_2$soc_sp_religious_2 <- ifelse(LASA2G$gsocp17 ==2,1L, 
-                       ifelse(LASA2G$gsocp17 ==1,0L, NA))
+soc_LASA2_2$soc_sp_religious_2 <- ifelse(LASA2G$gsocpyn==1|LASA2G$gsocp04==0|LASA2G$gsocp17==1,0L, 
+                                         ifelse(LASA2G$gsocp17 ==2,1L, NA))
 
-table(soc_LASA2_2$soc_sp_religious_2) 
-summary(soc_LASA2_2$soc_sp_religious_2)
+table(soc_LASA2_2$soc_sp_religious_2, useNA="always") 
 ```
 ### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_3        
@@ -2650,16 +2639,13 @@ summary(soc_LASA2_2$soc_sp_religious_2)
 1 |  Does participate in a religious organization 
 
 **Harmonization status**:  complete  
-**Harmonization comment**:   
+**Harmonization comment**:  Participants were asked if: 1.they are involved in an association, 2. they are a member of a specific organization and 3. they visit the organization. The first two items were used to identify non-participants and the third item was used to identify participants in this particular organization.    
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2H$HSOCP17)  
-summary(LASA2H$HSOCP17)
-soc_LASA2_3$soc_sp_religious_3 <- ifelse(LASA2H$HSOCP17 ==2,1L, 
-                       ifelse(LASA2H$HSOCP17 ==1,0L, NA))
+soc_LASA2_3$soc_sp_religious_3<- ifelse(LASA2H$HSOCPYN==1|LASA2H$HSOCP04==0|LASA2H$HSOCP17==1,0L, 
+                                         ifelse(LASA2H$HSOCP17 ==2,1L, NA))
 
-table(soc_LASA2_3$soc_sp_religious_3) 
-summary(soc_LASA2_3$soc_sp_religious_3) 
+table(soc_LASA2_3$soc_sp_religious_3, useNA="always") 
 ```
 ### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_4        
@@ -2926,19 +2912,13 @@ summary(soc_LASA2_3$soc_sp_religious_3)
 1 |  Does participate in a cultural or educational organization 
 
 **Harmonization status**:  complete 
-**Harmonization comment**:  Study specific variables used ask about participation in museums and in other cultural centers.  The variable do you study (yes/no) is also used. Participation in any of these organizations is coded as 'Does participate in a cultural or educational organization.'     
+**Harmonization comment**:  Participants were asked if: 1.they are involved in an association, 2. they are a member of a specific organization and 3. they visit the organization. The first two items were used to identify non-participants and the third item was used to identify participants in this particular organization. Study specific variables used ask about participation in an organization for singing, music or theatre. and in cultural organizations (museums and in other cultural centers). The item: do you study (yes/no) is used to identify participation in an educational organization.      
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2B$bsocp23) 
-table(LASA2B$bsocp46) 
-table(LASA2B$bsocp48)  
-table(LASA2B$bsocp55)  
+soc_LASA2_0$soc_sp_cultural_edu_0 <- ifelse(LASA2B$bsocp23 ==2 | LASA2B$bsocp55 ==2 ,1L,
+                                            ifelse((LASA2B$bsocpyn ==1| LASA2B$bsocp10 ==0)| (LASA2B$bsocp23 ==1| LASA2B$bsocp55 ==1),0L,NA))
 
-soc_LASA2_0$soc_sp_cultural_edu_0 <- ifelse(LASA2B$bsocp23 =='2'| LASA2B$bsocp46 =='2'| LASA2B$bsocp48 =='2'| LASA2B$bsocp55 =='2',1L, 
-                                     ifelse(LASA2B$bsocp23 =='1'& LASA2B$bsocp46 =='1'& LASA2B$bsocp48 =='1'& LASA2B$bsocp55 =='1',0L, NA))
-
-table(soc_LASA2_0$soc_sp_cultural_edu_0) 
-summary(soc_LASA2_0$soc_sp_cultural_edu_0) 
+table(soc_LASA2_0$soc_sp_cultural_edu_0, useNA="always")
 ```
 ### **Variable label**:  Cultural and educational participation   
 **Variable name**:  soc_sp_cultural_edu_1           
@@ -2953,19 +2933,13 @@ summary(soc_LASA2_0$soc_sp_cultural_edu_0)
 1 |  Does participate in a cultural or educational organization 
 
 **Harmonization status**:  complete 
-**Harmonization comment**:  Study specific variables used ask about participation in museums and in other cultural centers.  The variable do you study (yes/no) is also used. Participation in any of these organizations is coded as 'Does participate in a cultural or educational organization.'     
+**Harmonization comment**:   Participants were asked if: 1.they are involved in an association, 2. they are a member of a specific organization and 3. they visit the organization. The first two items were used to identify non-participants and the third item was used to identify participants in this particular organization. Study specific variables used ask about participation in an organization for singing, music or theatre. and in cultural organizations (museums and in other cultural centers). The item: do you study (yes/no) is used to identify participation in an educational organization.         
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2F$fsocp23) 
-table(LASA2F$fsocp46) 
-table(LASA2F$fsocp48)  
-table(LASA2F$fsocp55)  
-
-soc_LASA2_1$soc_sp_cultural_edu_1 <- ifelse(LASA2F$fsocp23 =='2'| LASA2F$fsocp46 =='2'| LASA2F$fsocp48 =='2'| LASA2F$fsocp55 =='2',1L, 
-                                     ifelse(LASA2F$fsocp23 =='1'& LASA2F$fsocp46 =='1'& LASA2F$fsocp48 =='1'& LASA2F$fsocp55 =='1',0L, NA))
-
-table(soc_LASA2_1$soc_sp_cultural_edu_1) 
-summary(soc_LASA2_1$soc_sp_cultural_edu_1) 
+soc_LASA2_1$soc_sp_cultural_edu_1 <- ifelse(LASA2F$fsocp23 ==2 | LASA2F$fsocp55 ==2 ,1L,
+ifelse((LASA2F$fsocpyn ==1| LASA2F$fsocp10 ==0)| (LASA2F$fsocp23 ==1| LASA2F$fsocp55) ==1,0L, NA))
+                                     
+table(soc_LASA2_1$soc_sp_cultural_edu_1, useNA="always") 
 ```
 ### **Variable label**:  Cultural and educational participation   
 **Variable name**:  soc_sp_cultural_edu_2           
@@ -2980,19 +2954,13 @@ summary(soc_LASA2_1$soc_sp_cultural_edu_1)
 1 |  Does participate in a cultural or educational organization 
 
 **Harmonization status**:  complete 
-**Harmonization comment**:  Study specific variables used ask about participation in museums and in other cultural centers.  The variable do you study (yes/no) is also used. Participation in any of these organizations is coded as 'Does participate in a cultural or educational organization.'     
+**Harmonization comment**:  Participants were asked if: 1.they are involved in an association, 2. they are a member of a specific organization and 3. they visit the organization. The first two items were used to identify non-participants and the third item was used to identify participants in this particular organization. Study specific variables used ask about participation in an organization for singing, music or theatre. and in cultural organizations (museums and in other cultural centers). The item: do you study (yes/no) is used to identify participation in an educational organization.  
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2G$gsocp23) 
-table(LASA2G$gsocp46) 
-table(LASA2G$gsocp48)  
-table(LASA2G$gsocp55)  
+soc_LASA2_2$soc_sp_cultural_edu_2 <-  ifelse(LASA2G$gsocp23 ==2 | LASA2G$gsocp55 ==2 ,1L,
+                                             ifelse(LASA2G$gsocpyn ==1| LASA2G$gsocp10 ==0| LASA2G$gsocp23 ==1| LASA2G$gsocp55 ==1,0L, NA))
 
-soc_LASA2_2$soc_sp_cultural_edu_2 <- ifelse(LASA2G$gsocp23 =='2'| LASA2G$gsocp46 =='2'| LASA2G$gsocp48 =='2'| LASA2G$gsocp55 =='2',1L, 
-                                     ifelse(LASA2G$gsocp23 =='1'& LASA2G$gsocp46 =='1'& LASA2G$gsocp48 =='1'& LASA2G$gsocp55 =='1',0L, NA))
-
-table(soc_LASA2_2$soc_sp_cultural_edu_2) 
-summary(soc_LASA2_2$soc_sp_cultural_edu_2) 
+table(soc_LASA2_2$soc_sp_cultural_edu_2, useNA="always")  
 ```
 ### **Variable label**:  Cultural and educational participation   
 **Variable name**:  soc_sp_cultural_edu_3           
@@ -3007,19 +2975,14 @@ summary(soc_LASA2_2$soc_sp_cultural_edu_2)
 1 |  Does participate in a cultural or educational organization 
 
 **Harmonization status**:  complete 
-**Harmonization comment**:  Study specific variables used ask about participation in museums and in other cultural centers.  The variable do you study (yes/no) is also used. Participation in any of these organizations is coded as 'Does participate in a cultural or educational organization.'     
+**Harmonization comment**:  Participants were asked if: 1.they are involved in an association, 2. they are a member of a specific organization and 3. they visit the organization. The first two items were used to identify non-participants and the third item was used to identify participants in this particular organization. Study specific variables used ask about participation in an organization for singing, music or theatre. and in cultural organizations (museums and in other cultural centers). The item: do you study (yes/no) is used to identify participation in an educational organization.       
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2H$HSOCP23) 
-table(LASA2H$HSOCP46) 
-table(LASA2H$HSOCP48)  
-table(LASA2H$HSOCP55)  
 
-soc_LASA2_3$soc_sp_cultural_edu_3 <- ifelse(LASA2H$HSOCP23 =='2'| LASA2H$HSOCP46 =='2'| LASA2H$HSOCP48 =='2'| LASA2H$HSOCP55 =='2',1L, 
-                                     ifelse(LASA2H$HSOCP23 =='1'& LASA2H$HSOCP46 =='1'& LASA2H$HSOCP48 =='1'& LASA2H$HSOCP55 =='1',0L, NA))
+soc_LASA2_3$soc_sp_cultural_edu_3 <- ifelse(LASA2H$HSOCP23 ==2 | LASA2H$HSOCP55 ==2 ,1L,
+                                            ifelse((LASA2H$HSOCPYN ==1| LASA2H$HSOCP10 ==0)| (LASA2H$HSOCP23 ==1| LASA2H$HSOCP55 ==1),0L, NA))
 
-table(soc_LASA2_3$soc_sp_cultural_edu_3) 
-summary(soc_LASA2_3$soc_sp_cultural_edu_3) 
+table(soc_LASA2_3$soc_sp_cultural_edu_3, useNA="always") 
 ```
 ### **Variable label**:  Cultural and educational participation   
 **Variable name**:  soc_sp_cultural_edu_4           
@@ -3091,7 +3054,7 @@ summary(soc_LASA2_3$soc_sp_cultural_edu_3)
 1 |  Does participate in a cultural, educational or social organization 
 
 **Harmonization status**:  complete 
-**Harmonization comment**:  Study specific variables used ask about participation in (visiting): Association for the elderly, Organisation for women, Organisation for helping, Organisation with a social purpose the elderly, Organisation for singing, music or theatre. Cultural participation in museums and in other cultural centers and the variable do you study (yes/no) are also used. Participation in any of these organizations is coded as "Does participate in a cultural, educational or social organization."    
+**Harmonization comment**:  Participants were asked if: 1.they are involved in an association, 2. they are a member of a specific organization and 3. they visit the organization. The first two items were used to identify non-participants and the third item was used to identify participants in this particular organization. Study specific variables used ask about participation in (visiting): Association for the elderly, Organisation for helping the elderly, Organisation with a social purpose, Organisation for singing, music or theatre.  Additionally, the variable do you study (yes/no) was used in harmonization. Participation in any of these organizations, or studying, is coded as "Does participate in a cultural, educational or social organization."     
 **R script**:  
 ```{r, echo=TRUE}
 table(LASA2B$bsocp14)  
@@ -3101,11 +3064,10 @@ table(LASA2B$bsocp21)
 table(LASA2B$bsocp23) 
 table(LASA2B$bsocp55)  
 
-soc_LASA2_0$soc_sp_cul_edu_soc_0 <- ifelse(LASA2B$bsocp14 =='2' | LASA2B$bsocp19 =='2' | LASA2B$bsocp20 =='2'| LASA2B$bsocp21 =='2'| LASA2B$bsocp23 =='2'| LASA2B$bsocp55 =='2',1L, 
-                                     ifelse(LASA2B$bsocp14 =='1' & LASA2B$bsocp19 =='1'& LASA2B$bsocp20 =='1'& LASA2B$bsocp21 =='1'& LASA2B$bsocp23 =='1'&  LASA2B$bsocp55 =='1',0L, NA))
-
-table(soc_LASA2_0$soc_sp_cul_edu_soc_0) 
-summary(soc_LASA2_0$soc_sp_cul_edu_soc_0) 
+soc_LASA2_0$soc_sp_cul_edu_soc_0 <- ifelse(LASA2B$bsocp14 ==2 | LASA2B$bsocp20==2 | LASA2B$bsocp21==2 |  LASA2B$bsocp23==2 | LASA2B$bsocp55==2 ,1L, 
+                                           ifelse((LASA2B$bsocpyn==1 | LASA2B$bsocp01 ==0| LASA2B$bsocp07 ==0 | LASA2B$bsocp08 ==0  | LASA2B$bsocp10 ==0 ) | (LASA2B$bsocp14 ==1 | LASA2B$bsocp20==1 | LASA2B$bsocp21==1|LASA2B$bsocp23==1|LASA2B$bsocp55==1),0L, NA))
+       
+table(soc_LASA2_0$soc_sp_cul_edu_soc_0, useNA="always")
 ```
 ### **Variable label**:  Cultural, educational and social participation       
 **Variable name**:  soc_sp_cul_edu_soc_1                 
@@ -3120,7 +3082,7 @@ summary(soc_LASA2_0$soc_sp_cul_edu_soc_0)
 1 |  Does participate in a cultural, educational or social organization 
 
 **Harmonization status**:  complete 
-**Harmonization comment**:  Study specific variables used ask about participation in (visiting): Association for the elderly, Organisation for women, Organisation for helping, Organisation with a social purpose the elderly, Organisation for singing, music or theatre. Cultural participation in museums and in other cultural centers and the variable do you study (yes/no) are also used. Participation in any of these organizations is coded as "Does participate in a cultural, educational or social organization."    
+**Harmonization comment**:  Participants were asked if: 1.they are involved in an association, 2. they are a member of a specific organization and 3. they visit the organization. The first two items were used to identify non-participants and the third item was used to identify participants in this particular organization. Study specific variables used ask about participation in (visiting): Association for the elderly, Organisation for helping the elderly, Organisation with a social purpose, Organisation for singing, music or theatre.  Additionally, the variable do you study (yes/no) was used in harmonization. Participation in any of these organizations, or studying, is coded as "Does participate in a cultural, educational or social organization."    
 **R script**:  
 ```{r, echo=TRUE}
 table(LASA2F$fsocp14)  
@@ -3130,11 +3092,10 @@ table(LASA2F$fsocp21)
 table(LASA2F$fsocp23) 
 table(LASA2F$fsocp55)  
 
-soc_LASA2_1$soc_sp_cul_edu_soc_1 <- ifelse(LASA2F$fsocp14 =='2' | LASA2F$fsocp19 =='2' | LASA2F$fsocp20 =='2'| LASA2F$fsocp21 =='2'| LASA2F$fsocp23 =='2'| LASA2F$fsocp55 =='2',1L, 
-                                     ifelse(LASA2F$fsocp14 =='1' & LASA2F$fsocp19 =='1'& LASA2F$fsocp20 =='1'& LASA2F$fsocp21 =='1'& LASA2F$fsocp23 =='1'& LASA2F$fsocp55 =='1',0L, NA))
-
-table(soc_LASA2_1$soc_sp_cul_edu_soc_1) 
-summary(soc_LASA2_1$soc_sp_cul_edu_soc_1) 
+soc_LASA2_1$soc_sp_cul_edu_soc_1 <- ifelse(LASA2F$fsocp14 ==2 | LASA2F$fsocp20==2 | LASA2F$fsocp21==2 |  LASA2F$fsocp23==2 | LASA2F$fsocp55==2 ,1L, 
+                                           ifelse((LASA2F$fsocpyn==1 | LASA2F$fsocp01 ==0| LASA2F$fsocp07 ==0 | LASA2F$fsocp08 ==0  | LASA2F$fsocp10 ==0 ) | (LASA2F$fsocp14 ==1 | LASA2F$fsocp20==1 | LASA2F$fsocp21==1| LASA2F$fsocp23==1 |LASA2F$fsocp55==1),0L, NA))
+       
+table(soc_LASA2_1$soc_sp_cul_edu_soc_1, useNA="always")
 ```
 ### **Variable label**:  Cultural, educational and social participation       
 **Variable name**:  soc_sp_cul_edu_soc_2                 
@@ -3149,7 +3110,7 @@ summary(soc_LASA2_1$soc_sp_cul_edu_soc_1)
 1 |  Does participate in a cultural, educational or social organization 
 
 **Harmonization status**:  complete 
-**Harmonization comment**:   Study specific variables used ask about participation in (visiting): Association for the elderly, Organisation for women, Organisation for helping, Organisation with a social purpose the elderly, Organisation for singing, music or theatre. Cultural participation in museums and in other cultural centers and the variable do you study (yes/no) are also used. Participation in any of these organizations is coded as "Does participate in a cultural, educational or social organization."   
+**Harmonization comment**:   Participants were asked if: 1.they are involved in an association, 2. they are a member of a specific organization and 3. they visit the organization. The first two items were used to identify non-participants and the third item was used to identify participants in this particular organization. Study specific variables used ask about participation in (visiting): Association for the elderly, Organisation for helping the elderly, Organisation with a social purpose, Organisation for singing, music or theatre.  Additionally, the variable do you study (yes/no) was used in harmonization. Participation in any of these organizations, or studying, is coded as "Does participate in a cultural, educational or social organization."   
 **R script**:  
 ```{r, echo=TRUE}
 table(LASA2G$gsocp14)  
@@ -3159,11 +3120,10 @@ table(LASA2G$gsocp21)
 table(LASA2G$gsocp23) 
 table(LASA2G$gsocp55)  
 
-soc_LASA2_2$soc_sp_cul_edu_soc_2 <- ifelse(LASA2G$gsocp14 =='2' | LASA2G$gsocp19 =='2' | LASA2G$gsocp20 =='2'| LASA2G$gsocp21 =='2'| LASA2G$gsocp23 =='2'| LASA2G$gsocp55 =='2',1L, 
-                                     ifelse(LASA2G$gsocp14 =='1' & LASA2G$gsocp19 =='1'& LASA2G$gsocp20 =='1'& LASA2G$gsocp21 =='1'& LASA2G$gsocp23 =='1'& LASA2G$gsocp55 =='1',0L, NA))
-
-table(soc_LASA2_2$soc_sp_cul_edu_soc_2) 
-summary(soc_LASA2_2$soc_sp_cul_edu_soc_2) 
+soc_LASA2_2$soc_sp_cul_edu_soc_2 <- ifelse(LASA2G$gsocp14 ==2 | LASA2G$gsocp20==2 | LASA2G$gsocp21==2 |  LASA2G$gsocp23==2 | LASA2G$gsocp55==2 ,1L, 
+                                           ifelse((LASA2G$gsocpyn==1 | LASA2G$gsocp01 ==0| LASA2G$gsocp07 ==0 | LASA2G$gsocp08 ==0  | LASA2G$gsocp10 ==0 ) | (LASA2G$gsocp14 ==1 | LASA2G$gsocp20==1 | LASA2G$gsocp21==1|LASA2G$gsocp23==1 | LASA2G$gsocp55==1),0L, NA))
+       
+table(soc_LASA2_2$soc_sp_cul_edu_soc_2, useNA="always")
 ```
 ### **Variable label**:  Cultural, educational and social participation       
 **Variable name**:  soc_sp_cul_edu_soc_3               
@@ -3178,7 +3138,7 @@ summary(soc_LASA2_2$soc_sp_cul_edu_soc_2)
 1 |  Does participate in a cultural, educational or social organization 
 
 **Harmonization status**:  complete 
-**Harmonization comment**:   Study specific variables used ask about participation in (visiting): Association for the elderly, Organisation for women, Organisation for helping, Organisation with a social purpose the elderly, Organisation for singing, music or theatre. Cultural participation in museums and in other cultural centers and the variable do you study (yes/no) are also used. Participation in any of these organizations is coded as "Does participate in a cultural, educational or social organization."   
+**Harmonization comment**:   Participants were asked if: 1.they are involved in an association, 2. they are a member of a specific organization and 3. they visit the organization. The first two items were used to identify non-participants and the third item was used to identify participants in this particular organization. Study specific variables used ask about participation in (visiting): Association for the elderly, Organisation for helping the elderly, Organisation with a social purpose, Organisation for singing, music or theatre.  Additionally, the variable do you study (yes/no) was used in harmonization. Participation in any of these organizations, or studying, is coded as "Does participate in a cultural, educational or social organization."    
 **R script**:  
 ```{r, echo=TRUE}
 table(LASA2H$HSOCP14)  
@@ -3188,11 +3148,11 @@ table(LASA2H$HSOCP21)
 table(LASA2H$HSOCP23) 
 table(LASA2H$HSOCP55)  
 
-soc_LASA2_3$soc_sp_cul_edu_soc_3 <- ifelse(LASA2H$HSOCP14 =='2' | LASA2H$HSOCP19 =='2' | LASA2H$HSOCP20 =='2'| LASA2H$HSOCP21 =='2'| LASA2H$HSOCP23 =='2'|  LASA2H$HSOCP55 =='2',1L, 
-                                     ifelse(LASA2H$HSOCP14 =='1' & LASA2H$HSOCP19 =='1'& LASA2H$HSOCP20 =='1'& LASA2H$HSOCP21 =='1'& LASA2H$HSOCP23 =='1'& LASA2H$HSOCP55 =='1',0L, NA))
 
-table(soc_LASA2_3$soc_sp_cul_edu_soc_3) 
-summary(soc_LASA2_3$soc_sp_cul_edu_soc_3) 
+soc_LASA2_3$soc_sp_cul_edu_soc_3 <- ifelse(LASA2H$HSOCP14 ==2 | LASA2H$HSOCP20==2 | LASA2H$HSOCP21==2 |  LASA2H$HSOCP23==2 | LASA2H$HSOCP55==2 ,1L, 
+                                           ifelse((LASA2H$HSOCPYN==1 | LASA2H$HSOCP01 ==0| LASA2H$HSOCP07 ==0 | LASA2H$HSOCP08 ==0  | LASA2H$HSOCP10 ==0 ) | (LASA2H$HSOCP14 ==1 | LASA2H$HSOCP20==1 | LASA2H$HSOCP21==1|LASA2H$HSOCP23==1 | LASA2H$HSOCP55==1),0L, NA))
+       
+table(soc_LASA2_3$soc_sp_cul_edu_soc_3, useNA="always")
 ```
 ### **Variable label**:  Cultural, educational and social participation       
 **Variable name**:  ssoc_sp_cul_edu_soc_4               
@@ -3418,17 +3378,16 @@ summary(soc_LASA2_3$soc_sp_volunteer_3)
 1 |  Does participate in a civic organization   
 
 **Harmonization status**:  complete 
-**Harmonization comment**:  Study specific variables,  participation in (visiting), 1. political organization, and 2. a union / employers organization were used. Participation in either is coded as 'Does participate in a civic organization.'     
+**Harmonization comment**:  Participants were asked if: 1.they are involved in an association, 2. they are a member of a specific organization and 3. they visit the organization. The first two items were used to identify non-participants and the third item was used to identify participants in this particular organization. Study specific variables,  participation in (visiting), 1. political organization, and 2. a union / employers organization were used. Participation in either is coded as 'Does participate in a civic organization.'      
 **R script**:  
 ```{r, echo=TRUE}
 table(LASA2B$bsocp15)  
 summary(LASA2B$bsocp16) 
 
-soc_LASA2_0$soc_sp_pol_0 <- ifelse(LASA2B$bsocp15 =='2' | LASA2B$bsocp16 =='2',1L, 
-                                     ifelse(LASA2B$bsocp15 =='1' & LASA2B$bsocp16 =='1',0L, NA))
+soc_LASA2_0$soc_sp_pol_0 <- ifelse(LASA2B$bsocp15 ==2 | LASA2B$bsocp16 ==2,1L, 
+                                     ifelse((LASA2B$bsocpyn ==1|LASA2B$bsocp02==0|LASA2B$bsocp03==0)| (LASA2B$bsocp15 ==1 & LASA2B$bsocp16 ==1),0L, NA))
 
-table(soc_LASA2_0$soc_sp_pol_0) 
-summary(soc_LASA2_0$soc_sp_pol_0) 
+table(soc_LASA2_0$soc_sp_cultural_edu_0, useNA="always") 
 ```
 ### **Variable label**:  Political / union participation         
 **Variable name**:  soc_sp_pol_1                
@@ -3443,17 +3402,16 @@ summary(soc_LASA2_0$soc_sp_pol_0)
 1 |  Does participate in a civic organization   
 
 **Harmonization status**:  complete 
-**Harmonization comment**:  Study specific variables,  participation in (visiting), 1. political organization, and 2. a union / employers organization were used. Participation in either is coded as 'Does participate in a civic organization.'     
+**Harmonization comment**:  Participants were asked if: 1.they are involved in an association, 2. they are a member of a specific organization and 3. they visit the organization. The first two items were used to identify non-participants and the third item was used to identify participants in this particular organization. Study specific variables,  participation in (visiting), 1. political organization, and 2. a union / employers organization were used. Participation in either is coded as 'Does participate in a civic organization.'     
 **R script**:  
 ```{r, echo=TRUE}
 table(LASA2F$fsocp15)  
 table(LASA2F$fsocp16) 
 
-soc_LASA2_1$soc_sp_pol_1 <- ifelse(LASA2F$fsocp15 =='2' | LASA2F$fsocp16 =='2',1L, 
-                                     ifelse(LASA2F$fsocp15 =='1' & LASA2F$fsocp16 =='1',0L, NA))
+soc_LASA2_1$soc_sp_pol_1 <- ifelse(LASA2F$fsocp15 ==2 | LASA2F$fsocp16 ==2,1L, 
+                                     ifelse((LASA2F$fsocpyn ==1|LASA2F$fsocp02==0|LASA2F$fsocp03==0)| (LASA2F$fsocp15 ==1 & LASA2F$fsocp16 ==1),0L, NA))
 
-table(soc_LASA2_1$soc_sp_pol_1) 
-summary(soc_LASA2_1$soc_sp_pol_1)
+table(soc_LASA2_1$soc_sp_cultural_edu_1, useNA="always")
 ```
 ### **Variable label**:  Political / union participation         
 **Variable name**:  soc_sp_pol_2                
@@ -3468,17 +3426,16 @@ summary(soc_LASA2_1$soc_sp_pol_1)
 1 |  Does participate in a civic organization   
 
 **Harmonization status**:  complete 
-**Harmonization comment**:  Study specific variables,  participation in (visiting), 1. political organization, and 2. a union / employers organization were used. Participation in either is coded as 'Does participate in a civic organization.'     
+**Harmonization comment**:  Participants were asked if: 1.they are involved in an association, 2. they are a member of a specific organization and 3. they visit the organization. The first two items were used to identify non-participants and the third item was used to identify participants in this particular organization. Study specific variables,  participation in (visiting), 1. political organization, and 2. a union / employers organization were used. Participation in either is coded as 'Does participate in a civic organization.'      
 **R script**:  
 ```{r, echo=TRUE}
 table(LASA2G$gsocp15)  
 table(LASA2G$gsocp16) 
 
-soc_LASA2_2$soc_sp_pol_2 <- ifelse(LASA2G$gsocp15 =='2' | LASA2G$gsocp16 =='2',1L, 
-                                     ifelse(LASA2G$gsocp15 =='1' & LASA2G$gsocp16 =='1',0L, NA))
+soc_LASA2_2$soc_sp_pol_2 <- ifelse(LASA2G$gsocp15 ==2 | LASA2G$gsocp16 ==2,1L, 
+                                     ifelse((LASA2G$gsocpyn ==1|LASA2G$gsocp02==0|LASA2G$gsocp03==0)| (LASA2G$gsocp15 ==1 & LASA2G$gsocp16 ==1),0L, NA))
 
-table(soc_LASA2_2$soc_sp_pol_2) 
-summary(soc_LASA2_2$soc_sp_pol_2)
+table(soc_LASA2_2$soc_sp_cultural_edu_2, useNA="always")
 ```
 ### **Variable label**:  Political / union participation         
 **Variable name**:  soc_sp_pol_3                
@@ -3493,17 +3450,16 @@ summary(soc_LASA2_2$soc_sp_pol_2)
 1 |  Does participate in a civic organization   
 
 **Harmonization status**:  complete 
-**Harmonization comment**:  Study specific variables,  participation in (visiting), 1. political organization, and 2. a union / employers organization were used. Participation in either is coded as 'Does participate in a civic organization.'     
+**Harmonization comment**:  Participants were asked if: 1.they are involved in an association, 2. they are a member of a specific organization and 3. they visit the organization. The first two items were used to identify non-participants and the third item was used to identify participants in this particular organization. Study specific variables,  participation in (visiting), 1. political organization, and 2. a union / employers organization were used. Participation in either is coded as 'Does participate in a civic organization.'      
 **R script**:  
 ```{r, echo=TRUE}
 table(LASA2H$HSOCP15) # union and professional 2= yes 1= no
 table(LASA2H$HSOCP16) # Political party 
 
-soc_LASA2_3$soc_sp_pol_3 <- ifelse(LASA2H$HSOCP15 =='2' | LASA2H$HSOCP16 =='2',1L, 
-                                                  ifelse(LASA2H$HSOCP15 =='1' & LASA2H$HSOCP16 =='1',0L, NA))
+soc_LASA2_3$soc_sp_pol_3 <- ifelse(LASA2H$HSOCP15 ==2 | LASA2H$HSOCP16 ==2,1L, 
+                                     ifelse((LASA2H$HSOCPYN ==1|LASA2H$HSOCP02==0|LASA2H$HSOCP03==0)| (LASA2H$HSOCP15 ==1 & LASA2H$HSOCP16 ==1),0L, NA))
 
-table(soc_LASA2_3$soc_sp_pol_3) 
-summary(soc_LASA2_3$soc_sp_pol_3)
+table(soc_LASA2_3$soc_sp_cultural_edu_3, useNA="always")
 ```
 ### **Variable label**:  Political / union participation         
 **Variable name**:  soc_sp_pol_4                
@@ -3575,17 +3531,16 @@ summary(soc_LASA2_3$soc_sp_pol_3)
 1 |  Does participate in an union, professional or neighbourhood organization  
 
 **Harmonization status**:  complete 
-**Harmonization comment**:   Study specific variables used are (visiting) a 1. Trade union, employers organisation and 2. Neighbourhood organization. Participating in either is harmonized as 'Does participate in an union, professional or neighbourhood organization.   
+**Harmonization comment**:   Participants were asked if: 1.they are involved in an association, 2. they are a member of a specific organization and 3. they visit the organization. The first two items were used to identify non-participants and the third item was used to identify participants in this particular organization. Study specific variables used are (visiting) a 1. Trade union, employers organisation and 2. Neighbourhood organization. Participating in either is harmonized as 'Does participate in an union, professional or neighbourhood organization.   
 **R script**:  
 ```{r, echo=TRUE}
 table(LASA2B$bsocp15)  
 table(LASA2B$bsocp18) 
 
-soc_LASA2_0$soc_sp_prof_0 <- ifelse(LASA2B$bsocp15 =='2' | LASA2B$bsocp18 =='2',1L, 
-                                     ifelse(LASA2B$bsocp15 =='1' & LASA2B$bsocp18 =='1',0L, NA))
+soc_LASA2_0$soc_sp_prof_0 <- ifelse(LASA2B$bsocp15 ==2 | LASA2B$bsocp18 ==2,1L, 
+                                     ifelse((LASA2B$bsocpyn ==1 |LASA2B$bsocp02==0|LASA2B$bsocp05==0) | (LASA2B$bsocp15 ==1 & LASA2B$bsocp18 ==1),0L, NA))
 
-table(soc_LASA2_0$soc_sp_prof_0) 
-summary(soc_LASA2_0$soc_sp_prof_0) 
+table(soc_LASA2_0$soc_sp_prof_0, useNA="always") 
 ```
 ### **Variable label**:  Professional participation         
 **Variable name**:  soc_sp_prof_1                
@@ -3600,17 +3555,16 @@ summary(soc_LASA2_0$soc_sp_prof_0)
 1 |  Does participate in an union, professional or neighbourhood organization  
 
 **Harmonization status**:  complete 
-**Harmonization comment**:  Study specific variables used are (visiting) a 1. Trade union, employers organisation and 2. Neighbourhood organization. Participating in either is harmonized as 'Does participate in an union, professional or neighbourhood organization.    
+**Harmonization comment**:  Participants were asked if: 1.they are involved in an association, 2. they are a member of a specific organization and 3. they visit the organization. The first two items were used to identify non-participants and the third item was used to identify participants in this particular organization. Study specific variables used are (visiting) a 1. Trade union, employers organisation and 2. Neighbourhood organization. Participating in either is harmonized as 'Does participate in an union, professional or neighbourhood organization.    
 **R script**:  
 ```{r, echo=TRUE}
 table(LASA2F$fsocp15)  # union and professional 2= yes 1= no
 table(LASA2F$fsocp18) # Neighbourhood organisation
 
-soc_LASA2_1$soc_sp_prof_1 <- ifelse(LASA2F$fsocp15 =='2' | LASA2F$fsocp18 =='2',1L, 
-                                     ifelse(LASA2F$fsocp15 =='1' & LASA2F$fsocp18 =='1',0L, NA))
+soc_LASA2_1$soc_sp_prof_1 <- ifelse(LASA2F$fsocp15 ==2 | LASA2F$fsocp18 ==2,1L, 
+                                     ifelse((LASA2F$fsocpyn ==1 |LASA2F$fsocp02==0|LASA2F$fsocp05==0) | (LASA2F$fsocp15 ==1 & LASA2F$fsocp18 ==1),0L, NA))
 
-table(soc_LASA2_1$soc_sp_prof_1) 
-summary(soc_LASA2_1$soc_sp_prof_1)
+table(soc_LASA2_1$soc_sp_prof_1, useNA="always") 
 ```
 ### **Variable label**:  Professional participation         
 **Variable name**:  soc_sp_prof_2                
@@ -3625,17 +3579,17 @@ summary(soc_LASA2_1$soc_sp_prof_1)
 1 |  Does participate in an union, professional or neighbourhood organization 
 
 **Harmonization status**:  complete 
-**Harmonization comment**:  Study specific variables used are (visiting) a 1. Trade union, employers organisation and 2. Neighbourhood organization. Participating in either is harmonized as 'Does participate in an union, professional or neighbourhood organization.    
+**Harmonization comment**:  Participants were asked if: 1.they are involved in an association, 2. they are a member of a specific organization and 3. they visit the organization. The first two items were used to identify non-participants and the third item was used to identify participants in this particular organization. Study specific variables used are (visiting) a 1. Trade union, employers organisation and 2. Neighbourhood organization. Participating in either is harmonized as 'Does participate in an union, professional or neighbourhood organization.    
 **R script**:  
 ```{r, echo=TRUE}
 table(LASA2G$gsocp15)  # union and professional 2= yes 1= no
 table(LASA2G$gsocp18) # Neighbourhood organisation 
 
-soc_LASA2_2$soc_sp_prof_2 <- ifelse(LASA2G$gsocp15 =='2' | LASA2G$gsocp18 =='2',1L, 
-                                                  ifelse(LASA2G$gsocp15 =='1' & LASA2G$gsocp18 =='1',0L, NA))
+soc_LASA2_2$soc_sp_prof_2 <- ifelse(LASA2G$gsocp15 ==2 | LASA2G$gsocp18 ==2,1L, 
+                                     ifelse((LASA2G$gsocpyn ==1 |LASA2G$gsocp02==0|LASA2G$gsocp05==0) | (LASA2G$gsocp15 ==1 & LASA2G$gsocp18 ==1),0L, NA))
 
-table(soc_LASA2_2$soc_sp_prof_2) 
-summary(soc_LASA2_2$soc_sp_prof_2)
+table(soc_LASA2_2$soc_sp_prof_2, useNA="always") 
+
 ```
 ### **Variable label**:  Professional participation         
 **Variable name**:  soc_sp_prof_3                
@@ -3650,17 +3604,16 @@ summary(soc_LASA2_2$soc_sp_prof_2)
 1 |  Does participate in an union, professional or neighbourhood organization  
 
 **Harmonization status**:  complete 
-**Harmonization comment**:  Study specific variables used are (visiting) a 1. Trade union, employers organisation and 2. Neighbourhood organization. Participating in either is harmonized as 'Does participate in an union, professional or neighbourhood organization.    
+**Harmonization comment**:  Participants were asked if: 1.they are involved in an association, 2. they are a member of a specific organization and 3. they visit the organization. The first two items were used to identify non-participants and the third item was used to identify participants in this particular organization. Study specific variables used are (visiting) a 1. Trade union, employers organisation and 2. Neighbourhood organization. Participating in either is harmonized as 'Does participate in an union, professional or neighbourhood organization.    
 **R script**:  
 ```{r, echo=TRUE}
 table(LASA2H$HSOCP15) # union and professional 2= yes 1= no
 table(LASA2H$HSOCP18) # Neighbourhood organisation
 
-soc_LASA2_3$soc_sp_prof_3 <- ifelse(LASA2H$HSOCP15 =='2' | LASA2H$HSOCP18 =='2',1L, 
-                                                  ifelse(LASA2H$HSOCP15 =='1' & LASA2H$HSOCP18 =='1',0L, NA))
+soc_LASA2_3$soc_sp_prof_3 <- ifelse(LASA2H$HSOCP15 ==2 | LASA2H$HSOCP18 ==2,1L, 
+                                     ifelse((LASA2H$HSOCPYN ==1 |LASA2H$HSOCP02==0|LASA2H$HSOCP05==0) | (LASA2H$HSOCP15 ==1 & LASA2H$HSOCP18 ==1),0L, NA))
 
-table(soc_LASA2_3$soc_sp_prof_3) 
-summary(soc_LASA2_3$soc_sp_prof_3)
+table(soc_LASA2_3$soc_sp_prof_3, useNA="always") 
 ```
 ### **Variable label**:  Professional participation         
 **Variable name**:  soc_sp_prof_4                
@@ -4184,11 +4137,11 @@ summary(soc_LASA2_2$soc_sp_notrans_2)
 table(LASA2B$bsocp24)  #do you visit an organization for hobby 
 table(LASA2B$bsocp57) #do you study a hobby
 
-soc_LASA2_0$soc_sp_hobby_0 <- ifelse(LASA2B$bsocp24 =='2' | LASA2B$bsocp57 =='2',1L, 
-                                                  ifelse(LASA2B$bsocp24 =='1' & LASA2B$bsocp57 =='1',0L, NA))
+soc_LASA2_0$soc_sp_hobby_0 <- ifelse(LASA2B$bsocpyn==2 &LASA2B$bsocp55==2, 0L, 
+                                     ifelse (LASA2B$bsocp24 =='2' | LASA2B$bsocp57 =='2',1L, ifelse((LASA2B$bsocp24 =='1' & LASA2B$bsocp57 !='1')| (LASA2B$bsocp57 =='1'&LASA2B$bsocp24 !='1'),0L, NA)))
 
-table(soc_LASA2_0$soc_sp_hobby_0) 
-summary(soc_LASA2_0$soc_sp_hobby_0) 
+
+table(soc_LASA2_0$soc_sp_hobby_0, useNA="always") 
 ```
 ### **Variable label**:  Hobby      
 **Variable name**:  soc_sp_hobby_1                       
@@ -4209,11 +4162,11 @@ summary(soc_LASA2_0$soc_sp_hobby_0)
 table(LASA2F$fsocp24)  #do you visit an organization for hobby 
 table(LASA2F$fsocp57) #do you study a hobby
 
-soc_LASA2_1$soc_sp_hobby_1 <- ifelse(LASA2F$fsocp24 ==2 | LASA2F$fsocp57 ==1,1L, 
-                                                  ifelse(LASA2F$fsocp24 ==1 & LASA2F$fsocp57 ==0,0L, NA))
+soc_LASA2_1$soc_sp_hobby_1 <- ifelse(LASA2F$fsocpyn==2 &LASA2F$fsocp55==2, 0L, 
+                                     ifelse (LASA2F$fsocp24 =='2' | LASA2F$fsocp57 =='2',1L, ifelse((LASA2F$fsocp24 =='1' & LASA2F$fsocp57 !='1')| (LASA2F$fsocp57 =='1'&LASA2F$fsocp24 !='1'),0L, NA)))
 
-table(soc_LASA2_1$soc_sp_hobby_1) 
-summary(soc_LASA2_1$soc_sp_hobby_1)
+
+table(soc_LASA2_1$soc_sp_hobby_1, useNA="always") 
 ```
 ### **Variable label**:  Hobby      
 **Variable name**:  soc_sp_hobby_2                       
@@ -4231,14 +4184,11 @@ summary(soc_LASA2_1$soc_sp_hobby_1)
 **Harmonization comment**:  A participant that yes for the LASA item 1.visiting an organization for a hobby/ social club or 2. studying a hobby where considered, were coded as having a hobby.   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2G$gsocp24)  #do you visit an organization for hobby 
-table(LASA2G$gsocp57) #do you study a hobby 
+soc_LASA2_2$soc_sp_hobby_2 <- ifelse(LASA2G$gsocpyn==2 &LASA2G$gsocp55==2, 0L, 
+                                     ifelse (LASA2G$gsocp24 =='2' | LASA2G$gsocp57 =='2',1L, ifelse((LASA2G$gsocp24 =='1' & LASA2G$gsocp57 !='1')| (LASA2G$gsocp57 =='1'&LASA2G$gsocp24 !='1'),0L, NA)))
 
-soc_LASA2_2$soc_sp_hobby_2 <- ifelse(LASA2G$gsocp24 ==2 | LASA2G$gsocp57 ==1,1L, 
-                                                  ifelse(LASA2G$gsocp24 ==1 & LASA2G$gsocp57 ==0,0L, NA))
 
-table(soc_LASA2_2$soc_sp_hobby_2) 
-summary(soc_LASA2_2$soc_sp_hobby_2)
+table(soc_LASA2_2$soc_sp_hobby_2, useNA="always") 
 ```
 ### **Variable label**:  Hobby      
 **Variable name**:  soc_sp_hobby_3                       
@@ -4259,11 +4209,11 @@ summary(soc_LASA2_2$soc_sp_hobby_2)
 table(LASA2H$HSOCP24)  #do you visit an organization for hobby 
 table(LASA2H$HSOCP57) #do you study a hobby 1 = yes 
 
-soc_LASA2_3$soc_sp_hobby_3 <- ifelse(LASA2H$HSOCP24 ==2 | LASA2H$HSOCP57 ==1,1L, 
-                                                  ifelse(LASA2H$HSOCP24 ==1 & LASA2H$HSOCP57 ==0,0L, NA))
+soc_LASA2_3$soc_sp_hobby_3 <- ifelse(LASA2H$HSOCPYN==2 &LASA2H$HSOCP55==2, 0L, 
+                                     ifelse (LASA2H$HSOCP24 ==2 | LASA2H$HSOCP57 ==2,1L, ifelse((LASA2H$HSOCP24 ==1 & LASA2H$HSOCP57 !=1)| (LASA2H$HSOCP57 ==1 & LASA2H$HSOCP24 !=1),0L, NA)))
 
-table(soc_LASA2_3$soc_sp_hobby_3) 
-summary(soc_LASA2_3$soc_sp_hobby_3)
+
+table(soc_LASA2_3$soc_sp_hobby_3, useNA="always") 
 ```
 ### **Variable label**:  Hobby      
 **Variable name**:  soc_sp_hobby_4                       
@@ -4962,9 +4912,9 @@ table(LASA2F$fillpart)
 table(LASA2F$filloth)  
 
 soc_LASA2_1$soc_le_illfam_1 <- ifelse(LASA2F$fillpart =='2' | LASA2F$filloth =='2',1L, 
-                                     ifelse(LASA2F$fillpart =='1' & LASA2F$filloth =='1',0L, NA))
+                                     ifelse(LASA2F$fillpart =='1'|(LASA2F$fillpart ==-2&LASA2F$fpartst==0) & LASA2F$filloth =='1',0L, NA))
 
-table(soc_LASA2_1$soc_le_illfam_1) 
+table(soc_LASA2_1$soc_le_illfam_1, useNA="always") 
 summary(soc_LASA2_1$soc_le_illfam_1)
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4987,9 +4937,9 @@ table(LASA2G$gillpart)
 table(LASA2G$gilloth)  
 
 soc_LASA2_2$soc_le_illfam_2 <- ifelse(LASA2G$gillpart =='2' | LASA2G$gilloth =='2',1L, 
-                                     ifelse(LASA2G$gillpart =='1' & LASA2G$gilloth =='1',0L, NA))
+                                     ifelse(LASA2G$gillpart =='1'|(LASA2G$gillpart ==-2&LASA2G$gpartst==0) & LASA2G$gilloth =='1',0L, NA)) 
 
-table(soc_LASA2_2$soc_le_illfam_2) 
+table(soc_LASA2_2$soc_le_illfam_2, useNA="always") 
 summary(soc_LASA2_2$soc_le_illfam_2)
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -5008,10 +4958,11 @@ summary(soc_LASA2_2$soc_le_illfam_2)
 **Harmonization comment**:  Study specific variables used ask if participant experienced 1. illness of partner/spouse and 2. ilnness of relative(s).   Answering yes to either is harmonized as 'Did experience illness of family member.' LASA participants asked if this life event occured since the last interview.     
 **R script**:  
 ```{r, echo=TRUE}
-soc_LASA2_3$soc_le_illfam_3 <- ifelse(LASA2H$Hillpart =='2' | LASA2H$Hilloth =='2',1L, 
-                                    ifelse(LASA2H$Hillpart =='1' & LASA2H$Hilloth =='1',0L, NA))
+soc_LASA2_3$soc_le_illfam_3<- ifelse(LASA2H$Hillpart =='2' | LASA2H$Hilloth =='2',1L, 
+                                     ifelse(LASA2H$Hillpart =='1'|(LASA2H$Hillpart ==-2&LASA2H$	
+hpartst==0) & LASA2H$Hilloth =='1',0L, NA)) 
 
-table(soc_LASA2_3$soc_le_illfam_3) 
+table(soc_LASA2_3$soc_le_illfam_3, useNA="always") 
 summary(soc_LASA2_3$soc_le_illfam_3)
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -5156,15 +5107,11 @@ summary(soc_LASA2_3$soc_le_illfam_3)
 0 |  Did not experience death of child/family member/friend  
 1 |  Did experience death of child/family member/friend   
 
-**Harmonization status**:  complete
-**Harmonization comment**: Study specific variables ask if participant experienced death of: father, mother, brother, sister, son, daughter or grandchild. LASA participants asked if this life event occured since the last interview.    
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
-soc_LASA2_1$soc_le_dfam_1 <- ifelse(LASA2F$ffadied =='2' | LASA2F$fmodied =='2'| LASA2F$fbrodied =='2'| LASA2F$fsisdied =='2'| LASA2F$fsondied =='2'| LASA2F$fdaudied =='2'| LASA2F$fgcdied =='2',1L, 
-                                     ifelse(LASA2F$ffadied =='1' & LASA2F$fmodied =='1' & LASA2F$fbrodied =='1'& LASA2F$fsisdied =='1'& LASA2F$fsondied =='1'& LASA2F$fdaudied =='1'& LASA2F$fgcdied =='1',0L, NA))
 
-table(soc_LASA2_1$soc_le_dfam_1) 
-summary(soc_LASA2_1$soc_le_dfam_1) 
 
 ```
 ### **Variable label**:  Life event: death of family member or friend                
@@ -5179,15 +5126,11 @@ summary(soc_LASA2_1$soc_le_dfam_1)
 0 |  Did not experience death of child/family member/friend  
 1 |  Did experience death of child/family member/friend  
 
-**Harmonization status**:  complete
-**Harmonization comment**: Study specific variables ask if participant experienced death of: father, mother, brother, sister, son, daughter or grandchild. LASA participants asked if this life event occured since the last interview.      
+**Harmonization status**:  impossible  
+**Harmonization comment**:     
 **R script**:  
 ```{r, echo=TRUE}
-soc_LASA2_2$soc_le_dfam_2 <- ifelse(LASA2G$gfadied =='2' | LASA2G$gmodied =='2'| LASA2G$gbrodied =='2'| LASA2G$gsisdied =='2'| LASA2G$gsondied =='2'| LASA2G$gdaudied =='2'| LASA2G$ggcdied =='2',1L, 
-                                     ifelse(LASA2G$gfadied =='1' & LASA2G$gmodied =='1' & LASA2G$gbrodied =='1'& LASA2G$gsisdied =='1'& LASA2G$gsondied =='1'& LASA2G$gdaudied =='1'& LASA2G$ggcdied =='1',0L, NA))
 
-table(soc_LASA2_2$soc_le_dfam_2) 
-summary(soc_LASA2_2$soc_le_dfam_2) 
 ```
 # Residential characteristics subdomain
 
@@ -5202,7 +5145,7 @@ summary(soc_LASA2_2$soc_le_dfam_2)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-soc_LASA2_0$soc_res_num_yrsnbh_0 <- as.integer(LASA2B_extradata2$byneigh)
+soc_LASA2_0$soc_res_num_yrsnbh_0 <-  ifelse(LASA2B$byneigh==-4, NA, as.integer(LASA2B$byneigh))
 
 table(soc_LASA2_0$soc_res_num_yrsnbh_0) 
 summary(soc_LASA2_0$soc_res_num_yrsnbh_0) 
@@ -5218,7 +5161,7 @@ summary(soc_LASA2_0$soc_res_num_yrsnbh_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-soc_LASA2_1$soc_res_num_yrsnbh_1 <- as.integer(LASA2F_extradata2$fyneigh)
+soc_LASA2_1$soc_res_num_yrsnbh_1 <- ifelse(LASA2F$fyneigh==-4, NA, as.integer(LASA2F$fyneigh))
 
 table(soc_LASA2_1$soc_res_num_yrsnbh_1) 
 summary(soc_LASA2_1$soc_res_num_yrsnbh_1) 
@@ -5234,7 +5177,7 @@ summary(soc_LASA2_1$soc_res_num_yrsnbh_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-soc_LASA2_2$soc_res_num_yrsnbh_2 <- as.integer(LASA2G_extradata2$gyneigh)
+soc_LASA2_2$soc_res_num_yrsnbh_2 <- ifelse(LASA2G$gyneigh==-4, NA, as.integer(LASA2G$gyneigh))
 
 table(soc_LASA2_2$soc_res_num_yrsnbh_2) 
 summary(soc_LASA2_2$soc_res_num_yrsnbh_2) 
@@ -5250,7 +5193,7 @@ summary(soc_LASA2_2$soc_res_num_yrsnbh_2)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-soc_LASA2_3$soc_res_num_yrsnbh_3 <- as.integer(LASA2H_extradata2$HYNEIGH)
+soc_LASA2_3$soc_res_num_yrsnbh_3 <- ifelse(LASA2H$HYNEIGH==-4, NA, as.integer(LASA2H$HYNEIGH))
 
 table(soc_LASA2_3$soc_res_num_yrsnbh_3) 
 summary(soc_LASA2_3$soc_res_num_yrsnbh_3) 
@@ -5308,7 +5251,7 @@ summary(soc_LASA2_3$soc_res_num_yrsnbh_3)
 **Harmonization comment**:  Study specific variable asks about number of years in the neighbourhood.     
 **R script**:  
 ```{r, echo=TRUE}
-soc_LASA2_0$soc_res_num_yrshome_0 <- as.integer(LASA2B_extradata2$byneigh)
+soc_LASA2_0$soc_res_num_yrshome_0 <- ifelse(LASA2B$byneigh==-4, NA, as.integer(LASA2B$byneigh))
 
 table(soc_LASA2_0$soc_res_num_yrshome_0) 
 summary(soc_LASA2_0$soc_res_num_yrshome_0) 
@@ -5324,7 +5267,7 @@ summary(soc_LASA2_0$soc_res_num_yrshome_0)
 **Harmonization comment**:  Study specific variable asks about number of years in the neighbourhood.     
 **R script**:  
 ```{r, echo=TRUE}
-soc_LASA2_1$soc_res_num_yrshome_1 <- as.integer(LASA2F_extradata2$fyneigh)
+soc_LASA2_1$soc_res_num_yrshome_1 <-  ifelse(LASA2F$fyneigh==-4, NA, as.integer(LASA2F$fyneigh))
 
 table(soc_LASA2_1$soc_res_num_yrshome_1) 
 summary(soc_LASA2_1$soc_res_num_yrshome_1) 
@@ -5340,7 +5283,7 @@ summary(soc_LASA2_1$soc_res_num_yrshome_1)
 **Harmonization comment**:  Study specific variable asks about number of years in the neighbourhood.    
 **R script**:  
 ```{r, echo=TRUE}
-soc_LASA2_2$soc_res_num_yrshome_2 <- as.integer(LASA2G_extradata2$gyneigh)
+soc_LASA2_2$soc_res_num_yrshome_2 <- ifelse(LASA2G$gyneigh==-4, NA, as.integer(LASA2G$gyneigh))
 
 table(soc_LASA2_2$soc_res_num_yrshome_2) 
 summary(soc_LASA2_2$soc_res_num_yrshome_2) 
@@ -5356,7 +5299,7 @@ summary(soc_LASA2_2$soc_res_num_yrshome_2)
 **Harmonization comment**:  Study specific variable asks about number of years in the neighbourhood.    
 **R script**:  
 ```{r, echo=TRUE}
-soc_LASA2_3$soc_res_num_yrshome_3 <- as.integer(LASA2H_extradata2$HYNEIGH)
+soc_LASA2_3$soc_res_num_yrshome_3 <-  ifelse(LASA2H$HYNEIGH==-4, NA, as.integer(LASA2H$HYNEIGH))
 
 table(soc_LASA2_3$soc_res_num_yrshome_3) 
 summary(soc_LASA2_3$soc_res_num_yrshome_3) 
@@ -5419,11 +5362,11 @@ summary(soc_LASA2_3$soc_res_num_yrshome_3)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2B_extradata2$bmovefut )  #  2= yes 1 = no 
-summary(LASA2B_extradata2$bmovefut )
+table(LASA2B$bmovefut )  #  2= yes 1 = no 
+summary(LASA2B$bmovefut )
 
-soc_LASA2_0$soc_res_satis_0 <- ifelse(LASA2B_extradata2$bmovefut  ==0,0L, 
-                                         ifelse(LASA2B_extradata2$bmovefut  ==1,1L, NA))
+soc_LASA2_0$soc_res_satis_0 <- ifelse(LASA2B$bmovefut  ==0,0L, 
+                                         ifelse(LASA2B$bmovefut  ==1,1L, NA))
 
 table(soc_LASA2_0$soc_res_satis_0) 
 summary(soc_LASA2_0$soc_res_satis_0)
@@ -5560,15 +5503,15 @@ summary(soc_LASA2_0$soc_res_move_0)
 0 |  Has not moved since last interview
 1 |  Has moved since last interview
 
-**Harmonization status**:  impossible
-**Harmonization comment**:   did not have it at data transfer
+**Harmonization status**:  complete
+**Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
 table(LASA2F$fmoved)  
 summary(LASA2F$fmoved)
 
-soc_LASA2_1$soc_res_move_1 <- ifelse(LASA2F$fmoved ==2,1L, 
-                                         ifelse(LASA2F$fmoved ==1,0L, NA))
+soc_LASA2_1$soc_res_move_1 <- ifelse(LASA2F$fmoved ==2 |LASA2F$fmoved ==3,1L, 
+                                         ifelse(LASA2F$fmoved ==1|LASA2F$fmoved ==4,0L, NA))
 
 table(soc_LASA2_1$soc_res_move_1) 
 summary(soc_LASA2_1$soc_res_move_1)
@@ -5585,15 +5528,15 @@ summary(soc_LASA2_1$soc_res_move_1)
 0 |  Has not moved since last interview
 1 |  Has moved since last interview
 
-**Harmonization status**:  impossible
-**Harmonization comment**:   did not have it at data transfer
+**Harmonization status**:  complete
+**Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
 table(LASA2G$gmoved)  
 summary(LASA2G$gmoved)
 
-soc_LASA2_2$soc_res_move_2 <- ifelse(LASA2G$gmoved ==2,1L, 
-                                         ifelse(LASA2G$gmoved ==1,0L, NA))
+soc_LASA2_2$soc_res_move_2 <- ifelse(LASA2G$gmoved ==2 | LASA2G$gmoved ==3,1L, 
+                                         ifelse(LASA2G$gmoved ==1 | LASA2G$gmoved ==4,0L, NA))
 
 table(soc_LASA2_2$soc_res_move_2) 
 summary(soc_LASA2_2$soc_res_move_2)
@@ -5610,15 +5553,15 @@ summary(soc_LASA2_2$soc_res_move_2)
 0 |  Has not moved since last interview
 1 |  Has moved since last interview
 
-**Harmonization status**:  impossible
-**Harmonization comment**:   did not have it at data transfer
+**Harmonization status**:  complete
+**Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
 table(LASA2H$HMOVED)  
 summary(LASA2H$HMOVED)
 
-soc_LASA2_3$soc_res_move_3 <- ifelse(LASA2H$HMOVED ==2,1L, 
-                                         ifelse(LASA2H$HMOVED ==1,0L, NA))
+soc_LASA2_3$soc_res_move_3 <- ifelse(LASA2H$HMOVED ==2 | LASA2H$HMOVED ==3,1L, 
+                                         ifelse(LASA2H$HMOVED ==1 | LASA2H$HMOVED ==4,0L, NA))
 
 table(soc_LASA2_3$soc_res_move_3) 
 summary(soc_LASA2_3$soc_res_move_3)
@@ -6007,11 +5950,11 @@ summary(soc_LASA2_3$soc_res_indep_3)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2B_extradata2$bhowner)  #  2= yes 1 = no 
-summary(LASA2B_extradata2$bhowner) 
+table(LASA2B$bhowner)  #  2= yes 1 = no 
+summary(LASA2B$bhowner) 
 
-soc_LASA2_0$soc_res_home_own_dich_0 <- ifelse(LASA2B_extradata2$bhowner ==1,1L, 
-                                         ifelse(LASA2B_extradata2$bhowner >1,0L, NA))
+soc_LASA2_0$soc_res_home_own_dich_0 <- ifelse(LASA2B$bhowner ==1,1L, 
+                                         ifelse(LASA2B$bhowner >1,0L, NA))
 
 table(soc_LASA2_0$soc_res_home_own_dich_0) 
 summary(soc_LASA2_0$soc_res_home_own_dich_0) 
@@ -6032,11 +5975,11 @@ summary(soc_LASA2_0$soc_res_home_own_dich_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2F_extradata2$fhowner)  
-summary(LASA2F_extradata2$fhowner)
+table(LASA2F$fhowner)  
+summary(LASA2F$fhowner)
 
-soc_LASA2_1$soc_res_home_own_dich_1 <- ifelse(LASA2F_extradata2$fhowner ==1,1L, 
-                                         ifelse(LASA2F_extradata2$fhowner >1,0L, NA))
+soc_LASA2_1$soc_res_home_own_dich_1 <- ifelse(LASA2F$fhowner ==1,1L, 
+                                         ifelse(LASA2F$fhowner >1,0L, NA))
 
 table(soc_LASA2_1$soc_res_home_own_dich_1) 
 summary(soc_LASA2_1$soc_res_home_own_dich_1) 
@@ -6057,11 +6000,11 @@ summary(soc_LASA2_1$soc_res_home_own_dich_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2G_extradata2$ghowner)  
-summary(LASA2G_extradata2$ghowner)
+table(LASA2G$ghowner)  
+summary(LASA2G$ghowner)
 
-soc_LASA2_2$soc_res_home_own_dich_2 <- ifelse(LASA2G_extradata2$ghowner ==1,1L, 
-                                         ifelse(LASA2G_extradata2$ghowner >1,0L, NA))
+soc_LASA2_2$soc_res_home_own_dich_2 <- ifelse(LASA2G$ghowner ==1,1L, 
+                                         ifelse(LASA2G$ghowner >1,0L, NA))
 
 table(soc_LASA2_2$soc_res_home_own_dich_2) 
 summary(soc_LASA2_2$soc_res_home_own_dich_2)
@@ -6082,11 +6025,11 @@ summary(soc_LASA2_2$soc_res_home_own_dich_2)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2H_extradata2$HHOWNER)  
-summary(LASA2H_extradata2$HHOWNER)
+table(LASA2H$HHOWNER)  
+summary(LASA2H$HHOWNER)
 
-soc_LASA2_3$soc_res_home_own_dich_3 <- ifelse(LASA2H_extradata2$HHOWNER ==1,1L, 
-                                         ifelse(LASA2H_extradata2$HHOWNER >1,0L, NA))
+soc_LASA2_3$soc_res_home_own_dich_3 <- ifelse(LASA2H$HHOWNER ==1,1L, 
+                                         ifelse(LASA2H$HHOWNER >1,0L, NA))
 
 table(soc_LASA2_3$soc_res_home_own_dich_3) 
 summary(soc_LASA2_3$soc_res_home_own_dich_3)
@@ -6165,15 +6108,14 @@ summary(soc_LASA2_3$soc_res_home_own_dich_3)
 **Harmonization comment**: Participants which answered the study specific variable as 'Someone else pays the rent / the mortgage' or 'free housing', are coded as owns home.     
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2B_extradata2$bhowner)  #  2= yes 1 = no 
-table(LASA2B_extradata2$bmortga)  # 1 no mortgage 2 mortgage 
+table(LASA2B$bhowner)  #  2= yes 1 = no 
+table(LASA2B$bmortga)  # 1 no mortgage 2 mortgage 
 
-soc_LASA2_0$soc_res_home_own_0 <- ifelse(LASA2B_extradata2$bhowner ==1 |LASA2B_extradata2$bhowner ==4 | LASA2B_extradata2$bhowner ==5 ,1L, 
-                                         ifelse(LASA2B_extradata2$bhowner ==2 |LASA2B_extradata2$bhowner ==3 ,3L, 
-                                         ifelse(LASA2B_extradata2$bmortga ==2,2L, NA)))
+soc_LASA2_0$soc_res_home_own_0 <- ifelse(LASA2B$bhowner ==1 & LASA2B$bmortga ==1 ,1L, 
+                                         ifelse(LASA2B$bhowner ==1 & LASA2B$bmortga ==2 ,2L, 
+                                         ifelse(LASA2B$bhowner >=2 ,3L, NA)))
 
-table(soc_LASA2_0$soc_res_home_own_0) 
-summary(soc_LASA2_0$soc_res_home_own_0) 
+table(soc_LASA2_0$soc_res_home_own_0, useNA="always") 
 ```
 ### **Variable label**:  Home ownership (3-level)      
 **Variable name**:  soc_res_home_own_1                        
@@ -6192,12 +6134,12 @@ summary(soc_LASA2_0$soc_res_home_own_0)
 **Harmonization comment**:  Participants which answered the study specific variable as 'Someone else pays the rent / the mortgage' or 'free housing', are coded as owns home.    
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2F_extradata2$fhowner)  #  2= yes 1 = no 
-table(LASA2F_extradata2$fmortga)  # 1 no mortgage 2 mortgage 
+table(LASA2F$fhowner)  #  2= yes 1 = no 
+table(LASA2F$fmortga)  # 1 no mortgage 2 mortgage 
 
-soc_LASA2_1$soc_res_home_own_1 <- ifelse(LASA2F_extradata2$fhowner ==1 |LASA2F_extradata2$fhowner ==4 | LASA2F_extradata2$fhowner ==5 ,1L, 
-                                         ifelse(LASA2F_extradata2$fhowner ==2 |LASA2F_extradata2$fhowner ==3 ,3L, 
-                                         ifelse(LASA2F_extradata2$fmortga ==2,2L, NA)))
+soc_LASA2_1$soc_res_home_own_1 <- ifelse(LASA2F$fhowner ==1 & LASA2F$fmortga ==1 ,1L, 
+                                         ifelse(LASA2F$fhowner ==1 & LASA2F$fmortga ==2 ,2L, 
+                                         ifelse(LASA2F$fhowner >=2 ,3L, NA)))
 
 table(soc_LASA2_1$soc_res_home_own_1) 
 summary(soc_LASA2_1$soc_res_home_own_1) 
@@ -6219,12 +6161,12 @@ summary(soc_LASA2_1$soc_res_home_own_1)
 **Harmonization comment**:  Participants which answered the study specific variable as 'Someone else pays the rent / the mortgage' or 'free housing', are coded as owns home.    
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2G_extradata2$ghowner)  #  2= yes 1 = no 
-table(LASA2G_extradata2$gmortga)  # 1 no mortgage 2 mortgage 
+table(LASA2G$ghowner)  #  2= yes 1 = no 
+table(LASA2G$gmortga)  # 1 no mortgage 2 mortgage 
 
-soc_LASA2_2$soc_res_home_own_2 <- ifelse(LASA2G_extradata2$ghowner ==1 |LASA2G_extradata2$ghowner ==4 | LASA2G_extradata2$ghowner ==5 ,1L, 
-                                         ifelse(LASA2G_extradata2$ghowner ==2 |LASA2G_extradata2$ghowner ==3 ,3L, 
-                                         ifelse(LASA2G_extradata2$gmortga ==2,2L, NA)))
+soc_LASA2_2$soc_res_home_own_2 <- ifelse(LASA2G$ghowner ==1 & LASA2G$gmortga ==1 ,1L, 
+                                         ifelse(LASA2G$ghowner ==1 & LASA2G$gmortga ==2 ,2L, 
+                                         ifelse(LASA2G$ghowner >=2 ,3L, NA)))
 
 table(soc_LASA2_2$soc_res_home_own_2) 
 summary(soc_LASA2_2$soc_res_home_own_2) 
