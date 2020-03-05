@@ -403,11 +403,9 @@ soc_GLOBE_4$soc_sn_num_friends_4 <- as.integer(GLOBE2014$G14v42)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily in-person contact with friends  
-2 |  Weekly in-person contact with friends  
-3 |  Biweekly in-person contact with friends   
-4 |  Monthly in-person contact with friends   
-5 |  Never or less than a year in-person contact with friends  
+1 |  Daily to several times per month in-person contact with friends 
+2 |  Once per month in-person contact with friends
+3 |  A few times per year, once per year or never in-person contact with friends  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -425,11 +423,9 @@ soc_GLOBE_4$soc_sn_num_friends_4 <- as.integer(GLOBE2014$G14v42)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily in-person contact with friends  
-2 |  Weekly in-person contact with friends  
-3 |  Biweekly in-person contact with friends   
-4 |  Monthly in-person contact with friends   
-5 |  Never or less than a year in-person contact with friends     
+1 |  Daily to several times per month in-person contact with friends 
+2 |  Once per month in-person contact with friends
+3 |  A few times per year, once per year or never in-person contact with friends  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -447,11 +443,9 @@ soc_GLOBE_4$soc_sn_num_friends_4 <- as.integer(GLOBE2014$G14v42)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily in-person contact with friends  
-2 |  Weekly in-person contact with friends  
-3 |  Biweekly in-person contact with friends   
-4 |  Monthly in-person contact with friends   
-5 |  Never or less than a year in-person contact with friends  
+1 |  Daily to several times per month in-person contact with friends 
+2 |  Once per month in-person contact with friends
+3 |  A few times per year, once per year or never in-person contact with friends  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -469,11 +463,9 @@ soc_GLOBE_4$soc_sn_num_friends_4 <- as.integer(GLOBE2014$G14v42)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily in-person contact with friends  
-2 |  Weekly in-person contact with friends  
-3 |  Biweekly in-person contact with friends   
-4 |  Monthly in-person contact with friends   
-5 |  Never or less than a year in-person contact with friends       
+1 |  Daily to several times per month in-person contact with friends 
+2 |  Once per month in-person contact with friends
+3 |  A few times per year, once per year or never in-person contact with friends  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -491,17 +483,15 @@ soc_GLOBE_4$soc_sn_num_friends_4 <- as.integer(GLOBE2014$G14v42)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily in-person contact with friends  
-2 |  Weekly in-person contact with friends  
-3 |  Biweekly in-person contact with friends   
-4 |  Monthly in-person contact with friends   
-5 |  Never or less than a year in-person contact with friends    
+1 |  Daily to several times per month in-person contact with friends 
+2 |  Once per month in-person contact with friends
+3 |  A few times per year, once per year or never in-person contact with friends  
 
 **Harmonization status**:  complete    
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-soc_GLOBE_4$soc_sn_freq_friends_inperson_4 <- as.integer(GLOBE2014$G14v45)
+# soc_GLOBE_4$soc_sn_freq_friends_inperson_4 <- as.integer(GLOBE2014$G14v45)
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -513,11 +503,9 @@ soc_GLOBE_4$soc_sn_freq_friends_inperson_4 <- as.integer(GLOBE2014$G14v45)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -535,11 +523,9 @@ soc_GLOBE_4$soc_sn_freq_friends_inperson_4 <- as.integer(GLOBE2014$G14v45)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends 
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -557,11 +543,9 @@ soc_GLOBE_4$soc_sn_freq_friends_inperson_4 <- as.integer(GLOBE2014$G14v45)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends 
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -579,11 +563,9 @@ soc_GLOBE_4$soc_sn_freq_friends_inperson_4 <- as.integer(GLOBE2014$G14v45)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -601,18 +583,16 @@ soc_GLOBE_4$soc_sn_freq_friends_inperson_4 <- as.integer(GLOBE2014$G14v45)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends  
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:  complete   
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
 
-soc_GLOBE_4$soc_sn_freq_friends_4 <- as.integer(GLOBE2014$G14v46)
+# soc_GLOBE_4$soc_sn_freq_friends_4 <- as.integer(GLOBE2014$G14v46)
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -624,11 +604,9 @@ soc_GLOBE_4$soc_sn_freq_friends_4 <- as.integer(GLOBE2014$G14v46)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends  
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -646,11 +624,9 @@ soc_GLOBE_4$soc_sn_freq_friends_4 <- as.integer(GLOBE2014$G14v46)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends 
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -830,11 +806,9 @@ soc_GLOBE_4$soc_sn_num_nbhs_4 <- as.integer(GLOBE2014$G14v54)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours  
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -852,11 +826,9 @@ soc_GLOBE_4$soc_sn_num_nbhs_4 <- as.integer(GLOBE2014$G14v54)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours  
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -874,11 +846,9 @@ soc_GLOBE_4$soc_sn_num_nbhs_4 <- as.integer(GLOBE2014$G14v54)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours   
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -896,11 +866,9 @@ soc_GLOBE_4$soc_sn_num_nbhs_4 <- as.integer(GLOBE2014$G14v54)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours    
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -918,17 +886,15 @@ soc_GLOBE_4$soc_sn_num_nbhs_4 <- as.integer(GLOBE2014$G14v54)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours    
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours
 
 **Harmonization status**:  complete    
 **Harmonization comment**:  DataSchema has same categories as original GLOBE item.     
 **R script**:  
 ```{r, echo=TRUE}
-soc_GLOBE_4$soc_sn_freq_nbhs_4 <- as.integer(GLOBE2014$G14v55)
+# soc_GLOBE_4$soc_sn_freq_nbhs_4 <- as.integer(GLOBE2014$G14v55)
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -940,11 +906,9 @@ soc_GLOBE_4$soc_sn_freq_nbhs_4 <- as.integer(GLOBE2014$G14v55)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours    
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -962,11 +926,9 @@ soc_GLOBE_4$soc_sn_freq_nbhs_4 <- as.integer(GLOBE2014$G14v55)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours   
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1153,10 +1115,9 @@ soc_GLOBE_4$soc_sn_num_relatives_4 <- ifelse(GLOBE2014$G14v36=='0',1L,
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives   
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1174,10 +1135,9 @@ soc_GLOBE_4$soc_sn_num_relatives_4 <- ifelse(GLOBE2014$G14v36=='0',1L,
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives    
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1195,10 +1155,9 @@ soc_GLOBE_4$soc_sn_num_relatives_4 <- ifelse(GLOBE2014$G14v36=='0',1L,
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives       
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1216,10 +1175,9 @@ soc_GLOBE_4$soc_sn_num_relatives_4 <- ifelse(GLOBE2014$G14v36=='0',1L,
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives     
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1237,20 +1195,20 @@ soc_GLOBE_4$soc_sn_num_relatives_4 <- ifelse(GLOBE2014$G14v36=='0',1L,
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives      
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family  
 
 **Harmonization status**:  complete    
 **Harmonization comment**:  GLOBE asks about contact frequency with relatives which to some respondents might include siblings and children. GLOBE item G14v39 was not used to harmonize this DataSchema since that item asks about how often one sees relatives, indicating in person contact, as opposed to communicate with.
 **R script**:  
 ```{r, echo=TRUE}
 
-soc_GLOBE_4$soc_sn_freq_close_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOBE2014$G14v40=='2' ,1L, 
-                                                  ifelse(GLOBE2014$G14v40=='3',2L,
-                                                    ifelse(GLOBE2014$G14v40=='4',3L,
-                                                           ifelse(GLOBE2014$G14v40=='5',4L, NA))))
+# soc_GLOBE_4$soc_sn_freq_close_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOBE2014$G14v40=='2' ,1L, 
+#                                                   ifelse(GLOBE2014$G14v40=='3',2L,
+#                                                     ifelse(GLOBE2014$G14v40=='4',3L,
+#                                                            ifelse(GLOBE2014$G14v40=='5',4L, NA))))
+
 ```
 ### **Variable label**:   Contact frequency with family    
 **Variable name**:   soc_sn_freq_close_relatives_5      
@@ -1261,10 +1219,9 @@ soc_GLOBE_4$soc_sn_freq_close_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOB
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives      
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1282,10 +1239,9 @@ soc_GLOBE_4$soc_sn_freq_close_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOB
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives    
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1304,10 +1260,9 @@ soc_GLOBE_4$soc_sn_freq_close_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOB
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives  
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1325,10 +1280,9 @@ soc_GLOBE_4$soc_sn_freq_close_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOB
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives  
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1346,10 +1300,9 @@ soc_GLOBE_4$soc_sn_freq_close_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOB
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives  
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1367,10 +1320,9 @@ soc_GLOBE_4$soc_sn_freq_close_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOB
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives    
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1388,20 +1340,19 @@ soc_GLOBE_4$soc_sn_freq_close_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOB
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives  
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives  
 
 **Harmonization status**:  complete   
 **Harmonization comment**:  This DataSchema was created to include CLSA, which does not identify if relatives are close to participant or not.    
 **R script**:  
 ```{r, echo=TRUE}
 
-soc_GLOBE_4$soc_sn_freq_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOBE2014$G14v40=='2' ,1L, 
-                                                  ifelse(GLOBE2014$G14v40=='3',2L,
-                                                    ifelse(GLOBE2014$G14v40=='4',3L,
-                                                           ifelse(GLOBE2014$G14v40=='5',4L, NA))))
+# soc_GLOBE_4$soc_sn_freq_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOBE2014$G14v40=='2' ,1L, 
+#                                                   ifelse(GLOBE2014$G14v40=='3',2L,
+#                                                     ifelse(GLOBE2014$G14v40=='4',3L,
+#                                                            ifelse(GLOBE2014$G14v40=='5',4L, NA))))
 
 ```
 ### **Variable label**:   Contact frequency with relatives     
@@ -1413,10 +1364,9 @@ soc_GLOBE_4$soc_sn_freq_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOBE2014$
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives  
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1434,10 +1384,9 @@ soc_GLOBE_4$soc_sn_freq_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOBE2014$
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives  
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1553,11 +1502,9 @@ soc_GLOBE_4$soc_sn_freq_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOBE2014$
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members  
-2 |  Weekly contact with non-kin members  
-3 |  Biweekly contact with non-kin members  
-4 |  Monthly contact with non-kin members  
-5 |  Never or less than a year contact with non-kin members     
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members    
 
 **Harmonization status**:  impossible  
 **Harmonization comment**:   
@@ -1575,11 +1522,9 @@ soc_GLOBE_4$soc_sn_freq_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOBE2014$
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members     
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members    
 
 **Harmonization status**:  impossible  
 **Harmonization comment**:   
@@ -1597,11 +1542,9 @@ soc_GLOBE_4$soc_sn_freq_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOBE2014$
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members       
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members    
 
 **Harmonization status**:  impossible  
 **Harmonization comment**:   
@@ -1619,11 +1562,9 @@ soc_GLOBE_4$soc_sn_freq_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOBE2014$
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members     
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members    
 
 **Harmonization status**:  impossible  
 **Harmonization comment**:   
@@ -1641,11 +1582,9 @@ soc_GLOBE_4$soc_sn_freq_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOBE2014$
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members     
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members    
 
 **Harmonization status**:  impossible  
 **Harmonization comment**:   
@@ -1663,11 +1602,9 @@ soc_GLOBE_4$soc_sn_freq_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOBE2014$
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members     
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members    
 
 **Harmonization status**:  impossible  
 **Harmonization comment**:   
@@ -1685,11 +1622,9 @@ soc_GLOBE_4$soc_sn_freq_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOBE2014$
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members     
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members    
 
 **Harmonization status**:  impossible  
 **Harmonization comment**:   
