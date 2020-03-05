@@ -408,29 +408,27 @@ summary(soc_CLSA_tra1$soc_sn_num_friends_1)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily in-person contact with friends  
-2 |  Weekly in-person contact with friends  
-3 |  Biweekly in-person contact with friends   
-4 |  Monthly in-person contact with friends   
-5 |  Never or less than a year in-person contact with friends  
+1 |  Daily to several times per month in-person contact with friends 
+2 |  Once per month in-person contact with friends
+3 |  A few times per year, once per year or never in-person contact with friends  
 
 **Harmonization status**:  complete
 **Harmonization comment**:   Study specific variable asks about last get together with close friends outside of household.
 **R script**:  
 ```{r, echo=TRUE}
-###CHANGE 
-table(Tra3_4_Baseline$SN_SEEFRND_TRM) 
-
-soc_CLSA_tra0$soc_sn_freq_friends_inperson_0 <- ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==1,1L, 
-                                                  ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==2,2L,
-                                                         ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==3,4L,
-                                                         ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==4,4L,
-                                                                 ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==5,4L,
-                                                                        ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==6,5L,
-                                                         NA))))))
-                                                           
-table(soc_CLSA_tra0$soc_sn_freq_friends_inperson_0) 
-summary(soc_CLSA_tra0$soc_sn_freq_friends_inperson_0) 
+# ###CHANGE 
+# table(Tra3_4_Baseline$SN_SEEFRND_TRM) 
+# 
+# soc_CLSA_tra0$soc_sn_freq_friends_inperson_0 <- ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==1,1L, 
+#                                                   ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==2,2L,
+#                                                          ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==3,4L,
+#                                                          ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==4,4L,
+#                                                                  ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==5,4L,
+#                                                                         ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==6,5L,
+#                                                          NA))))))
+#                                                            
+# table(soc_CLSA_tra0$soc_sn_freq_friends_inperson_0) 
+# summary(soc_CLSA_tra0$soc_sn_freq_friends_inperson_0) 
 
 ``` 
 ### **Variable label**:   In-person contact frequency with friends        
@@ -442,11 +440,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_friends_inperson_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily in-person contact with friends  
-2 |  Weekly in-person contact with friends  
-3 |  Biweekly in-person contact with friends   
-4 |  Monthly in-person contact with friends   
-5 |  Never or less than a year in-person contact with friends     
+1 |  Daily to several times per month in-person contact with friends 
+2 |  Once per month in-person contact with friends
+3 |  A few times per year, once per year or never in-person contact with friends  
 
 **Harmonization status**:  complete
 **Harmonization comment**:   Study specific variable asks about last get together with close friends outside of household.
@@ -464,11 +460,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_friends_inperson_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily in-person contact with friends  
-2 |  Weekly in-person contact with friends  
-3 |  Biweekly in-person contact with friends   
-4 |  Monthly in-person contact with friends   
-5 |  Never or less than a year in-person contact with friends  
+1 |  Daily to several times per month in-person contact with friends 
+2 |  Once per month in-person contact with friends
+3 |  A few times per year, once per year or never in-person contact with friends  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -486,11 +480,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_friends_inperson_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily in-person contact with friends  
-2 |  Weekly in-person contact with friends  
-3 |  Biweekly in-person contact with friends   
-4 |  Monthly in-person contact with friends   
-5 |  Never or less than a year in-person contact with friends       
+1 |  Daily to several times per month in-person contact with friends 
+2 |  Once per month in-person contact with friends
+3 |  A few times per year, once per year or never in-person contact with friends  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -508,11 +500,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_friends_inperson_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily in-person contact with friends  
-2 |  Weekly in-person contact with friends  
-3 |  Biweekly in-person contact with friends   
-4 |  Monthly in-person contact with friends   
-5 |  Never or less than a year in-person contact with friends    
+1 |  Daily to several times per month in-person contact with friends 
+2 |  Once per month in-person contact with friends
+3 |  A few times per year, once per year or never in-person contact with friends  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -530,29 +520,27 @@ summary(soc_CLSA_tra0$soc_sn_freq_friends_inperson_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:  complete
 **Harmonization comment**:   Study specific variable asks about last get together with close friends outside of household.
 **R script**:  
 ```{r, echo=TRUE}
-###CHANGE
-table(Tra3_4_Baseline$SN_SEEFRND_TRM) 
-
-soc_CLSA_tra0$soc_sn_freq_friends_0 <- ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==1,1L, 
-                                                  ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==2,2L,
-                                                         ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==3,4L,
-                                                         ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==4,4L,
-                                                                 ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==5,4L,
-                                                                        ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==6,5L,
-                                                         NA))))))
-                                                           
-table(soc_CLSA_tra0$soc_sn_freq_friends_0) 
-summary(soc_CLSA_tra0$soc_sn_freq_friends_0) 
+# ###CHANGE
+# table(Tra3_4_Baseline$SN_SEEFRND_TRM) 
+# 
+# soc_CLSA_tra0$soc_sn_freq_friends_0 <- ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==1,1L, 
+#                                                   ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==2,2L,
+#                                                          ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==3,4L,
+#                                                          ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==4,4L,
+#                                                                  ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==5,4L,
+#                                                                         ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==6,5L,
+#                                                          NA))))))
+#                                                            
+# table(soc_CLSA_tra0$soc_sn_freq_friends_0) 
+# summary(soc_CLSA_tra0$soc_sn_freq_friends_0) 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_1       
@@ -563,11 +551,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_friends_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends 
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:  complete
 **Harmonization comment**:   Study specific variable asks about last get together with close friends outside of household.    
@@ -585,11 +571,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_friends_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends 
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -607,11 +591,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_friends_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -629,11 +611,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_friends_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends  
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -651,11 +631,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_friends_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends  
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -673,11 +651,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_friends_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends 
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -875,29 +851,27 @@ summary(soc_CLSA_tra1$soc_sn_num_children_1)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours  
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours
 
 **Harmonization status**:  complete 
 **Harmonization comment**: Study specific variable asks about last get together with neighbours.   
 **R script**:  
 ```{r, echo=TRUE}
-###CHANGE
-table(Tra3_4_Baseline$SN_SEENEIBR_TRM) 
-
-soc_CLSA_tra0$soc_sn_freq_nbhs_0 <- ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==1,1L, 
-                                                  ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==2,2L,
-                                                         ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==3,4L,
-                                                         ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==4,4L,
-                                                                 ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==5,4L,
-                                                                        ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==6,5L,
-                                                         NA))
-                                                           
-table(soc_CLSA_tra0$soc_sn_freq_nbhs_0) 
-summary(soc_CLSA_tra0$soc_sn_freq_nbhs_0) 
+# ###CHANGE
+# table(Tra3_4_Baseline$SN_SEENEIBR_TRM) 
+# 
+# soc_CLSA_tra0$soc_sn_freq_nbhs_0 <- ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==1,1L, 
+#                                                   ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==2,2L,
+#                                                          ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==3,4L,
+#                                                          ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==4,4L,
+#                                                                  ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==5,4L,
+#                                                                         ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==6,5L,
+#                                                          NA))
+#                                                            
+# table(soc_CLSA_tra0$soc_sn_freq_nbhs_0) 
+# summary(soc_CLSA_tra0$soc_sn_freq_nbhs_0) 
 
 ``` 
 ### **Variable label**:   Contact frequency with neighbours        
@@ -909,11 +883,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_nbhs_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours  
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours
 
 **Harmonization status**:  complete 
 **Harmonization comment**: Study specific variable asks about last get together with neighbours.    
@@ -931,11 +903,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_nbhs_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours   
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -953,11 +923,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_nbhs_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours    
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -975,11 +943,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_nbhs_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours    
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -997,11 +963,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_nbhs_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours    
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1019,11 +983,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_nbhs_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours   
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1149,10 +1111,9 @@ summary(soc_CLSA_tra1$soc_sn_num_relatives_1)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives   
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family  
 
 **Harmonization status**:  complete
 **Harmonization comment**:   Study specific variables used in this harmonization ask about 1. last get together with relatives outside of household 2. last get together with children outside of household 3. last get together with siblings outside of household. Highest frequency for either item is picked as the contact frequency with close relatives. Caution: respondents are not asked how close they are to these relatives, siblings or children. 
@@ -1186,10 +1147,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_close_relatives_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives    
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family  
 
 **Harmonization status**:  complete
 **Harmonization comment**:   Study specific variables used in this harmonization ask about 1. last get together with relatives outside of household 2. last get together with children outside of household 3. last get together with siblings outside of household. Highest frequency for either item is picked as the contact frequency with close relatives. Caution: respondents are not asked how close they are to these relatives, siblings or children.   
@@ -1207,10 +1167,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_close_relatives_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives       
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1228,10 +1187,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_close_relatives_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives     
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1249,10 +1207,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_close_relatives_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives      
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1270,10 +1227,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_close_relatives_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives      
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1291,10 +1247,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_close_relatives_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives    
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1313,34 +1268,34 @@ summary(soc_CLSA_tra0$soc_sn_freq_close_relatives_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives  
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives  
 
 **Harmonization status**:  complete
 **Harmonization comment**:   Study specific variables used in this harmonization ask about 1. last get together with relatives outside of household 2. last get together with children outside of household 3. last get together with siblings outside of household. Highest frequency for either item is picked as the contact frequency with close relatives. 
 **R script**:  
 ```{r, echo=TRUE}
 
-###CHANGE
-table(Tra3_4_Baseline$SN_SEECHILD_TRM) 
-table(Tra3_4_Baseline$SN_SEESIB_TRM) 
-table(Tra3_4_Baseline$SN_SEEREL_TRM) 
+# ###CHANGE
+# table(Tra3_4_Baseline$SN_SEECHILD_TRM) 
+# table(Tra3_4_Baseline$SN_SEESIB_TRM) 
+# table(Tra3_4_Baseline$SN_SEEREL_TRM) 
+# 
+# soc_CLSA_tra0$soc_sn_freq_relatives_0 <- ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM ==1 |Tra3_4_Baseline$SN_SEESIB_TRM ==1 
+#                                                                                           |Tra3_4_Baseline$SN_SEEREL_TRM==1 | Tra3_4_Baseline$SN_SEECHILD_TRM ==2 |Tra3_4_Baseline$SN_SEESIB_TRM ==2 
+#                                                                                           |Tra3_4_Baseline$SN_SEEREL_TRM==2,1L, 
+#                                           ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM==3 |Tra3_4_Baseline$SN_SEESIB_TRM==3
+#                                                                                           |Tra3_4_Baseline$SN_SEEREL_TRM==3,2L, 
+#                                           ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM==4 |Tra3_4_Baseline$SN_SEESIB_TRM==4
+#                                                                                           |Tra3_4_Baseline$SN_SEEREL_TRM==4,3L, 
+#                                           ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM ==5 |Tra3_4_Baseline$SN_SEESIB_TRM ==5 
+#                                                                                           |Tra3_4_Baseline$SN_SEEREL_TRM==5 | Tra3_4_Baseline$SN_SEECHILD_TRM ==6 |Tra3_4_Baseline$SN_SEESIB_TRM ==6 
+#                                                                                           |Tra3_4_Baseline$SN_SEEREL_TRM==6,4L, NA))))  
+#                                                            
+# table(soc_CLSA_tra0$soc_sn_freq_relatives_0) 
+# summary(soc_CLSA_tra0$soc_sn_freq_relatives_0) 
 
-soc_CLSA_tra0$soc_sn_freq_relatives_0 <- ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM ==1 |Tra3_4_Baseline$SN_SEESIB_TRM ==1 
-                                                                                          |Tra3_4_Baseline$SN_SEEREL_TRM==1 | Tra3_4_Baseline$SN_SEECHILD_TRM ==2 |Tra3_4_Baseline$SN_SEESIB_TRM ==2 
-                                                                                          |Tra3_4_Baseline$SN_SEEREL_TRM==2,1L, 
-                                          ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM==3 |Tra3_4_Baseline$SN_SEESIB_TRM==3
-                                                                                          |Tra3_4_Baseline$SN_SEEREL_TRM==3,2L, 
-                                          ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM==4 |Tra3_4_Baseline$SN_SEESIB_TRM==4
-                                                                                          |Tra3_4_Baseline$SN_SEEREL_TRM==4,3L, 
-                                          ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM ==5 |Tra3_4_Baseline$SN_SEESIB_TRM ==5 
-                                                                                          |Tra3_4_Baseline$SN_SEEREL_TRM==5 | Tra3_4_Baseline$SN_SEECHILD_TRM ==6 |Tra3_4_Baseline$SN_SEESIB_TRM ==6 
-                                                                                          |Tra3_4_Baseline$SN_SEEREL_TRM==6,4L, NA))))  
-                                                           
-table(soc_CLSA_tra0$soc_sn_freq_relatives_0) 
-summary(soc_CLSA_tra0$soc_sn_freq_relatives_0) 
 ```
 ### **Variable label**:   Contact frequency with relatives      
 **Variable name**:   soc_sn_freq_relatives_1          
@@ -1351,10 +1306,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_relatives_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives  
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives  
 
 **Harmonization status**:  complete
 **Harmonization comment**:   Study specific variables used in this harmonization ask about 1. last get together with relatives outside of household 2. last get together with children outside of household 3. last get together with siblings outside of household. Highest frequency for either item is picked as the contact frequency with close relatives.    
@@ -1372,10 +1326,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_relatives_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives  
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1393,10 +1346,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_relatives_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives    
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1414,10 +1366,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_relatives_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives  
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1435,10 +1386,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_relatives_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives  
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1456,10 +1406,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_relatives_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives  
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives  
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1484,6 +1433,7 @@ soc_CLSA_tra0$soc_sn_num_nonkin_0 <- as.integer((Tra3_4_Baseline$SN_FRND_NB_TRM)
 
 table(soc_CLSA_tra0$soc_sn_num_nonkin_0) 
 summary(soc_CLSA_tra0$soc_sn_num_nonkin_0)  
+
 ```
 ### **Variable label**:   Network size of non-kin      
 **Variable name**:   soc_sn_num_nonkin_1      
@@ -1582,11 +1532,9 @@ summary(soc_CLSA_tra1$soc_sn_num_nonkin_1)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members  
-2 |  Weekly contact with non-kin members  
-3 |  Biweekly contact with non-kin members  
-4 |  Monthly contact with non-kin members  
-5 |  Never or less than a year contact with non-kin members     
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members    
 
 **Harmonization status**:  complete
 **Harmonization comment**: Study specific variables added to obtain this DataSchema are: last get together with neighbours and last get together with close friends outside of household. 
@@ -1615,11 +1563,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_nonkin_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members     
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members    
 
 **Harmonization status**:  complete
 **Harmonization comment**: Study specific variables added to obtain this DataSchema are: last get together with neighbours and last get together with close friends outside of household.   
@@ -1637,11 +1583,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_nonkin_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members       
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members    
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1659,11 +1603,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_nonkin_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members     
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members    
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1681,11 +1623,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_nonkin_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members     
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members    
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1703,11 +1643,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_nonkin_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members     
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members    
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
@@ -1725,11 +1663,9 @@ summary(soc_CLSA_tra0$soc_sn_freq_nonkin_0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members     
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members    
 
 **Harmonization status**:  impossible    
 **Harmonization comment**:   
