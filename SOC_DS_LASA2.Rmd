@@ -2565,14 +2565,10 @@ summary(soc_LASA2_3$soc_sn_perceived_instru_3)
 **Harmonization comment**:  Participants were asked if: 1.they are involved in an association, 2. they are a member of a specific organization and 3. they visit the organization. The first two items were used to identify non-participants and the third item was used to identify participants in this particular organization.    
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2B$bsocpyn, useNA="always")  #  2= yes 1 = no 
-table(LASA2B$bsocp04, useNA="always")  #  2= yes 1 = no 
-table(LASA2B$bsocp17, useNA="always")  #  2= yes 1 = no 
 
 soc_LASA2_0$soc_sp_religious_0 <- ifelse(LASA2B$bsocpyn==1|LASA2B$bsocp04==0|LASA2B$bsocp17==1,0L, 
                                          ifelse(LASA2B$bsocp17 ==2,1L, NA))
 
-table(soc_LASA2_0$soc_sp_religious_0, useNA="always") 
 ```
 ### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_1        
@@ -2593,7 +2589,6 @@ table(soc_LASA2_0$soc_sp_religious_0, useNA="always")
 soc_LASA2_1$soc_sp_religious_1 <- ifelse(LASA2F$fsocpyn==1|LASA2F$fsocp04==0|LASA2F$fsocp17==1,0L, 
                                          ifelse(LASA2F$fsocp17 ==2,1L, NA))
 
-table(soc_LASA2_1$soc_sp_religious_1, useNA="always") 
 ```
 ### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_2        
@@ -2613,8 +2608,6 @@ table(soc_LASA2_1$soc_sp_religious_1, useNA="always")
 ```{r, echo=TRUE}
 soc_LASA2_2$soc_sp_religious_2 <- ifelse(LASA2G$gsocpyn==1|LASA2G$gsocp04==0|LASA2G$gsocp17==1,0L, 
                                          ifelse(LASA2G$gsocp17 ==2,1L, NA))
-
-table(soc_LASA2_2$soc_sp_religious_2, useNA="always") 
 ```
 ### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_3        
@@ -2635,7 +2628,6 @@ table(soc_LASA2_2$soc_sp_religious_2, useNA="always")
 soc_LASA2_3$soc_sp_religious_3<- ifelse(LASA2H$HSOCPYN==1|LASA2H$HSOCP04==0|LASA2H$HSOCP17==1,0L, 
                                          ifelse(LASA2H$HSOCP17 ==2,1L, NA))
 
-table(soc_LASA2_3$soc_sp_religious_3, useNA="always") 
 ```
 ### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_4        
@@ -2867,7 +2859,8 @@ table(soc_LASA2_3$soc_sp_religious_3, useNA="always")
 **R script**:  
 ```{r, echo=TRUE}
 soc_LASA2_0$soc_sp_cultural_edu_0 <- ifelse(LASA2B$bsocp23 ==2 | LASA2B$bsocp55 ==2 ,1L,
-                                            ifelse((LASA2B$bsocpyn ==1| LASA2B$bsocp10 ==0)| (LASA2B$bsocp23 ==1| LASA2B$bsocp55 ==1),0L,NA))
+                                            ifelse((LASA2B$bsocpyn ==1| LASA2B$bsocp10 ==0)| 
+                                                     (LASA2B$bsocp23 ==1& LASA2B$bsocp55 ==1),0L,NA))
 
 table(soc_LASA2_0$soc_sp_cultural_edu_0, useNA="always")
 ```
@@ -2888,7 +2881,8 @@ table(soc_LASA2_0$soc_sp_cultural_edu_0, useNA="always")
 **R script**:  
 ```{r, echo=TRUE}
 soc_LASA2_1$soc_sp_cultural_edu_1 <- ifelse(LASA2F$fsocp23 ==2 | LASA2F$fsocp55 ==2 ,1L,
-ifelse((LASA2F$fsocpyn ==1| LASA2F$fsocp10 ==0)| (LASA2F$fsocp23 ==1| LASA2F$fsocp55) ==1,0L, NA))
+                                            ifelse((LASA2F$fsocpyn ==1| LASA2F$fsocp10 ==0)| 
+                                                     (LASA2F$fsocp23 ==1& LASA2F$fsocp55) ==1,0L, NA))
                                      
 table(soc_LASA2_1$soc_sp_cultural_edu_1, useNA="always") 
 ```
@@ -2909,7 +2903,8 @@ table(soc_LASA2_1$soc_sp_cultural_edu_1, useNA="always")
 **R script**:  
 ```{r, echo=TRUE}
 soc_LASA2_2$soc_sp_cultural_edu_2 <-  ifelse(LASA2G$gsocp23 ==2 | LASA2G$gsocp55 ==2 ,1L,
-                                             ifelse(LASA2G$gsocpyn ==1| LASA2G$gsocp10 ==0| LASA2G$gsocp23 ==1| LASA2G$gsocp55 ==1,0L, NA))
+                                             ifelse(LASA2G$gsocpyn ==1| LASA2G$gsocp10 ==0| 
+                                                      (LASA2G$gsocp23 ==1& LASA2G$gsocp55 ==1),0L, NA))
 
 table(soc_LASA2_2$soc_sp_cultural_edu_2, useNA="always")  
 ```
@@ -2931,7 +2926,8 @@ table(soc_LASA2_2$soc_sp_cultural_edu_2, useNA="always")
 ```{r, echo=TRUE}
 
 soc_LASA2_3$soc_sp_cultural_edu_3 <- ifelse(LASA2H$HSOCP23 ==2 | LASA2H$HSOCP55 ==2 ,1L,
-                                            ifelse((LASA2H$HSOCPYN ==1| LASA2H$HSOCP10 ==0)| (LASA2H$HSOCP23 ==1| LASA2H$HSOCP55 ==1),0L, NA))
+                                            ifelse((LASA2H$HSOCPYN ==1| LASA2H$HSOCP10 ==0)| 
+                                                     (LASA2H$HSOCP23 ==1&LASA2H$HSOCP55 ==1),0L, NA))
 
 table(soc_LASA2_3$soc_sp_cultural_edu_3, useNA="always") 
 ```
@@ -3008,17 +3004,16 @@ table(soc_LASA2_3$soc_sp_cultural_edu_3, useNA="always")
 **Harmonization comment**:  Participants were asked if: 1.they are involved in an association, 2. they are a member of a specific organization and 3. they visit the organization. The first two items were used to identify non-participants and the third item was used to identify participants in this particular organization. Study specific variables used ask about participation in (visiting): Association for the elderly, Organisation for helping the elderly, Organisation with a social purpose, Organisation for singing, music or theatre.  Additionally, the variable do you study (yes/no) was used in harmonization. Participation in any of these organizations, or studying, is coded as "Does participate in a cultural, educational or social organization."     
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2B$bsocp14)  
-table(LASA2B$bsocp19)  
-table(LASA2B$bsocp20)  
-table(LASA2B$bsocp21)
-table(LASA2B$bsocp23) 
-table(LASA2B$bsocp55)  
 
-soc_LASA2_0$soc_sp_cul_edu_soc_0 <- ifelse(LASA2B$bsocp14 ==2 | LASA2B$bsocp20==2 | LASA2B$bsocp21==2 |  LASA2B$bsocp23==2 | LASA2B$bsocp55==2 ,1L, 
-                                           ifelse((LASA2B$bsocpyn==1 | LASA2B$bsocp01 ==0| LASA2B$bsocp07 ==0 | LASA2B$bsocp08 ==0  | LASA2B$bsocp10 ==0 ) | (LASA2B$bsocp14 ==1 | LASA2B$bsocp20==1 | LASA2B$bsocp21==1|LASA2B$bsocp23==1|LASA2B$bsocp55==1),0L, NA))
+soc_LASA2_0$soc_sp_cul_edu_soc_0 <- ifelse(LASA2B$bsocp14 ==2 | LASA2B$bsocp20==2 | 
+                                            LASA2B$bsocp21==2 |  LASA2B$bsocp23==2 | LASA2B$bsocp55==2 ,1L, 
+                                    ifelse(LASA2B$bsocpyn==1 | 
+                                             ((LASA2B$bsocp01 ==0| LASA2B$bsocp14 ==1)&
+                                             (LASA2B$bsocp07 ==0 |LASA2B$bsocp20==1)&
+                                             (LASA2B$bsocp08 ==0  | LASA2B$bsocp21==1)&
+                                             (LASA2B$bsocp10 ==0 | LASA2B$bsocp23==1))&
+                                             (LASA2B$bsocp55==1),0L, NA))
        
-table(soc_LASA2_0$soc_sp_cul_edu_soc_0, useNA="always")
 ```
 ### **Variable label**:  Cultural, educational and social participation       
 **Variable name**:  soc_sp_cul_edu_soc_1                 
@@ -3036,15 +3031,15 @@ table(soc_LASA2_0$soc_sp_cul_edu_soc_0, useNA="always")
 **Harmonization comment**:  Participants were asked if: 1.they are involved in an association, 2. they are a member of a specific organization and 3. they visit the organization. The first two items were used to identify non-participants and the third item was used to identify participants in this particular organization. Study specific variables used ask about participation in (visiting): Association for the elderly, Organisation for helping the elderly, Organisation with a social purpose, Organisation for singing, music or theatre.  Additionally, the variable do you study (yes/no) was used in harmonization. Participation in any of these organizations, or studying, is coded as "Does participate in a cultural, educational or social organization."    
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2F$fsocp14)  
-table(LASA2F$fsocp19)  
-table(LASA2F$fsocp20)  
-table(LASA2F$fsocp21)
-table(LASA2F$fsocp23) 
-table(LASA2F$fsocp55)  
 
-soc_LASA2_1$soc_sp_cul_edu_soc_1 <- ifelse(LASA2F$fsocp14 ==2 | LASA2F$fsocp20==2 | LASA2F$fsocp21==2 |  LASA2F$fsocp23==2 | LASA2F$fsocp55==2 ,1L, 
-                                           ifelse((LASA2F$fsocpyn==1 | LASA2F$fsocp01 ==0| LASA2F$fsocp07 ==0 | LASA2F$fsocp08 ==0  | LASA2F$fsocp10 ==0 ) | (LASA2F$fsocp14 ==1 | LASA2F$fsocp20==1 | LASA2F$fsocp21==1| LASA2F$fsocp23==1 |LASA2F$fsocp55==1),0L, NA))
+soc_LASA2_1$soc_sp_cul_edu_soc_1 <- ifelse(LASA2F$fsocp14 ==2 | LASA2F$fsocp20==2 | 
+                                             LASA2F$fsocp21==2 |  LASA2F$fsocp23==2 | LASA2F$fsocp55==2 ,1L, 
+                                    ifelse(LASA2F$fsocpyn==1 | 
+                                          (((LASA2F$fsocp01==0 | LASA2F$fsocp14 ==1 )&
+                                          (LASA2F$fsocp07 ==0 |LASA2F$fsocp20==1)&
+                                          (LASA2F$fsocp08 ==0 |LASA2F$fsocp21==1)&
+                                          (LASA2F$fsocp10 ==0 |LASA2F$fsocp23==1))&
+                                           LASA2F$fsocp55==1),0L, NA))
        
 table(soc_LASA2_1$soc_sp_cul_edu_soc_1, useNA="always")
 ```
