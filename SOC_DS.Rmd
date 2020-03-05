@@ -2259,25 +2259,6 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Social isolation    
-**Variable name**:  soc_sp_isolation_7  
-**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not socially isolated, has social network and/ or social participation 
-1 |  Socially isolated, no social network and no social participation 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
 
 ### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_0        
@@ -2412,25 +2393,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Religious participation 
-**Variable name**:  soc_sp_religious_7        
-**Variable description**:  Indicator of participation in a religious organization.      
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
 
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Does not participate in a religious organization   
-1 |  Does participate in a religious organization 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
 ### **Variable label**:  Frequency of religious participation 
 **Variable name**:  soc_sp_freq_religious_0        
 **Variable description**:  Indicator of the frequency of participation in a religious organization.         
@@ -2585,28 +2548,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Frequency of religious participation 
-**Variable name**:  soc_sp_freq_religious_7        
-**Variable description**:  Indicator of the frequency of participation in a religious organization.         
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
 
-**Code** | **Category Label**  
-------------- | -------------  
-1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
-4 |  Never participates in religious organization
-5 |  No answer/don’t know regarding participation in religious organization
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
 ### **Variable label**:  Cultural and educational participation   
 **Variable name**:  soc_sp_cultural_edu_0           
 **Variable description**:  Indicator of whether the participant is a member of/participates in a group, club or activity related to education or culture.       
@@ -4078,25 +4020,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Life event: financial problems      
-**Variable name**:  soc_le_fprob_7             
-**Variable description**:  Indicator of whether the participant experienced financial problems in the past few years.        
-**Value type**:  integer      
-**Variable unit**:         
-**Category coding**:  
 
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Did not experience financial problems
-1 |  Did experience financial problems    
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
 ### **Variable label**:  Life event: relationship problems        
 **Variable name**:  soc_le_rprob_0             
 **Variable description**:  Indicator of whether the participant experienced relationship problems in the past few years.          
