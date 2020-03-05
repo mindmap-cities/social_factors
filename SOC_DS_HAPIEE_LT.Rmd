@@ -3676,7 +3676,7 @@ soc_HAPIEE_LT_0$soc_sp_general_0 <- ifelse(HAPIEE_W2$p55_lt=='1',1L,
 **R script**:  
 ```{r, echo=TRUE}
 
-soc_HAPIEE_LT_0$soc_sp_isolation_0 <- ifelse((soc_HAPIEE_LT_0$soc_sn_freq_friends_inperson_0  == 5  | soc_HAPIEE_LT_0$soc_sn_freq_relatives_0 ==4) & soc_HAPIEE_LT_0$soc_sp_general_0 ==0,1L,                                         ifelse(soc_HAPIEE_LT_0$soc_sn_freq_friends_inperson_0 <=4  | soc_HAPIEE_LT_0$soc_sn_freq_relatives_0 <4 & soc_HAPIEE_LT_0$soc_sp_general_0 == 1,0L,NA ))
+# soc_HAPIEE_LT_0$soc_sp_isolation_0 <- ifelse((soc_HAPIEE_LT_0$soc_sn_freq_friends_inperson_0  == 5  | soc_HAPIEE_LT_0$soc_sn_freq_relatives_0 ==4) & soc_HAPIEE_LT_0$soc_sp_general_0 ==0,1L,                                         ifelse(soc_HAPIEE_LT_0$soc_sn_freq_friends_inperson_0 <=4  | soc_HAPIEE_LT_0$soc_sn_freq_relatives_0 <4 & soc_HAPIEE_LT_0$soc_sp_general_0 == 1,0L,NA ))
 
 ```
 ### **Variable label**:  Social isolation    
