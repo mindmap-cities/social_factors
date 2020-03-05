@@ -383,11 +383,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily in-person contact with friends  
-2 |  Weekly in-person contact with friends  
-3 |  Biweekly in-person contact with friends   
-4 |  Monthly in-person contact with friends   
-5 |  Never or less than a year in-person contact with friends  
+1 |  Daily to several times per month in-person contact with friends 
+2 |  Once per month in-person contact with friends
+3 |  A few times per year, once per year or never in-person contact with friends  
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -405,11 +403,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily in-person contact with friends  
-2 |  Weekly in-person contact with friends  
-3 |  Biweekly in-person contact with friends   
-4 |  Monthly in-person contact with friends   
-5 |  Never or less than a year in-person contact with friends     
+1 |  Daily to several times per month in-person contact with friends 
+2 |  Once per month in-person contact with friends
+3 |  A few times per year, once per year or never in-person contact with friends  
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -427,11 +423,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily in-person contact with friends  
-2 |  Weekly in-person contact with friends  
-3 |  Biweekly in-person contact with friends   
-4 |  Monthly in-person contact with friends   
-5 |  Never or less than a year in-person contact with friends  
+1 |  Daily to several times per month in-person contact with friends 
+2 |  Once per month in-person contact with friends
+3 |  A few times per year, once per year or never in-person contact with friends  
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -449,11 +443,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily in-person contact with friends  
-2 |  Weekly in-person contact with friends  
-3 |  Biweekly in-person contact with friends   
-4 |  Monthly in-person contact with friends   
-5 |  Never or less than a year in-person contact with friends       
+1 |  Daily to several times per month in-person contact with friends 
+2 |  Once per month in-person contact with friends
+3 |  A few times per year, once per year or never in-person contact with friends  
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -471,11 +463,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily in-person contact with friends  
-2 |  Weekly in-person contact with friends  
-3 |  Biweekly in-person contact with friends   
-4 |  Monthly in-person contact with friends   
-5 |  Never or less than a year in-person contact with friends    
+1 |  Daily to several times per month in-person contact with friends 
+2 |  Once per month in-person contact with friends
+3 |  A few times per year, once per year or never in-person contact with friends  
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -493,11 +483,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -515,11 +503,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends 
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -537,11 +523,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends 
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -559,11 +543,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -581,11 +563,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends  
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -603,11 +583,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends  
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -625,11 +603,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with friends 
-2 |  Weekly contact with friends
-3 |  Biweekly contact with friends
-4 |  Monthly contact with friends
-5 |  Never or less than a year contact with friends 
+1 |  Daily to several times per month contact with friends 
+2 |  Once per month contact with friends
+3 |  A few times per year, once per year or never contact with friends
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -809,11 +785,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours  
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -831,11 +805,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours  
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -853,11 +825,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours   
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -875,11 +845,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours    
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -897,11 +865,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours    
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -919,11 +885,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours    
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -941,11 +905,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with neighbours
-2 |  Weekly contact with neighbours
-3 |  Biweekly contact with neighbours
-4 |  Monthly contact with neighbours
-5 |  Never or less than a year contact with neighbours   
+1 |  Daily to several times per month contact with neighbours 
+2 |  Once per month contact with neighbours
+3 |  A few times per year, once per year or never contact with neighbours
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -1124,10 +1086,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives   
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family  
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -1145,10 +1106,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives    
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family  
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -1166,10 +1126,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives       
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family  
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -1187,10 +1146,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives     
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family  
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -1208,10 +1166,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives      
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family  
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -1229,10 +1186,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives      
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family  
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -1250,10 +1206,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with close relatives
-2 |  Biweekly contact with close relatives
-3 |  Monthly contact with close relatives
-4 |  Never or less than a year contact with close relatives    
+1 |  Daily to less than monthly (once per month) contact with family 
+2 |  Once per month contact with family
+3 |  A few times per year, once per year or never contact with family  
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -1272,10 +1227,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives  
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives  
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -1293,10 +1247,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives  
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives  
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -1314,10 +1267,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives  
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives  
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -1335,10 +1287,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives    
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives  
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -1356,10 +1307,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives  
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives  
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -1377,10 +1327,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives  
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives  
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -1398,10 +1347,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily or weekly contact with relatives 
-2 |  Biweekly contact with relatives 
-3 |  Monthly contact with relatives 
-4 |  Never or less than a year contact with relatives  
+1 |  Daily to less than monthly (once per month) contact with relatives 
+2 |  Once per month contact with relatives
+3 |  A few times per year, once per year or never contact with relatives  
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -1518,11 +1466,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members  
-2 |  Weekly contact with non-kin members  
-3 |  Biweekly contact with non-kin members  
-4 |  Monthly contact with non-kin members  
-5 |  Never or less than a year contact with non-kin members     
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members    
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -1540,11 +1486,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members     
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members    
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -1562,11 +1506,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members       
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members    
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -1584,11 +1526,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members     
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members    
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -1606,11 +1546,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members     
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members    
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -1628,11 +1566,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members     
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members    
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
@@ -1650,11 +1586,9 @@ opal.logout(erasmus_opal)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |  Daily contact with non-kin members   
-2 |  Weekly contact with non-kin members   
-3 |  Biweekly contact with non-kin members   
-4 |  Monthly contact with non-kin members   
-5 |  Never or less than a year contact with non-kin members     
+1 |  Daily to less than monthly (once per month) contact with non-kin members 
+2 |  Once per month contact with non-kin members
+3 |  A few times per year, once per year or never contact with non-kin members    
 
 **Harmonization status**:    impossible  
 **Harmonization comment**:   
