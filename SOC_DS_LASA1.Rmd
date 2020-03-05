@@ -5883,7 +5883,7 @@ summary(soc_LASA1_0$soc_res_num_yrsnbh_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-soc_LASA1_1$soc_res_num_yrsnbh_1 <- ifelse(LASA1C$cyneigh==-4, NA,
+soc_LASA1_1$soc_res_num_yrsnbh_1 <- ifelse(LASA1C$cyneigh<0, NA,
                                            as.integer(LASA1C$cyneigh))
 
 table(soc_LASA1_1$soc_res_num_yrsnbh_1) 
@@ -5999,7 +5999,7 @@ summary(soc_LASA1_0$soc_res_num_yrshome_0)
 **Harmonization comment**:  Study specific variable asks about number of years in the neighbourhood.   
 **R script**:  
 ```{r, echo=TRUE}
-soc_LASA1_1$soc_res_num_yrshome_1 <- ifelse(LASA1C$cyneigh==-4, NA,
+soc_LASA1_1$soc_res_num_yrshome_1 <- ifelse(LASA1C$cyneigh<0, NA,
       as.integer(LASA1C$cyneigh))
 
 table(soc_LASA1_1$soc_res_num_yrshome_1) 
