@@ -3824,8 +3824,8 @@ soc_GLOBE_4$soc_sp_hobby_4 <- ifelse(GLOBE2014$G14v56_b =='1',1L,
 **R script**:  
 ```{r, echo=TRUE}
 
-soc_GLOBE_4$soc_sp_isolation_4 <- ifelse((soc_GLOBE_4$soc_sn_freq_friends_inperson_4 == 5 | soc_GLOBE_4$soc_sn_freq_friends_4 ==5 | soc_GLOBE_4$soc_sn_freq_nbhs_4 ==5 | soc_GLOBE_4$soc_sn_freq_close_relatives_4 ==4 |soc_GLOBE_4$soc_sn_freq_relatives_4==4 ) & soc_GLOBE_4$soc_sp_general_4 == 0,1L, 
-                                                  ifelse((soc_GLOBE_4$soc_sn_children_rank_4 >= 1 | soc_GLOBE_4$soc_sn_num_friends_4 >= 1 | soc_GLOBE_4$soc_sn_num_nbhs_4 >= 1 | soc_GLOBE_4$soc_sn_num_relatives_4 >= 1) & soc_GLOBE_4$soc_sp_general_4 == 1, 0L, NA ))
+# soc_GLOBE_4$soc_sp_isolation_4 <- ifelse((soc_GLOBE_4$soc_sn_freq_friends_inperson_4 == 5 | soc_GLOBE_4$soc_sn_freq_friends_4 ==5 | soc_GLOBE_4$soc_sn_freq_nbhs_4 ==5 | soc_GLOBE_4$soc_sn_freq_close_relatives_4 ==4 |soc_GLOBE_4$soc_sn_freq_relatives_4==4 ) & soc_GLOBE_4$soc_sp_general_4 == 0,1L, 
+#                                                   ifelse((soc_GLOBE_4$soc_sn_children_rank_4 >= 1 | soc_GLOBE_4$soc_sn_num_friends_4 >= 1 | soc_GLOBE_4$soc_sn_num_nbhs_4 >= 1 | soc_GLOBE_4$soc_sn_num_relatives_4 >= 1) & soc_GLOBE_4$soc_sp_general_4 == 1, 0L, NA ))
 
 ```
 ### **Variable label**:  Social isolation    
