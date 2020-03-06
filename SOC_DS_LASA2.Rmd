@@ -116,7 +116,7 @@ soc_LASA2_0$soc_sn_num_children_0 <- as.integer(LASA2B$nkids)
 **Harmonization comment**:  Study specific item includes biological, step and adopted children that were identified as part of the participant's social network.    
 **R script**:  
 ```{r, echo=TRUE}
-tsoc_LASA2_1$soc_sn_num_children_1 <- as.integer(LASA2F$nkids)
+soc_LASA2_1$soc_sn_num_children_1 <- as.integer(LASA2F$nkids)
 
 ```
 ### **Variable label**:   Network size of children      
