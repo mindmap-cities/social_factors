@@ -14,18 +14,18 @@ library(opal)
 # Create an opal object with the login information
 erasmus_opal <- opal.login()
 #Login to Opal server and assign the content of the LASA table(s) to your RStudio environment
-# CLSA-TRA0
+# CLSA-tra_0
 opal.assign.table.tibble(erasmus_opal, 'Tra3_4_Baseline', 'CLSA_1.Tra3_4_Baseline', variables = list('SN_CHILDSTP_NB_TRM','SN_CHILDBIO_NB_TRM','SN_CHILDADP_NB_TRM','SN_FRND_NB_TRM','SN_SEEFRND_TRM','SN_NEIBR_NB_TRM','SN_SEENEIBR_TRM','SN_RELLIV_NB_TRM','SN_SEESIB_TRM','SN_SEECHILD_TRM','SN_SEEREL_TRM','SN_PERCOM_NB_TRM','SSA_CHORES_TRM','SSA_LOVU_TRM','SSA_SUGG_TRM','SSA_ENJOY_TRM','SSA_PROBLM_TRM','SPA_CHRCH_TRM','SPA_EDUC_TRM','SPA_VOLUN_TRM','SPA_NEIBR_TRM','SPA_PREVAC_AF_TRM','SPA_PREVAC_TP_TRM','SPA_SOAC_HY_TRM','TRA_LVDHM_YR_MCQ','TRA_LVCMNTY_YR_MCQ','OWN_DWLG_TRM','OWN_OWN_TRM'))
 Tra3_4_Baseline <- opal.execute(erasmus_opal,'Tra3_4_Baseline')
-# CLSA-TRA1
+# CLSA-tra_1
 opal.assign.table.tibble(erasmus_opal, 'Tra_FU1', 'CLSA_1.Tra_FU1', variables = 
 list('SN_CHILDSTP_NB_TRF1','SN_CHILDBIO_NB_TRF1','SN_CHILDADP_NB_TRF1','SN_FRND_NB_TRF1','SN_SEEFRND_TRF1','SN_NEIBR_NB_TRF1','SN_SEENEIBR_TRF1','SN_RELLIV_NB_TRF1','SN_SEESIB_TRF1','SN_SEECHILD_TRF1','SN_SEEREL_TRF1','SN_PERCOM_NB_TRF1','SSA_CHORES_TRF1','SSA_LOVU_TRF1','SSA_SUGG_TRF1','SSA_ENJOY_TRF1','SSA_PROBLM_TRF1','SPA_CHRCH_TRF1','SPA_EDUC_TRF1','SPA_VOLUN_TRF1','SPA_NEIBR_TRF1','SPA_PREVAC_AF_TRF1','SPA_PREVAC_TP_TRF1','SPA_SOAC_HY_TRF1','TRA_LVCMNTY_YR_TRF1','TRA_LVDHM_YR_TRF1','OWN_DWLG_TRF1','OWN_OWN_TRF1'))
 Tra_FU1 <- opal.execute(erasmus_opal,'Tra_FU1')
 ```
 ## Assign participant id as first column of your harmonized dataframes
 ```{r, echo=FALSE}
-soc_CLSA_tra0 <- data.frame(id = Tra3_4_Baseline$id)
-soc_CLSA_tra1 <- data.frame(id = Tra_FU1$id)
+soc_CLSA_tra_0 <- data.frame(id = Tra3_4_Baseline$id)
+soc_CLSA_tra_1 <- data.frame(id = Tra_FU1$id)
 # When you are done with your work, logout of Opal server
 opal.logout(erasmus_opal)
 ```
@@ -52,10 +52,10 @@ opal.logout(erasmus_opal)
 ```{r, echo=TRUE}
 table(Tra3_4_Baseline$SN_CHILDSTP_NB_TRM) 
 
-soc_CLSA_tra0$soc_sn_num_children_0 <- as.integer((Tra3_4_Baseline$SN_CHILDSTP_NB_TRM) + (Tra3_4_Baseline$SN_CHILDBIO_NB_TRM)+ (Tra3_4_Baseline$SN_CHILDADP_NB_TRM)) 
+soc_CLSA_tra_0$soc_sn_num_children_0 <- as.integer((Tra3_4_Baseline$SN_CHILDSTP_NB_TRM) + (Tra3_4_Baseline$SN_CHILDBIO_NB_TRM)+ (Tra3_4_Baseline$SN_CHILDADP_NB_TRM)) 
 
-table(soc_CLSA_tra0$soc_sn_num_children_0) 
-summary(soc_CLSA_tra0$soc_sn_num_children_0) 
+table(soc_CLSA_tra_0$soc_sn_num_children_0) 
+summary(soc_CLSA_tra_0$soc_sn_num_children_0) 
 ```
 ### **Variable label**:   Network size of children      
 **Variable name**:   soc_sn_num_children_1    
@@ -72,10 +72,10 @@ table(Tra_FU1$SN_CHILDSTP_NB_TRF1)
 table(Tra_FU1$SN_CHILDBIO_NB_TRF1) 
 table(Tra_FU1$SN_CHILDADP_NB_TRF1) 
 
-soc_CLSA_tra1$soc_sn_num_children_1<- as.integer((Tra_FU1$SN_CHILDSTP_NB_TRF1) + (Tra_FU1$SN_CHILDBIO_NB_TRF1)+ (Tra_FU1$SN_CHILDADP_NB_TRF1)) 
+soc_CLSA_tra_1$soc_sn_num_children_1<- as.integer((Tra_FU1$SN_CHILDSTP_NB_TRF1) + (Tra_FU1$SN_CHILDBIO_NB_TRF1)+ (Tra_FU1$SN_CHILDADP_NB_TRF1)) 
 
-table(soc_CLSA_tra1$soc_sn_num_children_1) 
-summary(soc_CLSA_tra1$soc_sn_num_children_1) 
+table(soc_CLSA_tra_1$soc_sn_num_children_1) 
+summary(soc_CLSA_tra_1$soc_sn_num_children_1) 
 ```
 ### **Variable label**:   Network size of children      
 **Variable name**:   soc_sn_num_children_2    
@@ -164,9 +164,9 @@ summary(soc_CLSA_tra1$soc_sn_num_children_1)
 **Harmonization comment**:  CLSA asks about living children.  
 **R script**:  
 ```{r, echo=TRUE}
-soc_CLSA_tra0$soc_sn_children_rank_0 <- ifelse(soc_CLSA_tra0$soc_sn_num_children_0=='0',0L, 
-                                             ifelse(soc_CLSA_tra0$soc_sn_num_children_0=='1' | soc_CLSA_tra0$soc_sn_num_children_0=='2',1L,
-                                                    ifelse(soc_CLSA_tra0$soc_sn_num_children_0 >'2',2L, NA)))
+soc_CLSA_tra_0$soc_sn_children_rank_0 <- ifelse(soc_CLSA_tra_0$soc_sn_num_children_0=='0',0L, 
+                                             ifelse(soc_CLSA_tra_0$soc_sn_num_children_0=='1' | soc_CLSA_tra_0$soc_sn_num_children_0=='2',1L,
+                                                    ifelse(soc_CLSA_tra_0$soc_sn_num_children_0 >'2',2L, NA)))
 ```
 
 ### **Variable label**:   Ranked network size of children           
@@ -186,9 +186,9 @@ soc_CLSA_tra0$soc_sn_children_rank_0 <- ifelse(soc_CLSA_tra0$soc_sn_num_children
 **Harmonization comment**:  CLSA asks about living children.  
 **R script**:  
 ```{r, echo=TRUE}
-soc_CLSA_tra1$soc_sn_children_rank_1 <- ifelse(soc_CLSA_tra1$soc_sn_num_children_1=='0',0L, 
-                                             ifelse(soc_CLSA_tra1$soc_sn_num_children_1=='1' | soc_CLSA_tra1$soc_sn_num_children_1=='2',1L,
-                                                    ifelse(soc_CLSA_tra1$soc_sn_num_children_1 >'2',2L, NA)))
+soc_CLSA_tra_1$soc_sn_children_rank_1 <- ifelse(soc_CLSA_tra_1$soc_sn_num_children_1=='0',0L, 
+                                             ifelse(soc_CLSA_tra_1$soc_sn_num_children_1=='1' | soc_CLSA_tra_1$soc_sn_num_children_1=='2',1L,
+                                                    ifelse(soc_CLSA_tra_1$soc_sn_num_children_1 >'2',2L, NA)))
 ```
 ### **Variable label**:   Ranked network size of children           
 **Variable name**:   soc_sn_children_rank_2      
@@ -304,10 +304,10 @@ soc_CLSA_tra1$soc_sn_children_rank_1 <- ifelse(soc_CLSA_tra1$soc_sn_num_children
 ```{r, echo=TRUE}
 table(Tra3_4_Baseline$SN_FRND_NB_TRM) 
 
-soc_CLSA_tra0$soc_sn_num_friends_0 <- as.integer(Tra3_4_Baseline$SN_FRND_NB_TRM) 
+soc_CLSA_tra_0$soc_sn_num_friends_0 <- as.integer(Tra3_4_Baseline$SN_FRND_NB_TRM) 
 
-table(soc_CLSA_tra0$soc_sn_num_friends_0) 
-summary(soc_CLSA_tra0$soc_sn_num_friends_0) 
+table(soc_CLSA_tra_0$soc_sn_num_friends_0) 
+summary(soc_CLSA_tra_0$soc_sn_num_friends_0) 
 ```
 ### **Variable label**:   Network size of friends    
 **Variable name**:   soc_sn_num_friends_1    
@@ -322,10 +322,10 @@ summary(soc_CLSA_tra0$soc_sn_num_friends_0)
 ```{r, echo=TRUE}
 table(Tra_FU1$SN_FRND_NB_TRF1) 
 
-soc_CLSA_tra1$soc_sn_num_friends_1 <- as.integer(Tra_FU1$SN_FRND_NB_TRF1) 
+soc_CLSA_tra_1$soc_sn_num_friends_1 <- as.integer(Tra_FU1$SN_FRND_NB_TRF1) 
 
-table(soc_CLSA_tra1$soc_sn_num_friends_1) 
-summary(soc_CLSA_tra1$soc_sn_num_friends_1) 
+table(soc_CLSA_tra_1$soc_sn_num_friends_1) 
+summary(soc_CLSA_tra_1$soc_sn_num_friends_1) 
 ```
 ### **Variable label**:   Network size of friends    
 **Variable name**:   soc_sn_num_friends_2    
@@ -419,7 +419,7 @@ summary(soc_CLSA_tra1$soc_sn_num_friends_1)
 # ###CHANGE 
 # table(Tra3_4_Baseline$SN_SEEFRND_TRM) 
 # 
-# soc_CLSA_tra0$soc_sn_freq_friends_inperson_0 <- ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==1,1L, 
+# soc_CLSA_tra_0$soc_sn_freq_friends_inperson_0 <- ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==1,1L, 
 #                                                   ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==2,2L,
 #                                                          ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==3,4L,
 #                                                          ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==4,4L,
@@ -427,8 +427,8 @@ summary(soc_CLSA_tra1$soc_sn_num_friends_1)
 #                                                                         ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==6,5L,
 #                                                          NA))))))
 #                                                            
-# table(soc_CLSA_tra0$soc_sn_freq_friends_inperson_0) 
-# summary(soc_CLSA_tra0$soc_sn_freq_friends_inperson_0) 
+# table(soc_CLSA_tra_0$soc_sn_freq_friends_inperson_0) 
+# summary(soc_CLSA_tra_0$soc_sn_freq_friends_inperson_0) 
 
 ``` 
 ### **Variable label**:   In-person contact frequency with friends        
@@ -531,7 +531,7 @@ summary(soc_CLSA_tra1$soc_sn_num_friends_1)
 # ###CHANGE
 # table(Tra3_4_Baseline$SN_SEEFRND_TRM) 
 # 
-# soc_CLSA_tra0$soc_sn_freq_friends_0 <- ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==1,1L, 
+# soc_CLSA_tra_0$soc_sn_freq_friends_0 <- ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==1,1L, 
 #                                                   ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==2,2L,
 #                                                          ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==3,4L,
 #                                                          ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==4,4L,
@@ -539,8 +539,8 @@ summary(soc_CLSA_tra1$soc_sn_num_friends_1)
 #                                                                         ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==6,5L,
 #                                                          NA))))))
 #                                                            
-# table(soc_CLSA_tra0$soc_sn_freq_friends_0) 
-# summary(soc_CLSA_tra0$soc_sn_freq_friends_0) 
+# table(soc_CLSA_tra_0$soc_sn_freq_friends_0) 
+# summary(soc_CLSA_tra_0$soc_sn_freq_friends_0) 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_1       
@@ -684,15 +684,15 @@ summary(soc_CLSA_tra1$soc_sn_num_friends_1)
 ```{r, echo=TRUE}
 table(Tra3_4_Baseline$SN_NEIBR_NB_TRM) 
 
-soc_CLSA_tra0$soc_sn_num_children_0 <- ifelse(Tra3_4_Baseline$SN_NEIBR_NB_TRM==0,1L, 
+soc_CLSA_tra_0$soc_sn_num_children_0 <- ifelse(Tra3_4_Baseline$SN_NEIBR_NB_TRM==0,1L, 
                                                   ifelse(Tra3_4_Baseline$SN_NEIBR_NB_TRM==1 | Tra3_4_Baseline$SN_NEIBR_NB_TRM==2,2L,
                                                       ifelse(Tra3_4_Baseline$SN_NEIBR_NB_TRM>=3 & Tra3_4_Baseline$SN_NEIBR_NB_TRM <=5,3L,
                                                            ifelse(Tra3_4_Baseline$SN_NEIBR_NB_TRM>=6 & Tra3_4_Baseline$SN_NEIBR_NB_TRM <=10,4L,
                                                                    ifelse(Tra3_4_Baseline$SN_NEIBR_NB_TRM>=11 & Tra3_4_Baseline$SN_NEIBR_NB_TRM <=20,5L,
                                                                           ifelse(Tra3_4_Baseline$SN_NEIBR_NB_TRM>=21,6L, NA))))))
 
-table(soc_CLSA_tra0$soc_sn_num_children_0) 
-summary(soc_CLSA_tra0$soc_sn_num_children_0) 
+table(soc_CLSA_tra_0$soc_sn_num_children_0) 
+summary(soc_CLSA_tra_0$soc_sn_num_children_0) 
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_1    
@@ -716,15 +716,15 @@ summary(soc_CLSA_tra0$soc_sn_num_children_0)
 ```{r, echo=TRUE}
 table(Tra_FU1$SN_NEIBR_NB_TRF1) 
 
-soc_CLSA_tra1$soc_sn_num_children_1 <- ifelse(Tra_FU1$SN_NEIBR_NB_TRF1==0,1L, 
+soc_CLSA_tra_1$soc_sn_num_children_1 <- ifelse(Tra_FU1$SN_NEIBR_NB_TRF1==0,1L, 
                                                   ifelse(Tra_FU1$SN_NEIBR_NB_TRF1==1 | Tra_FU1$SN_NEIBR_NB_TRF1==2,2L,
                                                       ifelse(Tra_FU1$SN_NEIBR_NB_TRF1>=3 & Tra_FU1$SN_NEIBR_NB_TRF1 <=5,3L,
                                                            ifelse(Tra_FU1$SN_NEIBR_NB_TRF1>=6 & Tra_FU1$SN_NEIBR_NB_TRF1 <=10,4L,
                                                                    ifelse(Tra_FU1$SN_NEIBR_NB_TRF1>=11 & Tra_FU1$SN_NEIBR_NB_TRF1 <=20,5L,
                                                                           ifelse(Tra_FU1$SN_NEIBR_NB_TRF1>=21,6L, NA))))))
 
-table(soc_CLSA_tra1$soc_sn_num_children_1) 
-summary(soc_CLSA_tra1$soc_sn_num_children_1) 
+table(soc_CLSA_tra_1$soc_sn_num_children_1) 
+summary(soc_CLSA_tra_1$soc_sn_num_children_1) 
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_2    
@@ -862,7 +862,7 @@ summary(soc_CLSA_tra1$soc_sn_num_children_1)
 # ###CHANGE
 # table(Tra3_4_Baseline$SN_SEENEIBR_TRM) 
 # 
-# soc_CLSA_tra0$soc_sn_freq_nbhs_0 <- ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==1,1L, 
+# soc_CLSA_tra_0$soc_sn_freq_nbhs_0 <- ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==1,1L, 
 #                                                   ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==2,2L,
 #                                                          ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==3,4L,
 #                                                          ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==4,4L,
@@ -870,8 +870,8 @@ summary(soc_CLSA_tra1$soc_sn_num_children_1)
 #                                                                         ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==6,5L,
 #                                                          NA))
 #                                                            
-# table(soc_CLSA_tra0$soc_sn_freq_nbhs_0) 
-# summary(soc_CLSA_tra0$soc_sn_freq_nbhs_0) 
+# table(soc_CLSA_tra_0$soc_sn_freq_nbhs_0) 
+# summary(soc_CLSA_tra_0$soc_sn_freq_nbhs_0) 
 
 ``` 
 ### **Variable label**:   Contact frequency with neighbours        
@@ -1008,10 +1008,10 @@ summary(soc_CLSA_tra1$soc_sn_num_children_1)
 table(Tra3_4_Baseline$SN_RELLIV_NB_TRM) 
 #2805 respondents have 100 relatives? seems like bad data
 
-soc_CLSA_tra0$soc_sn_num_relatives_0 <- as.numeric(Tra3_4_Baseline$SN_RELLIV_NB_TRM)
+soc_CLSA_tra_0$soc_sn_num_relatives_0 <- as.numeric(Tra3_4_Baseline$SN_RELLIV_NB_TRM)
 
-table(soc_CLSA_tra0$soc_sn_num_relatives_0) 
-summary(soc_CLSA_tra0$soc_sn_num_relatives_0) 
+table(soc_CLSA_tra_0$soc_sn_num_relatives_0) 
+summary(soc_CLSA_tra_0$soc_sn_num_relatives_0) 
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_1    
@@ -1027,10 +1027,10 @@ summary(soc_CLSA_tra0$soc_sn_num_relatives_0)
 table(Tra_FU1$SN_RELLIV_NB_TRM) 
 #2805 respondents have 100 relatives? seems like bad data
 
-soc_CLSA_tra1$soc_sn_num_relatives_1 <- as.numeric(Tra_FU1$SN_RELLIV_NB_TRF1)
+soc_CLSA_tra_1$soc_sn_num_relatives_1 <- as.numeric(Tra_FU1$SN_RELLIV_NB_TRF1)
 
-table(soc_CLSA_tra1$soc_sn_num_relatives_1) 
-summary(soc_CLSA_tra1$soc_sn_num_relatives_1) 
+table(soc_CLSA_tra_1$soc_sn_num_relatives_1) 
+summary(soc_CLSA_tra_1$soc_sn_num_relatives_1) 
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_2    
@@ -1124,7 +1124,7 @@ summary(soc_CLSA_tra1$soc_sn_num_relatives_1)
 # table(Tra3_4_Baseline$SN_SEESIB_TRM) 
 # table(Tra3_4_Baseline$SN_SEEREL_TRM) 
 # 
-# soc_CLSA_tra0$soc_sn_freq_close_relatives_0 <- ifelse(((Tra3_4_Baseline$SN_SEECHILD_TRM ==1 |Tra3_4_Baseline$SN_SEESIB_TRM ==1 
+# soc_CLSA_tra_0$soc_sn_freq_close_relatives_0 <- ifelse(((Tra3_4_Baseline$SN_SEECHILD_TRM ==1 |Tra3_4_Baseline$SN_SEESIB_TRM ==1 
 #                                                                                           |Tra3_4_Baseline$SN_SEEREL_TRM==1) | (Tra3_4_Baseline$SN_SEECHILD_TRM ==2 |Tra3_4_Baseline$SN_SEESIB_TRM ==2 
 #                                                                                           |Tra3_4_Baseline$SN_SEEREL_TRM==2)),1L, 
 #                                           ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM==3 |Tra3_4_Baseline$SN_SEESIB_TRM==3
@@ -1135,8 +1135,8 @@ summary(soc_CLSA_tra1$soc_sn_num_relatives_1)
 #                                                                                           |Tra3_4_Baseline$SN_SEEREL_TRM==5) | (Tra3_4_Baseline$SN_SEECHILD_TRM ==6 |Tra3_4_Baseline$SN_SEESIB_TRM ==6 
 #                                                                                           |Tra3_4_Baseline$SN_SEEREL_TRM==6)),4L,
 #                                                            
-# table(soc_CLSA_tra0$soc_sn_freq_close_relatives_0) 
-# summary(soc_CLSA_tra0$soc_sn_freq_close_relatives_0)
+# table(soc_CLSA_tra_0$soc_sn_freq_close_relatives_0) 
+# summary(soc_CLSA_tra_0$soc_sn_freq_close_relatives_0)
 
 ```
 ### **Variable label**:   Contact frequency with family     
@@ -1283,7 +1283,7 @@ summary(soc_CLSA_tra1$soc_sn_num_relatives_1)
 # table(Tra3_4_Baseline$SN_SEESIB_TRM) 
 # table(Tra3_4_Baseline$SN_SEEREL_TRM) 
 # 
-# soc_CLSA_tra0$soc_sn_freq_relatives_0 <- ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM ==1 |Tra3_4_Baseline$SN_SEESIB_TRM ==1 
+# soc_CLSA_tra_0$soc_sn_freq_relatives_0 <- ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM ==1 |Tra3_4_Baseline$SN_SEESIB_TRM ==1 
 #                                                                                           |Tra3_4_Baseline$SN_SEEREL_TRM==1 | Tra3_4_Baseline$SN_SEECHILD_TRM ==2 |Tra3_4_Baseline$SN_SEESIB_TRM ==2 
 #                                                                                           |Tra3_4_Baseline$SN_SEEREL_TRM==2,1L, 
 #                                           ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM==3 |Tra3_4_Baseline$SN_SEESIB_TRM==3
@@ -1294,8 +1294,8 @@ summary(soc_CLSA_tra1$soc_sn_num_relatives_1)
 #                                                                                           |Tra3_4_Baseline$SN_SEEREL_TRM==5 | Tra3_4_Baseline$SN_SEECHILD_TRM ==6 |Tra3_4_Baseline$SN_SEESIB_TRM ==6 
 #                                                                                           |Tra3_4_Baseline$SN_SEEREL_TRM==6,4L, NA))))  
 #                                                            
-# table(soc_CLSA_tra0$soc_sn_freq_relatives_0) 
-# summary(soc_CLSA_tra0$soc_sn_freq_relatives_0) 
+# table(soc_CLSA_tra_0$soc_sn_freq_relatives_0) 
+# summary(soc_CLSA_tra_0$soc_sn_freq_relatives_0) 
 
 ```
 ### **Variable label**:   Contact frequency with relatives      
@@ -1430,10 +1430,10 @@ summary(soc_CLSA_tra1$soc_sn_num_relatives_1)
 ```{r, echo=TRUE}
 # did not add step children, or adopted children or partner's children,in retrospect maybe would have been fine? 
 
-soc_CLSA_tra0$soc_sn_num_nonkin_0 <- as.integer((Tra3_4_Baseline$SN_FRND_NB_TRM) + (Tra3_4_Baseline$SN_NEIBR_NB_TRM)+ (Tra3_4_Baseline$SN_PERCOM_NB_TRM)) 
+soc_CLSA_tra_0$soc_sn_num_nonkin_0 <- as.integer((Tra3_4_Baseline$SN_FRND_NB_TRM) + (Tra3_4_Baseline$SN_NEIBR_NB_TRM)+ (Tra3_4_Baseline$SN_PERCOM_NB_TRM)) 
 
-table(soc_CLSA_tra0$soc_sn_num_nonkin_0) 
-summary(soc_CLSA_tra0$soc_sn_num_nonkin_0)  
+table(soc_CLSA_tra_0$soc_sn_num_nonkin_0) 
+summary(soc_CLSA_tra_0$soc_sn_num_nonkin_0)  
 
 ```
 ### **Variable label**:   Network size of non-kin      
@@ -1448,10 +1448,10 @@ summary(soc_CLSA_tra0$soc_sn_num_nonkin_0)
 **R script**:  
 ```{r, echo=TRUE}
 
-soc_CLSA_tra1$soc_sn_num_nonkin_1 <- as.integer((Tra_FU1$SN_FRND_NB_TRF1) + (Tra_FU1$SN_NEIBR_NB_TRF1)+ (Tra_FU1$SN_PERCOM_NB_TRF1)) 
+soc_CLSA_tra_1$soc_sn_num_nonkin_1 <- as.integer((Tra_FU1$SN_FRND_NB_TRF1) + (Tra_FU1$SN_NEIBR_NB_TRF1)+ (Tra_FU1$SN_PERCOM_NB_TRF1)) 
 
-table(soc_CLSA_tra1$soc_sn_num_nonkin_1) 
-summary(soc_CLSA_tra1$soc_sn_num_nonkin_1)  
+table(soc_CLSA_tra_1$soc_sn_num_nonkin_1) 
+summary(soc_CLSA_tra_1$soc_sn_num_nonkin_1)  
 ```
 ### **Variable label**:   Network size of non-kin      
 **Variable name**:   soc_sn_num_nonkin_2      
@@ -1546,14 +1546,14 @@ table(Tra3_4_Baseline$SN_SEENEIBR_TRM)
 table(Tra3_4_Baseline$SN_SEEFRND_TRM) 
 
 
-soc_CLSA_tra0$soc_sn_freq_nonkin_0 <- ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==1 |Tra3_4_Baseline$SN_SEEFRND_TRM ==1,1L, 
+soc_CLSA_tra_0$soc_sn_freq_nonkin_0 <- ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==1 |Tra3_4_Baseline$SN_SEEFRND_TRM ==1,1L, 
                                           ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM==3 |Tra3_4_Baseline$SN_SEEFRND_TRM==3,2L, 
                                           ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM==4 |Tra3_4_Baseline$SN_SEEFRND_TRM==4,3L, 
                                           ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==5 |Tra3_4_Baseline$SN_SEEFRND_TRM ==5 
                                          | Tra3_4_Baseline$SN_SEENEIBR_TRM ==6 |Tra3_4_Baseline$SN_SEEFRND_TRM ==6  ,4L, NA))))   
                                                            
-table(soc_CLSA_tra0$soc_sn_freq_nonkin_0) 
-summary(soc_CLSA_tra0$soc_sn_freq_nonkin_0) 
+table(soc_CLSA_tra_0$soc_sn_freq_nonkin_0) 
+summary(soc_CLSA_tra_0$soc_sn_freq_nonkin_0) 
 ```
 ### **Variable label**:   Contact frequency with non-kin  
 **Variable name**:   soc_sn_freq_nonkin_1            
@@ -2071,31 +2071,31 @@ table(Tra3_4_Baseline$SSA_SUGG_TRM)
 table(Tra3_4_Baseline$SSA_ENJOY_TRM) 
 table(Tra3_4_Baseline$SSA_PROBLM_TRM) 
 
-soc_CLSA_tra0$soc_ss_perceived_instru_0_love_inter <- as.numeric(ifelse(Tra3_4_Baseline$SSA_LOVU_TRM<6,Tra3_4_Baseline$SSA_LOVU_TRM,NA))
+soc_CLSA_tra_0$soc_ss_perceived_instru_0_love_inter <- as.numeric(ifelse(Tra3_4_Baseline$SSA_LOVU_TRM<6,Tra3_4_Baseline$SSA_LOVU_TRM,NA))
 
-table(soc_CLSA_tra0$soc_ss_perceived_instru_0_love_inter) 
+table(soc_CLSA_tra_0$soc_ss_perceived_instru_0_love_inter) 
 
-soc_CLSA_tra0$soc_ss_perceived_instru_0_sugg_inter <- as.numeric(ifelse(Tra3_4_Baseline$SSA_SUGG_TRM<6,Tra3_4_Baseline$SSA_SUGG_TRM,NA))
+soc_CLSA_tra_0$soc_ss_perceived_instru_0_sugg_inter <- as.numeric(ifelse(Tra3_4_Baseline$SSA_SUGG_TRM<6,Tra3_4_Baseline$SSA_SUGG_TRM,NA))
 
-table(soc_CLSA_tra0$soc_ss_perceived_instru_0_sugg_inter) 
+table(soc_CLSA_tra_0$soc_ss_perceived_instru_0_sugg_inter) 
 
-soc_CLSA_tra0$soc_ss_perceived_instru_0_enjoy_inter <- as.numeric(ifelse(Tra3_4_Baseline$SSA_ENJOY_TRM<6,Tra3_4_Baseline$SSA_ENJOY_TRM,NA))
+soc_CLSA_tra_0$soc_ss_perceived_instru_0_enjoy_inter <- as.numeric(ifelse(Tra3_4_Baseline$SSA_ENJOY_TRM<6,Tra3_4_Baseline$SSA_ENJOY_TRM,NA))
 
-table(soc_CLSA_tra0$soc_ss_perceived_instru_0_enjoy_inter) 
+table(soc_CLSA_tra_0$soc_ss_perceived_instru_0_enjoy_inter) 
 
-soc_CLSA_tra0$soc_ss_perceived_instru_0_prob_inter <- as.numeric(ifelse(Tra3_4_Baseline$SSA_PROBLM_TRM<6,Tra3_4_Baseline$SSA_PROBLM_TRM,NA))
+soc_CLSA_tra_0$soc_ss_perceived_instru_0_prob_inter <- as.numeric(ifelse(Tra3_4_Baseline$SSA_PROBLM_TRM<6,Tra3_4_Baseline$SSA_PROBLM_TRM,NA))
 
-table(soc_CLSA_tra0$soc_ss_perceived_instru_0_prob_inter) 
+table(soc_CLSA_tra_0$soc_ss_perceived_instru_0_prob_inter) 
 
 
-soc_CLSA_tra0$soc_ss_Zscore_perceived_emo_0_inter <- (soc_CLSA_tra0$soc_ss_perceived_instru_0_love_inter + soc_CLSA_tra0$soc_ss_perceived_instru_0_sugg_inter + soc_CLSA_tra0$soc_ss_perceived_instru_0_enjoy_inter + soc_CLSA_tra0$soc_ss_perceived_instru_0_prob_inter)
+soc_CLSA_tra_0$soc_ss_Zscore_perceived_emo_0_inter <- (soc_CLSA_tra_0$soc_ss_perceived_instru_0_love_inter + soc_CLSA_tra_0$soc_ss_perceived_instru_0_sugg_inter + soc_CLSA_tra_0$soc_ss_perceived_instru_0_enjoy_inter + soc_CLSA_tra_0$soc_ss_perceived_instru_0_prob_inter)
 
-table(soc_CLSA_tra0$soc_ss_Zscore_perceived_emo_0_inter) 
+table(soc_CLSA_tra_0$soc_ss_Zscore_perceived_emo_0_inter) 
 
-soc_CLSA_tra0$soc_ss_Zscore_perceived_emo_0 <-as.numeric(scale(soc_CLSA_tra0$soc_ss_Zscore_perceived_emo_0_inter, center = TRUE, scale= TRUE)) 
+soc_CLSA_tra_0$soc_ss_Zscore_perceived_emo_0 <-as.numeric(scale(soc_CLSA_tra_0$soc_ss_Zscore_perceived_emo_0_inter, center = TRUE, scale= TRUE)) 
 
-table(soc_CLSA_tra0$soc_ss_Zscore_perceived_emo_0) 
-summary(soc_CLSA_tra0$soc_ss_Zscore_perceived_emo_0)
+table(soc_CLSA_tra_0$soc_ss_Zscore_perceived_emo_0) 
+summary(soc_CLSA_tra_0$soc_ss_Zscore_perceived_emo_0)
 
 
 ```
@@ -2115,31 +2115,31 @@ table(Tra_FU1$SSA_SUGG_TRF1)
 table(Tra_FU1$SSA_ENJOY_TRF1) 
 table(Tra_FU1$SSA_PROBLM_TRF1) 
 
-soc_CLSA_tra1$soc_ss_perceived_instru_1_love_inter <- as.numeric(ifelse(Tra_FU1$SSA_LOVU_TRF1<6,Tra_FU1$SSA_LOVU_TRF1,NA))
+soc_CLSA_tra_1$soc_ss_perceived_instru_1_love_inter <- as.numeric(ifelse(Tra_FU1$SSA_LOVU_TRF1<6,Tra_FU1$SSA_LOVU_TRF1,NA))
 
-table(soc_CLSA_tra1$soc_ss_perceived_instru_1_love_inter) 
+table(soc_CLSA_tra_1$soc_ss_perceived_instru_1_love_inter) 
 
-soc_CLSA_tra1$soc_ss_perceived_instru_1_sugg_inter <- as.numeric(ifelse(Tra_FU1$SSA_SUGG_TRF1<6,Tra_FU1$SSA_SUGG_TRF1,NA))
+soc_CLSA_tra_1$soc_ss_perceived_instru_1_sugg_inter <- as.numeric(ifelse(Tra_FU1$SSA_SUGG_TRF1<6,Tra_FU1$SSA_SUGG_TRF1,NA))
 
-table(soc_CLSA_tra1$soc_ss_perceived_instru_1_sugg_inter) 
+table(soc_CLSA_tra_1$soc_ss_perceived_instru_1_sugg_inter) 
 
-soc_CLSA_tra1$soc_ss_perceived_instru_1_enjoy_inter <- as.numeric(ifelse(Tra_FU1$SSA_ENJOY_TRF1<6,Tra_FU1$SSA_ENJOY_TRF1,NA))
+soc_CLSA_tra_1$soc_ss_perceived_instru_1_enjoy_inter <- as.numeric(ifelse(Tra_FU1$SSA_ENJOY_TRF1<6,Tra_FU1$SSA_ENJOY_TRF1,NA))
 
-table(soc_CLSA_tra1$soc_ss_perceived_instru_1_enjoy_inter) 
+table(soc_CLSA_tra_1$soc_ss_perceived_instru_1_enjoy_inter) 
 
-soc_CLSA_tra1$soc_ss_perceived_instru_1_prob_inter <- as.numeric(ifelse(Tra_FU1$SSA_PROBLM_TRF1<6,Tra_FU1$SSA_PROBLM_TRF1,NA))
+soc_CLSA_tra_1$soc_ss_perceived_instru_1_prob_inter <- as.numeric(ifelse(Tra_FU1$SSA_PROBLM_TRF1<6,Tra_FU1$SSA_PROBLM_TRF1,NA))
 
-table(soc_CLSA_tra1$soc_ss_perceived_instru_1_prob_inter) 
+table(soc_CLSA_tra_1$soc_ss_perceived_instru_1_prob_inter) 
 
 
-soc_CLSA_tra1$soc_ss_Zscore_perceived_emo_1_inter <- (soc_CLSA_tra1$soc_ss_perceived_instru_1_love_inter + soc_CLSA_tra1$soc_ss_perceived_instru_1_sugg_inter + soc_CLSA_tra1$soc_ss_perceived_instru_1_enjoy_inter + soc_CLSA_tra1$soc_ss_perceived_instru_1_prob_inter)
+soc_CLSA_tra_1$soc_ss_Zscore_perceived_emo_1_inter <- (soc_CLSA_tra_1$soc_ss_perceived_instru_1_love_inter + soc_CLSA_tra_1$soc_ss_perceived_instru_1_sugg_inter + soc_CLSA_tra_1$soc_ss_perceived_instru_1_enjoy_inter + soc_CLSA_tra_1$soc_ss_perceived_instru_1_prob_inter)
 
-table(soc_CLSA_tra1$soc_ss_Zscore_perceived_emo_1_inter) 
+table(soc_CLSA_tra_1$soc_ss_Zscore_perceived_emo_1_inter) 
 
-soc_CLSA_tra1$soc_ss_Zscore_perceived_emo_1 <-as.numeric(scale(soc_CLSA_tra1$soc_ss_Zscore_perceived_emo_1_inter, center = TRUE, scale= TRUE)) 
+soc_CLSA_tra_1$soc_ss_Zscore_perceived_emo_1 <-as.numeric(scale(soc_CLSA_tra_1$soc_ss_Zscore_perceived_emo_1_inter, center = TRUE, scale= TRUE)) 
 
-table(soc_CLSA_tra1$soc_ss_Zscore_perceived_emo_1) 
-summary(soc_CLSA_tra1$soc_ss_Zscore_perceived_emo_1)
+table(soc_CLSA_tra_1$soc_ss_Zscore_perceived_emo_1) 
+summary(soc_CLSA_tra_1$soc_ss_Zscore_perceived_emo_1)
 ```
 ### **Variable label**: Perceived emotional support Z-score   
 **Variable name**:   soc_ss_Zscore_perceived_emo_2      
@@ -2229,11 +2229,11 @@ summary(soc_CLSA_tra1$soc_ss_Zscore_perceived_emo_1)
 ```{r, echo=TRUE}
 table(Tra3_4_Baseline$SSA_CHORES_TRM) 
 
-soc_CLSA_tra0$soc_ss_perceived_instru_0 <- ifelse(Tra3_4_Baseline$SSA_CHORES_TRM==1,1L, 
+soc_CLSA_tra_0$soc_ss_perceived_instru_0 <- ifelse(Tra3_4_Baseline$SSA_CHORES_TRM==1,1L, 
                                              ifelse((Tra3_4_Baseline$SSA_CHORES_TRM>= 2 & Tra3_4_Baseline$SSA_CHORES_TRM <=5),0L, NA))
 
-table(soc_CLSA_tra0$soc_ss_perceived_instru_0) 
-summary(soc_CLSA_tra0$soc_ss_perceived_instru_0) 
+table(soc_CLSA_tra_0$soc_ss_perceived_instru_0) 
+summary(soc_CLSA_tra_0$soc_ss_perceived_instru_0) 
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -2254,11 +2254,11 @@ summary(soc_CLSA_tra0$soc_ss_perceived_instru_0)
 ```{r, echo=TRUE}
 table(Tra_FU1$SSA_CHORES_TRF1) 
 
-soc_CLSA_tra1$soc_ss_perceived_instru_1 <- ifelse(Tra_FU1$SSA_CHORES_TRF1==1,1L, 
+soc_CLSA_tra_1$soc_ss_perceived_instru_1 <- ifelse(Tra_FU1$SSA_CHORES_TRF1==1,1L, 
                                              ifelse((Tra_FU1$SSA_CHORES_TRF1>= 2 & Tra_FU1$SSA_CHORES_TRF1 <=5),0L, NA))
 
-table(soc_CLSA_tra1$soc_ss_perceived_instru_1) 
-summary(soc_CLSA_tra1$soc_ss_perceived_instru_1) 
+table(soc_CLSA_tra_1$soc_ss_perceived_instru_1) 
+summary(soc_CLSA_tra_1$soc_ss_perceived_instru_1) 
 ```
 ### **Variable label**: Perceived instrumental support        
 **Variable name**:   soc_ss_perceived_instru_2      
@@ -2375,10 +2375,10 @@ summary(soc_CLSA_tra1$soc_ss_perceived_instru_1)
 **R script**:  
 ```{r, echo=TRUE}
 
-# soc_CLSA_tra0$soc_sp_isolation_0 <- ifelse((soc_CLSA_tra0$soc_sn_freq_friends_0 == 5 | soc_CLSA_tra0$soc_sn_freq_nbhs_0 ==5 |     soc_CLSA_tra0$soc_sn_freq_close_relatives_0 ==5 | soc_CLSA_tra0$soc_sn_freq_relatives_0 ==4 |soc_CLSA_tra0$soc_sn_freq_nonkin_0==4 ) & soc_CLSA_tra0$soc_sp_general_0 == 0,1L, 
-#                                  ifelse((soc_CLSA_tra0$soc_sn_freq_friends_0 >= 1 | soc_CLSA_tra0$soc_sn_freq_nbhs_0 >= 1 | soc_CLSA_tra0$soc_sn_freq_close_relatives_0 >= 1 | soc_CLSA_tra0$soc_sn_freq_relatives_0 >= 1) & soc_CLSA_tra0$soc_sn_freq_nonkin_0 == 1, 0L, NA ))
+# soc_CLSA_tra_0$soc_sp_isolation_0 <- ifelse((soc_CLSA_tra_0$soc_sn_freq_friends_0 == 5 | soc_CLSA_tra_0$soc_sn_freq_nbhs_0 ==5 |     soc_CLSA_tra_0$soc_sn_freq_close_relatives_0 ==5 | soc_CLSA_tra_0$soc_sn_freq_relatives_0 ==4 |soc_CLSA_tra_0$soc_sn_freq_nonkin_0==4 ) & soc_CLSA_tra_0$soc_sp_general_0 == 0,1L, 
+#                                  ifelse((soc_CLSA_tra_0$soc_sn_freq_friends_0 >= 1 | soc_CLSA_tra_0$soc_sn_freq_nbhs_0 >= 1 | soc_CLSA_tra_0$soc_sn_freq_close_relatives_0 >= 1 | soc_CLSA_tra_0$soc_sn_freq_relatives_0 >= 1) & soc_CLSA_tra_0$soc_sn_freq_nonkin_0 == 1, 0L, NA ))
 # 
-# table(soc_CLSA_tra0$soc_sp_isolation_0, useNA="always")
+# table(soc_CLSA_tra_0$soc_sp_isolation_0, useNA="always")
 
 ```
 ### **Variable label**:  Social isolation    
@@ -2397,10 +2397,10 @@ summary(soc_CLSA_tra1$soc_ss_perceived_instru_1)
 **Harmonization comment**:   Used same approach as in the harmonization of GLOBE and LASA data: utilized study available DataSchema social network - contact frequency variables (friends, neighbours, relatives, family and non-kin) in addition to the general participation variable, no contact with these different types of social network members and no participation was categorized as socially isolated. Having one or more of these types of members (in addition to children) in their network and reporting social participation was categorized as not socially isolated.    
 **R script**:  
 ```{r, echo=TRUE}
-# soc_CLSA_tra1$soc_sp_isolation_1 <- ifelse((soc_CLSA_tra1$soc_sn_freq_friends_1 == 5 | soc_CLSA_tra1$soc_sn_freq_nbhs_1 ==5 |     soc_CLSA_tra1$soc_sn_freq_close_relatives_1 ==5 | soc_CLSA_tra1$soc_sn_freq_relatives_1 ==4 |soc_CLSA_tra1$soc_sn_freq_nonkin_1==4 ) & soc_CLSA_tra1$soc_sp_general_1 == 0,1L, 
-#                                  ifelse((soc_CLSA_tra1$soc_sn_freq_friends_1 >= 1 | soc_CLSA_tra1$soc_sn_freq_nbhs_1 >= 1 | soc_CLSA_tra1$soc_sn_freq_close_relatives_1 >= 1 | soc_CLSA_tra1$soc_sn_freq_relatives_1 >= 1) & soc_CLSA_tra1$soc_sn_freq_nonkin_1 == 1, 0L, NA ))
+# soc_CLSA_tra_1$soc_sp_isolation_1 <- ifelse((soc_CLSA_tra_1$soc_sn_freq_friends_1 == 5 | soc_CLSA_tra_1$soc_sn_freq_nbhs_1 ==5 |     soc_CLSA_tra_1$soc_sn_freq_close_relatives_1 ==5 | soc_CLSA_tra_1$soc_sn_freq_relatives_1 ==4 |soc_CLSA_tra_1$soc_sn_freq_nonkin_1==4 ) & soc_CLSA_tra_1$soc_sp_general_1 == 0,1L, 
+#                                  ifelse((soc_CLSA_tra_1$soc_sn_freq_friends_1 >= 1 | soc_CLSA_tra_1$soc_sn_freq_nbhs_1 >= 1 | soc_CLSA_tra_1$soc_sn_freq_close_relatives_1 >= 1 | soc_CLSA_tra_1$soc_sn_freq_relatives_1 >= 1) & soc_CLSA_tra_1$soc_sn_freq_nonkin_1 == 1, 0L, NA ))
 # 
-# table(soc_CLSA_tra1$soc_sp_isolation_1, useNA="always")
+# table(soc_CLSA_tra_1$soc_sp_isolation_1, useNA="always")
 
 
 ```
@@ -2539,11 +2539,11 @@ summary(soc_CLSA_tra1$soc_ss_perceived_instru_1)
 
 table(Tra3_4_Baseline$SPA_CHRCH_TRM) 
 
-soc_CLSA_tra0$soc_sp_religious_0 <- ifelse(Tra3_4_Baseline$SPA_CHRCH_TRM ==5,0L, 
+soc_CLSA_tra_0$soc_sp_religious_0 <- ifelse(Tra3_4_Baseline$SPA_CHRCH_TRM ==5,0L, 
                                                   ifelse(Tra3_4_Baseline$SPA_CHRCH_TRM <5,1L,NA))
                                                            
-table(soc_CLSA_tra0$soc_sp_religious_0) 
-summary(soc_CLSA_tra0$soc_sp_religious_0) 
+table(soc_CLSA_tra_0$soc_sp_religious_0) 
+summary(soc_CLSA_tra_0$soc_sp_religious_0) 
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2564,11 +2564,11 @@ summary(soc_CLSA_tra0$soc_sp_religious_0)
 ```{r, echo=TRUE}
 table(Tra_FU1$SPA_CHRCH_TRF1) 
 
-soc_CLSA_tra1$soc_sp_religious_1 <- ifelse(Tra_FU1$SPA_CHRCH_TRF1 ==5,0L, 
+soc_CLSA_tra_1$soc_sp_religious_1 <- ifelse(Tra_FU1$SPA_CHRCH_TRF1 ==5,0L, 
                                                   ifelse(Tra_FU1$SPA_CHRCH_TRF1 <5,1L,NA))
                                                            
-table(soc_CLSA_tra1$soc_sp_religious_1) 
-summary(soc_CLSA_tra1$soc_sp_religious_1) 
+table(soc_CLSA_tra_1$soc_sp_religious_1) 
+summary(soc_CLSA_tra_1$soc_sp_religious_1) 
 ```
 ### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_2        
@@ -2706,14 +2706,14 @@ summary(soc_CLSA_tra1$soc_sp_religious_1)
 
 table(Tra3_4_Baseline$SPA_CHRCH_TRM) 
 
-soc_CLSA_tra0$soc_sp_freq_religious_0 <- ifelse(Tra3_4_Baseline$SPA_CHRCH_TRM ==1 |Tra3_4_Baseline$SPA_CHRCH_TRM ==2, 1L,
+soc_CLSA_tra_0$soc_sp_freq_religious_0 <- ifelse(Tra3_4_Baseline$SPA_CHRCH_TRM ==1 |Tra3_4_Baseline$SPA_CHRCH_TRM ==2, 1L,
                                            ifelse(Tra3_4_Baseline$SPA_CHRCH_TRM ==3 , 2L, 
                                            ifelse(Tra3_4_Baseline$SPA_CHRCH_TRM ==4 , 3L,
                                              ifelse(Tra3_4_Baseline$SPA_CHRCH_TRM ==5 , 4L,
                                                   ifelse(Tra3_4_Baseline$SPA_CHRCH_TRM >=6 ,5L,NA)))))
                                                            
-table(soc_CLSA_tra0$soc_sp_freq_religious_0) 
-summary(soc_CLSA_tra0$soc_sp_freq_religious_0) 
+table(soc_CLSA_tra_0$soc_sp_freq_religious_0) 
+summary(soc_CLSA_tra_0$soc_sp_freq_religious_0) 
 ```
 ### **Variable label**:  Frequency of religious participation 
 **Variable name**:  soc_sp_freq_religious_1        
@@ -2736,14 +2736,14 @@ summary(soc_CLSA_tra0$soc_sp_freq_religious_0)
 ```{r, echo=TRUE}
 table(Tra_FU1$SPA_CHRCH_TRF1) 
 
-soc_CLSA_tra1$soc_sp_freq_religious_1 <- ifelse(Tra_FU1$SPA_CHRCH_TRF1 ==1 |Tra_FU1$SPA_CHRCH_TRF1 ==2, 1L,
+soc_CLSA_tra_1$soc_sp_freq_religious_1 <- ifelse(Tra_FU1$SPA_CHRCH_TRF1 ==1 |Tra_FU1$SPA_CHRCH_TRF1 ==2, 1L,
                                            ifelse(Tra_FU1$SPA_CHRCH_TRF1 ==3 , 2L, 
                                            ifelse(Tra_FU1$SPA_CHRCH_TRF1 ==4 , 3L,
                                              ifelse(Tra_FU1$SPA_CHRCH_TRF1 ==5 , 4L,
                                                   ifelse(Tra_FU1$SPA_CHRCH_TRF1 >=6 ,5L,NA)))))
                                                            
-table(soc_CLSA_tra1$soc_sp_freq_religious_1) 
-summary(soc_CLSA_tra1$soc_sp_freq_religious_1) 
+table(soc_CLSA_tra_1$soc_sp_freq_religious_1) 
+summary(soc_CLSA_tra_1$soc_sp_freq_religious_1) 
 ```
 ### **Variable label**:  Frequency of religious participation 
 **Variable name**:  soc_sp_freq_religious_2        
@@ -2897,11 +2897,11 @@ summary(soc_CLSA_tra1$soc_sp_freq_religious_1)
 
 table(Tra3_4_Baseline$SPA_EDUC_TRM) 
 
-soc_CLSA_tra0$soc_sp_cultural_edu_0 <- ifelse(Tra3_4_Baseline$SPA_EDUC_TRM ==5,0L, 
+soc_CLSA_tra_0$soc_sp_cultural_edu_0 <- ifelse(Tra3_4_Baseline$SPA_EDUC_TRM ==5,0L, 
                                                   ifelse(Tra3_4_Baseline$SPA_EDUC_TRM <5,1L,NA))
                                                            
-table(soc_CLSA_tra0$soc_sp_cultural_edu_0) 
-summary(soc_CLSA_tra0$soc_sp_cultural_edu_0) 
+table(soc_CLSA_tra_0$soc_sp_cultural_edu_0) 
+summary(soc_CLSA_tra_0$soc_sp_cultural_edu_0) 
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -2922,11 +2922,11 @@ summary(soc_CLSA_tra0$soc_sp_cultural_edu_0)
 ```{r, echo=TRUE}
 table(Tra_FU1$SPA_EDUC_TRF1) 
 
-soc_CLSA_tra1$soc_sp_cultural_edu_1 <- ifelse(Tra_FU1$SPA_EDUC_TRF1 ==5,0L, 
+soc_CLSA_tra_1$soc_sp_cultural_edu_1 <- ifelse(Tra_FU1$SPA_EDUC_TRF1 ==5,0L, 
                                                   ifelse(Tra_FU1$SPA_EDUC_TRF1 <5,1L,NA))
                                                            
-table(soc_CLSA_tra1$soc_sp_cultural_edu_1) 
-summary(soc_CLSA_tra1$soc_sp_cultural_edu_1) 
+table(soc_CLSA_tra_1$soc_sp_cultural_edu_1) 
+summary(soc_CLSA_tra_1$soc_sp_cultural_edu_1) 
 ```
 ### **Variable label**:  Cultural and educational participation   
 **Variable name**:  soc_sp_cultural_edu_2           
@@ -3174,11 +3174,11 @@ summary(soc_CLSA_tra1$soc_sp_cultural_edu_1)
 ```{r, echo=TRUE}
 table(Tra3_4_Baseline$SPA_VOLUN_TRM) 
 
-soc_CLSA_tra0$soc_sp_volunteer_0 <- ifelse(Tra3_4_Baseline$SPA_VOLUN_TRM ==5,0L, 
+soc_CLSA_tra_0$soc_sp_volunteer_0 <- ifelse(Tra3_4_Baseline$SPA_VOLUN_TRM ==5,0L, 
                                            ifelse(Tra3_4_Baseline$SPA_VOLUN_TRM <5,1L,NA))
 
-table(soc_CLSA_tra0$soc_sp_volunteer_0) 
-summary(soc_CLSA_tra0$soc_sp_volunteer_0) 
+table(soc_CLSA_tra_0$soc_sp_volunteer_0) 
+summary(soc_CLSA_tra_0$soc_sp_volunteer_0) 
 ```
 ### **Variable label**:  Volunteering      
 **Variable name**:  soc_sp_volunteer_1                
@@ -3198,11 +3198,11 @@ summary(soc_CLSA_tra0$soc_sp_volunteer_0)
 ```{r, echo=TRUE}
 table(Tra_FU1$SPA_VOLUN_TRF1) 
 
-soc_CLSA_tra1$soc_sp_volunteer_1 <- ifelse(Tra_FU1$SPA_VOLUN_TRF1 ==5,0L, 
+soc_CLSA_tra_1$soc_sp_volunteer_1 <- ifelse(Tra_FU1$SPA_VOLUN_TRF1 ==5,0L, 
                                            ifelse(Tra_FU1$SPA_VOLUN_TRF1 <5,1L,NA))
 
-table(soc_CLSA_tra1$soc_sp_volunteer_1) 
-summary(soc_CLSA_tra1$soc_sp_volunteer_1) 
+table(soc_CLSA_tra_1$soc_sp_volunteer_1) 
+summary(soc_CLSA_tra_1$soc_sp_volunteer_1) 
 ```
 ### **Variable label**:  Volunteering      
 **Variable name**:  soc_sp_volunteer_2                
@@ -3456,11 +3456,11 @@ summary(soc_CLSA_tra1$soc_sp_volunteer_1)
 ```{r, echo=TRUE}
 table(Tra3_4_Baseline$SPA_NEIBR_TRM) 
 
-soc_CLSA_tra0$soc_sp_prof_0 <- ifelse(Tra3_4_Baseline$SPA_NEIBR_TRM ==5,0L, 
+soc_CLSA_tra_0$soc_sp_prof_0 <- ifelse(Tra3_4_Baseline$SPA_NEIBR_TRM ==5,0L, 
                                            ifelse(Tra3_4_Baseline$SPA_NEIBR_TRM <5,1L,NA))
 
-table(soc_CLSA_tra0$soc_sp_prof_0) 
-summary(soc_CLSA_tra0$soc_sp_prof_0) 
+table(soc_CLSA_tra_0$soc_sp_prof_0) 
+summary(soc_CLSA_tra_0$soc_sp_prof_0) 
 ```
 ### **Variable label**:  Professional participation         
 **Variable name**:  soc_sp_prof_1                
@@ -3480,11 +3480,11 @@ summary(soc_CLSA_tra0$soc_sp_prof_0)
 ```{r, echo=TRUE}
 table(Tra_FU1$SPA_NEIBR_TRF1) 
 
-soc_CLSA_tra1$soc_sp_prof_1 <- ifelse(Tra_FU1$SPA_NEIBR_TRF1 ==5,0L, 
+soc_CLSA_tra_1$soc_sp_prof_1 <- ifelse(Tra_FU1$SPA_NEIBR_TRF1 ==5,0L, 
                                            ifelse(Tra_FU1$SPA_NEIBR_TRF1 <5,1L,NA))
 
-table(soc_CLSA_tra1$soc_sp_prof_1) 
-summary(soc_CLSA_tra1$soc_sp_prof_1) 
+table(soc_CLSA_tra_1$soc_sp_prof_1) 
+summary(soc_CLSA_tra_1$soc_sp_prof_1) 
 ```
 ### **Variable label**:  Professional participation         
 **Variable name**:  soc_sp_prof_2                
@@ -3597,11 +3597,11 @@ summary(soc_CLSA_tra1$soc_sp_prof_1)
 **Harmonization comment**:   Dataschemas pertaining to participation (religious, cultural, educational, neighbourhood association and/or volunteering) were used to harmonize this variable.  
 **R script**:  
 ```{r, echo=TRUE}
-soc_CLSA_tra0$soc_sp_general_0 <- ifelse(soc_CLSA_tra0$soc_sp_prof_0 =='1' |  soc_CLSA_tra0$soc_sp_volunteer_0 =='1' |  soc_CLSA_tra0$soc_sp_cultural_edu_0 =='1' | soc_CLSA_tra0$soc_sp_religious_0 =='1',1L, 
-                                                  ifelse(soc_CLSA_tra0$soc_sp_prof_0 =='0'& soc_CLSA_tra0$soc_sp_volunteer_0 =='0' & soc_CLSA_tra0$soc_sp_cultural_edu_0 =='0' & soc_CLSA_tra0$soc_sp_religious_0 =='0',0L, NA))
+soc_CLSA_tra_0$soc_sp_general_0 <- ifelse(soc_CLSA_tra_0$soc_sp_prof_0 =='1' |  soc_CLSA_tra_0$soc_sp_volunteer_0 =='1' |  soc_CLSA_tra_0$soc_sp_cultural_edu_0 =='1' | soc_CLSA_tra_0$soc_sp_religious_0 =='1',1L, 
+                                                  ifelse(soc_CLSA_tra_0$soc_sp_prof_0 =='0'& soc_CLSA_tra_0$soc_sp_volunteer_0 =='0' & soc_CLSA_tra_0$soc_sp_cultural_edu_0 =='0' & soc_CLSA_tra_0$soc_sp_religious_0 =='0',0L, NA))
 
-table(soc_CLSA_tra0$soc_sp_general_0) 
-summary(soc_CLSA_tra0$soc_sp_general_0) 
+table(soc_CLSA_tra_0$soc_sp_general_0) 
+summary(soc_CLSA_tra_0$soc_sp_general_0) 
 ```
 ### **Variable label**:  General social participation            
 **Variable name**:  soc_sp_general_1                
@@ -3619,11 +3619,11 @@ summary(soc_CLSA_tra0$soc_sp_general_0)
 **Harmonization comment**:   Dataschemas pertaining to participation (religious, cultural, educational, neighbourhood association and/or volunteering) were used to harmonize this variable.    
 **R script**:  
 ```{r, echo=TRUE}
-# soc_CLSA_tra1$soc_sp_religious_1 =='1',1L, 
-#                                                   ifelse(soc_CLSA_tra1$soc_sp_prof_1 =='0'& soc_CLSA_tra1$soc_sp_volunteer_1 =='0' & soc_CLSA_tra1$soc_sp_cultural_edu_1 =='0' & soc_CLSA_tra1$soc_sp_religious_1 =='0',0L, NA))
+# soc_CLSA_tra_1$soc_sp_religious_1 =='1',1L, 
+#                                                   ifelse(soc_CLSA_tra_1$soc_sp_prof_1 =='0'& soc_CLSA_tra_1$soc_sp_volunteer_1 =='0' & soc_CLSA_tra_1$soc_sp_cultural_edu_1 =='0' & soc_CLSA_tra_1$soc_sp_religious_1 =='0',0L, NA))
 # 
-# table(soc_CLSA_tra1$soc_sp_general_1) 
-# summary(soc_CLSA_tra1$soc_sp_general_1) 
+# table(soc_CLSA_tra_1$soc_sp_general_1) 
+# summary(soc_CLSA_tra_1$soc_sp_general_1) 
 
 ```
 ### **Variable label**:  General social participation          
@@ -3740,11 +3740,11 @@ summary(soc_CLSA_tra0$soc_sp_general_0)
 
 table(Tra3_4_Baseline$SPA_PREVAC_AF_TRM) 
 
-soc_CLSA_tra0$soc_sp_nosafety_0 <- ifelse(Tra3_4_Baseline$SPA_PREVAC_AF_TRM ==1,1L, 
+soc_CLSA_tra_0$soc_sp_nosafety_0 <- ifelse(Tra3_4_Baseline$SPA_PREVAC_AF_TRM ==1,1L, 
                                            ifelse(Tra3_4_Baseline$SPA_PREVAC_AF_TRM ==0,0L,NA))
 
-table(soc_CLSA_tra0$soc_sp_nosafety_0) 
-summary(soc_CLSA_tra0$soc_sp_nosafety_0) 
+table(soc_CLSA_tra_0$soc_sp_nosafety_0) 
+summary(soc_CLSA_tra_0$soc_sp_nosafety_0) 
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3765,11 +3765,11 @@ summary(soc_CLSA_tra0$soc_sp_nosafety_0)
 ```{r, echo=TRUE}
 table(Tra_FU1$SPA_PREVAC_AF_TRF1) 
 
-soc_CLSA_tra1$soc_sp_nosafety_1 <- ifelse(Tra_FU1$SPA_PREVAC_AF_TRF1 ==1,1L, 
+soc_CLSA_tra_1$soc_sp_nosafety_1 <- ifelse(Tra_FU1$SPA_PREVAC_AF_TRF1 ==1,1L, 
                                            ifelse(Tra_FU1$SPA_PREVAC_AF_TRF1 ==0,0L,NA))
 
-table(soc_CLSA_tra1$soc_sp_nosafety_1) 
-summary(soc_CLSA_tra1$soc_sp_nosafety_1) 
+table(soc_CLSA_tra_1$soc_sp_nosafety_1) 
+summary(soc_CLSA_tra_1$soc_sp_nosafety_1) 
 ```
 ### **Variable label**:  Non participation due to safety       
 **Variable name**:  soc_sp_nosafety_2                  
@@ -3884,11 +3884,11 @@ summary(soc_CLSA_tra1$soc_sp_nosafety_1)
 ```{r, echo=TRUE}
 table(Tra3_4_Baseline$SPA_PREVAC_TP_TRM) 
 
-soc_CLSA_tra0$soc_sp_notrans_0 <- ifelse(Tra3_4_Baseline$SPA_PREVAC_TP_TRM ==1,1L, 
+soc_CLSA_tra_0$soc_sp_notrans_0 <- ifelse(Tra3_4_Baseline$SPA_PREVAC_TP_TRM ==1,1L, 
                                            ifelse(Tra3_4_Baseline$SPA_PREVAC_TP_TRM ==0,0L,NA))
 
-table(soc_CLSA_tra0$soc_sp_notrans_0) 
-summary(soc_CLSA_tra0$soc_sp_notrans_0) 
+table(soc_CLSA_tra_0$soc_sp_notrans_0) 
+summary(soc_CLSA_tra_0$soc_sp_notrans_0) 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
 **Variable name**:  soc_sp_notrans_1                  
@@ -3908,11 +3908,11 @@ summary(soc_CLSA_tra0$soc_sp_notrans_0)
 ```{r, echo=TRUE}
 table(Tra_FU1$SPA_PREVAC_TP_TRF1) 
 
-soc_CLSA_tra1$soc_sp_notrans_1 <- ifelse(Tra_FU1$SPA_PREVAC_TP_TRF1 ==1,1L, 
+soc_CLSA_tra_1$soc_sp_notrans_1 <- ifelse(Tra_FU1$SPA_PREVAC_TP_TRF1 ==1,1L, 
                                            ifelse(Tra_FU1$SPA_PREVAC_TP_TRF1 ==0,0L,NA))
 
-table(soc_CLSA_tra1$soc_sp_notrans_1) 
-summary(soc_CLSA_tra1$soc_sp_notrans_1) 
+table(soc_CLSA_tra_1$soc_sp_notrans_1) 
+summary(soc_CLSA_tra_1$soc_sp_notrans_1) 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
 **Variable name**:  soc_sp_notrans_2                  
@@ -4028,11 +4028,11 @@ summary(soc_CLSA_tra1$soc_sp_notrans_1)
 
 table(Tra3_4_Baseline$SPA_SOAC_HY_TRM) 
 
-soc_CLSA_tra0$soc_sp_hobby_0 <- ifelse(Tra3_4_Baseline$SPA_SOAC_HY_TRM ==1,1L, 
+soc_CLSA_tra_0$soc_sp_hobby_0 <- ifelse(Tra3_4_Baseline$SPA_SOAC_HY_TRM ==1,1L, 
                                            ifelse(Tra3_4_Baseline$SPA_SOAC_HY_TRM ==0,0L,NA))
 
-table(soc_CLSA_tra0$soc_sp_hobby_0) 
-summary(soc_CLSA_tra0$soc_sp_hobby_0) 
+table(soc_CLSA_tra_0$soc_sp_hobby_0) 
+summary(soc_CLSA_tra_0$soc_sp_hobby_0) 
 ```
 ### **Variable label**:  Hobby      
 **Variable name**:  soc_sp_hobby_1                       
@@ -4052,11 +4052,11 @@ summary(soc_CLSA_tra0$soc_sp_hobby_0)
 ```{r, echo=TRUE}
 table(Tra_FU1$SPA_SOAC_HY_TRF1) 
 
-soc_CLSA_tra1$soc_sp_hobby_1 <- ifelse(Tra_FU1$SPA_SOAC_HY_TRF1 ==1,1L, 
+soc_CLSA_tra_1$soc_sp_hobby_1 <- ifelse(Tra_FU1$SPA_SOAC_HY_TRF1 ==1,1L, 
                                            ifelse(Tra_FU1$SPA_SOAC_HY_TRF1 ==0,0L,NA))
 
-table(soc_CLSA_tra1$soc_sp_hobby_1) 
-summary(soc_CLSA_tra1$soc_sp_hobby_1) 
+table(soc_CLSA_tra_1$soc_sp_hobby_1) 
+summary(soc_CLSA_tra_1$soc_sp_hobby_1) 
 ```
 ### **Variable label**:  Hobby      
 **Variable name**:  soc_sp_hobby_2                       
@@ -4816,10 +4816,10 @@ summary(soc_CLSA_tra1$soc_sp_hobby_1)
 ```{r, echo=TRUE}
 table(Tra3_4_Baseline$TRA_LVCMNTY_YR_MCQ) 
 
-soc_CLSA_tra0$soc_res_num_yrsnbh_0 <- as.integer(Tra3_4_Baseline$TRA_LVCMNTY_YR_MCQ) 
+soc_CLSA_tra_0$soc_res_num_yrsnbh_0 <- as.integer(Tra3_4_Baseline$TRA_LVCMNTY_YR_MCQ) 
 
-table(soc_CLSA_tra0$soc_res_num_yrsnbh_0) 
-summary(soc_CLSA_tra0$soc_res_num_yrsnbh_0) 
+table(soc_CLSA_tra_0$soc_res_num_yrsnbh_0) 
+summary(soc_CLSA_tra_0$soc_res_num_yrsnbh_0) 
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
 **Variable name**:  soc_res_num_yrsnbh_1          
@@ -4834,10 +4834,10 @@ summary(soc_CLSA_tra0$soc_res_num_yrsnbh_0)
 ```{r, echo=TRUE}
 table(Tra_FU1$TRA_LVCMNTY_YR_TRF1) 
 
-soc_CLSA_tra1$soc_res_num_yrsnbh_1 <- as.integer(Tra_FU1$TRA_LVCMNTY_YR_TRF1) 
+soc_CLSA_tra_1$soc_res_num_yrsnbh_1 <- as.integer(Tra_FU1$TRA_LVCMNTY_YR_TRF1) 
 
-table(soc_CLSA_tra1$soc_res_num_yrsnbh_1) 
-summary(soc_CLSA_tra1$soc_res_num_yrsnbh_1) 
+table(soc_CLSA_tra_1$soc_res_num_yrsnbh_1) 
+summary(soc_CLSA_tra_1$soc_res_num_yrsnbh_1) 
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
 **Variable name**:  soc_res_num_yrsnbh_2          
@@ -4922,10 +4922,10 @@ summary(soc_CLSA_tra1$soc_res_num_yrsnbh_1)
 ```{r, echo=TRUE}
 table(Tra3_4_Baseline$TRA_LVDHM_YR_MCQ)   
 
-soc_CLSA_tra0$soc_res_num_yrshome_0 <- as.integer(Tra3_4_Baseline$TRA_LVDHM_YR_MCQ) 
+soc_CLSA_tra_0$soc_res_num_yrshome_0 <- as.integer(Tra3_4_Baseline$TRA_LVDHM_YR_MCQ) 
 
-table(soc_CLSA_tra0$soc_res_num_yrshome_0) 
-summary(soc_CLSA_tra0$soc_res_num_yrshome_0) 
+table(soc_CLSA_tra_0$soc_res_num_yrshome_0) 
+summary(soc_CLSA_tra_0$soc_res_num_yrshome_0) 
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -4941,10 +4941,10 @@ summary(soc_CLSA_tra0$soc_res_num_yrshome_0)
 ```{r, echo=TRUE}
 table(Tra_FU1$TRA_LVDHM_YR_TRF1)   
 
-soc_CLSA_tra1$soc_res_num_yrshome_1 <- as.integer(Tra_FU1$TRA_LVDHM_YR_TRF1) 
+soc_CLSA_tra_1$soc_res_num_yrshome_1 <- as.integer(Tra_FU1$TRA_LVDHM_YR_TRF1) 
 
-table(soc_CLSA_tra1$soc_res_num_yrshome_1) 
-summary(soc_CLSA_tra1$soc_res_num_yrshome_1) 
+table(soc_CLSA_tra_1$soc_res_num_yrshome_1) 
+summary(soc_CLSA_tra_1$soc_res_num_yrshome_1) 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
 **Variable name**:  soc_res_num_yrshome_2          
@@ -5282,11 +5282,11 @@ summary(soc_CLSA_tra1$soc_res_num_yrshome_1)
 # sorry I cannot make this work!
 table(Tra3_4_Baseline$OWN_DWLG_TRM) 
 
-soc_CLSA_tra0$soc_res_indep_0 <- ifelse(Tra3_4_Baseline$OWN_DWLG_TRM==1 | Tra3_4_Baseline$OWN_DWLG_TRM==2 | (Tra3_4_Baseline$OWN_DWLG_TRM>=5 & Tra3_4_Baseline$OWN_DWLG_TRM<=97),0L, 
+soc_CLSA_tra_0$soc_res_indep_0 <- ifelse(Tra3_4_Baseline$OWN_DWLG_TRM==1 | Tra3_4_Baseline$OWN_DWLG_TRM==2 | (Tra3_4_Baseline$OWN_DWLG_TRM>=5 & Tra3_4_Baseline$OWN_DWLG_TRM<=97),0L, 
                                                   ifelse(Tra3_4_Baseline$OWN_DWLG_TRM==3 | Tra3_4_Baseline$OWN_DWLG_TRM==4,1L, NA))
 
-table(soc_CLSA_tra0$soc_res_indep_0) 
-summary(soc_CLSA_tra0$soc_res_indep_0) 
+table(soc_CLSA_tra_0$soc_res_indep_0) 
+summary(soc_CLSA_tra_0$soc_res_indep_0) 
 ```
 ### **Variable label**:  Residence independence     
 **Variable name**:  soc_res_indep_1                  
@@ -5306,11 +5306,11 @@ summary(soc_CLSA_tra0$soc_res_indep_0)
 ```{r, echo=TRUE}
 table(Tra_FU1$OWN_DWLG_TRF1) 
 
-soc_CLSA_tra1$soc_res_indep_1 <- ifelse(Tra_FU1$OWN_DWLG_TRF1==1 | Tra_FU1$OWN_DWLG_TRF1==2 | (Tra_FU1$OWN_DWLG_TRF1>=5 & Tra_FU1$OWN_DWLG_TRF1<=97),0L, 
+soc_CLSA_tra_1$soc_res_indep_1 <- ifelse(Tra_FU1$OWN_DWLG_TRF1==1 | Tra_FU1$OWN_DWLG_TRF1==2 | (Tra_FU1$OWN_DWLG_TRF1>=5 & Tra_FU1$OWN_DWLG_TRF1<=97),0L, 
                                                   ifelse(Tra_FU1$OWN_DWLG_TRF1==3 | Tra_FU1$OWN_DWLG_TRF1==4,1L, NA))
 
-table(soc_CLSA_tra1$soc_res_indep_1) 
-summary(soc_CLSA_tra1$soc_res_indep_1) 
+table(soc_CLSA_tra_1$soc_res_indep_1) 
+summary(soc_CLSA_tra_1$soc_res_indep_1) 
 ```
 ### **Variable label**:  Residence independence     
 **Variable name**:  soc_res_indep_2                  
@@ -5429,13 +5429,13 @@ summary(soc_CLSA_tra1$soc_res_indep_1)
 #sorry cannot make this work
 table(Tra3_4_Baseline$OWN_DWLG_TRM) 
 
-soc_CLSA_tra0$soc_res_type_0 <- ifelse(Tra3_4_Baseline$OWN_DWLG_TRM==1 | Tra3_4_Baseline$OWN_DWLG_TRM==6,2L, 
+soc_CLSA_tra_0$soc_res_type_0 <- ifelse(Tra3_4_Baseline$OWN_DWLG_TRM==1 | Tra3_4_Baseline$OWN_DWLG_TRM==6,2L, 
                                                   ifelse(Tra3_4_Baseline$OWN_DWLG_TRM==2,1L,
                                                       ifelse(Tra3_4_Baseline$OWN_DWLG_TRM==3 | Tra3_4_Baseline$OWN_DWLG_TRM==4,3L,
                                                            ifelse(Tra3_4_Baseline$OWN_DWLG_TRM==5 | Tra3_4_Baseline$OWN_DWLG_TRM==97 | (Tra3_4_Baseline$OWN_DWLG_TRM>=7 & Tra3_4_Baseline$OWN_DWLG_TRM<=12), 5L, NA))))
 
-table(soc_CLSA_tra0$soc_res_type_0) 
-summary(soc_CLSA_tra0$soc_res_type_0) 
+table(soc_CLSA_tra_0$soc_res_type_0) 
+summary(soc_CLSA_tra_0$soc_res_type_0) 
 ```
 ### **Variable label**:  Residence type     
 **Variable name**:  soc_res_type_1                    
@@ -5459,13 +5459,13 @@ summary(soc_CLSA_tra0$soc_res_type_0)
 
 table(Tra_FU1$OWN_DWLG_TRF1) 
 
-soc_CLSA_tra1$soc_res_type_1 <- ifelse(Tra_FU1$OWN_DWLG_TRF1==1 | Tra_FU1$OWN_DWLG_TRF1==6,2L, 
+soc_CLSA_tra_1$soc_res_type_1 <- ifelse(Tra_FU1$OWN_DWLG_TRF1==1 | Tra_FU1$OWN_DWLG_TRF1==6,2L, 
                                                   ifelse(Tra_FU1$OWN_DWLG_TRF1==2,1L,
                                                       ifelse(Tra_FU1$OWN_DWLG_TRF1==3 | Tra_FU1$OWN_DWLG_TRF1==4,3L,
                                                            ifelse(Tra_FU1$OWN_DWLG_TRF1==5 | Tra_FU1$OWN_DWLG_TRF1==97 | (Tra_FU1$OWN_DWLG_TRF1>=7 & Tra_FU1$OWN_DWLG_TRF1<=12), 5L, NA))))
 
-table(soc_CLSA_tra1$soc_res_type_1) 
-summary(soc_CLSA_tra1$soc_res_type_1) 
+table(soc_CLSA_tra_1$soc_res_type_1) 
+summary(soc_CLSA_tra_1$soc_res_type_1) 
 ```
 ### **Variable label**:  Residence type     
 **Variable name**:  soc_res_type_2                    
@@ -5600,11 +5600,11 @@ summary(soc_CLSA_tra1$soc_res_type_1)
 ```{r, echo=TRUE}
 table(Tra3_4_Baseline$OWN_OWN_TRM) 
 
-soc_CLSA_tra0$soc_res_home_own_dich_0 <- ifelse(Tra3_4_Baseline$OWN_OWN_TRM ==1,0L, 
+soc_CLSA_tra_0$soc_res_home_own_dich_0 <- ifelse(Tra3_4_Baseline$OWN_OWN_TRM ==1,0L, 
                                            ifelse(Tra3_4_Baseline$OWN_OWN_TRM >=2 ,1L,NA))
 
-table(soc_CLSA_tra0$soc_res_home_own_dich_0) 
-summary(soc_CLSA_tra0$soc_res_home_own_dich_0) 
+table(soc_CLSA_tra_0$soc_res_home_own_dich_0) 
+summary(soc_CLSA_tra_0$soc_res_home_own_dich_0) 
 ```
 ### **Variable label**:  Home ownership (2-level)      
 **Variable name**:  soc_res_home_own_dich_1                     
@@ -5624,11 +5624,11 @@ summary(soc_CLSA_tra0$soc_res_home_own_dich_0)
 ```{r, echo=TRUE}
 table(Tra_FU1$OWN_OWN_TRF1) 
 
-soc_CLSA_tra1$soc_res_home_own_dich_1 <- ifelse(Tra_FU1$OWN_OWN_TRF1 ==1,0L, 
+soc_CLSA_tra_1$soc_res_home_own_dich_1 <- ifelse(Tra_FU1$OWN_OWN_TRF1 ==1,0L, 
                                            ifelse(Tra_FU1$OWN_OWN_TRF1 >=2 ,1L,NA))
 
-table(soc_CLSA_tra1$soc_res_home_own_dich_1) 
-summary(soc_CLSA_tra1$soc_res_home_own_dich_1) 
+table(soc_CLSA_tra_1$soc_res_home_own_dich_1) 
+summary(soc_CLSA_tra_1$soc_res_home_own_dich_1) 
 ```
 ### **Variable label**:  Home ownership (2-level)      
 **Variable name**:  soc_res_home_own_dich_2                     
@@ -5744,12 +5744,12 @@ summary(soc_CLSA_tra1$soc_res_home_own_dich_1)
 ```{r, echo=TRUE}
 table(Tra3_4_Baseline$OWN_OWN_TRM) 
 
-soc_CLSA_tra0$soc_res_home_own_0 <- ifelse(Tra3_4_Baseline$OWN_OWN_TRM ==1 |Tra3_4_Baseline$OWN_OWN_TRM ==6|Tra3_4_Baseline$OWN_OWN_TRM ==7| Tra3_4_Baseline$OWN_OWN_TRM ==4| Tra3_4_Baseline$OWN_OWN_TRM ==4,1L, 
+soc_CLSA_tra_0$soc_res_home_own_0 <- ifelse(Tra3_4_Baseline$OWN_OWN_TRM ==1 |Tra3_4_Baseline$OWN_OWN_TRM ==6|Tra3_4_Baseline$OWN_OWN_TRM ==7| Tra3_4_Baseline$OWN_OWN_TRM ==4| Tra3_4_Baseline$OWN_OWN_TRM ==4,1L, 
                                                 ifelse(Tra3_4_Baseline$OWN_OWN_TRM ==2|Tra3_4_Baseline$OWN_OWN_TRM ==3,3L, 
                                            ifelse(Tra3_4_Baseline$OWN_OWN_TRM >=3 & Tra3_4_Baseline$OWN_OWN_TRM <=97 ,2L,NA)))
 
-table(soc_CLSA_tra0$soc_res_home_own_0) 
-summary(soc_CLSA_tra0$soc_res_home_own_0) 
+table(soc_CLSA_tra_0$soc_res_home_own_0) 
+summary(soc_CLSA_tra_0$soc_res_home_own_0) 
 ```
 ### **Variable label**:  Home ownership (3-level)      
 **Variable name**:  soc_res_home_own_1                        
@@ -5770,12 +5770,12 @@ summary(soc_CLSA_tra0$soc_res_home_own_0)
 ```{r, echo=TRUE}
 table(Tra_FU1$OWN_OWN_TRF1) 
 
-soc_CLSA_tra1$soc_res_home_own_1 <- ifelse(Tra_FU1$OWN_OWN_TRF1 ==1 |Tra_FU1$OWN_OWN_TRF1 ==6|Tra_FU1$OWN_OWN_TRF1 ==7| Tra_FU1$OWN_OWN_TRF1 ==4| Tra_FU1$OWN_OWN_TRF1 ==4,1L, 
+soc_CLSA_tra_1$soc_res_home_own_1 <- ifelse(Tra_FU1$OWN_OWN_TRF1 ==1 |Tra_FU1$OWN_OWN_TRF1 ==6|Tra_FU1$OWN_OWN_TRF1 ==7| Tra_FU1$OWN_OWN_TRF1 ==4| Tra_FU1$OWN_OWN_TRF1 ==4,1L, 
                                                 ifelse(Tra_FU1$OWN_OWN_TRF1 ==2|Tra_FU1$OWN_OWN_TRF1 ==3,3L, 
                                            ifelse(Tra_FU1$OWN_OWN_TRF1 >=3 & Tra_FU1$OWN_OWN_TRF1 <=97 ,2L,NA)))
 
-table(soc_CLSA_tra1$soc_res_home_own_1) 
-summary(soc_CLSA_tra1$soc_res_home_own_1) 
+table(soc_CLSA_tra_1$soc_res_home_own_1) 
+summary(soc_CLSA_tra_1$soc_res_home_own_1) 
 
 ```
 ### **Variable label**:  Home ownership (3-level)      

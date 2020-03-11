@@ -15,11 +15,11 @@ library(opal)
 # Create an opal object with the login information
 erasmus_opal <- opal.login()
 #Login to Opal server and assign the content of the CLSA table(s) to your RStudio environment
-# CLSA-COP0
+# CLSA-cop_0
 opal.assign.table.tibble(erasmus_opal, 'CoP4_Baseline', 'CLSA_1.CoP4_Baseline', variables = 
 list('K10_DSCORE_MCQ','K10_TIRED_MCQ','K10_NRVS_MCQ','K10_NRVSCLMD_MCQ','K10_HPLS_MCQ','K10_RSTLS_MCQ','K10_RSTLSSTL_MCQ','K10_DEP_MCQ','K10_EFFRT_MCQ','K10_NOCHRUP_MCQ','K10_WRTHLSS_MCQ','K10_FLING_MCQ','K10_FLINGLESS_MCQ','K10_FLINGMORE_MCQ','K10_UNWK_NB_MCQ','K10_HFWK_NB_MCQ','K10_DOC_NB_MCQ','K10_OTPFLING_MCQ','K10_OTPFLING_OTSP_MCQ','K10_PHYSHLTH_MCQ','DEP_DPSFD_COM','DEP_NBRMIS_COM','DEP_CESD10_COM','DEP_BOTR_COM','DEP_MIND_COM','DEP_FLDP_COM','DEP_FFRT_COM','DEP_HPFL_COM','DEP_FRFL_COM','DEP_RSTLS_COM','DEP_HAPP_COM','DEP_LONLY_COM','DEP_GTGO_COM','SLS_DLIFE_COM','SLS_DCOND_COM','SLS_DSATS_COM','SLS_DIMP_COM','SLS_DOVER_COM','PSD_NGHTM_COM','PSD_AVOID_COM','PSD_GUARD_COM','PSD_DETACH_COM','COG_REYI_SCORE_COM','COG_REYII_SCORE_COM','COG_ANML_COM','COG_ANMLRPT_COM','COG_AFT_SCORE_1_COM','COG_AFT_SCORE_2_COM','COG_MAT_SCORE_COM'))
 CoP4_Baseline <- opal.execute(erasmus_opal,'CoP4_Baseline')
-# CLSA-COP1
+# CLSA-cop_1
 opal.assign.table.tibble(erasmus_opal, 'CoP_FU1', 'CLSA_1.CoP_FU1', variables = 
 list('K10_TIRED_COF1','K10_NRVS_COF1','K10_NRVSCLMD_COF1','K10_HPLS_COF1','K10_RSTLS_COF1','K10_RSTLSSTL_COF1','K10_DEP_COF1','K10_EFFRT_COF1','K10_NOCHRUP_COF1','K10_WRTHLSS_COF1','K10_FLING_COF1','K10_FLINGLESS_COF1','K10_FLINGMORE_COF1','K10_UNWK_NB_COF1','K10_HFWK_NB_COF1','K10_DOC_NB_COF1','K10_OTPFLING_COF1','K10_PHYSHLTH_COF1','DEP_BOTR_COF1','DEP_MIND_COF1','DEP_FLDP_COF1','DEP_FFRT_COF1','DEP_HPFL_COF1','DEP_FRFL_COF1','DEP_RSTLS_COF1','DEP_HAPP_COF1','DEP_LONLY_COF1','DEP_GTGO_COF1','SLS_LIFE_COF1','SLS_LIFENEG_COF1','SLS_LIFEPOS_COF1','SLS_COND_COF1','SLS_CONDNEG_COF1','SLS_CONDPOS_COF1','SLS_SATS_COF1','SLS_SATSNEG_COF1','SLS_SATSPOS_COF1','SLS_IMP_COF1','SLS_IMPNEG_COF1',
 'SLS_IMPPOS_COF1','SLS_OVER_COF1','SLS_OVERNEG_COF1','SLS_OVERPOS_COF1','LONE_OFTN_COF1','LONE_LEFT_COF1','LONE_ISOL_COF1')) 
@@ -27,8 +27,8 @@ CoP_FU1 <- opal.execute(erasmus_opal,'CoP_FU1')
 ```
 ## Assign participant id as first column of your harmonized dataframes
 ```{r, echo=FALSE}
-soc_CLSA_cop0 <- data.frame(id = CoP4_Baseline$id)
-soc_CLSA_cop1 <- data.frame(id = CoP_FU1$id)
+soc_CLSA_cop_0 <- data.frame(id = CoP4_Baseline$id)
+soc_CLSA_cop_1 <- data.frame(id = CoP_FU1$id)
 # When you are done with your work, logout of Opal server
 opal.logout(erasmus_opal)
 ```
