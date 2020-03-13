@@ -3101,7 +3101,7 @@ soc_LASA2_3$soc_sp_cul_edu_soc_3 <- ifelse(LASA2H$HSOCP14 ==2 | LASA2H$HSOCP20==
 table(soc_LASA2_3$soc_sp_cul_edu_soc_3, useNA="always")
 ```
 ### **Variable label**:  Cultural, educational and social participation       
-**Variable name**:  ssoc_sp_cul_edu_soc_4               
+**Variable name**:  soc_sp_cul_edu_soc_4               
 **Variable description**:  Indicator of whether the participant is a member of/ participates in a group, club or activity related to culture, educational or social activities.      
 **Value type**:  integer  
 **Variable unit**:    
