@@ -4060,9 +4060,14 @@ summary(soc_LASA2_2$soc_sp_notrans_2)
 ```{r, echo=TRUE}
 table(LASA2B$bsocp24)  #do you visit an organization for hobby 
 table(LASA2B$bsocp57) #do you study a hobby
+table(LASA2B$bsocpyn, useNA = "always") 
+table(LASA2B$bsocp55, useNA = "always") 
 
-soc_LASA2_0$soc_sp_hobby_0 <- ifelse(LASA2B$bsocpyn==2 &LASA2B$bsocp55==2, 0L, 
-                                     ifelse (LASA2B$bsocp24 =='2' | LASA2B$bsocp57 =='2',1L, ifelse((LASA2B$bsocp24 =='1' & LASA2B$bsocp57 !='1')| (LASA2B$bsocp57 =='1'&LASA2B$bsocp24 !='1'),0L, NA)))
+soc_LASA2_0$soc_sp_hobby_0 <- ifelse(LASA2B$bsocpyn==1 & LASA2B$bsocp55==1, 0L, 
+                                     ifelse (LASA2B$bsocp24 =='2' | LASA2B$bsocp57 =='1',1L,
+                                     ifelse((LASA2B$bsocp24 =='1' & LASA2B$bsocp57 !='1')| 
+                                            (LASA2B$bsocp57 =='0'&LASA2B$bsocp24 !='2'),0L, NA)))
+
 
 
 table(soc_LASA2_0$soc_sp_hobby_0, useNA="always") 
@@ -4086,9 +4091,10 @@ table(soc_LASA2_0$soc_sp_hobby_0, useNA="always")
 table(LASA2F$fsocp24)  #do you visit an organization for hobby 
 table(LASA2F$fsocp57) #do you study a hobby
 
-soc_LASA2_1$soc_sp_hobby_1 <- ifelse(LASA2F$fsocpyn==2 &LASA2F$fsocp55==2, 0L, 
-                                     ifelse (LASA2F$fsocp24 =='2' | LASA2F$fsocp57 =='2',1L, ifelse((LASA2F$fsocp24 =='1' & LASA2F$fsocp57 !='1')| (LASA2F$fsocp57 =='1'&LASA2F$fsocp24 !='1'),0L, NA)))
-
+soc_LASA2_1$soc_sp_hobby_1 <- ifelse(LASA2F$fsocpyn==1 &LASA2F$fsocp55==1, 0L, 
+                                     ifelse (LASA2F$fsocp24 =='2' | LASA2F$fsocp57 =='1',1L, 
+                                     ifelse((LASA2F$fsocp24 =='1' & LASA2F$fsocp57 !='1')| 
+                                            (LASA2F$fsocp57 =='0'&LASA2F$fsocp24 !='2'),0L, NA)))
 
 table(soc_LASA2_1$soc_sp_hobby_1, useNA="always") 
 ```
@@ -4108,8 +4114,10 @@ table(soc_LASA2_1$soc_sp_hobby_1, useNA="always")
 **Harmonization comment**:  A participant that yes for the LASA item 1.visiting an organization for a hobby/ social club or 2. studying a hobby where considered, were coded as having a hobby.   
 **R script**:  
 ```{r, echo=TRUE}
-soc_LASA2_2$soc_sp_hobby_2 <- ifelse(LASA2G$gsocpyn==2 &LASA2G$gsocp55==2, 0L, 
-                                     ifelse (LASA2G$gsocp24 =='2' | LASA2G$gsocp57 =='2',1L, ifelse((LASA2G$gsocp24 =='1' & LASA2G$gsocp57 !='1')| (LASA2G$gsocp57 =='1'&LASA2G$gsocp24 !='1'),0L, NA)))
+soc_LASA2_2$soc_sp_hobby_2 <- ifelse(LASA2G$gsocpyn==1 &LASA2G$gsocp55==1, 0L, 
+                                    ifelse (LASA2G$gsocp24 =='2' | LASA2G$gsocp57 =='1',1L, 
+                                    ifelse((LASA2G$gsocp24 =='1' & LASA2G$gsocp57 !='1')|
+                                          (LASA2G$gsocp57 =='0'&LASA2G$gsocp24 !='2'),0L, NA)))
 
 
 table(soc_LASA2_2$soc_sp_hobby_2, useNA="always") 
@@ -4133,9 +4141,10 @@ table(soc_LASA2_2$soc_sp_hobby_2, useNA="always")
 table(LASA2H$HSOCP24)  #do you visit an organization for hobby 
 table(LASA2H$HSOCP57) #do you study a hobby 1 = yes 
 
-soc_LASA2_3$soc_sp_hobby_3 <- ifelse(LASA2H$HSOCPYN==2 &LASA2H$HSOCP55==2, 0L, 
-                                     ifelse (LASA2H$HSOCP24 ==2 | LASA2H$HSOCP57 ==2,1L, ifelse((LASA2H$HSOCP24 ==1 & LASA2H$HSOCP57 !=1)| (LASA2H$HSOCP57 ==1 & LASA2H$HSOCP24 !=1),0L, NA)))
-
+soc_LASA2_3$soc_sp_hobby_3 <- ifelse(LASA2H$HSOCPYN==1 &LASA2H$HSOCP55==1, 0L, 
+                                     ifelse (LASA2H$HSOCP24 ==2 | LASA2H$HSOCP57 ==1,1L, 
+                                      ifelse((LASA2H$HSOCP24 ==1 & LASA2H$HSOCP57 !=1)| 
+                                             (LASA2H$HSOCP57 ==0 & LASA2H$HSOCP24 !=2),0L, NA)))
 
 table(soc_LASA2_3$soc_sp_hobby_3, useNA="always") 
 ```
@@ -4212,12 +4221,12 @@ table(soc_LASA2_3$soc_sp_hobby_3, useNA="always")
 **Harmonization comment**:  Used same approach as in the harmonization of GLOBE data: utilized study available DataSchema social network - contact frequency variables (friends, neighbours, relatives, family and non-kin) in addition to the general participation variable, no contact with these different types of social network members and no participation was categorized as socially isolated. Having one or more of these types of members (in addition to children) in their network and reporting social participation was categorized as not socially isolated.   
 **R script**:  
 ```{r, echo=TRUE}
-# no contact frequency, as opposed to no network since this is what we used in GLOBE 
 
-# soc_LASA2_0$soc_sp_isolation_0 <- ifelse((soc_LASA2_0$soc_sn_freq_friends_0 == 5 | soc_LASA2_0$soc_sn_freq_nbhs_0 ==5 |     soc_LASA2_0$soc_sn_freq_close_relatives_0 ==5 | soc_LASA2_0$soc_sn_freq_relatives_0 ==4 |soc_LASA2_0$soc_sn_freq_nonkin_0==4 ) & soc_LASA2_0$soc_sp_general_0 == 0,1L, 
-#                                  ifelse((soc_LASA2_0$soc_sn_freq_friends_0 >= 1 | soc_LASA2_0$soc_sn_freq_nbhs_0 >= 1 | soc_LASA2_0$soc_sn_freq_close_relatives_0 >= 1 | soc_LASA2_0$soc_sn_freq_relatives_0 >= 1) & soc_LASA2_0$soc_sn_freq_nonkin_0 == 1, 0L, NA ))
-# 
-# table(soc_LASA2_0$soc_sp_isolation_0, useNA="always")
+soc_LASA2_0$soc_sp_isolation_0 <- ifelse((soc_LASA2_0$soc_sn_freq_friends_0 == 3 | soc_LASA2_0$soc_sn_freq_nbhs_0 ==3 | 
+                                          soc_LASA2_0$soc_sn_freq_close_relatives_0 ==3 | soc_LASA2_0$soc_sn_freq_relatives_0 ==3|soc_LASA2_0$soc_sn_freq_nonkin_0==3) &
+                                           soc_LASA2_0$soc_sp_general_0 == 0,1L,
+                                 ifelse((soc_LASA2_0$soc_sn_freq_friends_0 >= 1 | soc_LASA2_0$soc_sn_freq_nbhs_0 >= 1 | soc_LASA2_0$soc_sn_freq_close_relatives_0 >= 1 |
+                                           soc_LASA2_0$soc_sn_freq_relatives_0 >= 1) & soc_LASA2_0$soc_sn_freq_nonkin_0 == 1, 0L, NA ))
 
 ```
 ### **Variable label**:  Social isolation    
@@ -4236,10 +4245,12 @@ table(soc_LASA2_3$soc_sp_hobby_3, useNA="always")
 **Harmonization comment**:  Used same approach as in the harmonization of GLOBE data: utilized study available DataSchema social network - contact frequency variables (friends, neighbours, relatives, family and non-kin) in addition to the general participation variable, no contact with these different types of social network members and no participation was categorized as socially isolated. Having one or more of these types of members (in addition to children) in their network and reporting social participation was categorized as not socially isolated.   
 **R script**:  
 ```{r, echo=TRUE}
-# soc_LASA2_1$soc_sp_isolation_1 <- ifelse((soc_LASA2_1$soc_sn_freq_friends_1 == 5 | soc_LASA2_1$soc_sn_freq_nbhs_1 ==5 |     soc_LASA2_1$soc_sn_freq_close_relatives_1 ==5 | soc_LASA2_1$soc_sn_freq_relatives_1 ==4 |soc_LASA2_1$soc_sn_freq_nonkin_1==4 ) & soc_LASA2_1$soc_sp_general_1 == 0,1L, 
-#                                  ifelse((soc_LASA2_1$soc_sn_freq_friends_1 >= 1 | soc_LASA2_1$soc_sn_freq_nbhs_1 >= 1 | soc_LASA2_1$soc_sn_freq_close_relatives_1 >= 1 | soc_LASA2_1$soc_sn_freq_relatives_1 >= 1) & soc_LASA2_1$soc_sn_freq_nonkin_1 == 1, 0L, NA ))
-# 
-# table(soc_LASA2_1$soc_sp_isolation_1, useNA="always")
+soc_LASA2_1$soc_sp_isolation_1 <- ifelse((soc_LASA2_1$soc_sn_freq_friends_1 == 3 | soc_LASA2_1$soc_sn_freq_nbhs_1 ==3 |     soc_LASA2_1$soc_sn_freq_close_relatives_1 ==3 |
+                                            soc_LASA2_1$soc_sn_freq_relatives_1 ==3 |soc_LASA2_1$soc_sn_freq_nonkin_1==3 ) & soc_LASA2_1$soc_sp_general_1 == 0,1L,
+                                 ifelse((soc_LASA2_1$soc_sn_freq_friends_1 >= 1 | soc_LASA2_1$soc_sn_freq_nbhs_1 >= 1 | soc_LASA2_1$soc_sn_freq_close_relatives_1 >= 1 |
+                                           soc_LASA2_1$soc_sn_freq_relatives_1 >= 1) & soc_LASA2_1$soc_sn_freq_nonkin_1 == 1, 0L, NA ))
+
+table(soc_LASA2_1$soc_sp_isolation_1, useNA="always")
 
 ```
 ### **Variable label**:  Social isolation    
@@ -4258,10 +4269,12 @@ table(soc_LASA2_3$soc_sp_hobby_3, useNA="always")
 **Harmonization comment**:  Used same approach as in the harmonization of GLOBE data: utilized study available DataSchema social network - contact frequency variables (friends, neighbours, relatives, family and non-kin) in addition to the general participation variable, no contact with these different types of social network members and no participation was categorized as socially isolated. Having one or more of these types of members (in addition to children) in their network and reporting social participation was categorized as not socially isolated.   
 **R script**:  
 ```{r, echo=TRUE}
-# soc_LASA2_2$soc_sp_isolation_2 <- ifelse((soc_LASA2_2$soc_sn_freq_friends_2 == 5 | soc_LASA2_2$soc_sn_freq_nbhs_2 ==5 |     soc_LASA2_2$soc_sn_freq_close_relatives_2 ==5 | soc_LASA2_2$soc_sn_freq_relatives_2 ==4 |soc_LASA2_2$soc_sn_freq_nonkin_2==4 ) & soc_LASA2_2$soc_sp_general_2 == 0,1L, 
-#                                  ifelse((soc_LASA2_2$soc_sn_freq_friends_2 >= 1 | soc_LASA2_2$soc_sn_freq_nbhs_2 >= 1 | soc_LASA2_2$soc_sn_freq_close_relatives_2 >= 1 | soc_LASA2_2$soc_sn_freq_relatives_2 >= 1) & soc_LASA2_2$soc_sn_freq_nonkin_2 == 1, 0L, NA ))
-# 
-# table(soc_LASA2_2$soc_sp_isolation_2, useNA="always")
+soc_LASA2_2$soc_sp_isolation_2 <- ifelse((soc_LASA2_2$soc_sn_freq_friends_2 == 3 | soc_LASA2_2$soc_sn_freq_nbhs_2 ==3 |   
+                                         soc_LASA2_2$soc_sn_freq_close_relatives_2 ==3 | soc_LASA2_2$soc_sn_freq_relatives_2 ==3 |soc_LASA2_2$soc_sn_freq_nonkin_2==3 ) 
+                                         & soc_LASA2_2$soc_sp_general_2 == 0,1L,
+                                 ifelse((soc_LASA2_2$soc_sn_freq_friends_2 >= 1 | soc_LASA2_2$soc_sn_freq_nbhs_2 >= 1 | soc_LASA2_2$soc_sn_freq_close_relatives_2 >= 1 | soc_LASA2_2$soc_sn_freq_relatives_2 >= 1) & soc_LASA2_2$soc_sn_freq_nonkin_2 == 1, 0L, NA ))
+
+table(soc_LASA2_2$soc_sp_isolation_2, useNA="always")
 
 ```
 ### **Variable label**:  Social isolation    
@@ -4280,10 +4293,12 @@ table(soc_LASA2_3$soc_sp_hobby_3, useNA="always")
 **Harmonization comment**:  Used same approach as in the harmonization of GLOBE data: utilized study available DataSchema social network - contact frequency variables (friends, neighbours, relatives, family and non-kin) in addition to the general participation variable, no contact with these different types of social network members and no participation was categorized as socially isolated. Having one or more of these types of members (in addition to children) in their network and reporting social participation was categorized as not socially isolated.   
 **R script**:  
 ```{r, echo=TRUE}
-# soc_LASA2_3$soc_sp_isolation_3 <- ifelse((soc_LASA2_3$soc_sn_freq_friends_3 == 5 | soc_LASA2_3$soc_sn_freq_nbhs_3 ==5 |     soc_LASA2_3$soc_sn_freq_close_relatives_3 ==5 | soc_LASA2_3$soc_sn_freq_relatives_3 ==4 |soc_LASA2_3$soc_sn_freq_nonkin_3==4 ) & soc_LASA2_3$soc_sp_general_3 == 0,1L, 
-#                                  ifelse((soc_LASA2_3$soc_sn_freq_friends_3 >= 1 | soc_LASA2_3$soc_sn_freq_nbhs_3 >= 1 | soc_LASA2_3$soc_sn_freq_close_relatives_3 >= 1 | soc_LASA2_3$soc_sn_freq_relatives_3 >= 1) & soc_LASA2_3$soc_sn_freq_nonkin_3 == 1, 0L, NA ))
-# 
-# table(soc_LASA2_3$soc_sp_isolation_3, useNA="always")
+soc_LASA2_3$soc_sp_isolation_3 <- ifelse((soc_LASA2_3$soc_sn_freq_friends_3 == 3 | soc_LASA2_3$soc_sn_freq_nbhs_3 ==3 |    
+                                          soc_LASA2_3$soc_sn_freq_close_relatives_3 ==3 |soc_LASA2_3$soc_sn_freq_relatives_3 ==3 |soc_LASA2_3$soc_sn_freq_nonkin_3==3 )
+                                         & soc_LASA2_3$soc_sp_general_3 == 0,1L,
+                                 ifelse((soc_LASA2_3$soc_sn_freq_friends_3 >= 1 | soc_LASA2_3$soc_sn_freq_nbhs_3 >= 1 | soc_LASA2_3$soc_sn_freq_close_relatives_3 >= 1 | soc_LASA2_3$soc_sn_freq_relatives_3 >= 1) & soc_LASA2_3$soc_sn_freq_nonkin_3 == 1, 0L, NA ))
+
+table(soc_LASA2_3$soc_sp_isolation_3, useNA="always")
 
 ```
 ### **Variable label**:  Social isolation    
@@ -4800,14 +4815,10 @@ summary(soc_LASA2_3$soc_le_fprob_3)
 **Harmonization comment**:  Study specific variables used ask if participant experienced 1. illness of partner/spouse and 2. ilnness of relative(s).   Answering yes to either is harmonized as 'Did experience illness of family member.' LASA participants asked if this life event occured since the last interview.     
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2F$fillpart)  
-table(LASA2F$filloth)  
 
 soc_LASA2_1$soc_le_illfam_1 <- ifelse(LASA2F$fillpart =='2' | LASA2F$filloth =='2',1L, 
                                      ifelse(LASA2F$fillpart =='1'|(LASA2F$fillpart ==-2&LASA2F$fpartst==0) & LASA2F$filloth =='1',0L, NA))
 
-table(soc_LASA2_1$soc_le_illfam_1, useNA="always") 
-summary(soc_LASA2_1$soc_le_illfam_1)
 ```
 ### **Variable label**:  Life event: illness of family member             
 **Variable name**:  soc_le_illfam_2                      
