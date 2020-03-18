@@ -402,10 +402,9 @@ opal.logout(erasmus_opal)
 **R script**:  
 ```{r, echo=TRUE}
 
-# soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0 <-  ifelse(HAPIEE_W1$p58=='1'|HAPIEE_W1$p58=='2',2L, 
-#                                                      ifelse(HAPIEE_W1$p58=='3',3L,
-#                                                        ifelse(HAPIEE_W1$p58 =='4',4L, 
-#                                                          ifelse(HAPIEE_W1$p58 =='5' | HAPIEE_W1$p58 =='6',5L,NA))))
+soc_HAPIEE_RU_0$soc_sn_freq_friends_inperson_0 <-  ifelse(HAPIEE_W1$p58=='1'|HAPIEE_W1$p58=='2'|HAPIEE_W1$p58=='3',1L,
+                                                       ifelse(HAPIEE_W1$p58 =='4',2L,
+                                                         ifelse(HAPIEE_W1$p58 =='5' | HAPIEE_W1$p58 =='6',3L,NA)))
 
 ``` 
 ### **Variable label**:   In-person contact frequency with friends        
@@ -1250,10 +1249,9 @@ opal.logout(erasmus_opal)
 **R script**:  
 ```{r, echo=TRUE}
 
-soc_HAPIEE_RU_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W1$p57=='1'|HAPIEE_W1$p57=='2',1L, 
-                                                     ifelse(HAPIEE_W1$p57=='3',2L,
-                                                       ifelse(HAPIEE_W1$p57 =='4',3L, 
-                                                         ifelse(HAPIEE_W1$p57 =='5' | HAPIEE_W1$p57 =='6',4L,NA))))
+soc_HAPIEE_RU_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W1$p57=='1'|HAPIEE_W1$p57=='2'|HAPIEE_W1$p57=='3',1L, 
+                                                       ifelse(HAPIEE_W1$p57 =='4',2L, 
+                                                         ifelse(HAPIEE_W1$p57 =='5' | HAPIEE_W1$p57 =='6',3L,NA)))
 ```
 ### **Variable label**:   Contact frequency with relatives      
 **Variable name**:   soc_sn_freq_relatives_1          

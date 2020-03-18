@@ -416,19 +416,14 @@ summary(soc_CLSA_tra_1$soc_sn_num_friends_1)
 **Harmonization comment**:   Study specific variable asks about last get together with close friends outside of household.
 **R script**:  
 ```{r, echo=TRUE}
-# ###CHANGE 
-# table(Tra3_4_Baseline$SN_SEEFRND_TRM) 
-# 
-# soc_CLSA_tra_0$soc_sn_freq_friends_inperson_0 <- ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==1,1L, 
-#                                                   ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==2,2L,
-#                                                          ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==3,4L,
-#                                                          ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==4,4L,
-#                                                                  ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==5,4L,
-#                                                                         ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==6,5L,
-#                                                          NA))))))
-#                                                            
-# table(soc_CLSA_tra_0$soc_sn_freq_friends_inperson_0) 
-# summary(soc_CLSA_tra_0$soc_sn_freq_friends_inperson_0) 
+
+soc_CLSA_tra_0$soc_sn_freq_friends_inperson_0 <- ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==1|Tra3_4_Baseline$SN_SEEFRND_TRM ==2,1L,
+                                                         ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==3,2L,
+                                                         ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==4|Tra3_4_Baseline$SN_SEEFRND_TRM ==5|Tra3_4_Baseline$SN_SEEFRND_TRM ==6,3L,
+                                                         NA)))
+
+table(soc_CLSA_tra_0$soc_sn_freq_friends_inperson_0)
+summary(soc_CLSA_tra_0$soc_sn_freq_friends_inperson_0)
 
 ``` 
 ### **Variable label**:   In-person contact frequency with friends        
@@ -528,19 +523,11 @@ summary(soc_CLSA_tra_1$soc_sn_num_friends_1)
 **Harmonization comment**:   Study specific variable asks about last get together with close friends outside of household.
 **R script**:  
 ```{r, echo=TRUE}
-# ###CHANGE
-# table(Tra3_4_Baseline$SN_SEEFRND_TRM) 
-# 
-# soc_CLSA_tra_0$soc_sn_freq_friends_0 <- ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==1,1L, 
-#                                                   ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==2,2L,
-#                                                          ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==3,4L,
-#                                                          ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==4,4L,
-#                                                                  ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==5,4L,
-#                                                                         ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==6,5L,
-#                                                          NA))))))
-#                                                            
-# table(soc_CLSA_tra_0$soc_sn_freq_friends_0) 
-# summary(soc_CLSA_tra_0$soc_sn_freq_friends_0) 
+
+soc_CLSA_tra_0$soc_sn_freq_friends_0 <- ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==1|Tra3_4_Baseline$SN_SEEFRND_TRM ==2,1L,
+                                                         ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==3|Tra3_4_Baseline$SN_SEEFRND_TRM ==4,2L,
+                                                                 ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==5|Tra3_4_Baseline$SN_SEEFRND_TRM ==6,3L,
+                                                         NA)))
 ``` 
 ### **Variable label**:   Contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_1       
@@ -862,15 +849,12 @@ summary(soc_CLSA_tra_1$soc_sn_num_children_1)
 # ###CHANGE
 # table(Tra3_4_Baseline$SN_SEENEIBR_TRM) 
 # 
-# soc_CLSA_tra_0$soc_sn_freq_nbhs_0 <- ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==1,1L, 
-#                                                   ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==2,2L,
-#                                                          ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==3,4L,
-#                                                          ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==4,4L,
-#                                                                  ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==5,4L,
-#                                                                         ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==6,5L,
-#                                                          NA))
+soc_CLSA_tra_0$soc_sn_freq_nbhs_0 <- ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==1|Tra3_4_Baseline$SN_SEENEIBR_TRM ==2,1L,
+                                                         ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==3|Tra3_4_Baseline$SN_SEENEIBR_TRM ==4,2L,
+                                                                 ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==5|Tra3_4_Baseline$SN_SEENEIBR_TRM ==6,3L,
+                                                         NA)))
 #                                                            
-# table(soc_CLSA_tra_0$soc_sn_freq_nbhs_0) 
+table(soc_CLSA_tra_0$soc_sn_freq_nbhs_0) 
 # summary(soc_CLSA_tra_0$soc_sn_freq_nbhs_0) 
 
 ``` 
@@ -1124,18 +1108,18 @@ summary(soc_CLSA_tra_1$soc_sn_num_relatives_1)
 # table(Tra3_4_Baseline$SN_SEESIB_TRM) 
 # table(Tra3_4_Baseline$SN_SEEREL_TRM) 
 # 
-# soc_CLSA_tra_0$soc_sn_freq_close_relatives_0 <- ifelse(((Tra3_4_Baseline$SN_SEECHILD_TRM ==1 |Tra3_4_Baseline$SN_SEESIB_TRM ==1 
-#                                                                                           |Tra3_4_Baseline$SN_SEEREL_TRM==1) | (Tra3_4_Baseline$SN_SEECHILD_TRM ==2 |Tra3_4_Baseline$SN_SEESIB_TRM ==2 
-#                                                                                           |Tra3_4_Baseline$SN_SEEREL_TRM==2)),1L, 
-#                                           ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM==3 |Tra3_4_Baseline$SN_SEESIB_TRM==3
-#                                                                                           |Tra3_4_Baseline$SN_SEEREL_TRM==3),2L, 
-#                                           ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM==4 |Tra3_4_Baseline$SN_SEESIB_TRM==4
-#                                                                                           |Tra3_4_Baseline$SN_SEEREL_TRM==4),3L, 
-#                                           (Tra3_4_Baseline$SN_SEECHILD_TRM ==5 |Tra3_4_Baseline$SN_SEESIB_TRM ==5 
-#                                                                                           |Tra3_4_Baseline$SN_SEEREL_TRM==5) | (Tra3_4_Baseline$SN_SEECHILD_TRM ==6 |Tra3_4_Baseline$SN_SEESIB_TRM ==6 
-#                                                                                           |Tra3_4_Baseline$SN_SEEREL_TRM==6)),4L,
-#                                                            
-# table(soc_CLSA_tra_0$soc_sn_freq_close_relatives_0) 
+soc_CLSA_tra_0$soc_sn_freq_close_relatives_0 <- ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM ==1 |
+                                                           Tra3_4_Baseline$SN_SEESIB_TRM ==1 |Tra3_4_Baseline$SN_SEEREL_TRM==1| 
+                                                           Tra3_4_Baseline$SN_SEECHILD_TRM ==2 |Tra3_4_Baseline$SN_SEESIB_TRM ==2
+                                                                                          |Tra3_4_Baseline$SN_SEEREL_TRM==2,1L,
+                                          ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM==3 |Tra3_4_Baseline$SN_SEESIB_TRM==3
+                                                                                          |Tra3_4_Baseline$SN_SEEREL_TRM==3|Tra3_4_Baseline$SN_SEECHILD_TRM==4 |Tra3_4_Baseline$SN_SEESIB_TRM==4
+                                                                                          |Tra3_4_Baseline$SN_SEEREL_TRM==4,2L,
+                                          ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM ==5 |Tra3_4_Baseline$SN_SEESIB_TRM ==5
+                                                                                          |Tra3_4_Baseline$SN_SEEREL_TRM==5 | Tra3_4_Baseline$SN_SEECHILD_TRM ==6 |Tra3_4_Baseline$SN_SEESIB_TRM ==6
+                                                                                          |Tra3_4_Baseline$SN_SEEREL_TRM==6,3L,NA)))
+
+table(soc_CLSA_tra_0$soc_sn_freq_close_relatives_0) 
 # summary(soc_CLSA_tra_0$soc_sn_freq_close_relatives_0)
 
 ```
@@ -1283,16 +1267,16 @@ summary(soc_CLSA_tra_1$soc_sn_num_relatives_1)
 # table(Tra3_4_Baseline$SN_SEESIB_TRM) 
 # table(Tra3_4_Baseline$SN_SEEREL_TRM) 
 # 
-# soc_CLSA_tra_0$soc_sn_freq_relatives_0 <- ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM ==1 |Tra3_4_Baseline$SN_SEESIB_TRM ==1 
-#                                                                                           |Tra3_4_Baseline$SN_SEEREL_TRM==1 | Tra3_4_Baseline$SN_SEECHILD_TRM ==2 |Tra3_4_Baseline$SN_SEESIB_TRM ==2 
-#                                                                                           |Tra3_4_Baseline$SN_SEEREL_TRM==2,1L, 
-#                                           ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM==3 |Tra3_4_Baseline$SN_SEESIB_TRM==3
-#                                                                                           |Tra3_4_Baseline$SN_SEEREL_TRM==3,2L, 
-#                                           ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM==4 |Tra3_4_Baseline$SN_SEESIB_TRM==4
-#                                                                                           |Tra3_4_Baseline$SN_SEEREL_TRM==4,3L, 
-#                                           ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM ==5 |Tra3_4_Baseline$SN_SEESIB_TRM ==5 
-#                                                                                           |Tra3_4_Baseline$SN_SEEREL_TRM==5 | Tra3_4_Baseline$SN_SEECHILD_TRM ==6 |Tra3_4_Baseline$SN_SEESIB_TRM ==6 
-#                                                                                           |Tra3_4_Baseline$SN_SEEREL_TRM==6,4L, NA))))  
+soc_CLSA_tra_0$soc_sn_freq_close_relatives_0 <- ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM ==1 |
+                                                           Tra3_4_Baseline$SN_SEESIB_TRM ==1 |Tra3_4_Baseline$SN_SEEREL_TRM==1| 
+                                                           Tra3_4_Baseline$SN_SEECHILD_TRM ==2 |Tra3_4_Baseline$SN_SEESIB_TRM ==2
+                                                                                          |Tra3_4_Baseline$SN_SEEREL_TRM==2,1L,
+                                          ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM==3 |Tra3_4_Baseline$SN_SEESIB_TRM==3
+                                                                                          |Tra3_4_Baseline$SN_SEEREL_TRM==3|Tra3_4_Baseline$SN_SEECHILD_TRM==4 |Tra3_4_Baseline$SN_SEESIB_TRM==4
+                                                                                          |Tra3_4_Baseline$SN_SEEREL_TRM==4,2L,
+                                          ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM ==5 |Tra3_4_Baseline$SN_SEESIB_TRM ==5
+                                                                                          |Tra3_4_Baseline$SN_SEEREL_TRM==5 | Tra3_4_Baseline$SN_SEECHILD_TRM ==6 |Tra3_4_Baseline$SN_SEESIB_TRM ==6
+                                                                                          |Tra3_4_Baseline$SN_SEEREL_TRM==6,3L,NA)))
 #                                                            
 # table(soc_CLSA_tra_0$soc_sn_freq_relatives_0) 
 # summary(soc_CLSA_tra_0$soc_sn_freq_relatives_0) 
@@ -1546,11 +1530,10 @@ table(Tra3_4_Baseline$SN_SEENEIBR_TRM)
 table(Tra3_4_Baseline$SN_SEEFRND_TRM) 
 
 
-soc_CLSA_tra_0$soc_sn_freq_nonkin_0 <- ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==1 |Tra3_4_Baseline$SN_SEEFRND_TRM ==1,1L, 
-                                          ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM==3 |Tra3_4_Baseline$SN_SEEFRND_TRM==3,2L, 
-                                          ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM==4 |Tra3_4_Baseline$SN_SEEFRND_TRM==4,3L, 
+soc_CLSA_tra_0$soc_sn_freq_nonkin_0 <- ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==1 |Tra3_4_Baseline$SN_SEEFRND_TRM ==1|Tra3_4_Baseline$SN_SEENEIBR_TRM ==2 |Tra3_4_Baseline$SN_SEEFRND_TRM ==2,1L, 
+                                          ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM==3 |Tra3_4_Baseline$SN_SEEFRND_TRM==3|Tra3_4_Baseline$SN_SEENEIBR_TRM==4 |Tra3_4_Baseline$SN_SEEFRND_TRM==4,2L, 
                                           ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==5 |Tra3_4_Baseline$SN_SEEFRND_TRM ==5 
-                                         | Tra3_4_Baseline$SN_SEENEIBR_TRM ==6 |Tra3_4_Baseline$SN_SEEFRND_TRM ==6  ,4L, NA))))   
+                                         | Tra3_4_Baseline$SN_SEENEIBR_TRM ==6 |Tra3_4_Baseline$SN_SEEFRND_TRM ==6  ,4L, NA)))
                                                            
 table(soc_CLSA_tra_0$soc_sn_freq_nonkin_0) 
 summary(soc_CLSA_tra_0$soc_sn_freq_nonkin_0) 
@@ -2278,9 +2261,9 @@ summary(soc_CLSA_tra_1$soc_ss_perceived_instru_1)
 **R script**:  
 ```{r, echo=TRUE}
 
-# soc_CLSA_tra_0$soc_sp_isolation_0 <- ifelse((soc_CLSA_tra_0$soc_sn_freq_friends_0 == 5 | soc_CLSA_tra_0$soc_sn_freq_nbhs_0 ==5 |     soc_CLSA_tra_0$soc_sn_freq_close_relatives_0 ==5 | soc_CLSA_tra_0$soc_sn_freq_relatives_0 ==4 |soc_CLSA_tra_0$soc_sn_freq_nonkin_0==4 ) & soc_CLSA_tra_0$soc_sp_general_0 == 0,1L, 
-#                                  ifelse((soc_CLSA_tra_0$soc_sn_freq_friends_0 >= 1 | soc_CLSA_tra_0$soc_sn_freq_nbhs_0 >= 1 | soc_CLSA_tra_0$soc_sn_freq_close_relatives_0 >= 1 | soc_CLSA_tra_0$soc_sn_freq_relatives_0 >= 1) & soc_CLSA_tra_0$soc_sn_freq_nonkin_0 == 1, 0L, NA ))
-# 
+soc_CLSA_tra_0$soc_sp_isolation_0 <- ifelse((soc_CLSA_tra_0$soc_sn_freq_friends_0 == 3| soc_CLSA_tra_0$soc_sn_freq_nbhs_0 ==3|     soc_CLSA_tra_0$soc_sn_freq_close_relatives_0 ==3 | soc_CLSA_tra_0$soc_sn_freq_relatives_0 ==3|soc_CLSA_tra_0$soc_sn_freq_nonkin_0==3) & soc_CLSA_tra_0$soc_sp_general_0 == 0,1L,
+                                 ifelse((soc_CLSA_tra_0$soc_sn_freq_friends_0 >= 1 | soc_CLSA_tra_0$soc_sn_freq_nbhs_0 >= 1 | soc_CLSA_tra_0$soc_sn_freq_close_relatives_0 >= 1 | soc_CLSA_tra_0$soc_sn_freq_relatives_0 >= 1) & soc_CLSA_tra_0$soc_sn_freq_nonkin_0 == 1, 0L, NA ))
+
 # table(soc_CLSA_tra_0$soc_sp_isolation_0, useNA="always")
 
 ```
@@ -2300,9 +2283,9 @@ summary(soc_CLSA_tra_1$soc_ss_perceived_instru_1)
 **Harmonization comment**:   Used same approach as in the harmonization of GLOBE and LASA data: utilized study available DataSchema social network - contact frequency variables (friends, neighbours, relatives, family and non-kin) in addition to the general participation variable, no contact with these different types of social network members and no participation was categorized as socially isolated. Having one or more of these types of members (in addition to children) in their network and reporting social participation was categorized as not socially isolated.    
 **R script**:  
 ```{r, echo=TRUE}
-# soc_CLSA_tra_1$soc_sp_isolation_1 <- ifelse((soc_CLSA_tra_1$soc_sn_freq_friends_1 == 5 | soc_CLSA_tra_1$soc_sn_freq_nbhs_1 ==5 |     soc_CLSA_tra_1$soc_sn_freq_close_relatives_1 ==5 | soc_CLSA_tra_1$soc_sn_freq_relatives_1 ==4 |soc_CLSA_tra_1$soc_sn_freq_nonkin_1==4 ) & soc_CLSA_tra_1$soc_sp_general_1 == 0,1L, 
-#                                  ifelse((soc_CLSA_tra_1$soc_sn_freq_friends_1 >= 1 | soc_CLSA_tra_1$soc_sn_freq_nbhs_1 >= 1 | soc_CLSA_tra_1$soc_sn_freq_close_relatives_1 >= 1 | soc_CLSA_tra_1$soc_sn_freq_relatives_1 >= 1) & soc_CLSA_tra_1$soc_sn_freq_nonkin_1 == 1, 0L, NA ))
-# 
+soc_CLSA_tra_1$soc_sp_isolation_1 <- ifelse((soc_CLSA_tra_1$soc_sn_freq_friends_1 == 3 | soc_CLSA_tra_1$soc_sn_freq_nbhs_1 ==3 |     soc_CLSA_tra_1$soc_sn_freq_close_relatives_1 =3 | soc_CLSA_tra_1$soc_sn_freq_relatives_1 ==3 |soc_CLSA_tra_1$soc_sn_freq_nonkin_1==3) & soc_CLSA_tra_1$soc_sp_general_1 == 0,1L,
+                                 ifelse((soc_CLSA_tra_1$soc_sn_freq_friends_1 >= 1 | soc_CLSA_tra_1$soc_sn_freq_nbhs_1 >= 1 | soc_CLSA_tra_1$soc_sn_freq_close_relatives_1 >= 1 | soc_CLSA_tra_1$soc_sn_freq_relatives_1 >= 1) & soc_CLSA_tra_1$soc_sn_freq_nonkin_1 == 1, 0L, NA ))
+
 # table(soc_CLSA_tra_1$soc_sp_isolation_1, useNA="always")
 
 
