@@ -403,10 +403,9 @@ soc_HAPIEE_LT_0$soc_sn_children_rank_0 <- ifelse(HAPIEE_W2$w2child_lt=='2',0L,
 **R script**:  
 ```{r, echo=TRUE}
 
-# soc_HAPIEE_LT_0$soc_sn_freq_friends_inperson_0 <-  ifelse(HAPIEE_W2$p58_lt=='1'|HAPIEE_W2$p58_lt=='2' ,2L, 
-#                                                      ifelse(HAPIEE_W2$p58_lt=='3',3L,
-#                                                        ifelse(HAPIEE_W2$p58_lt =='4',4L, 
-#                                                          ifelse(HAPIEE_W2$p58_lt =='5' | HAPIEE_W2$p58_lt =='6',5L,NA))))
+soc_HAPIEE_LT_0$soc_sn_freq_friends_inperson_0 <-  ifelse(HAPIEE_W2$p58_lt=='1'|HAPIEE_W2$p58_lt=='2'|HAPIEE_W2$p58_lt=='3' ,1L,
+                                                       ifelse(HAPIEE_W2$p58_lt =='4',2L,
+                                                         ifelse(HAPIEE_W2$p58_lt =='5' | HAPIEE_W2$p58_lt =='6',3L,NA)))
 
 ``` 
 ### **Variable label**:   In-person contact frequency with friends        
@@ -1251,10 +1250,9 @@ soc_HAPIEE_LT_0$soc_sn_children_rank_0 <- ifelse(HAPIEE_W2$w2child_lt=='2',0L,
 **R script**:  
 ```{r, echo=TRUE}
 
-# soc_HAPIEE_LT_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W2$p57_lt=='1'|HAPIEE_W2$p57_lt=='2',1L, 
-#                                                      ifelse(HAPIEE_W2$p57_lt=='3',2L,
-#                                                        ifelse(HAPIEE_W2$p57_lt =='4',3L, 
-#                                                          ifelse(HAPIEE_W2$p57_lt =='5' | HAPIEE_W2$p57_lt =='6',4L,NA))))
+soc_HAPIEE_LT_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W2$p57_lt=='1'|HAPIEE_W2$p57_lt=='2'|HAPIEE_W2$p57_lt=='3',1L,
+                                                       ifelse(HAPIEE_W2$p57_lt =='4',2L,
+                                                         ifelse(HAPIEE_W2$p57_lt =='5' | HAPIEE_W2$p57_lt =='6',3L,NA)))
 
 ```
 ### **Variable label**:   Contact frequency with relatives      
@@ -3637,7 +3635,7 @@ soc_HAPIEE_LT_0$soc_sp_general_0 <- ifelse(HAPIEE_W2$p55_lt=='1',1L,
 **R script**:  
 ```{r, echo=TRUE}
 
-# soc_HAPIEE_LT_0$soc_sp_isolation_0 <- ifelse((soc_HAPIEE_LT_0$soc_sn_freq_friends_inperson_0  == 5  | soc_HAPIEE_LT_0$soc_sn_freq_relatives_0 ==4) & soc_HAPIEE_LT_0$soc_sp_general_0 ==0,1L,                                         ifelse(soc_HAPIEE_LT_0$soc_sn_freq_friends_inperson_0 <=4  | soc_HAPIEE_LT_0$soc_sn_freq_relatives_0 <4 & soc_HAPIEE_LT_0$soc_sp_general_0 == 1,0L,NA ))
+soc_HAPIEE_LT_0$soc_sp_isolation_0 <- ifelse((soc_HAPIEE_LT_0$soc_sn_freq_friends_inperson_0  == 3 | soc_HAPIEE_LT_0$soc_sn_freq_relatives_0 ==3) & soc_HAPIEE_LT_0$soc_sp_general_0 ==0,1L,                                         ifelse(soc_HAPIEE_LT_0$soc_sn_freq_friends_inperson_0 <3  | soc_HAPIEE_LT_0$soc_sn_freq_relatives_0 <3 & soc_HAPIEE_LT_0$soc_sp_general_0 == 1,0L,NA ))
 
 ```
 ### **Variable label**:  Social isolation    

@@ -491,8 +491,10 @@ soc_GLOBE_4$soc_sn_num_friends_4 <- as.integer(GLOBE2014$G14v42)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-# soc_GLOBE_4$soc_sn_freq_friends_inperson_4 <- as.integer(GLOBE2014$G14v45)
+soc_GLOBE_4$soc_sn_freq_friends_inperson_4 <- ifelse(GLOBE2014$G14v45==1|GLOBE2014$G14v45==2|GLOBE2014$G14v45==3, 1L, 
+                                                ifelse(GLOBE2014$G14v45==4, 2L,ifelse(GLOBE2014$G14v45==5, 3L,NA)))
 
+table(soc_GLOBE_4$soc_sn_freq_friends_inperson_4)
 ``` 
 ### **Variable label**:   Contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_0       
@@ -592,8 +594,10 @@ soc_GLOBE_4$soc_sn_num_friends_4 <- as.integer(GLOBE2014$G14v42)
 **R script**:  
 ```{r, echo=TRUE}
 
-# soc_GLOBE_4$soc_sn_freq_friends_4 <- as.integer(GLOBE2014$G14v46)
 
+soc_GLOBE_4$soc_sn_freq_friends_4 <- ifelse(GLOBE2014$G14v46==1|GLOBE2014$G14v46==2|GLOBE2014$G14v46==3, 1L, 
+                                                 ifelse(GLOBE2014$G14v46==4, 2L,ifelse(GLOBE2014$G14v46==5, 3L,NA)))
+ table(soc_GLOBE_4$soc_sn_freq_friends_4 )
 ``` 
 ### **Variable label**:   Contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_5       
@@ -749,6 +753,8 @@ soc_GLOBE_4$soc_sn_num_friends_4 <- as.integer(GLOBE2014$G14v42)
 ```{r, echo=TRUE}
 
 soc_GLOBE_4$soc_sn_num_nbhs_4 <- as.integer(GLOBE2014$G14v54)
+
+
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_5    
@@ -894,8 +900,10 @@ soc_GLOBE_4$soc_sn_num_nbhs_4 <- as.integer(GLOBE2014$G14v54)
 **Harmonization comment**:  DataSchema has same categories as original GLOBE item.     
 **R script**:  
 ```{r, echo=TRUE}
-# soc_GLOBE_4$soc_sn_freq_nbhs_4 <- as.integer(GLOBE2014$G14v55)
 
+
+soc_GLOBE_4$soc_sn_freq_nbhs_4 <- ifelse(GLOBE2014$G14v55==1|GLOBE2014$G14v55==2|GLOBE2014$G14v55==3, 1L, 
+                                                 ifelse(GLOBE2014$G14v55==4, 2L,ifelse(GLOBE2014$G14v55==5, 3L,NA)))
 ```
 ### **Variable label**:   Contact frequency with neighbours        
 **Variable name**:   soc_sn_freq_nbhs_5    
@@ -1204,10 +1212,10 @@ soc_GLOBE_4$soc_sn_num_relatives_4 <- ifelse(GLOBE2014$G14v36=='0',1L,
 **R script**:  
 ```{r, echo=TRUE}
 
-# soc_GLOBE_4$soc_sn_freq_close_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOBE2014$G14v40=='2' ,1L, 
-#                                                   ifelse(GLOBE2014$G14v40=='3',2L,
-#                                                     ifelse(GLOBE2014$G14v40=='4',3L,
-#                                                            ifelse(GLOBE2014$G14v40=='5',4L, NA))))
+
+soc_GLOBE_4$soc_sn_freq_close_relatives_4 <- ifelse(GLOBE2014$G14v40==1|GLOBE2014$G14v40==2|GLOBE2014$G14v40==3, 1L, 
+                                                 ifelse(GLOBE2014$G14v40==4, 2L,ifelse(GLOBE2014$G14v40==5, 3L,NA)))
+
 
 ```
 ### **Variable label**:   Contact frequency with family    
@@ -1349,11 +1357,10 @@ soc_GLOBE_4$soc_sn_num_relatives_4 <- ifelse(GLOBE2014$G14v36=='0',1L,
 **R script**:  
 ```{r, echo=TRUE}
 
-# soc_GLOBE_4$soc_sn_freq_relatives_4 <- ifelse(GLOBE2014$G14v40=='1' | GLOBE2014$G14v40=='2' ,1L, 
-#                                                   ifelse(GLOBE2014$G14v40=='3',2L,
-#                                                     ifelse(GLOBE2014$G14v40=='4',3L,
-#                                                            ifelse(GLOBE2014$G14v40=='5',4L, NA))))
+soc_GLOBE_4$soc_sn_freq_relatives_4 <- ifelse(GLOBE2014$G14v40==1|GLOBE2014$G14v40==2|GLOBE2014$G14v40==3, 1L, 
+                                                 ifelse(GLOBE2014$G14v40==4, 2L,ifelse(GLOBE2014$G14v40==5, 3L,NA)))
 
+table(soc_GLOBE_4$soc_sn_freq_relatives_4)
 ```
 ### **Variable label**:   Contact frequency with relatives     
 **Variable name**:   soc_sn_freq_relatives_5          
@@ -3785,8 +3792,11 @@ soc_GLOBE_4$soc_sp_hobby_4 <- ifelse(GLOBE2014$G14v56_b =='1',1L,
 **R script**:  
 ```{r, echo=TRUE}
 
-# soc_GLOBE_4$soc_sp_isolation_4 <- ifelse((soc_GLOBE_4$soc_sn_freq_friends_inperson_4 == 5 | soc_GLOBE_4$soc_sn_freq_friends_4 ==5 | soc_GLOBE_4$soc_sn_freq_nbhs_4 ==5 | soc_GLOBE_4$soc_sn_freq_close_relatives_4 ==4 |soc_GLOBE_4$soc_sn_freq_relatives_4==4 ) & soc_GLOBE_4$soc_sp_general_4 == 0,1L, 
-#                                                   ifelse((soc_GLOBE_4$soc_sn_children_rank_4 >= 1 | soc_GLOBE_4$soc_sn_num_friends_4 >= 1 | soc_GLOBE_4$soc_sn_num_nbhs_4 >= 1 | soc_GLOBE_4$soc_sn_num_relatives_4 >= 1) & soc_GLOBE_4$soc_sp_general_4 == 1, 0L, NA ))
+soc_GLOBE_4$soc_sp_isolation_4 <- ifelse((soc_GLOBE_4$soc_sn_freq_friends_inperson_4 ==3 | soc_GLOBE_4$soc_sn_freq_friends_4 ==3 | 
+                                          soc_GLOBE_4$soc_sn_freq_nbhs_4 ==3 | soc_GLOBE_4$soc_sn_freq_close_relatives_4 ==3 |soc_GLOBE_4$soc_sn_freq_relatives_4==3 ) & 
+                                           soc_GLOBE_4$soc_sp_general_4 == 0,1L,
+                                 ifelse((soc_GLOBE_4$soc_sn_freq_friends_inperson_4 >=1 | soc_GLOBE_4$soc_sn_freq_friends_4 >= 1 | soc_GLOBE_4$soc_sn_freq_nbhs_4 >= 1 | 
+                                          soc_GLOBE_4$soc_sn_freq_close_relatives_4 >= 1 | soc_GLOBE_4$soc_sn_freq_relatives_4 >= 1) & soc_GLOBE_4$soc_sp_general_4 == 1, 0L, NA ))
 
 ```
 ### **Variable label**:  Social isolation    
