@@ -10,12 +10,12 @@ library(car)
 # Connecting with Opal data server
 ## Login to server and assign study data
 #Load Opal R library
-library(opal)
+library(opalr)
 # Create an opal object with the login information
 erasmus_opal <- opal.login()
 #Login to Opal server and assign the content of the LASA table(s) to your RStudio environment
 # CLSA-tra_0
-opal.assign.table.tibble(erasmus_opal, 'Tra3_4_Baseline', 'CLSA_1.Tra3_4_Baseline', variables = list('SN_CHILDSTP_NB_TRM','SN_CHILDBIO_NB_TRM','SN_CHILDADP_NB_TRM','SN_FRND_NB_TRM','SN_SEEFRND_TRM','SN_NEIBR_NB_TRM','SN_SEENEIBR_TRM','SN_RELLIV_NB_TRM','SN_SEESIB_TRM','SN_SEECHILD_TRM','SN_SEEREL_TRM','SN_PERCOM_NB_TRM','SSA_CHORES_TRM','SSA_LOVU_TRM','SSA_SUGG_TRM','SSA_ENJOY_TRM','SSA_PROBLM_TRM','SPA_CHRCH_TRM','SPA_EDUC_TRM','SPA_VOLUN_TRM','SPA_NEIBR_TRM','SPA_PREVAC_AF_TRM','SPA_PREVAC_TP_TRM','SPA_SOAC_HY_TRM','TRA_LVDHM_YR_MCQ','TRA_LVCMNTY_YR_MCQ','OWN_DWLG_TRM','OWN_OWN_TRM'))
+opal.assign.table.tibble(erasmus_opal, 'Tra3_4_Baseline', 'CLSA_1.Tra3_4_Baseline', variables = list('SN_CHILDSTP_NB_TRM','SN_CHILDBIO_NB_TRM','SN_CHILDADP_NB_TRM','SN_FRND_NB_TRM','SN_SEEFRND_TRM','SN_NEIBR_NB_TRM','SN_SEENEIBR_TRM','SN_RELLIV_NB_TRM','SN_SEESIB_TRM','SN_SEECHILD_TRM','SN_SEEREL_TRM','SN_PERCOM_NB_TRM','SSA_CHORES_TRM','SSA_LOVU_TRM','SSA_SUGG_TRM','SSA_ENJOY_TRM','SSA_PROBLM_TRM','SPA_CHRCH_TRM','SPA_EDUC_TRM','SPA_VOLUN_TRM','SPA_NEIBR_TRM','SPA_PREVAC_AF_TRM','SPA_PREVAC_TP_TRM','SPA_SOAC_HY_TRM','TRA_LVDHM_YR_MCQ','TRA_LVCMNTY_YR_MCQ','OWN_DWLG_TRM','OWN_OWN_TRM', 'AGE_NMBR_TRM'))
 Tra3_4_Baseline <- opal.execute(erasmus_opal,'Tra3_4_Baseline')
 # CLSA-tra_1
 opal.assign.table.tibble(erasmus_opal, 'Tra_FU1', 'CLSA_1.Tra_FU1', variables = 
@@ -50,11 +50,11 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:  Study specific items used ask about living biological, adopted and step children. 
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra3_4_Baseline$SN_CHILDSTP_NB_TRM) 
+table(Tra3_4_Baseline$SN_CHILDSTP_NB_TRM, useNA="always") 
 
 soc_CLSA_tra_0$soc_sn_num_children_0 <- as.integer((Tra3_4_Baseline$SN_CHILDSTP_NB_TRM) + (Tra3_4_Baseline$SN_CHILDBIO_NB_TRM)+ (Tra3_4_Baseline$SN_CHILDADP_NB_TRM)) 
 
-table(soc_CLSA_tra_0$soc_sn_num_children_0) 
+table(soc_CLSA_tra_0$soc_sn_num_children_0, useNA="always") 
 summary(soc_CLSA_tra_0$soc_sn_num_children_0) 
 ```
 ### **Variable label**:   Network size of children      
@@ -68,13 +68,17 @@ summary(soc_CLSA_tra_0$soc_sn_num_children_0)
 **Harmonization comment**:  Study specific items used ask about living biological, adopted and step children. 
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra_FU1$SN_CHILDSTP_NB_TRF1) 
-table(Tra_FU1$SN_CHILDBIO_NB_TRF1) 
-table(Tra_FU1$SN_CHILDADP_NB_TRF1) 
+table(Tra_FU1$SN_CHILDSTP_NB_TRF1, useNA="always") 
+table(Tra_FU1$SN_CHILDBIO_NB_TRF1, useNA="always") 
+table(Tra_FU1$SN_CHILDADP_NB_TRF1, useNA="always") 
 
-soc_CLSA_tra_1$soc_sn_num_children_1<- as.integer((Tra_FU1$SN_CHILDSTP_NB_TRF1) + (Tra_FU1$SN_CHILDBIO_NB_TRF1)+ (Tra_FU1$SN_CHILDADP_NB_TRF1)) 
+table(Tra_FU1$SN_CHILDSTP_NB_TRF1,Tra_FU1$SN_CHILDBIO_NB_TRF1 ) 
+table(Tra_FU1$SN_CHILDADP_NB_TRF1,Tra_FU1$SN_CHILDBIO_NB_TRF1 ) 
+soc_CLSA_tra_1$soc_sn_num_children_1<- as.integer(Tra_FU1$SN_CHILDSTP_NB_TRF1) + as.integer(Tra_FU1$SN_CHILDBIO_NB_TRF1)+ as.integer(Tra_FU1$SN_CHILDADP_NB_TRF1) 
+table(Tra_FU1$SN_CHILDSTP_NB_TRF1==0&Tra_FU1$SN_CHILDBIO_NB_TRF1==0 &Tra_FU1$SN_CHILDADP_NB_TRF1==0)
+table(Tra_FU1$SN_CHILDSTP_NB_TRF1==0&Tra_FU1$SN_CHILDBIO_NB_TRF1==0 &Tra_FU1$SN_CHILDADP_NB_TRF1==0)
 
-table(soc_CLSA_tra_1$soc_sn_num_children_1) 
+table(soc_CLSA_tra_1$soc_sn_num_children_1, useNA="always") 
 summary(soc_CLSA_tra_1$soc_sn_num_children_1) 
 ```
 ### **Variable label**:   Network size of children      
@@ -88,7 +92,7 @@ summary(soc_CLSA_tra_1$soc_sn_num_children_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of children      
@@ -102,7 +106,7 @@ summary(soc_CLSA_tra_1$soc_sn_num_children_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of children      
@@ -116,7 +120,7 @@ summary(soc_CLSA_tra_1$soc_sn_num_children_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of children      
@@ -130,7 +134,7 @@ summary(soc_CLSA_tra_1$soc_sn_num_children_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of children      
@@ -144,7 +148,7 @@ summary(soc_CLSA_tra_1$soc_sn_num_children_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Ranked network size of children         
@@ -164,9 +168,11 @@ summary(soc_CLSA_tra_1$soc_sn_num_children_1)
 **Harmonization comment**:  CLSA asks about living children.  
 **R script**:  
 ```{r, echo=TRUE}
-soc_CLSA_tra_0$soc_sn_children_rank_0 <- ifelse(soc_CLSA_tra_0$soc_sn_num_children_0=='0',0L, 
-                                             ifelse(soc_CLSA_tra_0$soc_sn_num_children_0=='1' | soc_CLSA_tra_0$soc_sn_num_children_0=='2',1L,
-                                                    ifelse(soc_CLSA_tra_0$soc_sn_num_children_0 >'2',2L, NA)))
+soc_CLSA_tra_0$soc_sn_children_rank_0 <- ifelse(soc_CLSA_tra_0$soc_sn_num_children_0==0,0L, 
+                                             ifelse(soc_CLSA_tra_0$soc_sn_num_children_0==1 | soc_CLSA_tra_0$soc_sn_num_children_0==2,1L,
+                                                    ifelse(soc_CLSA_tra_0$soc_sn_num_children_0 >2,2L, NA)))
+table(soc_CLSA_tra_0$soc_sn_num_children_0, useNA = "always")
+table(soc_CLSA_tra_0$soc_sn_children_rank_0, useNA = "always")
 ```
 
 ### **Variable label**:   Ranked network size of children           
@@ -186,9 +192,12 @@ soc_CLSA_tra_0$soc_sn_children_rank_0 <- ifelse(soc_CLSA_tra_0$soc_sn_num_childr
 **Harmonization comment**:  CLSA asks about living children.  
 **R script**:  
 ```{r, echo=TRUE}
-soc_CLSA_tra_1$soc_sn_children_rank_1 <- ifelse(soc_CLSA_tra_1$soc_sn_num_children_1=='0',0L, 
-                                             ifelse(soc_CLSA_tra_1$soc_sn_num_children_1=='1' | soc_CLSA_tra_1$soc_sn_num_children_1=='2',1L,
-                                                    ifelse(soc_CLSA_tra_1$soc_sn_num_children_1 >'2',2L, NA)))
+soc_CLSA_tra_1$soc_sn_children_rank_1 <- ifelse(soc_CLSA_tra_1$soc_sn_num_children_1==0,0L, 
+                                             ifelse(soc_CLSA_tra_1$soc_sn_num_children_1==1| soc_CLSA_tra_1$soc_sn_num_children_1==2,1L,
+                                                    ifelse(soc_CLSA_tra_1$soc_sn_num_children_1 >2,2L, NA)))
+table(soc_CLSA_tra_1$soc_sn_num_children_1, useNA = "always")
+table(soc_CLSA_tra_1$soc_sn_children_rank_1, useNA = "always")
+
 ```
 ### **Variable label**:   Ranked network size of children           
 **Variable name**:   soc_sn_children_rank_2      
@@ -207,7 +216,7 @@ soc_CLSA_tra_1$soc_sn_children_rank_1 <- ifelse(soc_CLSA_tra_1$soc_sn_num_childr
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Ranked network size of children          
@@ -227,7 +236,7 @@ soc_CLSA_tra_1$soc_sn_children_rank_1 <- ifelse(soc_CLSA_tra_1$soc_sn_num_childr
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Ranked network size of children          
@@ -247,7 +256,7 @@ soc_CLSA_tra_1$soc_sn_children_rank_1 <- ifelse(soc_CLSA_tra_1$soc_sn_num_childr
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Ranked network size of children          
@@ -267,7 +276,7 @@ soc_CLSA_tra_1$soc_sn_children_rank_1 <- ifelse(soc_CLSA_tra_1$soc_sn_num_childr
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Ranked network size of children         
@@ -287,7 +296,7 @@ soc_CLSA_tra_1$soc_sn_children_rank_1 <- ifelse(soc_CLSA_tra_1$soc_sn_num_childr
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -338,7 +347,7 @@ summary(soc_CLSA_tra_1$soc_sn_num_friends_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of friends    
@@ -352,7 +361,7 @@ summary(soc_CLSA_tra_1$soc_sn_num_friends_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of friends    
@@ -366,7 +375,7 @@ summary(soc_CLSA_tra_1$soc_sn_num_friends_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of friends    
@@ -380,7 +389,7 @@ summary(soc_CLSA_tra_1$soc_sn_num_friends_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -395,7 +404,7 @@ summary(soc_CLSA_tra_1$soc_sn_num_friends_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -443,6 +452,13 @@ summary(soc_CLSA_tra_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   Study specific variable asks about last get together with close friends outside of household.
 **R script**:  
 ```{r, echo=TRUE}
+soc_CLSA_tra_1$soc_sn_freq_friends_inperson_1 <- ifelse(Tra_FU1$SN_SEEFRND_TRF1 ==1|Tra_FU1$SN_SEEFRND_TRF1 ==2,1L,
+                                                         ifelse(Tra_FU1$SN_SEEFRND_TRF1 ==3,2L,
+                                                         ifelse(Tra_FU1$SN_SEEFRND_TRF1 ==4|Tra_FU1$SN_SEEFRND_TRF1 ==5|Tra_FU1$SN_SEEFRND_TRF1 ==6,3L,
+                                                         NA)))
+
+table(soc_CLSA_tra_0$soc_sn_freq_friends_inperson_0)
+summary(soc_CLSA_tra_0$soc_sn_freq_friends_inperson_0)
 
 
 ``` 
@@ -463,7 +479,7 @@ summary(soc_CLSA_tra_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   In-person contact frequency with friends       
@@ -483,7 +499,7 @@ summary(soc_CLSA_tra_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   In-person contact frequency with friends       
@@ -503,7 +519,7 @@ summary(soc_CLSA_tra_0$soc_sn_freq_friends_inperson_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -519,7 +535,7 @@ summary(soc_CLSA_tra_0$soc_sn_freq_friends_inperson_0)
 2 |  Once per month contact with friends
 3 |  A few times per year, once per year or never contact with friends
 
-**Harmonization status**:  complete
+**Harmonization status**:  impossible?  
 **Harmonization comment**:   Study specific variable asks about last get together with close friends outside of household.
 **R script**:  
 ```{r, echo=TRUE}
@@ -528,6 +544,7 @@ soc_CLSA_tra_0$soc_sn_freq_friends_0 <- ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==
                                                          ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==3|Tra3_4_Baseline$SN_SEEFRND_TRM ==4,2L,
                                                                  ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==5|Tra3_4_Baseline$SN_SEEFRND_TRM ==6,3L,
                                                          NA)))
+
 ``` 
 ### **Variable label**:   Contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_1       
@@ -542,12 +559,16 @@ soc_CLSA_tra_0$soc_sn_freq_friends_0 <- ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==
 2 |  Once per month contact with friends
 3 |  A few times per year, once per year or never contact with friends
 
-**Harmonization status**:  complete
+**Harmonization status**:  impossible ?
 **Harmonization comment**:   Study specific variable asks about last get together with close friends outside of household.    
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+soc_CLSA_tra_1$soc_sn_freq_friends_1 <- ifelse(Tra_FU1$SN_SEEFRND_TRF1 ==1|Tra_FU1$SN_SEEFRND_TRF1 ==2,1L,
+                                                         ifelse(Tra_FU1$SN_SEEFRND_TRF1 ==3|Tra_FU1$SN_SEEFRND_TRF1 ==4,2L,
+                                                                 ifelse(Tra_FU1$SN_SEEFRND_TRF1 ==5|Tra_FU1$SN_SEEFRND_TRF1 ==6,3L,
+                                                         NA)))
 
+table(soc_CLSA_tra_1$soc_sn_freq_friends_1)
 ``` 
 ### **Variable label**:   Contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_2       
@@ -566,7 +587,7 @@ soc_CLSA_tra_0$soc_sn_freq_friends_0 <- ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -586,7 +607,7 @@ soc_CLSA_tra_0$soc_sn_freq_friends_0 <- ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -606,7 +627,7 @@ soc_CLSA_tra_0$soc_sn_freq_friends_0 <- ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -626,7 +647,7 @@ soc_CLSA_tra_0$soc_sn_freq_friends_0 <- ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -646,7 +667,7 @@ soc_CLSA_tra_0$soc_sn_freq_friends_0 <- ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -665,21 +686,22 @@ soc_CLSA_tra_0$soc_sn_freq_friends_0 <- ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==
 5 |  11 to 20 neighbours 
 6 |  More than 20 neighbours   
 
-**Harmonization status**:  complete  
-**Harmonization comment**:   
+**Harmonization status**:  impossible   
+**Harmonization comment**:   The study-specific variable is:"How many of your neighbours do you know?"
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra3_4_Baseline$SN_NEIBR_NB_TRM) 
+# table(Tra3_4_Baseline$SN_NEIBR_NB_TRM, useNA="always") 
+# 
+# soc_CLSA_tra_0$soc_sn_num_children_0 <- ifelse(Tra3_4_Baseline$SN_NEIBR_NB_TRM==0,1L, 
+#                                                   ifelse(Tra3_4_Baseline$SN_NEIBR_NB_TRM==1 | Tra3_4_Baseline$SN_NEIBR_NB_TRM==2,2L,
+#                                                       ifelse(Tra3_4_Baseline$SN_NEIBR_NB_TRM>=3 & Tra3_4_Baseline$SN_NEIBR_NB_TRM <=5,3L,
+#                                                            ifelse(Tra3_4_Baseline$SN_NEIBR_NB_TRM>=6 & Tra3_4_Baseline$SN_NEIBR_NB_TRM <=10,4L,
+#                                                                    ifelse(Tra3_4_Baseline$SN_NEIBR_NB_TRM>=11 & Tra3_4_Baseline$SN_NEIBR_NB_TRM <=20,5L,
+#                                                                           ifelse(Tra3_4_Baseline$SN_NEIBR_NB_TRM>=21,6L, NA))))))
+# 
+# table(soc_CLSA_tra_0$soc_sn_num_children_0, useNA="always" )
+# summary(soc_CLSA_tra_0$soc_sn_num_children_0) 
 
-soc_CLSA_tra_0$soc_sn_num_children_0 <- ifelse(Tra3_4_Baseline$SN_NEIBR_NB_TRM==0,1L, 
-                                                  ifelse(Tra3_4_Baseline$SN_NEIBR_NB_TRM==1 | Tra3_4_Baseline$SN_NEIBR_NB_TRM==2,2L,
-                                                      ifelse(Tra3_4_Baseline$SN_NEIBR_NB_TRM>=3 & Tra3_4_Baseline$SN_NEIBR_NB_TRM <=5,3L,
-                                                           ifelse(Tra3_4_Baseline$SN_NEIBR_NB_TRM>=6 & Tra3_4_Baseline$SN_NEIBR_NB_TRM <=10,4L,
-                                                                   ifelse(Tra3_4_Baseline$SN_NEIBR_NB_TRM>=11 & Tra3_4_Baseline$SN_NEIBR_NB_TRM <=20,5L,
-                                                                          ifelse(Tra3_4_Baseline$SN_NEIBR_NB_TRM>=21,6L, NA))))))
-
-table(soc_CLSA_tra_0$soc_sn_num_children_0) 
-summary(soc_CLSA_tra_0$soc_sn_num_children_0) 
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_1    
@@ -697,21 +719,22 @@ summary(soc_CLSA_tra_0$soc_sn_num_children_0)
 5 |  11 to 20 neighbours 
 6 |  More than 20 neighbours    
 
-**Harmonization status**:  complete  
-**Harmonization comment**:   
+**Harmonization status**:  impossible    
+**Harmonization comment**:   The study-specific variable is:"How many of your neighbours do you know?"
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra_FU1$SN_NEIBR_NB_TRF1) 
+# table(Tra_FU1$SN_NEIBR_NB_TRF1) 
+# 
+# soc_CLSA_tra_1$soc_sn_num_children_1 <- ifelse(Tra_FU1$SN_NEIBR_NB_TRF1==0,1L, 
+#                                                   ifelse(Tra_FU1$SN_NEIBR_NB_TRF1==1 | Tra_FU1$SN_NEIBR_NB_TRF1==2,2L,
+#                                                       ifelse(Tra_FU1$SN_NEIBR_NB_TRF1>=3 & Tra_FU1$SN_NEIBR_NB_TRF1 <=5,3L,
+#                                                            ifelse(Tra_FU1$SN_NEIBR_NB_TRF1>=6 & Tra_FU1$SN_NEIBR_NB_TRF1 <=10,4L,
+#                                                                    ifelse(Tra_FU1$SN_NEIBR_NB_TRF1>=11 & Tra_FU1$SN_NEIBR_NB_TRF1 <=20,5L,
+#                                                                           ifelse(Tra_FU1$SN_NEIBR_NB_TRF1>=21,6L, NA))))))
+# 
+# table(soc_CLSA_tra_1$soc_sn_num_children_1) 
+# summary(soc_CLSA_tra_1$soc_sn_num_children_1) 
 
-soc_CLSA_tra_1$soc_sn_num_children_1 <- ifelse(Tra_FU1$SN_NEIBR_NB_TRF1==0,1L, 
-                                                  ifelse(Tra_FU1$SN_NEIBR_NB_TRF1==1 | Tra_FU1$SN_NEIBR_NB_TRF1==2,2L,
-                                                      ifelse(Tra_FU1$SN_NEIBR_NB_TRF1>=3 & Tra_FU1$SN_NEIBR_NB_TRF1 <=5,3L,
-                                                           ifelse(Tra_FU1$SN_NEIBR_NB_TRF1>=6 & Tra_FU1$SN_NEIBR_NB_TRF1 <=10,4L,
-                                                                   ifelse(Tra_FU1$SN_NEIBR_NB_TRF1>=11 & Tra_FU1$SN_NEIBR_NB_TRF1 <=20,5L,
-                                                                          ifelse(Tra_FU1$SN_NEIBR_NB_TRF1>=21,6L, NA))))))
-
-table(soc_CLSA_tra_1$soc_sn_num_children_1) 
-summary(soc_CLSA_tra_1$soc_sn_num_children_1) 
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_2    
@@ -733,7 +756,7 @@ summary(soc_CLSA_tra_1$soc_sn_num_children_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -756,7 +779,7 @@ summary(soc_CLSA_tra_1$soc_sn_num_children_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -779,7 +802,7 @@ summary(soc_CLSA_tra_1$soc_sn_num_children_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -802,7 +825,7 @@ summary(soc_CLSA_tra_1$soc_sn_num_children_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -825,7 +848,7 @@ summary(soc_CLSA_tra_1$soc_sn_num_children_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 
@@ -846,13 +869,13 @@ summary(soc_CLSA_tra_1$soc_sn_num_children_1)
 **Harmonization comment**: Study specific variable asks about last get together with neighbours.   
 **R script**:  
 ```{r, echo=TRUE}
-# ###CHANGE
-# table(Tra3_4_Baseline$SN_SEENEIBR_TRM) 
+table(Tra3_4_Baseline$SN_SEENEIBR_TRM) 
 # 
 soc_CLSA_tra_0$soc_sn_freq_nbhs_0 <- ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==1|Tra3_4_Baseline$SN_SEENEIBR_TRM ==2,1L,
-                                                         ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==3|Tra3_4_Baseline$SN_SEENEIBR_TRM ==4,2L,
-                                                                 ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==5|Tra3_4_Baseline$SN_SEENEIBR_TRM ==6,3L,
-                                                         NA)))
+                                                         ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==3,2L,
+                                                                 ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==5|
+                                                                        Tra3_4_Baseline$SN_SEENEIBR_TRM ==6|
+                                                                          Tra3_4_Baseline$SN_SEENEIBR_TRM ==4,3L,NA)))
 #                                                            
 table(soc_CLSA_tra_0$soc_sn_freq_nbhs_0) 
 # summary(soc_CLSA_tra_0$soc_sn_freq_nbhs_0) 
@@ -875,7 +898,13 @@ table(soc_CLSA_tra_0$soc_sn_freq_nbhs_0)
 **Harmonization comment**: Study specific variable asks about last get together with neighbours.    
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
+soc_CLSA_tra_1$soc_sn_freq_nbhs_1 <- ifelse(Tra_FU1$SN_SEENEIBR_TRF1 ==1|Tra_FU1$SN_SEENEIBR_TRF1 ==2,1L,
+                                                         ifelse(Tra_FU1$SN_SEENEIBR_TRF1 ==3,2L,
+                                                                 ifelse(Tra_FU1$SN_SEENEIBR_TRF1 ==5|
+                                                                        Tra_FU1$SN_SEENEIBR_TRF1 ==6|
+                                                                          Tra_FU1$SN_SEENEIBR_TRF1 ==4,3L,NA)))
+table(soc_CLSA_tra_1$soc_sn_freq_nbhs_1) 
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -895,7 +924,7 @@ table(soc_CLSA_tra_0$soc_sn_freq_nbhs_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -915,7 +944,7 @@ table(soc_CLSA_tra_0$soc_sn_freq_nbhs_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -935,7 +964,7 @@ table(soc_CLSA_tra_0$soc_sn_freq_nbhs_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -955,7 +984,7 @@ table(soc_CLSA_tra_0$soc_sn_freq_nbhs_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -975,7 +1004,7 @@ table(soc_CLSA_tra_0$soc_sn_freq_nbhs_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of relatives      
@@ -1008,8 +1037,7 @@ summary(soc_CLSA_tra_0$soc_sn_num_relatives_0)
 **Harmonization comment**:  Study specific variable asks about number of living relatives.    
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra_FU1$SN_RELLIV_NB_TRM) 
-#2805 respondents have 100 relatives? seems like bad data
+table(Tra_FU1$SN_RELLIV_NB_TRF1) 
 
 soc_CLSA_tra_1$soc_sn_num_relatives_1 <- as.numeric(Tra_FU1$SN_RELLIV_NB_TRF1)
 
@@ -1027,7 +1055,7 @@ summary(soc_CLSA_tra_1$soc_sn_num_relatives_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of relatives      
@@ -1041,7 +1069,7 @@ summary(soc_CLSA_tra_1$soc_sn_num_relatives_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of relatives      
@@ -1055,7 +1083,7 @@ summary(soc_CLSA_tra_1$soc_sn_num_relatives_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of relatives      
@@ -1069,7 +1097,7 @@ summary(soc_CLSA_tra_1$soc_sn_num_relatives_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of relatives      
@@ -1083,7 +1111,7 @@ summary(soc_CLSA_tra_1$soc_sn_num_relatives_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with family   
@@ -1103,23 +1131,18 @@ summary(soc_CLSA_tra_1$soc_sn_num_relatives_1)
 **Harmonization comment**:   Study specific variables used in this harmonization ask about 1. last get together with relatives outside of household 2. last get together with children outside of household 3. last get together with siblings outside of household. Highest frequency for either item is picked as the contact frequency with close relatives. Caution: respondents are not asked how close they are to these relatives, siblings or children. 
 **R script**:  
 ```{r, echo=TRUE}
-# ###CHANGE
-# table(Tra3_4_Baseline$SN_SEECHILD_TRM) 
-# table(Tra3_4_Baseline$SN_SEESIB_TRM) 
-# table(Tra3_4_Baseline$SN_SEEREL_TRM) 
-# 
-soc_CLSA_tra_0$soc_sn_freq_close_relatives_0 <- ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM ==1 |
-                                                           Tra3_4_Baseline$SN_SEESIB_TRM ==1 |Tra3_4_Baseline$SN_SEEREL_TRM==1| 
-                                                           Tra3_4_Baseline$SN_SEECHILD_TRM ==2 |Tra3_4_Baseline$SN_SEESIB_TRM ==2
-                                                                                          |Tra3_4_Baseline$SN_SEEREL_TRM==2,1L,
-                                          ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM==3 |Tra3_4_Baseline$SN_SEESIB_TRM==3
-                                                                                          |Tra3_4_Baseline$SN_SEEREL_TRM==3|Tra3_4_Baseline$SN_SEECHILD_TRM==4 |Tra3_4_Baseline$SN_SEESIB_TRM==4
-                                                                                          |Tra3_4_Baseline$SN_SEEREL_TRM==4,2L,
-                                          ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM ==5 |Tra3_4_Baseline$SN_SEESIB_TRM ==5
-                                                                                          |Tra3_4_Baseline$SN_SEEREL_TRM==5 | Tra3_4_Baseline$SN_SEECHILD_TRM ==6 |Tra3_4_Baseline$SN_SEESIB_TRM ==6
-                                                                                          |Tra3_4_Baseline$SN_SEEREL_TRM==6,3L,NA)))
+table(Tra3_4_Baseline$SN_SEECHILD_TRM, useNA="always")
+table(Tra3_4_Baseline$SN_SEESIB_TRM, useNA="always")
+table(Tra3_4_Baseline$SN_SEEREL_TRM, useNA="always")
 
-table(soc_CLSA_tra_0$soc_sn_freq_close_relatives_0) 
+soc_CLSA_tra_0$soc_sn_freq_close_relatives_0 <- ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM ==1 |Tra3_4_Baseline$SN_SEESIB_TRM ==1 |Tra3_4_Baseline$SN_SEEREL_TRM==1| 
+                                                          Tra3_4_Baseline$SN_SEECHILD_TRM ==2 |Tra3_4_Baseline$SN_SEESIB_TRM ==2 |Tra3_4_Baseline$SN_SEEREL_TRM==2,1L,
+                                                ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM==3 |Tra3_4_Baseline$SN_SEESIB_TRM==3|Tra3_4_Baseline$SN_SEEREL_TRM==3,2L,
+                                                ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM ==5 |Tra3_4_Baseline$SN_SEESIB_TRM ==5 |Tra3_4_Baseline$SN_SEEREL_TRM==5 |
+                                                   Tra3_4_Baseline$SN_SEECHILD_TRM ==6 |Tra3_4_Baseline$SN_SEESIB_TRM ==6|Tra3_4_Baseline$SN_SEEREL_TRM==6 |
+                                                       Tra3_4_Baseline$SN_SEECHILD_TRM==4 |Tra3_4_Baseline$SN_SEESIB_TRM==4 |Tra3_4_Baseline$SN_SEEREL_TRM==4,3L,NA)))
+
+table(soc_CLSA_tra_0$soc_sn_freq_close_relatives_0, useNA="always") 
 # summary(soc_CLSA_tra_0$soc_sn_freq_close_relatives_0)
 
 ```
@@ -1140,7 +1163,15 @@ table(soc_CLSA_tra_0$soc_sn_freq_close_relatives_0)
 **Harmonization comment**:   Study specific variables used in this harmonization ask about 1. last get together with relatives outside of household 2. last get together with children outside of household 3. last get together with siblings outside of household. Highest frequency for either item is picked as the contact frequency with close relatives. Caution: respondents are not asked how close they are to these relatives, siblings or children.   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+soc_CLSA_tra_1$soc_sn_freq_close_relatives_1 <- ifelse(Tra_FU1$SN_SEECHILD_TRF1 ==1 |Tra_FU1$SN_SEESIB_TRF1==1 |Tra_FU1$SN_SEEREL_TRF1==1| 
+                                                          Tra_FU1$SN_SEECHILD_TRF1  ==2 |Tra_FU1$SN_SEESIB_TRF1 ==2 |Tra_FU1$SN_SEEREL_TRF1==2,1L,
+                                                ifelse(Tra_FU1$SN_SEECHILD_TRF1 ==3 |Tra_FU1$SN_SEESIB_TRF1==3|Tra_FU1$SN_SEEREL_TRF1==3,2L,
+                                                ifelse(Tra_FU1$SN_SEECHILD_TRF1  ==5 |Tra_FU1$SN_SEESIB_TRF1==5 |Tra_FU1$SN_SEEREL_TRF1==5 |
+                                                      Tra_FU1$SN_SEECHILD_TRF1  ==6 |Tra_FU1$SN_SEESIB_TRF1 ==6|Tra_FU1$SN_SEEREL_TRF1==6 |
+                                                      Tra_FU1$SN_SEECHILD_TRF1 ==4 |Tra_FU1$SN_SEESIB_TRF1==4 |Tra_FU1$SN_SEEREL_TRF1==4,3L,NA)))
+
+
+table(soc_CLSA_tra_1$soc_sn_freq_close_relatives_1) 
 
 ```
 ### **Variable label**:   Contact frequency with family    
@@ -1160,7 +1191,7 @@ table(soc_CLSA_tra_0$soc_sn_freq_close_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with family    
@@ -1180,7 +1211,7 @@ table(soc_CLSA_tra_0$soc_sn_freq_close_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with family   
@@ -1200,7 +1231,7 @@ table(soc_CLSA_tra_0$soc_sn_freq_close_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with family    
@@ -1220,7 +1251,7 @@ table(soc_CLSA_tra_0$soc_sn_freq_close_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with family    
@@ -1240,7 +1271,7 @@ table(soc_CLSA_tra_0$soc_sn_freq_close_relatives_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -1262,23 +1293,17 @@ table(soc_CLSA_tra_0$soc_sn_freq_close_relatives_0)
 **R script**:  
 ```{r, echo=TRUE}
 
-# ###CHANGE
 # table(Tra3_4_Baseline$SN_SEECHILD_TRM) 
 # table(Tra3_4_Baseline$SN_SEESIB_TRM) 
 # table(Tra3_4_Baseline$SN_SEEREL_TRM) 
 # 
-soc_CLSA_tra_0$soc_sn_freq_close_relatives_0 <- ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM ==1 |
-                                                           Tra3_4_Baseline$SN_SEESIB_TRM ==1 |Tra3_4_Baseline$SN_SEEREL_TRM==1| 
-                                                           Tra3_4_Baseline$SN_SEECHILD_TRM ==2 |Tra3_4_Baseline$SN_SEESIB_TRM ==2
-                                                                                          |Tra3_4_Baseline$SN_SEEREL_TRM==2,1L,
-                                          ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM==3 |Tra3_4_Baseline$SN_SEESIB_TRM==3
-                                                                                          |Tra3_4_Baseline$SN_SEEREL_TRM==3|Tra3_4_Baseline$SN_SEECHILD_TRM==4 |Tra3_4_Baseline$SN_SEESIB_TRM==4
-                                                                                          |Tra3_4_Baseline$SN_SEEREL_TRM==4,2L,
-                                          ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM ==5 |Tra3_4_Baseline$SN_SEESIB_TRM ==5
-                                                                                          |Tra3_4_Baseline$SN_SEEREL_TRM==5 | Tra3_4_Baseline$SN_SEECHILD_TRM ==6 |Tra3_4_Baseline$SN_SEESIB_TRM ==6
-                                                                                          |Tra3_4_Baseline$SN_SEEREL_TRM==6,3L,NA)))
-#                                                            
-# table(soc_CLSA_tra_0$soc_sn_freq_relatives_0) 
+soc_CLSA_tra_0$soc_sn_freq_relatives_0 <- ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM ==1 |Tra3_4_Baseline$SN_SEESIB_TRM ==1 |Tra3_4_Baseline$SN_SEEREL_TRM==1| 
+                                                 Tra3_4_Baseline$SN_SEECHILD_TRM ==2 |Tra3_4_Baseline$SN_SEESIB_TRM ==2|Tra3_4_Baseline$SN_SEEREL_TRM==2,1L,
+                                          ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM==3 |Tra3_4_Baseline$SN_SEESIB_TRM==3|Tra3_4_Baseline$SN_SEEREL_TRM==3,2L,
+                                          ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM ==5 |Tra3_4_Baseline$SN_SEESIB_TRM ==5|Tra3_4_Baseline$SN_SEEREL_TRM==5 |
+                                                   Tra3_4_Baseline$SN_SEECHILD_TRM ==6 |Tra3_4_Baseline$SN_SEESIB_TRM ==6 |Tra3_4_Baseline$SN_SEEREL_TRM==6|
+                                                   Tra3_4_Baseline$SN_SEECHILD_TRM==4 |Tra3_4_Baseline$SN_SEESIB_TRM==4|Tra3_4_Baseline$SN_SEEREL_TRM==4,3L,NA)))
+ table(soc_CLSA_tra_0$soc_sn_freq_relatives_0) 
 # summary(soc_CLSA_tra_0$soc_sn_freq_relatives_0) 
 
 ```
@@ -1299,7 +1324,17 @@ soc_CLSA_tra_0$soc_sn_freq_close_relatives_0 <- ifelse(Tra3_4_Baseline$SN_SEECHI
 **Harmonization comment**:   Study specific variables used in this harmonization ask about 1. last get together with relatives outside of household 2. last get together with children outside of household 3. last get together with siblings outside of household. Highest frequency for either item is picked as the contact frequency with close relatives.    
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+soc_CLSA_tra_1$soc_sn_freq_relatives_1 <- ifelse(Tra_FU1$SN_SEECHILD_TRF1 ==1 |Tra_FU1$SN_SEESIB_TRF1==1 |Tra_FU1$SN_SEEREL_TRF1==1| 
+                                                          Tra_FU1$SN_SEECHILD_TRF1  ==2 |Tra_FU1$SN_SEESIB_TRF1 ==2 |Tra_FU1$SN_SEEREL_TRF1==2,1L,
+                                                ifelse(Tra_FU1$SN_SEECHILD_TRF1 ==3 |Tra_FU1$SN_SEESIB_TRF1==3|Tra_FU1$SN_SEEREL_TRF1==3,2L,
+                                                ifelse(Tra_FU1$SN_SEECHILD_TRF1  ==5 |Tra_FU1$SN_SEESIB_TRF1==5 |Tra_FU1$SN_SEEREL_TRF1==5 |
+                                                      Tra_FU1$SN_SEECHILD_TRF1  ==6 |Tra_FU1$SN_SEESIB_TRF1 ==6|Tra_FU1$SN_SEEREL_TRF1==6 |
+                                                       Tra_FU1$SN_SEECHILD_TRF1 ==4 |Tra_FU1$SN_SEESIB_TRF1==4 |Tra_FU1$SN_SEEREL_TRF1==4,3L,NA)))
+
+
+table(soc_CLSA_tra_1$soc_sn_freq_relatives_1) 
+
+
 
 ```
 ### **Variable label**:   Contact frequency with relatives     
@@ -1319,7 +1354,7 @@ soc_CLSA_tra_0$soc_sn_freq_close_relatives_0 <- ifelse(Tra3_4_Baseline$SN_SEECHI
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with relatives    
@@ -1339,7 +1374,7 @@ soc_CLSA_tra_0$soc_sn_freq_close_relatives_0 <- ifelse(Tra3_4_Baseline$SN_SEECHI
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with relatives    
@@ -1359,7 +1394,7 @@ soc_CLSA_tra_0$soc_sn_freq_close_relatives_0 <- ifelse(Tra3_4_Baseline$SN_SEECHI
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with relatives     
@@ -1379,7 +1414,7 @@ soc_CLSA_tra_0$soc_sn_freq_close_relatives_0 <- ifelse(Tra3_4_Baseline$SN_SEECHI
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with relatives    
@@ -1399,7 +1434,7 @@ soc_CLSA_tra_0$soc_sn_freq_close_relatives_0 <- ifelse(Tra3_4_Baseline$SN_SEECHI
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of non-kin      
@@ -1413,7 +1448,7 @@ soc_CLSA_tra_0$soc_sn_freq_close_relatives_0 <- ifelse(Tra3_4_Baseline$SN_SEECHI
 **Harmonization comment**:  Study specific variables added to obtain this DataSchema are: number of close friends, number of neighbours, number of people known through community involvement. 
 ```{r, echo=TRUE}
 # did not add step children, or adopted children or partner's children,in retrospect maybe would have been fine? 
-
+table(Tra3_4_Baseline$SN_FRND_NB_TRM)
 soc_CLSA_tra_0$soc_sn_num_nonkin_0 <- as.integer((Tra3_4_Baseline$SN_FRND_NB_TRM) + (Tra3_4_Baseline$SN_NEIBR_NB_TRM)+ (Tra3_4_Baseline$SN_PERCOM_NB_TRM)) 
 
 table(soc_CLSA_tra_0$soc_sn_num_nonkin_0) 
@@ -1448,7 +1483,7 @@ summary(soc_CLSA_tra_1$soc_sn_num_nonkin_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of non-kin      
@@ -1462,7 +1497,7 @@ summary(soc_CLSA_tra_1$soc_sn_num_nonkin_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of non-kin      
@@ -1476,7 +1511,7 @@ summary(soc_CLSA_tra_1$soc_sn_num_nonkin_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of non-kin      
@@ -1490,7 +1525,7 @@ summary(soc_CLSA_tra_1$soc_sn_num_nonkin_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Network size of non-kin      
@@ -1504,7 +1539,7 @@ summary(soc_CLSA_tra_1$soc_sn_num_nonkin_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -1525,15 +1560,16 @@ summary(soc_CLSA_tra_1$soc_sn_num_nonkin_1)
 **Harmonization comment**: Study specific variables added to obtain this DataSchema are: last get together with neighbours and last get together with close friends outside of household. 
 **R script**:  
 ```{r, echo=TRUE}
-###CHANGE
 table(Tra3_4_Baseline$SN_SEENEIBR_TRM) 
 table(Tra3_4_Baseline$SN_SEEFRND_TRM) 
 
 
-soc_CLSA_tra_0$soc_sn_freq_nonkin_0 <- ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==1 |Tra3_4_Baseline$SN_SEEFRND_TRM ==1|Tra3_4_Baseline$SN_SEENEIBR_TRM ==2 |Tra3_4_Baseline$SN_SEEFRND_TRM ==2,1L, 
-                                          ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM==3 |Tra3_4_Baseline$SN_SEEFRND_TRM==3|Tra3_4_Baseline$SN_SEENEIBR_TRM==4 |Tra3_4_Baseline$SN_SEEFRND_TRM==4,2L, 
-                                          ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==5 |Tra3_4_Baseline$SN_SEEFRND_TRM ==5 
-                                         | Tra3_4_Baseline$SN_SEENEIBR_TRM ==6 |Tra3_4_Baseline$SN_SEEFRND_TRM ==6  ,4L, NA)))
+soc_CLSA_tra_0$soc_sn_freq_nonkin_0 <- ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==1 |Tra3_4_Baseline$SN_SEEFRND_TRM ==1|
+                                              Tra3_4_Baseline$SN_SEENEIBR_TRM ==2 |Tra3_4_Baseline$SN_SEEFRND_TRM ==2,1L, 
+                                       ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM==3  |Tra3_4_Baseline$SN_SEEFRND_TRM==3,2L, 
+                                       ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==5 |Tra3_4_Baseline$SN_SEEFRND_TRM ==5 | 
+                                              Tra3_4_Baseline$SN_SEENEIBR_TRM ==6 |Tra3_4_Baseline$SN_SEEFRND_TRM ==6|
+                                              Tra3_4_Baseline$SN_SEENEIBR_TRM==4  |Tra3_4_Baseline$SN_SEEFRND_TRM==4 ,3L, NA)))
                                                            
 table(soc_CLSA_tra_0$soc_sn_freq_nonkin_0) 
 summary(soc_CLSA_tra_0$soc_sn_freq_nonkin_0) 
@@ -1555,7 +1591,15 @@ summary(soc_CLSA_tra_0$soc_sn_freq_nonkin_0)
 **Harmonization comment**: Study specific variables added to obtain this DataSchema are: last get together with neighbours and last get together with close friends outside of household.   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+soc_CLSA_tra_1$soc_sn_freq_nonkin_1 <- ifelse(Tra_FU1$SN_SEENEIBR_TRF1==1 |Tra_FU1$SN_SEEFRND_TRF1 ==1|
+                                              Tra_FU1$SN_SEENEIBR_TRF1 ==2 |Tra_FU1$SN_SEEFRND_TRF1 ==2,1L, 
+                                       ifelse(Tra_FU1$SN_SEENEIBR_TRF1==3  |Tra_FU1$SN_SEEFRND_TRF1==3,2L, 
+                                       ifelse(Tra_FU1$SN_SEENEIBR_TRF1 ==5 |Tra_FU1$SN_SEEFRND_TRF1 ==5 | 
+                                              Tra_FU1$SN_SEENEIBR_TRF1 ==6 |Tra_FU1$SN_SEEFRND_TRF1 ==6|
+                                              Tra_FU1$SN_SEENEIBR_TRF1==4  |Tra_FU1$SN_SEEFRND_TRF1==4 ,3L, NA)))
+                                                           
+table(soc_CLSA_tra_1$soc_sn_freq_nonkin_1) 
+
 
 ```
 ### **Variable label**:   Contact frequency with non-kin  
@@ -1575,7 +1619,7 @@ summary(soc_CLSA_tra_0$soc_sn_freq_nonkin_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with non-kin  
@@ -1595,7 +1639,7 @@ summary(soc_CLSA_tra_0$soc_sn_freq_nonkin_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with non-kin  
@@ -1615,7 +1659,7 @@ summary(soc_CLSA_tra_0$soc_sn_freq_nonkin_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with non-kin  
@@ -1635,7 +1679,7 @@ summary(soc_CLSA_tra_0$soc_sn_freq_nonkin_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:   Contact frequency with non-kin  
@@ -1655,7 +1699,7 @@ summary(soc_CLSA_tra_0$soc_sn_freq_nonkin_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 # Social support subdomain
@@ -1677,7 +1721,7 @@ summary(soc_CLSA_tra_0$soc_sn_freq_nonkin_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received emotional support    
@@ -1697,7 +1741,7 @@ summary(soc_CLSA_tra_0$soc_sn_freq_nonkin_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received emotional support    
@@ -1717,7 +1761,7 @@ summary(soc_CLSA_tra_0$soc_sn_freq_nonkin_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received emotional support    
@@ -1737,7 +1781,7 @@ summary(soc_CLSA_tra_0$soc_sn_freq_nonkin_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received emotional support    
@@ -1757,7 +1801,7 @@ summary(soc_CLSA_tra_0$soc_sn_freq_nonkin_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received emotional support    
@@ -1777,7 +1821,7 @@ summary(soc_CLSA_tra_0$soc_sn_freq_nonkin_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received emotional support    
@@ -1797,7 +1841,7 @@ summary(soc_CLSA_tra_0$soc_sn_freq_nonkin_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -1818,7 +1862,7 @@ summary(soc_CLSA_tra_0$soc_sn_freq_nonkin_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -1838,7 +1882,7 @@ summary(soc_CLSA_tra_0$soc_sn_freq_nonkin_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -1858,7 +1902,7 @@ summary(soc_CLSA_tra_0$soc_sn_freq_nonkin_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -1878,7 +1922,7 @@ summary(soc_CLSA_tra_0$soc_sn_freq_nonkin_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -1898,7 +1942,7 @@ summary(soc_CLSA_tra_0$soc_sn_freq_nonkin_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -1918,7 +1962,7 @@ summary(soc_CLSA_tra_0$soc_sn_freq_nonkin_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Received instrumental support   
@@ -1938,7 +1982,7 @@ summary(soc_CLSA_tra_0$soc_sn_freq_nonkin_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -1974,7 +2018,8 @@ soc_CLSA_tra_0$soc_ss_perceived_instru_0_prob_inter <- as.numeric(ifelse(Tra3_4_
 table(soc_CLSA_tra_0$soc_ss_perceived_instru_0_prob_inter) 
 
 
-soc_CLSA_tra_0$soc_ss_Zscore_perceived_emo_0_inter <- (soc_CLSA_tra_0$soc_ss_perceived_instru_0_love_inter + soc_CLSA_tra_0$soc_ss_perceived_instru_0_sugg_inter + soc_CLSA_tra_0$soc_ss_perceived_instru_0_enjoy_inter + soc_CLSA_tra_0$soc_ss_perceived_instru_0_prob_inter)
+soc_CLSA_tra_0$soc_ss_Zscore_perceived_emo_0_inter <- (soc_CLSA_tra_0$soc_ss_perceived_instru_0_love_inter + soc_CLSA_tra_0$soc_ss_perceived_instru_0_sugg_inter +
+                                                       soc_CLSA_tra_0$soc_ss_perceived_instru_0_enjoy_inter + soc_CLSA_tra_0$soc_ss_perceived_instru_0_prob_inter)
 
 table(soc_CLSA_tra_0$soc_ss_Zscore_perceived_emo_0_inter) 
 
@@ -2038,7 +2083,7 @@ summary(soc_CLSA_tra_1$soc_ss_Zscore_perceived_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -2052,7 +2097,7 @@ summary(soc_CLSA_tra_1$soc_ss_Zscore_perceived_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -2066,7 +2111,7 @@ summary(soc_CLSA_tra_1$soc_ss_Zscore_perceived_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -2080,7 +2125,7 @@ summary(soc_CLSA_tra_1$soc_ss_Zscore_perceived_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -2094,7 +2139,7 @@ summary(soc_CLSA_tra_1$soc_ss_Zscore_perceived_emo_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -2162,7 +2207,7 @@ summary(soc_CLSA_tra_1$soc_ss_perceived_instru_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -2181,7 +2226,7 @@ summary(soc_CLSA_tra_1$soc_ss_perceived_instru_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -2200,7 +2245,7 @@ summary(soc_CLSA_tra_1$soc_ss_perceived_instru_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -2219,7 +2264,7 @@ summary(soc_CLSA_tra_1$soc_ss_perceived_instru_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -2238,172 +2283,11 @@ summary(soc_CLSA_tra_1$soc_ss_perceived_instru_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
 # Social participation subdomain
-
-### **Variable label**:  Social isolation    
-**Variable name**:  soc_sp_isolation_0  
-**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not socially isolated, has social network and/ or social participation 
-1 |  Socially isolated, no social network and no social participation 
-
-**Harmonization status**:  complete    
-**Harmonization comment**:   Used same approach as in the harmonization of GLOBE and LASA data: utilized study available DataSchema social network - contact frequency variables (friends, neighbours, relatives, family and non-kin) in addition to the general participation variable, no contact with these different types of social network members and no participation was categorized as socially isolated. Having one or more of these types of members (in addition to children) in their network and reporting social participation was categorized as not socially isolated.    
-**R script**:  
-```{r, echo=TRUE}
-
-soc_CLSA_tra_0$soc_sp_isolation_0 <- ifelse((soc_CLSA_tra_0$soc_sn_freq_friends_0 == 3| soc_CLSA_tra_0$soc_sn_freq_nbhs_0 ==3|     soc_CLSA_tra_0$soc_sn_freq_close_relatives_0 ==3 | soc_CLSA_tra_0$soc_sn_freq_relatives_0 ==3|soc_CLSA_tra_0$soc_sn_freq_nonkin_0==3) & soc_CLSA_tra_0$soc_sp_general_0 == 0,1L,
-                                 ifelse((soc_CLSA_tra_0$soc_sn_freq_friends_0 >= 1 | soc_CLSA_tra_0$soc_sn_freq_nbhs_0 >= 1 | soc_CLSA_tra_0$soc_sn_freq_close_relatives_0 >= 1 | soc_CLSA_tra_0$soc_sn_freq_relatives_0 >= 1) & soc_CLSA_tra_0$soc_sn_freq_nonkin_0 == 1, 0L, NA ))
-
-# table(soc_CLSA_tra_0$soc_sp_isolation_0, useNA="always")
-
-```
-### **Variable label**:  Social isolation    
-**Variable name**:  soc_sp_isolation_1  
-**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not socially isolated, has social network and/ or social participation 
-1 |  Socially isolated, no social network and no social participation 
-
-**Harmonization status**:  complete    
-**Harmonization comment**:   Used same approach as in the harmonization of GLOBE and LASA data: utilized study available DataSchema social network - contact frequency variables (friends, neighbours, relatives, family and non-kin) in addition to the general participation variable, no contact with these different types of social network members and no participation was categorized as socially isolated. Having one or more of these types of members (in addition to children) in their network and reporting social participation was categorized as not socially isolated.    
-**R script**:  
-```{r, echo=TRUE}
-soc_CLSA_tra_1$soc_sp_isolation_1 <- ifelse((soc_CLSA_tra_1$soc_sn_freq_friends_1 == 3 | soc_CLSA_tra_1$soc_sn_freq_nbhs_1 ==3 |     soc_CLSA_tra_1$soc_sn_freq_close_relatives_1 =3 | soc_CLSA_tra_1$soc_sn_freq_relatives_1 ==3 |soc_CLSA_tra_1$soc_sn_freq_nonkin_1==3) & soc_CLSA_tra_1$soc_sp_general_1 == 0,1L,
-                                 ifelse((soc_CLSA_tra_1$soc_sn_freq_friends_1 >= 1 | soc_CLSA_tra_1$soc_sn_freq_nbhs_1 >= 1 | soc_CLSA_tra_1$soc_sn_freq_close_relatives_1 >= 1 | soc_CLSA_tra_1$soc_sn_freq_relatives_1 >= 1) & soc_CLSA_tra_1$soc_sn_freq_nonkin_1 == 1, 0L, NA ))
-
-# table(soc_CLSA_tra_1$soc_sp_isolation_1, useNA="always")
-
-
-```
-### **Variable label**:  Social isolation    
-**Variable name**:  soc_sp_isolation_2  
-**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not socially isolated, has social network and/ or social participation 
-1 |  Socially isolated, no social network and no social participation 
-
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:  Social isolation    
-**Variable name**:  soc_sp_isolation_3  
-**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not socially isolated, has social network and/ or social participation 
-1 |  Socially isolated, no social network and no social participation 
-
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:  Social isolation    
-**Variable name**:  soc_sp_isolation_4  
-**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not socially isolated, has social network and/ or social participation 
-1 |  Socially isolated, no social network and no social participation 
-
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:  Social isolation    
-**Variable name**:  soc_sp_isolation_5  
-**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not socially isolated, has social network and/ or social participation 
-1 |  Socially isolated, no social network and no social participation 
-
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:  Social isolation    
-**Variable name**:  soc_sp_isolation_6  
-**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not socially isolated, has social network and/ or social participation 
-1 |  Socially isolated, no social network and no social participation 
-
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:  Social isolation    
-**Variable name**:  soc_sp_isolation_7  
-**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not socially isolated, has social network and/ or social participation 
-1 |  Socially isolated, no social network and no social participation 
-
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
 
 ### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_0        
@@ -2472,7 +2356,7 @@ summary(soc_CLSA_tra_1$soc_sp_religious_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2491,7 +2375,7 @@ summary(soc_CLSA_tra_1$soc_sp_religious_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2510,7 +2394,7 @@ summary(soc_CLSA_tra_1$soc_sp_religious_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2529,7 +2413,7 @@ summary(soc_CLSA_tra_1$soc_sp_religious_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2548,28 +2432,10 @@ summary(soc_CLSA_tra_1$soc_sp_religious_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
-### **Variable label**:  Religious participation 
-**Variable name**:  soc_sp_religious_7        
-**Variable description**:  Indicator of participation in a religious organization.      
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
 
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Does not participate in a religious organization   
-1 |  Does participate in a religious organization 
-
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
 ### **Variable label**:  Frequency of religious participation 
 **Variable name**:  soc_sp_freq_religious_0        
 **Variable description**:  Indicator of the frequency of participation in a religious organization.         
@@ -2591,7 +2457,7 @@ summary(soc_CLSA_tra_1$soc_sp_religious_1)
 ```{r, echo=TRUE}
 
 table(Tra3_4_Baseline$SPA_CHRCH_TRM) 
-
+#?? categoties 3&4 doesn't make sense
 soc_CLSA_tra_0$soc_sp_freq_religious_0 <- ifelse(Tra3_4_Baseline$SPA_CHRCH_TRM ==1 |Tra3_4_Baseline$SPA_CHRCH_TRM ==2, 1L,
                                            ifelse(Tra3_4_Baseline$SPA_CHRCH_TRM ==3 , 2L, 
                                            ifelse(Tra3_4_Baseline$SPA_CHRCH_TRM ==4 , 3L,
@@ -2650,7 +2516,7 @@ summary(soc_CLSA_tra_1$soc_sp_freq_religious_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2672,7 +2538,7 @@ summary(soc_CLSA_tra_1$soc_sp_freq_religious_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2694,7 +2560,7 @@ summary(soc_CLSA_tra_1$soc_sp_freq_religious_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2716,7 +2582,7 @@ summary(soc_CLSA_tra_1$soc_sp_freq_religious_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2738,31 +2604,10 @@ summary(soc_CLSA_tra_1$soc_sp_freq_religious_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
-### **Variable label**:  Frequency of religious participation 
-**Variable name**:  soc_sp_freq_religious_7        
-**Variable description**:  Indicator of the frequency of participation in a religious organization.         
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
 
-**Code** | **Category Label**  
-------------- | -------------  
-1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
-4 |  Never participates in religious organization
-5 |  No answer/don’t know regarding participation in religious organization
-
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
 ### **Variable label**:  Cultural and educational participation   
 **Variable name**:  soc_sp_cultural_edu_0           
 **Variable description**:  Indicator of whether the participant is a member of/participates in a group, club or activity related to education or culture.       
@@ -2830,7 +2675,7 @@ summary(soc_CLSA_tra_1$soc_sp_cultural_edu_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -2849,7 +2694,7 @@ summary(soc_CLSA_tra_1$soc_sp_cultural_edu_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -2868,7 +2713,7 @@ summary(soc_CLSA_tra_1$soc_sp_cultural_edu_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -2887,7 +2732,7 @@ summary(soc_CLSA_tra_1$soc_sp_cultural_edu_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -2906,7 +2751,7 @@ summary(soc_CLSA_tra_1$soc_sp_cultural_edu_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation    
@@ -2925,7 +2770,7 @@ summary(soc_CLSA_tra_1$soc_sp_cultural_edu_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
@@ -2944,7 +2789,7 @@ summary(soc_CLSA_tra_1$soc_sp_cultural_edu_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
@@ -2963,7 +2808,7 @@ summary(soc_CLSA_tra_1$soc_sp_cultural_edu_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
@@ -2982,7 +2827,7 @@ summary(soc_CLSA_tra_1$soc_sp_cultural_edu_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
@@ -3001,7 +2846,7 @@ summary(soc_CLSA_tra_1$soc_sp_cultural_edu_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
@@ -3020,7 +2865,7 @@ summary(soc_CLSA_tra_1$soc_sp_cultural_edu_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Cultural, educational and social participation       
@@ -3039,7 +2884,7 @@ summary(soc_CLSA_tra_1$soc_sp_cultural_edu_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Volunteering      
@@ -3106,7 +2951,7 @@ summary(soc_CLSA_tra_1$soc_sp_volunteer_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Volunteering      
@@ -3125,7 +2970,7 @@ summary(soc_CLSA_tra_1$soc_sp_volunteer_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Volunteering      
@@ -3144,7 +2989,7 @@ summary(soc_CLSA_tra_1$soc_sp_volunteer_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Volunteering      
@@ -3163,7 +3008,7 @@ summary(soc_CLSA_tra_1$soc_sp_volunteer_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Volunteering      
@@ -3182,7 +3027,7 @@ summary(soc_CLSA_tra_1$soc_sp_volunteer_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -3201,7 +3046,7 @@ summary(soc_CLSA_tra_1$soc_sp_volunteer_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -3221,7 +3066,7 @@ summary(soc_CLSA_tra_1$soc_sp_volunteer_1)
 **R script**:  
 ```{r, echo=TRUE}
  
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -3241,7 +3086,7 @@ summary(soc_CLSA_tra_1$soc_sp_volunteer_1)
 **R script**:  
 ```{r, echo=TRUE}
  
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -3261,7 +3106,7 @@ summary(soc_CLSA_tra_1$soc_sp_volunteer_1)
 **R script**:  
 ```{r, echo=TRUE}
  
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -3281,7 +3126,7 @@ summary(soc_CLSA_tra_1$soc_sp_volunteer_1)
 **R script**:  
 ```{r, echo=TRUE}
  
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -3301,7 +3146,7 @@ summary(soc_CLSA_tra_1$soc_sp_volunteer_1)
 **R script**:  
 ```{r, echo=TRUE}
  
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Political / union participation         
@@ -3321,7 +3166,7 @@ summary(soc_CLSA_tra_1$soc_sp_volunteer_1)
 **R script**:  
 ```{r, echo=TRUE}
  
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Professional participation         
@@ -3388,7 +3233,7 @@ summary(soc_CLSA_tra_1$soc_sp_prof_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Professional participation         
@@ -3407,7 +3252,7 @@ summary(soc_CLSA_tra_1$soc_sp_prof_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Professional participation         
@@ -3426,7 +3271,7 @@ summary(soc_CLSA_tra_1$soc_sp_prof_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Professional participation         
@@ -3445,7 +3290,7 @@ summary(soc_CLSA_tra_1$soc_sp_prof_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Professional participation         
@@ -3464,7 +3309,7 @@ summary(soc_CLSA_tra_1$soc_sp_prof_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  General social participation          
@@ -3483,8 +3328,10 @@ summary(soc_CLSA_tra_1$soc_sp_prof_1)
 **Harmonization comment**:   Dataschemas pertaining to participation (religious, cultural, educational, neighbourhood association and/or volunteering) were used to harmonize this variable.  
 **R script**:  
 ```{r, echo=TRUE}
-soc_CLSA_tra_0$soc_sp_general_0 <- ifelse(soc_CLSA_tra_0$soc_sp_prof_0 =='1' |  soc_CLSA_tra_0$soc_sp_volunteer_0 =='1' |  soc_CLSA_tra_0$soc_sp_cultural_edu_0 =='1' | soc_CLSA_tra_0$soc_sp_religious_0 =='1',1L, 
-                                                  ifelse(soc_CLSA_tra_0$soc_sp_prof_0 =='0'& soc_CLSA_tra_0$soc_sp_volunteer_0 =='0' & soc_CLSA_tra_0$soc_sp_cultural_edu_0 =='0' & soc_CLSA_tra_0$soc_sp_religious_0 =='0',0L, NA))
+soc_CLSA_tra_0$soc_sp_general_0 <- ifelse(soc_CLSA_tra_0$soc_sp_prof_0 =='1' |  soc_CLSA_tra_0$soc_sp_volunteer_0 =='1' |  
+                                          soc_CLSA_tra_0$soc_sp_cultural_edu_0 =='1' | soc_CLSA_tra_0$soc_sp_religious_0 =='1',1L, 
+                                                  ifelse(soc_CLSA_tra_0$soc_sp_prof_0 =='0'& soc_CLSA_tra_0$soc_sp_volunteer_0 =='0' &
+                                                          soc_CLSA_tra_0$soc_sp_cultural_edu_0 =='0' & soc_CLSA_tra_0$soc_sp_religious_0 =='0',0L, NA))
 
 table(soc_CLSA_tra_0$soc_sp_general_0) 
 summary(soc_CLSA_tra_0$soc_sp_general_0) 
@@ -3505,11 +3352,13 @@ summary(soc_CLSA_tra_0$soc_sp_general_0)
 **Harmonization comment**:   Dataschemas pertaining to participation (religious, cultural, educational, neighbourhood association and/or volunteering) were used to harmonize this variable.    
 **R script**:  
 ```{r, echo=TRUE}
-# soc_CLSA_tra_1$soc_sp_religious_1 =='1',1L, 
-#                                                   ifelse(soc_CLSA_tra_1$soc_sp_prof_1 =='0'& soc_CLSA_tra_1$soc_sp_volunteer_1 =='0' & soc_CLSA_tra_1$soc_sp_cultural_edu_1 =='0' & soc_CLSA_tra_1$soc_sp_religious_1 =='0',0L, NA))
-# 
-# table(soc_CLSA_tra_1$soc_sp_general_1) 
-# summary(soc_CLSA_tra_1$soc_sp_general_1) 
+soc_CLSA_tra_1$soc_sp_general_1 <- ifelse(soc_CLSA_tra_1$soc_sp_prof_1 =='1' |  soc_CLSA_tra_1$soc_sp_volunteer_1 =='1' |  
+                                          soc_CLSA_tra_1$soc_sp_cultural_edu_1 =='1' | soc_CLSA_tra_1$soc_sp_religious_1 =='1',1L, 
+                                                  ifelse(soc_CLSA_tra_1$soc_sp_prof_1 =='0'& soc_CLSA_tra_1$soc_sp_volunteer_1 =='0' &
+                                                          soc_CLSA_tra_1$soc_sp_cultural_edu_1 =='0' & soc_CLSA_tra_1$soc_sp_religious_1 =='0',0L, NA))
+
+table(soc_CLSA_tra_1$soc_sp_general_1) 
+summary(soc_CLSA_tra_1$soc_sp_general_1) 
 
 ```
 ### **Variable label**:  General social participation          
@@ -3528,7 +3377,7 @@ summary(soc_CLSA_tra_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  General social participation          
@@ -3547,7 +3396,7 @@ summary(soc_CLSA_tra_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  General social participation          
@@ -3566,7 +3415,7 @@ summary(soc_CLSA_tra_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  General social participation          
@@ -3585,7 +3434,7 @@ summary(soc_CLSA_tra_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  General social participation          
@@ -3604,7 +3453,7 @@ summary(soc_CLSA_tra_0$soc_sp_general_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3673,7 +3522,7 @@ summary(soc_CLSA_tra_1$soc_sp_nosafety_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3692,7 +3541,7 @@ summary(soc_CLSA_tra_1$soc_sp_nosafety_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3711,7 +3560,7 @@ summary(soc_CLSA_tra_1$soc_sp_nosafety_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3730,7 +3579,7 @@ summary(soc_CLSA_tra_1$soc_sp_nosafety_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3749,7 +3598,7 @@ summary(soc_CLSA_tra_1$soc_sp_nosafety_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
@@ -3816,7 +3665,7 @@ summary(soc_CLSA_tra_1$soc_sp_notrans_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
@@ -3835,7 +3684,7 @@ summary(soc_CLSA_tra_1$soc_sp_notrans_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
@@ -3854,7 +3703,7 @@ summary(soc_CLSA_tra_1$soc_sp_notrans_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
@@ -3873,7 +3722,7 @@ summary(soc_CLSA_tra_1$soc_sp_notrans_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
@@ -3892,7 +3741,7 @@ summary(soc_CLSA_tra_1$soc_sp_notrans_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Hobby      
@@ -3960,7 +3809,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Hobby      
@@ -3979,7 +3828,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Hobby      
@@ -3998,7 +3847,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Hobby      
@@ -4017,7 +3866,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Hobby      
@@ -4036,9 +3885,160 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
+
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_0  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  complete    
+**Harmonization comment**:   Used same approach as in the harmonization of GLOBE and LASA data: utilized study available DataSchema social network - contact frequency variables (friends, neighbours, relatives, family and non-kin) in addition to the general participation variable, no contact with these different types of social network members and no participation was categorized as socially isolated. Having one or more of these types of members (in addition to children) in their network and reporting social participation was categorized as not socially isolated.    
+**R script**:  
+```{r, echo=TRUE}
+
+soc_CLSA_tra_0$soc_sp_isolation_0 <- ifelse((soc_CLSA_tra_0$soc_sn_freq_friends_0 == 3| soc_CLSA_tra_0$soc_sn_freq_nbhs_0 ==3|     
+                                               soc_CLSA_tra_0$soc_sn_freq_close_relatives_0 ==3 | soc_CLSA_tra_0$soc_sn_freq_relatives_0 ==3|
+                                               soc_CLSA_tra_0$soc_sn_freq_nonkin_0==3) & soc_CLSA_tra_0$soc_sp_general_0 == 0,1L,
+                                    ifelse((soc_CLSA_tra_0$soc_sn_freq_friends_0 >= 1 | soc_CLSA_tra_0$soc_sn_freq_nbhs_0 >= 1 | 
+                                               soc_CLSA_tra_0$soc_sn_freq_close_relatives_0 >= 1 | soc_CLSA_tra_0$soc_sn_freq_relatives_0 >= 1) & 
+                                               soc_CLSA_tra_0$soc_sn_freq_nonkin_0 == 1, 0L, NA ))
+table(soc_CLSA_tra_0$soc_sp_isolation_0, useNA="always")
+
+```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_1  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  complete    
+**Harmonization comment**:   Used same approach as in the harmonization of GLOBE and LASA data: utilized study available DataSchema social network - contact frequency variables (friends, neighbours, relatives, family and non-kin) in addition to the general participation variable, no contact with these different types of social network members and no participation was categorized as socially isolated. Having one or more of these types of members (in addition to children) in their network and reporting social participation was categorized as not socially isolated.    
+**R script**:  
+```{r, echo=TRUE}
+soc_CLSA_tra_1$soc_sp_isolation_1 <- ifelse((soc_CLSA_tra_1$soc_sn_freq_friends_1 == 3 | soc_CLSA_tra_1$soc_sn_freq_nbhs_1 ==3 |  
+                                               soc_CLSA_tra_1$soc_sn_freq_close_relatives_1 ==3 | soc_CLSA_tra_1$soc_sn_freq_relatives_1 ==3
+                                             |soc_CLSA_tra_1$soc_sn_freq_nonkin_1==3) 
+                                            & soc_CLSA_tra_1$soc_sp_general_1 == 0,1L,
+                                   ifelse((soc_CLSA_tra_1$soc_sn_freq_friends_1 >= 1 | 
+                                           soc_CLSA_tra_1$soc_sn_freq_nbhs_1 >= 1 | soc_CLSA_tra_1$soc_sn_freq_close_relatives_1 >= 1 |
+                                           soc_CLSA_tra_1$soc_sn_freq_relatives_1 >= 1) & soc_CLSA_tra_1$soc_sn_freq_nonkin_1 == 1, 0L, NA ))
+
+ table(soc_CLSA_tra_1$soc_sp_isolation_1, useNA="always")
+
+
+```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_2  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  impossible    
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_3  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  impossible    
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_4  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  impossible    
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_5  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  impossible    
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_6  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  impossible    
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+
 # Major life events subdomain
 
 ### **Variable label**:  Life event: victim     
@@ -4057,7 +4057,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: victim     
@@ -4076,7 +4076,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: victim     
@@ -4095,7 +4095,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: victim     
@@ -4114,7 +4114,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: victim     
@@ -4133,7 +4133,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: victim     
@@ -4152,7 +4152,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: victim     
@@ -4171,7 +4171,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -4190,7 +4190,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -4209,7 +4209,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -4228,7 +4228,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -4247,7 +4247,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -4266,7 +4266,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -4285,7 +4285,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: financial problems      
@@ -4304,28 +4304,11 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
-### **Variable label**:  Life event: financial problems      
-**Variable name**:  soc_le_fprob_7             
-**Variable description**:  Indicator of whether the participant experienced financial problems in the past few years.        
-**Value type**:  integer      
-**Variable unit**:         
-**Category coding**:  
 
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Did not experience financial problems
-1 |  Did experience financial problems    
 
-**Harmonization status**:  impossible    
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
 ### **Variable label**:  Life event: relationship problems        
 **Variable name**:  soc_le_rprob_0             
 **Variable description**:  Indicator of whether the participant experienced relationship problems in the past few years.          
@@ -4342,7 +4325,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: relationship problems        
@@ -4361,7 +4344,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: relationship problems        
@@ -4380,7 +4363,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: divorce/relationship breakup           
@@ -4399,7 +4382,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: divorce/relationship breakup           
@@ -4418,7 +4401,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: divorce/relationship breakup           
@@ -4437,7 +4420,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4456,7 +4439,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4475,7 +4458,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4494,7 +4477,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4513,7 +4496,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4532,7 +4515,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4551,7 +4534,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: illness of family member             
@@ -4570,7 +4553,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: death of partner             
@@ -4589,7 +4572,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: death of partner             
@@ -4608,7 +4591,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: death of partner             
@@ -4627,7 +4610,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: death of family member or friend                
@@ -4646,7 +4629,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: death of family member or friend                
@@ -4665,7 +4648,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Life event: death of family member or friend                
@@ -4684,7 +4667,7 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 # Residential characteristics subdomain
@@ -4697,12 +4680,14 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 **Category coding**:  
 
 **Harmonization status**:  complete
-**Harmonization comment**:   
+**Harmonization comment**:   If the recorded number of years in current community is higher than the age of the participant, the DataSchema variable is coded to NA. 
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra3_4_Baseline$TRA_LVCMNTY_YR_MCQ) 
-
-soc_CLSA_tra_0$soc_res_num_yrsnbh_0 <- as.integer(Tra3_4_Baseline$TRA_LVCMNTY_YR_MCQ) 
+table(Tra3_4_Baseline$TRA_LVCMNTY_YR_MCQ> Tra3_4_Baseline$AGE_NMBR_TRM) 
+table(Tra3_4_Baseline$TRA_LVCMNTY_YR_MCQ[Tra3_4_Baseline$TRA_LVCMNTY_YR_MCQ> Tra3_4_Baseline$AGE_NMBR_TRM],
+      Tra3_4_Baseline$AGE_NMBR_TRM[Tra3_4_Baseline$TRA_LVCMNTY_YR_MCQ> Tra3_4_Baseline$AGE_NMBR_TRM]) 
+table(Tra3_4_Baseline$TRA_LVCMNTY_YR_MCQ)
+soc_CLSA_tra_0$soc_res_num_yrsnbh_0 <- ifelse(Tra3_4_Baseline$TRA_LVCMNTY_YR_MCQ< Tra3_4_Baseline$AGE_NMBR_TRM, Tra3_4_Baseline$TRA_LVCMNTY_YR_MCQ, NA) 
 
 table(soc_CLSA_tra_0$soc_res_num_yrsnbh_0) 
 summary(soc_CLSA_tra_0$soc_res_num_yrsnbh_0) 
@@ -4715,12 +4700,20 @@ summary(soc_CLSA_tra_0$soc_res_num_yrsnbh_0)
 **Category coding**:  
 
 **Harmonization status**:  complete 
-**Harmonization comment**:   
+**Harmonization comment**:   If the recorded number of years in current community is higher than the age of the participant in the previous wave plus the number of years passed since last wave, the DataSchema variable is coded to NA. 
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra_FU1$TRA_LVCMNTY_YR_TRF1) 
+MyMerge <- function(x,y){
+  merge(x,y, by= c("id"),all=TRUE)
+}
+soc_table <- Reduce(MyMerge, list(Tra3_4_Baseline, Tra_FU1))
 
-soc_CLSA_tra_1$soc_res_num_yrsnbh_1 <- as.integer(Tra_FU1$TRA_LVCMNTY_YR_TRF1) 
+table( Tra_FU1$TRA_LVCMNTY_YR_TRF1)
+table(soc_table$TRA_LVCMNTY_YR_TRF1> soc_table$AGE_NMBR_TRM+4) 
+
+soc_table$soc_res_num_yrsnbh_1 <- ifelse(soc_table$TRA_LVCMNTY_YR_TRF1< soc_table$AGE_NMBR_TRM+4, soc_table$TRA_LVCMNTY_YR_TRF1,NA) 
+
+soc_CLSA_tra_1<-merge(soc_CLSA_tra_1,soc_table[,c("id","soc_res_num_yrsnbh_1")],by="id",all.x=TRUE)
 
 table(soc_CLSA_tra_1$soc_res_num_yrsnbh_1) 
 summary(soc_CLSA_tra_1$soc_res_num_yrsnbh_1) 
@@ -4736,7 +4729,7 @@ summary(soc_CLSA_tra_1$soc_res_num_yrsnbh_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
@@ -4750,7 +4743,7 @@ summary(soc_CLSA_tra_1$soc_res_num_yrsnbh_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
@@ -4764,7 +4757,7 @@ summary(soc_CLSA_tra_1$soc_res_num_yrsnbh_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
@@ -4778,7 +4771,7 @@ summary(soc_CLSA_tra_1$soc_res_num_yrsnbh_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
@@ -4792,7 +4785,7 @@ summary(soc_CLSA_tra_1$soc_res_num_yrsnbh_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -4807,6 +4800,13 @@ summary(soc_CLSA_tra_1$soc_res_num_yrsnbh_1)
 **R script**:  
 ```{r, echo=TRUE}
 table(Tra3_4_Baseline$TRA_LVDHM_YR_MCQ)   
+
+table(Tra3_4_Baseline$TRA_LVDHM_YR_MCQ> Tra3_4_Baseline$AGE_NMBR_TRM) 
+table(Tra3_4_Baseline$TRA_LVDHM_YR_MCQ[Tra3_4_Baseline$TRA_LVDHM_YR_MCQ> Tra3_4_Baseline$AGE_NMBR_TRM],
+      Tra3_4_Baseline$AGE_NMBR_TRM[Tra3_4_Baseline$TRA_LVDHM_YR_MCQ> Tra3_4_Baseline$AGE_NMBR_TRM]) 
+table(Tra3_4_Baseline$TRA_LVCMNTY_YR_MCQ)
+
+
 
 soc_CLSA_tra_0$soc_res_num_yrshome_0 <- as.integer(Tra3_4_Baseline$TRA_LVDHM_YR_MCQ) 
 
@@ -4825,7 +4825,7 @@ summary(soc_CLSA_tra_0$soc_res_num_yrshome_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra_FU1$TRA_LVDHM_YR_TRF1)   
+table(Tra_FU1$TRA_LVDHM_YR_TRF1, Tra_FU1$age)   
 
 soc_CLSA_tra_1$soc_res_num_yrshome_1 <- as.integer(Tra_FU1$TRA_LVDHM_YR_TRF1) 
 
@@ -4843,7 +4843,7 @@ summary(soc_CLSA_tra_1$soc_res_num_yrshome_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -4857,7 +4857,7 @@ summary(soc_CLSA_tra_1$soc_res_num_yrshome_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -4871,7 +4871,7 @@ summary(soc_CLSA_tra_1$soc_res_num_yrshome_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -4885,7 +4885,7 @@ summary(soc_CLSA_tra_1$soc_res_num_yrshome_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -4899,7 +4899,7 @@ summary(soc_CLSA_tra_1$soc_res_num_yrshome_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
@@ -4918,7 +4918,7 @@ summary(soc_CLSA_tra_1$soc_res_num_yrshome_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
@@ -4937,7 +4937,7 @@ summary(soc_CLSA_tra_1$soc_res_num_yrshome_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
@@ -4956,7 +4956,7 @@ summary(soc_CLSA_tra_1$soc_res_num_yrshome_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
@@ -4975,7 +4975,7 @@ summary(soc_CLSA_tra_1$soc_res_num_yrshome_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
@@ -4994,7 +4994,7 @@ summary(soc_CLSA_tra_1$soc_res_num_yrshome_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood satisfaction   
@@ -5013,7 +5013,7 @@ summary(soc_CLSA_tra_1$soc_res_num_yrshome_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -5032,7 +5032,7 @@ summary(soc_CLSA_tra_1$soc_res_num_yrshome_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -5051,7 +5051,7 @@ summary(soc_CLSA_tra_1$soc_res_num_yrshome_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -5070,7 +5070,7 @@ summary(soc_CLSA_tra_1$soc_res_num_yrshome_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -5089,7 +5089,7 @@ summary(soc_CLSA_tra_1$soc_res_num_yrshome_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -5108,7 +5108,7 @@ summary(soc_CLSA_tra_1$soc_res_num_yrshome_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -5127,7 +5127,7 @@ summary(soc_CLSA_tra_1$soc_res_num_yrshome_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residential mobility (individual - level)     
@@ -5146,7 +5146,7 @@ summary(soc_CLSA_tra_1$soc_res_num_yrshome_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence independence     
@@ -5165,11 +5165,11 @@ summary(soc_CLSA_tra_1$soc_res_num_yrshome_1)
 **Harmonization comment**: Study specific variable categories: 'Seniors’ housing (retirement home, assisted living)' and  'Institution (old age facility)' were recoded as 'Lives in a nursing home.'
 **R script**:  
 ```{r, echo=TRUE}
-# sorry I cannot make this work!
 table(Tra3_4_Baseline$OWN_DWLG_TRM) 
-
-soc_CLSA_tra_0$soc_res_indep_0 <- ifelse(Tra3_4_Baseline$OWN_DWLG_TRM==1 | Tra3_4_Baseline$OWN_DWLG_TRM==2 | (Tra3_4_Baseline$OWN_DWLG_TRM>=5 & Tra3_4_Baseline$OWN_DWLG_TRM<=97),0L, 
-                                                  ifelse(Tra3_4_Baseline$OWN_DWLG_TRM==3 | Tra3_4_Baseline$OWN_DWLG_TRM==4,1L, NA))
+class(Tra3_4_Baseline$OWN_DWLG_TRM)
+soc_CLSA_tra_0$soc_res_indep_0 <-  ifelse(as.integer(Tra3_4_Baseline$OWN_DWLG_TRM)==3 |as.integer(Tra3_4_Baseline$OWN_DWLG_TRM)==4,1L,
+                                   ifelse(as.integer(Tra3_4_Baseline$OWN_DWLG_TRM)==1 | as.integer(Tra3_4_Baseline$OWN_DWLG_TRM) ==2 |
+                                          as.integer( Tra3_4_Baseline$OWN_DWLG_TRM)<=97,0L,NA))
 
 table(soc_CLSA_tra_0$soc_res_indep_0) 
 summary(soc_CLSA_tra_0$soc_res_indep_0) 
@@ -5192,8 +5192,9 @@ summary(soc_CLSA_tra_0$soc_res_indep_0)
 ```{r, echo=TRUE}
 table(Tra_FU1$OWN_DWLG_TRF1) 
 
-soc_CLSA_tra_1$soc_res_indep_1 <- ifelse(Tra_FU1$OWN_DWLG_TRF1==1 | Tra_FU1$OWN_DWLG_TRF1==2 | (Tra_FU1$OWN_DWLG_TRF1>=5 & Tra_FU1$OWN_DWLG_TRF1<=97),0L, 
-                                                  ifelse(Tra_FU1$OWN_DWLG_TRF1==3 | Tra_FU1$OWN_DWLG_TRF1==4,1L, NA))
+soc_CLSA_tra_1$soc_res_indep_1 <-  ifelse(as.integer(Tra_FU1$OWN_DWLG_TRF1)==3 | as.integer(Tra_FU1$OWN_DWLG_TRF1)==4,1L,
+                                    ifelse(as.integer(Tra_FU1$OWN_DWLG_TRF1)==1 |as.integer( Tra_FU1$OWN_DWLG_TRF1)==2 |
+                                           (as.integer(Tra_FU1$OWN_DWLG_TRF1)>=5 &  as.integer(Tra_FU1$OWN_DWLG_TRF1)<=97),0L,NA))
 
 table(soc_CLSA_tra_1$soc_res_indep_1) 
 summary(soc_CLSA_tra_1$soc_res_indep_1) 
@@ -5214,7 +5215,7 @@ summary(soc_CLSA_tra_1$soc_res_indep_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence independence     
@@ -5233,7 +5234,7 @@ summary(soc_CLSA_tra_1$soc_res_indep_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence independence     
@@ -5252,7 +5253,7 @@ summary(soc_CLSA_tra_1$soc_res_indep_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence independence     
@@ -5271,7 +5272,7 @@ summary(soc_CLSA_tra_1$soc_res_indep_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence independence     
@@ -5290,7 +5291,7 @@ summary(soc_CLSA_tra_1$soc_res_indep_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence type     
@@ -5312,13 +5313,13 @@ summary(soc_CLSA_tra_1$soc_res_indep_1)
 **Harmonization comment**:   Study specific variable does not have 'farm' as a choice answer. 
 **R script**:  
 ```{r, echo=TRUE}
-#sorry cannot make this work
 table(Tra3_4_Baseline$OWN_DWLG_TRM) 
 
-soc_CLSA_tra_0$soc_res_type_0 <- ifelse(Tra3_4_Baseline$OWN_DWLG_TRM==1 | Tra3_4_Baseline$OWN_DWLG_TRM==6,2L, 
-                                                  ifelse(Tra3_4_Baseline$OWN_DWLG_TRM==2,1L,
-                                                      ifelse(Tra3_4_Baseline$OWN_DWLG_TRM==3 | Tra3_4_Baseline$OWN_DWLG_TRM==4,3L,
-                                                           ifelse(Tra3_4_Baseline$OWN_DWLG_TRM==5 | Tra3_4_Baseline$OWN_DWLG_TRM==97 | (Tra3_4_Baseline$OWN_DWLG_TRM>=7 & Tra3_4_Baseline$OWN_DWLG_TRM<=12), 5L, NA))))
+soc_CLSA_tra_0$soc_res_type_0 <- ifelse(as.integer(Tra3_4_Baseline$OWN_DWLG_TRM)==1 | as.integer(Tra3_4_Baseline$OWN_DWLG_TRM)==6,2L, 
+                                                  ifelse(as.integer(Tra3_4_Baseline$OWN_DWLG_TRM)==2,1L,
+                                                      ifelse(as.integer(Tra3_4_Baseline$OWN_DWLG_TRM)==3 | as.integer(Tra3_4_Baseline$OWN_DWLG_TRM==4),3L,
+                                                           ifelse(as.integer(Tra3_4_Baseline$OWN_DWLG_TRM)==5 | as.integer(Tra3_4_Baseline$OWN_DWLG_TRM)==97 |
+                                                                 (as.integer(Tra3_4_Baseline$OWN_DWLG_TRM)>=7 & as.integer(Tra3_4_Baseline$OWN_DWLG_TRM))<=12, 5L, NA))))
 
 table(soc_CLSA_tra_0$soc_res_type_0) 
 summary(soc_CLSA_tra_0$soc_res_type_0) 
@@ -5345,10 +5346,11 @@ summary(soc_CLSA_tra_0$soc_res_type_0)
 
 table(Tra_FU1$OWN_DWLG_TRF1) 
 
-soc_CLSA_tra_1$soc_res_type_1 <- ifelse(Tra_FU1$OWN_DWLG_TRF1==1 | Tra_FU1$OWN_DWLG_TRF1==6,2L, 
-                                                  ifelse(Tra_FU1$OWN_DWLG_TRF1==2,1L,
-                                                      ifelse(Tra_FU1$OWN_DWLG_TRF1==3 | Tra_FU1$OWN_DWLG_TRF1==4,3L,
-                                                           ifelse(Tra_FU1$OWN_DWLG_TRF1==5 | Tra_FU1$OWN_DWLG_TRF1==97 | (Tra_FU1$OWN_DWLG_TRF1>=7 & Tra_FU1$OWN_DWLG_TRF1<=12), 5L, NA))))
+soc_CLSA_tra_1$soc_res_type_1 <- ifelse(as.integer(Tra_FU1$OWN_DWLG_TRF1)==1 | as.integer(Tra_FU1$OWN_DWLG_TRF1)==6,2L, 
+                                                  ifelse(as.integer(Tra_FU1$OWN_DWLG_TRF1)==2,1L,
+                                                      ifelse(as.integer(Tra_FU1$OWN_DWLG_TRF1)==3 | as.integer(Tra_FU1$OWN_DWLG_TRF1)==4,3L,
+                                                           ifelse(as.integer(Tra_FU1$OWN_DWLG_TRF1)==5 | as.integer(Tra_FU1$OWN_DWLG_TRF1)==97 |
+                                                                 (as.integer(Tra_FU1$OWN_DWLG_TRF1)>=7 & as.integer(Tra_FU1$OWN_DWLG_TRF1)<=12), 5L, NA))))
 
 table(soc_CLSA_tra_1$soc_res_type_1) 
 summary(soc_CLSA_tra_1$soc_res_type_1) 
@@ -5373,7 +5375,7 @@ summary(soc_CLSA_tra_1$soc_res_type_1)
 **R script**:  
 ```{r, echo=TRUE}
 
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence type     
@@ -5395,7 +5397,7 @@ summary(soc_CLSA_tra_1$soc_res_type_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 
 ```
@@ -5419,7 +5421,7 @@ summary(soc_CLSA_tra_1$soc_res_type_1)
 **R script**:  
 ```{r, echo=TRUE}
 
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence type     
@@ -5442,7 +5444,7 @@ summary(soc_CLSA_tra_1$soc_res_type_1)
 **R script**:  
 ```{r, echo=TRUE}
 
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Residence type     
@@ -5465,7 +5467,7 @@ summary(soc_CLSA_tra_1$soc_res_type_1)
 **R script**:  
 ```{r, echo=TRUE}
 
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (2-level)      
@@ -5486,11 +5488,11 @@ summary(soc_CLSA_tra_1$soc_res_type_1)
 ```{r, echo=TRUE}
 table(Tra3_4_Baseline$OWN_OWN_TRM) 
 
-soc_CLSA_tra_0$soc_res_home_own_dich_0 <- ifelse(Tra3_4_Baseline$OWN_OWN_TRM ==1,0L, 
-                                           ifelse(Tra3_4_Baseline$OWN_OWN_TRM >=2 ,1L,NA))
+soc_CLSA_tra_0$soc_res_home_own_dich_0 <- ifelse(as.integer(Tra3_4_Baseline$OWN_OWN_TRM) ==1,0L, 
+                                          ifelse(as.integer(Tra3_4_Baseline$OWN_OWN_TRM) >=2 ,1L,NA))
 
 table(soc_CLSA_tra_0$soc_res_home_own_dich_0) 
-summary(soc_CLSA_tra_0$soc_res_home_own_dich_0) 
+ summary(soc_CLSA_tra_0$soc_res_home_own_dich_0) 
 ```
 ### **Variable label**:  Home ownership (2-level)      
 **Variable name**:  soc_res_home_own_dich_1                     
@@ -5510,8 +5512,8 @@ summary(soc_CLSA_tra_0$soc_res_home_own_dich_0)
 ```{r, echo=TRUE}
 table(Tra_FU1$OWN_OWN_TRF1) 
 
-soc_CLSA_tra_1$soc_res_home_own_dich_1 <- ifelse(Tra_FU1$OWN_OWN_TRF1 ==1,0L, 
-                                           ifelse(Tra_FU1$OWN_OWN_TRF1 >=2 ,1L,NA))
+soc_CLSA_tra_1$soc_res_home_own_dich_1 <- ifelse(as.integer(Tra_FU1$OWN_OWN_TRF1) ==1,1L, 
+                                          ifelse(as.integer(Tra_FU1$OWN_OWN_TRF1) >=2 ,0L,NA))
 
 table(soc_CLSA_tra_1$soc_res_home_own_dich_1) 
 summary(soc_CLSA_tra_1$soc_res_home_own_dich_1) 
@@ -5532,7 +5534,7 @@ summary(soc_CLSA_tra_1$soc_res_home_own_dich_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (2-level)      
@@ -5551,7 +5553,7 @@ summary(soc_CLSA_tra_1$soc_res_home_own_dich_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (2-level)      
@@ -5570,7 +5572,7 @@ summary(soc_CLSA_tra_1$soc_res_home_own_dich_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (2-level)      
@@ -5589,7 +5591,7 @@ summary(soc_CLSA_tra_1$soc_res_home_own_dich_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (2-level)      
@@ -5608,7 +5610,7 @@ summary(soc_CLSA_tra_1$soc_res_home_own_dich_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Home ownership (3-level)      
@@ -5624,18 +5626,20 @@ summary(soc_CLSA_tra_1$soc_res_home_own_dich_1)
 2 |  Pays mortgage 
 3 |  Rents home 
 
-**Harmonization status**:  complete
+**Harmonization status**:  impossible? 
 **Harmonization comment**:  Study specific variable categories: own, no cost for dwelling, joint ownership (with other than spouse/common law partner) and  multiple - Own at one address and rent at another, were recoded as 'owns home.' Categories: leasehold and rent were coded as 'rents home.'Category answer 'Dwelling provided by employer' only included 11 participants, this was recoded as 'own home'. 
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra3_4_Baseline$OWN_OWN_TRM) 
 
-soc_CLSA_tra_0$soc_res_home_own_0 <- ifelse(Tra3_4_Baseline$OWN_OWN_TRM ==1 |Tra3_4_Baseline$OWN_OWN_TRM ==6|Tra3_4_Baseline$OWN_OWN_TRM ==7| Tra3_4_Baseline$OWN_OWN_TRM ==4| Tra3_4_Baseline$OWN_OWN_TRM ==4,1L, 
-                                                ifelse(Tra3_4_Baseline$OWN_OWN_TRM ==2|Tra3_4_Baseline$OWN_OWN_TRM ==3,3L, 
-                                           ifelse(Tra3_4_Baseline$OWN_OWN_TRM >=3 & Tra3_4_Baseline$OWN_OWN_TRM <=97 ,2L,NA)))
+# table(Tra3_4_Baseline$OWN_OWN_TRM) 
+# 
+# soc_CLSA_tra_0$soc_res_home_own_0 <- ifelse(Tra3_4_Baseline$OWN_OWN_TRM ==1 |Tra3_4_Baseline$OWN_OWN_TRM ==6|Tra3_4_Baseline$OWN_OWN_TRM ==7| Tra3_4_Baseline$OWN_OWN_TRM ==4| Tra3_4_Baseline$OWN_OWN_TRM ==4,1L, 
+#                                                 ifelse(Tra3_4_Baseline$OWN_OWN_TRM ==2|Tra3_4_Baseline$OWN_OWN_TRM ==3,3L, 
+#                                            ifelse(Tra3_4_Baseline$OWN_OWN_TRM >=3 & Tra3_4_Baseline$OWN_OWN_TRM <=97 ,2L,NA)))
+# 
+# table(soc_CLSA_tra_0$soc_res_home_own_0) 
+# summary(soc_CLSA_tra_0$soc_res_home_own_0)
 
-table(soc_CLSA_tra_0$soc_res_home_own_0) 
-summary(soc_CLSA_tra_0$soc_res_home_own_0) 
 ```
 ### **Variable label**:  Home ownership (3-level)      
 **Variable name**:  soc_res_home_own_1                        
@@ -5650,18 +5654,19 @@ summary(soc_CLSA_tra_0$soc_res_home_own_0)
 2 |  Pays mortgage 
 3 |  Rents home 
 
-**Harmonization status**:  complete
+**Harmonization status**:  impossible?
 **Harmonization comment**:  Study specific variable categories: own, no cost for dwelling, joint ownership (with other than spouse/common law partner) and  multiple - Own at one address and rent at another, were recoded as 'owns home.' Categories: leasehold and rent were coded as 'rents home.'Category answer 'Dwelling provided by employer' only included 11 participants, this was recoded as 'own home'. 
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra_FU1$OWN_OWN_TRF1) 
 
-soc_CLSA_tra_1$soc_res_home_own_1 <- ifelse(Tra_FU1$OWN_OWN_TRF1 ==1 |Tra_FU1$OWN_OWN_TRF1 ==6|Tra_FU1$OWN_OWN_TRF1 ==7| Tra_FU1$OWN_OWN_TRF1 ==4| Tra_FU1$OWN_OWN_TRF1 ==4,1L, 
-                                                ifelse(Tra_FU1$OWN_OWN_TRF1 ==2|Tra_FU1$OWN_OWN_TRF1 ==3,3L, 
-                                           ifelse(Tra_FU1$OWN_OWN_TRF1 >=3 & Tra_FU1$OWN_OWN_TRF1 <=97 ,2L,NA)))
-
-table(soc_CLSA_tra_1$soc_res_home_own_1) 
-summary(soc_CLSA_tra_1$soc_res_home_own_1) 
+# table(Tra_FU1$OWN_OWN_TRF1) 
+# 
+# soc_CLSA_tra_1$soc_res_home_own_1 <- ifelse(Tra_FU1$OWN_OWN_TRF1 ==1 |Tra_FU1$OWN_OWN_TRF1 ==6|Tra_FU1$OWN_OWN_TRF1 ==7| Tra_FU1$OWN_OWN_TRF1 ==4| Tra_FU1$OWN_OWN_TRF1 ==4,1L, 
+#                                                 ifelse(Tra_FU1$OWN_OWN_TRF1 ==2|Tra_FU1$OWN_OWN_TRF1 ==3,3L, 
+#                                            ifelse(Tra_FU1$OWN_OWN_TRF1 >=3 & Tra_FU1$OWN_OWN_TRF1 <=97 ,2L,NA)))
+# 
+# table(soc_CLSA_tra_1$soc_res_home_own_1) 
+# summary(soc_CLSA_tra_1$soc_res_home_own_1) 
 
 ```
 ### **Variable label**:  Home ownership (3-level)      
@@ -5681,6 +5686,6 @@ summary(soc_CLSA_tra_1$soc_res_home_own_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
