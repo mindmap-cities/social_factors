@@ -2404,8 +2404,8 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
@@ -2426,8 +2426,8 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
@@ -2448,8 +2448,8 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
@@ -2470,8 +2470,8 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
@@ -2492,8 +2492,8 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
@@ -2514,8 +2514,8 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
@@ -2536,8 +2536,8 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 

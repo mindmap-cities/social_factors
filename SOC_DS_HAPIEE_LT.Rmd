@@ -2274,8 +2274,8 @@ soc_HAPIEE_LT_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W2$p57_lt=='1'|HAPIEE_
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
@@ -2296,8 +2296,8 @@ soc_HAPIEE_LT_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W2$p57_lt=='1'|HAPIEE_
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
@@ -2318,8 +2318,8 @@ soc_HAPIEE_LT_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W2$p57_lt=='1'|HAPIEE_
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
@@ -2340,8 +2340,8 @@ soc_HAPIEE_LT_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W2$p57_lt=='1'|HAPIEE_
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
@@ -2362,8 +2362,8 @@ soc_HAPIEE_LT_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W2$p57_lt=='1'|HAPIEE_
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
@@ -2384,8 +2384,8 @@ soc_HAPIEE_LT_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W2$p57_lt=='1'|HAPIEE_
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
@@ -2406,8 +2406,8 @@ soc_HAPIEE_LT_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W2$p57_lt=='1'|HAPIEE_
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 

@@ -10,7 +10,7 @@ library(data.table)
 # Connecting with Opal data server
 ## Login to server and assign study data
 #Load Opal R library
-library(opal)
+library(opalr)
 # Create an opal object with the login information
 erasmus_opal <- opal.login()
 #Login to Opal server and assign the content of the HAPIEE table(s) to your RStudio environment
@@ -2275,8 +2275,8 @@ soc_HAPIEE_CZ_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W1$p57=='1'|HAPIEE_W1$
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
@@ -2297,8 +2297,8 @@ soc_HAPIEE_CZ_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W1$p57=='1'|HAPIEE_W1$
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
@@ -2319,8 +2319,8 @@ soc_HAPIEE_CZ_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W1$p57=='1'|HAPIEE_W1$
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
@@ -2341,8 +2341,8 @@ soc_HAPIEE_CZ_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W1$p57=='1'|HAPIEE_W1$
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
@@ -2363,8 +2363,8 @@ soc_HAPIEE_CZ_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W1$p57=='1'|HAPIEE_W1$
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
@@ -2385,8 +2385,8 @@ soc_HAPIEE_CZ_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W1$p57=='1'|HAPIEE_W1$
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
@@ -2407,8 +2407,8 @@ soc_HAPIEE_CZ_0$soc_sn_freq_relatives_0 <-  ifelse(HAPIEE_W1$p57=='1'|HAPIEE_W1$
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
