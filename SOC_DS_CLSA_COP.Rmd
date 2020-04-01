@@ -11,18 +11,18 @@ library(sjmisc)
 # Connecting with Opal data server
 ## Login to server and assign study data
 #Load Opal R library
-library(opal)
+library(opalr)
 # Create an opal object with the login information
 erasmus_opal <- opal.login()
 #Login to Opal server and assign the content of the CLSA table(s) to your RStudio environment
 # CLSA-cop_0
 opal.assign.table.tibble(erasmus_opal, 'CoP4_Baseline', 'CLSA_1.CoP4_Baseline', variables = 
-list('K10_DSCORE_MCQ','K10_TIRED_MCQ','K10_NRVS_MCQ','K10_NRVSCLMD_MCQ','K10_HPLS_MCQ','K10_RSTLS_MCQ','K10_RSTLSSTL_MCQ','K10_DEP_MCQ','K10_EFFRT_MCQ','K10_NOCHRUP_MCQ','K10_WRTHLSS_MCQ','K10_FLING_MCQ','K10_FLINGLESS_MCQ','K10_FLINGMORE_MCQ','K10_UNWK_NB_MCQ','K10_HFWK_NB_MCQ','K10_DOC_NB_MCQ','K10_OTPFLING_MCQ','K10_OTPFLING_OTSP_MCQ','K10_PHYSHLTH_MCQ','DEP_DPSFD_COM','DEP_NBRMIS_COM','DEP_CESD10_COM','DEP_BOTR_COM','DEP_MIND_COM','DEP_FLDP_COM','DEP_FFRT_COM','DEP_HPFL_COM','DEP_FRFL_COM','DEP_RSTLS_COM','DEP_HAPP_COM','DEP_LONLY_COM','DEP_GTGO_COM','SLS_DLIFE_COM','SLS_DCOND_COM','SLS_DSATS_COM','SLS_DIMP_COM','SLS_DOVER_COM','PSD_NGHTM_COM','PSD_AVOID_COM','PSD_GUARD_COM','PSD_DETACH_COM','COG_REYI_SCORE_COM','COG_REYII_SCORE_COM','COG_ANML_COM','COG_ANMLRPT_COM','COG_AFT_SCORE_1_COM','COG_AFT_SCORE_2_COM','COG_MAT_SCORE_COM'))
+list('K10_DSCORE_MCQ','K10_TIRED_MCQ','K10_NRVS_MCQ','K10_NRVSCLMD_MCQ','K10_HPLS_MCQ','K10_RSTLS_MCQ','K10_RSTLSSTL_MCQ','K10_DEP_MCQ','K10_EFFRT_MCQ','K10_NOCHRUP_MCQ','K10_WRTHLSS_MCQ','K10_FLING_MCQ','K10_FLINGLESS_MCQ','K10_FLINGMORE_MCQ','K10_UNWK_NB_MCQ','K10_HFWK_NB_MCQ','K10_DOC_NB_MCQ','K10_OTPFLING_MCQ','K10_OTPFLING_OTSP_MCQ','K10_PHYSHLTH_MCQ','DEP_DPSFD_COM','DEP_NBRMIS_COM','DEP_CESD10_COM','DEP_BOTR_COM','DEP_MIND_COM','DEP_FLDP_COM','DEP_FFRT_COM','DEP_HPFL_COM','DEP_FRFL_COM','DEP_RSTLS_COM','DEP_HAPP_COM','DEP_LONLY_COM','DEP_GTGO_COM','SLS_DLIFE_COM','SLS_DCOND_COM','SLS_DSATS_COM','SLS_DIMP_COM','SLS_DOVER_COM','PSD_NGHTM_COM','PSD_AVOID_COM','PSD_GUARD_COM','PSD_DETACH_COM','COG_REYI_SCORE_COM','COG_REYII_SCORE_COM','COG_ANML_COM','COG_ANMLRPT_COM','COG_AFT_SCORE_1_COM','COG_AFT_SCORE_2_COM','COG_MAT_SCORE_COM','SN_CHILDSTP_NB_COM','SN_CHILDBIO_NB_COM','SN_CHILDADP_NB_COM','SN_FRND_NB_COM','SN_SEEFRND_COM','SN_NEIBR_NB_COM','SN_SEENEIBR_COM','SN_RELLIV_NB_COM','SN_SEESIB_COM','SN_SEECHILD_COM','SN_SEEREL_COM','SN_PERCOM_NB_COM','SSA_CHORES_COM','SSA_LOVU_COM','SSA_SUGG_COM','SSA_ENJOY_COM','SSA_PROBLM_COM','SPA_CHRCH_COM','SPA_EDUC_COM','SPA_VOLUN_COM','SPA_NEIBR_COM','SPA_PREVAC_AF_COM','SPA_PREVAC_TP_COM','SPA_SOAC_HY_COM','TRA_LVDHM_YR_MCQ','TRA_LVCMNTY_YR_MCQ','OWN_DWLG_COM','OWN_OWN_COM', 'AGE_NMBR_COM'))
 CoP4_Baseline <- opal.execute(erasmus_opal,'CoP4_Baseline')
 # CLSA-cop_1
 opal.assign.table.tibble(erasmus_opal, 'CoP_FU1', 'CLSA_1.CoP_FU1', variables = 
 list('K10_TIRED_COF1','K10_NRVS_COF1','K10_NRVSCLMD_COF1','K10_HPLS_COF1','K10_RSTLS_COF1','K10_RSTLSSTL_COF1','K10_DEP_COF1','K10_EFFRT_COF1','K10_NOCHRUP_COF1','K10_WRTHLSS_COF1','K10_FLING_COF1','K10_FLINGLESS_COF1','K10_FLINGMORE_COF1','K10_UNWK_NB_COF1','K10_HFWK_NB_COF1','K10_DOC_NB_COF1','K10_OTPFLING_COF1','K10_PHYSHLTH_COF1','DEP_BOTR_COF1','DEP_MIND_COF1','DEP_FLDP_COF1','DEP_FFRT_COF1','DEP_HPFL_COF1','DEP_FRFL_COF1','DEP_RSTLS_COF1','DEP_HAPP_COF1','DEP_LONLY_COF1','DEP_GTGO_COF1','SLS_LIFE_COF1','SLS_LIFENEG_COF1','SLS_LIFEPOS_COF1','SLS_COND_COF1','SLS_CONDNEG_COF1','SLS_CONDPOS_COF1','SLS_SATS_COF1','SLS_SATSNEG_COF1','SLS_SATSPOS_COF1','SLS_IMP_COF1','SLS_IMPNEG_COF1',
-'SLS_IMPPOS_COF1','SLS_OVER_COF1','SLS_OVERNEG_COF1','SLS_OVERPOS_COF1','LONE_OFTN_COF1','LONE_LEFT_COF1','LONE_ISOL_COF1')) 
+'SLS_IMPPOS_COF1','SLS_OVER_COF1','SLS_OVERNEG_COF1','SLS_OVERPOS_COF1','LONE_OFTN_COF1','LONE_LEFT_COF1','LONE_ISOL_COF1', 'SN_CHILDSTP_NB_COF1','SN_CHILDBIO_NB_COF1','SN_CHILDADP_NB_COF1','SN_FRND_NB_COF1','SN_SEEFRND_COF1','SN_NEIBR_NB_COF1','SN_SEENEIBR_COF1','SN_RELLIV_NB_COF1','SN_SEESIB_COF1','SN_SEECHILD_COF1','SN_SEEREL_COF1','SN_PERCOM_NB_COF1','SSA_CHORES_COF1','SSA_LOVU_COF1','SSA_SUGG_COF1','SSA_ENJOY_COF1','SSA_PROBLM_COF1','SPA_CHRCH_COF1','SPA_EDUC_COF1','SPA_VOLUN_COF1','SPA_NEIBR_COF1','SPA_PREVAC_AF_COF1','SPA_PREVAC_TP_COF1','SPA_SOAC_HY_COF1','TRA_LVCMNTY_YR_COF1','TRA_LVDHM_YR_COF1','OWN_DWLG_COF1','OWN_OWN_COF1', 'SN_CHILD_NB_COF1')) 
 CoP_FU1 <- opal.execute(erasmus_opal,'CoP_FU1')
 ```
 ## Assign participant id as first column of your harmonized dataframes
@@ -50,10 +50,14 @@ opal.logout(erasmus_opal)
 **Category coding**:      
 
 **Harmonization status**:  complete  
-**Harmonization comment**:  SN_CHILDBIO_NB_COM, SN_CHILD_NB_COM 
+**Harmonization comment**:  Study specific items used ask about living biological, adopted and step children. 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP4_Baseline$SN_CHILDSTP_NB_COM, useNA="always") 
+
+soc_CLSA_cop_0$soc_sn_num_children_0 <- as.integer((CoP4_Baseline$SN_CHILDSTP_NB_COM) + (CoP4_Baseline$SN_CHILDBIO_NB_COM)+ (CoP4_Baseline$SN_CHILDADP_NB_COM)) 
+
+table(soc_CLSA_cop_0$soc_sn_num_children_0, useNA="always") 
 
 ```
 ### **Variable label**:   Network size of children      
@@ -63,12 +67,15 @@ opal.logout(erasmus_opal)
 **Variable unit**:  children    
 **Category coding**:    
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  complete  
+**Harmonization comment**:  Study specific items used ask about living biological, adopted and step children. 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP_FU1$SN_CHILD_NB_COF1, CoP_FU1$SN_CHILDBIO_NB_COF1)
+table(CoP_FU1$SN_CHILD_NB_COF1,useNA="always") 
+soc_CLSA_cop_1$soc_sn_num_children_1<- as.integer((CoP_FU1$SN_CHILD_NB_COF1) + (CoP_FU1$SN_CHILDBIO_NB_COF1)+ (CoP_FU1$SN_CHILDADP_NB_COF1)) 
 
+table(soc_CLSA_cop_1$soc_sn_num_children_1, useNA="always") 
 ```
 ### **Variable label**:   Network size of children      
 **Variable name**:   soc_sn_num_children_2    
@@ -77,11 +84,10 @@ opal.logout(erasmus_opal)
 **Variable unit**: children       
 **Category coding**:   
 
-**Harmonization status**:  complete  
-**Harmonization comment**:  SN_CHILD_NB_COF1, SN_CHILDBIO_NB_COF1 
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
 
 ```
 ### **Variable label**:   Network size of children      
@@ -150,10 +156,14 @@ opal.logout(erasmus_opal)
 2 |  Large rank of network size comprised of children  (more than 2 children) 
 
 **Harmonization status**:  complete  
-**Harmonization comment**:   
+**Harmonization comment**:  CLSA asks about living children.  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+soc_CLSA_cop_0$soc_sn_children_rank_0 <- ifelse(soc_CLSA_cop_0$soc_sn_num_children_0==0,0L, 
+                                             ifelse(soc_CLSA_cop_0$soc_sn_num_children_0==1 | soc_CLSA_cop_0$soc_sn_num_children_0==2,1L,
+                                                    ifelse(soc_CLSA_cop_0$soc_sn_num_children_0 >2,2L, NA)))
+table(soc_CLSA_cop_0$soc_sn_num_children_0, useNA = "always")
+table(soc_CLSA_cop_0$soc_sn_children_rank_0, useNA = "always")
 
 ```
 
@@ -171,10 +181,14 @@ opal.logout(erasmus_opal)
 2 |  Large rank of network size comprised of children  (more than 2 children)  
 
 **Harmonization status**:  complete  
-**Harmonization comment**:   
+**Harmonization comment**:  CLSA asks about living children.  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+soc_CLSA_cop_1$soc_sn_children_rank_1 <- ifelse(soc_CLSA_cop_1$soc_sn_num_children_1==0,0L, 
+                                             ifelse(soc_CLSA_cop_1$soc_sn_num_children_1==1 | soc_CLSA_cop_1$soc_sn_num_children_1==2,1L,
+                                                    ifelse(soc_CLSA_cop_1$soc_sn_num_children_1 >2,2L, NA)))
+table(soc_CLSA_cop_1$soc_sn_num_children_1, useNA = "always")
+table(soc_CLSA_cop_1$soc_sn_children_rank_1, useNA = "always")
 
 ```
 ### **Variable label**:   Ranked network size of children           
@@ -281,10 +295,14 @@ opal.logout(erasmus_opal)
 **Category coding**:      
 
 **Harmonization status**:  complete  
-**Harmonization comment**:  SN_FRND_NB_COM 
+**Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP4_Baseline$SN_FRND_NB_COM) 
+
+soc_CLSA_cop_0$soc_sn_num_friends_0 <- as.integer(CoP4_Baseline$SN_FRND_NB_COM) 
+
+table(soc_CLSA_cop_0$soc_sn_num_friends_0) 
 
 ```
 ### **Variable label**:   Network size of friends    
@@ -295,11 +313,15 @@ opal.logout(erasmus_opal)
 **Category coding**:        
 
 **Harmonization status**:  complete  
-**Harmonization comment**:   SN_FRND_NB_COF1
+**Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP_FU1$SN_FRND_NB_COF1) 
 
+soc_CLSA_cop_1$soc_sn_num_friends_1 <- as.integer(CoP_FU1$SN_FRND_NB_COF1) 
+
+table(soc_CLSA_cop_1$soc_sn_num_friends_1) 
+summary(soc_CLSA_cop_1$soc_sn_num_friends_1) 
 ```
 ### **Variable label**:   Network size of friends    
 **Variable name**:   soc_sn_num_friends_2    
@@ -385,6 +407,14 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   Study specific variable asks about last get together with close friends outside of household.
 **R script**:  
 ```{r, echo=TRUE}
+soc_CLSA_cop_0$soc_sn_freq_friends_inperson_0 <- ifelse(CoP4_Baseline$SN_SEEFRND_COM ==1|CoP4_Baseline$SN_SEEFRND_COM ==2,1L,
+                                                         ifelse(CoP4_Baseline$SN_SEEFRND_COM ==3,2L,
+                                                         ifelse(CoP4_Baseline$SN_SEEFRND_COM ==4|CoP4_Baseline$SN_SEEFRND_COM ==5|
+                                                                CoP4_Baseline$SN_SEEFRND_COM ==6,3L,
+                                                         NA)))
+
+table(soc_CLSA_cop_0$soc_sn_freq_friends_inperson_0)
+summary(soc_CLSA_cop_0$soc_sn_freq_friends_inperson_0)
 
 ``` 
 ### **Variable label**:   In-person contact frequency with friends        
@@ -404,6 +434,14 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   Study specific variable asks about last get together with close friends outside of household. 
 **R script**:  
 ```{r, echo=TRUE}
+table(CoP_FU1$SN_SEEFRND_COF1,useNA="always")
+soc_CLSA_cop_1$soc_sn_freq_friends_inperson_1 <- ifelse(CoP_FU1$SN_SEEFRND_COF1 ==1|CoP_FU1$SN_SEEFRND_COF1 ==2,1L,
+                                                         ifelse(CoP_FU1$SN_SEEFRND_COF1 ==3,2L,
+                                                         ifelse(CoP_FU1$SN_SEEFRND_COF1 ==4|CoP_FU1$SN_SEEFRND_COF1 ==5|
+                                                                CoP_FU1$SN_SEEFRND_COF1 ==6,3L, NA)))
+
+table(soc_CLSA_cop_0$soc_sn_freq_friends_inperson_0,useNA="always")
+summary(soc_CLSA_cop_0$soc_sn_freq_friends_inperson_0)
 
 ``` 
 ### **Variable label**:   In-person contact frequency with friends        
@@ -476,11 +514,17 @@ opal.logout(erasmus_opal)
 2 |  Once per month contact with friends
 3 |  A few times per year, once per year or never contact with friends
 
-**Harmonization status**:  complete
+**Harmonization status**:  impossible  ?
 **Harmonization comment**:   Study specific variable asks about last get together with close friends outside of household.  
 **R script**:  
 ```{r, echo=TRUE}
+table(CoP4_Baseline$SN_SEEFRND_COM, useNA="always")
 
+soc_CLSA_cop_0$soc_sn_freq_friends_0 <- ifelse(CoP4_Baseline$SN_SEEFRND_COM ==1|CoP4_Baseline$SN_SEEFRND_COM ==2,1L,
+                                                         ifelse(CoP4_Baseline$SN_SEEFRND_COM ==3|CoP4_Baseline$SN_SEEFRND_COM ==4,2L,
+                                                                 ifelse(CoP4_Baseline$SN_SEEFRND_COM ==5|CoP4_Baseline$SN_SEEFRND_COM ==6,3L,
+                                                         NA)))
+table(soc_CLSA_cop_0$soc_sn_freq_friends_0, useNA="always")
 ``` 
 ### **Variable label**:   Contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_1       
@@ -495,10 +539,16 @@ opal.logout(erasmus_opal)
 2 |  Once per month contact with friends
 3 |  A few times per year, once per year or never contact with friends
 
-**Harmonization status**:  complete
+**Harmonization status**:  impossible  ?
 **Harmonization comment**:   Study specific variable asks about last get together with close friends outside of household.  
 **R script**:  
 ```{r, echo=TRUE}
+table(CoP_FU1$SN_SEEFRND_COF1, useNA="always")
+soc_CLSA_cop_1$soc_sn_freq_friends_1 <- ifelse(CoP_FU1$SN_SEEFRND_COF1 ==1|CoP_FU1$SN_SEEFRND_COF1 ==2,1L,
+                                                         ifelse(CoP_FU1$SN_SEEFRND_COF1 ==3|CoP_FU1$SN_SEEFRND_COF1 ==4,2L,
+                                                                 ifelse(CoP_FU1$SN_SEEFRND_COF1 ==5|CoP_FU1$SN_SEEFRND_COF1 ==6,3L, NA)))
+
+table(soc_CLSA_cop_1$soc_sn_freq_friends_1, useNA="always")
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -613,7 +663,7 @@ opal.logout(erasmus_opal)
 6 |  More than 20 neighbours   
 
 **Harmonization status**:  impossible  
-**Harmonization comment**:  Study-specific variable SN_NEIBR_NB_COM is an indicator of the number of neighbours of the participant.  
+**Harmonization comment**:   The study-specific variable is:"How many of your neighbours do you know?"
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -635,7 +685,7 @@ opal.logout(erasmus_opal)
 6 |  More than 20 neighbours    
 
 **Harmonization status**:  impossible  
-**Harmonization comment**:  Study-specific variable SN_NEIBR_NB_COF1 is an indicator of the number of neighbours of the participant.   
+**Harmonization comment**:   The study-specific variable is:"How many of your neighbours do you know?"
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -768,6 +818,15 @@ opal.logout(erasmus_opal)
 **Harmonization comment**: Study specific variable asks about last get together with neighbours.  
 **R script**:  
 ```{r, echo=TRUE}
+table(soc_CLSA_cop_0$soc_sn_freq_nbhs_0, useNA="always")
+
+soc_CLSA_cop_0$soc_sn_freq_nbhs_0 <- ifelse(CoP4_Baseline$SN_SEENEIBR_COM ==1|CoP4_Baseline$SN_SEENEIBR_COM ==2,1L,
+                                                         ifelse(CoP4_Baseline$SN_SEENEIBR_COM ==3,2L,
+                                                                 ifelse(CoP4_Baseline$SN_SEENEIBR_COM ==5|
+                                                                        CoP4_Baseline$SN_SEENEIBR_COM ==6|
+                                                                          CoP4_Baseline$SN_SEENEIBR_COM ==4,3L,NA)))
+table(CoP4_Baseline$SN_SEENEIBR_COM, useNA="always")
+
 
 ``` 
 ### **Variable label**:   Contact frequency with neighbours        
@@ -787,6 +846,14 @@ opal.logout(erasmus_opal)
 **Harmonization comment**: Study specific variable asks about last get together with neighbours.    
 **R script**:  
 ```{r, echo=TRUE}
+table(CoP_FU1$SN_SEENEIBR_COF1, useNA="always") 
+
+soc_CLSA_cop_1$soc_sn_freq_nbhs_1 <- ifelse(CoP_FU1$SN_SEENEIBR_COF1 ==1|CoP_FU1$SN_SEENEIBR_COF1 ==2,1L,
+                                                         ifelse(CoP_FU1$SN_SEENEIBR_COF1 ==3,2L,
+                                                                 ifelse(CoP_FU1$SN_SEENEIBR_COF1 ==5|
+                                                                        CoP_FU1$SN_SEENEIBR_COF1 ==6|
+                                                                          CoP_FU1$SN_SEENEIBR_COF1 ==4,3L,NA)))
+table(soc_CLSA_cop_1$soc_sn_freq_nbhs_1, useNA="always") 
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -891,11 +958,16 @@ opal.logout(erasmus_opal)
 **Variable unit**: relatives     
 **Category coding**:   
 
-**Harmonization status**:  complete  
+**Harmonization status**:  complete  ?
 **Harmonization comment**: Study-specific variable SN_RELLIV_NB_COM is an indicator of the number of living relatives.    
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP4_Baseline$SN_RELLIV_NB_COM) 
+
+soc_CLSA_cop_0$soc_sn_num_relatives_0 <- as.numeric(CoP4_Baseline$SN_RELLIV_NB_COM)
+
+table(soc_CLSA_cop_0$soc_sn_num_relatives_0) 
+summary(soc_CLSA_cop_0$soc_sn_num_relatives_0) 
 
 ```
 ### **Variable label**:   Network size of relatives      
@@ -905,12 +977,16 @@ opal.logout(erasmus_opal)
 **Variable unit**:  relatives    
 **Category coding**:   
 
-**Harmonization status**:  complete  
+**Harmonization status**:  complete  ?
 **Harmonization comment**:  Study-specific variable SN_RELLIV_NB_COF1 is an indicator of the number of living relatives.    
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP_FU1$SN_RELLIV_NB_COF1) 
 
+soc_CLSA_cop_1$soc_sn_num_relatives_1 <- as.numeric(CoP_FU1$SN_RELLIV_NB_COF1)
+
+table(soc_CLSA_cop_1$soc_sn_num_relatives_1) 
+summary(soc_CLSA_cop_1$soc_sn_num_relatives_1) 
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_2    
@@ -994,6 +1070,19 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   Study specific variables used in this harmonization ask about 1. SN_SEEREL_COM = last get together with relatives outside of household 2. SN_SEECHILD_COM = last get together with children outside of household 3. SN_SEESIB_COM = last get together with siblings outside of household. Highest frequency for either item is picked as the contact frequency with close relatives. Caution: respondents are not asked how close they are to these relatives, siblings or children.  
 **R script**:  
 ```{r, echo=TRUE}
+# table(CoP4_Baseline$SN_SEECHILD_COM) 
+# table(CoP4_Baseline$SN_SEESIB_COM) 
+# table(CoP4_Baseline$SN_SEEREL_COM) 
+# 
+soc_CLSA_cop_0$soc_sn_freq_close_relatives_0 <- ifelse(CoP4_Baseline$SN_SEECHILD_COM ==1 |CoP4_Baseline$SN_SEESIB_COM ==1 |CoP4_Baseline$SN_SEEREL_COM==1| 
+                                                          CoP4_Baseline$SN_SEECHILD_COM ==2 |CoP4_Baseline$SN_SEESIB_COM ==2 |CoP4_Baseline$SN_SEEREL_COM==2,1L,
+                                                ifelse(CoP4_Baseline$SN_SEECHILD_COM==3 |CoP4_Baseline$SN_SEESIB_COM==3|CoP4_Baseline$SN_SEEREL_COM==3,2L,
+                                                ifelse(CoP4_Baseline$SN_SEECHILD_COM ==5 |CoP4_Baseline$SN_SEESIB_COM ==5 |CoP4_Baseline$SN_SEEREL_COM==5 |
+                                                   CoP4_Baseline$SN_SEECHILD_COM ==6 |CoP4_Baseline$SN_SEESIB_COM ==6|CoP4_Baseline$SN_SEEREL_COM==6 |
+                                                       CoP4_Baseline$SN_SEECHILD_COM==4 |CoP4_Baseline$SN_SEESIB_COM==4 |CoP4_Baseline$SN_SEEREL_COM==4,3L,NA)))
+
+table(soc_CLSA_cop_0$soc_sn_freq_close_relatives_0) 
+# summary(soc_CLSA_cop_0$soc_sn_freq_close_relatives_0)
 
 ```
 ### **Variable label**:   Contact frequency with family     
@@ -1013,7 +1102,17 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   Study-specific variables used in this harmonization ask about 1. SN_SEEREL_COF1 = last get together with relatives outside of household 2. SN_SEECHILD_COF1 = last get together with children outside of household 3. SN_SEESIB_COF1 = last get together with siblings outside of household. Highest frequency for either item is picked as the contact frequency with close relatives. Caution: respondents are not asked how close they are to these relatives, siblings or children.   
 **R script**:  
 ```{r, echo=TRUE}
+table(CoP_FU1$SN_SEECHILD_COF1, useNA="always") 
 
+soc_CLSA_cop_1$soc_sn_freq_close_relatives_1 <- ifelse(CoP_FU1$SN_SEECHILD_COF1 ==1 |CoP_FU1$SN_SEESIB_COF1==1 |CoP_FU1$SN_SEEREL_COF1==1| 
+                                                      CoP_FU1$SN_SEECHILD_COF1  ==2 |CoP_FU1$SN_SEESIB_COF1 ==2 |CoP_FU1$SN_SEEREL_COF1==2,1L,
+                                                ifelse(CoP_FU1$SN_SEECHILD_COF1 ==3 |CoP_FU1$SN_SEESIB_COF1==3|CoP_FU1$SN_SEEREL_COF1==3,2L,
+                                                ifelse(CoP_FU1$SN_SEECHILD_COF1  ==5 |CoP_FU1$SN_SEESIB_COF1==5 |CoP_FU1$SN_SEEREL_COF1==5 |
+                                                      CoP_FU1$SN_SEECHILD_COF1  ==6 |CoP_FU1$SN_SEESIB_COF1 ==6|CoP_FU1$SN_SEEREL_COF1==6 |
+                                                       CoP_FU1$SN_SEECHILD_COF1 ==4 |CoP_FU1$SN_SEESIB_COF1==4 |CoP_FU1$SN_SEEREL_COF1==4,3L,NA)))
+
+
+table(soc_CLSA_cop_1$soc_sn_freq_close_relatives_1, useNA="always") 
 ```
 ### **Variable label**:   Contact frequency with family    
 **Variable name**:   soc_sn_freq_close_relatives_2    
@@ -1128,7 +1227,17 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:  Study specific variables used in this harmonization ask about 1. SN_SEEREL_COM = last get together with relatives outside of household 2. SN_SEECHILD_COM = last get together with children outside of household 3. SN_SEESIB_COM = last get together with siblings outside of household. Highest frequency for either item is picked as the contact frequency with close relatives. Caution: respondents are not asked how close they are to these relatives, siblings or children.  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+ table(CoP4_Baseline$SN_SEECHILD_COM, useNA="always") 
+ table(CoP4_Baseline$SN_SEESIB_COM, useNA="always") 
+ table(CoP4_Baseline$SN_SEEREL_COM, useNA="always") 
+
+soc_CLSA_cop_0$soc_sn_freq_relatives_0 <- ifelse(CoP4_Baseline$SN_SEECHILD_COM ==1 |CoP4_Baseline$SN_SEESIB_COM ==1 |CoP4_Baseline$SN_SEEREL_COM==1| 
+                                                 CoP4_Baseline$SN_SEECHILD_COM ==2 |CoP4_Baseline$SN_SEESIB_COM ==2 |CoP4_Baseline$SN_SEEREL_COM==2,1L,
+                                          ifelse(CoP4_Baseline$SN_SEECHILD_COM ==3 |CoP4_Baseline$SN_SEESIB_COM ==3 |CoP4_Baseline$SN_SEEREL_COM==3,2L,
+                                          ifelse(CoP4_Baseline$SN_SEECHILD_COM ==5 |CoP4_Baseline$SN_SEESIB_COM ==5 |CoP4_Baseline$SN_SEEREL_COM==5|
+                                                 CoP4_Baseline$SN_SEECHILD_COM ==6 |CoP4_Baseline$SN_SEESIB_COM ==6 |CoP4_Baseline$SN_SEEREL_COM==6|
+                                                 CoP4_Baseline$SN_SEECHILD_COM ==4 |CoP4_Baseline$SN_SEESIB_COM ==4 |CoP4_Baseline$SN_SEEREL_COM==4,3L,NA)))
+ table(soc_CLSA_cop_0$soc_sn_freq_relatives_0, useNA="always") 
 
 ```
 ### **Variable label**:   Contact frequency with relatives      
@@ -1148,7 +1257,16 @@ opal.logout(erasmus_opal)
 **Harmonization comment**: Study-specific variables used in this harmonization ask about 1. SN_SEEREL_COF1 = last get together with relatives outside of household 2. SN_SEECHILD_COF1 = last get together with children outside of household 3. SN_SEESIB_COF1 = last get together with siblings outside of household. Highest frequency for either item is picked as the contact frequency with close relatives. Caution: respondents are not asked how close they are to these relatives, siblings or children.   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP_FU1$SN_SEECHILD_COF1, useNA="always")
+soc_CLSA_cop_1$soc_sn_freq_relatives_1 <- ifelse(CoP_FU1$SN_SEECHILD_COF1 ==1 |CoP_FU1$SN_SEESIB_COF1==1 |CoP_FU1$SN_SEEREL_COF1==1| 
+                                                 CoP_FU1$SN_SEECHILD_COF1  ==2 |CoP_FU1$SN_SEESIB_COF1 ==2 |CoP_FU1$SN_SEEREL_COF1==2,1L,
+                                          ifelse(CoP_FU1$SN_SEECHILD_COF1 ==3 |CoP_FU1$SN_SEESIB_COF1==3|CoP_FU1$SN_SEEREL_COF1==3,2L,
+                                          ifelse(CoP_FU1$SN_SEECHILD_COF1  ==5 |CoP_FU1$SN_SEESIB_COF1==5 |CoP_FU1$SN_SEEREL_COF1==5 |
+                                                 CoP_FU1$SN_SEECHILD_COF1  ==6 |CoP_FU1$SN_SEESIB_COF1 ==6|CoP_FU1$SN_SEEREL_COF1==6 |
+                                                 CoP_FU1$SN_SEECHILD_COF1 ==4 |CoP_FU1$SN_SEESIB_COF1==4 |CoP_FU1$SN_SEEREL_COF1==4,3L,NA)))
+
+
+table(soc_CLSA_cop_1$soc_sn_freq_relatives_1, useNA="always") 
 
 ```
 ### **Variable label**:   Contact frequency with relatives     
@@ -1257,6 +1375,9 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:  Study specific variables added to obtain this DataSchema are: number of close friends, number of neighbours, number of people known through community involvement.  
 **R script**:  
 ```{r, echo=TRUE}
+soc_CLSA_cop_0$soc_sn_num_nonkin_0 <- as.integer((CoP4_Baseline$SN_FRND_NB_COM) + (CoP4_Baseline$SN_NEIBR_NB_COM)+ (CoP4_Baseline$SN_PERCOM_NB_COM)) 
+
+table(soc_CLSA_cop_0$soc_sn_num_nonkin_0, useNA="always") 
 
 ```
 ### **Variable label**:   Network size of non-kin      
@@ -1270,6 +1391,9 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:  Study specific variables added to obtain this DataSchema are: number of close friends, number of neighbours, number of people known through community involvement.  
 **R script**:  
 ```{r, echo=TRUE}
+soc_CLSA_cop_1$soc_sn_num_nonkin_1 <- as.integer((CoP_FU1$SN_FRND_NB_COF1) + (CoP_FU1$SN_NEIBR_NB_COF1)+ (CoP_FU1$SN_PERCOM_NB_COF1)) 
+
+table(soc_CLSA_cop_1$soc_sn_num_nonkin_1, useNA="always") 
 
 ```
 ### **Variable label**:   Network size of non-kin      
@@ -1355,7 +1479,14 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:  Study specific variables added to obtain this DataSchema are: SN_SEENEIBR_COM = last get together with neighbours and SN_SEEFRND_COM = last get together with close friends outside of household. 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+soc_CLSA_cop_0$soc_sn_freq_nonkin_0 <- ifelse(CoP4_Baseline$SN_SEENEIBR_COM ==1 |CoP4_Baseline$SN_SEEFRND_COM ==1|
+                                              CoP4_Baseline$SN_SEENEIBR_COM ==2 |CoP4_Baseline$SN_SEEFRND_COM ==2,1L, 
+                                       ifelse(CoP4_Baseline$SN_SEENEIBR_COM==3  |CoP4_Baseline$SN_SEEFRND_COM==3,2L, 
+                                       ifelse(CoP4_Baseline$SN_SEENEIBR_COM ==5 |CoP4_Baseline$SN_SEEFRND_COM ==5 | 
+                                              CoP4_Baseline$SN_SEENEIBR_COM ==6 |CoP4_Baseline$SN_SEEFRND_COM ==6|
+                                              CoP4_Baseline$SN_SEENEIBR_COM==4  |CoP4_Baseline$SN_SEEFRND_COM==4 ,3L, NA)))
+                                                           
+table(soc_CLSA_cop_0$soc_sn_freq_nonkin_0, useNA="always") 
 
 ```
 ### **Variable label**:   Contact frequency with non-kin  
@@ -1375,7 +1506,14 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:  Study specific variables added to obtain this DataSchema are: SN_SEENEIBR_COF1 = last get together with neighbours and SN_SEEFRND_COF1 = last get together with close friends outside of household.   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+soc_CLSA_cop_1$soc_sn_freq_nonkin_1 <- ifelse(CoP_FU1$SN_SEENEIBR_COF1==1 |CoP_FU1$SN_SEEFRND_COF1 ==1|
+                                              CoP_FU1$SN_SEENEIBR_COF1 ==2 |CoP_FU1$SN_SEEFRND_COF1 ==2,1L, 
+                                       ifelse(CoP_FU1$SN_SEENEIBR_COF1==3  |CoP_FU1$SN_SEEFRND_COF1==3,2L, 
+                                       ifelse(CoP_FU1$SN_SEENEIBR_COF1 ==5 |CoP_FU1$SN_SEEFRND_COF1 ==5 | 
+                                              CoP_FU1$SN_SEENEIBR_COF1 ==6 |CoP_FU1$SN_SEEFRND_COF1 ==6|
+                                              CoP_FU1$SN_SEENEIBR_COF1==4  |CoP_FU1$SN_SEEFRND_COF1==4 ,3L, NA)))
+                                                           
+table(soc_CLSA_cop_1$soc_sn_freq_nonkin_1, useNA="always") 
 
 ```
 ### **Variable label**:   Contact frequency with non-kin  
@@ -1752,7 +1890,38 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:  Caution in using this variable. Study specific items used are: SSA_LOVU_COM = Support availability by love and making participant feel wanted, SSA_SUGG_COM = Support availability for suggestions with a personal problem, SSA_ENJOY_COM = Support availability to do something enjoyable, SSA_PROBLM_COM = Support availability for understanding problems. The following approach was taken to derive the perceived emotional support Z-score. The response categories to these items are: none of the time (1), a little of the time (2), some of the time(3), most of the time(4) and all of the time(5).  The response to each of the four items were added and the z-score calculated from this sum.  Answer categories 'don't know' and 'refused' are categorized as missing.  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+ 
+table(CoP4_Baseline$SSA_LOVU_COM, useNA="always") 
+table(CoP4_Baseline$SSA_SUGG_COM, useNA="always") 
+table(CoP4_Baseline$SSA_ENJOY_COM, useNA="always") 
+table(CoP4_Baseline$SSA_PROBLM_COM, useNA="always") 
+
+soc_CLSA_cop_0$soc_ss_perceived_instru_0_love_inter <- as.numeric(ifelse(CoP4_Baseline$SSA_LOVU_COM<6,CoP4_Baseline$SSA_LOVU_COM,NA))
+
+table(soc_CLSA_cop_0$soc_ss_perceived_instru_0_love_inter) 
+
+soc_CLSA_cop_0$soc_ss_perceived_instru_0_sugg_inter <- as.numeric(ifelse(CoP4_Baseline$SSA_SUGG_COM<6,CoP4_Baseline$SSA_SUGG_COM,NA))
+
+table(soc_CLSA_cop_0$soc_ss_perceived_instru_0_sugg_inter) 
+
+soc_CLSA_cop_0$soc_ss_perceived_instru_0_enjoy_inter <- as.numeric(ifelse(CoP4_Baseline$SSA_ENJOY_COM<6,CoP4_Baseline$SSA_ENJOY_COM,NA))
+
+table(soc_CLSA_cop_0$soc_ss_perceived_instru_0_enjoy_inter) 
+
+soc_CLSA_cop_0$soc_ss_perceived_instru_0_prob_inter <- as.numeric(ifelse(CoP4_Baseline$SSA_PROBLM_COM<6,CoP4_Baseline$SSA_PROBLM_COM,NA))
+
+table(soc_CLSA_cop_0$soc_ss_perceived_instru_0_prob_inter) 
+
+
+soc_CLSA_cop_0$soc_ss_Zscore_perceived_emo_0_inter <- (soc_CLSA_cop_0$soc_ss_perceived_instru_0_love_inter  + soc_CLSA_cop_0$soc_ss_perceived_instru_0_sugg_inter +
+                                                       soc_CLSA_cop_0$soc_ss_perceived_instru_0_enjoy_inter + soc_CLSA_cop_0$soc_ss_perceived_instru_0_prob_inter)
+
+table(soc_CLSA_cop_0$soc_ss_Zscore_perceived_emo_0_inter) 
+
+soc_CLSA_cop_0$soc_ss_Zscore_perceived_emo_0 <-as.numeric(scale(soc_CLSA_cop_0$soc_ss_Zscore_perceived_emo_0_inter, center = TRUE, scale= TRUE)) 
+
+table(soc_CLSA_cop_0$soc_ss_Zscore_perceived_emo_0) 
+summary(soc_CLSA_cop_0$soc_ss_Zscore_perceived_emo_0)
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -1766,7 +1935,37 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:  Caution in using this variable. Study specific items used are: SSA_LOVU_COF1 = Support availability by love and making participant feel wanted, SSA_SUGG_COM = Support availability for suggestions with a personal problem, SSA_ENJOY_COF1 = Support availability to do something enjoyable, SSA_PROBLM_COF1 = Support availability for understanding problems. The following approach was taken to derive the perceived emotional support Z-score. The response categories to these items are: none of the time (1), a little of the time (2), some of the time(3), most of the time(4) and all of the time(5).  The response to each of the four items were added and the z-score calculated from this sum.  Answer categories 'don't know' and 'refused' are categorized as missing.  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP_FU1$SSA_LOVU_COF1) 
+table(CoP_FU1$SSA_SUGG_COF1) 
+table(CoP_FU1$SSA_ENJOY_COF1) 
+table(CoP_FU1$SSA_PROBLM_COF1) 
+
+soc_CLSA_cop_1$soc_ss_perceived_instru_1_love_inter <- as.numeric(ifelse(CoP_FU1$SSA_LOVU_COF1<6,CoP_FU1$SSA_LOVU_COF1,NA))
+
+table(soc_CLSA_cop_1$soc_ss_perceived_instru_1_love_inter) 
+
+soc_CLSA_cop_1$soc_ss_perceived_instru_1_sugg_inter <- as.numeric(ifelse(CoP_FU1$SSA_SUGG_COF1<6,CoP_FU1$SSA_SUGG_COF1,NA))
+
+table(soc_CLSA_cop_1$soc_ss_perceived_instru_1_sugg_inter) 
+
+soc_CLSA_cop_1$soc_ss_perceived_instru_1_enjoy_inter <- as.numeric(ifelse(CoP_FU1$SSA_ENJOY_COF1<6,CoP_FU1$SSA_ENJOY_COF1,NA))
+
+table(soc_CLSA_cop_1$soc_ss_perceived_instru_1_enjoy_inter) 
+
+soc_CLSA_cop_1$soc_ss_perceived_instru_1_prob_inter <- as.numeric(ifelse(CoP_FU1$SSA_PROBLM_COF1<6,CoP_FU1$SSA_PROBLM_COF1,NA))
+
+table(soc_CLSA_cop_1$soc_ss_perceived_instru_1_prob_inter) 
+
+
+soc_CLSA_cop_1$soc_ss_Zscore_perceived_emo_1_inter <- (soc_CLSA_cop_1$soc_ss_perceived_instru_1_love_inter + soc_CLSA_cop_1$soc_ss_perceived_instru_1_sugg_inter +
+                                                       soc_CLSA_cop_1$soc_ss_perceived_instru_1_enjoy_inter + soc_CLSA_cop_1$soc_ss_perceived_instru_1_prob_inter)
+
+table(soc_CLSA_cop_1$soc_ss_Zscore_perceived_emo_1_inter) 
+
+soc_CLSA_cop_1$soc_ss_Zscore_perceived_emo_1 <-as.numeric(scale(soc_CLSA_cop_1$soc_ss_Zscore_perceived_emo_1_inter, center = TRUE, scale= TRUE)) 
+
+table(soc_CLSA_cop_1$soc_ss_Zscore_perceived_emo_1, useNA="always") 
+summary(soc_CLSA_cop_1$soc_ss_Zscore_perceived_emo_1)
 
 ```
 ### **Variable label**: Perceived emotional support Z-score   
@@ -1850,7 +2049,13 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:  Study specific variable SSA_CHORES_COM, identifies the support availability with daily chores. The response (to this item) 'none of the time' is catregorized as 'Does not feel tangible help is available'. The responses: a little of the time, some of the time, most of the time and all of the time, are coded as 'Feels tangible help is available'.   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP4_Baseline$SSA_CHORES_COM) 
+
+soc_CLSA_cop_0$soc_ss_perceived_instru_0 <- ifelse(CoP4_Baseline$SSA_CHORES_COM==1,1L, 
+                                            ifelse((CoP4_Baseline$SSA_CHORES_COM>= 2 & CoP4_Baseline$SSA_CHORES_COM <=5),0L, NA))
+
+table(soc_CLSA_cop_0$soc_ss_perceived_instru_0) 
+summary(soc_CLSA_cop_0$soc_ss_perceived_instru_0) 
 
 ```
 ### **Variable label**: Perceived instrumental support        
@@ -1869,8 +2074,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:  Study specific variable SSA_CHORES_COF1, identifies the support availability with daily chores. The response (to this item) 'none of the time' is catregorized as 'Does not feel tangible help is available'. The responses: a little of the time, some of the time, most of the time and all of the time, are coded as 'Feels tangible help is available'.  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
 
+soc_CLSA_cop_1$soc_ss_perceived_instru_1 <- ifelse(CoP_FU1$SSA_CHORES_COF1==1,1L, 
+                                            ifelse((CoP_FU1$SSA_CHORES_COF1>= 2 & CoP_FU1$SSA_CHORES_COF1 <=5),0L, NA))
+
+table(soc_CLSA_cop_1$soc_ss_perceived_instru_1, useNA="always") 
+summary(soc_CLSA_cop_1$soc_ss_perceived_instru_1) 
 ```
 ### **Variable label**: Perceived instrumental support        
 **Variable name**:   soc_ss_perceived_instru_2      
@@ -1965,134 +2174,6 @@ opal.logout(erasmus_opal)
 
 # Social participation subdomain
 
-### **Variable label**:  Social isolation    
-**Variable name**:  soc_sp_isolation_0  
-**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not socially isolated, has social network and/ or social participation 
-1 |  Socially isolated, no social network and no social participation 
-
-**Harmonization status**:  complete  
-**Harmonization comment**:  Used same approach as in the harmonization of GLOBE and LASA data: utilized study available DataSchema social network - contact frequency variables (friends, neighbours, relatives, family and non-kin) in addition to the general participation variable, no contact with these different types of social network members and no participation was categorized as socially isolated. Having one or more of these types of members (in addition to children) in their network and reporting social participation was categorized as not socially isolated.    
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:  Social isolation    
-**Variable name**:  soc_sp_isolation_1  
-**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not socially isolated, has social network and/ or social participation 
-1 |  Socially isolated, no social network and no social participation 
-
-**Harmonization status**:  complete  
-**Harmonization comment**:  Used same approach as in the harmonization of GLOBE and LASA data: utilized study available DataSchema social network - contact frequency variables (friends, neighbours, relatives, family and non-kin) in addition to the general participation variable, no contact with these different types of social network members and no participation was categorized as socially isolated. Having one or more of these types of members (in addition to children) in their network and reporting social participation was categorized as not socially isolated.     
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**:  Social isolation    
-**Variable name**:  soc_sp_isolation_2  
-**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not socially isolated, has social network and/ or social participation 
-1 |  Socially isolated, no social network and no social participation 
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-
-```
-### **Variable label**:  Social isolation    
-**Variable name**:  soc_sp_isolation_3  
-**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not socially isolated, has social network and/ or social participation 
-1 |  Socially isolated, no social network and no social participation 
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-
-```
-### **Variable label**:  Social isolation    
-**Variable name**:  soc_sp_isolation_4  
-**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not socially isolated, has social network and/ or social participation 
-1 |  Socially isolated, no social network and no social participation 
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-
-```
-### **Variable label**:  Social isolation    
-**Variable name**:  soc_sp_isolation_5  
-**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not socially isolated, has social network and/ or social participation 
-1 |  Socially isolated, no social network and no social participation 
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-
-```
-### **Variable label**:  Social isolation    
-**Variable name**:  soc_sp_isolation_6  
-**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
-**Value type**:  integer  
-**Variable unit**:    
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |  Not socially isolated, has social network and/ or social participation 
-1 |  Socially isolated, no social network and no social participation 
-
-**Harmonization status**:  impossible  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-
-```
 
 ### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_0        
@@ -2110,7 +2191,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:  Study specific variable SPA_CHRCH_COM, used asks about 'Frequency of participation in religious activities (past 12 months).' Answer category 'never' is coded as 'Does not participate in a religious organization.'   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP4_Baseline$SPA_CHRCH_COM) 
+
+soc_CLSA_cop_0$soc_sp_religious_0 <- ifelse(CoP4_Baseline$SPA_CHRCH_COM ==5,0L, 
+                                     ifelse(CoP4_Baseline$SPA_CHRCH_COM < 5,1L,NA))
+                                                           
+table(soc_CLSA_cop_0$soc_sp_religious_0) 
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2129,7 +2215,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:  Study specific variable SPA_CHRCH_COF1, used asks about 'Frequency of participation in religious activities (past 12 months).' Answer category 'never' is coded as 'Does not participate in a religious organization.'     
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP_FU1$SPA_CHRCH_COF1) 
+
+soc_CLSA_cop_1$soc_sp_religious_1 <- ifelse(CoP_FU1$SPA_CHRCH_COF1 ==5,0L, 
+                                     ifelse(CoP_FU1$SPA_CHRCH_COF1 < 5,1L,NA))
+                                                           
+table(soc_CLSA_cop_1$soc_sp_religious_1) 
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2241,7 +2332,15 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   SPA_CHRCH_COM
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP4_Baseline$SPA_CHRCH_COM) 
+#?? categoties 3&4 doesn't make sense
+soc_CLSA_cop_0$soc_sp_freq_religious_0 <- ifelse(CoP4_Baseline$SPA_CHRCH_COM ==1 |CoP4_Baseline$SPA_CHRCH_COM ==2, 1L,
+                                          ifelse(CoP4_Baseline$SPA_CHRCH_COM ==3 , 2L, 
+                                          ifelse(CoP4_Baseline$SPA_CHRCH_COM ==4 , 3L,
+                                          ifelse(CoP4_Baseline$SPA_CHRCH_COM ==5 , 4L,
+                                          ifelse(CoP4_Baseline$SPA_CHRCH_COM >=6 ,5L,NA)))))
+                                                           
+table(soc_CLSA_cop_0$soc_sp_freq_religious_0) 
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2263,7 +2362,15 @@ opal.logout(erasmus_opal)
 **Harmonization comment**: SPA_CHRCH_COF1  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP_FU1$SPA_CHRCH_COF1) 
+
+soc_CLSA_cop_1$soc_sp_freq_religious_1 <- ifelse(CoP_FU1$SPA_CHRCH_COF1 ==1 |CoP_FU1$SPA_CHRCH_COF1 ==2, 1L,
+                                           ifelse(CoP_FU1$SPA_CHRCH_COF1 ==3 , 2L, 
+                                           ifelse(CoP_FU1$SPA_CHRCH_COF1 ==4 , 3L,
+                                             ifelse(CoP_FU1$SPA_CHRCH_COF1 ==5 , 4L,
+                                                  ifelse(CoP_FU1$SPA_CHRCH_COF1 >=6 ,5L,NA)))))
+                                                           
+table(soc_CLSA_cop_1$soc_sp_freq_religious_1) 
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2387,7 +2494,14 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:  Study specific variable SPA_EDUC_COM, used asks about 'Frequency of participation in educational or cultural activities (past 12 months).' Answer category 'never' is coded as 'Does not participate in a cultural or educational organization.'    
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+#SPA_EDUC_COM 
+
+table(CoP4_Baseline$SPA_EDUC_COM) 
+
+soc_CLSA_cop_0$soc_sp_cultural_edu_0 <- ifelse(CoP4_Baseline$SPA_EDUC_COM ==5,0L, 
+                                                  ifelse(CoP4_Baseline$SPA_EDUC_COM <5,1L,NA))
+                                                           
+table(soc_CLSA_cop_0$soc_sp_cultural_edu_0) 
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -2406,7 +2520,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:  Study specific variable SPA_EDUC_COF1, used asks about 'Frequency of participation in educational or cultural activities (past 12 months).' Answer category 'never' is coded as 'Does not participate in a cultural or educational organization.'    
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP_FU1$SPA_EDUC_COF1) 
+
+soc_CLSA_cop_1$soc_sp_cultural_edu_1 <- ifelse(CoP_FU1$SPA_EDUC_COF1 ==5,0L, 
+                                                  ifelse(CoP_FU1$SPA_EDUC_COF1 <5,1L,NA))
+                                                           
+table(soc_CLSA_cop_1$soc_sp_cultural_edu_1) 
 
 ```
 ### **Variable label**:  Cultural and educational participation   
@@ -2641,7 +2760,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:  Study specific variable SPA_VOLUN_COM, used asks about 'Frequency of participation in volunteer or charity work (past 12 months).' Answer category 'never' is coded as 'Does take part in volunteer activities.'   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP4_Baseline$SPA_VOLUN_COM) 
+
+soc_CLSA_cop_0$soc_sp_volunteer_0 <- ifelse(CoP4_Baseline$SPA_VOLUN_COM ==5,0L, 
+                                           ifelse(CoP4_Baseline$SPA_VOLUN_COM <5,1L,NA))
+
+table(soc_CLSA_cop_0$soc_sp_volunteer_0) 
 
 ```
 ### **Variable label**:  Volunteering      
@@ -2660,8 +2784,10 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:  Study specific variable SPA_VOLUN_COF1, used asks about 'Frequency of participation in volunteer or charity work (past 12 months).' Answer category 'never' is coded as 'Does take part in volunteer activities.'   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+soc_CLSA_cop_1$soc_sp_volunteer_1 <- ifelse(CoP_FU1$SPA_VOLUN_COF1 ==5,0L, 
+                                           ifelse(CoP_FU1$SPA_VOLUN_COF1 <5,1L,NA))
 
+table(soc_CLSA_cop_1$soc_sp_volunteer_1)
 ```
 ### **Variable label**:  Volunteering      
 **Variable name**:  soc_sp_volunteer_2                
@@ -2899,7 +3025,13 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:  Study specific variable SPA_NEIBR_COM, used asks about 'Frequency of participation in neighbourhood, community or professional association activities (past 12 months).' Answer category 'never' is coded as 'Does not participate in an union, professional or neighbourhood organization.' 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP4_Baseline$SPA_NEIBR_COM) 
+
+soc_CLSA_cop_0$soc_sp_prof_0 <- ifelse(CoP4_Baseline$SPA_NEIBR_COM ==5,0L, 
+                                           ifelse(CoP4_Baseline$SPA_NEIBR_COM <5,1L,NA))
+
+table(soc_CLSA_cop_0$soc_sp_prof_0) 
+summary(soc_CLSA_cop_0$soc_sp_prof_0) 
 
 ```
 ### **Variable label**:  Professional participation         
@@ -2918,7 +3050,13 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:  Study specific variable used SPA_NEIBR_COF1, asks about 'Frequency of participation in neighbourhood, community or professional association activities (past 12 months).' Answer category 'never' is coded as 'Does not participate in an union, professional or neighbourhood organization.'      
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP_FU1$SPA_NEIBR_COF1) 
+
+soc_CLSA_cop_1$soc_sp_prof_1 <- ifelse(CoP_FU1$SPA_NEIBR_COF1 ==5,0L, 
+                                           ifelse(CoP_FU1$SPA_NEIBR_COF1 <5,1L,NA))
+
+table(soc_CLSA_cop_1$soc_sp_prof_1) 
+summary(soc_CLSA_cop_1$soc_sp_prof_1) 
 
 ```
 ### **Variable label**:  Professional participation         
@@ -3027,7 +3165,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   Dataschemas pertaining to participation (religious, cultural, educational, neighbourhood association and/or volunteering) were used to harmonize this variable.  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+soc_CLSA_cop_0$soc_sp_general_0 <- ifelse(soc_CLSA_cop_0$soc_sp_prof_0 =='1' |  soc_CLSA_cop_0$soc_sp_volunteer_0 =='1' |  
+                                          soc_CLSA_cop_0$soc_sp_cultural_edu_0 =='1' | soc_CLSA_cop_0$soc_sp_religious_0 =='1',1L, 
+                                                  ifelse(soc_CLSA_cop_0$soc_sp_prof_0 =='0'& soc_CLSA_cop_0$soc_sp_volunteer_0 =='0' &
+                                                          soc_CLSA_cop_0$soc_sp_cultural_edu_0 =='0' & soc_CLSA_cop_0$soc_sp_religious_0 =='0',0L, NA))
+
+table(soc_CLSA_cop_0$soc_sp_general_0) 
 
 ```
 ### **Variable label**:  General social participation            
@@ -3046,7 +3189,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   Dataschemas pertaining to participation (religious, cultural, educational, neighbourhood association and/or volunteering) were used to harmonize this variable.    
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+soc_CLSA_cop_1$soc_sp_general_1 <- ifelse(soc_CLSA_cop_1$soc_sp_prof_1 =='1' |  soc_CLSA_cop_1$soc_sp_volunteer_1 =='1' |  
+                                          soc_CLSA_cop_1$soc_sp_cultural_edu_1 =='1' | soc_CLSA_cop_1$soc_sp_religious_1 =='1',1L, 
+                                                  ifelse(soc_CLSA_cop_1$soc_sp_prof_1 =='0'& soc_CLSA_cop_1$soc_sp_volunteer_1 =='0' &
+                                                          soc_CLSA_cop_1$soc_sp_cultural_edu_1 =='0' & soc_CLSA_cop_1$soc_sp_religious_1 =='0',0L, NA))
+
+table(soc_CLSA_cop_1$soc_sp_general_1) 
 
 ```
 ### **Variable label**:  General social participation          
@@ -3155,7 +3303,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:  SPA_PREVAC_AF_COM 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP4_Baseline$SPA_PREVAC_AF_COM) 
+
+soc_CLSA_cop_0$soc_sp_nosafety_0 <- ifelse(CoP4_Baseline$SPA_PREVAC_AF_COM ==1,1L, 
+                                           ifelse(CoP4_Baseline$SPA_PREVAC_AF_COM ==0,0L,NA))
+
+table(soc_CLSA_cop_0$soc_sp_nosafety_0) 
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3174,7 +3327,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**: SPA_PREVAC_AF_COF1  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP_FU1$SPA_PREVAC_AF_COF1) 
+
+soc_CLSA_cop_1$soc_sp_nosafety_1 <- ifelse(CoP_FU1$SPA_PREVAC_AF_COF1 ==1,1L, 
+                                           ifelse(CoP_FU1$SPA_PREVAC_AF_COF1 ==0,0L,NA))
+
+table(soc_CLSA_cop_1$soc_sp_nosafety_1) 
 
 ```
 ### **Variable label**:  Non participation due to safety       
@@ -3283,8 +3441,13 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   SPA_PREVAC_TP_COM
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP4_Baseline$SPA_PREVAC_TP_COM) 
 
+soc_CLSA_cop_0$soc_sp_notrans_0 <- ifelse(CoP4_Baseline$SPA_PREVAC_TP_COM ==1,1L, 
+                                           ifelse(CoP4_Baseline$SPA_PREVAC_TP_COM ==0,0L,NA))
+
+table(soc_CLSA_cop_0$soc_sp_notrans_0) 
+summary(soc_CLSA_cop_0$soc_sp_notrans_0) 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
 **Variable name**:  soc_sp_notrans_1                  
@@ -3302,8 +3465,13 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   SPA_PREVAC_TP_COF1
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP_FU1$SPA_PREVAC_TP_COF1) 
 
+soc_CLSA_cop_1$soc_sp_notrans_1 <- ifelse(CoP_FU1$SPA_PREVAC_TP_COF1 ==1,1L, 
+                                           ifelse(CoP_FU1$SPA_PREVAC_TP_COF1 ==0,0L,NA))
+
+table(soc_CLSA_cop_1$soc_sp_notrans_1) 
+summary(soc_CLSA_cop_1$soc_sp_notrans_1) 
 ```
 ### **Variable label**:  Non participation due to lack of transportation      
 **Variable name**:  soc_sp_notrans_2                  
@@ -3411,8 +3579,13 @@ opal.logout(erasmus_opal)
 **Harmonization comment**: SPA_SOAC_HY_COM  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP4_Baseline$SPA_SOAC_HY_COM) 
 
+soc_CLSA_cop_0$soc_sp_hobby_0 <- ifelse(CoP4_Baseline$SPA_SOAC_HY_COM ==1,1L, 
+                                           ifelse(CoP4_Baseline$SPA_SOAC_HY_COM ==0,0L,NA))
+
+table(soc_CLSA_cop_0$soc_sp_hobby_0) 
+summary(soc_CLSA_cop_0$soc_sp_hobby_0) 
 ```
 ### **Variable label**:  Hobby      
 **Variable name**:  soc_sp_hobby_1                       
@@ -3430,8 +3603,13 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   SPA_SOAC_HY_COF1
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP_FU1$SPA_SOAC_HY_COF1) 
 
+soc_CLSA_cop_1$soc_sp_hobby_1 <- ifelse(CoP_FU1$SPA_SOAC_HY_COF1 ==1,1L, 
+                                           ifelse(CoP_FU1$SPA_SOAC_HY_COF1 ==0,0L,NA))
+
+table(soc_CLSA_cop_1$soc_sp_hobby_1) 
+summary(soc_CLSA_cop_1$soc_sp_hobby_1)
 ```
 ### **Variable label**:  Hobby      
 **Variable name**:  soc_sp_hobby_2                       
@@ -3523,6 +3701,149 @@ opal.logout(erasmus_opal)
 ```{r, echo=TRUE}
 
 ```
+
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_0  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  complete  
+**Harmonization comment**:  Used same approach as in the harmonization of GLOBE and LASA data: utilized study available DataSchema social network - contact frequency variables (friends, neighbours, relatives, family and non-kin) in addition to the general participation variable, no contact with these different types of social network members and no participation was categorized as socially isolated. Having one or more of these types of members (in addition to children) in their network and reporting social participation was categorized as not socially isolated.    
+**R script**:  
+```{r, echo=TRUE}
+
+soc_CLSA_cop_0$soc_sp_isolation_0 <- ifelse((soc_CLSA_cop_0$soc_sn_freq_friends_0 == 3| soc_CLSA_cop_0$soc_sn_freq_nbhs_0 ==3|     
+                                               soc_CLSA_cop_0$soc_sn_freq_close_relatives_0 ==3 | soc_CLSA_cop_0$soc_sn_freq_relatives_0 ==3|
+                                               soc_CLSA_cop_0$soc_sn_freq_nonkin_0==3) & soc_CLSA_cop_0$soc_sp_general_0 == 0,1L,
+                                    ifelse((soc_CLSA_cop_0$soc_sn_freq_friends_0 >= 1 | soc_CLSA_cop_0$soc_sn_freq_nbhs_0 >= 1 | 
+                                               soc_CLSA_cop_0$soc_sn_freq_close_relatives_0 >= 1 | soc_CLSA_cop_0$soc_sn_freq_relatives_0 >= 1) & 
+                                               soc_CLSA_cop_0$soc_sn_freq_nonkin_0 == 1, 0L, NA ))
+table(soc_CLSA_cop_0$soc_sp_isolation_0, useNA="always")
+```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_1  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  complete  
+**Harmonization comment**:  Used same approach as in the harmonization of GLOBE and LASA data: utilized study available DataSchema social network - contact frequency variables (friends, neighbours, relatives, family and non-kin) in addition to the general participation variable, no contact with these different types of social network members and no participation was categorized as socially isolated. Having one or more of these types of members (in addition to children) in their network and reporting social participation was categorized as not socially isolated.     
+**R script**:  
+```{r, echo=TRUE}
+soc_CLSA_cop_1$soc_sp_isolation_1 <- ifelse((soc_CLSA_cop_1$soc_sn_freq_friends_1 == 3 | soc_CLSA_cop_1$soc_sn_freq_nbhs_1 ==3 |  
+                                               soc_CLSA_cop_1$soc_sn_freq_close_relatives_1 ==3 | soc_CLSA_cop_1$soc_sn_freq_relatives_1 ==3
+                                             |soc_CLSA_cop_1$soc_sn_freq_nonkin_1==3) 
+                                            & soc_CLSA_cop_1$soc_sp_general_1 == 0,1L,
+                                   ifelse((soc_CLSA_cop_1$soc_sn_freq_friends_1 >= 1 | 
+                                           soc_CLSA_cop_1$soc_sn_freq_nbhs_1 >= 1 | soc_CLSA_cop_1$soc_sn_freq_close_relatives_1 >= 1 |
+                                           soc_CLSA_cop_1$soc_sn_freq_relatives_1 >= 1) & soc_CLSA_cop_1$soc_sn_freq_nonkin_1 == 1, 0L, NA ))
+
+ table(soc_CLSA_cop_1$soc_sp_isolation_1, useNA="always")
+```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_2  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_3  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_4  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_5  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+```
+### **Variable label**:  Social isolation    
+**Variable name**:  soc_sp_isolation_6  
+**Variable description**:  Indicator of whether the participant is socially isolated i.e. no members in social network and no participation in an association (any type, including religious organization).       
+**Value type**:  integer  
+**Variable unit**:    
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |  Not socially isolated, has social network and/ or social participation 
+1 |  Socially isolated, no social network and no social participation 
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+```
+
 # Major life events subdomain
 
 ### **Variable label**:  Life event: victim     
@@ -4132,7 +4453,13 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   TRA_LVCMNTY_YR_MCQ
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP4_Baseline$TRA_LVCMNTY_YR_MCQ> CoP4_Baseline$AGE_NMBR_COM) 
+table(CoP4_Baseline$TRA_LVCMNTY_YR_MCQ[CoP4_Baseline$TRA_LVCMNTY_YR_MCQ> CoP4_Baseline$AGE_NMBR_COM],
+      CoP4_Baseline$AGE_NMBR_COM[CoP4_Baseline$TRA_LVCMNTY_YR_MCQ> CoP4_Baseline$AGE_NMBR_COM]) 
+table(CoP4_Baseline$TRA_LVCMNTY_YR_MCQ)
+soc_CLSA_cop_0$soc_res_num_yrsnbh_0 <- ifelse(CoP4_Baseline$TRA_LVCMNTY_YR_MCQ< CoP4_Baseline$AGE_NMBR_COM, CoP4_Baseline$TRA_LVCMNTY_YR_MCQ, NA) 
+
+table(soc_CLSA_cop_0$soc_res_num_yrsnbh_0) 
 
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
@@ -4146,8 +4473,20 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:  TRA_LVCMNTY_YR_COF1 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+MyMerge <- function(x,y){
+  merge(x,y, by= c("id"),all=TRUE)
+}
+soc_table <- Reduce(MyMerge, list(CoP4_Baseline, CoP_FU1))
 
+table( CoP_FU1$TRA_LVCMNTY_YR_COF1)
+table(soc_table$TRA_LVCMNTY_YR_COF1> soc_table$AGE_NMBR_COM+4) 
+
+soc_table$soc_res_num_yrsnbh_1 <- ifelse(soc_table$TRA_LVCMNTY_YR_COF1< soc_table$AGE_NMBR_COM+4, soc_table$TRA_LVCMNTY_YR_COF1,NA) 
+
+soc_CLSA_cop_1<-merge(soc_CLSA_cop_1,soc_table[,c("id","soc_res_num_yrsnbh_1")],by="id",all.x=TRUE)
+
+table(soc_CLSA_cop_1$soc_res_num_yrsnbh_1) 
+summary(soc_CLSA_cop_1$soc_res_num_yrsnbh_1) 
 ```
 ### **Variable label**:  Residential stability in neighbourhood (individual - level)  
 **Variable name**:  soc_res_num_yrsnbh_2          
@@ -4225,7 +4564,18 @@ opal.logout(erasmus_opal)
 **Harmonization comment**: TRA_LVDHM_YR_MCQ  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP4_Baseline$TRA_LVDHM_YR_MCQ)   
+
+table(CoP4_Baseline$TRA_LVDHM_YR_MCQ> CoP4_Baseline$AGE_NMBR_COM) 
+table(CoP4_Baseline$TRA_LVDHM_YR_MCQ[CoP4_Baseline$TRA_LVDHM_YR_MCQ> CoP4_Baseline$AGE_NMBR_COM],
+      CoP4_Baseline$AGE_NMBR_COM[CoP4_Baseline$TRA_LVDHM_YR_MCQ> CoP4_Baseline$AGE_NMBR_COM]) 
+table(CoP4_Baseline$TRA_LVCMNTY_YR_MCQ)
+
+
+
+soc_CLSA_cop_0$soc_res_num_yrshome_0 <- as.integer(CoP4_Baseline$TRA_LVDHM_YR_MCQ) 
+
+table(soc_CLSA_cop_0$soc_res_num_yrshome_0) 
 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
@@ -4239,8 +4589,12 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   TRA_LVDHM_YR_COF1  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP_FU1$TRA_LVDHM_YR_COF1)  
+table(soc_table$TRA_LVDHM_YR_COF1>soc_table$AGE_NMBR_COM+3)
 
+soc_CLSA_cop_1$soc_res_num_yrshome_1 <- as.integer(CoP_FU1$TRA_LVDHM_YR_COF1) 
+
+table(soc_CLSA_cop_1$soc_res_num_yrshome_1) 
 ```
 ### **Variable label**:  Residential stability in home (individual - level)
 **Variable name**:  soc_res_num_yrshome_2          
@@ -4557,7 +4911,13 @@ opal.logout(erasmus_opal)
 **Harmonization comment**: Study specific variable OWN_DWLG_COM, categories: 'Seniors’ housing (retirement home, assisted living)' and  'Institution (old age facility)' were recoded as 'Lives in a nursing home.' 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP4_Baseline$OWN_DWLG_COM) 
+class(CoP4_Baseline$OWN_DWLG_COM)
+soc_CLSA_cop_0$soc_res_indep_0 <-  ifelse(as.integer(CoP4_Baseline$OWN_DWLG_COM)==3 |as.integer(CoP4_Baseline$OWN_DWLG_COM)==4,1L,
+                                   ifelse(as.integer(CoP4_Baseline$OWN_DWLG_COM)==1 | as.integer(CoP4_Baseline$OWN_DWLG_COM) ==2 |
+                                          as.integer( CoP4_Baseline$OWN_DWLG_COM)<=97,0L,NA))
+
+table(soc_CLSA_cop_0$soc_res_indep_0) 
 
 ```
 ### **Variable label**:  Residence independence     
@@ -4576,7 +4936,13 @@ opal.logout(erasmus_opal)
 **Harmonization comment**: Study specific variable OWN_DWLG_COF1, categories: 'Seniors’ housing (retirement home, assisted living)' and  'Institution (old age facility)' were recoded as 'Lives in a nursing home.'   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP_FU1$OWN_DWLG_COF1) 
+
+soc_CLSA_cop_1$soc_res_indep_1 <-  ifelse(as.integer(CoP_FU1$OWN_DWLG_COF1)==3 | as.integer(CoP_FU1$OWN_DWLG_COF1)==4,1L,
+                                    ifelse(as.integer(CoP_FU1$OWN_DWLG_COF1)==1 |as.integer( CoP_FU1$OWN_DWLG_COF1)==2 |
+                                           (as.integer(CoP_FU1$OWN_DWLG_COF1)>=5 &  as.integer(CoP_FU1$OWN_DWLG_COF1)<=97),0L,NA))
+
+table(soc_CLSA_cop_1$soc_res_indep_1) 
 
 ```
 ### **Variable label**:  Residence independence     
@@ -4689,7 +5055,15 @@ opal.logout(erasmus_opal)
 **R script**:  
 ```{r, echo=TRUE}
 
-#This is where the R-script will be written
+table(CoP4_Baseline$OWN_DWLG_COM) 
+
+soc_CLSA_cop_0$soc_res_type_0 <- ifelse(as.integer(CoP4_Baseline$OWN_DWLG_COM)==1 | as.integer(CoP4_Baseline$OWN_DWLG_COM)==6,2L, 
+                                                  ifelse(as.integer(CoP4_Baseline$OWN_DWLG_COM)==2,1L,
+                                                      ifelse(as.integer(CoP4_Baseline$OWN_DWLG_COM)==3 | as.integer(CoP4_Baseline$OWN_DWLG_COM==4),3L,
+                                                           ifelse(as.integer(CoP4_Baseline$OWN_DWLG_COM)==5 | as.integer(CoP4_Baseline$OWN_DWLG_COM)==97 |
+                                                                 (as.integer(CoP4_Baseline$OWN_DWLG_COM)>=7 & as.integer(CoP4_Baseline$OWN_DWLG_COM))<=12, 5L, NA))))
+
+table(soc_CLSA_cop_0$soc_res_type_0) 
 
 ```
 ### **Variable label**:  Residence type     
@@ -4712,7 +5086,15 @@ opal.logout(erasmus_opal)
 **R script**:  
 ```{r, echo=TRUE}
 
-#This is where the R-script will be written
+table(CoP_FU1$OWN_DWLG_COF1) 
+
+soc_CLSA_cop_1$soc_res_type_1 <- ifelse(as.integer(CoP_FU1$OWN_DWLG_COF1)==1 | as.integer(CoP_FU1$OWN_DWLG_COF1)==6,2L, 
+                                                  ifelse(as.integer(CoP_FU1$OWN_DWLG_COF1)==2,1L,
+                                                      ifelse(as.integer(CoP_FU1$OWN_DWLG_COF1)==3 | as.integer(CoP_FU1$OWN_DWLG_COF1)==4,3L,
+                                                           ifelse(as.integer(CoP_FU1$OWN_DWLG_COF1)==5 | as.integer(CoP_FU1$OWN_DWLG_COF1)==97 |
+                                                                 (as.integer(CoP_FU1$OWN_DWLG_COF1)>=7 & as.integer(CoP_FU1$OWN_DWLG_COF1)<=12), 5L, NA))))
+
+table(soc_CLSA_cop_1$soc_res_type_1) 
 
 ```
 ### **Variable label**:  Residence type     
@@ -4841,7 +5223,13 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   OWN_OWN_COM
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP4_Baseline$OWN_OWN_COM) 
+
+soc_CLSA_cop_0$soc_res_home_own_dich_0 <- ifelse(as.integer(CoP4_Baseline$OWN_OWN_COM) ==1,0L, 
+                                           ifelse(as.integer(CoP4_Baseline$OWN_OWN_COM) >=2 ,1L,NA))
+
+table(soc_CLSA_cop_0$soc_res_home_own_dich_0) 
+ summary(soc_CLSA_cop_0$soc_res_home_own_dich_0) 
 
 ```
 ### **Variable label**:  Home ownership (2-level)      
@@ -4860,8 +5248,13 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:  OWN_OWN_COF1 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(CoP_FU1$OWN_OWN_COF1) 
 
+soc_CLSA_cop_1$soc_res_home_own_dich_1 <- ifelse(as.integer(CoP_FU1$OWN_OWN_COF1) ==1,1L, 
+                                          ifelse(as.integer(CoP_FU1$OWN_OWN_COF1) ==2 ,0L,NA))
+
+table(soc_CLSA_cop_1$soc_res_home_own_dich_1) 
+summary(soc_CLSA_cop_1$soc_res_home_own_dich_1) 
 ```
 ### **Variable label**:  Home ownership (2-level)      
 **Variable name**:  soc_res_home_own_dich_2                     
@@ -4966,11 +5359,10 @@ opal.logout(erasmus_opal)
 2 |  Pays mortgage 
 3 |  Rents home 
 
-**Harmonization status**:  complete  
-**Harmonization comment**:   OWN_OWN_COM
+**Harmonization status**:  impossible   
+**Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
 
 ```
 ### **Variable label**:  Home ownership (3-level)      
@@ -4986,11 +5378,10 @@ opal.logout(erasmus_opal)
 2 |  Pays mortgage 
 3 |  Rents home 
 
-**Harmonization status**:  complete  
-**Harmonization comment**: OWN_OWN_COF1  
+**Harmonization status**:  impossible    
+**Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
 
 ```
 ### **Variable label**:  Home ownership (3-level)      
