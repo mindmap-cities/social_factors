@@ -1057,16 +1057,17 @@ soc_GLOBE_4$soc_sn_freq_nbhs_4 <- ifelse(GLOBE2014$G14v55==1|GLOBE2014$G14v55==2
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}
+table(GLOBE2014$G14v36,useNA = "always")
 
-soc_GLOBE_4$soc_sn_num_relatives_4 <- ifelse(GLOBE2014$G14v36=='0',1L, 
-                                                  ifelse(GLOBE2014$G14v36=='1' | GLOBE2014$G14v36=='2',2L,
-                                                      ifelse(GLOBE2014$G14v36>='3' & GLOBE2014$G14v36 <='5',3L,
-                                                           ifelse(GLOBE2014$G14v36>='6' & GLOBE2014$G14v36 <='10',4L,
-                                                                   ifelse(GLOBE2014$G14v36>='11' & GLOBE2014$G14v36 <='20',5L,
-                                                                          ifelse(GLOBE2014$G14v36>='21',6L, NA))))))
+soc_GLOBE_4$soc_sn_num_relatives_4 <- ifelse(GLOBE2014$G14v36==1,1L, 
+                                                  ifelse(GLOBE2014$G14v36==2,2L,
+                                                      ifelse(GLOBE2014$G14v36>=3 & GLOBE2014$G14v36 <=5,3L,
+                                                           ifelse(GLOBE2014$G14v36>=6 & GLOBE2014$G14v36 <=10,4L,
+                                                                   ifelse(GLOBE2014$G14v36>=11& GLOBE2014$G14v36 <=20,5L,
+                                                                          ifelse(GLOBE2014$G14v36>=21,6L, NA))))))
  
 
-
+table(soc_GLOBE_4$soc_sn_num_relatives_4,useNA = "always")
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_5    
@@ -2337,8 +2338,8 @@ soc_GLOBE_4$soc_sp_religious_4 <- ifelse(GLOBE2014$G14v56_e==1,1L,
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
@@ -2359,8 +2360,8 @@ soc_GLOBE_4$soc_sp_religious_4 <- ifelse(GLOBE2014$G14v56_e==1,1L,
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
@@ -2381,8 +2382,8 @@ soc_GLOBE_4$soc_sp_religious_4 <- ifelse(GLOBE2014$G14v56_e==1,1L,
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
@@ -2403,8 +2404,8 @@ soc_GLOBE_4$soc_sp_religious_4 <- ifelse(GLOBE2014$G14v56_e==1,1L,
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
@@ -2425,8 +2426,8 @@ soc_GLOBE_4$soc_sp_religious_4 <- ifelse(GLOBE2014$G14v56_e==1,1L,
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
@@ -2447,8 +2448,8 @@ soc_GLOBE_4$soc_sp_religious_4 <- ifelse(GLOBE2014$G14v56_e==1,1L,
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
@@ -2469,8 +2470,8 @@ soc_GLOBE_4$soc_sp_religious_4 <- ifelse(GLOBE2014$G14v56_e==1,1L,
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
@@ -3788,7 +3789,7 @@ soc_GLOBE_4$soc_sp_hobby_4 <- ifelse(GLOBE2014$G14v56_b =='1',1L,
 1 |  Socially isolated, no social network and no social participation 
 
 **Harmonization status**:  complete   
-**Harmonization comment**: 97% of respondents were categorized the same (as isolated or not isoldated) using either i) study available DataSchema social network variables (children, friends, neighbours, relatives) in addition to the general participation variable or ii) study available DataSchema social network - contact frequency variables (friends, neighbours, relatives, close relatived) in addition to the general participation variable. Approach ii) was chosen for the transformation of this DataSchema.       
+**Harmonization comment**: 97% of respondents were categorized the same (as isolated or not isoldated) using either i) study available DataSchema social network variables (children, friends, neighbours, relatives) in addition to the general participation variable or ii) study available DataSchema social network - contact frequency variables (friends, neighbours, relatives, close relatives) in addition to the general participation variable. Approach ii) was chosen for the transformation of this DataSchema.       
 **R script**:  
 ```{r, echo=TRUE}
 

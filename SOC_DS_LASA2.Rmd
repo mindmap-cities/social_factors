@@ -2697,10 +2697,10 @@ soc_LASA2_3$soc_sp_religious_3<- ifelse(LASA2H$HSOCPYN==1|LASA2H$HSOCP04==0|LASA
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
-5 |  No answer/donât know regarding participation in religious organization
+5 |  No answer/don’t know regarding participation in religious organization
 
 **Harmonization status**:  impossible  
 **Harmonization comment**:   
@@ -2719,10 +2719,10 @@ soc_LASA2_3$soc_sp_religious_3<- ifelse(LASA2H$HSOCPYN==1|LASA2H$HSOCP04==0|LASA
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
-5 |  No answer/donât know regarding participation in religious organization
+5 |  No answer/don’t know regarding participation in religious organization
 
 **Harmonization status**:  impossible  
 **Harmonization comment**:   
@@ -2741,10 +2741,10 @@ soc_LASA2_3$soc_sp_religious_3<- ifelse(LASA2H$HSOCPYN==1|LASA2H$HSOCP04==0|LASA
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
-5 |  No answer/donât know regarding participation in religious organization
+5 |  No answer/don’t know regarding participation in religious organization
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -2763,10 +2763,10 @@ soc_LASA2_3$soc_sp_religious_3<- ifelse(LASA2H$HSOCPYN==1|LASA2H$HSOCP04==0|LASA
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
-5 |  No answer/donât know regarding participation in religious organization
+5 |  No answer/don’t know regarding participation in religious organization
 
 **Harmonization status**:  impossible  
 **Harmonization comment**:   
@@ -2785,11 +2785,10 @@ soc_LASA2_3$soc_sp_religious_3<- ifelse(LASA2H$HSOCPYN==1|LASA2H$HSOCP04==0|LASA
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
-5 |  No answer/donât know regarding participation in religious organization
-
+5 |  No answer/don’t know regarding participation in religious organization
 **Harmonization status**:  impossible   
 **Harmonization comment**:   
 **R script**:  
@@ -2807,10 +2806,10 @@ soc_LASA2_3$soc_sp_religious_3<- ifelse(LASA2H$HSOCPYN==1|LASA2H$HSOCP04==0|LASA
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
-5 |  No answer/donât know regarding participation in religious organization
+5 |  No answer/don’t know regarding participation in religious organization
 
 **Harmonization status**:  impossible   
 **Harmonization comment**:   
@@ -2829,10 +2828,10 @@ soc_LASA2_3$soc_sp_religious_3<- ifelse(LASA2H$HSOCPYN==1|LASA2H$HSOCP04==0|LASA
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |  Weekly participation in religious organization 
-2 |  Less than monthly participation in religious organization
-3 |  Monthly participation in religious organization
+2 |  Monthly participation in religious organization
+3 |  Less than monthly participation in religious organization
 4 |  Never participates in religious organization
-5 |  No answer/donât know regarding participation in religious organization
+5 |  No answer/don’t know regarding participation in religious organization
 
 **Harmonization status**:  impossible   
 **Harmonization comment**:   
