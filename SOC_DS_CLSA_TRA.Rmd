@@ -5626,19 +5626,10 @@ summary(soc_CLSA_tra_1$soc_res_home_own_dich_1)
 2 |  Pays mortgage 
 3 |  Rents home 
 
-**Harmonization status**:  impossible? 
-**Harmonization comment**:  Study specific variable categories: own, no cost for dwelling, joint ownership (with other than spouse/common law partner) and  multiple - Own at one address and rent at another, were recoded as 'owns home.' Categories: leasehold and rent were coded as 'rents home.'Category answer 'Dwelling provided by employer' only included 11 participants, this was recoded as 'own home'. 
+**Harmonization status**:  impossible 
+**Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}
-
-# table(Tra3_4_Baseline$OWN_OWN_TRM) 
-# 
-# soc_CLSA_tra_0$soc_res_home_own_0 <- ifelse(Tra3_4_Baseline$OWN_OWN_TRM ==1 |Tra3_4_Baseline$OWN_OWN_TRM ==6|Tra3_4_Baseline$OWN_OWN_TRM ==7| Tra3_4_Baseline$OWN_OWN_TRM ==4| Tra3_4_Baseline$OWN_OWN_TRM ==4,1L, 
-#                                                 ifelse(Tra3_4_Baseline$OWN_OWN_TRM ==2|Tra3_4_Baseline$OWN_OWN_TRM ==3,3L, 
-#                                            ifelse(Tra3_4_Baseline$OWN_OWN_TRM >=3 & Tra3_4_Baseline$OWN_OWN_TRM <=97 ,2L,NA)))
-# 
-# table(soc_CLSA_tra_0$soc_res_home_own_0) 
-# summary(soc_CLSA_tra_0$soc_res_home_own_0)
 
 ```
 ### **Variable label**:  Home ownership (3-level)      
@@ -5654,19 +5645,11 @@ summary(soc_CLSA_tra_1$soc_res_home_own_dich_1)
 2 |  Pays mortgage 
 3 |  Rents home 
 
-**Harmonization status**:  impossible?
-**Harmonization comment**:  Study specific variable categories: own, no cost for dwelling, joint ownership (with other than spouse/common law partner) and  multiple - Own at one address and rent at another, were recoded as 'owns home.' Categories: leasehold and rent were coded as 'rents home.'Category answer 'Dwelling provided by employer' only included 11 participants, this was recoded as 'own home'. 
+**Harmonization status**: 
+**Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}
 
-# table(Tra_FU1$OWN_OWN_TRF1) 
-# 
-# soc_CLSA_tra_1$soc_res_home_own_1 <- ifelse(Tra_FU1$OWN_OWN_TRF1 ==1 |Tra_FU1$OWN_OWN_TRF1 ==6|Tra_FU1$OWN_OWN_TRF1 ==7| Tra_FU1$OWN_OWN_TRF1 ==4| Tra_FU1$OWN_OWN_TRF1 ==4,1L, 
-#                                                 ifelse(Tra_FU1$OWN_OWN_TRF1 ==2|Tra_FU1$OWN_OWN_TRF1 ==3,3L, 
-#                                            ifelse(Tra_FU1$OWN_OWN_TRF1 >=3 & Tra_FU1$OWN_OWN_TRF1 <=97 ,2L,NA)))
-# 
-# table(soc_CLSA_tra_1$soc_res_home_own_1) 
-# summary(soc_CLSA_tra_1$soc_res_home_own_1) 
 
 ```
 ### **Variable label**:  Home ownership (3-level)      
