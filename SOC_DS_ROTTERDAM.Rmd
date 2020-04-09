@@ -2365,16 +2365,11 @@ opal.logout(erasmus_opal)
 0 |  Does not participate in a religious organization   
 1 |  Does participate in a religious organization 
 
-**Harmonization status**:   complete  
+**Harmonization status**:   impossible    
 **Harmonization comment**:  Study specific variable only asks about visiting a church, mosque or tempel.  
 **R script**:  
 ```{r, echo=TRUE}
-table(ROTTERDAM_3$e6_EHAPPY54) 
 
-soc_ROTTERDAM_3$soc_sp_religious_3 <- ifelse(ROTTERDAM_3$e6_EHAPPY54==0, 0L,
-                                  ifelse(ROTTERDAM_3$e6_EHAPPY54==1, 1L, NA))
-
-table(soc_ROTTERDAM_3$soc_sp_religious_3) 
 ```
 ### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_4        

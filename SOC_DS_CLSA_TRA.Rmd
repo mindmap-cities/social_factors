@@ -421,18 +421,11 @@ summary(soc_CLSA_tra_1$soc_sn_num_friends_1)
 2 |  Once per month in-person contact with friends
 3 |  A few times per year, once per year or never in-person contact with friends  
 
-**Harmonization status**:  complete
+**Harmonization status**:  impossible  
 **Harmonization comment**:   Study specific variable asks about last get together with close friends outside of household.
 **R script**:  
 ```{r, echo=TRUE}
 
-soc_CLSA_tra_0$soc_sn_freq_friends_inperson_0 <- ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==1|Tra3_4_Baseline$SN_SEEFRND_TRM ==2,1L,
-                                                         ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==3,2L,
-                                                         ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==4|Tra3_4_Baseline$SN_SEEFRND_TRM ==5|Tra3_4_Baseline$SN_SEEFRND_TRM ==6,3L,
-                                                         NA)))
-
-table(soc_CLSA_tra_0$soc_sn_freq_friends_inperson_0)
-summary(soc_CLSA_tra_0$soc_sn_freq_friends_inperson_0)
 
 ``` 
 ### **Variable label**:   In-person contact frequency with friends        
@@ -448,17 +441,10 @@ summary(soc_CLSA_tra_0$soc_sn_freq_friends_inperson_0)
 2 |  Once per month in-person contact with friends
 3 |  A few times per year, once per year or never in-person contact with friends  
 
-**Harmonization status**:  complete
+**Harmonization status**:  impossible  
 **Harmonization comment**:   Study specific variable asks about last get together with close friends outside of household.
 **R script**:  
 ```{r, echo=TRUE}
-soc_CLSA_tra_1$soc_sn_freq_friends_inperson_1 <- ifelse(Tra_FU1$SN_SEEFRND_TRF1 ==1|Tra_FU1$SN_SEEFRND_TRF1 ==2,1L,
-                                                         ifelse(Tra_FU1$SN_SEEFRND_TRF1 ==3,2L,
-                                                         ifelse(Tra_FU1$SN_SEEFRND_TRF1 ==4|Tra_FU1$SN_SEEFRND_TRF1 ==5|Tra_FU1$SN_SEEFRND_TRF1 ==6,3L,
-                                                         NA)))
-
-table(soc_CLSA_tra_0$soc_sn_freq_friends_inperson_0)
-summary(soc_CLSA_tra_0$soc_sn_freq_friends_inperson_0)
 
 
 ``` 
@@ -535,15 +521,10 @@ summary(soc_CLSA_tra_0$soc_sn_freq_friends_inperson_0)
 2 |  Once per month contact with friends
 3 |  A few times per year, once per year or never contact with friends
 
-**Harmonization status**:  impossible?  
+**Harmonization status**:  impossible  
 **Harmonization comment**:   Study specific variable asks about last get together with close friends outside of household.
 **R script**:  
 ```{r, echo=TRUE}
-
-soc_CLSA_tra_0$soc_sn_freq_friends_0 <- ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==1|Tra3_4_Baseline$SN_SEEFRND_TRM ==2,1L,
-                                                         ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==3|Tra3_4_Baseline$SN_SEEFRND_TRM ==4,2L,
-                                                                 ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==5|Tra3_4_Baseline$SN_SEEFRND_TRM ==6,3L,
-                                                         NA)))
 
 ``` 
 ### **Variable label**:   Contact frequency with friends        
@@ -559,16 +540,11 @@ soc_CLSA_tra_0$soc_sn_freq_friends_0 <- ifelse(Tra3_4_Baseline$SN_SEEFRND_TRM ==
 2 |  Once per month contact with friends
 3 |  A few times per year, once per year or never contact with friends
 
-**Harmonization status**:  impossible ?
+**Harmonization status**:  impossible 
 **Harmonization comment**:   Study specific variable asks about last get together with close friends outside of household.    
 **R script**:  
 ```{r, echo=TRUE}
-soc_CLSA_tra_1$soc_sn_freq_friends_1 <- ifelse(Tra_FU1$SN_SEEFRND_TRF1 ==1|Tra_FU1$SN_SEEFRND_TRF1 ==2,1L,
-                                                         ifelse(Tra_FU1$SN_SEEFRND_TRF1 ==3|Tra_FU1$SN_SEEFRND_TRF1 ==4,2L,
-                                                                 ifelse(Tra_FU1$SN_SEEFRND_TRF1 ==5|Tra_FU1$SN_SEEFRND_TRF1 ==6,3L,
-                                                         NA)))
 
-table(soc_CLSA_tra_1$soc_sn_freq_friends_1)
 ``` 
 ### **Variable label**:   Contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_2       
@@ -690,17 +666,6 @@ table(soc_CLSA_tra_1$soc_sn_freq_friends_1)
 **Harmonization comment**:   The study-specific variable is:"How many of your neighbours do you know?"
 **R script**:  
 ```{r, echo=TRUE}
-# table(Tra3_4_Baseline$SN_NEIBR_NB_TRM, useNA="always") 
-# 
-# soc_CLSA_tra_0$soc_sn_num_children_0 <- ifelse(Tra3_4_Baseline$SN_NEIBR_NB_TRM==0,1L, 
-#                                                   ifelse(Tra3_4_Baseline$SN_NEIBR_NB_TRM==1 | Tra3_4_Baseline$SN_NEIBR_NB_TRM==2,2L,
-#                                                       ifelse(Tra3_4_Baseline$SN_NEIBR_NB_TRM>=3 & Tra3_4_Baseline$SN_NEIBR_NB_TRM <=5,3L,
-#                                                            ifelse(Tra3_4_Baseline$SN_NEIBR_NB_TRM>=6 & Tra3_4_Baseline$SN_NEIBR_NB_TRM <=10,4L,
-#                                                                    ifelse(Tra3_4_Baseline$SN_NEIBR_NB_TRM>=11 & Tra3_4_Baseline$SN_NEIBR_NB_TRM <=20,5L,
-#                                                                           ifelse(Tra3_4_Baseline$SN_NEIBR_NB_TRM>=21,6L, NA))))))
-# 
-# table(soc_CLSA_tra_0$soc_sn_num_children_0, useNA="always" )
-# summary(soc_CLSA_tra_0$soc_sn_num_children_0) 
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -723,17 +688,6 @@ table(soc_CLSA_tra_1$soc_sn_freq_friends_1)
 **Harmonization comment**:   The study-specific variable is:"How many of your neighbours do you know?"
 **R script**:  
 ```{r, echo=TRUE}
-# table(Tra_FU1$SN_NEIBR_NB_TRF1) 
-# 
-# soc_CLSA_tra_1$soc_sn_num_children_1 <- ifelse(Tra_FU1$SN_NEIBR_NB_TRF1==0,1L, 
-#                                                   ifelse(Tra_FU1$SN_NEIBR_NB_TRF1==1 | Tra_FU1$SN_NEIBR_NB_TRF1==2,2L,
-#                                                       ifelse(Tra_FU1$SN_NEIBR_NB_TRF1>=3 & Tra_FU1$SN_NEIBR_NB_TRF1 <=5,3L,
-#                                                            ifelse(Tra_FU1$SN_NEIBR_NB_TRF1>=6 & Tra_FU1$SN_NEIBR_NB_TRF1 <=10,4L,
-#                                                                    ifelse(Tra_FU1$SN_NEIBR_NB_TRF1>=11 & Tra_FU1$SN_NEIBR_NB_TRF1 <=20,5L,
-#                                                                           ifelse(Tra_FU1$SN_NEIBR_NB_TRF1>=21,6L, NA))))))
-# 
-# table(soc_CLSA_tra_1$soc_sn_num_children_1) 
-# summary(soc_CLSA_tra_1$soc_sn_num_children_1) 
 
 ``` 
 ### **Variable label**:   Network size of neighbours           
@@ -865,20 +819,10 @@ table(soc_CLSA_tra_1$soc_sn_freq_friends_1)
 2 |  Once per month contact with neighbours
 3 |  A few times per year, once per year or never contact with neighbours
 
-**Harmonization status**:  complete 
+**Harmonization status**:  impossible   
 **Harmonization comment**: Study specific variable asks about last get together with neighbours.   
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra3_4_Baseline$SN_SEENEIBR_TRM) 
-# 
-soc_CLSA_tra_0$soc_sn_freq_nbhs_0 <- ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==1|Tra3_4_Baseline$SN_SEENEIBR_TRM ==2,1L,
-                                                         ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==3,2L,
-                                                                 ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==5|
-                                                                        Tra3_4_Baseline$SN_SEENEIBR_TRM ==6|
-                                                                          Tra3_4_Baseline$SN_SEENEIBR_TRM ==4,3L,NA)))
-#                                                            
-table(soc_CLSA_tra_0$soc_sn_freq_nbhs_0) 
-# summary(soc_CLSA_tra_0$soc_sn_freq_nbhs_0) 
 
 ``` 
 ### **Variable label**:   Contact frequency with neighbours        
@@ -894,17 +838,12 @@ table(soc_CLSA_tra_0$soc_sn_freq_nbhs_0)
 2 |  Once per month contact with neighbours
 3 |  A few times per year, once per year or never contact with neighbours
 
-**Harmonization status**:  complete 
+**Harmonization status**:  impossible   
 **Harmonization comment**: Study specific variable asks about last get together with neighbours.    
 **R script**:  
 ```{r, echo=TRUE}
 
-soc_CLSA_tra_1$soc_sn_freq_nbhs_1 <- ifelse(Tra_FU1$SN_SEENEIBR_TRF1 ==1|Tra_FU1$SN_SEENEIBR_TRF1 ==2,1L,
-                                                         ifelse(Tra_FU1$SN_SEENEIBR_TRF1 ==3,2L,
-                                                                 ifelse(Tra_FU1$SN_SEENEIBR_TRF1 ==5|
-                                                                        Tra_FU1$SN_SEENEIBR_TRF1 ==6|
-                                                                          Tra_FU1$SN_SEENEIBR_TRF1 ==4,3L,NA)))
-table(soc_CLSA_tra_1$soc_sn_freq_nbhs_1) 
+
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -1014,17 +953,11 @@ table(soc_CLSA_tra_1$soc_sn_freq_nbhs_1)
 **Variable unit**: relatives     
 **Category coding**:   
 
-**Harmonization status**:  complete
+**Harmonization status**:  impossible 
 **Harmonization comment**:  Study specific variable asks about number of living relatives.  
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra3_4_Baseline$SN_RELLIV_NB_TRM) 
-#2805 respondents have 100 relatives? seems like bad data
 
-soc_CLSA_tra_0$soc_sn_num_relatives_0 <- as.numeric(Tra3_4_Baseline$SN_RELLIV_NB_TRM)
-
-table(soc_CLSA_tra_0$soc_sn_num_relatives_0) 
-summary(soc_CLSA_tra_0$soc_sn_num_relatives_0) 
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_1    
@@ -1033,16 +966,11 @@ summary(soc_CLSA_tra_0$soc_sn_num_relatives_0)
 **Variable unit**:  relatives    
 **Category coding**:   
 
-**Harmonization status**:  complete
+**Harmonization status**:  impossible  
 **Harmonization comment**:  Study specific variable asks about number of living relatives.    
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra_FU1$SN_RELLIV_NB_TRF1) 
 
-soc_CLSA_tra_1$soc_sn_num_relatives_1 <- as.numeric(Tra_FU1$SN_RELLIV_NB_TRF1)
-
-table(soc_CLSA_tra_1$soc_sn_num_relatives_1) 
-summary(soc_CLSA_tra_1$soc_sn_num_relatives_1) 
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_2    
@@ -1127,23 +1055,10 @@ summary(soc_CLSA_tra_1$soc_sn_num_relatives_1)
 2 |  Once per month contact with family
 3 |  A few times per year, once per year or never contact with family  
 
-**Harmonization status**:  complete
-**Harmonization comment**:   Study specific variables used in this harmonization ask about 1. last get together with relatives outside of household 2. last get together with children outside of household 3. last get together with siblings outside of household. Highest frequency for either item is picked as the contact frequency with close relatives. Caution: respondents are not asked how close they are to these relatives, siblings or children. 
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra3_4_Baseline$SN_SEECHILD_TRM, useNA="always")
-table(Tra3_4_Baseline$SN_SEESIB_TRM, useNA="always")
-table(Tra3_4_Baseline$SN_SEEREL_TRM, useNA="always")
-
-soc_CLSA_tra_0$soc_sn_freq_close_relatives_0 <- ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM ==1 |Tra3_4_Baseline$SN_SEESIB_TRM ==1 |Tra3_4_Baseline$SN_SEEREL_TRM==1| 
-                                                          Tra3_4_Baseline$SN_SEECHILD_TRM ==2 |Tra3_4_Baseline$SN_SEESIB_TRM ==2 |Tra3_4_Baseline$SN_SEEREL_TRM==2,1L,
-                                                ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM==3 |Tra3_4_Baseline$SN_SEESIB_TRM==3|Tra3_4_Baseline$SN_SEEREL_TRM==3,2L,
-                                                ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM ==5 |Tra3_4_Baseline$SN_SEESIB_TRM ==5 |Tra3_4_Baseline$SN_SEEREL_TRM==5 |
-                                                   Tra3_4_Baseline$SN_SEECHILD_TRM ==6 |Tra3_4_Baseline$SN_SEESIB_TRM ==6|Tra3_4_Baseline$SN_SEEREL_TRM==6 |
-                                                       Tra3_4_Baseline$SN_SEECHILD_TRM==4 |Tra3_4_Baseline$SN_SEESIB_TRM==4 |Tra3_4_Baseline$SN_SEEREL_TRM==4,3L,NA)))
-
-table(soc_CLSA_tra_0$soc_sn_freq_close_relatives_0, useNA="always") 
-# summary(soc_CLSA_tra_0$soc_sn_freq_close_relatives_0)
 
 ```
 ### **Variable label**:   Contact frequency with family     
@@ -1159,19 +1074,10 @@ table(soc_CLSA_tra_0$soc_sn_freq_close_relatives_0, useNA="always")
 2 |  Once per month contact with family
 3 |  A few times per year, once per year or never contact with family  
 
-**Harmonization status**:  complete
-**Harmonization comment**:   Study specific variables used in this harmonization ask about 1. last get together with relatives outside of household 2. last get together with children outside of household 3. last get together with siblings outside of household. Highest frequency for either item is picked as the contact frequency with close relatives. Caution: respondents are not asked how close they are to these relatives, siblings or children.   
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}
-soc_CLSA_tra_1$soc_sn_freq_close_relatives_1 <- ifelse(Tra_FU1$SN_SEECHILD_TRF1 ==1 |Tra_FU1$SN_SEESIB_TRF1==1 |Tra_FU1$SN_SEEREL_TRF1==1| 
-                                                          Tra_FU1$SN_SEECHILD_TRF1  ==2 |Tra_FU1$SN_SEESIB_TRF1 ==2 |Tra_FU1$SN_SEEREL_TRF1==2,1L,
-                                                ifelse(Tra_FU1$SN_SEECHILD_TRF1 ==3 |Tra_FU1$SN_SEESIB_TRF1==3|Tra_FU1$SN_SEEREL_TRF1==3,2L,
-                                                ifelse(Tra_FU1$SN_SEECHILD_TRF1  ==5 |Tra_FU1$SN_SEESIB_TRF1==5 |Tra_FU1$SN_SEEREL_TRF1==5 |
-                                                      Tra_FU1$SN_SEECHILD_TRF1  ==6 |Tra_FU1$SN_SEESIB_TRF1 ==6|Tra_FU1$SN_SEEREL_TRF1==6 |
-                                                      Tra_FU1$SN_SEECHILD_TRF1 ==4 |Tra_FU1$SN_SEESIB_TRF1==4 |Tra_FU1$SN_SEEREL_TRF1==4,3L,NA)))
-
-
-table(soc_CLSA_tra_1$soc_sn_freq_close_relatives_1) 
 
 ```
 ### **Variable label**:   Contact frequency with family    
@@ -1288,23 +1194,10 @@ table(soc_CLSA_tra_1$soc_sn_freq_close_relatives_1)
 2 |  Once per month contact with relatives
 3 |  A few times per year, once per year or never contact with relatives  
 
-**Harmonization status**:  complete
-**Harmonization comment**:   Study specific variables used in this harmonization ask about 1. last get together with relatives outside of household 2. last get together with children outside of household 3. last get together with siblings outside of household. Highest frequency for either item is picked as the contact frequency with close relatives. 
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}
-
-# table(Tra3_4_Baseline$SN_SEECHILD_TRM) 
-# table(Tra3_4_Baseline$SN_SEESIB_TRM) 
-# table(Tra3_4_Baseline$SN_SEEREL_TRM) 
-# 
-soc_CLSA_tra_0$soc_sn_freq_relatives_0 <- ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM ==1 |Tra3_4_Baseline$SN_SEESIB_TRM ==1 |Tra3_4_Baseline$SN_SEEREL_TRM==1| 
-                                                 Tra3_4_Baseline$SN_SEECHILD_TRM ==2 |Tra3_4_Baseline$SN_SEESIB_TRM ==2|Tra3_4_Baseline$SN_SEEREL_TRM==2,1L,
-                                          ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM==3 |Tra3_4_Baseline$SN_SEESIB_TRM==3|Tra3_4_Baseline$SN_SEEREL_TRM==3,2L,
-                                          ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM ==5 |Tra3_4_Baseline$SN_SEESIB_TRM ==5|Tra3_4_Baseline$SN_SEEREL_TRM==5 |
-                                                   Tra3_4_Baseline$SN_SEECHILD_TRM ==6 |Tra3_4_Baseline$SN_SEESIB_TRM ==6 |Tra3_4_Baseline$SN_SEEREL_TRM==6|
-                                                   Tra3_4_Baseline$SN_SEECHILD_TRM==4 |Tra3_4_Baseline$SN_SEESIB_TRM==4|Tra3_4_Baseline$SN_SEEREL_TRM==4,3L,NA)))
- table(soc_CLSA_tra_0$soc_sn_freq_relatives_0) 
-# summary(soc_CLSA_tra_0$soc_sn_freq_relatives_0) 
 
 ```
 ### **Variable label**:   Contact frequency with relatives      
@@ -1320,21 +1213,10 @@ soc_CLSA_tra_0$soc_sn_freq_relatives_0 <- ifelse(Tra3_4_Baseline$SN_SEECHILD_TRM
 2 |  Once per month contact with relatives
 3 |  A few times per year, once per year or never contact with relatives  
 
-**Harmonization status**:  complete
-**Harmonization comment**:   Study specific variables used in this harmonization ask about 1. last get together with relatives outside of household 2. last get together with children outside of household 3. last get together with siblings outside of household. Highest frequency for either item is picked as the contact frequency with close relatives.    
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-soc_CLSA_tra_1$soc_sn_freq_relatives_1 <- ifelse(Tra_FU1$SN_SEECHILD_TRF1 ==1 |Tra_FU1$SN_SEESIB_TRF1==1 |Tra_FU1$SN_SEEREL_TRF1==1| 
-                                                          Tra_FU1$SN_SEECHILD_TRF1  ==2 |Tra_FU1$SN_SEESIB_TRF1 ==2 |Tra_FU1$SN_SEEREL_TRF1==2,1L,
-                                                ifelse(Tra_FU1$SN_SEECHILD_TRF1 ==3 |Tra_FU1$SN_SEESIB_TRF1==3|Tra_FU1$SN_SEEREL_TRF1==3,2L,
-                                                ifelse(Tra_FU1$SN_SEECHILD_TRF1  ==5 |Tra_FU1$SN_SEESIB_TRF1==5 |Tra_FU1$SN_SEEREL_TRF1==5 |
-                                                      Tra_FU1$SN_SEECHILD_TRF1  ==6 |Tra_FU1$SN_SEESIB_TRF1 ==6|Tra_FU1$SN_SEEREL_TRF1==6 |
-                                                       Tra_FU1$SN_SEECHILD_TRF1 ==4 |Tra_FU1$SN_SEESIB_TRF1==4 |Tra_FU1$SN_SEEREL_TRF1==4,3L,NA)))
-
-
-table(soc_CLSA_tra_1$soc_sn_freq_relatives_1) 
-
-
 
 ```
 ### **Variable label**:   Contact frequency with relatives     
@@ -1447,7 +1329,6 @@ table(soc_CLSA_tra_1$soc_sn_freq_relatives_1)
 **Harmonization status**:  complete 
 **Harmonization comment**:  Study specific variables added to obtain this DataSchema are: number of close friends, number of neighbours, number of people known through community involvement. 
 ```{r, echo=TRUE}
-# did not add step children, or adopted children or partner's children,in retrospect maybe would have been fine? 
 table(Tra3_4_Baseline$SN_FRND_NB_TRM)
 soc_CLSA_tra_0$soc_sn_num_nonkin_0 <- as.integer((Tra3_4_Baseline$SN_FRND_NB_TRM) + (Tra3_4_Baseline$SN_NEIBR_NB_TRM)+ (Tra3_4_Baseline$SN_PERCOM_NB_TRM)) 
 
@@ -1556,23 +1437,11 @@ summary(soc_CLSA_tra_1$soc_sn_num_nonkin_1)
 2 |  Once per month contact with non-kin members
 3 |  A few times per year, once per year or never contact with non-kin members    
 
-**Harmonization status**:  complete
-**Harmonization comment**: Study specific variables added to obtain this DataSchema are: last get together with neighbours and last get together with close friends outside of household. 
+**Harmonization status**:  impossible  
+**Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra3_4_Baseline$SN_SEENEIBR_TRM) 
-table(Tra3_4_Baseline$SN_SEEFRND_TRM) 
 
-
-soc_CLSA_tra_0$soc_sn_freq_nonkin_0 <- ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==1 |Tra3_4_Baseline$SN_SEEFRND_TRM ==1|
-                                              Tra3_4_Baseline$SN_SEENEIBR_TRM ==2 |Tra3_4_Baseline$SN_SEEFRND_TRM ==2,1L, 
-                                       ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM==3  |Tra3_4_Baseline$SN_SEEFRND_TRM==3,2L, 
-                                       ifelse(Tra3_4_Baseline$SN_SEENEIBR_TRM ==5 |Tra3_4_Baseline$SN_SEEFRND_TRM ==5 | 
-                                              Tra3_4_Baseline$SN_SEENEIBR_TRM ==6 |Tra3_4_Baseline$SN_SEEFRND_TRM ==6|
-                                              Tra3_4_Baseline$SN_SEENEIBR_TRM==4  |Tra3_4_Baseline$SN_SEEFRND_TRM==4 ,3L, NA)))
-                                                           
-table(soc_CLSA_tra_0$soc_sn_freq_nonkin_0) 
-summary(soc_CLSA_tra_0$soc_sn_freq_nonkin_0) 
 ```
 ### **Variable label**:   Contact frequency with non-kin  
 **Variable name**:   soc_sn_freq_nonkin_1            
@@ -1587,18 +1456,10 @@ summary(soc_CLSA_tra_0$soc_sn_freq_nonkin_0)
 2 |  Once per month contact with non-kin members
 3 |  A few times per year, once per year or never contact with non-kin members    
 
-**Harmonization status**:  complete
+**Harmonization status**:  impossible  
 **Harmonization comment**: Study specific variables added to obtain this DataSchema are: last get together with neighbours and last get together with close friends outside of household.   
 **R script**:  
 ```{r, echo=TRUE}
-soc_CLSA_tra_1$soc_sn_freq_nonkin_1 <- ifelse(Tra_FU1$SN_SEENEIBR_TRF1==1 |Tra_FU1$SN_SEEFRND_TRF1 ==1|
-                                              Tra_FU1$SN_SEENEIBR_TRF1 ==2 |Tra_FU1$SN_SEEFRND_TRF1 ==2,1L, 
-                                       ifelse(Tra_FU1$SN_SEENEIBR_TRF1==3  |Tra_FU1$SN_SEEFRND_TRF1==3,2L, 
-                                       ifelse(Tra_FU1$SN_SEENEIBR_TRF1 ==5 |Tra_FU1$SN_SEEFRND_TRF1 ==5 | 
-                                              Tra_FU1$SN_SEENEIBR_TRF1 ==6 |Tra_FU1$SN_SEEFRND_TRF1 ==6|
-                                              Tra_FU1$SN_SEENEIBR_TRF1==4  |Tra_FU1$SN_SEEFRND_TRF1==4 ,3L, NA)))
-                                                           
-table(soc_CLSA_tra_1$soc_sn_freq_nonkin_1) 
 
 
 ```
@@ -2301,19 +2162,10 @@ summary(soc_CLSA_tra_1$soc_ss_perceived_instru_1)
 0 |  Does not participate in a religious organization   
 1 |  Does participate in a religious organization 
 
-**Harmonization status**:  complete 
-**Harmonization comment**:  Study specific variable used asks about 'Frequency of participation in religious activities (past 12 months).' Answer category 'never' is coded as 'Does not participate in a religious organization.'   
+**Harmonization status**:  impossible   
+**Harmonization comment**:  Study specific variable asks 'In the past 12 months, how often did you participate in Church or religious activities such as services, committees or choirs'.   
 **R script**:  
 ```{r, echo=TRUE}
-#SPA_CHRCH_TRM never participates = does not, all others code as participates
-
-table(Tra3_4_Baseline$SPA_CHRCH_TRM) 
-
-soc_CLSA_tra_0$soc_sp_religious_0 <- ifelse(Tra3_4_Baseline$SPA_CHRCH_TRM ==5,0L, 
-                                                  ifelse(Tra3_4_Baseline$SPA_CHRCH_TRM <5,1L,NA))
-                                                           
-table(soc_CLSA_tra_0$soc_sp_religious_0) 
-summary(soc_CLSA_tra_0$soc_sp_religious_0) 
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2328,18 +2180,12 @@ summary(soc_CLSA_tra_0$soc_sp_religious_0)
 0 |  Does not participate in a religious organization   
 1 |  Does participate in a religious organization  
 
-**Harmonization status**:  complete 
-**Harmonization comment**:  Study specific variable used asks about 'Frequency of participation in religious activities (past 12 months).' Answer category 'never' is coded as 'Does not participate in a religious organization.'     
+**Harmonization status**:  impossible   
+**Harmonization comment**:  Study specific variable asks 'In the past 12 months, how often did you participate in Church or religious activities such as services, committees or choirs'.   
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra_FU1$SPA_CHRCH_TRF1) 
-
-soc_CLSA_tra_1$soc_sp_religious_1 <- ifelse(Tra_FU1$SPA_CHRCH_TRF1 ==5,0L, 
-                                                  ifelse(Tra_FU1$SPA_CHRCH_TRF1 <5,1L,NA))
-                                                           
-table(soc_CLSA_tra_1$soc_sp_religious_1) 
-summary(soc_CLSA_tra_1$soc_sp_religious_1) 
 ```
+
 ### **Variable label**:  Religious participation 
 **Variable name**:  soc_sp_religious_2        
 **Variable description**:  Indicator of participation in a religious organization.      
@@ -2451,21 +2297,11 @@ summary(soc_CLSA_tra_1$soc_sp_religious_1)
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
-**Harmonization status**:  complete
+**Harmonization status**:  impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
 
-table(Tra3_4_Baseline$SPA_CHRCH_TRM) 
-#?? categoties 3&4 doesn't make sense
-soc_CLSA_tra_0$soc_sp_freq_religious_0 <- ifelse(Tra3_4_Baseline$SPA_CHRCH_TRM ==1 |Tra3_4_Baseline$SPA_CHRCH_TRM ==2, 1L,
-                                           ifelse(Tra3_4_Baseline$SPA_CHRCH_TRM ==3 , 2L, 
-                                           ifelse(Tra3_4_Baseline$SPA_CHRCH_TRM ==4 , 3L,
-                                             ifelse(Tra3_4_Baseline$SPA_CHRCH_TRM ==5 , 4L,
-                                                  ifelse(Tra3_4_Baseline$SPA_CHRCH_TRM >=6 ,5L,NA)))))
-                                                           
-table(soc_CLSA_tra_0$soc_sp_freq_religious_0) 
-summary(soc_CLSA_tra_0$soc_sp_freq_religious_0) 
 ```
 ### **Variable label**:  Frequency of religious participation 
 **Variable name**:  soc_sp_freq_religious_1        
@@ -2482,20 +2318,11 @@ summary(soc_CLSA_tra_0$soc_sp_freq_religious_0)
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
-**Harmonization status**:  complete   
+**Harmonization status**:  impossible     
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra_FU1$SPA_CHRCH_TRF1) 
 
-soc_CLSA_tra_1$soc_sp_freq_religious_1 <- ifelse(Tra_FU1$SPA_CHRCH_TRF1 ==1 |Tra_FU1$SPA_CHRCH_TRF1 ==2, 1L,
-                                           ifelse(Tra_FU1$SPA_CHRCH_TRF1 ==3 , 2L, 
-                                           ifelse(Tra_FU1$SPA_CHRCH_TRF1 ==4 , 3L,
-                                             ifelse(Tra_FU1$SPA_CHRCH_TRF1 ==5 , 4L,
-                                                  ifelse(Tra_FU1$SPA_CHRCH_TRF1 >=6 ,5L,NA)))))
-                                                           
-table(soc_CLSA_tra_1$soc_sp_freq_religious_1) 
-summary(soc_CLSA_tra_1$soc_sp_freq_religious_1) 
 ```
 ### **Variable label**:  Frequency of religious participation 
 **Variable name**:  soc_sp_freq_religious_2        
@@ -3901,18 +3728,11 @@ summary(soc_CLSA_tra_1$soc_sp_hobby_1)
 0 |  Not socially isolated, has social network and/ or social participation 
 1 |  Socially isolated, no social network and no social participation 
 
-**Harmonization status**:  complete    
-**Harmonization comment**:   Used same approach as in the harmonization of GLOBE and LASA data: utilized study available DataSchema social network - contact frequency variables (friends, neighbours, relatives, family and non-kin) in addition to the general participation variable, no contact with these different types of social network members and no participation was categorized as socially isolated. Having one or more of these types of members (in addition to children) in their network and reporting social participation was categorized as not socially isolated.    
+**Harmonization status**:  impossible      
+**Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}
 
-soc_CLSA_tra_0$soc_sp_isolation_0 <- ifelse((soc_CLSA_tra_0$soc_sn_freq_friends_0 == 3| soc_CLSA_tra_0$soc_sn_freq_nbhs_0 ==3|     
-                                               soc_CLSA_tra_0$soc_sn_freq_close_relatives_0 ==3 | soc_CLSA_tra_0$soc_sn_freq_relatives_0 ==3|
-                                               soc_CLSA_tra_0$soc_sn_freq_nonkin_0==3) & soc_CLSA_tra_0$soc_sp_general_0 == 0,1L,
-                                    ifelse((soc_CLSA_tra_0$soc_sn_freq_friends_0 >= 1 | soc_CLSA_tra_0$soc_sn_freq_nbhs_0 >= 1 | 
-                                               soc_CLSA_tra_0$soc_sn_freq_close_relatives_0 >= 1 | soc_CLSA_tra_0$soc_sn_freq_relatives_0 >= 1) & 
-                                               soc_CLSA_tra_0$soc_sn_freq_nonkin_0 == 1, 0L, NA ))
-table(soc_CLSA_tra_0$soc_sp_isolation_0, useNA="always")
 
 ```
 ### **Variable label**:  Social isolation    
@@ -3927,20 +3747,10 @@ table(soc_CLSA_tra_0$soc_sp_isolation_0, useNA="always")
 0 |  Not socially isolated, has social network and/ or social participation 
 1 |  Socially isolated, no social network and no social participation 
 
-**Harmonization status**:  complete    
-**Harmonization comment**:   Used same approach as in the harmonization of GLOBE and LASA data: utilized study available DataSchema social network - contact frequency variables (friends, neighbours, relatives, family and non-kin) in addition to the general participation variable, no contact with these different types of social network members and no participation was categorized as socially isolated. Having one or more of these types of members (in addition to children) in their network and reporting social participation was categorized as not socially isolated.    
+**Harmonization status**:  impossible      
+**Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-soc_CLSA_tra_1$soc_sp_isolation_1 <- ifelse((soc_CLSA_tra_1$soc_sn_freq_friends_1 == 3 | soc_CLSA_tra_1$soc_sn_freq_nbhs_1 ==3 |  
-                                               soc_CLSA_tra_1$soc_sn_freq_close_relatives_1 ==3 | soc_CLSA_tra_1$soc_sn_freq_relatives_1 ==3
-                                             |soc_CLSA_tra_1$soc_sn_freq_nonkin_1==3) 
-                                            & soc_CLSA_tra_1$soc_sp_general_1 == 0,1L,
-                                   ifelse((soc_CLSA_tra_1$soc_sn_freq_friends_1 >= 1 | 
-                                           soc_CLSA_tra_1$soc_sn_freq_nbhs_1 >= 1 | soc_CLSA_tra_1$soc_sn_freq_close_relatives_1 >= 1 |
-                                           soc_CLSA_tra_1$soc_sn_freq_relatives_1 >= 1) & soc_CLSA_tra_1$soc_sn_freq_nonkin_1 == 1, 0L, NA ))
-
- table(soc_CLSA_tra_1$soc_sp_isolation_1, useNA="always")
-
 
 ```
 ### **Variable label**:  Social isolation    
