@@ -1217,17 +1217,12 @@ summary(soc_LASA2_3$soc_sn_freq_nbhs_3)
 2 |  Once per month contact with family
 3 |  A few times per year, once per year or never contact with family   
 
-**Harmonization status**:  complete
-**Harmonization comment**:  Study specific variable uses highest contact frequency reported with any family member and it includes the following types of social network members which might live in the household: partner, child (biological, of partner, step, adoptive, child-in-law, sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin).    
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2B$familycf) 
-summary(LASA2B$familycf)
-soc_LASA2_0$soc_sn_freq_close_relatives_0 <- as.integer(LASA2B$familycf)
-soc_LASA2_0$soc_sn_freq_close_relatives_0 <- car::recode(soc_LASA2_0$soc_sn_freq_close_relatives_0, "4=3L; 3=2L; 2=1L; 1=1L")
 
-table(soc_LASA2_0$soc_sn_freq_close_relatives_0) 
-summary(soc_LASA2_0$soc_sn_freq_close_relatives_0) 
+
 ```
 ### **Variable label**:   Contact frequency with family     
 **Variable name**:   soc_sn_freq_close_relatives_1    
@@ -1242,17 +1237,12 @@ summary(soc_LASA2_0$soc_sn_freq_close_relatives_0)
 2 |  Once per month contact with family
 3 |  A few times per year, once per year or never contact with family    
 
-**Harmonization status**:  complete
-**Harmonization comment**:  Study specific variable uses highest contact frequency reported with any family member and it includes the following types of social network members which might live in the household: partner, child (biological, of partner, step, adoptive, child-in-law, sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin).   
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2F$familycf) 
-summary(LASA2F$familycf)
-soc_LASA2_1$soc_sn_freq_close_relatives_1 <- as.integer(LASA2F$familycf)
-soc_LASA2_1$soc_sn_freq_close_relatives_1 <- car::recode(soc_LASA2_1$soc_sn_freq_close_relatives_1, "4=3L; 3=2L; 2=1L; 1=1L")
- 
-table(soc_LASA2_1$soc_sn_freq_close_relatives_1) 
-summary(soc_LASA2_1$soc_sn_freq_close_relatives_1)
+
+
 ```
 ### **Variable label**:   Contact frequency with family    
 **Variable name**:   soc_sn_freq_close_relatives_2    
@@ -1267,17 +1257,12 @@ summary(soc_LASA2_1$soc_sn_freq_close_relatives_1)
 2 |  Once per month contact with family
 3 |  A few times per year, once per year or never contact with family       
 
-**Harmonization status**:  complete
-**Harmonization comment**:  Study specific variable uses highest contact frequency reported with any family member and it includes the following types of social network members which might live in the household: partner, child (biological, of partner, step, adoptive, child-in-law, sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin).   
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2G$familycf) 
-summary(LASA2G$familycf)
-soc_LASA2_2$soc_sn_freq_close_relatives_2 <- as.integer(LASA2G$familycf)
-soc_LASA2_2$soc_sn_freq_close_relatives_2 <- car::recode(soc_LASA2_2$soc_sn_freq_close_relatives_2, "4=3L; 3=2L; 2=1L; 1=1L")
- 
-table(soc_LASA2_2$soc_sn_freq_close_relatives_2) 
-summary(soc_LASA2_2$soc_sn_freq_close_relatives_2)
+
+
 ```
 ### **Variable label**:   Contact frequency with family    
 **Variable name**:   soc_sn_freq_close_relatives_3      
@@ -1292,17 +1277,12 @@ summary(soc_LASA2_2$soc_sn_freq_close_relatives_2)
 2 |  Once per month contact with family
 3 |  A few times per year, once per year or never contact with family     
 
-**Harmonization status**:  complete
-**Harmonization comment**:  Study specific variable uses highest contact frequency reported with any family member and it includes the following types of social network members which might live in the household: partner, child (biological, of partner, step, adoptive, child-in-law, sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin).  
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2H$familycf) 
-summary(LASA2H$familycf)
-soc_LASA2_3$soc_sn_freq_close_relatives_3 <- as.integer(LASA2H$familycf)
-soc_LASA2_3$soc_sn_freq_close_relatives_3 <- car::recode(soc_LASA2_3$soc_sn_freq_close_relatives_3, "4=3L; 3=2L; 2=1L; 1=1L")
- 
-table(soc_LASA2_3$soc_sn_freq_close_relatives_3) 
-summary(soc_LASA2_3$soc_sn_freq_close_relatives_3)
+
+
 ```
 ### **Variable label**:   Contact frequency with family   
 **Variable name**:   soc_sn_freq_close_relatives_4      
@@ -1378,16 +1358,11 @@ summary(soc_LASA2_3$soc_sn_freq_close_relatives_3)
 2 |  Once per month contact with relatives
 3 |  A few times per year, once per year or never contact with relatives  
 
-**Harmonization status**:  complete
-**Harmonization comment**:   Study specific variable uses highest contact frequency reported with any relative and it includes the following types of social network members : partner and child (biological, of partner, step, adoptive, child-in-law), which do not live in the household, sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin). **R script**:  
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
 ```{r, echo=TRUE}
-table(LASA2B$relativescf) 
-summary(LASA2B$relativescf)
-soc_LASA2_0$soc_sn_freq_relatives_0 <- as.integer(LASA2B$relativescf)
-soc_LASA2_0$soc_sn_freq_relatives_0 <- car::recode(soc_LASA2_0$soc_sn_freq_relatives_0, "4=3L; 3=2L; 2=1L; 1=1L")
- 
-table(soc_LASA2_0$soc_sn_freq_relatives_0) 
-summary(soc_LASA2_0$soc_sn_freq_relatives_0) 
+
 
 ```
 ### **Variable label**:   Contact frequency with relatives      
@@ -1403,16 +1378,12 @@ summary(soc_LASA2_0$soc_sn_freq_relatives_0)
 2 |  Once per month contact with relatives
 3 |  A few times per year, once per year or never contact with relatives  
 
-**Harmonization status**:  complete
-**Harmonization comment**:   Study specific variable uses highest contact frequency reported with any relative and it includes the following types of social network members : partner and child (biological, of partner, step, adoptive, child-in-law), which do not live in the household, sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin). **R script**:  
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
+**R script**:  
 ```{r, echo=TRUE}
-table(LASA2F$relativescf) 
-summary(LASA2F$relativescf)
-soc_LASA2_1$soc_sn_freq_relatives_1 <- as.integer(LASA2F$relativescf)
-soc_LASA2_1$soc_sn_freq_relatives_1 <- car::recode(soc_LASA2_1$soc_sn_freq_relatives_1, "4=3L; 3=2L; 2=1L; 1=1L")
- 
-table(soc_LASA2_1$soc_sn_freq_relatives_1) 
-summary(soc_LASA2_1$soc_sn_freq_relatives_1) 
+
+
 ```
 ### **Variable label**:   Contact frequency with relatives     
 **Variable name**:   soc_sn_freq_relatives_2          
@@ -1427,17 +1398,12 @@ summary(soc_LASA2_1$soc_sn_freq_relatives_1)
 2 |  Once per month contact with relatives
 3 |  A few times per year, once per year or never contact with relatives  
 
-**Harmonization status**:  complete
-**Harmonization comment**:   Study specific variable uses highest contact frequency reported with any relative and it includes the following types of social network members : partner and child (biological, of partner, step, adoptive, child-in-law), which do not live in the household, sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin). 
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2G$relativescf) 
-summary(LASA2G$relativescf)
-soc_LASA2_2$soc_sn_freq_relatives_2 <- as.integer(LASA2G$relativescf)
-soc_LASA2_2$soc_sn_freq_relatives_2 <- car::recode(soc_LASA2_2$soc_sn_freq_relatives_2, "4=3L; 3=2L; 2=1L; 1=1L")
- 
-table(soc_LASA2_2$soc_sn_freq_relatives_2) 
-summary(soc_LASA2_2$soc_sn_freq_relatives_2) 
+
+
 ```
 ### **Variable label**:   Contact frequency with relatives    
 **Variable name**:   soc_sn_freq_relatives_3          
@@ -1452,17 +1418,12 @@ summary(soc_LASA2_2$soc_sn_freq_relatives_2)
 2 |  Once per month contact with relatives
 3 |  A few times per year, once per year or never contact with relatives    
 
-**Harmonization status**:  complete
-**Harmonization comment**:   Study specific variable uses highest contact frequency reported with any relative and it includes the following types of social network members : partner and child (biological, of partner, step, adoptive, child-in-law), which do not live in the household, sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin). 
+**Harmonization status**:  impossible  
+**Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2H$relativescf) 
-summary(LASA2H$relativescf)
-soc_LASA2_3$soc_sn_freq_relatives_3 <- as.integer(LASA2H$relativescf)
-soc_LASA2_3$soc_sn_freq_relatives_3 <- car::recode(soc_LASA2_3$soc_sn_freq_relatives_3, "4=3L; 3=2L; 2=1L; 1=1L")
- 
-table(soc_LASA2_3$soc_sn_freq_relatives_3) 
-summary(soc_LASA2_3$soc_sn_freq_relatives_3)
+
+
 ```
 ### **Variable label**:   Contact frequency with relatives    
 **Variable name**:   soc_sn_freq_relatives_4          
