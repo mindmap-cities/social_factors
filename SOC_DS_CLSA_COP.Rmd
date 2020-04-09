@@ -403,18 +403,10 @@ summary(soc_CLSA_cop_1$soc_sn_num_friends_1)
 2 |  Once per month in-person contact with friends
 3 |  A few times per year, once per year or never in-person contact with friends  
 
-**Harmonization status**:  complete
+**Harmonization status**:  impossible  
 **Harmonization comment**:   Study specific variable asks about last get together with close friends outside of household.
 **R script**:  
 ```{r, echo=TRUE}
-soc_CLSA_cop_0$soc_sn_freq_friends_inperson_0 <- ifelse(CoP4_Baseline$SN_SEEFRND_COM ==1|CoP4_Baseline$SN_SEEFRND_COM ==2,1L,
-                                                         ifelse(CoP4_Baseline$SN_SEEFRND_COM ==3,2L,
-                                                         ifelse(CoP4_Baseline$SN_SEEFRND_COM ==4|CoP4_Baseline$SN_SEEFRND_COM ==5|
-                                                                CoP4_Baseline$SN_SEEFRND_COM ==6,3L,
-                                                         NA)))
-
-table(soc_CLSA_cop_0$soc_sn_freq_friends_inperson_0)
-summary(soc_CLSA_cop_0$soc_sn_freq_friends_inperson_0)
 
 ``` 
 ### **Variable label**:   In-person contact frequency with friends        
@@ -430,18 +422,11 @@ summary(soc_CLSA_cop_0$soc_sn_freq_friends_inperson_0)
 2 |  Once per month in-person contact with friends
 3 |  A few times per year, once per year or never in-person contact with friends  
 
-**Harmonization status**:  complete
+**Harmonization status**:  impossible  
 **Harmonization comment**:   Study specific variable asks about last get together with close friends outside of household. 
 **R script**:  
 ```{r, echo=TRUE}
-table(CoP_FU1$SN_SEEFRND_COF1,useNA="always")
-soc_CLSA_cop_1$soc_sn_freq_friends_inperson_1 <- ifelse(CoP_FU1$SN_SEEFRND_COF1 ==1|CoP_FU1$SN_SEEFRND_COF1 ==2,1L,
-                                                         ifelse(CoP_FU1$SN_SEEFRND_COF1 ==3,2L,
-                                                         ifelse(CoP_FU1$SN_SEEFRND_COF1 ==4|CoP_FU1$SN_SEEFRND_COF1 ==5|
-                                                                CoP_FU1$SN_SEEFRND_COF1 ==6,3L, NA)))
 
-table(soc_CLSA_cop_0$soc_sn_freq_friends_inperson_0,useNA="always")
-summary(soc_CLSA_cop_0$soc_sn_freq_friends_inperson_0)
 
 ``` 
 ### **Variable label**:   In-person contact frequency with friends        
@@ -514,17 +499,10 @@ summary(soc_CLSA_cop_0$soc_sn_freq_friends_inperson_0)
 2 |  Once per month contact with friends
 3 |  A few times per year, once per year or never contact with friends
 
-**Harmonization status**:  impossible  ?
+**Harmonization status**:  impossible  
 **Harmonization comment**:   Study specific variable asks about last get together with close friends outside of household.  
 **R script**:  
 ```{r, echo=TRUE}
-table(CoP4_Baseline$SN_SEEFRND_COM, useNA="always")
-
-soc_CLSA_cop_0$soc_sn_freq_friends_0 <- ifelse(CoP4_Baseline$SN_SEEFRND_COM ==1|CoP4_Baseline$SN_SEEFRND_COM ==2,1L,
-                                                         ifelse(CoP4_Baseline$SN_SEEFRND_COM ==3|CoP4_Baseline$SN_SEEFRND_COM ==4,2L,
-                                                                 ifelse(CoP4_Baseline$SN_SEEFRND_COM ==5|CoP4_Baseline$SN_SEEFRND_COM ==6,3L,
-                                                         NA)))
-table(soc_CLSA_cop_0$soc_sn_freq_friends_0, useNA="always")
 ``` 
 ### **Variable label**:   Contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_1       
@@ -539,17 +517,10 @@ table(soc_CLSA_cop_0$soc_sn_freq_friends_0, useNA="always")
 2 |  Once per month contact with friends
 3 |  A few times per year, once per year or never contact with friends
 
-**Harmonization status**:  impossible  ?
+**Harmonization status**:  impossible  
 **Harmonization comment**:   Study specific variable asks about last get together with close friends outside of household.  
 **R script**:  
 ```{r, echo=TRUE}
-table(CoP_FU1$SN_SEEFRND_COF1, useNA="always")
-soc_CLSA_cop_1$soc_sn_freq_friends_1 <- ifelse(CoP_FU1$SN_SEEFRND_COF1 ==1|CoP_FU1$SN_SEEFRND_COF1 ==2,1L,
-                                                         ifelse(CoP_FU1$SN_SEEFRND_COF1 ==3|CoP_FU1$SN_SEEFRND_COF1 ==4,2L,
-                                                                 ifelse(CoP_FU1$SN_SEEFRND_COF1 ==5|CoP_FU1$SN_SEEFRND_COF1 ==6,3L, NA)))
-
-table(soc_CLSA_cop_1$soc_sn_freq_friends_1, useNA="always")
-
 ``` 
 ### **Variable label**:   Contact frequency with friends        
 **Variable name**:   soc_sn_freq_friends_2       
@@ -814,18 +785,10 @@ table(soc_CLSA_cop_1$soc_sn_freq_friends_1, useNA="always")
 2 |  Once per month contact with neighbours
 3 |  A few times per year, once per year or never contact with neighbours
 
-**Harmonization status**:  complete 
+**Harmonization status**:  impossible   
 **Harmonization comment**: Study specific variable asks about last get together with neighbours.  
 **R script**:  
 ```{r, echo=TRUE}
-table(soc_CLSA_cop_0$soc_sn_freq_nbhs_0, useNA="always")
-
-soc_CLSA_cop_0$soc_sn_freq_nbhs_0 <- ifelse(CoP4_Baseline$SN_SEENEIBR_COM ==1|CoP4_Baseline$SN_SEENEIBR_COM ==2,1L,
-                                                         ifelse(CoP4_Baseline$SN_SEENEIBR_COM ==3,2L,
-                                                                 ifelse(CoP4_Baseline$SN_SEENEIBR_COM ==5|
-                                                                        CoP4_Baseline$SN_SEENEIBR_COM ==6|
-                                                                          CoP4_Baseline$SN_SEENEIBR_COM ==4,3L,NA)))
-table(CoP4_Baseline$SN_SEENEIBR_COM, useNA="always")
 
 
 ``` 
@@ -842,18 +805,10 @@ table(CoP4_Baseline$SN_SEENEIBR_COM, useNA="always")
 2 |  Once per month contact with neighbours
 3 |  A few times per year, once per year or never contact with neighbours
 
-**Harmonization status**:  complete 
+**Harmonization status**:  impossible   
 **Harmonization comment**: Study specific variable asks about last get together with neighbours.    
 **R script**:  
 ```{r, echo=TRUE}
-table(CoP_FU1$SN_SEENEIBR_COF1, useNA="always") 
-
-soc_CLSA_cop_1$soc_sn_freq_nbhs_1 <- ifelse(CoP_FU1$SN_SEENEIBR_COF1 ==1|CoP_FU1$SN_SEENEIBR_COF1 ==2,1L,
-                                                         ifelse(CoP_FU1$SN_SEENEIBR_COF1 ==3,2L,
-                                                                 ifelse(CoP_FU1$SN_SEENEIBR_COF1 ==5|
-                                                                        CoP_FU1$SN_SEENEIBR_COF1 ==6|
-                                                                          CoP_FU1$SN_SEENEIBR_COF1 ==4,3L,NA)))
-table(soc_CLSA_cop_1$soc_sn_freq_nbhs_1, useNA="always") 
 
 ```
 ### **Variable label**:   Contact frequency with neighbours        
@@ -958,16 +913,10 @@ table(soc_CLSA_cop_1$soc_sn_freq_nbhs_1, useNA="always")
 **Variable unit**: relatives     
 **Category coding**:   
 
-**Harmonization status**:  complete  ?
+**Harmonization status**:  impossible  
 **Harmonization comment**: Study-specific variable SN_RELLIV_NB_COM is an indicator of the number of living relatives.    
 **R script**:  
 ```{r, echo=TRUE}
-table(CoP4_Baseline$SN_RELLIV_NB_COM) 
-
-soc_CLSA_cop_0$soc_sn_num_relatives_0 <- as.numeric(CoP4_Baseline$SN_RELLIV_NB_COM)
-
-table(soc_CLSA_cop_0$soc_sn_num_relatives_0) 
-summary(soc_CLSA_cop_0$soc_sn_num_relatives_0) 
 
 ```
 ### **Variable label**:   Network size of relatives      
@@ -977,16 +926,11 @@ summary(soc_CLSA_cop_0$soc_sn_num_relatives_0)
 **Variable unit**:  relatives    
 **Category coding**:   
 
-**Harmonization status**:  complete  ?
+**Harmonization status**:  impossible  
 **Harmonization comment**:  Study-specific variable SN_RELLIV_NB_COF1 is an indicator of the number of living relatives.    
 **R script**:  
 ```{r, echo=TRUE}
-table(CoP_FU1$SN_RELLIV_NB_COF1) 
 
-soc_CLSA_cop_1$soc_sn_num_relatives_1 <- as.numeric(CoP_FU1$SN_RELLIV_NB_COF1)
-
-table(soc_CLSA_cop_1$soc_sn_num_relatives_1) 
-summary(soc_CLSA_cop_1$soc_sn_num_relatives_1) 
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_2    
@@ -1067,22 +1011,9 @@ summary(soc_CLSA_cop_1$soc_sn_num_relatives_1)
 3 |  A few times per year, once per year or never contact with family  
 
 **Harmonization status**:  impossible    
-**Harmonization comment**:   Study specific variables used in this harmonization ask about 1. SN_SEEREL_COM = last get together with relatives outside of household 2. SN_SEECHILD_COM = last get together with children outside of household 3. SN_SEESIB_COM = last get together with siblings outside of household. Highest frequency for either item is picked as the contact frequency with close relatives. Caution: respondents are not asked how close they are to these relatives, siblings or children.  
+**Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}
-# table(CoP4_Baseline$SN_SEECHILD_COM) 
-# table(CoP4_Baseline$SN_SEESIB_COM) 
-# table(CoP4_Baseline$SN_SEEREL_COM) 
-# 
-soc_CLSA_cop_0$soc_sn_freq_close_relatives_0 <- ifelse(CoP4_Baseline$SN_SEECHILD_COM ==1 |CoP4_Baseline$SN_SEESIB_COM ==1 |CoP4_Baseline$SN_SEEREL_COM==1| 
-                                                          CoP4_Baseline$SN_SEECHILD_COM ==2 |CoP4_Baseline$SN_SEESIB_COM ==2 |CoP4_Baseline$SN_SEEREL_COM==2,1L,
-                                                ifelse(CoP4_Baseline$SN_SEECHILD_COM==3 |CoP4_Baseline$SN_SEESIB_COM==3|CoP4_Baseline$SN_SEEREL_COM==3,2L,
-                                                ifelse(CoP4_Baseline$SN_SEECHILD_COM ==5 |CoP4_Baseline$SN_SEESIB_COM ==5 |CoP4_Baseline$SN_SEEREL_COM==5 |
-                                                   CoP4_Baseline$SN_SEECHILD_COM ==6 |CoP4_Baseline$SN_SEESIB_COM ==6|CoP4_Baseline$SN_SEEREL_COM==6 |
-                                                       CoP4_Baseline$SN_SEECHILD_COM==4 |CoP4_Baseline$SN_SEESIB_COM==4 |CoP4_Baseline$SN_SEEREL_COM==4,3L,NA)))
-
-table(soc_CLSA_cop_0$soc_sn_freq_close_relatives_0) 
-# summary(soc_CLSA_cop_0$soc_sn_freq_close_relatives_0)
 
 ```
 ### **Variable label**:   Contact frequency with family     
@@ -1099,20 +1030,10 @@ table(soc_CLSA_cop_0$soc_sn_freq_close_relatives_0)
 3 |  A few times per year, once per year or never contact with family  
 
 **Harmonization status**:   impossible       
-**Harmonization comment**:   Study-specific variables used in this harmonization ask about 1. SN_SEEREL_COF1 = last get together with relatives outside of household 2. SN_SEECHILD_COF1 = last get together with children outside of household 3. SN_SEESIB_COF1 = last get together with siblings outside of household. Highest frequency for either item is picked as the contact frequency with close relatives. Caution: respondents are not asked how close they are to these relatives, siblings or children.   
+**Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}
-table(CoP_FU1$SN_SEECHILD_COF1, useNA="always") 
 
-soc_CLSA_cop_1$soc_sn_freq_close_relatives_1 <- ifelse(CoP_FU1$SN_SEECHILD_COF1 ==1 |CoP_FU1$SN_SEESIB_COF1==1 |CoP_FU1$SN_SEEREL_COF1==1| 
-                                                      CoP_FU1$SN_SEECHILD_COF1  ==2 |CoP_FU1$SN_SEESIB_COF1 ==2 |CoP_FU1$SN_SEEREL_COF1==2,1L,
-                                                ifelse(CoP_FU1$SN_SEECHILD_COF1 ==3 |CoP_FU1$SN_SEESIB_COF1==3|CoP_FU1$SN_SEEREL_COF1==3,2L,
-                                                ifelse(CoP_FU1$SN_SEECHILD_COF1  ==5 |CoP_FU1$SN_SEESIB_COF1==5 |CoP_FU1$SN_SEEREL_COF1==5 |
-                                                      CoP_FU1$SN_SEECHILD_COF1  ==6 |CoP_FU1$SN_SEESIB_COF1 ==6|CoP_FU1$SN_SEEREL_COF1==6 |
-                                                       CoP_FU1$SN_SEECHILD_COF1 ==4 |CoP_FU1$SN_SEESIB_COF1==4 |CoP_FU1$SN_SEEREL_COF1==4,3L,NA)))
-
-
-table(soc_CLSA_cop_1$soc_sn_freq_close_relatives_1, useNA="always") 
 ```
 ### **Variable label**:   Contact frequency with family    
 **Variable name**:   soc_sn_freq_close_relatives_2    
@@ -1223,21 +1144,10 @@ table(soc_CLSA_cop_1$soc_sn_freq_close_relatives_1, useNA="always")
 2 |  Once per month contact with relatives
 3 |  A few times per year, once per year or never contact with relatives  
 
-**Harmonization status**:  complete  
-**Harmonization comment**:  Study specific variables used in this harmonization ask about 1. SN_SEEREL_COM = last get together with relatives outside of household 2. SN_SEECHILD_COM = last get together with children outside of household 3. SN_SEESIB_COM = last get together with siblings outside of household. Highest frequency for either item is picked as the contact frequency with close relatives. Caution: respondents are not asked how close they are to these relatives, siblings or children.  
+**Harmonization status**:    impossible  
+**Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}
- table(CoP4_Baseline$SN_SEECHILD_COM, useNA="always") 
- table(CoP4_Baseline$SN_SEESIB_COM, useNA="always") 
- table(CoP4_Baseline$SN_SEEREL_COM, useNA="always") 
-
-soc_CLSA_cop_0$soc_sn_freq_relatives_0 <- ifelse(CoP4_Baseline$SN_SEECHILD_COM ==1 |CoP4_Baseline$SN_SEESIB_COM ==1 |CoP4_Baseline$SN_SEEREL_COM==1| 
-                                                 CoP4_Baseline$SN_SEECHILD_COM ==2 |CoP4_Baseline$SN_SEESIB_COM ==2 |CoP4_Baseline$SN_SEEREL_COM==2,1L,
-                                          ifelse(CoP4_Baseline$SN_SEECHILD_COM ==3 |CoP4_Baseline$SN_SEESIB_COM ==3 |CoP4_Baseline$SN_SEEREL_COM==3,2L,
-                                          ifelse(CoP4_Baseline$SN_SEECHILD_COM ==5 |CoP4_Baseline$SN_SEESIB_COM ==5 |CoP4_Baseline$SN_SEEREL_COM==5|
-                                                 CoP4_Baseline$SN_SEECHILD_COM ==6 |CoP4_Baseline$SN_SEESIB_COM ==6 |CoP4_Baseline$SN_SEEREL_COM==6|
-                                                 CoP4_Baseline$SN_SEECHILD_COM ==4 |CoP4_Baseline$SN_SEESIB_COM ==4 |CoP4_Baseline$SN_SEEREL_COM==4,3L,NA)))
- table(soc_CLSA_cop_0$soc_sn_freq_relatives_0, useNA="always") 
 
 ```
 ### **Variable label**:   Contact frequency with relatives      
@@ -1253,20 +1163,10 @@ soc_CLSA_cop_0$soc_sn_freq_relatives_0 <- ifelse(CoP4_Baseline$SN_SEECHILD_COM =
 2 |  Once per month contact with relatives
 3 |  A few times per year, once per year or never contact with relatives  
 
-**Harmonization status**:  complete  
-**Harmonization comment**: Study-specific variables used in this harmonization ask about 1. SN_SEEREL_COF1 = last get together with relatives outside of household 2. SN_SEECHILD_COF1 = last get together with children outside of household 3. SN_SEESIB_COF1 = last get together with siblings outside of household. Highest frequency for either item is picked as the contact frequency with close relatives. Caution: respondents are not asked how close they are to these relatives, siblings or children.   
+**Harmonization status**:  impossible    
+**Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}
-table(CoP_FU1$SN_SEECHILD_COF1, useNA="always")
-soc_CLSA_cop_1$soc_sn_freq_relatives_1 <- ifelse(CoP_FU1$SN_SEECHILD_COF1 ==1 |CoP_FU1$SN_SEESIB_COF1==1 |CoP_FU1$SN_SEEREL_COF1==1| 
-                                                 CoP_FU1$SN_SEECHILD_COF1  ==2 |CoP_FU1$SN_SEESIB_COF1 ==2 |CoP_FU1$SN_SEEREL_COF1==2,1L,
-                                          ifelse(CoP_FU1$SN_SEECHILD_COF1 ==3 |CoP_FU1$SN_SEESIB_COF1==3|CoP_FU1$SN_SEEREL_COF1==3,2L,
-                                          ifelse(CoP_FU1$SN_SEECHILD_COF1  ==5 |CoP_FU1$SN_SEESIB_COF1==5 |CoP_FU1$SN_SEEREL_COF1==5 |
-                                                 CoP_FU1$SN_SEECHILD_COF1  ==6 |CoP_FU1$SN_SEESIB_COF1 ==6|CoP_FU1$SN_SEEREL_COF1==6 |
-                                                 CoP_FU1$SN_SEECHILD_COF1 ==4 |CoP_FU1$SN_SEESIB_COF1==4 |CoP_FU1$SN_SEEREL_COF1==4,3L,NA)))
-
-
-table(soc_CLSA_cop_1$soc_sn_freq_relatives_1, useNA="always") 
 
 ```
 ### **Variable label**:   Contact frequency with relatives     
@@ -1475,18 +1375,10 @@ table(soc_CLSA_cop_1$soc_sn_num_nonkin_1, useNA="always")
 2 |  Once per month contact with non-kin members
 3 |  A few times per year, once per year or never contact with non-kin members    
 
-**Harmonization status**:  complete  
-**Harmonization comment**:  Study specific variables added to obtain this DataSchema are: SN_SEENEIBR_COM = last get together with neighbours and SN_SEEFRND_COM = last get together with close friends outside of household. 
+**Harmonization status**:  impossible    
+**Harmonization comment**:  Study specific variables are: SN_SEENEIBR_COM = last get together with neighbours and SN_SEEFRND_COM = last get together with close friends outside of household. 
 **R script**:  
 ```{r, echo=TRUE}
-soc_CLSA_cop_0$soc_sn_freq_nonkin_0 <- ifelse(CoP4_Baseline$SN_SEENEIBR_COM ==1 |CoP4_Baseline$SN_SEEFRND_COM ==1|
-                                              CoP4_Baseline$SN_SEENEIBR_COM ==2 |CoP4_Baseline$SN_SEEFRND_COM ==2,1L, 
-                                       ifelse(CoP4_Baseline$SN_SEENEIBR_COM==3  |CoP4_Baseline$SN_SEEFRND_COM==3,2L, 
-                                       ifelse(CoP4_Baseline$SN_SEENEIBR_COM ==5 |CoP4_Baseline$SN_SEEFRND_COM ==5 | 
-                                              CoP4_Baseline$SN_SEENEIBR_COM ==6 |CoP4_Baseline$SN_SEEFRND_COM ==6|
-                                              CoP4_Baseline$SN_SEENEIBR_COM==4  |CoP4_Baseline$SN_SEEFRND_COM==4 ,3L, NA)))
-                                                           
-table(soc_CLSA_cop_0$soc_sn_freq_nonkin_0, useNA="always") 
 
 ```
 ### **Variable label**:   Contact frequency with non-kin  
@@ -1502,18 +1394,10 @@ table(soc_CLSA_cop_0$soc_sn_freq_nonkin_0, useNA="always")
 2 |  Once per month contact with non-kin members
 3 |  A few times per year, once per year or never contact with non-kin members    
 
-**Harmonization status**:  complete  
-**Harmonization comment**:  Study specific variables added to obtain this DataSchema are: SN_SEENEIBR_COF1 = last get together with neighbours and SN_SEEFRND_COF1 = last get together with close friends outside of household.   
+**Harmonization status**:  impossible    
+**Harmonization comment**:  Study specific variables are: SN_SEENEIBR_COF1 = last get together with neighbours and SN_SEEFRND_COF1 = last get together with close friends outside of household.   
 **R script**:  
 ```{r, echo=TRUE}
-soc_CLSA_cop_1$soc_sn_freq_nonkin_1 <- ifelse(CoP_FU1$SN_SEENEIBR_COF1==1 |CoP_FU1$SN_SEEFRND_COF1 ==1|
-                                              CoP_FU1$SN_SEENEIBR_COF1 ==2 |CoP_FU1$SN_SEEFRND_COF1 ==2,1L, 
-                                       ifelse(CoP_FU1$SN_SEENEIBR_COF1==3  |CoP_FU1$SN_SEEFRND_COF1==3,2L, 
-                                       ifelse(CoP_FU1$SN_SEENEIBR_COF1 ==5 |CoP_FU1$SN_SEEFRND_COF1 ==5 | 
-                                              CoP_FU1$SN_SEENEIBR_COF1 ==6 |CoP_FU1$SN_SEEFRND_COF1 ==6|
-                                              CoP_FU1$SN_SEENEIBR_COF1==4  |CoP_FU1$SN_SEEFRND_COF1==4 ,3L, NA)))
-                                                           
-table(soc_CLSA_cop_1$soc_sn_freq_nonkin_1, useNA="always") 
 
 ```
 ### **Variable label**:   Contact frequency with non-kin  
@@ -2187,16 +2071,10 @@ summary(soc_CLSA_cop_1$soc_ss_perceived_instru_1)
 0 |  Does not participate in a religious organization   
 1 |  Does participate in a religious organization 
 
-**Harmonization status**:  complete 
-**Harmonization comment**:  Study specific variable SPA_CHRCH_COM, used asks about 'Frequency of participation in religious activities (past 12 months).' Answer category 'never' is coded as 'Does not participate in a religious organization.'   
+**Harmonization status**:  impossible   
+**Harmonization comment**:  Study specific variable asks 'In the past 12 months, how often did you participate in Church or religious activities such as services, committees or choirs'.   
 **R script**:  
 ```{r, echo=TRUE}
-table(CoP4_Baseline$SPA_CHRCH_COM) 
-
-soc_CLSA_cop_0$soc_sp_religious_0 <- ifelse(CoP4_Baseline$SPA_CHRCH_COM ==5,0L, 
-                                     ifelse(CoP4_Baseline$SPA_CHRCH_COM < 5,1L,NA))
-                                                           
-table(soc_CLSA_cop_0$soc_sp_religious_0) 
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2211,16 +2089,10 @@ table(soc_CLSA_cop_0$soc_sp_religious_0)
 0 |  Does not participate in a religious organization   
 1 |  Does participate in a religious organization  
 
-**Harmonization status**:  complete 
-**Harmonization comment**:  Study specific variable SPA_CHRCH_COF1, used asks about 'Frequency of participation in religious activities (past 12 months).' Answer category 'never' is coded as 'Does not participate in a religious organization.'     
+**Harmonization status**:  impossible   
+**Harmonization comment**:  Study specific variable asks 'In the past 12 months, how often did you participate in Church or religious activities such as services, committees or choirs'.   
 **R script**:  
 ```{r, echo=TRUE}
-table(CoP_FU1$SPA_CHRCH_COF1) 
-
-soc_CLSA_cop_1$soc_sp_religious_1 <- ifelse(CoP_FU1$SPA_CHRCH_COF1 ==5,0L, 
-                                     ifelse(CoP_FU1$SPA_CHRCH_COF1 < 5,1L,NA))
-                                                           
-table(soc_CLSA_cop_1$soc_sp_religious_1) 
 
 ```
 ### **Variable label**:  Religious participation 
@@ -2328,19 +2200,10 @@ table(soc_CLSA_cop_1$soc_sp_religious_1)
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
-**Harmonization status**:  complete  
-**Harmonization comment**:   SPA_CHRCH_COM
+**Harmonization status**:  impossible    
+**Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(CoP4_Baseline$SPA_CHRCH_COM) 
-#?? categoties 3&4 doesn't make sense
-soc_CLSA_cop_0$soc_sp_freq_religious_0 <- ifelse(CoP4_Baseline$SPA_CHRCH_COM ==1 |CoP4_Baseline$SPA_CHRCH_COM ==2, 1L,
-                                          ifelse(CoP4_Baseline$SPA_CHRCH_COM ==3 , 2L, 
-                                          ifelse(CoP4_Baseline$SPA_CHRCH_COM ==4 , 3L,
-                                          ifelse(CoP4_Baseline$SPA_CHRCH_COM ==5 , 4L,
-                                          ifelse(CoP4_Baseline$SPA_CHRCH_COM >=6 ,5L,NA)))))
-                                                           
-table(soc_CLSA_cop_0$soc_sp_freq_religious_0) 
 
 ```
 ### **Variable label**:  Frequency of religious participation 
@@ -2358,20 +2221,10 @@ table(soc_CLSA_cop_0$soc_sp_freq_religious_0)
 4 |  Never participates in religious organization
 5 |  No answer/don’t know regarding participation in religious organization
 
-**Harmonization status**:  complete   
-**Harmonization comment**: SPA_CHRCH_COF1  
+**Harmonization status**:  impossible     
+**Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(CoP_FU1$SPA_CHRCH_COF1) 
-
-soc_CLSA_cop_1$soc_sp_freq_religious_1 <- ifelse(CoP_FU1$SPA_CHRCH_COF1 ==1 |CoP_FU1$SPA_CHRCH_COF1 ==2, 1L,
-                                           ifelse(CoP_FU1$SPA_CHRCH_COF1 ==3 , 2L, 
-                                           ifelse(CoP_FU1$SPA_CHRCH_COF1 ==4 , 3L,
-                                             ifelse(CoP_FU1$SPA_CHRCH_COF1 ==5 , 4L,
-                                                  ifelse(CoP_FU1$SPA_CHRCH_COF1 >=6 ,5L,NA)))))
-                                                           
-table(soc_CLSA_cop_1$soc_sp_freq_religious_1) 
-
 ```
 ### **Variable label**:  Frequency of religious participation 
 **Variable name**:  soc_sp_freq_religious_2        
@@ -3714,18 +3567,11 @@ summary(soc_CLSA_cop_1$soc_sp_hobby_1)
 0 |  Not socially isolated, has social network and/ or social participation 
 1 |  Socially isolated, no social network and no social participation 
 
-**Harmonization status**:  complete  
-**Harmonization comment**:  Used same approach as in the harmonization of GLOBE and LASA data: utilized study available DataSchema social network - contact frequency variables (friends, neighbours, relatives, family and non-kin) in addition to the general participation variable, no contact with these different types of social network members and no participation was categorized as socially isolated. Having one or more of these types of members (in addition to children) in their network and reporting social participation was categorized as not socially isolated.    
+**Harmonization status**:  impossible    
+**Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}
 
-soc_CLSA_cop_0$soc_sp_isolation_0 <- ifelse((soc_CLSA_cop_0$soc_sn_freq_friends_0 == 3| soc_CLSA_cop_0$soc_sn_freq_nbhs_0 ==3|     
-                                               soc_CLSA_cop_0$soc_sn_freq_close_relatives_0 ==3 | soc_CLSA_cop_0$soc_sn_freq_relatives_0 ==3|
-                                               soc_CLSA_cop_0$soc_sn_freq_nonkin_0==3) & soc_CLSA_cop_0$soc_sp_general_0 == 0,1L,
-                                    ifelse((soc_CLSA_cop_0$soc_sn_freq_friends_0 >= 1 | soc_CLSA_cop_0$soc_sn_freq_nbhs_0 >= 1 | 
-                                               soc_CLSA_cop_0$soc_sn_freq_close_relatives_0 >= 1 | soc_CLSA_cop_0$soc_sn_freq_relatives_0 >= 1) & 
-                                               soc_CLSA_cop_0$soc_sn_freq_nonkin_0 == 1, 0L, NA ))
-table(soc_CLSA_cop_0$soc_sp_isolation_0, useNA="always")
 ```
 ### **Variable label**:  Social isolation    
 **Variable name**:  soc_sp_isolation_1  
@@ -3739,19 +3585,11 @@ table(soc_CLSA_cop_0$soc_sp_isolation_0, useNA="always")
 0 |  Not socially isolated, has social network and/ or social participation 
 1 |  Socially isolated, no social network and no social participation 
 
-**Harmonization status**:  complete  
-**Harmonization comment**:  Used same approach as in the harmonization of GLOBE and LASA data: utilized study available DataSchema social network - contact frequency variables (friends, neighbours, relatives, family and non-kin) in addition to the general participation variable, no contact with these different types of social network members and no participation was categorized as socially isolated. Having one or more of these types of members (in addition to children) in their network and reporting social participation was categorized as not socially isolated.     
+**Harmonization status**:  impossible   
+**Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}
-soc_CLSA_cop_1$soc_sp_isolation_1 <- ifelse((soc_CLSA_cop_1$soc_sn_freq_friends_1 == 3 | soc_CLSA_cop_1$soc_sn_freq_nbhs_1 ==3 |  
-                                               soc_CLSA_cop_1$soc_sn_freq_close_relatives_1 ==3 | soc_CLSA_cop_1$soc_sn_freq_relatives_1 ==3
-                                             |soc_CLSA_cop_1$soc_sn_freq_nonkin_1==3) 
-                                            & soc_CLSA_cop_1$soc_sp_general_1 == 0,1L,
-                                   ifelse((soc_CLSA_cop_1$soc_sn_freq_friends_1 >= 1 | 
-                                           soc_CLSA_cop_1$soc_sn_freq_nbhs_1 >= 1 | soc_CLSA_cop_1$soc_sn_freq_close_relatives_1 >= 1 |
-                                           soc_CLSA_cop_1$soc_sn_freq_relatives_1 >= 1) & soc_CLSA_cop_1$soc_sn_freq_nonkin_1 == 1, 0L, NA ))
 
- table(soc_CLSA_cop_1$soc_sp_isolation_1, useNA="always")
 ```
 ### **Variable label**:  Social isolation    
 **Variable name**:  soc_sp_isolation_2  
