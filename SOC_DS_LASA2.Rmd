@@ -741,21 +741,11 @@ summary(soc_LASA2_3$soc_sn_freq_friends_3)
 5 |  11 to 20 neighbours 
 6 |  More than 20 neighbours   
 
-**Harmonization status**:  complete
-**Harmonization comment**:   
+**Harmonization status**:  impossible 
+**Harmonization comment**:  Study-specific variable asks about the number of neighbours.      
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2B$nneighbours) 
-summary(LASA2B$nneighbours)
-soc_LASA2_0$soc_sn_num_nbhs_0 <- ifelse(LASA2B$nneighbours=='0',1L, 
-                                                  ifelse(LASA2B$nneighbours=='1' | LASA2B$nneighbours=='2',2L,
-                                                      ifelse(LASA2B$nneighbours>='3' & LASA2B$nneighbours <='5',3L,
-                                                           ifelse(LASA2B$nneighbours>='6' & LASA2B$nneighbours <='10',4L,
-                                                                   ifelse(LASA2B$nneighbours>='11' & LASA2B$nneighbours <='20',5L,
-                                                                          ifelse(LASA2B$nneighbours>='21',6L, NA))))))
- 
-table(soc_LASA2_0$soc_sn_num_nbhs_0) 
-summary(soc_LASA2_0$soc_sn_num_nbhs_0)
+
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_1    
@@ -773,21 +763,11 @@ summary(soc_LASA2_0$soc_sn_num_nbhs_0)
 5 |  11 to 20 neighbours 
 6 |  More than 20 neighbours    
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  impossible 
+**Harmonization comment**:  Study-specific variable asks about the number of neighbours.      
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2F$nneighbours) 
-summary(LASA2F$nneighbours)
-soc_LASA2_1$soc_sn_num_nbhs_1 <- ifelse(LASA2F$nneighbours=='0',1L, 
-                                                  ifelse(LASA2F$nneighbours=='1' | LASA2F$nneighbours=='2',2L,
-                                                      ifelse(LASA2F$nneighbours>='3' & LASA2F$nneighbours <='5',3L,
-                                                           ifelse(LASA2F$nneighbours>='6' & LASA2F$nneighbours <='10',4L,
-                                                                   ifelse(LASA2F$nneighbours>='11' & LASA2F$nneighbours <='20',5L,
-                                                                          ifelse(LASA2F$nneighbours>='21',6L, NA))))))
- 
-table(soc_LASA2_1$soc_sn_num_nbhs_1) 
-summary(soc_LASA2_1$soc_sn_num_nbhs_1)
+
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_2    
@@ -805,21 +785,11 @@ summary(soc_LASA2_1$soc_sn_num_nbhs_1)
 5 |  11 to 20 neighbours 
 6 |  More than 20 neighbours    
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  impossible 
+**Harmonization comment**:  Study-specific variable asks about the number of neighbours.      
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2G$nneighbours) 
-summary(LASA2G$nneighbours)
-soc_LASA2_2$soc_sn_num_nbhs_2 <- ifelse(LASA2G$nneighbours=='0',1L, 
-                                                  ifelse(LASA2G$nneighbours=='1' | LASA2G$nneighbours=='2',2L,
-                                                      ifelse(LASA2G$nneighbours>='3' & LASA2G$nneighbours <='5',3L,
-                                                           ifelse(LASA2G$nneighbours>='6' & LASA2G$nneighbours <='10',4L,
-                                                                   ifelse(LASA2G$nneighbours>='11' & LASA2G$nneighbours <='20',5L,
-                                                                          ifelse(LASA2G$nneighbours>='21',6L, NA))))))
- 
-table(soc_LASA2_2$soc_sn_num_nbhs_2) 
-summary(soc_LASA2_2$soc_sn_num_nbhs_2)
+
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_3    
@@ -837,21 +807,11 @@ summary(soc_LASA2_2$soc_sn_num_nbhs_2)
 5 |  11 to 20 neighbours 
 6 |  More than 20 neighbours    
 
-**Harmonization status**:  complete
-**Harmonization comment**:   
+**Harmonization status**:  impossible 
+**Harmonization comment**:  Study-specific variable asks about the number of neighbours.      
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2H$nneighbours) 
-summary(LASA2H$nneighbours)
-soc_LASA2_3$soc_sn_num_nbhs_3 <- ifelse(LASA2H$nneighbours=='0',1L, 
-                                                  ifelse(LASA2H$nneighbours=='1' | LASA2H$nneighbours=='2',2L,
-                                                      ifelse(LASA2H$nneighbours>='3' & LASA2H$nneighbours <='5',3L,
-                                                           ifelse(LASA2H$nneighbours>='6' & LASA2H$nneighbours <='10',4L,
-                                                                   ifelse(LASA2H$nneighbours>='11' & LASA2H$nneighbours <='20',5L,
-                                                                          ifelse(LASA2H$nneighbours>='21',6L, NA))))))
- 
-table(soc_LASA2_3$soc_sn_num_nbhs_3) 
-summary(soc_LASA2_3$soc_sn_num_nbhs_3)
+
 ``` 
 ### **Variable label**:   Network size of neighbours           
 **Variable name**:   soc_sn_num_nbhs_4    
@@ -1099,21 +1059,12 @@ summary(soc_LASA2_3$soc_sn_freq_nbhs_3)
 5 |  11 to 20 
 6 |  More than 20
 
-**Harmonization status**:  complete 
-**Harmonization comment**:   Study specific variables includes the following types of social network members which do not live in the household: partner, child (biological, of partner, step, adoptive, child-in-law), sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin).    
+**Harmonization status**:  impossible  
+**Harmonization comment**:   Study specific variables includes the following types of social network members which do not live in the household: partner, child (biological, of partner, step, adoptive, child-in-law), sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin). 
+
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2B$nrelatives) 
-summary(LASA2B$nrelatives)
-soc_LASA2_0$soc_sn_num_relatives_0 <- ifelse(LASA2B$nrelatives=='0',1L, 
-                                                  ifelse(LASA2B$nrelatives=='1' | LASA2B$nrelatives=='2',2L,
-                                                      ifelse(LASA2B$nrelatives>='3' & LASA2B$nrelatives <='5',3L,
-                                                           ifelse(LASA2B$nrelatives>='6' & LASA2B$nrelatives <='10',4L,
-                                                                   ifelse(LASA2B$nrelatives>='11' & LASA2B$nrelatives <='20',5L,
-                                                                          ifelse(LASA2B$nrelatives>='21',6L, NA))))))
- 
-table(soc_LASA2_0$soc_sn_num_relatives_0) 
-summary(soc_LASA2_0$soc_sn_num_relatives_0) 
+
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_1    
@@ -1131,21 +1082,12 @@ summary(soc_LASA2_0$soc_sn_num_relatives_0)
 5 |  11 to 20 
 6 |  More than 20
 
-**Harmonization status**:  complete 
-**Harmonization comment**:   Study specific variables includes the following types of social network members which do not live in the household: partner, child (biological, of partner, step, adoptive, child-in-law), sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin).    
+**Harmonization status**:  impossible  
+**Harmonization comment**:   Study specific variables includes the following types of social network members which do not live in the household: partner, child (biological, of partner, step, adoptive, child-in-law), sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin). 
+
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2F$nrelatives) 
-summary(LASA2F$nrelatives)
-soc_LASA2_1$soc_sn_num_relatives_1 <- ifelse(LASA2F$nrelatives=='0',1L, 
-                                                  ifelse(LASA2F$nrelatives=='1' | LASA2F$nrelatives=='2',2L,
-                                                      ifelse(LASA2F$nrelatives>='3' & LASA2F$nrelatives <='5',3L,
-                                                           ifelse(LASA2F$nrelatives>='6' & LASA2F$nrelatives <='10',4L,
-                                                                   ifelse(LASA2F$nrelatives>='11' & LASA2F$nrelatives <='20',5L,
-                                                                          ifelse(LASA2F$nrelatives4>='21',6L, NA))))))
- 
-table(soc_LASA2_1$soc_sn_num_relatives_1) 
-summary(soc_LASA2_1$soc_sn_num_relatives_1)
+
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_2    
@@ -1163,21 +1105,12 @@ summary(soc_LASA2_1$soc_sn_num_relatives_1)
 5 |  11 to 20 
 6 |  More than 20
 
-**Harmonization status**:  complete 
-**Harmonization comment**:   Study specific variables includes the following types of social network members which do not live in the household: partner, child (biological, of partner, step, adoptive, child-in-law), sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin).   
+**Harmonization status**:  impossible  
+**Harmonization comment**:   Study specific variables includes the following types of social network members which do not live in the household: partner, child (biological, of partner, step, adoptive, child-in-law), sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin). 
+
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2G$nrelatives) 
-summary(LASA2G$nrelatives)
-soc_LASA2_2$soc_sn_num_relatives_2 <- ifelse(LASA2G$nrelatives=='0',1L, 
-                                                  ifelse(LASA2G$nrelatives=='1' | LASA2G$nrelatives=='2',2L,
-                                                      ifelse(LASA2G$nrelatives>='3' & LASA2G$nrelatives <='5',3L,
-                                                           ifelse(LASA2G$nrelatives>='6' & LASA2G$nrelatives <='10',4L,
-                                                                   ifelse(LASA2G$nrelatives>='11' & LASA2G$nrelatives <='20',5L,
-                                                                          ifelse(LASA2G$nrelatives4>='21',6L, NA))))))
- 
-table(soc_LASA2_2$soc_sn_num_relatives_2) 
-summary(soc_LASA2_2$soc_sn_num_relatives_2) 
+
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_3    
@@ -1195,21 +1128,12 @@ summary(soc_LASA2_2$soc_sn_num_relatives_2)
 5 |  11 to 20 
 6 |  More than 20
 
-**Harmonization status**:  complete 
-**Harmonization comment**:   Study specific variables includes the following types of social network members which do not live in the household: partner, child (biological, of partner, step, adoptive, child-in-law), sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin).  
+**Harmonization status**:  impossible  
+**Harmonization comment**:   Study specific variables includes the following types of social network members which do not live in the household: partner, child (biological, of partner, step, adoptive, child-in-law), sibling, parents, parents-in-law, grandchildren, partner of grandchild, cousin, niece, nephew, uncle/aunt, other kin). 
+
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA2H$nrelatives) 
-summary(LASA2H$nrelatives)
-soc_LASA2_3$soc_sn_num_relatives_3 <- ifelse(LASA2H$nrelatives=='0',1L, 
-                                                  ifelse(LASA2H$nrelatives=='1' | LASA2H$nrelatives=='2',2L,
-                                                      ifelse(LASA2H$nrelatives>='3' & LASA2H$nrelatives <='5',3L,
-                                                           ifelse(LASA2H$nrelatives>='6' & LASA2H$nrelatives <='10',4L,
-                                                                   ifelse(LASA2H$nrelatives>='11' & LASA2H$nrelatives <='20',5L,
-                                                                          ifelse(LASA2H$nrelatives4>='21',6L, NA))))))
- 
-table(soc_LASA2_3$soc_sn_num_relatives_3) 
-summary(soc_LASA2_3$soc_sn_num_relatives_3) 
+
 ```
 ### **Variable label**:   Network size of relatives      
 **Variable name**:   soc_sn_num_relatives_4    
