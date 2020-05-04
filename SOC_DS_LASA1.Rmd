@@ -19,106 +19,106 @@ erasmus_opal <- opal.login()
 #Login to Opal server and assign the content of the LASA table(s) to your RStudio environment
 # LASA1B
 opal.assign.table.tibble(erasmus_opal, 'LASA1B', 'LASA.LASA1B',variables = list('blo1','blo4','blo7','blo8','blo11','bsocp04','bsocp14','bsocp15','bsocp16','bsocp17','bsocp18','bsocp19','bsocp20','bsocp21','bsocp23','bsocp24','bsocp31','bsocp43','bsocp44','bsocp46','bsocp48','bsocp55','bsocp57','bmoved','bhindep','bhoustyp','bsocp01','bsocp02','bsocp03','bsocp04','bsocp05','bsocp07','bsocp08','bsocp10','bsocp11','bsocpyn')) 
-LASA1B <- opal.execute(erasmus_opal,'LASA1B')
+LASA1B <- opal.execute(erasmus_opal,'LASA1B') %>% as_tibble %>% arrange(id)
 
 opal.assign.table.tibble(erasmus_opal, 'LASA1B_socialnet', 'LASA.LASA1B_socialnet',variables = list ('nkids','nfriends','friendscf','nneighbours','neighbourscf','nrelatives','familycf','relativescf','nnonkin','nonkincf','rec_emo_conf1','rec_emo_conf2','rec_emo_conf3','rec_instru_conf1','rec_instru_conf2','rec_instru_conf3','perceived_instru'))
-LASA1B_socialnet <- opal.execute(erasmus_opal,'LASA1B_socialnet')
+LASA1B_socialnet <- opal.execute(erasmus_opal,'LASA1B_socialnet') %>% as_tibble %>% arrange(id)
 
 opal.assign.table.tibble(erasmus_opal, 'LASA1B_extradata2', 'LASA.LASA1B_extradata2',variables = list ('byneigh','bmovefut','bhowner','bmortga'))
-LASA1B_extradata2 <- opal.execute(erasmus_opal,'LASA1B_extradata2')
+LASA1B_extradata2 <- opal.execute(erasmus_opal,'LASA1B_extradata2') %>% as_tibble %>% arrange(id)
 
 # LASA1C
 opal.assign.table.tibble(erasmus_opal, 'LASA1C', 'LASA.LASA1C', variables=list('clo1','clo4','clo7','clo8','clo11','csocp14','csocp15','csocp16','csocp17','csocp18','csocp19','csocp20','csocp21','csocp23','csocp24','csocp31','csocp46','csocp48','csocp55','csocp57','cmoved','chindep','choustyp','ccrime','cfinanc','cillpart','cilloth','cfadied','cmodied','cbrodied','csisdied','csondied','cdaudied','cgcdied','csocpyn','csocp01','csocp02','csocp03','csocp04','csocp05','csocp07','csocp08','csocp10','csocp11','csocpyn','cpartst')) 
-LASA1C<- opal.execute(erasmus_opal,'LASA1C')
+LASA1C<- opal.execute(erasmus_opal,'LASA1C') %>% as_tibble %>% arrange(id)
 
 opal.assign.table.tibble(erasmus_opal, 'LASA1C_socialnet', 'LASA.LASA1C_socialnet', variables=list('nkids','nfriends','friendscf','nneighbours','neighbourscf','nrelatives','familycf','relativescf','nnonkin','nonkincf','rec_emo_conf1','rec_emo_conf2','rec_emo_conf3','rec_instru_conf1','rec_instru_conf2','rec_instru_conf3','perceived_instru')) 
-LASA1C_socialnet<- opal.execute(erasmus_opal,'LASA1C_socialnet')
+LASA1C_socialnet<- opal.execute(erasmus_opal,'LASA1C_socialnet') %>% as_tibble %>% arrange(id)
 
 opal.assign.table.tibble(erasmus_opal, 'LASA1C_extradata2', 'LASA.LASA1C_extradata2',variables = list ('cyneigh','cmovefut','chowner','cmortga'))
-LASA1C_extradata2 <- opal.execute(erasmus_opal,'LASA1C_extradata2')
+LASA1C_extradata2 <- opal.execute(erasmus_opal,'LASA1C_extradata2') %>% as_tibble %>% arrange(id)
 
 # LASA1D
 opal.assign.table.tibble(erasmus_opal, 'LASA1D', 'LASA.LASA1D',variables=list('dlo1','dlo4','dlo7','dlo8','dlo11','dsocp14','dsocp15','dsocp16','dsocp17','dsocp18','dsocp19','dsocp20','dsocp21','dsocp23','dsocp24','dsocp31','dsocp46','dsocp48','dsocp55','dsocp57','dmoved','dhindep','dhoustyp','dcrime','dfinanc','dillpart','dilloth','dfadied','dmodied','dbrodied','dsisdied','dsondied','ddaudied','dgcdied','dsocpyn','dsocp01','dsocp02','dsocp03','dsocp04','dsocp05','dsocp07','dsocp08','dsocp10','dsocp11','dsocpyn','dpartst'))
-LASA1D <- opal.execute(erasmus_opal,'LASA1D')
+LASA1D <- opal.execute(erasmus_opal,'LASA1D') %>% as_tibble %>% arrange(id)
 
 opal.assign.table.tibble(erasmus_opal, 'LASA1D_socialnet', 'LASA.LASA1D_socialnet',variables=list('nkids','nfriends','friendscf','nneighbours','neighbourscf','nrelatives','familycf','relativescf','nnonkin','nonkincf','rec_emo_conf1','rec_emo_conf2','rec_emo_conf3','rec_instru_conf1','rec_instru_conf2','rec_instru_conf3','perceived_instru')) 
-LASA1D_socialnet <- opal.execute(erasmus_opal,'LASA1D_socialnet')
+LASA1D_socialnet <- opal.execute(erasmus_opal,'LASA1D_socialnet') %>% as_tibble %>% arrange(id)
 
 opal.assign.table.tibble(erasmus_opal, 'LASA1D_extradata2', 'LASA.LASA1D_extradata2',variables = list ('dyneigh','dmovefut','dhowner','dmortga'))
-LASA1D_extradata2 <- opal.execute(erasmus_opal,'LASA1D_extradata2')
+LASA1D_extradata2 <- opal.execute(erasmus_opal,'LASA1D_extradata2') %>% as_tibble %>% arrange(id)
 
 # LASA1E - no perceived instrumental support 
 opal.assign.table.tibble(erasmus_opal, 'LASA1E', 'LASA.LASA1E',variables=list('elo1','elo4','elo7','elo8','elo11','esocp14','esocp15','esocp16','esocp17','esocp18','esocp19','esocp20','esocp21','esocp23','esocp24','esocp31','esocp46','esocp48','esocp55','esocp57','emoved','ehindep','ehoustyp','ecrime','efinanc','eillpart','eilloth','efadied','emodied','ebrodied','esisdied','esondied','edaudied','egcdied','esocpyn','esocp01','esocp02','esocp03','esocp04','esocp05','esocp07','esocp08','esocp10','esocp11','epartst'))
-LASA1E <- opal.execute(erasmus_opal,'LASA1E')
+LASA1E <- opal.execute(erasmus_opal,'LASA1E') %>% as_tibble %>% arrange(id)
 
 opal.assign.table.tibble(erasmus_opal, 'LASA1E_socialnet', 'LASA.LASA1E_socialnet',variables=list('nkids','nfriends','friendscf','nneighbours','neighbourscf','nrelatives','familycf','relativescf','nnonkin','nonkincf','rec_emo_conf1','rec_emo_conf2','rec_emo_conf3','rec_instru_conf1','rec_instru_conf2','rec_instru_conf3')) 
-LASA1E_socialnet <- opal.execute(erasmus_opal,'LASA1E_socialnet')
+LASA1E_socialnet <- opal.execute(erasmus_opal,'LASA1E_socialnet') %>% as_tibble %>% arrange(id)
 
 opal.assign.table.tibble(erasmus_opal, 'LASA1E_extradata2', 'LASA.LASA1E_extradata2',variables = list ('eyneigh','emovefut','ehowner','emortga'))
-LASA1E_extradata2 <- opal.execute(erasmus_opal,'LASA1E_extradata2')
+LASA1E_extradata2 <- opal.execute(erasmus_opal,'LASA1E_extradata2') %>% as_tibble %>% arrange(id)
 
 # LASA1F
 opal.assign.table.tibble(erasmus_opal, 'LASA1F', 'LASA.LASA1F',variables=list('flo1','flo4','flo7','flo8','flo11','fsocp14','fsocp15','fsocp16','fsocp17','fsocp18','fsocp19','fsocp20','fsocp21','fsocp23','fsocp24','fsocp31','fsocp43','fsocp44','fsocp46','fsocp48','fsocp55','fsocp57','fmoved','fhindep','fhoustyp','fcrime','ffinanc','fillpart','filloth','ffadied','fmodied','fbrodied','fsisdied','fsondied','fdaudied','fgcdied','fsocpyn','fsocp01','fsocp02','fsocp03','fsocp04','fsocp05','fsocp07','fsocp08','fsocp10','fsocp11','fpartst')) 
-LASA1F <- opal.execute(erasmus_opal,'LASA1F')
+LASA1F <- opal.execute(erasmus_opal,'LASA1F') %>% as_tibble %>% arrange(id)
 
 opal.assign.table.tibble(erasmus_opal, 'LASA1F_socialnet', 'LASA.LASA1F_socialnet',variables=list('nkids','nfriends','friendscf','nneighbours','neighbourscf','nrelatives','familycf','relativescf','nnonkin','nonkincf','rec_emo_conf1','rec_emo_conf2','rec_emo_conf3','rec_instru_conf1','rec_instru_conf2','rec_instru_conf3','perceived_instru')) 
-LASA1F_socialnet <- opal.execute(erasmus_opal,'LASA1F_socialnet')
+LASA1F_socialnet <- opal.execute(erasmus_opal,'LASA1F_socialnet') %>% as_tibble %>% arrange(id)
 
 opal.assign.table.tibble(erasmus_opal, 'LASA1F_extradata2', 'LASA.LASA1F_extradata2',variables = list ('fyneigh','fmovefut','fhowner','fmortga'))
-LASA1F_extradata2 <- opal.execute(erasmus_opal,'LASA1F_extradata2')
+LASA1F_extradata2 <- opal.execute(erasmus_opal,'LASA1F_extradata2') %>% as_tibble %>% arrange(id)
 
 # LASA1G
 opal.assign.table.tibble(erasmus_opal, 'LASA1G', 'LASA.LASA1G',variables=list('glo1','glo4','glo7','glo8','glo11','gsocp14','gsocp15','gsocp16','gsocp17','gsocp18','gsocp19','gsocp20','gsocp21','gsocp23','gsocp24','gsocp31','gsocp32','gsocp46','gsocp47','gsocp48','gsocp49','gsocp50','gsocp51','gsocp54','gsocp55','gsocp44','gsocp57','gsocp43','gmoved','ghindep','ghoustyp','gcrime','gfinanc','gillpart','gilloth','gfadied','gmodied','gbrodied','gsisdied','gsondied','gdaudied','ggcdied','gsocpyn','gsocp01','gsocp02','gsocp03','gsocp04','gsocp05','gsocp07','gsocp08','gsocp10','gsocp11','gpartst'))
-LASA1G <- opal.execute(erasmus_opal,'LASA1G')
+LASA1G <- opal.execute(erasmus_opal,'LASA1G') %>% as_tibble %>% arrange(id)
 
 opal.assign.table.tibble(erasmus_opal, 'LASA1G_socialnet', 'LASA.LASA1G_socialnet',variables=list('nkids','nfriends','friendscf','nneighbours','neighbourscf','nrelatives','familycf','relativescf','nnonkin','nonkincf','rec_emo_conf1','rec_emo_conf2','rec_emo_conf3','rec_instru_conf1','rec_instru_conf2','rec_instru_conf3','perceived_instru')) 
-LASA1G_socialnet <- opal.execute(erasmus_opal,'LASA1G_socialnet')
+LASA1G_socialnet <- opal.execute(erasmus_opal,'LASA1G_socialnet') %>% as_tibble %>% arrange(id)
 
 opal.assign.table.tibble(erasmus_opal, 'LASA1G_extradata2', 'LASA.LASA1G_extradata2',variables = list ('gyneigh','gmovefut','ghowner','gmortga'))
-LASA1G_extradata2 <- opal.execute(erasmus_opal,'LASA1G_extradata2')
+LASA1G_extradata2 <- opal.execute(erasmus_opal,'LASA1G_extradata2') %>% as_tibble %>% arrange(id)
 
 # LASA1H
 opal.assign.table.tibble(erasmus_opal, 'LASA1H', 'LASA.LASA1H',variables=list('Hlo1','Hlo4','Hlo7','Hlo8','Hlo11','HSOCP14','HSOCP15','HSOCP16','HSOCP17','HSOCP18','HSOCP19','HSOCP20','HSOCP21','HSOCP23','HSOCP24','HSOCP31','HSOCP46','HSOCP48','HSOCP55','HSOCP57','HMOVED','HHINDEP','HHOUSTYP','Hcrime','Hfinanc','Hillpart','Hilloth','Hfadied','Hmodied','Hbrodied','Hsisdied','Hsondied','Hdaudied','Hgcdied','HSOCPYN','HSOCP01','HSOCP02','HSOCP03','HSOCP04','HSOCP05','HSOCP07','HSOCP08','HSOCP10','HSOCP11','hpartst')) 
-LASA1H <- opal.execute(erasmus_opal,'LASA1H')
+LASA1H <- opal.execute(erasmus_opal,'LASA1H') %>% as_tibble %>% arrange(id)
 
 opal.assign.table.tibble(erasmus_opal, 'LASA1H_socialnet', 'LASA.LASA1H_socialnet',variables=list('nkids','nfriends','friendscf','nneighbours','neighbourscf','nrelatives','familycf','relativescf','nnonkin','nonkincf','rec_emo_conf1','rec_emo_conf2','rec_emo_conf3','rec_instru_conf1','rec_instru_conf2','rec_instru_conf3','perceived_instru')) 
-LASA1H_socialnet <- opal.execute(erasmus_opal,'LASA1H_socialnet')
+LASA1H_socialnet <- opal.execute(erasmus_opal,'LASA1H_socialnet') %>% as_tibble %>% arrange(id)
 
 opal.assign.table.tibble(erasmus_opal, 'LASA1H_extradata2', 'LASA.LASA1H_extradata2',variables = list ('HYNEIGH','HMOVEFUT','HHOWNER','HMORTGA'))
-LASA1H_extradata2 <- opal.execute(erasmus_opal,'LASA1H_extradata2')
+LASA1H_extradata2 <- opal.execute(erasmus_opal,'LASA1H_extradata2') %>% as_tibble %>% arrange(id)
 
-LASA1B <-merge(LASA1B, LASA1B_extradata2,  by="id", all = TRUE)
-LASA1B <-merge(LASA1B, LASA1B_socialnet,   by="id", all = TRUE)
+LASA1B <-merge(LASA1B, LASA1B_extradata2,  by="id", all = TRUE) %>% as_tibble %>% arrange(id)
+LASA1B <-merge(LASA1B, LASA1B_socialnet,   by="id", all = TRUE) %>% as_tibble %>% arrange(id)
 
-LASA1C <-merge(LASA1C, LASA1C_extradata2,  by="id", all = TRUE)
-LASA1C <-merge(LASA1C, LASA1C_socialnet,   by="id", all = TRUE)
+LASA1C <-merge(LASA1C, LASA1C_extradata2,  by="id", all = TRUE) %>% as_tibble %>% arrange(id)
+LASA1C <-merge(LASA1C, LASA1C_socialnet,   by="id", all = TRUE) %>% as_tibble %>% arrange(id)
 
-LASA1D <-merge(LASA1D, LASA1D_extradata2,  by="id", all = TRUE)
-LASA1D <-merge(LASA1D, LASA1D_socialnet,   by="id", all = TRUE)
+LASA1D <-merge(LASA1D, LASA1D_extradata2,  by="id", all = TRUE) %>% as_tibble %>% arrange(id)
+LASA1D <-merge(LASA1D, LASA1D_socialnet,   by="id", all = TRUE) %>% as_tibble %>% arrange(id)
 
-LASA1E <-merge(LASA1E, LASA1E_extradata2,  by="id", all = TRUE)
-LASA1E <-merge(LASA1E, LASA1E_socialnet,   by="id", all = TRUE)
+LASA1E <-merge(LASA1E, LASA1E_extradata2,  by="id", all = TRUE) %>% as_tibble %>% arrange(id)
+LASA1E <-merge(LASA1E, LASA1E_socialnet,   by="id", all = TRUE) %>% as_tibble %>% arrange(id)
 
-LASA1F <-merge(LASA1F, LASA1F_extradata2,  by="id", all = TRUE)
-LASA1F <-merge(LASA1F, LASA1F_socialnet,   by="id", all = TRUE)
+LASA1F <-merge(LASA1F, LASA1F_extradata2,  by="id", all = TRUE) %>% as_tibble %>% arrange(id)
+LASA1F <-merge(LASA1F, LASA1F_socialnet,   by="id", all = TRUE) %>% as_tibble %>% arrange(id)
 
-LASA1G <-merge(LASA1G, LASA1G_extradata2,  by="id", all = TRUE)
-LASA1G <-merge(LASA1G, LASA1G_socialnet,   by="id", all = TRUE)
+LASA1G <-merge(LASA1G, LASA1G_extradata2,  by="id", all = TRUE) %>% as_tibble %>% arrange(id)
+LASA1G <-merge(LASA1G, LASA1G_socialnet,   by="id", all = TRUE) %>% as_tibble %>% arrange(id)
 
-LASA1H <-merge(LASA1H, LASA1H_extradata2,  by="id", all = TRUE)
-LASA1H <-merge(LASA1H, LASA1H_socialnet,   by="id", all = TRUE)
+LASA1H <-merge(LASA1H, LASA1H_extradata2,  by="id", all = TRUE) %>% as_tibble %>% arrange(id)
+LASA1H <-merge(LASA1H, LASA1H_socialnet,   by="id", all = TRUE) %>% as_tibble %>% arrange(id)
 
 
 ```
 ## Assign participant id as first column of your harmonized dataframes
 ```{r, echo=FALSE}
-soc_LASA1_0 <- data.frame(id = LASA1B$id)
-soc_LASA1_1 <- data.frame(id = LASA1C$id)
-soc_LASA1_2 <- data.frame(id = LASA1D$id)
-soc_LASA1_3 <- data.frame(id = LASA1E$id)
-soc_LASA1_4 <- data.frame(id = LASA1F$id)
-soc_LASA1_5 <- data.frame(id = LASA1G$id)
-soc_LASA1_6 <- data.frame(id = LASA1H$id)
+soc_LASA1_0 <- data.frame(id = LASA1B$id) %>% as_tibble %>% arrange(id)
+soc_LASA1_1 <- data.frame(id = LASA1C$id) %>% as_tibble %>% arrange(id)
+soc_LASA1_2 <- data.frame(id = LASA1D$id) %>% as_tibble %>% arrange(id)
+soc_LASA1_3 <- data.frame(id = LASA1E$id) %>% as_tibble %>% arrange(id)
+soc_LASA1_4 <- data.frame(id = LASA1F$id) %>% as_tibble %>% arrange(id)
+soc_LASA1_5 <- data.frame(id = LASA1G$id) %>% as_tibble %>% arrange(id)
+soc_LASA1_6 <- data.frame(id = LASA1H$id) %>% as_tibble %>% arrange(id)
 ```
 ## When you are done with your work, logout of Opal server
 ```{r, echo=FALSE}
