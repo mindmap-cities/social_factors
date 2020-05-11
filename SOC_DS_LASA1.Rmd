@@ -1000,7 +1000,6 @@ summary(soc_LASA1_6$soc_sn_freq_friends_6)
 5 |  11 to 20 neighbours 
 6 |  More than 20 neighbours 
 
-**Harmonization status**:  complete
 **Harmonization status**:  impossible 
 **Harmonization comment**:  Study-specific variable asks about the number of neighbours.      
 **R script**:  
